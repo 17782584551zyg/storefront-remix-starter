@@ -1,5 +1,5 @@
 import express from 'express';
-import { createRequestHandler } from '@remix-run/node';
+import { createRequestHandler } from '@remix-run/server-runtime';
 import * as build from './build/index.js';
 
 const app = express();
