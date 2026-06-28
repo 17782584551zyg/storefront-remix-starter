@@ -17,8 +17,8 @@ RUN yarn install --production
 
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/server.js ./server.js
 
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+ENV NODE_ENV=production
+CMD ["yarn", "start"]
