@@ -89,6 +89,7 @@ const buildConfig = {
   assetsBuildDirectory: 'public/build',
   publicPath: '/build/',
   serverBuildDirectory: 'build',
+  serverModuleFormat: 'cjs',
   ignoredRouteFiles: ['.*'],
   ...commonConfig,
 };
