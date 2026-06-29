@@ -13,7 +13,6 @@ import { CurrencyCode, ErrorCode, ErrorResult } from '~/generated/graphql';
 import { StripePayments } from '~/components/checkout/stripe/StripePayments';
 import { DummyPayments } from '~/components/checkout/DummyPayments';
 import { BraintreeDropIn } from '~/components/checkout/braintree/BraintreePayments';
-import { PayPalPayments } from '~/components/checkout/PayPalPayments';
 import { getActiveOrder } from '~/providers/orders/order';
 import { getSessionStorage } from '~/sessions';
 import { useTranslation } from 'react-i18next';
@@ -178,13 +177,6 @@ export default function CheckoutPayment() {
                 publishableKey={stripePublishableKey!}
               ></StripePayments>
             )}
-          </div>
-        ) : paymentMethod.code.includes('paypal') ? (
-          <div className="py-12" key={paymentMethod.id}>
-            <PayPalPayments
-              paymentMethod={paymentMethod}
-              paymentError={paymentError}
-            />
           </div>
         ) : (
           <div className="py-12" key={paymentMethod.id}>
