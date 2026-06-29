@@ -1,6 +1,6 @@
 import { DataFunctionArgs, redirect } from '@remix-run/server-runtime';
 import { getActiveOrder } from '~/providers/orders/order';
-import { settlePayment } from '~/providers/checkout/checkout';
+import { settlePayment, transitionOrderToState } from '~/providers/checkout/checkout';
 import { getSessionStorage } from '~/sessions';
 
 export async function loader({ request }: DataFunctionArgs) {
@@ -27,15 +27,14 @@ export async function loader({ request }: DataFunctionArgs) {
   
   if (lastPayment && lastPayment.state === 'Authorized') {
     try {
-      const result = await settlePayment(
+      const settleResult = await settlePayment(
         { paymentId: lastPayment.id },
         { request },
       );
       
-      if (result.settlePayment.__typename === 'Payment') {
-        if (result.settlePayment.state === 'Settled') {
-          return redirect(`/checkout/confirmation/${activeOrder.code}`);
-        }
+      if (settleResult.settlePayment.__typename === 'Payment' && settleResult.settlePayment.state === 'Settled') {
+        await transitionOrderToState('PaymentSettled', { request });
+        return redirect(`/checkout/confirmation/${activeOrder.code}`);
       }
     } catch (e) {
       console.error('PayPal settle payment error:', e);
