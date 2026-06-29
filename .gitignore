@@ -1,8 +1,8 @@
 node_modules
 
 /.cache
-/build
-/public/build
+# /build - included for deployment
+# /public/build - included for deployment
 .env
 /.idea
 /functions
