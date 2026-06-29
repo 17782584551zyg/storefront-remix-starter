@@ -34,6 +34,10 @@ export function transitionOrderToState(state: string, options: QueryOptions) {
   return sdk.transitionOrderToState({ state }, options);
 }
 
+export function settlePayment(input: { paymentId: string }, options: QueryOptions) {
+  return sdk.settlePayment({ input }, options);
+}
+
 gql`
   query eligibleShippingMethods {
     eligibleShippingMethods {
@@ -109,5 +113,21 @@ gql`
 gql`
   query generateBraintreeClientToken {
     generateBraintreeClientToken
+  }
+`;
+
+gql`
+  mutation settlePayment($input: SettlePaymentInput!) {
+    settlePayment(input: $input) {
+      ... on Payment {
+        id
+        state
+        transactionId
+      }
+      ... on ErrorResult {
+        errorCode
+        message
+      }
+    }
   }
 `;
