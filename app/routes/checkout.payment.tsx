@@ -95,9 +95,8 @@ export async function action({ params, request }: DataFunctionArgs) {
         { request },
       );
       if (transitionResult.transitionOrderToState?.__typename !== 'Order') {
-        throw new Response('Not Found', {
-          status: 400,
-          statusText: transitionResult.transitionOrderToState?.message,
+        return json({
+          error: transitionResult.transitionOrderToState?.message || 'Failed to transition order state',
         });
       }
     }
@@ -118,9 +117,8 @@ export async function action({ params, request }: DataFunctionArgs) {
         `/checkout/confirmation/${result.addPaymentToOrder.code}`,
       );
     } else {
-      throw new Response('Not Found', {
-        status: 400,
-        statusText: result.addPaymentToOrder?.message,
+      return json({
+        error: result.addPaymentToOrder?.message || 'Payment failed',
       });
     }
   }

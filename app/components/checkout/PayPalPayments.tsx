@@ -11,17 +11,18 @@ export function PayPalPayments({
   paymentError?: string;
 }) {
   const { t } = useTranslation();
-  const actionData = useActionData<{ approvalUrl?: string }>();
+  const actionData = useActionData<{ approvalUrl?: string; error?: string }>();
   const navigation = useNavigation();
-  const [error, setError] = useState('');
 
   if (actionData?.approvalUrl) {
     window.location.href = actionData.approvalUrl;
   }
 
+  const currentError = actionData?.error || paymentError;
+
   return (
     <div className="flex flex-col items-center">
-      {paymentError && (
+      {currentError && (
         <div className="rounded-md bg-red-50 p-4 mb-8">
           <div className="flex">
             <div className="flex-shrink-0">
@@ -33,16 +34,7 @@ export function PayPalPayments({
               <h3 className="text-sm font-medium text-red-800">
                 {t('checkout.paymentErrorMessage')}
               </h3>
-              <div className="mt-2 text-sm text-red-700">{paymentError}</div>
-            </div>
-          </div>
-        </div>
-      )}
-      {error && (
-        <div className="rounded-md bg-red-50 p-4 mb-8">
-          <div className="flex">
-            <div className="ml-3">
-              <div className="mt-2 text-sm text-red-700">{error}</div>
+              <div className="mt-2 text-sm text-red-700">{currentError}</div>
             </div>
           </div>
         </div>

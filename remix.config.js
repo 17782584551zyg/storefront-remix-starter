@@ -46,6 +46,9 @@ const commonConfig = {
       // API routes
       route('api/active-order', 'routes/api.active-order.tsx');
       route('api/logout', 'routes/api.logout.ts');
+      
+      // PayPal return route
+      route('paypal-return', 'routes/paypal-return.tsx');
     });
   },
 };
