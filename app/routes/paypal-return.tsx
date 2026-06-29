@@ -23,19 +23,19 @@ export async function loader({ request }: DataFunctionArgs) {
       return redirect('/');
     }
     
-    console.log('[PayPal Return] Found order:', order.code);
+    console.log('[PayPal Return] Found order:', order.code, 'state:', order.state);
     
     const lastPayment = order.payments?.[order.payments.length - 1];
     
     if (!lastPayment) {
-      console.error('[PayPal Return] Payment not found');
+      console.error('[PayPal Return] Payment not found for order:', order.code);
       return redirect('/checkout/payment');
     }
     
-    console.log('[PayPal Return] Payment state:', lastPayment.state);
+    console.log('[PayPal Return] Payment state:', lastPayment.state, 'id:', lastPayment.id);
     
     if (lastPayment.state === 'Settled') {
-      console.log('[PayPal Return] Payment already settled');
+      console.log('[PayPal Return] Payment already settled, redirecting to confirmation');
       return redirect(`/checkout/confirmation/${order.code}`);
     }
     
@@ -47,20 +47,48 @@ export async function loader({ request }: DataFunctionArgs) {
         { request },
       );
       
-      console.log('[PayPal Return] Settle result:', settleResult);
+      console.log('[PayPal Return] Settle result full:', JSON.stringify(settleResult, null, 2));
       
-      if (settleResult.settlePayment.__typename === 'Payment' && settleResult.settlePayment.state === 'Settled') {
-        console.log('[PayPal Return] Payment settled, transitioning order state');
-        await transitionOrderToState('PaymentSettled', { request });
-        return redirect(`/checkout/confirmation/${order.code}`);
+      if (settleResult.settlePayment) {
+        const paymentResult = settleResult.settlePayment;
+        
+        if (paymentResult.__typename === 'Payment') {
+          console.log('[PayPal Return] Payment settled successfully, state:', paymentResult.state);
+          
+          if (paymentResult.state === 'Settled') {
+            console.log('[PayPal Return] Transitioning order to PaymentSettled');
+            
+            const transitionResult = await transitionOrderToState('PaymentSettled', { request });
+            
+            console.log('[PayPal Return] Transition result:', JSON.stringify(transitionResult, null, 2));
+            
+            if (transitionResult.transitionOrderToState) {
+              const orderResult = transitionResult.transitionOrderToState;
+              
+              if (orderResult.__typename === 'Order') {
+                console.log('[PayPal Return] Order state transitioned successfully, redirecting to confirmation');
+                return redirect(`/checkout/confirmation/${order.code}`);
+              } else {
+                console.error('[PayPal Return] Order state transition failed:', orderResult);
+              }
+            } else {
+              console.error('[PayPal Return] transitionOrderToState returned undefined');
+            }
+          } else {
+            console.error('[PayPal Return] Payment not settled after settlement attempt, state:', paymentResult.state);
+          }
+        } else {
+          console.error('[PayPal Return] Settlement failed with error:', paymentResult);
+        }
+      } else {
+        console.error('[PayPal Return] settlePayment returned undefined result');
       }
-      
-      console.error('[PayPal Return] Payment settlement failed');
     } else {
       console.error('[PayPal Return] Payment is not Authorized, current state:', lastPayment.state);
     }
   } catch (e) {
-    console.error('[PayPal Return] Error:', e);
+    console.error('[PayPal Return] Unexpected error:', e);
+    console.error('[PayPal Return] Error stack:', (e as Error).stack);
   }
   
   return redirect('/checkout/payment');
