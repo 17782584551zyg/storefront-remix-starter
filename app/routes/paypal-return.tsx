@@ -1,29 +1,24 @@
 import { DataFunctionArgs, redirect } from '@remix-run/server-runtime';
-import { getActiveOrder } from '~/providers/orders/order';
+import { getOrderByCode } from '~/providers/orders/order';
 import { settlePayment, transitionOrderToState } from '~/providers/checkout/checkout';
-import { getSessionStorage } from '~/sessions';
 
 export async function loader({ request }: DataFunctionArgs) {
   const url = new URL(request.url);
   const token = url.searchParams.get('token');
   const payerId = url.searchParams.get('PayerID');
+  const orderCode = url.searchParams.get('orderCode');
   
-  if (!token) {
+  if (!token || !orderCode) {
     return redirect('/checkout/payment');
   }
   
-  const session = await getSessionStorage().then((sessionStorage) =>
-    sessionStorage.getSession(request?.headers.get('Cookie')),
-  );
+  const order = await getOrderByCode(orderCode, { request });
   
-  const orderResult = await getActiveOrder({ request });
-  const activeOrder = orderResult.activeOrder;
-  
-  if (!activeOrder || !activeOrder.active) {
+  if (!order) {
     return redirect('/');
   }
   
-  const lastPayment = activeOrder.payments?.[activeOrder.payments.length - 1];
+  const lastPayment = order.payments?.[order.payments.length - 1];
   
   if (lastPayment && lastPayment.state === 'Authorized') {
     try {
@@ -34,7 +29,7 @@ export async function loader({ request }: DataFunctionArgs) {
       
       if (settleResult.settlePayment.__typename === 'Payment' && settleResult.settlePayment.state === 'Settled') {
         await transitionOrderToState('PaymentSettled', { request });
-        return redirect(`/checkout/confirmation/${activeOrder.code}`);
+        return redirect(`/checkout/confirmation/${order.code}`);
       }
     } catch (e) {
       console.error('PayPal settle payment error:', e);
