@@ -1210,8 +1210,8 @@ async function getFixedT(request) {
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import { jsx } from "react/jsx-runtime";
 var ABORT_DELAY = 5e3;
-async function handleCfRequest(request, responseStatusCode, responseHeaders, remixContext, jsx72) {
-  let body = await ReactDOM.renderToReadableStream(jsx72, {
+async function handleCfRequest(request, responseStatusCode, responseHeaders, remixContext, jsx76) {
+  let body = await ReactDOM.renderToReadableStream(jsx76, {
     signal: request.signal,
     onError(error) {
       console.error(error), responseStatusCode = 500;
@@ -1222,10 +1222,10 @@ async function handleCfRequest(request, responseStatusCode, responseHeaders, rem
     status: responseStatusCode
   });
 }
-async function handleNodeRequest(request, responseStatusCode, responseHeaders, remixContext, jsx72) {
+async function handleNodeRequest(request, responseStatusCode, responseHeaders, remixContext, jsx76) {
   let callbackName = isbot(request.headers.get("user-agent")) ? "onAllReady" : "onShellReady";
   return new Promise((resolve, reject) => {
-    let didError = !1, { pipe, abort } = ReactDOM.renderToPipeableStream(jsx72, {
+    let didError = !1, { pipe, abort } = ReactDOM.renderToPipeableStream(jsx76, {
       [callbackName]: async () => {
         let { PassThrough } = await safeRequireNodeDependency("node:stream"), { createReadableStreamFromReadable } = await safeRequireNodeDependency("@remix-run/node"), body = new PassThrough(), stream = createReadableStreamFromReadable(body);
         responseHeaders.set("Content-Type", "text/html"), resolve(
@@ -1253,13 +1253,13 @@ async function handleRequest(request, responseStatusCode, responseHeaders, remix
     ...i18n_default,
     lng
   });
-  let jsx72 = /* @__PURE__ */ jsx(I18nextProvider, { i18n: instance, children: /* @__PURE__ */ jsx(RemixServer, { context: remixContext, url: request.url }) });
+  let jsx76 = /* @__PURE__ */ jsx(I18nextProvider, { i18n: instance, children: /* @__PURE__ */ jsx(RemixServer, { context: remixContext, url: request.url }) });
   return (IS_CF_PAGES ? handleCfRequest : handleNodeRequest)(
     request,
     responseStatusCode,
     responseHeaders,
     remixContext,
-    jsx72
+    jsx76
   );
 }
 
@@ -1288,7 +1288,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-SC2MVBSY.css";
+var tailwind_default = "/build/_assets/tailwind-GDWWSZD2.css";
 
 // app/components/header/Header.tsx
 import { Link } from "@remix-run/react";
@@ -1326,11 +1326,11 @@ function classNames(...classes) {
 import { useTranslation as useTranslation2 } from "react-i18next";
 import { jsx as jsx2, jsxs } from "react/jsx-runtime";
 var navItems = [
-  { label: "\u6211\u4EEC\u7684\u670D\u52A1", href: "#features" },
-  { label: "\u89E3\u51B3\u65B9\u6848", href: "#services" },
-  { label: "\u4EA7\u54C1", href: "/collections" },
-  { label: "\u5173\u4E8E", href: "/about" },
-  { label: "\u8D44\u6E90", href: "#" }
+  { label: "Our Services", href: "/services" },
+  { label: "Solutions", href: "/services" },
+  { label: "Products", href: "/products" },
+  { label: "About", href: "/about" },
+  { label: "Resources", href: "/resources" }
 ];
 function Header({
   onCartIconClick,
@@ -2553,104 +2553,77 @@ gql4`
 // app/components/footer/Footer.tsx
 import { useTranslation as useTranslation5 } from "react-i18next";
 import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
-var footerLinks = {
-  services: [
-    { label: "\u5168\u7403\u4ED3\u50A8\u914D\u9001", href: "#features" },
-    { label: "\u4E13\u4E1A\u9009\u54C1\u6307\u5BFC", href: "#features" },
-    { label: "\u5168\u94FE\u8DEF\u7269\u6D41\u670D\u52A1", href: "#features" },
-    { label: "\u591A\u5E01\u79CD\u6536\u6B3E\u652F\u6301", href: "#features" }
-  ],
-  solutions: [
-    { label: "\u8DE8\u5883\u7535\u5546\u89E3\u51B3\u65B9\u6848", href: "#services" },
-    { label: "\u54C1\u724C\u51FA\u6D77\u65B9\u6848", href: "#services" },
-    { label: "\u4F9B\u5E94\u94FE\u4F18\u5316", href: "#services" },
-    { label: "\u6280\u672F\u652F\u6301\u670D\u52A1", href: "#services" }
-  ],
-  company: [
-    { label: "\u5173\u4E8E\u6211\u4EEC", href: "/about" },
-    { label: "\u65B0\u95FB\u52A8\u6001", href: "#" },
-    { label: "\u5408\u4F5C\u4F19\u4F34", href: "#partners" },
-    { label: "\u52A0\u5165\u6211\u4EEC", href: "#" }
-  ],
-  resources: [
-    { label: "\u5E2E\u52A9\u4E2D\u5FC3", href: "#" },
-    { label: "\u6587\u6863\u4E2D\u5FC3", href: "#" },
-    { label: "\u5E38\u89C1\u95EE\u9898", href: "#" },
-    { label: "\u8054\u7CFB\u6211\u4EEC", href: "#" }
-  ]
-};
 function Footer({
   collections
 }) {
   let { t } = useTranslation5();
-  return /* @__PURE__ */ jsx6("footer", { className: "bg-dark text-white", children: /* @__PURE__ */ jsxs5("div", { className: "max-w-7xl mx-auto px-6 py-16", children: [
+  return /* @__PURE__ */ jsx6("footer", { className: "bg-black text-white", children: /* @__PURE__ */ jsxs5("div", { className: "max-w-7xl mx-auto px-6 py-12", children: [
     /* @__PURE__ */ jsxs5("div", { className: "grid grid-cols-2 md:grid-cols-6 gap-8", children: [
-      /* @__PURE__ */ jsxs5("div", { className: "col-span-2", children: [
-        /* @__PURE__ */ jsxs5("h2", { className: "text-xl font-bold mb-4", children: [
-          /* @__PURE__ */ jsx6("span", { className: "text-primary", children: "JINGQO" }),
-          /* @__PURE__ */ jsx6("span", { className: "text-gray-300", children: "Sourcing" })
-        ] }),
-        /* @__PURE__ */ jsx6("p", { className: "text-gray-400 text-sm leading-relaxed mb-6", children: "\u4E13\u6CE8\u8DE8\u5883\u7535\u5546\u9886\u57DF\uFF0C\u63D0\u4F9B\u5168\u94FE\u8DEF\u670D\u52A1\u652F\u6301\uFF0C\u52A9\u529B\u4E2D\u56FD\u54C1\u724C\u8D70\u5411\u5168\u7403\u5E02\u573A\u3002" }),
-        /* @__PURE__ */ jsxs5("div", { className: "flex space-x-4", children: [
-          /* @__PURE__ */ jsx6("a", { href: "#", className: "w-10 h-10 bg-dark-light rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300", children: /* @__PURE__ */ jsx6("svg", { className: "w-5 h-5", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx6("path", { d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" }) }) }),
-          /* @__PURE__ */ jsx6("a", { href: "#", className: "w-10 h-10 bg-dark-light rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300", children: /* @__PURE__ */ jsx6("svg", { className: "w-5 h-5", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx6("path", { d: "M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 00-.079.038c-.21.375-.444.864-.608 1.25a18.566 18.566 0 00-5.487 0 12.36 12.36 0 00-.617-1.25A.077.077 0 008.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 00-.032.027C.533 9.093-.32 13.555.099 18.057a.082.082 0 00.031.057c1.833.893 3.803 1.363 5.814 1.363a.077.077 0 00.074-.041c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.093.252-.19.372-.287a.074.074 0 01.077-.01c3.928 1.764 8.18 1.764 12.062 0a.074.074 0 01.078.01c.12.098.245.195.372.288a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.074.042c1.986 0 3.954-.467 5.782-1.356a.061.061 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.538a.06.06 0 00-.031-.028z" }) }) }),
-          /* @__PURE__ */ jsx6("a", { href: "#", className: "w-10 h-10 bg-dark-light rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300", children: /* @__PURE__ */ jsx6("svg", { className: "w-5 h-5", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx6("path", { d: "M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 00-.079.038c-.21.375-.444.864-.608 1.25a18.566 18.566 0 00-5.487 0 12.36 12.36 0 00-.617-1.25A.077.077 0 008.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 00-.032.027C.533 9.093-.32 13.555.099 18.057a.082.082 0 00.031.057c1.833.893 3.803 1.363 5.814 1.363a.077.077 0 00.074-.041c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.093.252-.19.372-.287a.074.074 0 01.077-.01c3.928 1.764 8.18 1.764 12.062 0a.074.074 0 01.078.01c.12.098.245.195.372.288a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.074.042c1.986 0 3.954-.467 5.782-1.356a.061.061 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.538a.06.06 0 00-.031-.028z" }) }) }),
-          /* @__PURE__ */ jsx6("a", { href: "#", className: "w-10 h-10 bg-dark-light rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300", children: /* @__PURE__ */ jsx6("svg", { className: "w-5 h-5", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx6("path", { d: "M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.965 1.406-5.965s-.359-.72-.359-1.781c0-1.663.967-2.911 2.171-2.911 1.023 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.227 7.462-1.216 0-2.359-.631-2.75-1.378l-.748 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" }) }) })
+      /* @__PURE__ */ jsx6("div", { className: "col-span-2", children: /* @__PURE__ */ jsxs5("h2", { className: "text-xl font-bold mb-6", children: [
+        /* @__PURE__ */ jsx6("span", { className: "text-primary", children: "JINGQO" }),
+        /* @__PURE__ */ jsx6("span", { className: "text-gray-300", children: "Sourcing" })
+      ] }) }),
+      /* @__PURE__ */ jsxs5("div", { children: [
+        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "MAIN MENU" }),
+        /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Home" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/products", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Our Products" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/about", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "About Jingsourcing" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/payment-information", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Payment Information" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Information" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Sourcing Tutorial" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Payment Tutorial" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Visit Yiwu" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Our Blog" }) })
         ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
-        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-primary uppercase mb-4", children: "\u670D\u52A1" }),
-        /* @__PURE__ */ jsx6("ul", { className: "space-y-3", children: footerLinks.services.map((link) => /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6(
-          "a",
-          {
-            href: link.href,
-            className: "text-gray-400 hover:text-primary text-sm transition-colors duration-300",
-            children: link.label
-          }
-        ) }, link.label)) })
+        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "OUR SERVICE" }),
+        /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/services", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Sourcing & Purchasing" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Dropshipping Service" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Extra Service" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Who We Support" }) })
+        ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
-        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-primary uppercase mb-4", children: "\u89E3\u51B3\u65B9\u6848" }),
-        /* @__PURE__ */ jsx6("ul", { className: "space-y-3", children: footerLinks.solutions.map((link) => /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6(
-          "a",
-          {
-            href: link.href,
-            className: "text-gray-400 hover:text-primary text-sm transition-colors duration-300",
-            children: link.label
-          }
-        ) }, link.label)) })
+        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "OUR SOLUTIONS" }),
+        /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Private Label" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Product Development" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Solution" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Amazon FBA" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Quality Control" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Credit Payment Terms" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Graphic Design" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Affiliates Program" }) })
+        ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
-        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-primary uppercase mb-4", children: "\u516C\u53F8" }),
-        /* @__PURE__ */ jsx6("ul", { className: "space-y-3", children: footerLinks.company.map((link) => /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6(
-          "a",
-          {
-            href: link.href,
-            className: "text-gray-400 hover:text-primary text-sm transition-colors duration-300",
-            children: link.label
-          }
-        ) }, link.label)) })
+        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "CONTACT US" }),
+        /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm", children: "Email:" }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "mailto:info@jingsourcing.com", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "info@jingsourcing.com" }) }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-3", children: "Tel:" }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "tel:+18653018888", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+1 865 301 8888" }) }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "(Call from outside China)" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-3", children: "Tel:" }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "tel:+864009966066", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+86 400 996 6066" }) }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "(Call from China)" })
+        ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
-        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-primary uppercase mb-4", children: "\u8D44\u6E90" }),
-        /* @__PURE__ */ jsx6("ul", { className: "space-y-3", children: footerLinks.resources.map((link) => /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6(
-          "a",
-          {
-            href: link.href,
-            className: "text-gray-400 hover:text-primary text-sm transition-colors duration-300",
-            children: link.label
-          }
-        ) }, link.label)) })
+        /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "WORKING HOURS" }),
+        /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "Monday to Friday" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "9:00 AM - 6:00 PM" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-2", children: "Saturday" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "9:00 AM - 4:00 PM" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-2", children: "(China Standard Time)" })
+        ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx6("div", { className: "mt-12 pt-8 border-t border-dark-light", children: /* @__PURE__ */ jsxs5("div", { className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0", children: [
-      /* @__PURE__ */ jsx6("p", { className: "text-gray-500 text-sm", children: "\xA9 2024 JINGQO Sourcing. All rights reserved." }),
-      /* @__PURE__ */ jsxs5("div", { className: "flex space-x-6", children: [
-        /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors duration-300", children: "\u9690\u79C1\u653F\u7B56" }),
-        /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors duration-300", children: "\u670D\u52A1\u6761\u6B3E" }),
-        /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors duration-300", children: "Cookie\u8BBE\u7F6E" })
-      ] })
-    ] }) })
+    /* @__PURE__ */ jsx6("div", { className: "mt-8 pt-8 border-t border-gray-800", children: /* @__PURE__ */ jsx6("div", { className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0", children: /* @__PURE__ */ jsx6("p", { className: "text-gray-500 text-sm", children: "Copyright 2026 | All Rights Reserved | Powered by Jingsourcing" }) }) })
   ] }) });
 }
 
@@ -4114,6 +4087,88 @@ function NewAddress() {
   ] }) });
 }
 
+// app/routes/payment-information.tsx
+var payment_information_exports = {};
+__export(payment_information_exports, {
+  default: () => PaymentInformationPage
+});
+import { jsx as jsx21, jsxs as jsxs17 } from "react/jsx-runtime";
+function PaymentInformationPage() {
+  return /* @__PURE__ */ jsxs17("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsx21("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs17("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsx21("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Payment Methods Accepted by Jingsourcing" }),
+      /* @__PURE__ */ jsx21("div", { className: "w-24 h-1 bg-primary mx-auto rounded-full" }),
+      /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mt-6 max-w-2xl mx-auto", children: "The official payment methods that Jingsourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@jingsourcing.com for further confirmation." })
+    ] }) }),
+    /* @__PURE__ */ jsx21("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxs17("div", { className: "max-w-4xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxs17("div", { className: "mb-12", children: [
+        /* @__PURE__ */ jsx21("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "1. Wire Transfer From All Countries" }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-4", children: "Wire transfer is the most frequently used method in international trading with the lowest transfer fee ($20 to $40 based on banks for any amount of USD payments)." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-6", children: "Wire transfer is the most frequently used method in international trading with the lowest transfer fee ($20 to $40 based on banks for any amount of USD payments)." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-8", children: "You can finish wire transfer by visiting local banks or using online wire transfer companies like Veem ($20 fee), Wise ($10-$30 fees). Please note we only accept USD payments." }),
+        /* @__PURE__ */ jsxs17("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: [
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Account Name:" }),
+            " Jingqosource Trading Co., Limited"
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Account Number:" }),
+            " 621483010782818345"
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Account Address:" }),
+            " Room 101, 828 Chengxin Ave, Yiwu, Zhejiang, China, Post code 322000."
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "SWIFT / T Code:" }),
+            " SZDBCCNBS"
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Beneficiary Bank:" }),
+            " PING AN BANK CO., LTD"
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Bank Address:" }),
+            " NO. 5047, ROAD SHENNAN DONG, SHENZHEN, P. R. CHINA"
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs17("div", { className: "mb-12", children: [
+        /* @__PURE__ */ jsx21("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "2. Payoneer" }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-4", children: "Payoneer is quite popular with Amazon sellers to withdraw money from Amazon and arrange payment to suppliers. If you already have a Payoneer account and it has balance, you can directly pay to our Payoneer account." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-6", children: "Payoneer is quite popular with Amazon sellers to withdraw money from Amazon and arrange payment to suppliers. If you already have a Payoneer account and it has balance, you can directly pay to our Payoneer account." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-8", children: "Payoneer charges $1 fee for paying us in this way, but you still need to pay 0.5% more of the amount if you utilize the balance of Payoneer account, because it's the fee charged by Payoneer from our side." }),
+        /* @__PURE__ */ jsxs17("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: [
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Our Payoneer Account:" }),
+            " PAY@JINGQSOURCING.COM"
+          ] }),
+          /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+            /* @__PURE__ */ jsx21("strong", { children: "Account Name:" }),
+            " Yiwu Jingqsourcing Ecommerce Co., Limited (\u4E49\u4E4C\u5E02\u4EAC\u797A\u4F9B\u5E94\u94FE\u7535\u5B50\u5546\u52A1\u6709\u9650\u516C\u53F8)"
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs17("div", { className: "mb-12", children: [
+        /* @__PURE__ */ jsx21("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "3. PayPal" }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-6", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-8", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }),
+        /* @__PURE__ */ jsx21("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: /* @__PURE__ */ jsxs17("p", { className: "text-gray-700", children: [
+          /* @__PURE__ */ jsx21("strong", { children: "Our PayPal Account:" }),
+          " PAY@JINGQSOURCING.COM"
+        ] }) })
+      ] }),
+      /* @__PURE__ */ jsxs17("div", { children: [
+        /* @__PURE__ */ jsx21("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "4. Alibaba Trade Assurance" }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-4", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-6", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600 mb-4", children: "To finish the payment, you need to provide the Alibaba account email to your agent. Then your agent will help create a Trade Assurance Order on Alibaba, and guide you to finish the payment." }),
+        /* @__PURE__ */ jsx21("p", { className: "text-gray-600", children: "Please note that you need to pay 2% more of the amount, because it's the fee charged by Alibaba from our side. Each payment should be less than $5,000, or we need to split the amount into several payments." })
+      ] })
+    ] }) })
+  ] });
+}
+
 // app/routes/account.addresses.tsx
 var account_addresses_exports = {};
 __export(account_addresses_exports, {
@@ -4128,18 +4183,18 @@ import { json as json4 } from "@remix-run/server-runtime";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { Link as Link5 } from "@remix-run/react";
 import { useTranslation as useTranslation14 } from "react-i18next";
-import { Fragment as Fragment4, jsx as jsx21, jsxs as jsxs17 } from "react/jsx-runtime";
+import { Fragment as Fragment4, jsx as jsx22, jsxs as jsxs18 } from "react/jsx-runtime";
 function AddAddressCard() {
   let { t } = useTranslation14();
-  return /* @__PURE__ */ jsx21(Fragment4, { children: /* @__PURE__ */ jsxs17(
+  return /* @__PURE__ */ jsx22(Fragment4, { children: /* @__PURE__ */ jsxs18(
     Link5,
     {
       preventScrollReset: !0,
       className: "border border-gray-200 p-5 min-h-[220px] h-full w-full flex flex-col justify-between",
       to: "/account/addresses/new",
       children: [
-        /* @__PURE__ */ jsx21("span", { className: "text-base-semi", children: t("address.new") }),
-        /* @__PURE__ */ jsx21(PlusIcon, { className: "w-6 h-6" })
+        /* @__PURE__ */ jsx22("span", { className: "text-base-semi", children: t("address.new") }),
+        /* @__PURE__ */ jsx22(PlusIcon, { className: "w-6 h-6" })
       ]
     }
   ) });
@@ -4159,40 +4214,40 @@ import { useState as useState5 } from "react";
 
 // app/components/ErrorMessage.tsx
 import { XCircleIcon as XCircleIcon3 } from "@heroicons/react/24/solid";
-import { jsx as jsx22, jsxs as jsxs18 } from "react/jsx-runtime";
+import { jsx as jsx23, jsxs as jsxs19 } from "react/jsx-runtime";
 function ErrorMessage({
   heading,
   message
 }) {
-  return /* @__PURE__ */ jsx22("div", { className: "rounded-md bg-red-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxs18("div", { className: "flex", children: [
-    /* @__PURE__ */ jsx22("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx22(XCircleIcon3, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }) }),
-    /* @__PURE__ */ jsxs18("div", { className: "ml-3", children: [
-      /* @__PURE__ */ jsx22("h3", { className: "text-sm font-medium text-red-800", children: heading }),
-      /* @__PURE__ */ jsx22("p", { className: "text-sm text-red-700 mt-2", children: message })
+  return /* @__PURE__ */ jsx23("div", { className: "rounded-md bg-red-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxs19("div", { className: "flex", children: [
+    /* @__PURE__ */ jsx23("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx23(XCircleIcon3, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }) }),
+    /* @__PURE__ */ jsxs19("div", { className: "ml-3", children: [
+      /* @__PURE__ */ jsx23("h3", { className: "text-sm font-medium text-red-800", children: heading }),
+      /* @__PURE__ */ jsx23("p", { className: "text-sm text-red-700 mt-2", children: message })
     ] })
   ] }) });
 }
 
 // app/components/account/EditAddressCard.tsx
 import { useTranslation as useTranslation15 } from "react-i18next";
-import { Fragment as Fragment5, jsx as jsx23, jsxs as jsxs19 } from "react/jsx-runtime";
+import { Fragment as Fragment5, jsx as jsx24, jsxs as jsxs20 } from "react/jsx-runtime";
 function EditAddressCard({
   address,
   isActive = !1
 }) {
   let setShipping = useFetcher2(), setBilling = useFetcher2(), deleteAddress = useFetcher2(), [isDeleteModalVisible, setDeleteModalVisible] = useState5(!1), { t } = useTranslation15();
-  return /* @__PURE__ */ jsxs19(Fragment5, { children: [
-    /* @__PURE__ */ jsx23(
+  return /* @__PURE__ */ jsxs20(Fragment5, { children: [
+    /* @__PURE__ */ jsx24(
       Modal_default,
       {
         isOpen: isDeleteModalVisible,
         close: () => setDeleteModalVisible(deleteAddress.state !== "idle"),
-        children: /* @__PURE__ */ jsxs19(deleteAddress.Form, { method: "post", preventScrollReset: !0, children: [
-          /* @__PURE__ */ jsx23(Modal_default.Title, { children: t("address.deleteModal.title") }),
-          /* @__PURE__ */ jsx23(Modal_default.Body, { children: /* @__PURE__ */ jsxs19("div", { className: "space-y-4 my-4", children: [
+        children: /* @__PURE__ */ jsxs20(deleteAddress.Form, { method: "post", preventScrollReset: !0, children: [
+          /* @__PURE__ */ jsx24(Modal_default.Title, { children: t("address.deleteModal.title") }),
+          /* @__PURE__ */ jsx24(Modal_default.Body, { children: /* @__PURE__ */ jsxs20("div", { className: "space-y-4 my-4", children: [
             t("address.deleteModal.confirmation"),
-            /* @__PURE__ */ jsx23("input", { type: "hidden", name: "id", value: address.id }),
-            deleteAddress.data && /* @__PURE__ */ jsx23(
+            /* @__PURE__ */ jsx24("input", { type: "hidden", name: "id", value: address.id }),
+            deleteAddress.data && /* @__PURE__ */ jsx24(
               ErrorMessage,
               {
                 heading: t("address.deleteModal.error"),
@@ -4200,8 +4255,8 @@ function EditAddressCard({
               }
             )
           ] }) }),
-          /* @__PURE__ */ jsxs19(Modal_default.Footer, { children: [
-            /* @__PURE__ */ jsx23(
+          /* @__PURE__ */ jsxs20(Modal_default.Footer, { children: [
+            /* @__PURE__ */ jsx24(
               Button,
               {
                 type: "button",
@@ -4210,7 +4265,7 @@ function EditAddressCard({
                 children: t("common.cancel")
               }
             ),
-            /* @__PURE__ */ jsx23(
+            /* @__PURE__ */ jsx24(
               HighlightedButton,
               {
                 type: "submit",
@@ -4225,7 +4280,7 @@ function EditAddressCard({
         ] })
       }
     ),
-    /* @__PURE__ */ jsxs19(
+    /* @__PURE__ */ jsxs20(
       "div",
       {
         className: clsx6(
@@ -4235,44 +4290,44 @@ function EditAddressCard({
           }
         ),
         children: [
-          /* @__PURE__ */ jsxs19("div", { className: "flex justify-between", children: [
-            /* @__PURE__ */ jsxs19("div", { className: "flex flex-col", children: [
-              /* @__PURE__ */ jsx23("span", { className: "text-left text-base-semi", children: address.fullName }),
-              address.company && /* @__PURE__ */ jsx23("span", { className: "text-small-regular text-gray-700", children: address.company }),
-              /* @__PURE__ */ jsxs19("div", { className: "flex flex-col text-left text-base-regular mt-2", children: [
-                /* @__PURE__ */ jsxs19("span", { children: [
+          /* @__PURE__ */ jsxs20("div", { className: "flex justify-between", children: [
+            /* @__PURE__ */ jsxs20("div", { className: "flex flex-col", children: [
+              /* @__PURE__ */ jsx24("span", { className: "text-left text-base-semi", children: address.fullName }),
+              address.company && /* @__PURE__ */ jsx24("span", { className: "text-small-regular text-gray-700", children: address.company }),
+              /* @__PURE__ */ jsxs20("div", { className: "flex flex-col text-left text-base-regular mt-2", children: [
+                /* @__PURE__ */ jsxs20("span", { children: [
                   address.streetLine1,
-                  address.streetLine2 && /* @__PURE__ */ jsxs19("span", { children: [
+                  address.streetLine2 && /* @__PURE__ */ jsxs20("span", { children: [
                     ", ",
                     address.streetLine2
                   ] })
                 ] }),
-                /* @__PURE__ */ jsxs19("span", { children: [
+                /* @__PURE__ */ jsxs20("span", { children: [
                   address.postalCode,
                   ", ",
                   address.city
                 ] }),
-                /* @__PURE__ */ jsxs19("span", { children: [
+                /* @__PURE__ */ jsxs20("span", { children: [
                   address.province && `${address.province}, `,
                   address.country?.code?.toUpperCase()
                 ] })
               ] })
             ] }),
-            (address.defaultShippingAddress || address.defaultBillingAddress) && /* @__PURE__ */ jsxs19("div", { className: "text-end text-gray-500 uppercase tracking-wider", children: [
-              /* @__PURE__ */ jsx23("span", { className: "block text-sm font-medium", children: t("common.default") }),
-              /* @__PURE__ */ jsxs19("span", { className: "block text-xs mt-1", children: [
+            (address.defaultShippingAddress || address.defaultBillingAddress) && /* @__PURE__ */ jsxs20("div", { className: "text-end text-gray-500 uppercase tracking-wider", children: [
+              /* @__PURE__ */ jsx24("span", { className: "block text-sm font-medium", children: t("common.default") }),
+              /* @__PURE__ */ jsxs20("span", { className: "block text-xs mt-1", children: [
                 address.defaultShippingAddress && t("common.shipping"),
-                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxs19(Fragment5, { children: [
-                  /* @__PURE__ */ jsx23("br", {}),
+                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxs20(Fragment5, { children: [
+                  /* @__PURE__ */ jsx24("br", {}),
                   "&\xA0"
                 ] }),
                 address.defaultBillingAddress && t("common.billing")
               ] })
             ] })
           ] }),
-          /* @__PURE__ */ jsxs19("div", { className: "flex flex-col md:flex-row items-start gap-4", children: [
-            /* @__PURE__ */ jsxs19("div", { className: "flex items-center gap-4", children: [
-              /* @__PURE__ */ jsxs19(
+          /* @__PURE__ */ jsxs20("div", { className: "flex flex-col md:flex-row items-start gap-4", children: [
+            /* @__PURE__ */ jsxs20("div", { className: "flex items-center gap-4", children: [
+              /* @__PURE__ */ jsxs20(
                 Link6,
                 {
                   role: "button",
@@ -4280,12 +4335,12 @@ function EditAddressCard({
                   className: "text-gray-700 flex items-center gap-x-2",
                   to: `/account/addresses/${address.id}`,
                   children: [
-                    /* @__PURE__ */ jsx23(PencilIcon, { className: "w-4 h-4" }),
+                    /* @__PURE__ */ jsx24(PencilIcon, { className: "w-4 h-4" }),
                     t("common.edit")
                   ]
                 }
               ),
-              /* @__PURE__ */ jsxs19(
+              /* @__PURE__ */ jsxs20(
                 "button",
                 {
                   type: "button",
@@ -4294,16 +4349,16 @@ function EditAddressCard({
                   disabled: deleteAddress.state !== "idle",
                   onClick: () => setDeleteModalVisible(!0),
                   children: [
-                    deleteAddress.state === "idle" ? /* @__PURE__ */ jsx23(TrashIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx23(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
+                    deleteAddress.state === "idle" ? /* @__PURE__ */ jsx24(TrashIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx24(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
                     t("common.remove")
                   ]
                 }
               )
             ] }),
-            (!address.defaultShippingAddress || !address.defaultBillingAddress) && /* @__PURE__ */ jsx23("div", { children: /* @__PURE__ */ jsxs19("span", { className: "text-gray-500 flex gap-4", children: [
-              !address.defaultShippingAddress && /* @__PURE__ */ jsxs19(setShipping.Form, { method: "post", children: [
-                /* @__PURE__ */ jsx23("input", { type: "hidden", name: "id", value: address.id }),
-                /* @__PURE__ */ jsxs19(
+            (!address.defaultShippingAddress || !address.defaultBillingAddress) && /* @__PURE__ */ jsx24("div", { children: /* @__PURE__ */ jsxs20("span", { className: "text-gray-500 flex gap-4", children: [
+              !address.defaultShippingAddress && /* @__PURE__ */ jsxs20(setShipping.Form, { method: "post", children: [
+                /* @__PURE__ */ jsx24("input", { type: "hidden", name: "id", value: address.id }),
+                /* @__PURE__ */ jsxs20(
                   "button",
                   {
                     name: "_action",
@@ -4313,15 +4368,15 @@ function EditAddressCard({
                     className: "text-gray-700 flex items-center gap-2",
                     disabled: setShipping.state !== "idle",
                     children: [
-                      setShipping.state === "idle" ? /* @__PURE__ */ jsx23(TruckIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx23(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
+                      setShipping.state === "idle" ? /* @__PURE__ */ jsx24(TruckIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx24(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
                       t("common.shipping")
                     ]
                   }
                 )
               ] }),
-              !address.defaultBillingAddress && /* @__PURE__ */ jsxs19(setBilling.Form, { method: "post", children: [
-                /* @__PURE__ */ jsx23("input", { type: "hidden", name: "id", value: address.id }),
-                /* @__PURE__ */ jsxs19(
+              !address.defaultBillingAddress && /* @__PURE__ */ jsxs20(setBilling.Form, { method: "post", children: [
+                /* @__PURE__ */ jsx24("input", { type: "hidden", name: "id", value: address.id }),
+                /* @__PURE__ */ jsxs20(
                   "button",
                   {
                     name: "_action",
@@ -4331,7 +4386,7 @@ function EditAddressCard({
                     className: "text-gray-700 flex items-center gap-2",
                     disabled: setBilling.state !== "idle",
                     children: [
-                      setBilling.state === "idle" ? /* @__PURE__ */ jsx23(CreditCardIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx23(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
+                      setBilling.state === "idle" ? /* @__PURE__ */ jsx24(CreditCardIcon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsx24(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }),
                       t("common.billing")
                     ]
                   }
@@ -4346,7 +4401,7 @@ function EditAddressCard({
 }
 
 // app/routes/account.addresses.tsx
-import { Fragment as Fragment6, jsx as jsx24, jsxs as jsxs20 } from "react/jsx-runtime";
+import { Fragment as Fragment6, jsx as jsx25, jsxs as jsxs21 } from "react/jsx-runtime";
 async function loader6({ request }) {
   let activeCustomerAddresses = (await getActiveCustomerAddresses({ request })).activeCustomer;
   return json4({ activeCustomerAddresses });
@@ -4385,11 +4440,11 @@ async function action4({ request }) {
 }
 function AccountAddresses() {
   let { activeCustomerAddresses } = useLoaderData7();
-  return /* @__PURE__ */ jsxs20(Fragment6, { children: [
-    /* @__PURE__ */ jsx24(Outlet2, {}),
-    /* @__PURE__ */ jsx24("div", { className: "w-full", children: /* @__PURE__ */ jsxs20("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 mt-4", children: [
-      /* @__PURE__ */ jsx24(AddAddressCard, {}),
-      activeCustomerAddresses?.addresses.map((address) => /* @__PURE__ */ jsx24(EditAddressCard, { address }, address.id))
+  return /* @__PURE__ */ jsxs21(Fragment6, { children: [
+    /* @__PURE__ */ jsx25(Outlet2, {}),
+    /* @__PURE__ */ jsx25("div", { className: "w-full", children: /* @__PURE__ */ jsxs21("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 mt-4", children: [
+      /* @__PURE__ */ jsx25(AddAddressCard, {}),
+      activeCustomerAddresses?.addresses.map((address) => /* @__PURE__ */ jsx25(EditAddressCard, { address }, address.id))
     ] }) })
   ] });
 }
@@ -4411,18 +4466,18 @@ import { ValidatedForm as ValidatedForm2 } from "remix-validated-form";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { Link as Link7 } from "@remix-run/react";
 import { useTranslation as useTranslation16 } from "react-i18next";
-import { jsx as jsx25, jsxs as jsxs21 } from "react/jsx-runtime";
+import { jsx as jsx26, jsxs as jsxs22 } from "react/jsx-runtime";
 function Breadcrumbs({
   items
 }) {
   let { t } = useTranslation16();
-  return /* @__PURE__ */ jsx25("nav", { className: "flex", "aria-label": "Breadcrumb", children: /* @__PURE__ */ jsxs21("ol", { role: "list", className: "flex items-center space-x-1 md:space-x-4", children: [
-    /* @__PURE__ */ jsx25("li", { children: /* @__PURE__ */ jsx25("div", { children: /* @__PURE__ */ jsxs21(Link7, { to: "/", className: "text-gray-400 hover:text-gray-500", children: [
-      /* @__PURE__ */ jsx25(HomeIcon, { className: "flex-shrink-0 h-5 w-5", "aria-hidden": "true" }),
-      /* @__PURE__ */ jsx25("span", { className: "sr-only", children: t("home") })
+  return /* @__PURE__ */ jsx26("nav", { className: "flex", "aria-label": "Breadcrumb", children: /* @__PURE__ */ jsxs22("ol", { role: "list", className: "flex items-center space-x-1 md:space-x-4", children: [
+    /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsx26("div", { children: /* @__PURE__ */ jsxs22(Link7, { to: "/", className: "text-gray-400 hover:text-gray-500", children: [
+      /* @__PURE__ */ jsx26(HomeIcon, { className: "flex-shrink-0 h-5 w-5", "aria-hidden": "true" }),
+      /* @__PURE__ */ jsx26("span", { className: "sr-only", children: t("home") })
     ] }) }) }),
-    items.filter((item) => item.name !== "__root_collection__").map((item, index) => /* @__PURE__ */ jsx25("li", { children: /* @__PURE__ */ jsxs21("div", { className: "flex items-center", children: [
-      /* @__PURE__ */ jsx25(
+    items.filter((item) => item.name !== "__root_collection__").map((item, index) => /* @__PURE__ */ jsx26("li", { children: /* @__PURE__ */ jsxs22("div", { className: "flex items-center", children: [
+      /* @__PURE__ */ jsx26(
         "svg",
         {
           className: "flex-shrink-0 h-5 w-5 text-gray-300",
@@ -4430,10 +4485,10 @@ function Breadcrumbs({
           fill: "currentColor",
           viewBox: "0 0 20 20",
           "aria-hidden": "true",
-          children: /* @__PURE__ */ jsx25("path", { d: "M5.555 17.776l8-16 .894.448-8 16-.894-.448z" })
+          children: /* @__PURE__ */ jsx26("path", { d: "M5.555 17.776l8-16 .894.448-8 16-.894-.448z" })
         }
       ),
-      /* @__PURE__ */ jsx25(
+      /* @__PURE__ */ jsx26(
         Link7,
         {
           to: "/collections/" + item.slug,
@@ -4447,26 +4502,26 @@ function Breadcrumbs({
 
 // app/components/collections/CollectionCard.tsx
 import { Link as Link8 } from "@remix-run/react";
-import { jsx as jsx26, jsxs as jsxs22 } from "react/jsx-runtime";
+import { jsx as jsx27, jsxs as jsxs23 } from "react/jsx-runtime";
 function CollectionCard({
   collection
 }) {
-  return /* @__PURE__ */ jsxs22(
+  return /* @__PURE__ */ jsxs23(
     Link8,
     {
       to: "/collections/" + collection.slug,
       prefetch: "intent",
       className: "max-w-[300px] relative rounded-lg overflow-hidden hover:opacity-75 xl:w-auto",
       children: [
-        /* @__PURE__ */ jsx26("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsx26("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsx26("img", { src: collection.featuredAsset?.preview + "?w=300&h=300" }) }) }),
-        /* @__PURE__ */ jsx26(
+        /* @__PURE__ */ jsx27("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsx27("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsx27("img", { src: collection.featuredAsset?.preview + "?w=300&h=300" }) }) }),
+        /* @__PURE__ */ jsx27(
           "span",
           {
             "aria-hidden": "true",
             className: "absolute w-full bottom-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
           }
         ),
-        /* @__PURE__ */ jsx26("span", { className: "absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white", children: collection.name })
+        /* @__PURE__ */ jsx27("span", { className: "absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white", children: collection.name })
       ]
     },
     collection.id
@@ -4510,22 +4565,22 @@ var FacetFilterTracker = class {
 // app/components/FiltersButton.tsx
 import { FunnelIcon } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation17 } from "react-i18next";
-import { jsx as jsx27, jsxs as jsxs23 } from "react/jsx-runtime";
+import { jsx as jsx28, jsxs as jsxs24 } from "react/jsx-runtime";
 function FiltersButton({
   filterCount,
   onClick
 }) {
   let { t } = useTranslation17();
-  return /* @__PURE__ */ jsxs23(
+  return /* @__PURE__ */ jsxs24(
     "button",
     {
       type: "button",
       className: "flex space-x-2 items-center border rounded p-2 ml-4 sm:ml-6 text-gray-400 hover:text-gray-500 lg:hidden",
       onClick,
       children: [
-        filterCount ? /* @__PURE__ */ jsx27("span", { className: "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-200 text-primary-800", children: filterCount }) : "",
-        /* @__PURE__ */ jsx27("span", { children: t("common.filters") }),
-        /* @__PURE__ */ jsx27(FunnelIcon, { className: "w-5 h-5", "aria-hidden": "true" })
+        filterCount ? /* @__PURE__ */ jsx28("span", { className: "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-200 text-primary-800", children: filterCount }) : "",
+        /* @__PURE__ */ jsx28("span", { children: t("common.filters") }),
+        /* @__PURE__ */ jsx28(FunnelIcon, { className: "w-5 h-5", "aria-hidden": "true" })
       ]
     }
   );
@@ -4538,22 +4593,22 @@ import { XMarkIcon as XMarkIcon3 } from "@heroicons/react/24/outline";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/solid";
 import { useSearchParams as useSearchParams2 } from "@remix-run/react";
 import { useTranslation as useTranslation18 } from "react-i18next";
-import { Fragment as Fragment8, jsx as jsx28, jsxs as jsxs24 } from "react/jsx-runtime";
+import { Fragment as Fragment8, jsx as jsx29, jsxs as jsxs25 } from "react/jsx-runtime";
 function FacetFilterControls({
   facetFilterTracker,
   mobileFiltersOpen,
   setMobileFiltersOpen
 }) {
   let [searchParams] = useSearchParams2(), q = searchParams.getAll("q"), { t } = useTranslation18();
-  return /* @__PURE__ */ jsxs24(Fragment8, { children: [
-    /* @__PURE__ */ jsx28(Transition3.Root, { show: mobileFiltersOpen, as: Fragment7, children: /* @__PURE__ */ jsxs24(
+  return /* @__PURE__ */ jsxs25(Fragment8, { children: [
+    /* @__PURE__ */ jsx29(Transition3.Root, { show: mobileFiltersOpen, as: Fragment7, children: /* @__PURE__ */ jsxs25(
       Dialog3,
       {
         as: "div",
         className: "relative z-40 lg:hidden",
         onClose: setMobileFiltersOpen,
         children: [
-          /* @__PURE__ */ jsx28(
+          /* @__PURE__ */ jsx29(
             Transition3.Child,
             {
               as: Fragment7,
@@ -4563,10 +4618,10 @@ function FacetFilterControls({
               leave: "transition-opacity ease-linear duration-300",
               leaveFrom: "opacity-100",
               leaveTo: "opacity-0",
-              children: /* @__PURE__ */ jsx28("div", { className: "fixed inset-0 bg-black bg-opacity-25" })
+              children: /* @__PURE__ */ jsx29("div", { className: "fixed inset-0 bg-black bg-opacity-25" })
             }
           ),
-          /* @__PURE__ */ jsx28("div", { className: "fixed inset-0 flex z-40", children: /* @__PURE__ */ jsx28(
+          /* @__PURE__ */ jsx29("div", { className: "fixed inset-0 flex z-40", children: /* @__PURE__ */ jsx29(
             Transition3.Child,
             {
               as: Fragment7,
@@ -4576,40 +4631,40 @@ function FacetFilterControls({
               leave: "transition ease-in-out duration-300 transform",
               leaveFrom: "translate-x-0",
               leaveTo: "translate-x-full",
-              children: /* @__PURE__ */ jsxs24(Dialog3.Panel, { className: "ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto", children: [
-                /* @__PURE__ */ jsxs24("div", { className: "px-4 flex items-center justify-between", children: [
-                  /* @__PURE__ */ jsx28("h2", { className: "text-lg font-medium text-gray-900", children: t("common.filters") }),
-                  /* @__PURE__ */ jsxs24(
+              children: /* @__PURE__ */ jsxs25(Dialog3.Panel, { className: "ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto", children: [
+                /* @__PURE__ */ jsxs25("div", { className: "px-4 flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsx29("h2", { className: "text-lg font-medium text-gray-900", children: t("common.filters") }),
+                  /* @__PURE__ */ jsxs25(
                     "button",
                     {
                       type: "button",
                       className: "-mr-2 w-10 h-10 bg-white p-2 rounded-md flex items-center justify-center text-gray-400",
                       onClick: () => setMobileFiltersOpen(!1),
                       children: [
-                        /* @__PURE__ */ jsx28("span", { className: "sr-only", children: t("common.closeMenu") }),
-                        /* @__PURE__ */ jsx28(XMarkIcon3, { className: "h-6 w-6", "aria-hidden": "true" })
+                        /* @__PURE__ */ jsx29("span", { className: "sr-only", children: t("common.closeMenu") }),
+                        /* @__PURE__ */ jsx29(XMarkIcon3, { className: "h-6 w-6", "aria-hidden": "true" })
                       ]
                     }
                   )
                 ] }),
-                /* @__PURE__ */ jsxs24("div", { className: "mt-4 border-t border-gray-200", children: [
-                  /* @__PURE__ */ jsx28("input", { type: "hidden", name: "q", value: q }),
-                  facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsx28(
+                /* @__PURE__ */ jsxs25("div", { className: "mt-4 border-t border-gray-200", children: [
+                  /* @__PURE__ */ jsx29("input", { type: "hidden", name: "q", value: q }),
+                  facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsx29(
                     Disclosure,
                     {
                       as: "div",
                       defaultOpen: !0,
                       className: "border-t border-gray-200 px-4 py-6",
-                      children: ({ open }) => /* @__PURE__ */ jsxs24(Fragment8, { children: [
-                        /* @__PURE__ */ jsx28("h3", { className: "-mx-2 -my-3 flow-root", children: /* @__PURE__ */ jsxs24(Disclosure.Button, { className: "px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500", children: [
-                          /* @__PURE__ */ jsx28("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
-                          /* @__PURE__ */ jsx28("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx28(
+                      children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment8, { children: [
+                        /* @__PURE__ */ jsx29("h3", { className: "-mx-2 -my-3 flow-root", children: /* @__PURE__ */ jsxs25(Disclosure.Button, { className: "px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500", children: [
+                          /* @__PURE__ */ jsx29("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
+                          /* @__PURE__ */ jsx29("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx29(
                             MinusSmallIcon,
                             {
                               className: "h-5 w-5",
                               "aria-hidden": "true"
                             }
-                          ) : /* @__PURE__ */ jsx28(
+                          ) : /* @__PURE__ */ jsx29(
                             PlusSmallIcon,
                             {
                               className: "h-5 w-5",
@@ -4617,12 +4672,12 @@ function FacetFilterControls({
                             }
                           ) })
                         ] }) }),
-                        /* @__PURE__ */ jsx28(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsx28("div", { className: "space-y-6", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxs24(
+                        /* @__PURE__ */ jsx29(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsx29("div", { className: "space-y-6", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxs25(
                           "div",
                           {
                             className: "flex items-center",
                             children: [
-                              /* @__PURE__ */ jsx28(
+                              /* @__PURE__ */ jsx29(
                                 "input",
                                 {
                                   id: `filter-mobile-${facet.id}-${optionIdx}`,
@@ -4637,7 +4692,7 @@ function FacetFilterControls({
                                   className: "h-4 w-4 border-gray-300 rounded text-primary-600 focus:ring-primary-500"
                                 }
                               ),
-                              /* @__PURE__ */ jsx28(
+                              /* @__PURE__ */ jsx29(
                                 "label",
                                 {
                                   htmlFor: `filter-mobile-${facet.id}-${optionIdx}`,
@@ -4660,27 +4715,27 @@ function FacetFilterControls({
         ]
       }
     ) }),
-    /* @__PURE__ */ jsxs24("div", { className: "hidden lg:block", children: [
-      /* @__PURE__ */ jsx28("input", { type: "hidden", name: "q", value: q }),
-      facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsx28(
+    /* @__PURE__ */ jsxs25("div", { className: "hidden lg:block", children: [
+      /* @__PURE__ */ jsx29("input", { type: "hidden", name: "q", value: q }),
+      facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsx29(
         Disclosure,
         {
           as: "div",
           defaultOpen: !0,
           className: "border-b border-gray-200 py-6",
-          children: ({ open }) => /* @__PURE__ */ jsxs24(Fragment8, { children: [
-            /* @__PURE__ */ jsx28("h3", { className: "-my-3 flow-root", children: /* @__PURE__ */ jsxs24(Disclosure.Button, { className: "py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500", children: [
-              /* @__PURE__ */ jsx28("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
-              /* @__PURE__ */ jsx28("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx28(
+          children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment8, { children: [
+            /* @__PURE__ */ jsx29("h3", { className: "-my-3 flow-root", children: /* @__PURE__ */ jsxs25(Disclosure.Button, { className: "py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500", children: [
+              /* @__PURE__ */ jsx29("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
+              /* @__PURE__ */ jsx29("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx29(
                 MinusSmallIcon,
                 {
                   className: "h-5 w-5",
                   "aria-hidden": "true"
                 }
-              ) : /* @__PURE__ */ jsx28(PlusSmallIcon, { className: "h-5 w-5", "aria-hidden": "true" }) })
+              ) : /* @__PURE__ */ jsx29(PlusSmallIcon, { className: "h-5 w-5", "aria-hidden": "true" }) })
             ] }) }),
-            /* @__PURE__ */ jsx28(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsx28("div", { className: "space-y-4", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxs24("div", { className: "flex items-center", children: [
-              /* @__PURE__ */ jsx28(
+            /* @__PURE__ */ jsx29(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsx29("div", { className: "space-y-4", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxs25("div", { className: "flex items-center", children: [
+              /* @__PURE__ */ jsx29(
                 "input",
                 {
                   id: `filter-${facet.id}-${optionIdx}`,
@@ -4693,7 +4748,7 @@ function FacetFilterControls({
                   className: "h-4 w-4 border-gray-300 rounded text-primary-600 focus:ring-primary-500"
                 }
               ),
-              /* @__PURE__ */ jsx28(
+              /* @__PURE__ */ jsx29(
                 "label",
                 {
                   htmlFor: `filter-${facet.id}-${optionIdx}`,
@@ -4712,7 +4767,7 @@ function FacetFilterControls({
 
 // app/components/products/ProductCard.tsx
 import { Link as Link9 } from "@remix-run/react";
-import { jsx as jsx29, jsxs as jsxs25 } from "react/jsx-runtime";
+import { jsx as jsx30, jsxs as jsxs26 } from "react/jsx-runtime";
 function ProductCard({
   productAsset,
   productName,
@@ -4720,8 +4775,8 @@ function ProductCard({
   priceWithTax,
   currencyCode
 }) {
-  return /* @__PURE__ */ jsxs25(Link9, { className: "flex flex-col", prefetch: "intent", to: `/products/${slug}`, children: [
-    /* @__PURE__ */ jsx29(
+  return /* @__PURE__ */ jsxs26(Link9, { className: "flex flex-col", prefetch: "intent", to: `/products/${slug}`, children: [
+    /* @__PURE__ */ jsx30(
       "img",
       {
         className: "rounded-xl flex-grow object-cover aspect-[7/8]",
@@ -4729,9 +4784,9 @@ function ProductCard({
         src: productAsset?.preview + "?w=300&h=400"
       }
     ),
-    /* @__PURE__ */ jsx29("div", { className: "h-2" }),
-    /* @__PURE__ */ jsx29("div", { className: "text-sm text-gray-700", children: productName }),
-    /* @__PURE__ */ jsx29("div", { className: "text-sm font-medium text-gray-900", children: /* @__PURE__ */ jsx29(Price, { priceWithTax, currencyCode }) })
+    /* @__PURE__ */ jsx30("div", { className: "h-2" }),
+    /* @__PURE__ */ jsx30("div", { className: "text-sm text-gray-700", children: productName }),
+    /* @__PURE__ */ jsx30("div", { className: "text-sm font-medium text-gray-900", children: /* @__PURE__ */ jsx30(Price, { priceWithTax, currencyCode }) })
   ] });
 }
 
@@ -4768,7 +4823,7 @@ import { ArrowPathIcon as ArrowPathIcon3 } from "@heroicons/react/24/solid";
 import { useNavigation as useNavigation3 } from "@remix-run/react";
 import clsx7 from "clsx";
 import { useTranslation as useTranslation19 } from "react-i18next";
-import { jsx as jsx30, jsxs as jsxs26 } from "react/jsx-runtime";
+import { jsx as jsx31, jsxs as jsxs27 } from "react/jsx-runtime";
 function Pagination({
   appliedPaginationLimit,
   allowedPaginationLimits: allowedPaginationLimits4,
@@ -4777,7 +4832,7 @@ function Pagination({
   ...props
 }) {
   let navigation = useNavigation3(), { t } = useTranslation19();
-  return /* @__PURE__ */ jsxs26(
+  return /* @__PURE__ */ jsxs27(
     "div",
     {
       ...props,
@@ -4786,16 +4841,16 @@ function Pagination({
         props.className
       ),
       children: [
-        /* @__PURE__ */ jsxs26("span", { className: "flex gap-4 items-center", children: [
-          navigation.state !== "idle" && /* @__PURE__ */ jsx30(ArrowPathIcon3, { className: "animate-spin h-6 w-6 text-gray-500" }),
-          /* @__PURE__ */ jsx30(
+        /* @__PURE__ */ jsxs27("span", { className: "flex gap-4 items-center", children: [
+          navigation.state !== "idle" && /* @__PURE__ */ jsx31(ArrowPathIcon3, { className: "animate-spin h-6 w-6 text-gray-500" }),
+          /* @__PURE__ */ jsx31(
             Select,
             {
               name: "limit",
               required: !0,
               noPlaceholder: !0,
               defaultValue: appliedPaginationLimit,
-              children: Array.from(allowedPaginationLimits4).map((x) => /* @__PURE__ */ jsxs26("option", { value: x, children: [
+              children: Array.from(allowedPaginationLimits4).map((x) => /* @__PURE__ */ jsxs27("option", { value: x, children: [
                 x,
                 " ",
                 t("common.perPage")
@@ -4803,8 +4858,8 @@ function Pagination({
             }
           )
         ] }),
-        /* @__PURE__ */ jsxs26("div", { className: "flex", role: "group", children: [
-          /* @__PURE__ */ jsx30(
+        /* @__PURE__ */ jsxs27("div", { className: "flex", role: "group", children: [
+          /* @__PURE__ */ jsx31(
             Button,
             {
               name: "page",
@@ -4815,7 +4870,7 @@ function Pagination({
               children: t("common.prev")
             }
           ),
-          /* @__PURE__ */ jsx30(
+          /* @__PURE__ */ jsx31(
             Button,
             {
               name: "page",
@@ -4834,24 +4889,24 @@ function Pagination({
 
 // app/components/products/NoResultsHint.tsx
 import { useTranslation as useTranslation20 } from "react-i18next";
-import { jsx as jsx31, jsxs as jsxs27 } from "react/jsx-runtime";
+import { jsx as jsx32, jsxs as jsxs28 } from "react/jsx-runtime";
 function NoResultsHint({
   facetFilterTracker,
   ...props
 }) {
   let { t } = useTranslation20();
-  return /* @__PURE__ */ jsxs27("div", { ...props, children: [
-    /* @__PURE__ */ jsx31("h2", { className: "text-2xl sm:text-4xl font-light tracking-tight text-gray-900", children: t("product.noResults") }),
+  return /* @__PURE__ */ jsxs28("div", { ...props, children: [
+    /* @__PURE__ */ jsx32("h2", { className: "text-2xl sm:text-4xl font-light tracking-tight text-gray-900", children: t("product.noResults") }),
     facetFilterTracker?.facetsWithValues.some(
       (f) => f.values.some((v) => v.selected)
-    ) && /* @__PURE__ */ jsx31("h3", { className: "text-lg sm:text-2xl font-light tracking-tight text-gray-900", children: t("product.filterTip") })
+    ) && /* @__PURE__ */ jsx32("h3", { className: "text-lg sm:text-2xl font-light tracking-tight text-gray-900", children: t("product.filterTip") })
   ] });
 }
 
 // app/components/products/FilterableProductGrid.tsx
 import { useRef as useRef4 } from "react";
 import { useTranslation as useTranslation21 } from "react-i18next";
-import { jsx as jsx32, jsxs as jsxs28 } from "react/jsx-runtime";
+import { jsx as jsx33, jsxs as jsxs29 } from "react/jsx-runtime";
 function FilterableProductGrid({
   result,
   resultWithoutFacetValueFilters,
@@ -4867,8 +4922,8 @@ function FilterableProductGrid({
     result,
     resultWithoutFacetValueFilters,
     facetValueIds
-  ), /* @__PURE__ */ jsxs28("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
-    /* @__PURE__ */ jsx32(
+  ), /* @__PURE__ */ jsxs29("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
+    /* @__PURE__ */ jsx33(
       FacetFilterControls,
       {
         facetFilterTracker: facetValuesTracker.current,
@@ -4876,10 +4931,10 @@ function FilterableProductGrid({
         setMobileFiltersOpen
       }
     ),
-    result.items.length > 0 ? /* @__PURE__ */ jsxs28("div", { className: "sm:col-span-5 lg:col-span-4 space-y-6", children: [
-      /* @__PURE__ */ jsx32("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: result.items.map((item) => /* @__PURE__ */ jsx32(ProductCard, { ...item }, item.productId)) }),
-      /* @__PURE__ */ jsxs28("div", { className: "flex flex-row justify-between items-center gap-4", children: [
-        /* @__PURE__ */ jsxs28("span", { className: "self-start text-gray-500 text-sm mt-2", children: [
+    result.items.length > 0 ? /* @__PURE__ */ jsxs29("div", { className: "sm:col-span-5 lg:col-span-4 space-y-6", children: [
+      /* @__PURE__ */ jsx33("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: result.items.map((item) => /* @__PURE__ */ jsx33(ProductCard, { ...item }, item.productId)) }),
+      /* @__PURE__ */ jsxs29("div", { className: "flex flex-row justify-between items-center gap-4", children: [
+        /* @__PURE__ */ jsxs29("span", { className: "self-start text-gray-500 text-sm mt-2", children: [
           t("product.showing"),
           " ",
           translatePaginationFrom(
@@ -4895,7 +4950,7 @@ function FilterableProductGrid({
             result.items.length
           )
         ] }),
-        /* @__PURE__ */ jsx32(
+        /* @__PURE__ */ jsx33(
           Pagination,
           {
             appliedPaginationLimit,
@@ -4905,7 +4960,7 @@ function FilterableProductGrid({
           }
         )
       ] })
-    ] }) : /* @__PURE__ */ jsx32(
+    ] }) : /* @__PURE__ */ jsx33(
       NoResultsHint,
       {
         facetFilterTracker: facetValuesTracker.current,
@@ -5106,7 +5161,7 @@ function filteredSearchLoaderFromPagination(allowedPaginationLimits4, pagination
 }
 
 // app/routes/collections.$slug.tsx
-import { jsx as jsx33, jsxs as jsxs29 } from "react/jsx-runtime";
+import { jsx as jsx34, jsxs as jsxs30 } from "react/jsx-runtime";
 var meta2 = ({ data }) => [
   {
     title: data?.collection ? `${data.collection?.name} - ${APP_META_TITLE}` : APP_META_TITLE
@@ -5154,10 +5209,10 @@ function CollectionSlug() {
     facetValueIds
   );
   let submit = useSubmit3(), { t } = useTranslation22();
-  return /* @__PURE__ */ jsxs29("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxs29("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ jsx33("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: collection.name }),
-      /* @__PURE__ */ jsx33(
+  return /* @__PURE__ */ jsxs30("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxs30("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ jsx34("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: collection.name }),
+      /* @__PURE__ */ jsx34(
         FiltersButton,
         {
           filterCount: facetValueIds.length,
@@ -5165,10 +5220,10 @@ function CollectionSlug() {
         }
       )
     ] }),
-    /* @__PURE__ */ jsx33(Breadcrumbs, { items: collection.breadcrumbs }),
-    collection.children?.length ? /* @__PURE__ */ jsxs29("div", { className: "max-w-2xl mx-auto py-16 sm:py-16 lg:max-w-none border-b mb-16", children: [
-      /* @__PURE__ */ jsx33("h2", { className: "text-2xl font-light text-gray-900", children: t("product.collections") }),
-      /* @__PURE__ */ jsx33("div", { className: "mt-6 grid max-w-xs sm:max-w-none mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4", children: collection.children.map((child) => /* @__PURE__ */ jsx33(
+    /* @__PURE__ */ jsx34(Breadcrumbs, { items: collection.breadcrumbs }),
+    collection.children?.length ? /* @__PURE__ */ jsxs30("div", { className: "max-w-2xl mx-auto py-16 sm:py-16 lg:max-w-none border-b mb-16", children: [
+      /* @__PURE__ */ jsx34("h2", { className: "text-2xl font-light text-gray-900", children: t("product.collections") }),
+      /* @__PURE__ */ jsx34("div", { className: "mt-6 grid max-w-xs sm:max-w-none mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4", children: collection.children.map((child) => /* @__PURE__ */ jsx34(
         CollectionCard,
         {
           collection: child
@@ -5176,13 +5231,13 @@ function CollectionSlug() {
         child.id
       )) })
     ] }) : "",
-    /* @__PURE__ */ jsx33(
+    /* @__PURE__ */ jsx34(
       ValidatedForm2,
       {
         validator: withZod(validator2),
         method: "get",
         onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
-        children: /* @__PURE__ */ jsx33(
+        children: /* @__PURE__ */ jsx34(
           FilterableProductGrid,
           {
             allowedPaginationLimits,
@@ -5197,19 +5252,19 @@ function CollectionSlug() {
 }
 function CatchBoundary2() {
   let { t } = useTranslation22();
-  return /* @__PURE__ */ jsxs29("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsx33("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.collectionNotFound") }),
-    /* @__PURE__ */ jsxs29("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
-      /* @__PURE__ */ jsxs29("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsx33("div", { className: "h-2 bg-slate-200 rounded col-span-1" }),
-        /* @__PURE__ */ jsx33("div", { className: "h-2 bg-slate-200 rounded col-span-1" }),
-        /* @__PURE__ */ jsx33("div", { className: "h-2 bg-slate-200 rounded col-span-1" })
+  return /* @__PURE__ */ jsxs30("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsx34("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.collectionNotFound") }),
+    /* @__PURE__ */ jsxs30("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
+      /* @__PURE__ */ jsxs30("div", { className: "space-y-6", children: [
+        /* @__PURE__ */ jsx34("div", { className: "h-2 bg-slate-200 rounded col-span-1" }),
+        /* @__PURE__ */ jsx34("div", { className: "h-2 bg-slate-200 rounded col-span-1" }),
+        /* @__PURE__ */ jsx34("div", { className: "h-2 bg-slate-200 rounded col-span-1" })
       ] }),
-      /* @__PURE__ */ jsx33("div", { className: "sm:col-span-5 lg:col-span-4", children: /* @__PURE__ */ jsxs29("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: [
-        /* @__PURE__ */ jsx33("div", { className: "h-64 bg-slate-200 rounded" }),
-        /* @__PURE__ */ jsx33("div", { className: "h-64 bg-slate-200 rounded" }),
-        /* @__PURE__ */ jsx33("div", { className: "h-64 bg-slate-200 rounded" }),
-        /* @__PURE__ */ jsx33("div", { className: "h-64 bg-slate-200 rounded" })
+      /* @__PURE__ */ jsx34("div", { className: "sm:col-span-5 lg:col-span-4", children: /* @__PURE__ */ jsxs30("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: [
+        /* @__PURE__ */ jsx34("div", { className: "h-64 bg-slate-200 rounded" }),
+        /* @__PURE__ */ jsx34("div", { className: "h-64 bg-slate-200 rounded" }),
+        /* @__PURE__ */ jsx34("div", { className: "h-64 bg-slate-200 rounded" }),
+        /* @__PURE__ */ jsx34("div", { className: "h-64 bg-slate-200 rounded" })
       ] }) })
     ] })
   ] });
@@ -5231,16 +5286,16 @@ import { z as z3 } from "zod";
 
 // app/components/SuccessMessage.tsx
 import { CheckIcon } from "@heroicons/react/24/solid";
-import { jsx as jsx34, jsxs as jsxs30 } from "react/jsx-runtime";
+import { jsx as jsx35, jsxs as jsxs31 } from "react/jsx-runtime";
 function SuccessMessage({
   heading,
   message
 }) {
-  return /* @__PURE__ */ jsx34("div", { className: "rounded-md bg-green-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxs30("div", { className: "flex", children: [
-    /* @__PURE__ */ jsx34("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx34(CheckIcon, { className: "h-5 w-5 text-green-400", "aria-hidden": "true" }) }),
-    /* @__PURE__ */ jsxs30("div", { className: "ml-3", children: [
-      /* @__PURE__ */ jsx34("h3", { className: "text-sm font-medium text-green-800", children: heading }),
-      /* @__PURE__ */ jsx34("p", { className: "text-sm text-green-700 mt-2", children: message })
+  return /* @__PURE__ */ jsx35("div", { className: "rounded-md bg-green-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxs31("div", { className: "flex", children: [
+    /* @__PURE__ */ jsx35("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx35(CheckIcon, { className: "h-5 w-5 text-green-400", "aria-hidden": "true" }) }),
+    /* @__PURE__ */ jsxs31("div", { className: "ml-3", children: [
+      /* @__PURE__ */ jsx35("h3", { className: "text-sm font-medium text-green-800", children: heading }),
+      /* @__PURE__ */ jsx35("p", { className: "text-sm text-green-700 mt-2", children: message })
     ] })
   ] }) });
 }
@@ -5255,7 +5310,7 @@ function isValidationErrorResponseData(input) {
 
 // app/routes/account.password.tsx
 import { useTranslation as useTranslation23 } from "react-i18next";
-import { Fragment as Fragment9, jsx as jsx35, jsxs as jsxs31 } from "react/jsx-runtime";
+import { Fragment as Fragment9, jsx as jsx36, jsxs as jsxs32 } from "react/jsx-runtime";
 var validator3 = withZod(
   z3.object({
     currentPassword: z3.string().min(1, { message: "Password is required" }),
@@ -5289,9 +5344,9 @@ function AccountPassword() {
       }
       actionDataHook?.success && (setErrorMessage(void 0), setIsSaved(!0), setEditing(!1), formRef.current?.reset());
     }
-  }, [actionDataHook]), /* @__PURE__ */ jsx35(ValidatedForm3, { validator: validator3, method: "post", formRef, children: /* @__PURE__ */ jsxs31("div", { className: "p-4 space-y-4", children: [
-    editing && /* @__PURE__ */ jsxs31(Fragment9, { children: [
-      /* @__PURE__ */ jsx35("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35(
+  }, [actionDataHook]), /* @__PURE__ */ jsx36(ValidatedForm3, { validator: validator3, method: "post", formRef, children: /* @__PURE__ */ jsxs32("div", { className: "p-4 space-y-4", children: [
+    editing && /* @__PURE__ */ jsxs32(Fragment9, { children: [
+      /* @__PURE__ */ jsx36("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36(
         Input,
         {
           required: !0,
@@ -5300,8 +5355,8 @@ function AccountPassword() {
           type: "password"
         }
       ) }) }),
-      /* @__PURE__ */ jsxs31("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: [
-        /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35(
+      /* @__PURE__ */ jsxs32("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: [
+        /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36(
           Input,
           {
             required: !0,
@@ -5310,7 +5365,7 @@ function AccountPassword() {
             type: "password"
           }
         ) }),
-        /* @__PURE__ */ jsx35("div", { children: /* @__PURE__ */ jsx35(
+        /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36(
           Input,
           {
             required: !0,
@@ -5321,22 +5376,22 @@ function AccountPassword() {
         ) })
       ] })
     ] }),
-    isSaved && /* @__PURE__ */ jsx35(
+    isSaved && /* @__PURE__ */ jsx36(
       SuccessMessage,
       {
         heading: t("account.pwdSuccessHeading"),
         message: t("account.pwdSuccessMessage")
       }
     ),
-    errorMessage && /* @__PURE__ */ jsx35(
+    errorMessage && /* @__PURE__ */ jsx36(
       ErrorMessage,
       {
         heading: t("account.pwdErrorMessage"),
         message: errorMessage
       }
     ),
-    editing ? /* @__PURE__ */ jsxs31("div", { className: "flex gap-3", children: [
-      /* @__PURE__ */ jsx35(
+    editing ? /* @__PURE__ */ jsxs32("div", { className: "flex gap-3", children: [
+      /* @__PURE__ */ jsx36(
         HighlightedButton,
         {
           type: "submit",
@@ -5344,9 +5399,9 @@ function AccountPassword() {
           children: t("account.savePassword")
         }
       ),
-      /* @__PURE__ */ jsx35(Button, { type: "reset", onClick: () => setEditing(!1), children: t("common.cancel") })
-    ] }) : /* @__PURE__ */ jsx35(Fragment9, { children: /* @__PURE__ */ jsxs31(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
-      /* @__PURE__ */ jsx35(PencilIcon2, { className: "w-4 h-4" }),
+      /* @__PURE__ */ jsx36(Button, { type: "reset", onClick: () => setEditing(!1), children: t("common.cancel") })
+    ] }) : /* @__PURE__ */ jsx36(Fragment9, { children: /* @__PURE__ */ jsxs32(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
+      /* @__PURE__ */ jsx36(PencilIcon2, { className: "w-4 h-4" }),
       " ",
       t("account.changePassword")
     ] }) })
@@ -5502,10 +5557,10 @@ import {
 } from "@stripe/react-stripe-js";
 import { CreditCardIcon as CreditCardIcon2 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation24 } from "react-i18next";
-import { jsx as jsx36, jsxs as jsxs32 } from "react/jsx-runtime";
+import { jsx as jsx37, jsxs as jsxs33 } from "react/jsx-runtime";
 var CheckoutForm = ({ orderCode }) => {
   let stripe = useStripe(), elements = useElements(), { t } = useTranslation24();
-  return /* @__PURE__ */ jsxs32("form", { onSubmit: async (event) => {
+  return /* @__PURE__ */ jsxs33("form", { onSubmit: async (event) => {
     if (event.preventDefault(), !stripe || !elements)
       return;
     let result = await stripe.confirmPayment({
@@ -5517,15 +5572,15 @@ var CheckoutForm = ({ orderCode }) => {
     });
     result.error && console.log(result.error.message);
   }, children: [
-    /* @__PURE__ */ jsx36(PaymentElement, {}),
-    /* @__PURE__ */ jsxs32(
+    /* @__PURE__ */ jsx37(PaymentElement, {}),
+    /* @__PURE__ */ jsxs33(
       "button",
       {
         disabled: !stripe,
         className: "flex w-full px-6 bg-primary-600 hover:bg-primary-700 items-center justify-center space-x-2 py-3 my-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
         children: [
-          /* @__PURE__ */ jsx36(CreditCardIcon2, { className: "w-5 h-5" }),
-          /* @__PURE__ */ jsxs32("span", { children: [
+          /* @__PURE__ */ jsx37(CreditCardIcon2, { className: "w-5 h-5" }),
+          /* @__PURE__ */ jsxs33("span", { children: [
             t("checkout.payWith"),
             " Stripe"
           ] })
@@ -5536,7 +5591,7 @@ var CheckoutForm = ({ orderCode }) => {
 };
 
 // app/components/checkout/stripe/StripePayments.tsx
-import { jsx as jsx37 } from "react/jsx-runtime";
+import { jsx as jsx38 } from "react/jsx-runtime";
 var _stripe;
 function getStripe(publishableKey) {
   return _stripe || (_stripe = loadStripe(publishableKey)), _stripe;
@@ -5550,36 +5605,36 @@ function StripePayments({
     // passing the client secret obtained from the server
     clientSecret
   }, stripePromise = getStripe(publishableKey);
-  return /* @__PURE__ */ jsx37(Elements, { stripe: stripePromise, options, children: /* @__PURE__ */ jsx37(CheckoutForm, { orderCode }) });
+  return /* @__PURE__ */ jsx38(Elements, { stripe: stripePromise, options, children: /* @__PURE__ */ jsx38(CheckoutForm, { orderCode }) });
 }
 
 // app/components/checkout/DummyPayments.tsx
 import { CreditCardIcon as CreditCardIcon3, XCircleIcon as XCircleIcon4 } from "@heroicons/react/24/solid";
 import { Form as Form2 } from "@remix-run/react";
 import { useTranslation as useTranslation25 } from "react-i18next";
-import { jsx as jsx38, jsxs as jsxs33 } from "react/jsx-runtime";
+import { jsx as jsx39, jsxs as jsxs34 } from "react/jsx-runtime";
 function DummyPayments({
   paymentMethod,
   paymentError
 }) {
   let { t } = useTranslation25();
-  return /* @__PURE__ */ jsxs33("div", { className: "flex flex-col items-center", children: [
-    /* @__PURE__ */ jsx38("p", { className: "text-gray-600 text-sm p-6", children: t("checkout.dummyPayment") }),
-    paymentError && /* @__PURE__ */ jsx38("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxs33("div", { className: "flex", children: [
-      /* @__PURE__ */ jsx38("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx38(
+  return /* @__PURE__ */ jsxs34("div", { className: "flex flex-col items-center", children: [
+    /* @__PURE__ */ jsx39("p", { className: "text-gray-600 text-sm p-6", children: t("checkout.dummyPayment") }),
+    paymentError && /* @__PURE__ */ jsx39("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxs34("div", { className: "flex", children: [
+      /* @__PURE__ */ jsx39("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx39(
         XCircleIcon4,
         {
           className: "h-5 w-5 text-red-400",
           "aria-hidden": "true"
         }
       ) }),
-      /* @__PURE__ */ jsxs33("div", { className: "ml-3", children: [
-        /* @__PURE__ */ jsx38("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }),
-        /* @__PURE__ */ jsx38("div", { className: "mt-2 text-sm text-red-700", children: paymentError })
+      /* @__PURE__ */ jsxs34("div", { className: "ml-3", children: [
+        /* @__PURE__ */ jsx39("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }),
+        /* @__PURE__ */ jsx39("div", { className: "mt-2 text-sm text-red-700", children: paymentError })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsxs33(Form2, { method: "post", children: [
-      /* @__PURE__ */ jsx38(
+    /* @__PURE__ */ jsxs34(Form2, { method: "post", children: [
+      /* @__PURE__ */ jsx39(
         "input",
         {
           type: "hidden",
@@ -5587,14 +5642,14 @@ function DummyPayments({
           value: paymentMethod.code
         }
       ),
-      /* @__PURE__ */ jsxs33(
+      /* @__PURE__ */ jsxs34(
         "button",
         {
           type: "submit",
           className: "flex px-6 bg-primary-600 hover:bg-primary-700 items-center justify-center space-x-2 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
           children: [
-            /* @__PURE__ */ jsx38(CreditCardIcon3, { className: "w-5 h-5" }),
-            /* @__PURE__ */ jsxs33("span", { children: [
+            /* @__PURE__ */ jsx39(CreditCardIcon3, { className: "w-5 h-5" }),
+            /* @__PURE__ */ jsxs34("span", { children: [
               t("checkout.payWith"),
               " ",
               paymentMethod.name
@@ -5611,7 +5666,7 @@ import { useEffect as useEffect10, useState as useState8 } from "react";
 import dropin from "braintree-web-drop-in";
 import { useSubmit as useSubmit4 } from "@remix-run/react";
 import { useTranslation as useTranslation26 } from "react-i18next";
-import { jsx as jsx39, jsxs as jsxs34 } from "react/jsx-runtime";
+import { jsx as jsx40, jsxs as jsxs35 } from "react/jsx-runtime";
 function BraintreeDropIn(props) {
   let { show, authorization, fullAmount, currencyCode } = props, { t } = useTranslation26(), [braintreeInstance, setBraintreeInstance] = useState8(), [enablePaymentButton, setEnablePaymentButton] = useState8(), [processing, setProcessing] = useState8(!1), submit = useSubmit4(), submitPayment = async () => {
     if (setProcessing(!0), braintreeInstance)
@@ -5651,15 +5706,15 @@ function BraintreeDropIn(props) {
         initializeBraintree();
       }) : initializeBraintree();
     }
-  }, [show]), /* @__PURE__ */ jsxs34(
+  }, [show]), /* @__PURE__ */ jsxs35(
     "div",
     {
       style: { display: `${show ? "block" : "none"}` },
       className: "w-full h-full",
       children: [
-        /* @__PURE__ */ jsx39("div", { id: "braintree-drop-in-div" }),
-        /* @__PURE__ */ jsx39("input", { type: "hidden", name: "paymentMethodCode", value: "braintree" }),
-        /* @__PURE__ */ jsxs34(
+        /* @__PURE__ */ jsx40("div", { id: "braintree-drop-in-div" }),
+        /* @__PURE__ */ jsx40("input", { type: "hidden", name: "paymentMethodCode", value: "braintree" }),
+        /* @__PURE__ */ jsxs35(
           "button",
           {
             onClick: submitPayment,
@@ -5670,7 +5725,7 @@ function BraintreeDropIn(props) {
             disabled: !braintreeInstance || !enablePaymentButton,
             children: [
               t(processing ? "checkout.paymentProcessing" : braintreeInstance ? "checkout.pay" : "checkout.paymentLoading"),
-              processing ? /* @__PURE__ */ jsxs34(
+              processing ? /* @__PURE__ */ jsxs35(
                 "svg",
                 {
                   "aria-hidden": "true",
@@ -5679,14 +5734,14 @@ function BraintreeDropIn(props) {
                   fill: "none",
                   xmlns: "http://www.w3.org/2000/svg",
                   children: [
-                    /* @__PURE__ */ jsx39(
+                    /* @__PURE__ */ jsx40(
                       "path",
                       {
                         d: "M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z",
                         fill: "currentColor"
                       }
                     ),
-                    /* @__PURE__ */ jsx39(
+                    /* @__PURE__ */ jsx40(
                       "path",
                       {
                         d: "M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z",
@@ -5707,7 +5762,7 @@ function BraintreeDropIn(props) {
 // app/components/checkout/PayPalPayments.tsx
 import { Form as Form3, useActionData as useActionData4, useNavigation as useNavigation5 } from "@remix-run/react";
 import { useTranslation as useTranslation27 } from "react-i18next";
-import { jsx as jsx40, jsxs as jsxs35 } from "react/jsx-runtime";
+import { jsx as jsx41, jsxs as jsxs36 } from "react/jsx-runtime";
 function PayPalPayments({
   paymentMethod,
   paymentError
@@ -5715,16 +5770,16 @@ function PayPalPayments({
   let { t } = useTranslation27(), actionData = useActionData4(), navigation = useNavigation5();
   actionData?.approvalUrl && (window.location.href = actionData.approvalUrl);
   let currentError = actionData?.error || paymentError;
-  return /* @__PURE__ */ jsxs35("div", { className: "flex flex-col items-center", children: [
-    currentError && /* @__PURE__ */ jsx40("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxs35("div", { className: "flex", children: [
-      /* @__PURE__ */ jsx40("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx40("svg", { className: "h-5 w-5 text-red-400", viewBox: "0 0 20 20", fill: "currentColor", children: /* @__PURE__ */ jsx40("path", { fillRule: "evenodd", d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z", clipRule: "evenodd" }) }) }),
-      /* @__PURE__ */ jsxs35("div", { className: "ml-3", children: [
-        /* @__PURE__ */ jsx40("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }),
-        /* @__PURE__ */ jsx40("div", { className: "mt-2 text-sm text-red-700", children: currentError })
+  return /* @__PURE__ */ jsxs36("div", { className: "flex flex-col items-center", children: [
+    currentError && /* @__PURE__ */ jsx41("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxs36("div", { className: "flex", children: [
+      /* @__PURE__ */ jsx41("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx41("svg", { className: "h-5 w-5 text-red-400", viewBox: "0 0 20 20", fill: "currentColor", children: /* @__PURE__ */ jsx41("path", { fillRule: "evenodd", d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z", clipRule: "evenodd" }) }) }),
+      /* @__PURE__ */ jsxs36("div", { className: "ml-3", children: [
+        /* @__PURE__ */ jsx41("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }),
+        /* @__PURE__ */ jsx41("div", { className: "mt-2 text-sm text-red-700", children: currentError })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsxs35(Form3, { method: "post", children: [
-      /* @__PURE__ */ jsx40(
+    /* @__PURE__ */ jsxs36(Form3, { method: "post", children: [
+      /* @__PURE__ */ jsx41(
         "input",
         {
           type: "hidden",
@@ -5732,7 +5787,7 @@ function PayPalPayments({
           value: paymentMethod.code
         }
       ),
-      /* @__PURE__ */ jsx40(
+      /* @__PURE__ */ jsx41(
         "input",
         {
           type: "hidden",
@@ -5740,26 +5795,26 @@ function PayPalPayments({
           value: "paypal"
         }
       ),
-      /* @__PURE__ */ jsxs35(
+      /* @__PURE__ */ jsxs36(
         "button",
         {
           type: "submit",
           disabled: navigation.state === "loading",
           className: "flex px-8 bg-blue-600 hover:bg-blue-700 items-center justify-center space-x-3 py-4 border border-transparent text-base font-medium rounded-lg shadow-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
           children: [
-            /* @__PURE__ */ jsx40("svg", { className: "w-6 h-6", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ jsx40("path", { d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" }) }),
-            /* @__PURE__ */ jsx40("span", { className: "font-bold text-lg", children: navigation.state === "loading" ? t("checkout.processing") : `${t("checkout.payWith")} PayPal` })
+            /* @__PURE__ */ jsx41("svg", { className: "w-6 h-6", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ jsx41("path", { d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" }) }),
+            /* @__PURE__ */ jsx41("span", { className: "font-bold text-lg", children: navigation.state === "loading" ? t("checkout.processing") : `${t("checkout.payWith")} PayPal` })
           ]
         }
       )
     ] }),
-    /* @__PURE__ */ jsx40("p", { className: "text-gray-500 text-xs mt-4", children: t("checkout.paypalSecure") })
+    /* @__PURE__ */ jsx41("p", { className: "text-gray-500 text-xs mt-4", children: t("checkout.paypalSecure") })
   ] });
 }
 
 // app/routes/checkout.payment.tsx
 import { useTranslation as useTranslation28 } from "react-i18next";
-import { jsx as jsx41, jsxs as jsxs36 } from "react/jsx-runtime";
+import { jsx as jsx42, jsxs as jsxs37 } from "react/jsx-runtime";
 async function loader9({ params, request }) {
   let session = await getSessionStorage().then(
     (sessionStorage2) => sessionStorage2.getSession(request?.headers.get("Cookie"))
@@ -5837,11 +5892,11 @@ function CheckoutPayment() {
     brainTreeError,
     error
   } = useLoaderData9(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
-  return /* @__PURE__ */ jsx41("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
-    (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsx41("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxs36("div", { children: [
-      /* @__PURE__ */ jsx41("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }),
-      /* @__PURE__ */ jsx41("p", { className: "text-sm", children: brainTreeError })
-    ] }) : /* @__PURE__ */ jsx41(
+  return /* @__PURE__ */ jsx42("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
+    (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsx42("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxs37("div", { children: [
+      /* @__PURE__ */ jsx42("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }),
+      /* @__PURE__ */ jsx42("p", { className: "text-sm", children: brainTreeError })
+    ] }) : /* @__PURE__ */ jsx42(
       BraintreeDropIn,
       {
         fullAmount: activeOrder?.totalWithTax ?? 0,
@@ -5849,23 +5904,23 @@ function CheckoutPayment() {
         show: !0,
         authorization: brainTreeKey
       }
-    ) }, paymentMethod.id) : paymentMethod.code.includes("stripe") ? /* @__PURE__ */ jsx41("div", { className: "py-12", children: stripeError ? /* @__PURE__ */ jsxs36("div", { children: [
-      /* @__PURE__ */ jsx41("p", { className: "text-red-700 font-bold", children: t("checkout.stripeError") }),
-      /* @__PURE__ */ jsx41("p", { className: "text-sm", children: stripeError })
-    ] }) : /* @__PURE__ */ jsx41(
+    ) }, paymentMethod.id) : paymentMethod.code.includes("stripe") ? /* @__PURE__ */ jsx42("div", { className: "py-12", children: stripeError ? /* @__PURE__ */ jsxs37("div", { children: [
+      /* @__PURE__ */ jsx42("p", { className: "text-red-700 font-bold", children: t("checkout.stripeError") }),
+      /* @__PURE__ */ jsx42("p", { className: "text-sm", children: stripeError })
+    ] }) : /* @__PURE__ */ jsx42(
       StripePayments,
       {
         orderCode: activeOrder?.code ?? "",
         clientSecret: stripePaymentIntent,
         publishableKey: stripePublishableKey
       }
-    ) }, paymentMethod.id) : paymentMethod.code.includes("paypal") ? /* @__PURE__ */ jsx41("div", { className: "py-12", children: /* @__PURE__ */ jsx41(
+    ) }, paymentMethod.id) : paymentMethod.code.includes("paypal") ? /* @__PURE__ */ jsx42("div", { className: "py-12", children: /* @__PURE__ */ jsx42(
       PayPalPayments,
       {
         paymentMethod,
         paymentError
       }
-    ) }, paymentMethod.id) : /* @__PURE__ */ jsx41("div", { className: "py-12", children: /* @__PURE__ */ jsx41(
+    ) }, paymentMethod.id) : /* @__PURE__ */ jsx42("div", { className: "py-12", children: /* @__PURE__ */ jsx42(
       DummyPayments,
       {
         paymentMethod,
@@ -5901,7 +5956,7 @@ import { useState as useState9 } from "react";
 
 // app/components/account/OrderStateBadge.tsx
 import { useTranslation as useTranslation29 } from "react-i18next";
-import { jsx as jsx42 } from "react/jsx-runtime";
+import { jsx as jsx43 } from "react/jsx-runtime";
 function OrderStateBadge({ state }) {
   let { t } = useTranslation29(), colorClasses = "";
   switch (state) {
@@ -5929,7 +5984,7 @@ function OrderStateBadge({ state }) {
       colorClasses = "bg-red-100 text-red-800";
       break;
   }
-  return /* @__PURE__ */ jsx42(
+  return /* @__PURE__ */ jsx43(
     "span",
     {
       className: `text-xs font-medium px-2.5 py-0.5 rounded uppercase whitespace-nowrap ${colorClasses}`,
@@ -5943,7 +5998,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
 import { Link as Link10 } from "@remix-run/react";
 import { useTranslation as useTranslation30 } from "react-i18next";
-import { Fragment as Fragment10, jsx as jsx43, jsxs as jsxs37 } from "react/jsx-runtime";
+import { Fragment as Fragment10, jsx as jsx44, jsxs as jsxs38 } from "react/jsx-runtime";
 function OrderHistoryItem({
   order,
   isInitiallyExpanded = !1,
@@ -5953,8 +6008,8 @@ function OrderHistoryItem({
   let [isExpanded, setIsExpanded] = useState9(isInitiallyExpanded), [areDetailsExpanded, setAreDetailsExpanded] = useState9(
     areDetailsInitiallyExpanded
   ), [isLineCalcExpanded, setIsLineCalcExpanded] = useState9(!1), { t } = useTranslation30();
-  return /* @__PURE__ */ jsxs37("div", { className: `border rounded-lg overflow-hidden ${className}`, children: [
-    /* @__PURE__ */ jsxs37(
+  return /* @__PURE__ */ jsxs38("div", { className: `border rounded-lg overflow-hidden ${className}`, children: [
+    /* @__PURE__ */ jsxs38(
       "div",
       {
         className: `p-4 lg:p-6\r
@@ -5962,10 +6017,10 @@ function OrderHistoryItem({
             bg-gray-50 border-b\r
         `,
         children: [
-          /* @__PURE__ */ jsxs37("div", { className: "flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 text-sm", children: [
-            /* @__PURE__ */ jsxs37("div", { children: [
-              /* @__PURE__ */ jsx43("span", { className: "block font-medium", children: t("order.placedAt") }),
-              /* @__PURE__ */ jsx43(
+          /* @__PURE__ */ jsxs38("div", { className: "flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 text-sm", children: [
+            /* @__PURE__ */ jsxs38("div", { children: [
+              /* @__PURE__ */ jsx44("span", { className: "block font-medium", children: t("order.placedAt") }),
+              /* @__PURE__ */ jsx44(
                 "span",
                 {
                   className: "text-gray-500",
@@ -5978,9 +6033,9 @@ function OrderHistoryItem({
                 }
               )
             ] }),
-            /* @__PURE__ */ jsxs37("div", { children: [
-              /* @__PURE__ */ jsx43("span", { className: "block font-medium", children: t("order.totalSum") }),
-              /* @__PURE__ */ jsx43("span", { className: "text-gray-500", children: /* @__PURE__ */ jsx43(
+            /* @__PURE__ */ jsxs38("div", { children: [
+              /* @__PURE__ */ jsx44("span", { className: "block font-medium", children: t("order.totalSum") }),
+              /* @__PURE__ */ jsx44("span", { className: "text-gray-500", children: /* @__PURE__ */ jsx44(
                 Price,
                 {
                   currencyCode: order?.currencyCode,
@@ -5988,32 +6043,32 @@ function OrderHistoryItem({
                 }
               ) })
             ] }),
-            /* @__PURE__ */ jsxs37("div", { children: [
-              /* @__PURE__ */ jsx43("span", { className: "block font-medium", children: t("order.number") }),
-              /* @__PURE__ */ jsx43("span", { className: "text-gray-500", children: order?.code || "--" })
+            /* @__PURE__ */ jsxs38("div", { children: [
+              /* @__PURE__ */ jsx44("span", { className: "block font-medium", children: t("order.number") }),
+              /* @__PURE__ */ jsx44("span", { className: "text-gray-500", children: order?.code || "--" })
             ] })
           ] }),
-          /* @__PURE__ */ jsxs37("div", { className: "gap-4 lg:gap-6 flex flex-col items-end self-stretch justify-between md:flex-row md:items-center self-start", children: [
-            /* @__PURE__ */ jsx43(OrderStateBadge, { state: order?.state }),
-            /* @__PURE__ */ jsxs37("div", { className: "flex", role: "group", children: [
-              /* @__PURE__ */ jsxs37(
+          /* @__PURE__ */ jsxs38("div", { className: "gap-4 lg:gap-6 flex flex-col items-end self-stretch justify-between md:flex-row md:items-center self-start", children: [
+            /* @__PURE__ */ jsx44(OrderStateBadge, { state: order?.state }),
+            /* @__PURE__ */ jsxs38("div", { className: "flex", role: "group", children: [
+              /* @__PURE__ */ jsxs38(
                 Button,
                 {
                   title: t("order.actionsMessage"),
                   className: "bg-white text-sm rounded-r-none border-r-0",
                   children: [
-                    /* @__PURE__ */ jsx43("span", { className: "text-xs hidden", children: t("order.actions") }),
-                    /* @__PURE__ */ jsx43(EllipsisVerticalIcon, { className: "w-5 h-5" })
+                    /* @__PURE__ */ jsx44("span", { className: "text-xs hidden", children: t("order.actions") }),
+                    /* @__PURE__ */ jsx44(EllipsisVerticalIcon, { className: "w-5 h-5" })
                   ]
                 }
               ),
-              /* @__PURE__ */ jsx43(
+              /* @__PURE__ */ jsx44(
                 Button,
                 {
                   className: "bg-white text-sm rounded-l-none",
                   onClick: () => setIsExpanded(!isExpanded),
                   title: t("order.expand"),
-                  children: /* @__PURE__ */ jsx43(
+                  children: /* @__PURE__ */ jsx44(
                     ChevronRightIcon,
                     {
                       className: `w-5 h-5 transition-transform duration-100 ${isExpanded && "rotate-90"}`
@@ -6026,18 +6081,18 @@ function OrderHistoryItem({
         ]
       }
     ),
-    isExpanded && /* @__PURE__ */ jsxs37("div", { className: "flex flex-col", children: [
-      order?.lines.map((line, key) => /* @__PURE__ */ jsx43(
+    isExpanded && /* @__PURE__ */ jsxs38("div", { className: "flex flex-col", children: [
+      order?.lines.map((line, key) => /* @__PURE__ */ jsx44(
         "div",
         {
           className: "p-4 lg:p-6 border-b flex flex-row gap-8 justify-between group",
-          children: /* @__PURE__ */ jsxs37("div", { className: "inline-flex justify-center items-center justify gap-4", children: [
-            /* @__PURE__ */ jsx43(
+          children: /* @__PURE__ */ jsxs38("div", { className: "inline-flex justify-center items-center justify gap-4", children: [
+            /* @__PURE__ */ jsx44(
               Link10,
               {
                 to: `/products/${line.productVariant.product.slug}`,
                 className: "hover:opacity-50 transition-opacity",
-                children: /* @__PURE__ */ jsx43(
+                children: /* @__PURE__ */ jsx44(
                   "img",
                   {
                     src: line.featuredAsset?.source,
@@ -6046,8 +6101,8 @@ function OrderHistoryItem({
                 )
               }
             ),
-            /* @__PURE__ */ jsxs37("span", { className: "flex flex-1 flex-col gap-0", children: [
-              /* @__PURE__ */ jsx43(
+            /* @__PURE__ */ jsxs38("span", { className: "flex flex-1 flex-col gap-0", children: [
+              /* @__PURE__ */ jsx44(
                 Link10,
                 {
                   to: `/products/${line.productVariant.product.slug}`,
@@ -6056,25 +6111,25 @@ function OrderHistoryItem({
                   children: line.productVariant.name
                 }
               ),
-              /* @__PURE__ */ jsxs37(
+              /* @__PURE__ */ jsxs38(
                 "button",
                 {
                   className: "inline-flex gap-2 items-center w-fit text-gray-500 text-sm mt-1",
                   onClick: () => setIsLineCalcExpanded(!isLineCalcExpanded),
                   children: [
-                    isLineCalcExpanded && /* @__PURE__ */ jsxs37(Fragment10, { children: [
-                      /* @__PURE__ */ jsx43("span", { title: t("common.quantity"), children: line.quantity }),
-                      /* @__PURE__ */ jsx43("span", { className: "text-gray-300 select-none", children: "\xD7" }),
-                      /* @__PURE__ */ jsx43("span", { title: "Price per unit", children: /* @__PURE__ */ jsx43(
+                    isLineCalcExpanded && /* @__PURE__ */ jsxs38(Fragment10, { children: [
+                      /* @__PURE__ */ jsx44("span", { title: t("common.quantity"), children: line.quantity }),
+                      /* @__PURE__ */ jsx44("span", { className: "text-gray-300 select-none", children: "\xD7" }),
+                      /* @__PURE__ */ jsx44("span", { title: "Price per unit", children: /* @__PURE__ */ jsx44(
                         Price,
                         {
                           currencyCode: line.productVariant.currencyCode,
                           priceWithTax: line.discountedUnitPriceWithTax
                         }
                       ) }),
-                      /* @__PURE__ */ jsx43("span", { className: "text-gray-300 select-none", children: "\u039E" })
+                      /* @__PURE__ */ jsx44("span", { className: "text-gray-300 select-none", children: "\u039E" })
                     ] }),
-                    /* @__PURE__ */ jsx43("span", { title: "Subtotal", children: /* @__PURE__ */ jsx43(
+                    /* @__PURE__ */ jsx44("span", { title: "Subtotal", children: /* @__PURE__ */ jsx44(
                       Price,
                       {
                         currencyCode: line.productVariant.currencyCode,
@@ -6084,7 +6139,7 @@ function OrderHistoryItem({
                   ]
                 }
               ),
-              /* @__PURE__ */ jsxs37("span", { className: "text-gray-500 text-xs mt-2 tracking-wide", children: [
+              /* @__PURE__ */ jsxs38("span", { className: "text-gray-500 text-xs mt-2 tracking-wide", children: [
                 line.fulfillmentLines?.reduce(
                   (acc, fLine) => acc + fLine.quantity,
                   0
@@ -6094,7 +6149,7 @@ function OrderHistoryItem({
                 )} ${t("common.or")} ${line.quantity} ${t(
                   "order.items.fulfilled"
                 )}`,
-                line.fulfillmentLines?.filter((fLine) => fLine.quantity > 0).map((fLine, key2) => /* @__PURE__ */ jsxs37(
+                line.fulfillmentLines?.filter((fLine) => fLine.quantity > 0).map((fLine, key2) => /* @__PURE__ */ jsxs38(
                   "span",
                   {
                     className: "block first:mt-2",
@@ -6118,8 +6173,8 @@ function OrderHistoryItem({
         },
         key
       )),
-      /* @__PURE__ */ jsxs37("div", { className: "p-2 lg:py-3 lg:px-6 gap-2 lg:gap-6 grid grid-cols-2 sm:flex justify-end items-center", children: [
-        order?.fulfillments?.map((f, i) => /* @__PURE__ */ jsxs37(
+      /* @__PURE__ */ jsxs38("div", { className: "p-2 lg:py-3 lg:px-6 gap-2 lg:gap-6 grid grid-cols-2 sm:flex justify-end items-center", children: [
+        order?.fulfillments?.map((f, i) => /* @__PURE__ */ jsxs38(
           Button,
           {
             onClickCapture: () => alert(`${t("trackAlert")} "${f.trackingCode}"`),
@@ -6132,14 +6187,14 @@ function OrderHistoryItem({
           },
           i
         )),
-        /* @__PURE__ */ jsxs37(
+        /* @__PURE__ */ jsxs38(
           Button,
           {
             onClick: () => setAreDetailsExpanded(!areDetailsExpanded),
             className: "col-start-2",
             children: [
-              /* @__PURE__ */ jsx43("span", { className: "text-xs", children: t("order.detailedOverview") }),
-              /* @__PURE__ */ jsx43(
+              /* @__PURE__ */ jsx44("span", { className: "text-xs", children: t("order.detailedOverview") }),
+              /* @__PURE__ */ jsx44(
                 ChevronRightIcon,
                 {
                   className: `w-5 h-5 transition-transform duration-100 ${areDetailsExpanded && "rotate-90"}`
@@ -6149,18 +6204,18 @@ function OrderHistoryItem({
           }
         )
       ] }),
-      areDetailsExpanded && /* @__PURE__ */ jsxs37("div", { className: "p-2 lg:p-3 grid grid-cols-2 gap-1 text-sm max-w-sm self-center md:self-end", children: [
-        /* @__PURE__ */ jsx43("h6", { className: "font-medium col-span-full", children: t("order.summary") }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.items.subtotal") }),
-        /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+      areDetailsExpanded && /* @__PURE__ */ jsxs38("div", { className: "p-2 lg:p-3 grid grid-cols-2 gap-1 text-sm max-w-sm self-center md:self-end", children: [
+        /* @__PURE__ */ jsx44("h6", { className: "font-medium col-span-full", children: t("order.summary") }),
+        /* @__PURE__ */ jsx44("span", { children: t("order.items.subtotal") }),
+        /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
             priceWithTax: order?.subTotalWithTax
           }
         ) }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.shippingAndHandling") }),
-        /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+        /* @__PURE__ */ jsx44("span", { children: t("order.shippingAndHandling") }),
+        /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6170,8 +6225,8 @@ function OrderHistoryItem({
             )
           }
         ) }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.totalWithoutTax") }),
-        /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+        /* @__PURE__ */ jsx44("span", { children: t("order.totalWithoutTax") }),
+        /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6181,8 +6236,8 @@ function OrderHistoryItem({
             )
           }
         ) }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.estimatedTax") }),
-        /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+        /* @__PURE__ */ jsx44("span", { children: t("order.estimatedTax") }),
+        /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6192,8 +6247,8 @@ function OrderHistoryItem({
             )
           }
         ) }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.total") }),
-        order?.totalWithTax && order.discounts ? /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+        /* @__PURE__ */ jsx44("span", { children: t("order.total") }),
+        order?.totalWithTax && order.discounts ? /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6202,9 +6257,9 @@ function OrderHistoryItem({
               0
             )
           }
-        ) }) : /* @__PURE__ */ jsx43("span", { className: "text-end", children: "--" }),
-        /* @__PURE__ */ jsx43("span", { children: t("order.appliedCoupons") }),
-        /* @__PURE__ */ jsx43("span", { className: "text-end", children: /* @__PURE__ */ jsx43(
+        ) }) : /* @__PURE__ */ jsx44("span", { className: "text-end", children: "--" }),
+        /* @__PURE__ */ jsx44("span", { children: t("order.appliedCoupons") }),
+        /* @__PURE__ */ jsx44("span", { className: "text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6214,8 +6269,8 @@ function OrderHistoryItem({
             )
           }
         ) }),
-        /* @__PURE__ */ jsx43("span", { className: "font-medium", children: t("order.grandTotal") }),
-        /* @__PURE__ */ jsx43("span", { className: "font-medium text-end", children: /* @__PURE__ */ jsx43(
+        /* @__PURE__ */ jsx44("span", { className: "font-medium", children: t("order.grandTotal") }),
+        /* @__PURE__ */ jsx44("span", { className: "font-medium text-end", children: /* @__PURE__ */ jsx44(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -6230,7 +6285,7 @@ function OrderHistoryItem({
 // app/routes/account.history.tsx
 import { ValidatedForm as ValidatedForm4 } from "remix-validated-form";
 import { useTranslation as useTranslation31 } from "react-i18next";
-import { jsx as jsx44, jsxs as jsxs38 } from "react/jsx-runtime";
+import { jsx as jsx45, jsxs as jsxs39 } from "react/jsx-runtime";
 var paginationLimitMinimumDefault2 = 10, allowedPaginationLimits2 = /* @__PURE__ */ new Set([
   paginationLimitMinimumDefault2,
   20,
@@ -6264,10 +6319,10 @@ function AccountHistory() {
     appliedPaginationLimit,
     orderList.items.length
   );
-  return /* @__PURE__ */ jsxs38("div", { className: "pt-10 relative", children: [
-    navigation.state !== "idle" && /* @__PURE__ */ jsx44("div", { className: "absolute top-0 left-0 w-full h-full z-100 bg-white bg-opacity-75" }),
-    orderList.items.length === 0 && /* @__PURE__ */ jsx44("div", { className: "py-16 text-3xl text-center italic text-gray-300 select-none flex justify-center items-center", children: orderList.totalItems === 0 ? t("order.historyEmpty") : t("order.historyEnd") }),
-    orderList.items?.map((item) => /* @__PURE__ */ jsx44(
+  return /* @__PURE__ */ jsxs39("div", { className: "pt-10 relative", children: [
+    navigation.state !== "idle" && /* @__PURE__ */ jsx45("div", { className: "absolute top-0 left-0 w-full h-full z-100 bg-white bg-opacity-75" }),
+    orderList.items.length === 0 && /* @__PURE__ */ jsx45("div", { className: "py-16 text-3xl text-center italic text-gray-300 select-none flex justify-center items-center", children: orderList.totalItems === 0 ? t("order.historyEmpty") : t("order.historyEnd") }),
+    orderList.items?.map((item) => /* @__PURE__ */ jsx45(
       OrderHistoryItem,
       {
         order: item,
@@ -6276,8 +6331,8 @@ function AccountHistory() {
       },
       item.code
     )),
-    /* @__PURE__ */ jsxs38("div", { className: "flex flex-row justify-between items-center gap-4", children: [
-      /* @__PURE__ */ jsxs38("span", { className: "self-start text-gray-500 text-sm ml-4 lg:ml-6 mt-2", children: [
+    /* @__PURE__ */ jsxs39("div", { className: "flex flex-row justify-between items-center gap-4", children: [
+      /* @__PURE__ */ jsxs39("span", { className: "self-start text-gray-500 text-sm ml-4 lg:ml-6 mt-2", children: [
         "Showing orders ",
         showingOrdersFrom,
         " to ",
@@ -6286,7 +6341,7 @@ function AccountHistory() {
         " ",
         orderList.totalItems
       ] }),
-      /* @__PURE__ */ jsx44(
+      /* @__PURE__ */ jsx45(
         ValidatedForm4,
         {
           validator: withZod(
@@ -6295,7 +6350,7 @@ function AccountHistory() {
           method: "get",
           onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
           preventScrollReset: !0,
-          children: /* @__PURE__ */ jsx44(
+          children: /* @__PURE__ */ jsx45(
             Pagination,
             {
               appliedPaginationLimit,
@@ -6328,7 +6383,7 @@ import { json as json9, redirect as redirect6 } from "@remix-run/server-runtime"
 
 // app/components/account/AddressForm.tsx
 import { useTranslation as useTranslation32 } from "react-i18next";
-import { jsx as jsx45, jsxs as jsxs39 } from "react/jsx-runtime";
+import { jsx as jsx46, jsxs as jsxs40 } from "react/jsx-runtime";
 function AddressForm({
   address,
   defaultFullName,
@@ -6336,9 +6391,9 @@ function AddressForm({
   onBlur
 }) {
   let { t } = useTranslation32();
-  return /* @__PURE__ */ jsxs39("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsxs39(
+  return /* @__PURE__ */ jsxs40("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40(
         "label",
         {
           htmlFor: "fullName",
@@ -6346,11 +6401,11 @@ function AddressForm({
           children: [
             t("account.fullName"),
             " ",
-            /* @__PURE__ */ jsx45("span", { className: "text-red-500", children: "*" })
+            /* @__PURE__ */ jsx46("span", { className: "text-red-500", children: "*" })
           ]
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6364,8 +6419,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsx45(
+    /* @__PURE__ */ jsxs40("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsx46(
         "label",
         {
           htmlFor: "company",
@@ -6373,7 +6428,7 @@ function AddressForm({
           children: t("address.company")
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6384,8 +6439,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsxs39(
+    /* @__PURE__ */ jsxs40("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsxs40(
         "label",
         {
           htmlFor: "streetLine1",
@@ -6393,11 +6448,11 @@ function AddressForm({
           children: [
             t("address.streetLine1"),
             " ",
-            /* @__PURE__ */ jsx45("span", { className: "text-red-500", children: "*" })
+            /* @__PURE__ */ jsx46("span", { className: "text-red-500", children: "*" })
           ]
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6411,8 +6466,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsx45(
+    /* @__PURE__ */ jsxs40("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsx46(
         "label",
         {
           htmlFor: "streetLine2",
@@ -6420,7 +6475,7 @@ function AddressForm({
           children: t("address.streetLine2")
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6431,8 +6486,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsxs39(
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40(
         "label",
         {
           htmlFor: "city",
@@ -6440,11 +6495,11 @@ function AddressForm({
           children: [
             t("address.city"),
             " ",
-            /* @__PURE__ */ jsx45("span", { className: "text-red-500", children: "*" })
+            /* @__PURE__ */ jsx46("span", { className: "text-red-500", children: "*" })
           ]
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6458,8 +6513,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsxs39(
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40(
         "label",
         {
           htmlFor: "countryCode",
@@ -6467,11 +6522,11 @@ function AddressForm({
           children: [
             t("address.country"),
             " ",
-            /* @__PURE__ */ jsx45("span", { className: "text-red-500", children: "*" })
+            /* @__PURE__ */ jsx46("span", { className: "text-red-500", children: "*" })
           ]
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: availableCountries && /* @__PURE__ */ jsxs39(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: availableCountries && /* @__PURE__ */ jsxs40(
         "select",
         {
           id: "countryCode",
@@ -6481,14 +6536,14 @@ function AddressForm({
           onBlur,
           className: "block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm",
           children: [
-            /* @__PURE__ */ jsx45("option", { value: "", disabled: !0, children: t("address.selectCountry") }),
-            availableCountries.map((item) => /* @__PURE__ */ jsx45("option", { value: item.code, children: item.name }, item.id))
+            /* @__PURE__ */ jsx46("option", { value: "", disabled: !0, children: t("address.selectCountry") }),
+            availableCountries.map((item) => /* @__PURE__ */ jsx46("option", { value: item.code, children: item.name }, item.id))
           ]
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsx45(
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsx46(
         "label",
         {
           htmlFor: "province",
@@ -6496,7 +6551,7 @@ function AddressForm({
           children: t("address.province")
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6508,8 +6563,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { children: [
-      /* @__PURE__ */ jsxs39(
+    /* @__PURE__ */ jsxs40("div", { children: [
+      /* @__PURE__ */ jsxs40(
         "label",
         {
           htmlFor: "postalCode",
@@ -6517,11 +6572,11 @@ function AddressForm({
           children: [
             t("address.postalCode"),
             " ",
-            /* @__PURE__ */ jsx45("span", { className: "text-red-500", children: "*" })
+            /* @__PURE__ */ jsx46("span", { className: "text-red-500", children: "*" })
           ]
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6535,8 +6590,8 @@ function AddressForm({
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxs39("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsx45(
+    /* @__PURE__ */ jsxs40("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsx46(
         "label",
         {
           htmlFor: "phoneNumber",
@@ -6544,7 +6599,7 @@ function AddressForm({
           children: t("address.phoneNumber")
         }
       ),
-      /* @__PURE__ */ jsx45("div", { className: "mt-1", children: /* @__PURE__ */ jsx45(
+      /* @__PURE__ */ jsx46("div", { className: "mt-1", children: /* @__PURE__ */ jsx46(
         "input",
         {
           type: "text",
@@ -6563,7 +6618,7 @@ function AddressForm({
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation33 } from "react-i18next";
-import { Fragment as Fragment11, jsx as jsx46, jsxs as jsxs40 } from "react/jsx-runtime";
+import { Fragment as Fragment11, jsx as jsx47, jsxs as jsxs41 } from "react/jsx-runtime";
 function ShippingMethodSelector({
   eligibleShippingMethods,
   currencyCode,
@@ -6571,9 +6626,9 @@ function ShippingMethodSelector({
   onChange
 }) {
   let { t } = useTranslation33();
-  return /* @__PURE__ */ jsxs40(RadioGroup, { value: shippingMethodId, onChange, children: [
-    /* @__PURE__ */ jsx46(RadioGroup.Label, { className: "text-lg font-medium text-gray-900", children: t("checkout.deliveryMethod") }),
-    /* @__PURE__ */ jsx46("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: eligibleShippingMethods.map((shippingMethod) => /* @__PURE__ */ jsx46(
+  return /* @__PURE__ */ jsxs41(RadioGroup, { value: shippingMethodId, onChange, children: [
+    /* @__PURE__ */ jsx47(RadioGroup.Label, { className: "text-lg font-medium text-gray-900", children: t("checkout.deliveryMethod") }),
+    /* @__PURE__ */ jsx47("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: eligibleShippingMethods.map((shippingMethod) => /* @__PURE__ */ jsx47(
       RadioGroup.Option,
       {
         value: shippingMethod.id,
@@ -6582,9 +6637,9 @@ function ShippingMethodSelector({
           active ? "ring-2 ring-primary-500" : "",
           "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
         ),
-        children: ({ checked, active }) => /* @__PURE__ */ jsxs40(Fragment11, { children: [
-          /* @__PURE__ */ jsx46("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs40("span", { className: "flex flex-col", children: [
-            /* @__PURE__ */ jsx46(
+        children: ({ checked, active }) => /* @__PURE__ */ jsxs41(Fragment11, { children: [
+          /* @__PURE__ */ jsx47("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs41("span", { className: "flex flex-col", children: [
+            /* @__PURE__ */ jsx47(
               RadioGroup.Label,
               {
                 as: "span",
@@ -6592,12 +6647,12 @@ function ShippingMethodSelector({
                 children: shippingMethod.name
               }
             ),
-            /* @__PURE__ */ jsx46(
+            /* @__PURE__ */ jsx47(
               RadioGroup.Description,
               {
                 as: "span",
                 className: "mt-6 text-sm font-medium text-gray-900",
-                children: /* @__PURE__ */ jsx46(
+                children: /* @__PURE__ */ jsx47(
                   Price,
                   {
                     priceWithTax: shippingMethod.priceWithTax,
@@ -6607,14 +6662,14 @@ function ShippingMethodSelector({
               }
             )
           ] }) }),
-          checked ? /* @__PURE__ */ jsx46(
+          checked ? /* @__PURE__ */ jsx47(
             CheckCircleIcon3,
             {
               className: "h-5 w-5 text-primary-600",
               "aria-hidden": "true"
             }
           ) : null,
-          /* @__PURE__ */ jsx46(
+          /* @__PURE__ */ jsx47(
             "span",
             {
               className: classNames(
@@ -6635,13 +6690,13 @@ function ShippingMethodSelector({
 // app/components/checkout/ShippingAddressSelector.tsx
 import { RadioGroup as RadioGroup2 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/24/solid";
-import { Fragment as Fragment12, jsx as jsx47, jsxs as jsxs41 } from "react/jsx-runtime";
+import { Fragment as Fragment12, jsx as jsx48, jsxs as jsxs42 } from "react/jsx-runtime";
 function ShippingAddressSelector({
   addresses,
   selectedAddressIndex,
   onChange
 }) {
-  return /* @__PURE__ */ jsx47(RadioGroup2, { value: selectedAddressIndex, onChange, children: /* @__PURE__ */ jsx47("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: (addresses || []).map((address, index) => /* @__PURE__ */ jsx47(
+  return /* @__PURE__ */ jsx48(RadioGroup2, { value: selectedAddressIndex, onChange, children: /* @__PURE__ */ jsx48("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: (addresses || []).map((address, index) => /* @__PURE__ */ jsx48(
     RadioGroup2.Option,
     {
       value: index,
@@ -6650,9 +6705,9 @@ function ShippingAddressSelector({
         active ? "ring-2 ring-primary-500" : "",
         "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
       ),
-      children: ({ checked, active }) => /* @__PURE__ */ jsxs41(Fragment12, { children: [
-        /* @__PURE__ */ jsx47("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs41("span", { className: "flex flex-col", children: [
-          /* @__PURE__ */ jsxs41(
+      children: ({ checked, active }) => /* @__PURE__ */ jsxs42(Fragment12, { children: [
+        /* @__PURE__ */ jsx48("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs42("span", { className: "flex flex-col", children: [
+          /* @__PURE__ */ jsxs42(
             RadioGroup2.Label,
             {
               as: "span",
@@ -6664,30 +6719,30 @@ function ShippingAddressSelector({
               ]
             }
           ),
-          /* @__PURE__ */ jsx47(
+          /* @__PURE__ */ jsx48(
             RadioGroup2.Description,
             {
               as: "span",
               className: "mt-6 text-sm text-gray-800",
-              children: /* @__PURE__ */ jsxs41("ul", { children: [
-                /* @__PURE__ */ jsx47("li", { children: address.streetLine1 }),
-                /* @__PURE__ */ jsx47("li", { children: address.streetLine2 }),
-                /* @__PURE__ */ jsx47("li", { children: address.city }),
-                /* @__PURE__ */ jsx47("li", { children: address.province }),
-                /* @__PURE__ */ jsx47("li", { children: address.postalCode }),
-                /* @__PURE__ */ jsx47("li", { children: address.country.name })
+              children: /* @__PURE__ */ jsxs42("ul", { children: [
+                /* @__PURE__ */ jsx48("li", { children: address.streetLine1 }),
+                /* @__PURE__ */ jsx48("li", { children: address.streetLine2 }),
+                /* @__PURE__ */ jsx48("li", { children: address.city }),
+                /* @__PURE__ */ jsx48("li", { children: address.province }),
+                /* @__PURE__ */ jsx48("li", { children: address.postalCode }),
+                /* @__PURE__ */ jsx48("li", { children: address.country.name })
               ] })
             }
           )
         ] }) }),
-        checked ? /* @__PURE__ */ jsx47(
+        checked ? /* @__PURE__ */ jsx48(
           CheckCircleIcon4,
           {
             className: "h-5 w-5 text-primary-600",
             "aria-hidden": "true"
           }
         ) : null,
-        /* @__PURE__ */ jsx47(
+        /* @__PURE__ */ jsx48(
           "span",
           {
             className: classNames(
@@ -6706,7 +6761,7 @@ function ShippingAddressSelector({
 
 // app/routes/checkout._index.tsx
 import { useTranslation as useTranslation34 } from "react-i18next";
-import { jsx as jsx48, jsxs as jsxs42 } from "react/jsx-runtime";
+import { jsx as jsx49, jsxs as jsxs43 } from "react/jsx-runtime";
 async function loader11({ request }) {
   try {
     let session = await (await getSessionStorage()).getSession(request.headers.get("Cookie"));
@@ -6793,17 +6848,17 @@ function CheckoutShipping() {
       setIsSubmitting(!1), navigate("./payment");
     }, 300));
   };
-  return /* @__PURE__ */ jsxs42("div", { children: [
-    /* @__PURE__ */ jsxs42("div", { children: [
-      /* @__PURE__ */ jsx48("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.detailsTitle") }),
-      isSignedIn ? /* @__PURE__ */ jsxs42("div", { children: [
-        /* @__PURE__ */ jsxs42("p", { className: "mt-2 text-gray-600", children: [
+  return /* @__PURE__ */ jsxs43("div", { children: [
+    /* @__PURE__ */ jsxs43("div", { children: [
+      /* @__PURE__ */ jsx49("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.detailsTitle") }),
+      isSignedIn ? /* @__PURE__ */ jsxs43("div", { children: [
+        /* @__PURE__ */ jsxs43("p", { className: "mt-2 text-gray-600", children: [
           customer?.firstName,
           " ",
           customer?.lastName
         ] }),
-        /* @__PURE__ */ jsx48("p", { children: customer?.emailAddress })
-      ] }) : /* @__PURE__ */ jsxs42(
+        /* @__PURE__ */ jsx49("p", { children: customer?.emailAddress })
+      ] }) : /* @__PURE__ */ jsxs43(
         Form4,
         {
           ref: customerFormRef,
@@ -6812,9 +6867,9 @@ function CheckoutShipping() {
           onSubmit: handleCustomerFormSubmit,
           onChange: () => setCustomerFormChanged(!0),
           children: [
-            /* @__PURE__ */ jsx48("input", { type: "hidden", name: "action", value: "setOrderCustomer" }),
-            /* @__PURE__ */ jsxs42("div", { className: "mt-4", children: [
-              /* @__PURE__ */ jsx48(
+            /* @__PURE__ */ jsx49("input", { type: "hidden", name: "action", value: "setOrderCustomer" }),
+            /* @__PURE__ */ jsxs43("div", { className: "mt-4", children: [
+              /* @__PURE__ */ jsx49(
                 "label",
                 {
                   htmlFor: "emailAddress",
@@ -6822,7 +6877,7 @@ function CheckoutShipping() {
                   children: t("account.emailAddress")
                 }
               ),
-              /* @__PURE__ */ jsx48("div", { className: "mt-1", children: /* @__PURE__ */ jsx48(
+              /* @__PURE__ */ jsx49("div", { className: "mt-1", children: /* @__PURE__ */ jsx49(
                 "input",
                 {
                   type: "email",
@@ -6835,11 +6890,11 @@ function CheckoutShipping() {
                   className: "block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                 }
               ) }),
-              error?.errorCode === "EMAIL_ADDRESS_CONFLICT_ERROR" && /* @__PURE__ */ jsx48("p", { className: "mt-2 text-sm text-red-600", id: "email-error", children: error.message })
+              error?.errorCode === "EMAIL_ADDRESS_CONFLICT_ERROR" && /* @__PURE__ */ jsx49("p", { className: "mt-2 text-sm text-red-600", id: "email-error", children: error.message })
             ] }),
-            /* @__PURE__ */ jsxs42("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
-              /* @__PURE__ */ jsxs42("div", { children: [
-                /* @__PURE__ */ jsx48(
+            /* @__PURE__ */ jsxs43("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
+              /* @__PURE__ */ jsxs43("div", { children: [
+                /* @__PURE__ */ jsx49(
                   "label",
                   {
                     htmlFor: "firstName",
@@ -6847,7 +6902,7 @@ function CheckoutShipping() {
                     children: t("account.firstName")
                   }
                 ),
-                /* @__PURE__ */ jsx48("div", { className: "mt-1", children: /* @__PURE__ */ jsx48(
+                /* @__PURE__ */ jsx49("div", { className: "mt-1", children: /* @__PURE__ */ jsx49(
                   "input",
                   {
                     type: "text",
@@ -6861,8 +6916,8 @@ function CheckoutShipping() {
                   }
                 ) })
               ] }),
-              /* @__PURE__ */ jsxs42("div", { children: [
-                /* @__PURE__ */ jsx48(
+              /* @__PURE__ */ jsxs43("div", { children: [
+                /* @__PURE__ */ jsx49(
                   "label",
                   {
                     htmlFor: "lastName",
@@ -6870,7 +6925,7 @@ function CheckoutShipping() {
                     children: t("account.lastName")
                   }
                 ),
-                /* @__PURE__ */ jsx48("div", { className: "mt-1", children: /* @__PURE__ */ jsx48(
+                /* @__PURE__ */ jsx49("div", { className: "mt-1", children: /* @__PURE__ */ jsx49(
                   "input",
                   {
                     type: "text",
@@ -6889,7 +6944,7 @@ function CheckoutShipping() {
         }
       )
     ] }),
-    /* @__PURE__ */ jsxs42(
+    /* @__PURE__ */ jsxs43(
       Form4,
       {
         ref: addressFormRef,
@@ -6898,10 +6953,10 @@ function CheckoutShipping() {
         onSubmit: handleAddressFormSubmit,
         onChange: () => setAddressFormChanged(!0),
         children: [
-          /* @__PURE__ */ jsx48("input", { type: "hidden", name: "action", value: "setCheckoutShipping" }),
-          /* @__PURE__ */ jsx48("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsx48("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.shippingTitle") }) }),
-          isSignedIn && activeCustomer.addresses?.length ? /* @__PURE__ */ jsxs42("div", { children: [
-            /* @__PURE__ */ jsx48(
+          /* @__PURE__ */ jsx49("input", { type: "hidden", name: "action", value: "setCheckoutShipping" }),
+          /* @__PURE__ */ jsx49("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsx49("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.shippingTitle") }) }),
+          isSignedIn && activeCustomer.addresses?.length ? /* @__PURE__ */ jsxs43("div", { children: [
+            /* @__PURE__ */ jsx49(
               ShippingAddressSelector,
               {
                 addresses: activeCustomer.addresses,
@@ -6909,7 +6964,7 @@ function CheckoutShipping() {
                 onChange: submitSelectedAddress
               }
             ),
-            /* @__PURE__ */ jsx48("div", { className: "mt-4", children: /* @__PURE__ */ jsx48(
+            /* @__PURE__ */ jsx49("div", { className: "mt-4", children: /* @__PURE__ */ jsx49(
               "button",
               {
                 type: "button",
@@ -6918,7 +6973,7 @@ function CheckoutShipping() {
                 children: t("checkout.addNewAddress")
               }
             ) })
-          ] }) : /* @__PURE__ */ jsx48(
+          ] }) : /* @__PURE__ */ jsx49(
             AddressForm,
             {
               availableCountries,
@@ -6927,7 +6982,7 @@ function CheckoutShipping() {
               onBlur: handleAddressBlur
             }
           ),
-          isSignedIn && !activeCustomer.addresses?.length && /* @__PURE__ */ jsx48(
+          isSignedIn && !activeCustomer.addresses?.length && /* @__PURE__ */ jsx49(
             AddressForm,
             {
               availableCountries,
@@ -6939,7 +6994,7 @@ function CheckoutShipping() {
         ]
       }
     ),
-    /* @__PURE__ */ jsx48("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsx48(
+    /* @__PURE__ */ jsx49("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsx49(
       ShippingMethodSelector,
       {
         eligibleShippingMethods,
@@ -6948,7 +7003,7 @@ function CheckoutShipping() {
         onChange: submitSelectedShippingMethod
       }
     ) }),
-    /* @__PURE__ */ jsxs42(
+    /* @__PURE__ */ jsxs43(
       "button",
       {
         type: "button",
@@ -6959,8 +7014,8 @@ function CheckoutShipping() {
           "flex w-full items-center justify-center space-x-2 mt-24 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
         ),
         children: [
-          /* @__PURE__ */ jsx48(LockClosedIcon, { className: "w-5 h-5" }),
-          /* @__PURE__ */ jsx48("span", { children: t(isSubmitting ? "checkout.processing" : "checkout.goToPayment") })
+          /* @__PURE__ */ jsx49(LockClosedIcon, { className: "w-5 h-5" }),
+          /* @__PURE__ */ jsx49("span", { children: t(isSubmitting ? "checkout.processing" : "checkout.goToPayment") })
         ]
       }
     )
@@ -6977,22 +7032,22 @@ import { CheckCircleIcon as CheckCircleIcon5 } from "@heroicons/react/24/outline
 import { Form as Form5 } from "@remix-run/react";
 import { redirect as redirect7 } from "@remix-run/server-runtime";
 import { useTranslation as useTranslation35 } from "react-i18next";
-import { jsx as jsx49, jsxs as jsxs43 } from "react/jsx-runtime";
+import { jsx as jsx50, jsxs as jsxs44 } from "react/jsx-runtime";
 async function action8() {
   return redirect7("/");
 }
 function SuccessPage() {
   let { t } = useTranslation35();
-  return /* @__PURE__ */ jsx49("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsx49("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md border-2 rounded-md border-green-600", children: /* @__PURE__ */ jsx49("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: /* @__PURE__ */ jsx49(Form5, { className: "space-y-6", method: "post", children: /* @__PURE__ */ jsxs43("div", { children: [
-    /* @__PURE__ */ jsx49("div", { className: "flex justify-center", children: /* @__PURE__ */ jsx49("div", { className: "flex-grow", children: /* @__PURE__ */ jsx49(
+  return /* @__PURE__ */ jsx50("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsx50("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md border-2 rounded-md border-green-600", children: /* @__PURE__ */ jsx50("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: /* @__PURE__ */ jsx50(Form5, { className: "space-y-6", method: "post", children: /* @__PURE__ */ jsxs44("div", { children: [
+    /* @__PURE__ */ jsx50("div", { className: "flex justify-center", children: /* @__PURE__ */ jsx50("div", { className: "flex-grow", children: /* @__PURE__ */ jsx50(
       CheckCircleIcon5,
       {
         className: "h-20 w-20 m-auto mb-2 text-green-600",
         "aria-hidden": "true"
       }
     ) }) }),
-    /* @__PURE__ */ jsx49("p", { className: "text-center mb-5", children: t("account.createdMessage") }),
-    /* @__PURE__ */ jsx49(
+    /* @__PURE__ */ jsx50("p", { className: "text-center mb-5", children: t("account.createdMessage") }),
+    /* @__PURE__ */ jsx50(
       "button",
       {
         type: "submit",
@@ -7018,7 +7073,7 @@ import { useEffect as useEffect11, useRef as useRef8, useState as useState11 } f
 import { ValidatedForm as ValidatedForm5, validationError as validationError4 } from "remix-validated-form";
 import { z as z4 } from "zod";
 import { useTranslation as useTranslation36 } from "react-i18next";
-import { Fragment as Fragment13, jsx as jsx50, jsxs as jsxs44 } from "react/jsx-runtime";
+import { Fragment as Fragment13, jsx as jsx51, jsxs as jsxs45 } from "react/jsx-runtime";
 var validator4 = withZod(
   z4.object({
     title: z4.string(),
@@ -7101,25 +7156,25 @@ function AccountDetails() {
     }
   }, [actionDataHook]), useEffect11(() => {
     formRef.current?.reset();
-  }, [isEditing]), /* @__PURE__ */ jsxs44(Fragment13, { children: [
-    /* @__PURE__ */ jsx50(
+  }, [isEditing]), /* @__PURE__ */ jsxs45(Fragment13, { children: [
+    /* @__PURE__ */ jsx51(
       Modal_default,
       {
         isOpen: showChangeEmailModal,
         close: () => closeChangeEmailModal(),
         afterOpen: () => emailInputRef.current?.focus(),
         size: "small",
-        children: /* @__PURE__ */ jsxs44(ValidatedForm5, { validator: changeEmailValidator, method: "post", children: [
-          /* @__PURE__ */ jsx50(Modal_default.Title, { children: t("account.changeEmailModal.title") }),
-          /* @__PURE__ */ jsx50(Modal_default.Body, { children: /* @__PURE__ */ jsxs44("div", { className: "space-y-4 my-8", children: [
-            /* @__PURE__ */ jsx50("p", { children: t("account.changeEmailModal.heading") }),
-            /* @__PURE__ */ jsxs44("p", { children: [
+        children: /* @__PURE__ */ jsxs45(ValidatedForm5, { validator: changeEmailValidator, method: "post", children: [
+          /* @__PURE__ */ jsx51(Modal_default.Title, { children: t("account.changeEmailModal.title") }),
+          /* @__PURE__ */ jsx51(Modal_default.Body, { children: /* @__PURE__ */ jsxs45("div", { className: "space-y-4 my-8", children: [
+            /* @__PURE__ */ jsx51("p", { children: t("account.changeEmailModal.heading") }),
+            /* @__PURE__ */ jsxs45("p", { children: [
               t("account.changeEmailModal.currentEmail"),
               " ",
-              /* @__PURE__ */ jsx50("strong", { children: emailAddress })
+              /* @__PURE__ */ jsx51("strong", { children: emailAddress })
             ] }),
-            /* @__PURE__ */ jsxs44("div", { className: "space-y-1", children: [
-              /* @__PURE__ */ jsx50(
+            /* @__PURE__ */ jsxs45("div", { className: "space-y-1", children: [
+              /* @__PURE__ */ jsx51(
                 "input",
                 {
                   type: "hidden",
@@ -7127,7 +7182,7 @@ function AccountDetails() {
                   value: "updateEmail" /* UpdateEmail */
                 }
               ),
-              /* @__PURE__ */ jsx50(
+              /* @__PURE__ */ jsx51(
                 Input,
                 {
                   ref: emailInputRef,
@@ -7137,7 +7192,7 @@ function AccountDetails() {
                   required: !0
                 }
               ),
-              /* @__PURE__ */ jsx50(
+              /* @__PURE__ */ jsx51(
                 Input,
                 {
                   label: t("account.password"),
@@ -7146,9 +7201,9 @@ function AccountDetails() {
                   required: !0
                 }
               ),
-              /* @__PURE__ */ jsx50("input", { type: "submit", hidden: !0 })
+              /* @__PURE__ */ jsx51("input", { type: "submit", hidden: !0 })
             ] }),
-            formError && formError.intent === "updateEmail" /* UpdateEmail */ && /* @__PURE__ */ jsx50(
+            formError && formError.intent === "updateEmail" /* UpdateEmail */ && /* @__PURE__ */ jsx51(
               ErrorMessage,
               {
                 heading: t("account.changeEmailModal.errorMessage"),
@@ -7156,9 +7211,9 @@ function AccountDetails() {
               }
             )
           ] }) }),
-          /* @__PURE__ */ jsxs44(Modal_default.Footer, { children: [
-            /* @__PURE__ */ jsx50(Button, { type: "reset", onClick: () => closeChangeEmailModal(), children: t("common.cancel") }),
-            /* @__PURE__ */ jsx50(
+          /* @__PURE__ */ jsxs45(Modal_default.Footer, { children: [
+            /* @__PURE__ */ jsx51(Button, { type: "reset", onClick: () => closeChangeEmailModal(), children: t("common.cancel") }),
+            /* @__PURE__ */ jsx51(
               HighlightedButton,
               {
                 type: "submit",
@@ -7170,29 +7225,29 @@ function AccountDetails() {
         ] })
       }
     ),
-    /* @__PURE__ */ jsxs44("div", { className: "space-y-10 p-4 mt-5", children: [
-      /* @__PURE__ */ jsxs44("div", { className: "grid grid-cols-2 gap-4", children: [
-        /* @__PURE__ */ jsxs44("div", { className: "col-span-2", children: [
-          /* @__PURE__ */ jsx50("h3", { className: "text-sm text-gray-500", children: t("account.email") }),
-          emailSavedResponse ? /* @__PURE__ */ jsxs44("span", { children: [
-            /* @__PURE__ */ jsx50("span", { className: "italic text-gray-800", children: emailSavedResponse.newEmailAddress }),
-            /* @__PURE__ */ jsx50("span", { className: "ml-2 bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300", children: t("account.changeEmailConfirmation") })
-          ] }) : /* @__PURE__ */ jsx50("span", { children: emailAddress })
+    /* @__PURE__ */ jsxs45("div", { className: "space-y-10 p-4 mt-5", children: [
+      /* @__PURE__ */ jsxs45("div", { className: "grid grid-cols-2 gap-4", children: [
+        /* @__PURE__ */ jsxs45("div", { className: "col-span-2", children: [
+          /* @__PURE__ */ jsx51("h3", { className: "text-sm text-gray-500", children: t("account.email") }),
+          emailSavedResponse ? /* @__PURE__ */ jsxs45("span", { children: [
+            /* @__PURE__ */ jsx51("span", { className: "italic text-gray-800", children: emailSavedResponse.newEmailAddress }),
+            /* @__PURE__ */ jsx51("span", { className: "ml-2 bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300", children: t("account.changeEmailConfirmation") })
+          ] }) : /* @__PURE__ */ jsx51("span", { children: emailAddress })
         ] }),
-        /* @__PURE__ */ jsx50("div", { className: "col-span-2", children: /* @__PURE__ */ jsxs44(
+        /* @__PURE__ */ jsx51("div", { className: "col-span-2", children: /* @__PURE__ */ jsxs45(
           HighlightedButton,
           {
             type: "button",
             onClick: () => openChangeEmailModal(),
             children: [
-              /* @__PURE__ */ jsx50(PencilIcon3, { className: "w-4 h-4" }),
+              /* @__PURE__ */ jsx51(PencilIcon3, { className: "w-4 h-4" }),
               " ",
               t("account.changeEmailButton")
             ]
           }
         ) })
       ] }),
-      /* @__PURE__ */ jsx50("div", { className: "border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxs44(
+      /* @__PURE__ */ jsx51("div", { className: "border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxs45(
         ValidatedForm5,
         {
           validator: validator4,
@@ -7206,7 +7261,7 @@ function AccountDetails() {
             phoneNumber: phoneNumber ?? void 0
           },
           children: [
-            /* @__PURE__ */ jsx50(
+            /* @__PURE__ */ jsx51(
               "input",
               {
                 type: "hidden",
@@ -7214,8 +7269,8 @@ function AccountDetails() {
                 value: "updateDetails" /* UpdateDetails */
               }
             ),
-            /* @__PURE__ */ jsxs44("div", { className: "gap-4 grid sm:grid-cols-2", children: [
-              isEditing && /* @__PURE__ */ jsx50("div", { className: "col-span-2", children: /* @__PURE__ */ jsx50(
+            /* @__PURE__ */ jsxs45("div", { className: "gap-4 grid sm:grid-cols-2", children: [
+              isEditing && /* @__PURE__ */ jsx51("div", { className: "col-span-2", children: /* @__PURE__ */ jsx51(
                 Input,
                 {
                   label: t("account.title"),
@@ -7223,8 +7278,8 @@ function AccountDetails() {
                   className: "sm:w-1/4"
                 }
               ) }),
-              isEditing ? /* @__PURE__ */ jsxs44(Fragment13, { children: [
-                /* @__PURE__ */ jsx50("div", { children: /* @__PURE__ */ jsx50(
+              isEditing ? /* @__PURE__ */ jsxs45(Fragment13, { children: [
+                /* @__PURE__ */ jsx51("div", { children: /* @__PURE__ */ jsx51(
                   Input,
                   {
                     label: t("account.firstName"),
@@ -7232,7 +7287,7 @@ function AccountDetails() {
                     required: !0
                   }
                 ) }),
-                /* @__PURE__ */ jsx50("div", { children: /* @__PURE__ */ jsx50(
+                /* @__PURE__ */ jsx51("div", { children: /* @__PURE__ */ jsx51(
                   Input,
                   {
                     label: t("account.lastName"),
@@ -7240,48 +7295,48 @@ function AccountDetails() {
                     required: !0
                   }
                 ) })
-              ] }) : /* @__PURE__ */ jsxs44("div", { children: [
-                /* @__PURE__ */ jsx50("h3", { className: "text-sm text-gray-500", children: t("account.fullName") }),
+              ] }) : /* @__PURE__ */ jsxs45("div", { children: [
+                /* @__PURE__ */ jsx51("h3", { className: "text-sm text-gray-500", children: t("account.fullName") }),
                 replaceEmptyString(fullName)
               ] }),
-              /* @__PURE__ */ jsx50("div", { children: isEditing ? /* @__PURE__ */ jsx50(Input, { label: t("account.phoneNumber"), name: "phoneNumber" }) : /* @__PURE__ */ jsxs44("div", { children: [
-                /* @__PURE__ */ jsx50("h3", { className: "text-sm text-gray-500", children: t("account.phoneNumber") }),
+              /* @__PURE__ */ jsx51("div", { children: isEditing ? /* @__PURE__ */ jsx51(Input, { label: t("account.phoneNumber"), name: "phoneNumber" }) : /* @__PURE__ */ jsxs45("div", { children: [
+                /* @__PURE__ */ jsx51("h3", { className: "text-sm text-gray-500", children: t("account.phoneNumber") }),
                 replaceEmptyString(phoneNumber)
               ] }) }),
-              /* @__PURE__ */ jsx50("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxs44(Fragment13, { children: [
-                formError && formError.intent === "updateDetails" /* UpdateDetails */ && /* @__PURE__ */ jsx50(
+              /* @__PURE__ */ jsx51("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxs45(Fragment13, { children: [
+                formError && formError.intent === "updateDetails" /* UpdateDetails */ && /* @__PURE__ */ jsx51(
                   ErrorMessage,
                   {
                     heading: t("account.errorMessage"),
                     message: formError.message
                   }
                 ),
-                /* @__PURE__ */ jsxs44("div", { className: "flex gap-x-4", children: [
-                  /* @__PURE__ */ jsxs44(
+                /* @__PURE__ */ jsxs45("div", { className: "flex gap-x-4", children: [
+                  /* @__PURE__ */ jsxs45(
                     HighlightedButton,
                     {
                       type: "submit",
                       isSubmitting: state === "submitting",
                       children: [
-                        /* @__PURE__ */ jsx50(CheckIcon2, { className: "w-4 h-4" }),
+                        /* @__PURE__ */ jsx51(CheckIcon2, { className: "w-4 h-4" }),
                         " ",
                         t("common.save")
                       ]
                     }
                   ),
-                  /* @__PURE__ */ jsxs44(Button, { type: "reset", onClick: () => setIsEditing(!1), children: [
-                    /* @__PURE__ */ jsx50(XMarkIcon4, { className: "w-4 h-4" }),
+                  /* @__PURE__ */ jsxs45(Button, { type: "reset", onClick: () => setIsEditing(!1), children: [
+                    /* @__PURE__ */ jsx51(XMarkIcon4, { className: "w-4 h-4" }),
                     " ",
                     t("common.cancel")
                   ] })
                 ] })
-              ] }) : /* @__PURE__ */ jsxs44(
+              ] }) : /* @__PURE__ */ jsxs45(
                 HighlightedButton,
                 {
                   type: "button",
                   onClick: () => setIsEditing(!0),
                   children: [
-                    /* @__PURE__ */ jsx50(PencilIcon3, { className: "w-4 h-4" }),
+                    /* @__PURE__ */ jsx51(PencilIcon3, { className: "w-4 h-4" }),
                     " ",
                     t("common.edit")
                   ]
@@ -7314,17 +7369,17 @@ import { CheckIcon as CheckIcon3, HeartIcon, PhotoIcon } from "@heroicons/react/
 
 // app/components/Alert.tsx
 import { XCircleIcon as XCircleIcon5 } from "@heroicons/react/24/solid";
-import { jsx as jsx51, jsxs as jsxs45 } from "react/jsx-runtime";
+import { jsx as jsx52, jsxs as jsxs46 } from "react/jsx-runtime";
 function Alert({ message }) {
-  return /* @__PURE__ */ jsx51("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs45("div", { className: "flex", children: [
-    /* @__PURE__ */ jsx51("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx51(XCircleIcon5, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }) }),
-    /* @__PURE__ */ jsx51("div", { className: "ml-3", children: /* @__PURE__ */ jsx51("h3", { className: "text-sm font-medium text-red-800", children: message }) })
+  return /* @__PURE__ */ jsx52("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs46("div", { className: "flex", children: [
+    /* @__PURE__ */ jsx52("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx52(XCircleIcon5, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }) }),
+    /* @__PURE__ */ jsx52("div", { className: "ml-3", children: /* @__PURE__ */ jsx52("h3", { className: "text-sm font-medium text-red-800", children: message }) })
   ] }) });
 }
 
 // app/components/products/StockLevelLabel.tsx
 import { useTranslation as useTranslation37 } from "react-i18next";
-import { jsx as jsx52 } from "react/jsx-runtime";
+import { jsx as jsx53 } from "react/jsx-runtime";
 function StockLevelLabel({ stockLevel }) {
   let { t } = useTranslation37(), stockLevelLabel = "", badgeClasses = "bg-gray-100 text-gray-800";
   switch (stockLevel) {
@@ -7338,7 +7393,7 @@ function StockLevelLabel({ stockLevel }) {
       stockLevelLabel = t("product.lowStock"), badgeClasses = "bg-yellow-100 text-yellow-800";
       break;
   }
-  return /* @__PURE__ */ jsx52(
+  return /* @__PURE__ */ jsx53(
     "span",
     {
       className: "inline-flex items-center px-2 py-0.5 rounded text-xs font-medium " + badgeClasses,
@@ -7350,7 +7405,7 @@ function StockLevelLabel({ stockLevel }) {
 // app/components/products/TopReviews.tsx
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation38 } from "react-i18next";
-import { jsx as jsx53, jsxs as jsxs46 } from "react/jsx-runtime";
+import { jsx as jsx54, jsxs as jsxs47 } from "react/jsx-runtime";
 var reviews = [
   {
     id: 1,
@@ -7390,16 +7445,16 @@ var reviews = [
 ];
 function TopReviews() {
   let { t } = useTranslation38();
-  return /* @__PURE__ */ jsx53("div", { className: "", children: /* @__PURE__ */ jsxs46("div", { className: "max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-6xl lg:px-8", children: [
-    /* @__PURE__ */ jsx53("h2", { className: "text-lg font-medium text-gray-900", children: t("product.recentReviews") }),
-    /* @__PURE__ */ jsx53("div", { className: "mt-6 pb-10 border-t border-gray-200 divide-y divide-gray-200 space-y-10", children: reviews.map((review) => /* @__PURE__ */ jsxs46(
+  return /* @__PURE__ */ jsx54("div", { className: "", children: /* @__PURE__ */ jsxs47("div", { className: "max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-6xl lg:px-8", children: [
+    /* @__PURE__ */ jsx54("h2", { className: "text-lg font-medium text-gray-900", children: t("product.recentReviews") }),
+    /* @__PURE__ */ jsx54("div", { className: "mt-6 pb-10 border-t border-gray-200 divide-y divide-gray-200 space-y-10", children: reviews.map((review) => /* @__PURE__ */ jsxs47(
       "div",
       {
         className: "pt-10 lg:grid lg:grid-cols-12 lg:gap-x-8",
         children: [
-          /* @__PURE__ */ jsxs46("div", { className: "lg:col-start-5 lg:col-span-8 xl:col-start-4 xl:col-span-9 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:items-start", children: [
-            /* @__PURE__ */ jsxs46("div", { className: "flex items-center xl:col-span-1", children: [
-              /* @__PURE__ */ jsx53("div", { className: "flex items-center", children: [0, 1, 2, 3, 4].map((rating) => /* @__PURE__ */ jsx53(
+          /* @__PURE__ */ jsxs47("div", { className: "lg:col-start-5 lg:col-span-8 xl:col-start-4 xl:col-span-9 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:items-start", children: [
+            /* @__PURE__ */ jsxs47("div", { className: "flex items-center xl:col-span-1", children: [
+              /* @__PURE__ */ jsx54("div", { className: "flex items-center", children: [0, 1, 2, 3, 4].map((rating) => /* @__PURE__ */ jsx54(
                 StarIcon,
                 {
                   className: classNames(
@@ -7410,17 +7465,17 @@ function TopReviews() {
                 },
                 rating
               )) }),
-              /* @__PURE__ */ jsxs46("p", { className: "ml-3 text-sm text-gray-700", children: [
+              /* @__PURE__ */ jsxs47("p", { className: "ml-3 text-sm text-gray-700", children: [
                 review.rating,
-                /* @__PURE__ */ jsxs46("span", { className: "sr-only", children: [
+                /* @__PURE__ */ jsxs47("span", { className: "sr-only", children: [
                   " ",
                   t("product.recentRating")
                 ] })
               ] })
             ] }),
-            /* @__PURE__ */ jsxs46("div", { className: "mt-4 lg:mt-6 xl:mt-0 xl:col-span-2", children: [
-              /* @__PURE__ */ jsx53("h3", { className: "text-sm font-medium text-gray-900", children: review.title }),
-              /* @__PURE__ */ jsx53(
+            /* @__PURE__ */ jsxs47("div", { className: "mt-4 lg:mt-6 xl:mt-0 xl:col-span-2", children: [
+              /* @__PURE__ */ jsx54("h3", { className: "text-sm font-medium text-gray-900", children: review.title }),
+              /* @__PURE__ */ jsx54(
                 "div",
                 {
                   className: "mt-3 space-y-6 text-sm text-gray-500",
@@ -7431,9 +7486,9 @@ function TopReviews() {
               )
             ] })
           ] }),
-          /* @__PURE__ */ jsxs46("div", { className: "mt-6 flex items-center text-sm lg:mt-0 lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:flex-col lg:items-start xl:col-span-3", children: [
-            /* @__PURE__ */ jsx53("p", { className: "font-medium text-gray-900", children: review.author }),
-            /* @__PURE__ */ jsx53(
+          /* @__PURE__ */ jsxs47("div", { className: "mt-6 flex items-center text-sm lg:mt-0 lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:flex-col lg:items-start xl:col-span-3", children: [
+            /* @__PURE__ */ jsx54("p", { className: "font-medium text-gray-900", children: review.author }),
+            /* @__PURE__ */ jsx54(
               "time",
               {
                 dateTime: review.datetime,
@@ -7451,7 +7506,7 @@ function TopReviews() {
 
 // app/components/products/ScrollableContainer.tsx
 import { useRef as useRef9, useEffect as useEffect12 } from "react";
-import { jsx as jsx54 } from "react/jsx-runtime";
+import { jsx as jsx55 } from "react/jsx-runtime";
 function ScrollableContainer({ children }) {
   let spanRef = useRef9(null), pos = {
     top: 0,
@@ -7480,7 +7535,7 @@ function ScrollableContainer({ children }) {
     spanRef.current.addEventListener("wheel", wheelHandler, {
       passive: !1
     });
-  }), /* @__PURE__ */ jsx54(
+  }), /* @__PURE__ */ jsx55(
     "span",
     {
       className: "py-2 mt-2 flex flex-row flex-nowrap space-x-4 md:overflow-x-hidden overflow-x-auto cursor-grab touch-pan-x",
@@ -7496,7 +7551,7 @@ function ScrollableContainer({ children }) {
 
 // app/routes/products.$slug.tsx
 import { useTranslation as useTranslation39 } from "react-i18next";
-import { jsx as jsx55, jsxs as jsxs47 } from "react/jsx-runtime";
+import { jsx as jsx56, jsxs as jsxs48 } from "react/jsx-runtime";
 var meta3 = ({ data }) => [
   {
     title: data?.product?.name ? `${data.product.name} - ${APP_META_TITLE}` : APP_META_TITLE
@@ -7524,7 +7579,7 @@ var shouldRevalidate2 = () => !0;
 function ProductSlug() {
   let { product, error } = useLoaderData13(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
   if (!product)
-    return /* @__PURE__ */ jsx55("div", { children: t("product.notFound") });
+    return /* @__PURE__ */ jsx56("div", { children: t("product.notFound") });
   let findVariantById = (id) => product.variants.find((v) => v.id === id), [selectedVariantId, setSelectedVariantId] = useState12(
     product.variants[0].id
   ), selectedVariant = findVariantById(selectedVariantId);
@@ -7534,18 +7589,18 @@ function ProductSlug() {
   )?.name, [featuredAsset, setFeaturedAsset] = useState12(
     selectedVariant?.featuredAsset
   ), [isFavorite, setIsFavorite] = useState12(!1);
-  return /* @__PURE__ */ jsxs47("div", { children: [
-    /* @__PURE__ */ jsxs47("div", { className: "max-w-6xl mx-auto px-4", children: [
-      /* @__PURE__ */ jsx55("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: product.name }),
-      /* @__PURE__ */ jsx55(
+  return /* @__PURE__ */ jsxs48("div", { children: [
+    /* @__PURE__ */ jsxs48("div", { className: "max-w-6xl mx-auto px-4", children: [
+      /* @__PURE__ */ jsx56("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: product.name }),
+      /* @__PURE__ */ jsx56(
         Breadcrumbs,
         {
           items: product.collections[product.collections.length - 1]?.breadcrumbs ?? []
         }
       ),
-      /* @__PURE__ */ jsxs47("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
-        /* @__PURE__ */ jsxs47("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: [
-          /* @__PURE__ */ jsx55("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsx55("div", { className: "w-full h-full object-center object-cover rounded-lg", children: /* @__PURE__ */ jsx55(
+      /* @__PURE__ */ jsxs48("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
+        /* @__PURE__ */ jsxs48("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: [
+          /* @__PURE__ */ jsx56("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsx56("div", { className: "w-full h-full object-center object-cover rounded-lg", children: /* @__PURE__ */ jsx56(
             "img",
             {
               src: (featuredAsset?.preview || product.featuredAsset?.preview) + "?w=800",
@@ -7553,14 +7608,14 @@ function ProductSlug() {
               className: "w-full h-full object-center object-cover rounded-lg"
             }
           ) }) }),
-          product.assets.length > 1 && /* @__PURE__ */ jsx55(ScrollableContainer, { children: product.assets.map((asset2) => /* @__PURE__ */ jsx55(
+          product.assets.length > 1 && /* @__PURE__ */ jsx56(ScrollableContainer, { children: product.assets.map((asset2) => /* @__PURE__ */ jsx56(
             "div",
             {
               className: `basis-1/3 md:basis-1/4 flex-shrink-0 select-none touch-pan-x rounded-lg ${featuredAsset?.id == asset2.id ? "outline outline-2 outline-primary outline-offset-[-2px]" : ""}`,
               onClick: () => {
                 setFeaturedAsset(asset2);
               },
-              children: /* @__PURE__ */ jsx55(
+              children: /* @__PURE__ */ jsx56(
                 "img",
                 {
                   draggable: "false",
@@ -7571,10 +7626,10 @@ function ProductSlug() {
             }
           )) })
         ] }),
-        /* @__PURE__ */ jsxs47("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
-          /* @__PURE__ */ jsxs47("div", { className: "", children: [
-            /* @__PURE__ */ jsx55("h3", { className: "sr-only", children: t("product.description") }),
-            /* @__PURE__ */ jsx55(
+        /* @__PURE__ */ jsxs48("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
+          /* @__PURE__ */ jsxs48("div", { className: "", children: [
+            /* @__PURE__ */ jsx56("h3", { className: "sr-only", children: t("product.description") }),
+            /* @__PURE__ */ jsx56(
               "div",
               {
                 className: "text-base text-gray-700",
@@ -7584,10 +7639,10 @@ function ProductSlug() {
               }
             )
           ] }),
-          /* @__PURE__ */ jsxs47(activeOrderFetcher.Form, { method: "post", action: "/api/active-order", children: [
-            /* @__PURE__ */ jsx55("input", { type: "hidden", name: "action", value: "addItemToOrder" }),
-            1 < product.variants.length ? /* @__PURE__ */ jsxs47("div", { className: "mt-4", children: [
-              /* @__PURE__ */ jsx55(
+          /* @__PURE__ */ jsxs48(activeOrderFetcher.Form, { method: "post", action: "/api/active-order", children: [
+            /* @__PURE__ */ jsx56("input", { type: "hidden", name: "action", value: "addItemToOrder" }),
+            1 < product.variants.length ? /* @__PURE__ */ jsxs48("div", { className: "mt-4", children: [
+              /* @__PURE__ */ jsx56(
                 "label",
                 {
                   htmlFor: "option",
@@ -7595,7 +7650,7 @@ function ProductSlug() {
                   children: t("product.selectOption")
                 }
               ),
-              /* @__PURE__ */ jsx55(
+              /* @__PURE__ */ jsx56(
                 "select",
                 {
                   className: "mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md",
@@ -7607,10 +7662,10 @@ function ProductSlug() {
                     let variant = findVariantById(e.target.value);
                     variant && setFeaturedAsset(variant.featuredAsset);
                   },
-                  children: product.variants.map((variant) => /* @__PURE__ */ jsx55("option", { value: variant.id, children: variant.name }, variant.id))
+                  children: product.variants.map((variant) => /* @__PURE__ */ jsx56("option", { value: variant.id, children: variant.name }, variant.id))
                 }
               )
-            ] }) : /* @__PURE__ */ jsx55(
+            ] }) : /* @__PURE__ */ jsx56(
               "input",
               {
                 type: "hidden",
@@ -7618,16 +7673,16 @@ function ProductSlug() {
                 value: selectedVariantId
               }
             ),
-            /* @__PURE__ */ jsxs47("div", { className: "mt-10 flex flex-col sm:flex-row sm:items-center", children: [
-              /* @__PURE__ */ jsx55("p", { className: "text-3xl text-gray-900 mr-4", children: /* @__PURE__ */ jsx55(
+            /* @__PURE__ */ jsxs48("div", { className: "mt-10 flex flex-col sm:flex-row sm:items-center", children: [
+              /* @__PURE__ */ jsx56("p", { className: "text-3xl text-gray-900 mr-4", children: /* @__PURE__ */ jsx56(
                 Price,
                 {
                   priceWithTax: selectedVariant?.priceWithTax,
                   currencyCode: selectedVariant?.currencyCode
                 }
               ) }),
-              /* @__PURE__ */ jsxs47("div", { className: "flex sm:flex-col1 align-baseline", children: [
-                /* @__PURE__ */ jsx55(
+              /* @__PURE__ */ jsxs48("div", { className: "flex sm:flex-col1 align-baseline", children: [
+                /* @__PURE__ */ jsx56(
                   "button",
                   {
                     type: "submit",
@@ -7636,8 +7691,8 @@ function ProductSlug() {
                                       justify-center text-base font-medium text-white focus:outline-none
                                       focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500 sm:w-full`,
                     disabled: activeOrderFetcher.state !== "idle",
-                    children: qtyInCart ? /* @__PURE__ */ jsxs47("span", { className: "flex items-center", children: [
-                      /* @__PURE__ */ jsx55(CheckIcon3, { className: "w-5 h-5 mr-1" }),
+                    children: qtyInCart ? /* @__PURE__ */ jsxs48("span", { className: "flex items-center", children: [
+                      /* @__PURE__ */ jsx56(CheckIcon3, { className: "w-5 h-5 mr-1" }),
                       " ",
                       qtyInCart,
                       " ",
@@ -7645,48 +7700,48 @@ function ProductSlug() {
                     ] }) : t("product.addToCart")
                   }
                 ),
-                /* @__PURE__ */ jsxs47(
+                /* @__PURE__ */ jsxs48(
                   "button",
                   {
                     type: "button",
                     className: `ml-4 py-3 px-3 rounded-md flex items-center justify-center transition-colors ${isFavorite ? "text-red-500 hover:text-red-600" : "text-gray-400 hover:bg-gray-100 hover:text-gray-500"}`,
                     onClick: () => setIsFavorite(!isFavorite),
                     children: [
-                      /* @__PURE__ */ jsx55(
+                      /* @__PURE__ */ jsx56(
                         HeartIcon,
                         {
                           className: `h-6 w-6 flex-shrink-0 ${isFavorite ? "fill-current" : ""}`,
                           "aria-hidden": "true"
                         }
                       ),
-                      /* @__PURE__ */ jsx55("span", { className: "sr-only", children: t(isFavorite ? "product.removeFromFavorites" : "product.addToFavorites") })
+                      /* @__PURE__ */ jsx56("span", { className: "sr-only", children: t(isFavorite ? "product.removeFromFavorites" : "product.addToFavorites") })
                     ]
                   }
                 )
               ] })
             ] }),
-            /* @__PURE__ */ jsxs47("div", { className: "mt-2 flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsx55("span", { className: "text-gray-500", children: selectedVariant?.sku }),
-              /* @__PURE__ */ jsx55(StockLevelLabel, { stockLevel: selectedVariant?.stockLevel })
+            /* @__PURE__ */ jsxs48("div", { className: "mt-2 flex items-center space-x-2", children: [
+              /* @__PURE__ */ jsx56("span", { className: "text-gray-500", children: selectedVariant?.sku }),
+              /* @__PURE__ */ jsx56(StockLevelLabel, { stockLevel: selectedVariant?.stockLevel })
             ] }),
-            addItemToOrderError && /* @__PURE__ */ jsx55("div", { className: "mt-4", children: /* @__PURE__ */ jsx55(Alert, { message: addItemToOrderError }) }),
-            /* @__PURE__ */ jsxs47("section", { className: "mt-12 pt-12 border-t text-xs", children: [
-              /* @__PURE__ */ jsx55("h3", { className: "text-gray-600 font-bold mb-2", children: t("product.shippingAndReturns") }),
-              /* @__PURE__ */ jsxs47("div", { className: "text-gray-500 space-y-1", children: [
-                /* @__PURE__ */ jsx55("p", { children: t("product.shippingInfo") }),
-                /* @__PURE__ */ jsx55("p", { children: t("product.shippingCostsInfo") }),
-                /* @__PURE__ */ jsx55("p", { children: t("product.returnsInfo") })
+            addItemToOrderError && /* @__PURE__ */ jsx56("div", { className: "mt-4", children: /* @__PURE__ */ jsx56(Alert, { message: addItemToOrderError }) }),
+            /* @__PURE__ */ jsxs48("section", { className: "mt-12 pt-12 border-t text-xs", children: [
+              /* @__PURE__ */ jsx56("h3", { className: "text-gray-600 font-bold mb-2", children: t("product.shippingAndReturns") }),
+              /* @__PURE__ */ jsxs48("div", { className: "text-gray-500 space-y-1", children: [
+                /* @__PURE__ */ jsx56("p", { children: t("product.shippingInfo") }),
+                /* @__PURE__ */ jsx56("p", { children: t("product.shippingCostsInfo") }),
+                /* @__PURE__ */ jsx56("p", { children: t("product.returnsInfo") })
               ] })
             ] }),
-            product.customFields && /* @__PURE__ */ jsxs47("section", { className: "mt-12 pt-12 border-t", children: [
-              /* @__PURE__ */ jsx55("h3", { className: "text-gray-600 font-bold mb-4", children: "Product Details" }),
-              product.customFields.weight && /* @__PURE__ */ jsxs47("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsx55("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Weight" }),
-                /* @__PURE__ */ jsx55("p", { className: "text-gray-600", children: product.customFields.weight })
+            product.customFields && /* @__PURE__ */ jsxs48("section", { className: "mt-12 pt-12 border-t", children: [
+              /* @__PURE__ */ jsx56("h3", { className: "text-gray-600 font-bold mb-4", children: "Product Details" }),
+              product.customFields.weight && /* @__PURE__ */ jsxs48("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsx56("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Weight" }),
+                /* @__PURE__ */ jsx56("p", { className: "text-gray-600", children: product.customFields.weight })
               ] }),
-              product.customFields.specifications && /* @__PURE__ */ jsxs47("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsx55("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Specifications" }),
-                /* @__PURE__ */ jsx55(
+              product.customFields.specifications && /* @__PURE__ */ jsxs48("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsx56("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Specifications" }),
+                /* @__PURE__ */ jsx56(
                   "div",
                   {
                     className: "text-gray-600",
@@ -7696,9 +7751,9 @@ function ProductSlug() {
                   }
                 )
               ] }),
-              product.customFields.usage && /* @__PURE__ */ jsxs47("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsx55("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Usage Instructions" }),
-                /* @__PURE__ */ jsx55(
+              product.customFields.usage && /* @__PURE__ */ jsxs48("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsx56("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Usage Instructions" }),
+                /* @__PURE__ */ jsx56(
                   "div",
                   {
                     className: "text-gray-600",
@@ -7708,9 +7763,9 @@ function ProductSlug() {
                   }
                 )
               ] }),
-              product.customFields.detailImage && /* @__PURE__ */ jsxs47("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsx55("h4", { className: "text-sm font-medium text-gray-900 mb-2", children: "Detail Image" }),
-                /* @__PURE__ */ jsx55(
+              product.customFields.detailImage && /* @__PURE__ */ jsxs48("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsx56("h4", { className: "text-sm font-medium text-gray-900 mb-2", children: "Detail Image" }),
+                /* @__PURE__ */ jsx56(
                   "img",
                   {
                     src: product.customFields.detailImage.preview + "?w=600",
@@ -7724,25 +7779,25 @@ function ProductSlug() {
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx55("div", { className: "mt-24", children: /* @__PURE__ */ jsx55(TopReviews, {}) })
+    /* @__PURE__ */ jsx56("div", { className: "mt-24", children: /* @__PURE__ */ jsx56(TopReviews, {}) })
   ] });
 }
 function CatchBoundary3() {
   let { t } = useTranslation39();
-  return /* @__PURE__ */ jsxs47("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsx55("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.notFound") }),
-    /* @__PURE__ */ jsxs47("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
-      /* @__PURE__ */ jsx55("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: /* @__PURE__ */ jsx55("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsx55("div", { className: "w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center", children: /* @__PURE__ */ jsx55(PhotoIcon, { className: "w-48 text-white" }) }) }) }),
-      /* @__PURE__ */ jsxs47("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
-        /* @__PURE__ */ jsx55("div", { className: "", children: t("product.notFoundInfo") }),
-        /* @__PURE__ */ jsxs47("div", { className: "flex-1 space-y-3 py-1", children: [
-          /* @__PURE__ */ jsx55("div", { className: "h-2 bg-slate-200 rounded" }),
-          /* @__PURE__ */ jsxs47("div", { className: "space-y-3", children: [
-            /* @__PURE__ */ jsxs47("div", { className: "grid grid-cols-3 gap-4", children: [
-              /* @__PURE__ */ jsx55("div", { className: "h-2 bg-slate-200 rounded col-span-2" }),
-              /* @__PURE__ */ jsx55("div", { className: "h-2 bg-slate-200 rounded col-span-1" })
+  return /* @__PURE__ */ jsxs48("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsx56("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.notFound") }),
+    /* @__PURE__ */ jsxs48("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
+      /* @__PURE__ */ jsx56("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: /* @__PURE__ */ jsx56("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsx56("div", { className: "w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center", children: /* @__PURE__ */ jsx56(PhotoIcon, { className: "w-48 text-white" }) }) }) }),
+      /* @__PURE__ */ jsxs48("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
+        /* @__PURE__ */ jsx56("div", { className: "", children: t("product.notFoundInfo") }),
+        /* @__PURE__ */ jsxs48("div", { className: "flex-1 space-y-3 py-1", children: [
+          /* @__PURE__ */ jsx56("div", { className: "h-2 bg-slate-200 rounded" }),
+          /* @__PURE__ */ jsxs48("div", { className: "space-y-3", children: [
+            /* @__PURE__ */ jsxs48("div", { className: "grid grid-cols-3 gap-4", children: [
+              /* @__PURE__ */ jsx56("div", { className: "h-2 bg-slate-200 rounded col-span-2" }),
+              /* @__PURE__ */ jsx56("div", { className: "h-2 bg-slate-200 rounded col-span-1" })
             ] }),
-            /* @__PURE__ */ jsx55("div", { className: "h-2 bg-slate-200 rounded" })
+            /* @__PURE__ */ jsx56("div", { className: "h-2 bg-slate-200 rounded" })
           ] })
         ] })
       ] })
@@ -7767,7 +7822,7 @@ __export(paypal_return_exports, {
   loader: () => loader14
 });
 import { redirect as redirect9 } from "@remix-run/server-runtime";
-import { jsx as jsx56, jsxs as jsxs48 } from "react/jsx-runtime";
+import { jsx as jsx57, jsxs as jsxs49 } from "react/jsx-runtime";
 async function loader14({ request }) {
   let orderCode = new URL(request.url).searchParams.get("orderCode");
   if (!orderCode)
@@ -7782,9 +7837,9 @@ async function loader14({ request }) {
   return redirect9("/checkout/payment");
 }
 function PayPalReturn() {
-  return /* @__PURE__ */ jsxs48("div", { className: "flex flex-col items-center justify-center h-screen", children: [
-    /* @__PURE__ */ jsx56("div", { className: "animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4" }),
-    /* @__PURE__ */ jsx56("p", { className: "text-gray-600", children: "Processing your payment..." })
+  return /* @__PURE__ */ jsxs49("div", { className: "flex flex-col items-center justify-center h-screen", children: [
+    /* @__PURE__ */ jsx57("div", { className: "animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4" }),
+    /* @__PURE__ */ jsx57("p", { className: "text-gray-600", children: "Processing your payment..." })
   ] });
 }
 
@@ -7811,7 +7866,7 @@ var EMAIL_REGEX = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, validateRegi
 
 // app/routes/sign-up.index.tsx
 import { useTranslation as useTranslation40 } from "react-i18next";
-import { Fragment as Fragment14, jsx as jsx57, jsxs as jsxs49 } from "react/jsx-runtime";
+import { Fragment as Fragment14, jsx as jsx58, jsxs as jsxs50 } from "react/jsx-runtime";
 async function action10({ request }) {
   if (API_URL === DEMO_API_URL)
     return {
@@ -7832,13 +7887,13 @@ async function action10({ request }) {
 }
 function SignUpPage() {
   let [searchParams] = useSearchParams3(), formErrors = useActionData6(), { t } = useTranslation40();
-  return /* @__PURE__ */ jsx57(Fragment14, { children: /* @__PURE__ */ jsxs49("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
-    /* @__PURE__ */ jsxs49("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
-      /* @__PURE__ */ jsx57("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.create") }),
-      /* @__PURE__ */ jsxs49("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
+  return /* @__PURE__ */ jsx58(Fragment14, { children: /* @__PURE__ */ jsxs50("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+    /* @__PURE__ */ jsxs50("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
+      /* @__PURE__ */ jsx58("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.create") }),
+      /* @__PURE__ */ jsxs50("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
         t("common.or"),
         " ",
-        /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsx58(
           Link11,
           {
             to: "/sign-in",
@@ -7848,10 +7903,10 @@ function SignUpPage() {
         )
       ] })
     ] }),
-    /* @__PURE__ */ jsx57("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxs49("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
-      /* @__PURE__ */ jsx57("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: /* @__PURE__ */ jsx57("p", { children: t("vendure.registrationMessage") }) }),
-      /* @__PURE__ */ jsxs49(Form6, { className: "space-y-6", method: "post", children: [
-        /* @__PURE__ */ jsx57(
+    /* @__PURE__ */ jsx58("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxs50("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
+      /* @__PURE__ */ jsx58("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: /* @__PURE__ */ jsx58("p", { children: t("vendure.registrationMessage") }) }),
+      /* @__PURE__ */ jsxs50(Form6, { className: "space-y-6", method: "post", children: [
+        /* @__PURE__ */ jsx58(
           "input",
           {
             type: "hidden",
@@ -7859,8 +7914,8 @@ function SignUpPage() {
             value: searchParams.get("redirectTo") ?? void 0
           }
         ),
-        /* @__PURE__ */ jsxs49("div", { children: [
-          /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsxs50("div", { children: [
+          /* @__PURE__ */ jsx58(
             "label",
             {
               htmlFor: "email",
@@ -7868,8 +7923,8 @@ function SignUpPage() {
               children: t("account.emailAddress")
             }
           ),
-          /* @__PURE__ */ jsxs49("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsx57(
+          /* @__PURE__ */ jsxs50("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsx58(
               "input",
               {
                 id: "email",
@@ -7879,11 +7934,11 @@ function SignUpPage() {
                 className: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
               }
             ),
-            formErrors?.email && /* @__PURE__ */ jsx57("div", { className: "text-xs text-red-700", children: formErrors.email })
+            formErrors?.email && /* @__PURE__ */ jsx58("div", { className: "text-xs text-red-700", children: formErrors.email })
           ] })
         ] }),
-        /* @__PURE__ */ jsxs49("div", { children: [
-          /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsxs50("div", { children: [
+          /* @__PURE__ */ jsx58(
             "label",
             {
               htmlFor: "firstName",
@@ -7891,7 +7946,7 @@ function SignUpPage() {
               children: t("account.firstName")
             }
           ),
-          /* @__PURE__ */ jsx57("div", { className: "mt-1", children: /* @__PURE__ */ jsx57(
+          /* @__PURE__ */ jsx58("div", { className: "mt-1", children: /* @__PURE__ */ jsx58(
             "input",
             {
               id: "firstName",
@@ -7902,8 +7957,8 @@ function SignUpPage() {
             }
           ) })
         ] }),
-        /* @__PURE__ */ jsxs49("div", { children: [
-          /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsxs50("div", { children: [
+          /* @__PURE__ */ jsx58(
             "label",
             {
               htmlFor: "lastName",
@@ -7911,7 +7966,7 @@ function SignUpPage() {
               children: t("account.lastName")
             }
           ),
-          /* @__PURE__ */ jsx57("div", { className: "mt-1", children: /* @__PURE__ */ jsx57(
+          /* @__PURE__ */ jsx58("div", { className: "mt-1", children: /* @__PURE__ */ jsx58(
             "input",
             {
               id: "lastName",
@@ -7922,8 +7977,8 @@ function SignUpPage() {
             }
           ) })
         ] }),
-        /* @__PURE__ */ jsxs49("div", { children: [
-          /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsxs50("div", { children: [
+          /* @__PURE__ */ jsx58(
             "label",
             {
               htmlFor: "password",
@@ -7931,8 +7986,8 @@ function SignUpPage() {
               children: t("account.password")
             }
           ),
-          /* @__PURE__ */ jsxs49("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsx57(
+          /* @__PURE__ */ jsxs50("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsx58(
               "input",
               {
                 id: "password",
@@ -7942,11 +7997,11 @@ function SignUpPage() {
                 className: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
               }
             ),
-            formErrors?.password && /* @__PURE__ */ jsx57("div", { className: "text-xs text-red-700", children: formErrors.password })
+            formErrors?.password && /* @__PURE__ */ jsx58("div", { className: "text-xs text-red-700", children: formErrors.password })
           ] })
         ] }),
-        /* @__PURE__ */ jsxs49("div", { children: [
-          /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsxs50("div", { children: [
+          /* @__PURE__ */ jsx58(
             "label",
             {
               htmlFor: "repeatPassword",
@@ -7954,8 +8009,8 @@ function SignUpPage() {
               children: t("account.repeatPassword")
             }
           ),
-          /* @__PURE__ */ jsxs49("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsx57(
+          /* @__PURE__ */ jsxs50("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsx58(
               "input",
               {
                 id: "repeatPassword",
@@ -7965,23 +8020,23 @@ function SignUpPage() {
                 className: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
               }
             ),
-            formErrors?.repeatPassword && /* @__PURE__ */ jsx57("div", { className: "text-xs text-red-700", children: formErrors.repeatPassword })
+            formErrors?.repeatPassword && /* @__PURE__ */ jsx58("div", { className: "text-xs text-red-700", children: formErrors.repeatPassword })
           ] })
         ] }),
-        formErrors?.form && /* @__PURE__ */ jsx57("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs49("div", { className: "flex", children: [
-          /* @__PURE__ */ jsx57("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx57(
+        formErrors?.form && /* @__PURE__ */ jsx58("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs50("div", { className: "flex", children: [
+          /* @__PURE__ */ jsx58("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx58(
             XCircleIcon6,
             {
               className: "h-5 w-5 text-red-400",
               "aria-hidden": "true"
             }
           ) }),
-          /* @__PURE__ */ jsxs49("div", { className: "ml-3", children: [
-            /* @__PURE__ */ jsx57("h3", { className: "text-sm font-medium text-red-800", children: t("account.createError") }),
-            /* @__PURE__ */ jsx57("p", { className: "text-sm text-red-700 mt-2", children: formErrors.form })
+          /* @__PURE__ */ jsxs50("div", { className: "ml-3", children: [
+            /* @__PURE__ */ jsx58("h3", { className: "text-sm font-medium text-red-800", children: t("account.createError") }),
+            /* @__PURE__ */ jsx58("p", { className: "text-sm text-red-700 mt-2", children: formErrors.form })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsx57("div", { children: /* @__PURE__ */ jsx57(
+        /* @__PURE__ */ jsx58("div", { children: /* @__PURE__ */ jsx58(
           "button",
           {
             type: "submit",
@@ -8009,6 +8064,258 @@ async function loader15() {
   return redirect11("/");
 }
 
+// app/routes/resources.tsx
+var resources_exports = {};
+__export(resources_exports, {
+  default: () => ResourcesPage
+});
+import { jsx as jsx59, jsxs as jsxs51 } from "react/jsx-runtime";
+function ResourcesPage() {
+  return /* @__PURE__ */ jsxs51("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxs51("section", { className: "py-20 bg-gradient-to-r from-primary via-primary-light to-secondary relative overflow-hidden", children: [
+      /* @__PURE__ */ jsxs51("div", { className: "absolute inset-0 opacity-10", children: [
+        /* @__PURE__ */ jsx59("div", { className: "absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" }),
+        /* @__PURE__ */ jsx59("div", { className: "absolute bottom-10 right-10 w-80 h-80 bg-white rounded-full blur-3xl" })
+      ] }),
+      /* @__PURE__ */ jsxs51("div", { className: "max-w-4xl mx-auto px-6 text-center relative z-10", children: [
+        /* @__PURE__ */ jsx59("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Exclusive Tips About Importing from China" }),
+        /* @__PURE__ */ jsx59("p", { className: "text-white/90 text-lg mb-8 leading-relaxed", children: "Many people want to import goods from China, but always worrying about things like language barriers, complicated international trade process, scams, or bad quality products. In this most practical guide, it's easy for you to learn all knowledge of the whole importing process from choosing profitable products to checking suppliers. To help you understand better, a corresponding video course of each step will be provided." }),
+        /* @__PURE__ */ jsx59("div", { className: "animate-bounce", children: /* @__PURE__ */ jsx59("svg", { className: "w-8 h-8 text-white mx-auto", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx59("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) }) })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx59("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxs51("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsx59("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsx59("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Episode Guide" }) }),
+      /* @__PURE__ */ jsx59("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6", children: [
+        {
+          number: 1,
+          title: "Chapter 1",
+          subtitle: "How Much USD Budget May You Need?",
+          duration: "13 mins video, 7 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Budget%20planning%20for%20importing%20business&image_size=landscape_4_3"
+        },
+        {
+          number: 2,
+          title: "Chapter 2",
+          subtitle: "What Products to Import from China to Make Good Money?",
+          duration: "15 mins video, 7 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Product%20selection%20and%20market%20research&image_size=landscape_4_3"
+        },
+        {
+          number: 3,
+          title: "Chapter 3",
+          subtitle: "How to Do Product Research Before Import from China?",
+          duration: "20 mins video, 8 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Product%20research%20and%20analysis%20workspace&image_size=landscape_4_3"
+        },
+        {
+          number: 4,
+          title: "Chapter 4",
+          subtitle: "How to Find Chinese Suppliers Online?",
+          duration: "18 mins video, 8 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Finding%20suppliers%20on%20online%20platforms&image_size=landscape_4_3"
+        },
+        {
+          number: 5,
+          title: "Chapter 5",
+          subtitle: "How to Find Suppliers by Visiting China?",
+          duration: "24 mins video, 7.5 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Business%20trip%20to%20China%20factories&image_size=landscape_4_3"
+        },
+        {
+          number: 6,
+          title: "Chapter 6",
+          subtitle: "8 Aspects to Help Check Chinese Suppliers",
+          duration: "18 mins video, 6 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Supplier%20verification%20and%20quality%20check&image_size=landscape_4_3"
+        },
+        {
+          number: 7,
+          title: "Chapter 7",
+          subtitle: "How to Get Precise Quotes? Which Trade Terms Quoted Best?",
+          duration: "17 mins video, 6 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Price%20quotation%20and%20negotiation&image_size=landscape_4_3"
+        },
+        {
+          number: 8,
+          title: "Chapter 8",
+          subtitle: "How to Choose the Best Supplier? 15 Checklist?",
+          duration: "11 mins video, 7 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Supplier%20comparison%20and%20selection&image_size=landscape_4_3"
+        },
+        {
+          number: 9,
+          title: "Chapter 9",
+          subtitle: "6 Details to Confirm with Chinese Supplier Beforehand.",
+          duration: "15 mins video, 7 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Contract%20negotiation%20with%20suppliers&image_size=landscape_4_3"
+        },
+        {
+          number: 10,
+          title: "Chapter 10",
+          subtitle: "How to Find the Best Shipping Solutions?",
+          duration: "25 mins video, 12 mins read",
+          image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20and%20logistics%20planning&image_size=landscape_4_3"
+        }
+      ].map((chapter) => /* @__PURE__ */ jsxs51(
+        "div",
+        {
+          className: "bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group",
+          children: [
+            /* @__PURE__ */ jsxs51("div", { className: "relative", children: [
+              /* @__PURE__ */ jsx59(
+                "img",
+                {
+                  src: chapter.image,
+                  alt: chapter.title,
+                  className: "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                }
+              ),
+              /* @__PURE__ */ jsx59("div", { className: "absolute top-4 left-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold", children: chapter.number })
+            ] }),
+            /* @__PURE__ */ jsxs51("div", { className: "p-5", children: [
+              /* @__PURE__ */ jsx59("h3", { className: "text-lg font-bold text-gray-900 mb-2", children: chapter.title }),
+              /* @__PURE__ */ jsx59("p", { className: "text-gray-600 text-sm mb-3 line-clamp-2", children: chapter.subtitle }),
+              /* @__PURE__ */ jsxs51("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ jsx59("span", { className: "text-primary text-sm font-medium", children: "Watch Video" }),
+                /* @__PURE__ */ jsx59("span", { className: "text-gray-500 text-xs", children: chapter.duration })
+              ] })
+            ] })
+          ]
+        },
+        chapter.number
+      )) })
+    ] }) }),
+    /* @__PURE__ */ jsx59("section", { className: "py-16 bg-gray-100", children: /* @__PURE__ */ jsx59("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs51("div", { className: "grid md:grid-cols-3 gap-8", children: [
+      /* @__PURE__ */ jsxs51("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxs51("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsx59("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsx59("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx59("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" }) }) }),
+          /* @__PURE__ */ jsxs51("div", { children: [
+            /* @__PURE__ */ jsx59("h3", { className: "font-bold text-gray-900", children: "Ebook Resource" }),
+            /* @__PURE__ */ jsx59("p", { className: "text-sm text-gray-500", children: "Free Resource" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs51("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxs51("div", { className: "grid grid-cols-2 gap-4", children: [
+            /* @__PURE__ */ jsx59(
+              "input",
+              {
+                type: "text",
+                placeholder: "First Name",
+                className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              }
+            ),
+            /* @__PURE__ */ jsx59(
+              "input",
+              {
+                type: "text",
+                placeholder: "Last Name",
+                className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsx59(
+            "input",
+            {
+              type: "email",
+              placeholder: "Your Email",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            }
+          ),
+          /* @__PURE__ */ jsx59(
+            "button",
+            {
+              type: "submit",
+              className: "w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300",
+              children: "Download Now"
+            }
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs51("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxs51("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsx59("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsx59("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx59("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" }) }) }),
+          /* @__PURE__ */ jsxs51("div", { children: [
+            /* @__PURE__ */ jsx59("h3", { className: "font-bold text-gray-900", children: "Get Our Monthly Report" }),
+            /* @__PURE__ */ jsx59("p", { className: "text-sm text-gray-500", children: "Free Report" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs51("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxs51("div", { className: "grid grid-cols-2 gap-4", children: [
+            /* @__PURE__ */ jsx59(
+              "input",
+              {
+                type: "text",
+                placeholder: "First Name",
+                className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              }
+            ),
+            /* @__PURE__ */ jsx59(
+              "input",
+              {
+                type: "text",
+                placeholder: "Last Name",
+                className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsx59(
+            "input",
+            {
+              type: "email",
+              placeholder: "Your Email",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            }
+          ),
+          /* @__PURE__ */ jsx59(
+            "button",
+            {
+              type: "submit",
+              className: "w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300",
+              children: "Subscribe Now"
+            }
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs51("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxs51("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsx59("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsx59("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx59("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" }) }) }),
+          /* @__PURE__ */ jsxs51("div", { children: [
+            /* @__PURE__ */ jsx59("h3", { className: "font-bold text-gray-900", children: "Ready to import from China?" }),
+            /* @__PURE__ */ jsx59("p", { className: "text-sm text-gray-500", children: "Get 1-1 agent" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx59("p", { className: "text-gray-600 mb-6", children: "Ask for 1-1 agent to help you start your importing business now!" }),
+        /* @__PURE__ */ jsxs51("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsx59(
+            "input",
+            {
+              type: "text",
+              placeholder: "First Name",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            }
+          ),
+          /* @__PURE__ */ jsx59(
+            "input",
+            {
+              type: "email",
+              placeholder: "Your Email",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            }
+          ),
+          /* @__PURE__ */ jsx59(
+            "button",
+            {
+              type: "submit",
+              className: "w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300",
+              children: "Get a Free Quote"
+            }
+          )
+        ] })
+      ] })
+    ] }) }) })
+  ] });
+}
+
 // app/routes/checkout.tsx
 var checkout_exports = {};
 __export(checkout_exports, {
@@ -8017,13 +8324,13 @@ __export(checkout_exports, {
 import { ChevronRightIcon as ChevronRightIcon2 } from "@heroicons/react/24/solid";
 import { Outlet as Outlet3, useLocation as useLocation2, useOutletContext as useOutletContext4 } from "@remix-run/react";
 import { useTranslation as useTranslation41 } from "react-i18next";
-import { jsx as jsx58, jsxs as jsxs50 } from "react/jsx-runtime";
+import { jsx as jsx60, jsxs as jsxs52 } from "react/jsx-runtime";
 var steps = ["shipping", "payment", "confirmation"];
 function Checkout() {
   let outletContext = useOutletContext4(), { activeOrder, adjustOrderLine: adjustOrderLine2, removeItem } = outletContext, location2 = useLocation2(), { t } = useTranslation41(), state = "shipping";
   location2.pathname === "/checkout/payment" ? state = "payment" : location2.pathname.startsWith("/checkout/confirmation") && (state = "confirmation");
   let isConfirmationPage = state === "confirmation";
-  return /* @__PURE__ */ jsx58("div", { className: "bg-gray-50", children: /* @__PURE__ */ jsxs50(
+  return /* @__PURE__ */ jsx60("div", { className: "bg-gray-50", children: /* @__PURE__ */ jsxs52(
     "div",
     {
       className: classNames(
@@ -8031,15 +8338,15 @@ function Checkout() {
         "max-w-2xl mx-auto pt-8 pb-24 px-4 sm:px-6 lg:px-8"
       ),
       children: [
-        /* @__PURE__ */ jsx58("h2", { className: "sr-only", children: t("cart.checkout") }),
-        /* @__PURE__ */ jsx58(
+        /* @__PURE__ */ jsx60("h2", { className: "sr-only", children: t("cart.checkout") }),
+        /* @__PURE__ */ jsx60(
           "nav",
           {
             "aria-label": t("cart.progress"),
             className: "hidden sm:block pb-8 mb-8 border-b",
-            children: /* @__PURE__ */ jsx58("ol", { role: "list", className: "flex space-x-4 justify-center", children: steps.map((step, stepIdx) => /* @__PURE__ */ jsxs50("li", { className: "flex items-center", children: [
-              step === state ? /* @__PURE__ */ jsx58("span", { "aria-current": "page", className: "text-primary-600", children: t(`checkout.steps.${step}`) }) : /* @__PURE__ */ jsx58("span", { children: t(`checkout.steps.${step}`) }),
-              stepIdx !== steps.length - 1 ? /* @__PURE__ */ jsx58(
+            children: /* @__PURE__ */ jsx60("ol", { role: "list", className: "flex space-x-4 justify-center", children: steps.map((step, stepIdx) => /* @__PURE__ */ jsxs52("li", { className: "flex items-center", children: [
+              step === state ? /* @__PURE__ */ jsx60("span", { "aria-current": "page", className: "text-primary-600", children: t(`checkout.steps.${step}`) }) : /* @__PURE__ */ jsx60("span", { children: t(`checkout.steps.${step}`) }),
+              stepIdx !== steps.length - 1 ? /* @__PURE__ */ jsx60(
                 ChevronRightIcon2,
                 {
                   className: "w-5 h-5 text-gray-300 ml-4",
@@ -8049,11 +8356,11 @@ function Checkout() {
             ] }, step)) })
           }
         ),
-        /* @__PURE__ */ jsxs50("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16", children: [
-          /* @__PURE__ */ jsx58("div", { className: isConfirmationPage ? "lg:col-span-2" : "", children: /* @__PURE__ */ jsx58(Outlet3, { context: outletContext }) }),
-          !isConfirmationPage && /* @__PURE__ */ jsxs50("div", { className: "mt-10 lg:mt-0", children: [
-            /* @__PURE__ */ jsx58("h2", { className: "text-lg font-medium text-gray-900 mb-4", children: t("order.summary") }),
-            /* @__PURE__ */ jsx58(
+        /* @__PURE__ */ jsxs52("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16", children: [
+          /* @__PURE__ */ jsx60("div", { className: isConfirmationPage ? "lg:col-span-2" : "", children: /* @__PURE__ */ jsx60(Outlet3, { context: outletContext }) }),
+          !isConfirmationPage && /* @__PURE__ */ jsxs52("div", { className: "mt-10 lg:mt-0", children: [
+            /* @__PURE__ */ jsx60("h2", { className: "text-lg font-medium text-gray-900 mb-4", children: t("order.summary") }),
+            /* @__PURE__ */ jsx60(
               CartContents,
               {
                 orderLines: activeOrder?.lines ?? [],
@@ -8063,12 +8370,348 @@ function Checkout() {
                 adjustOrderLine: adjustOrderLine2
               }
             ),
-            /* @__PURE__ */ jsx58(CartTotals, { order: activeOrder })
+            /* @__PURE__ */ jsx60(CartTotals, { order: activeOrder })
           ] })
         ] })
       ]
     }
   ) });
+}
+
+// app/routes/products.tsx
+var products_exports = {};
+__export(products_exports, {
+  default: () => ProductsPage
+});
+import { jsx as jsx61, jsxs as jsxs53 } from "react/jsx-runtime";
+function ProductsPage() {
+  let categories = [
+    { name: "Apparel", icon: "shirt" },
+    { name: "Furniture", icon: "sofa" },
+    { name: "Bags & Cases", icon: "briefcase" },
+    { name: "Beauty", icon: "sparkles" },
+    { name: "Toys", icon: "toy" },
+    { name: "Sports", icon: "dumbbell" },
+    { name: "Home", icon: "home" },
+    { name: "Garden & Outdoor", icon: "flower" },
+    { name: "Electronics", icon: "smartphone" },
+    { name: "Pet Supplies", icon: "cat" },
+    { name: "Natural & Gifts", icon: "gift" },
+    { name: "Hardware", icon: "wrench" },
+    { name: "Office Supplies", icon: "pen-tool" },
+    { name: "Automotive", icon: "car" },
+    { name: "Health Products", icon: "heart" },
+    { name: "Industrial", icon: "factory" },
+    { name: "Packaging", icon: "package" },
+    { name: "Dropship", icon: "truck" },
+    { name: "Jewelry", icon: "gem" },
+    { name: "Lighting", icon: "lightbulb" }
+  ], iconMap = {
+    shirt: "M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z",
+    sofa: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z",
+    briefcase: "M6 2a2 2 0 00-2 2v16l4-4h10a2 2 0 002-2V4a2 2 0 00-2-2H6z",
+    sparkles: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z",
+    toy: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z",
+    dumbbell: "M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+    home: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+    flower: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    smartphone: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+    cat: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    gift: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    wrench: "M17.066 6.26a1 1 0 00-1.067.28l-2.906 3.87a2 2 0 01-1.796.73h-3.27a2 2 0 01-1.796-.73L4.067 6.54a1 1 0 00-1.067-.28 1 1 0 00-.686 1.18l1.94 8.676a2 2 0 01-.46 1.41l-1.905 1.905a1 1 0 00.28 1.414l3.873 2.905a1 1 0 001.066.28h3.27a1 1 0 001.067-.28l3.873-2.905a1 1 0 00.28-1.414l-1.905-1.905a2 2 0 01-.46-1.41l1.94-8.676a1 1 0 00-.686-1.18z",
+    "pen-tool": "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+    car: "M13 10V3L4 14h7v7l9-11h-7z",
+    heart: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    factory: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+    package: "M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z",
+    truck: "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4",
+    gem: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+    lightbulb: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+  };
+  return /* @__PURE__ */ jsxs53("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10", children: /* @__PURE__ */ jsx61("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs53("div", { className: "flex flex-col md:flex-row items-center justify-between gap-8", children: [
+      /* @__PURE__ */ jsxs53("div", { children: [
+        /* @__PURE__ */ jsx61("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-2", children: "4,000+ Clients Trust Us" }),
+        /* @__PURE__ */ jsx61("p", { className: "text-gray-600", children: "Find your reliable products and save, let's factory price." }),
+        /* @__PURE__ */ jsx61("button", { className: "mt-4 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "Get Started" })
+      ] }),
+      /* @__PURE__ */ jsxs53("div", { className: "relative", children: [
+        /* @__PURE__ */ jsx61(
+          "img",
+          {
+            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Warehouse%20interior%20with%20shelves%20full%20of%20products%20and%20shipping%20boxes&image_size=landscape_4_3",
+            alt: "Warehouse",
+            className: "w-80 h-60 object-cover rounded-xl shadow-lg"
+          }
+        ),
+        /* @__PURE__ */ jsxs53("div", { className: "absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-lg shadow-lg", children: [
+          /* @__PURE__ */ jsx61("div", { className: "text-2xl font-bold", children: "98%" }),
+          /* @__PURE__ */ jsx61("div", { className: "text-sm", children: "Customer Satisfaction" })
+        ] })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxs53("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxs53("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsx61("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Product categories" }),
+        /* @__PURE__ */ jsx61("p", { className: "text-gray-600", children: "Browse through our product categories to find items for your business." })
+      ] }),
+      /* @__PURE__ */ jsx61("div", { className: "grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4", children: categories.map((category, index) => /* @__PURE__ */ jsxs53(
+        "div",
+        {
+          className: "flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-primary/10 hover:shadow-md transition-all duration-300 cursor-pointer",
+          children: [
+            /* @__PURE__ */ jsx61("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2", children: /* @__PURE__ */ jsx61("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx61("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: iconMap[category.icon] || "" }) }) }),
+            /* @__PURE__ */ jsx61("span", { className: "text-sm text-gray-700 text-center", children: category.name })
+          ]
+        },
+        index
+      )) }),
+      /* @__PURE__ */ jsxs53("div", { className: "mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between", children: [
+        /* @__PURE__ */ jsxs53("div", { children: [
+          /* @__PURE__ */ jsx61("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Are you looking for more categories?" }),
+          /* @__PURE__ */ jsx61("p", { className: "text-gray-600", children: "If you cannot find your target product, we can also source any product for you." })
+        ] }),
+        /* @__PURE__ */ jsx61("button", { className: "mt-4 md:mt-0 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "Tell us more" })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsx61("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs53("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxs53("div", { children: [
+        /* @__PURE__ */ jsx61("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Customized products sourcing" }),
+        /* @__PURE__ */ jsx61("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }),
+        /* @__PURE__ */ jsx61("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }),
+        /* @__PURE__ */ jsx61("button", { className: "px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "Get a free quote" })
+      ] }),
+      /* @__PURE__ */ jsxs53("div", { className: "grid grid-cols-2 gap-4", children: [
+        /* @__PURE__ */ jsx61(
+          "img",
+          {
+            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Custom%20product%20manufacturing%20process%20with%20design%20sketches&image_size=square",
+            alt: "Custom Products",
+            className: "w-full aspect-square object-cover rounded-xl"
+          }
+        ),
+        /* @__PURE__ */ jsx61(
+          "img",
+          {
+            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20production%20line%20for%20custom%20products&image_size=square",
+            alt: "Factory",
+            className: "w-full aspect-square object-cover rounded-xl mt-8"
+          }
+        )
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsx61("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs53("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsx61("div", { className: "relative", children: /* @__PURE__ */ jsx61(
+        "img",
+        {
+          src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20and%20product%20development%20process&image_size=landscape_4_3",
+          alt: "Product Development",
+          className: "w-full aspect-video object-cover rounded-xl shadow-lg"
+        }
+      ) }),
+      /* @__PURE__ */ jsxs53("div", { children: [
+        /* @__PURE__ */ jsx61("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "New Product Development" }),
+        /* @__PURE__ */ jsx61("p", { className: "text-gray-600 mb-6", children: "If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production." }),
+        /* @__PURE__ */ jsx61("button", { className: "px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "Share my idea" })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxs53("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsx61("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsx61("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "We can do more than Alibaba" }) }),
+      /* @__PURE__ */ jsxs53("div", { className: "grid md:grid-cols-2 gap-8", children: [
+        /* @__PURE__ */ jsxs53("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-primary", children: [
+          /* @__PURE__ */ jsxs53("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsx61("h3", { className: "text-xl font-bold text-gray-900", children: "Why friendly to small businesses" }),
+            /* @__PURE__ */ jsx61("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx61("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) })
+          ] }),
+          /* @__PURE__ */ jsx61("p", { className: "text-gray-600 mb-4", children: "Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business." }),
+          /* @__PURE__ */ jsx61("button", { className: "text-primary font-semibold hover:underline", children: "15% cheaper than Alibaba ->" })
+        ] }),
+        /* @__PURE__ */ jsxs53("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-primary", children: [
+          /* @__PURE__ */ jsxs53("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsx61("h3", { className: "text-xl font-bold text-gray-900", children: "Our 1-1 agent assists you in every aspect" }),
+            /* @__PURE__ */ jsx61("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx61("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) })
+          ] }),
+          /* @__PURE__ */ jsx61("p", { className: "text-gray-600 mb-4", children: "We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between." }),
+          /* @__PURE__ */ jsx61("button", { className: "text-primary font-semibold hover:underline", children: "Product quality is our priority ->" })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx61("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsx61("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs53("div", { className: "bg-white rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8", children: [
+      /* @__PURE__ */ jsxs53("div", { className: "flex items-center gap-6", children: [
+        /* @__PURE__ */ jsx61(
+          "img",
+          {
+            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Product%20catalog%20book%20or%20magazine%20cover&image_size=portrait_4_3",
+            alt: "Product Catalog",
+            className: "w-32 h-40 object-cover rounded-lg"
+          }
+        ),
+        /* @__PURE__ */ jsxs53("div", { children: [
+          /* @__PURE__ */ jsx61("h3", { className: "text-xl font-bold text-gray-900 mb-2", children: "Product monthly report" }),
+          /* @__PURE__ */ jsx61("p", { className: "text-gray-600", children: 'We will send the hottest products from "1688.com" to your inbox for free!' })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs53("form", { className: "flex flex-col sm:flex-row gap-4", children: [
+        /* @__PURE__ */ jsx61(
+          "input",
+          {
+            type: "text",
+            placeholder: "First Name",
+            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          }
+        ),
+        /* @__PURE__ */ jsx61(
+          "input",
+          {
+            type: "text",
+            placeholder: "Last Name",
+            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          }
+        ),
+        /* @__PURE__ */ jsx61(
+          "input",
+          {
+            type: "email",
+            placeholder: "Your Email",
+            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          }
+        ),
+        /* @__PURE__ */ jsx61(
+          "button",
+          {
+            type: "submit",
+            className: "px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300",
+            children: "Subscribe Now"
+          }
+        )
+      ] })
+    ] }) }) })
+  ] });
+}
+
+// app/routes/services.tsx
+var services_exports = {};
+__export(services_exports, {
+  default: () => ServicesPage
+});
+import { jsx as jsx62, jsxs as jsxs54 } from "react/jsx-runtime";
+function ServicesPage() {
+  return /* @__PURE__ */ jsxs54("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsx62("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs54("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsx62("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Start Your Project" }),
+      /* @__PURE__ */ jsx62("div", { className: "w-24 h-1 bg-primary mx-auto rounded-full" })
+    ] }) }),
+    /* @__PURE__ */ jsx62("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsx62("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxs54("div", { className: "grid md:grid-cols-2 gap-8", children: [
+      /* @__PURE__ */ jsxs54("div", { className: "border-2 border-primary rounded-xl p-8 hover:shadow-lg transition-shadow duration-300", children: [
+        /* @__PURE__ */ jsx62("h3", { className: "text-xl font-bold text-primary mb-6", children: "Find New Suppliers" }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide." }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide." }),
+        /* @__PURE__ */ jsxs54("p", { className: "text-primary font-medium mb-6", children: [
+          "Check out our ",
+          /* @__PURE__ */ jsx62("span", { className: "underline", children: "Pro Service Plan" }),
+          " for more details."
+        ] }),
+        /* @__PURE__ */ jsxs54("div", { className: "flex flex-col gap-3", children: [
+          /* @__PURE__ */ jsx62("button", { className: "px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "I need this plan" }),
+          /* @__PURE__ */ jsx62("button", { className: "px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300", children: "I need this plan" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs54("div", { className: "border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300", children: [
+        /* @__PURE__ */ jsx62("h3", { className: "text-xl font-bold text-blue-600 mb-6", children: "Manage My Suppliers" }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you prefer to use your own suppliers, we can collaborate with them and manage the entire purchasing process from production to quality inspection and door-to-door logistics. Our support will significantly enhance your sourcing efficiency." }),
+        /* @__PURE__ */ jsxs54("p", { className: "text-blue-600 font-medium mb-6", children: [
+          "Discover more details about our ",
+          /* @__PURE__ */ jsx62("span", { className: "underline", children: "Basic Service Plan" }),
+          "."
+        ] }),
+        /* @__PURE__ */ jsxs54("div", { className: "flex flex-col gap-3", children: [
+          /* @__PURE__ */ jsx62("button", { className: "px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300", children: "I need this plan" }),
+          /* @__PURE__ */ jsx62("button", { className: "px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300", children: "I need this plan" })
+        ] })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx62("section", { className: "py-16 bg-gray-100", children: /* @__PURE__ */ jsxs54("div", { className: "max-w-4xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxs54("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsx62("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Submit Your Sourcing Request" }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600 mb-4", children: "Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance." }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600 mb-4", children: "To follow up on your response, submit your inquiries using the form. If you encounter any issues with submission, you can also email us directly at info@JingQSourcing.com." }),
+        /* @__PURE__ */ jsx62("p", { className: "text-gray-600", children: "To get the fastest response, submit your inquiries using the form. If you encounter any issues with submission, you can also email us directly at info@JingQSourcing.com." }),
+        /* @__PURE__ */ jsx62("div", { className: "w-24 h-1 bg-gray-300 mx-auto mt-6 rounded-full" })
+      ] }),
+      /* @__PURE__ */ jsxs54("form", { className: "space-y-6", children: [
+        /* @__PURE__ */ jsxs54("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+            "input",
+            {
+              type: "text",
+              placeholder: "First Name*",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            }
+          ) }),
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+            "input",
+            {
+              type: "text",
+              placeholder: "Last Name*",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            }
+          ) })
+        ] }),
+        /* @__PURE__ */ jsxs54("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+            "input",
+            {
+              type: "email",
+              placeholder: "Email*",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            }
+          ) }),
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+            "input",
+            {
+              type: "tel",
+              placeholder: "Phone Number*",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+            }
+          ) })
+        ] }),
+        /* @__PURE__ */ jsxs54("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsxs54("select", { className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent", children: [
+            /* @__PURE__ */ jsx62("option", { value: "", children: "Select your country*" }),
+            /* @__PURE__ */ jsx62("option", { value: "US", children: "United States" }),
+            /* @__PURE__ */ jsx62("option", { value: "CN", children: "China" }),
+            /* @__PURE__ */ jsx62("option", { value: "DE", children: "Germany" }),
+            /* @__PURE__ */ jsx62("option", { value: "UK", children: "United Kingdom" }),
+            /* @__PURE__ */ jsx62("option", { value: "JP", children: "Japan" })
+          ] }) }),
+          /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsxs54("select", { className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent", children: [
+            /* @__PURE__ */ jsx62("option", { value: "", children: "Select your country*" }),
+            /* @__PURE__ */ jsx62("option", { value: "US", children: "United States" }),
+            /* @__PURE__ */ jsx62("option", { value: "CN", children: "China" }),
+            /* @__PURE__ */ jsx62("option", { value: "DE", children: "Germany" }),
+            /* @__PURE__ */ jsx62("option", { value: "UK", children: "United Kingdom" }),
+            /* @__PURE__ */ jsx62("option", { value: "JP", children: "Japan" })
+          ] }) })
+        ] }),
+        /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+          "textarea",
+          {
+            placeholder: "Describe your sourcing needs...",
+            rows: 4,
+            className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+          }
+        ) }),
+        /* @__PURE__ */ jsx62(
+          "button",
+          {
+            type: "submit",
+            className: "w-full md:w-auto px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300",
+            children: "Submit Request"
+          }
+        )
+      ] })
+    ] }) })
+  ] });
 }
 
 // app/routes/account.tsx
@@ -8088,35 +8731,35 @@ import { json as json13, redirect as redirect12 } from "@remix-run/server-runtim
 
 // app/components/tabs/Tab.tsx
 import { NavLink, useMatches as useMatches3, useResolvedPath } from "@remix-run/react";
-import { jsx as jsx59, jsxs as jsxs51 } from "react/jsx-runtime";
+import { jsx as jsx63, jsxs as jsxs55 } from "react/jsx-runtime";
 function Tab({ Icon, text, to }) {
   let resolved = useResolvedPath(to), isActive = useMatches3().find((m) => m.pathname === resolved.pathname);
-  return /* @__PURE__ */ jsx59("li", { className: isActive ? "cursor-default" : "cursor-pointer", children: /* @__PURE__ */ jsxs51(
+  return /* @__PURE__ */ jsx63("li", { className: isActive ? "cursor-default" : "cursor-pointer", children: /* @__PURE__ */ jsxs55(
     NavLink,
     {
       to,
       className: `group w-full gap-x-2 max-w-[12rem] inline-flex items-center justify-around p-4 rounded-t-lg border-b-2 ${isActive ? "text-primary-500 border-primary-500" : "border-transparent hover:text-gray-600 hover:border-gray-300"}`,
       children: [
-        /* @__PURE__ */ jsx59(
+        /* @__PURE__ */ jsx63(
           Icon,
           {
             className: `w-5 h-5 ${isActive ? "text-primary-500" : "text-gray-400 group-hover:text-gray-500"}`
           }
         ),
-        /* @__PURE__ */ jsx59("p", { className: "flex-1", children: text })
+        /* @__PURE__ */ jsx63("p", { className: "flex-1", children: text })
       ]
     }
   ) });
 }
 
 // app/components/tabs/TabsContainer.tsx
-import { Fragment as Fragment15, jsx as jsx60, jsxs as jsxs52 } from "react/jsx-runtime";
+import { Fragment as Fragment15, jsx as jsx64, jsxs as jsxs56 } from "react/jsx-runtime";
 function TabsContainer({
   tabs,
   children
 }) {
-  return /* @__PURE__ */ jsxs52(Fragment15, { children: [
-    /* @__PURE__ */ jsx60("div", { className: "border-b border-gray-200 mt-4", children: /* @__PURE__ */ jsx60("ul", { className: "gap-x-4 grid grid-cols-2 sm:grid-0 sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center text-gray-500", children: tabs.map((props) => /* @__PURE__ */ jsx60(
+  return /* @__PURE__ */ jsxs56(Fragment15, { children: [
+    /* @__PURE__ */ jsx64("div", { className: "border-b border-gray-200 mt-4", children: /* @__PURE__ */ jsx64("ul", { className: "gap-x-4 grid grid-cols-2 sm:grid-0 sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center text-gray-500", children: tabs.map((props) => /* @__PURE__ */ jsx64(
       Tab,
       {
         Icon: props.Icon,
@@ -8131,7 +8774,7 @@ function TabsContainer({
 
 // app/routes/account.tsx
 import { useTranslation as useTranslation42 } from "react-i18next";
-import { jsx as jsx61, jsxs as jsxs53 } from "react/jsx-runtime";
+import { jsx as jsx65, jsxs as jsxs57 } from "react/jsx-runtime";
 async function loader16({ request }) {
   let { activeCustomer } = await getActiveCustomerDetails({ request });
   return activeCustomer ? json13({ activeCustomer }) : redirect12("/sign-in");
@@ -8159,16 +8802,16 @@ function AccountDashboard() {
       to: "./password"
     }
   ];
-  return /* @__PURE__ */ jsxs53("div", { className: "max-w-6xl xl:mx-auto px-4", children: [
-    /* @__PURE__ */ jsx61("h2", { className: "text-3xl sm:text-5xl font-light text-gray-900 my-8", children: t("account.myAccount") }),
-    /* @__PURE__ */ jsxs53("p", { className: "text-gray-700 text-lg -mt-4", children: [
+  return /* @__PURE__ */ jsxs57("div", { className: "max-w-6xl xl:mx-auto px-4", children: [
+    /* @__PURE__ */ jsx65("h2", { className: "text-3xl sm:text-5xl font-light text-gray-900 my-8", children: t("account.myAccount") }),
+    /* @__PURE__ */ jsxs57("p", { className: "text-gray-700 text-lg -mt-4", children: [
       t("account.welcomeBack"),
       ", ",
       firstName,
       " ",
       lastName
     ] }),
-    /* @__PURE__ */ jsx61(Form7, { method: "post", action: "/api/logout", children: /* @__PURE__ */ jsx61(
+    /* @__PURE__ */ jsx65(Form7, { method: "post", action: "/api/logout", children: /* @__PURE__ */ jsx65(
       "button",
       {
         type: "submit",
@@ -8176,7 +8819,7 @@ function AccountDashboard() {
         children: t("account.signOut")
       }
     ) }),
-    /* @__PURE__ */ jsx61(TabsContainer, { tabs, children: /* @__PURE__ */ jsx61(Outlet4, {}) })
+    /* @__PURE__ */ jsx65(TabsContainer, { tabs, children: /* @__PURE__ */ jsx65(Outlet4, {}) })
   ] });
 }
 
@@ -8191,7 +8834,7 @@ import { json as json14, redirect as redirect13 } from "@remix-run/server-runtim
 import { XCircleIcon as XCircleIcon7 } from "@heroicons/react/24/solid";
 import { ArrowPathIcon as ArrowPathIcon4 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation43 } from "react-i18next";
-import { Fragment as Fragment16, jsx as jsx62, jsxs as jsxs54 } from "react/jsx-runtime";
+import { Fragment as Fragment16, jsx as jsx66, jsxs as jsxs58 } from "react/jsx-runtime";
 async function action12({ params, request }) {
   let body = await request.formData(), email = body.get("email"), password = body.get("password");
   if (typeof email == "string" && typeof password == "string") {
@@ -8203,13 +8846,13 @@ async function action12({ params, request }) {
 }
 function SignInPage() {
   let [searchParams] = useSearchParams4(), login2 = useFetcher3(), { t } = useTranslation43();
-  return /* @__PURE__ */ jsx62(Fragment16, { children: /* @__PURE__ */ jsxs54("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
-    /* @__PURE__ */ jsxs54("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
-      /* @__PURE__ */ jsx62("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.signInTitle") }),
-      /* @__PURE__ */ jsxs54("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
+  return /* @__PURE__ */ jsx66(Fragment16, { children: /* @__PURE__ */ jsxs58("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+    /* @__PURE__ */ jsxs58("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
+      /* @__PURE__ */ jsx66("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.signInTitle") }),
+      /* @__PURE__ */ jsxs58("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
         t("common.or"),
         " ",
-        /* @__PURE__ */ jsx62(
+        /* @__PURE__ */ jsx66(
           Link12,
           {
             to: "/sign-up",
@@ -8219,22 +8862,22 @@ function SignInPage() {
         )
       ] })
     ] }),
-    /* @__PURE__ */ jsx62("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxs54("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
-      /* @__PURE__ */ jsxs54("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: [
-        /* @__PURE__ */ jsx62("p", { children: t("vendure.demoCredentials") }),
-        /* @__PURE__ */ jsxs54("p", { children: [
+    /* @__PURE__ */ jsx66("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxs58("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
+      /* @__PURE__ */ jsxs58("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: [
+        /* @__PURE__ */ jsx66("p", { children: t("vendure.demoCredentials") }),
+        /* @__PURE__ */ jsxs58("p", { children: [
           t("account.emailAddress"),
           ": ",
-          /* @__PURE__ */ jsx62("span", { className: "font-bold", children: "test@vendure.io" })
+          /* @__PURE__ */ jsx66("span", { className: "font-bold", children: "test@vendure.io" })
         ] }),
-        /* @__PURE__ */ jsxs54("p", { children: [
+        /* @__PURE__ */ jsxs58("p", { children: [
           t("account.password"),
           ": ",
-          /* @__PURE__ */ jsx62("span", { className: "font-bold", children: "test" })
+          /* @__PURE__ */ jsx66("span", { className: "font-bold", children: "test" })
         ] })
       ] }),
-      /* @__PURE__ */ jsx62(login2.Form, { method: "post", children: /* @__PURE__ */ jsxs54("fieldset", { disabled: login2.state !== "idle", className: "space-y-6", children: [
-        /* @__PURE__ */ jsx62(
+      /* @__PURE__ */ jsx66(login2.Form, { method: "post", children: /* @__PURE__ */ jsxs58("fieldset", { disabled: login2.state !== "idle", className: "space-y-6", children: [
+        /* @__PURE__ */ jsx66(
           "input",
           {
             type: "hidden",
@@ -8242,8 +8885,8 @@ function SignInPage() {
             value: searchParams.get("redirectTo") ?? void 0
           }
         ),
-        /* @__PURE__ */ jsxs54("div", { children: [
-          /* @__PURE__ */ jsx62(
+        /* @__PURE__ */ jsxs58("div", { children: [
+          /* @__PURE__ */ jsx66(
             "label",
             {
               htmlFor: "email",
@@ -8251,7 +8894,7 @@ function SignInPage() {
               children: t("account.emailAddress")
             }
           ),
-          /* @__PURE__ */ jsx62("div", { className: "mt-1", children: /* @__PURE__ */ jsx62(
+          /* @__PURE__ */ jsx66("div", { className: "mt-1", children: /* @__PURE__ */ jsx66(
             "input",
             {
               id: "email",
@@ -8265,8 +8908,8 @@ function SignInPage() {
             }
           ) })
         ] }),
-        /* @__PURE__ */ jsxs54("div", { children: [
-          /* @__PURE__ */ jsx62(
+        /* @__PURE__ */ jsxs58("div", { children: [
+          /* @__PURE__ */ jsx66(
             "label",
             {
               htmlFor: "password",
@@ -8274,7 +8917,7 @@ function SignInPage() {
               children: t("account.password")
             }
           ),
-          /* @__PURE__ */ jsx62("div", { className: "mt-1", children: /* @__PURE__ */ jsx62(
+          /* @__PURE__ */ jsx66("div", { className: "mt-1", children: /* @__PURE__ */ jsx66(
             "input",
             {
               id: "password",
@@ -8288,9 +8931,9 @@ function SignInPage() {
             }
           ) })
         ] }),
-        /* @__PURE__ */ jsxs54("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxs54("div", { className: "flex items-center", children: [
-            /* @__PURE__ */ jsx62(
+        /* @__PURE__ */ jsxs58("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxs58("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsx66(
               "input",
               {
                 id: "rememberMe",
@@ -8300,7 +8943,7 @@ function SignInPage() {
                 defaultChecked: !0
               }
             ),
-            /* @__PURE__ */ jsx62(
+            /* @__PURE__ */ jsx66(
               "label",
               {
                 htmlFor: "rememberMe",
@@ -8309,7 +8952,7 @@ function SignInPage() {
               }
             )
           ] }),
-          /* @__PURE__ */ jsx62("div", { className: "text-sm", children: /* @__PURE__ */ jsx62(
+          /* @__PURE__ */ jsx66("div", { className: "text-sm", children: /* @__PURE__ */ jsx66(
             "a",
             {
               href: "#",
@@ -8318,26 +8961,26 @@ function SignInPage() {
             }
           ) })
         ] }),
-        login2.data && login2.state === "idle" && /* @__PURE__ */ jsx62("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs54("div", { className: "flex", children: [
-          /* @__PURE__ */ jsx62("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx62(
+        login2.data && login2.state === "idle" && /* @__PURE__ */ jsx66("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs58("div", { className: "flex", children: [
+          /* @__PURE__ */ jsx66("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx66(
             XCircleIcon7,
             {
               className: "h-5 w-5 text-red-400",
               "aria-hidden": "true"
             }
           ) }),
-          /* @__PURE__ */ jsxs54("div", { className: "ml-3", children: [
-            /* @__PURE__ */ jsx62("h3", { className: "text-sm font-medium text-red-800", children: t("account.errorSignIn") }),
-            /* @__PURE__ */ jsx62("p", { className: "text-sm text-red-700 mt-2", children: login2.data.message })
+          /* @__PURE__ */ jsxs58("div", { className: "ml-3", children: [
+            /* @__PURE__ */ jsx66("h3", { className: "text-sm font-medium text-red-800", children: t("account.errorSignIn") }),
+            /* @__PURE__ */ jsx66("p", { className: "text-sm text-red-700 mt-2", children: login2.data.message })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsx62("div", { children: /* @__PURE__ */ jsx62(
+        /* @__PURE__ */ jsx66("div", { children: /* @__PURE__ */ jsx66(
           Button,
           {
             type: "submit",
             className: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
-            children: /* @__PURE__ */ jsxs54("span", { className: "flex gap-4 items-center", children: [
-              login2.state !== "idle" && /* @__PURE__ */ jsx62(ArrowPathIcon4, { className: "animate-spin h-5 w-5 text-gray-500" }),
+            children: /* @__PURE__ */ jsxs58("span", { className: "flex gap-4 items-center", children: [
+              login2.state !== "idle" && /* @__PURE__ */ jsx66(ArrowPathIcon4, { className: "animate-spin h-5 w-5 text-gray-500" }),
               t("account.signIn")
             ] })
           }
@@ -8357,7 +9000,7 @@ import { useLoaderData as useLoaderData15, useSubmit as useSubmit6 } from "@remi
 import { useRef as useRef10, useState as useState13 } from "react";
 import { ValidatedForm as ValidatedForm6 } from "remix-validated-form";
 import { useTranslation as useTranslation44 } from "react-i18next";
-import { jsx as jsx63, jsxs as jsxs55 } from "react/jsx-runtime";
+import { jsx as jsx67, jsxs as jsxs59 } from "react/jsx-runtime";
 var paginationLimitMinimumDefault3 = 25, allowedPaginationLimits3 = /* @__PURE__ */ new Set([
   paginationLimitMinimumDefault3,
   50,
@@ -8374,10 +9017,10 @@ function Search() {
     facetValueIds
   );
   let submit = useSubmit6(), { t } = useTranslation44();
-  return /* @__PURE__ */ jsxs55("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxs55("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ jsx63("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: term ? `${t("common.resultsFor")} "${term}"` : t("common.allResults") }),
-      /* @__PURE__ */ jsx63(
+  return /* @__PURE__ */ jsxs59("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxs59("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ jsx67("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: term ? `${t("common.resultsFor")} "${term}"` : t("common.allResults") }),
+      /* @__PURE__ */ jsx67(
         FiltersButton,
         {
           filterCount: facetValueIds.length,
@@ -8385,13 +9028,13 @@ function Search() {
         }
       )
     ] }),
-    /* @__PURE__ */ jsx63(
+    /* @__PURE__ */ jsx67(
       ValidatedForm6,
       {
         validator: validator5,
         method: "get",
         onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
-        children: /* @__PURE__ */ jsx63(
+        children: /* @__PURE__ */ jsx67(
           FilterableProductGrid,
           {
             allowedPaginationLimits: allowedPaginationLimits3,
@@ -8417,7 +9060,7 @@ import { useLoaderData as useLoaderData16, useSearchParams as useSearchParams5 }
 import { redirect as redirect14 } from "@remix-run/server-runtime";
 import { CheckCircleIcon as CheckCircleIcon6, XCircleIcon as XCircleIcon8 } from "@heroicons/react/24/outline";
 import { useTranslation as useTranslation45 } from "react-i18next";
-import { jsx as jsx64, jsxs as jsxs56 } from "react/jsx-runtime";
+import { jsx as jsx68, jsxs as jsxs60 } from "react/jsx-runtime";
 async function loader18({
   request
 }) {
@@ -8446,17 +9089,17 @@ function VerifyTokenPage() {
       return;
     let submitBtn = btnRef.current;
     setTimeout(() => submitBtn.click(), 5e3);
-  }, [result]), /* @__PURE__ */ jsx64("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsx64("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsx64("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: result.success ? /* @__PURE__ */ jsx64("div", { className: "rounded-md bg-green-100 p-4", children: /* @__PURE__ */ jsxs56("div", { className: "flex items-center", children: [
-    /* @__PURE__ */ jsx64("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx64(
+  }, [result]), /* @__PURE__ */ jsx68("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsx68("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsx68("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: result.success ? /* @__PURE__ */ jsx68("div", { className: "rounded-md bg-green-100 p-4", children: /* @__PURE__ */ jsxs60("div", { className: "flex items-center", children: [
+    /* @__PURE__ */ jsx68("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx68(
       CheckCircleIcon6,
       {
         className: "h-5 w-5 text-green-600",
         "aria-hidden": "true"
       }
     ) }),
-    /* @__PURE__ */ jsx64("div", { className: "ml-3", children: /* @__PURE__ */ jsx64("p", { className: "text-sm text-green-700", children: t("account.verifyMessage") }) }),
-    /* @__PURE__ */ jsxs56("form", { method: "post", children: [
-      /* @__PURE__ */ jsx64(
+    /* @__PURE__ */ jsx68("div", { className: "ml-3", children: /* @__PURE__ */ jsx68("p", { className: "text-sm text-green-700", children: t("account.verifyMessage") }) }),
+    /* @__PURE__ */ jsxs60("form", { method: "post", children: [
+      /* @__PURE__ */ jsx68(
         "input",
         {
           type: "hidden",
@@ -8464,7 +9107,7 @@ function VerifyTokenPage() {
           value: searchParams.get("redirectTo") || "/"
         }
       ),
-      /* @__PURE__ */ jsx64(
+      /* @__PURE__ */ jsx68(
         "input",
         {
           type: "hidden",
@@ -8472,7 +9115,7 @@ function VerifyTokenPage() {
           value: result.headersJson
         }
       ),
-      /* @__PURE__ */ jsx64(
+      /* @__PURE__ */ jsx68(
         "button",
         {
           ref: btnRef,
@@ -8481,15 +9124,15 @@ function VerifyTokenPage() {
         }
       )
     ] })
-  ] }) }) : /* @__PURE__ */ jsx64("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs56("div", { className: "flex", children: [
-    /* @__PURE__ */ jsx64("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx64(
+  ] }) }) : /* @__PURE__ */ jsx68("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxs60("div", { className: "flex", children: [
+    /* @__PURE__ */ jsx68("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx68(
       XCircleIcon8,
       {
         className: "h-5 w-5 text-red-400",
         "aria-hidden": "true"
       }
     ) }),
-    /* @__PURE__ */ jsx64("div", { className: "ml-3", children: /* @__PURE__ */ jsx64("p", { className: "text-sm text-red-700", children: result.error }) })
+    /* @__PURE__ */ jsx68("div", { className: "ml-3", children: /* @__PURE__ */ jsx68("p", { className: "text-sm text-red-700", children: result.error }) })
   ] }) }) }) }) });
 }
 
@@ -8501,21 +9144,21 @@ __export(routes_exports, {
 
 // app/components/home/HeroBanner.tsx
 import { Link as Link13 } from "@remix-run/react";
-import { jsx as jsx65, jsxs as jsxs57 } from "react/jsx-runtime";
+import { jsx as jsx69, jsxs as jsxs61 } from "react/jsx-runtime";
 function HeroBanner() {
-  return /* @__PURE__ */ jsxs57("section", { className: "relative min-h-screen flex items-center justify-center overflow-hidden", children: [
-    /* @__PURE__ */ jsx65("div", { className: "absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary" }),
-    /* @__PURE__ */ jsxs57("div", { className: "absolute inset-0 opacity-10", children: [
-      /* @__PURE__ */ jsx65("div", { className: "absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" }),
-      /* @__PURE__ */ jsx65("div", { className: "absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl" }),
-      /* @__PURE__ */ jsx65("div", { className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white rounded-full blur-3xl" })
+  return /* @__PURE__ */ jsxs61("section", { className: "relative min-h-screen flex items-center justify-center overflow-hidden", children: [
+    /* @__PURE__ */ jsx69("div", { className: "absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary" }),
+    /* @__PURE__ */ jsxs61("div", { className: "absolute inset-0 opacity-10", children: [
+      /* @__PURE__ */ jsx69("div", { className: "absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" }),
+      /* @__PURE__ */ jsx69("div", { className: "absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl" }),
+      /* @__PURE__ */ jsx69("div", { className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white rounded-full blur-3xl" })
     ] }),
-    /* @__PURE__ */ jsxs57("div", { className: "relative z-10 max-w-6xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsx65("div", { className: "animate-fade-in-up", children: /* @__PURE__ */ jsx65("span", { className: "inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6", children: "\u8DE8\u5883\u7535\u5546\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848" }) }),
-      /* @__PURE__ */ jsx65("h1", { className: "animate-fade-in-up delay-100 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight", children: "\u6211\u4EEC\u8BA9\u4F60\u8F7B\u677E\u4ECE\u4E2D\u56FD\u51FA\u6D77" }),
-      /* @__PURE__ */ jsx65("p", { className: "animate-fade-in-up delay-200 text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed", children: "\u4E13\u6CE8\u8DE8\u5883\u7535\u5546\u9886\u57DF\uFF0C\u63D0\u4F9B\u5168\u94FE\u8DEF\u670D\u52A1\u652F\u6301\uFF0C\u52A9\u529B\u4E2D\u56FD\u54C1\u724C\u8D70\u5411\u5168\u7403\u5E02\u573A\u3002 \u4ECE\u9009\u54C1\u3001\u7269\u6D41\u5230\u652F\u4ED8\uFF0C\u4E00\u7AD9\u5F0F\u89E3\u51B3\u51FA\u6D77\u96BE\u9898\u3002" }),
-      /* @__PURE__ */ jsxs57("div", { className: "animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 justify-center items-center", children: [
-        /* @__PURE__ */ jsx65(
+    /* @__PURE__ */ jsxs61("div", { className: "relative z-10 max-w-6xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsx69("div", { className: "animate-fade-in-up", children: /* @__PURE__ */ jsx69("span", { className: "inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6", children: "\u8DE8\u5883\u7535\u5546\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848" }) }),
+      /* @__PURE__ */ jsx69("h1", { className: "animate-fade-in-up delay-100 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight", children: "\u6211\u4EEC\u8BA9\u4F60\u8F7B\u677E\u4ECE\u4E2D\u56FD\u51FA\u6D77" }),
+      /* @__PURE__ */ jsx69("p", { className: "animate-fade-in-up delay-200 text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed", children: "\u4E13\u6CE8\u8DE8\u5883\u7535\u5546\u9886\u57DF\uFF0C\u63D0\u4F9B\u5168\u94FE\u8DEF\u670D\u52A1\u652F\u6301\uFF0C\u52A9\u529B\u4E2D\u56FD\u54C1\u724C\u8D70\u5411\u5168\u7403\u5E02\u573A\u3002 \u4ECE\u9009\u54C1\u3001\u7269\u6D41\u5230\u652F\u4ED8\uFF0C\u4E00\u7AD9\u5F0F\u89E3\u51B3\u51FA\u6D77\u96BE\u9898\u3002" }),
+      /* @__PURE__ */ jsxs61("div", { className: "animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 justify-center items-center", children: [
+        /* @__PURE__ */ jsx69(
           Link13,
           {
             to: "/collections",
@@ -8523,7 +9166,7 @@ function HeroBanner() {
             children: "\u7ACB\u5373\u5F00\u59CB"
           }
         ),
-        /* @__PURE__ */ jsx65(
+        /* @__PURE__ */ jsx69(
           Link13,
           {
             to: "#features",
@@ -8532,63 +9175,63 @@ function HeroBanner() {
           }
         )
       ] }),
-      /* @__PURE__ */ jsx65("div", { className: "animate-fade-in-up delay-400 mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto", children: [
+      /* @__PURE__ */ jsx69("div", { className: "animate-fade-in-up delay-400 mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto", children: [
         { number: "4000+", label: "\u5408\u4F5C\u5BA2\u6237" },
         { number: "120+", label: "\u8986\u76D6\u56FD\u5BB6" },
         { number: "500M+", label: "\u5E74\u4EA4\u6613\u989D" },
         { number: "200+", label: "\u4E13\u4E1A\u56E2\u961F" }
-      ].map((stat, index) => /* @__PURE__ */ jsxs57("div", { className: "text-center", children: [
-        /* @__PURE__ */ jsx65("div", { className: "text-3xl md:text-4xl font-bold text-white", children: stat.number }),
-        /* @__PURE__ */ jsx65("div", { className: "text-white/80 text-sm mt-1", children: stat.label })
+      ].map((stat, index) => /* @__PURE__ */ jsxs61("div", { className: "text-center", children: [
+        /* @__PURE__ */ jsx69("div", { className: "text-3xl md:text-4xl font-bold text-white", children: stat.number }),
+        /* @__PURE__ */ jsx69("div", { className: "text-white/80 text-sm mt-1", children: stat.label })
       ] }, index)) })
     ] }),
-    /* @__PURE__ */ jsx65("div", { className: "absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce", children: /* @__PURE__ */ jsx65("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) }) })
+    /* @__PURE__ */ jsx69("div", { className: "absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce", children: /* @__PURE__ */ jsx69("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx69("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) }) })
   ] });
 }
 
 // app/components/home/FeaturesSection.tsx
 import { useState as useState14 } from "react";
-import { jsx as jsx66, jsxs as jsxs58 } from "react/jsx-runtime";
+import { jsx as jsx70, jsxs as jsxs62 } from "react/jsx-runtime";
 var features = [
   {
-    icon: /* @__PURE__ */ jsx66("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) }),
+    icon: /* @__PURE__ */ jsx70("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx70("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) }),
     title: "\u5168\u7403\u4ED3\u50A8\u914D\u9001",
     description: "\u8986\u76D6\u5168\u7403120+\u56FD\u5BB6\u7684\u4ED3\u50A8\u7F51\u7EDC\uFF0C\u667A\u80FD\u5206\u4ED3\u7BA1\u7406\uFF0C\u6700\u5FEB3\u5929\u9001\u8FBE\uFF0C\u8BA9\u60A8\u7684\u5546\u54C1\u5FEB\u901F\u89E6\u8FBE\u5168\u7403\u6D88\u8D39\u8005\u3002"
   },
   {
-    icon: /* @__PURE__ */ jsx66("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
+    icon: /* @__PURE__ */ jsx70("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx70("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
     title: "\u4E13\u4E1A\u9009\u54C1\u6307\u5BFC",
     description: "\u57FA\u4E8E\u5927\u6570\u636E\u5206\u6790\u7684\u9009\u54C1\u63A8\u8350\uFF0C\u8D44\u6DF1\u9009\u54C1\u56E2\u961F\u4E00\u5BF9\u4E00\u6307\u5BFC\uFF0C\u5E2E\u52A9\u60A8\u6316\u6398\u7206\u6B3E\u4EA7\u54C1\uFF0C\u964D\u4F4E\u9009\u54C1\u98CE\u9669\u3002"
   },
   {
-    icon: /* @__PURE__ */ jsx66("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" }) }),
+    icon: /* @__PURE__ */ jsx70("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx70("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" }) }),
     title: "\u5168\u94FE\u8DEF\u7269\u6D41\u670D\u52A1",
     description: "\u4ECE\u56FD\u5185\u63FD\u6536\u3001\u56FD\u9645\u8FD0\u8F93\u5230\u672B\u7AEF\u6D3E\u9001\uFF0C\u63D0\u4F9B\u95E8\u5230\u95E8\u4E00\u7AD9\u5F0F\u7269\u6D41\u89E3\u51B3\u65B9\u6848\uFF0C\u5168\u7A0B\u53EF\u8FFD\u8E2A\u3002"
   },
   {
-    icon: /* @__PURE__ */ jsx66("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
+    icon: /* @__PURE__ */ jsx70("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx70("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
     title: "\u591A\u5E01\u79CD\u6536\u6B3E\u652F\u6301",
     description: "\u652F\u6301\u7F8E\u5143\u3001\u6B27\u5143\u3001\u82F1\u9551\u7B4930+\u4E3B\u6D41\u5E01\u79CD\u6536\u6B3E\uFF0C\u6C47\u7387\u900F\u660E\uFF0C\u624B\u7EED\u8D39\u4F4E\uFF0C\u8D44\u91D1\u5B89\u5168\u6709\u4FDD\u969C\u3002"
   }
 ];
 function FeaturesSection() {
   let [hoveredIndex, setHoveredIndex] = useState14(null);
-  return /* @__PURE__ */ jsx66("section", { id: "features", className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs58("div", { className: "max-w-7xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxs58("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx66("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6838\u5FC3\u4F18\u52BF" }),
-      /* @__PURE__ */ jsx66("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u4E3A\u4EC0\u4E48\u9009\u62E9\u6211\u4EEC" }),
-      /* @__PURE__ */ jsx66("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6DF1\u8015\u8DE8\u5883\u7535\u5546\u9886\u57DF\u591A\u5E74\uFF0C\u79EF\u7D2F\u4E86\u4E30\u5BCC\u7684\u884C\u4E1A\u7ECF\u9A8C\u548C\u8D44\u6E90\uFF0C\u81F4\u529B\u4E8E\u4E3A\u5BA2\u6237\u63D0\u4F9B\u6700\u4F18\u8D28\u7684\u670D\u52A1\u3002" })
+  return /* @__PURE__ */ jsx70("section", { id: "features", className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs62("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx70("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6838\u5FC3\u4F18\u52BF" }),
+      /* @__PURE__ */ jsx70("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u4E3A\u4EC0\u4E48\u9009\u62E9\u6211\u4EEC" }),
+      /* @__PURE__ */ jsx70("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6DF1\u8015\u8DE8\u5883\u7535\u5546\u9886\u57DF\u591A\u5E74\uFF0C\u79EF\u7D2F\u4E86\u4E30\u5BCC\u7684\u884C\u4E1A\u7ECF\u9A8C\u548C\u8D44\u6E90\uFF0C\u81F4\u529B\u4E8E\u4E3A\u5BA2\u6237\u63D0\u4F9B\u6700\u4F18\u8D28\u7684\u670D\u52A1\u3002" })
     ] }),
-    /* @__PURE__ */ jsx66("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8", children: features.map((feature, index) => /* @__PURE__ */ jsxs58(
+    /* @__PURE__ */ jsx70("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8", children: features.map((feature, index) => /* @__PURE__ */ jsxs62(
       "div",
       {
         className: `p-8 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${hoveredIndex === index ? "transform -translate-y-2" : ""}`,
         onMouseEnter: () => setHoveredIndex(index),
         onMouseLeave: () => setHoveredIndex(null),
         children: [
-          /* @__PURE__ */ jsx66("div", { className: `w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300 ${hoveredIndex === index ? "bg-primary text-white" : "bg-primary/10 text-primary"}`, children: feature.icon }),
-          /* @__PURE__ */ jsx66("h3", { className: "text-xl font-semibold text-gray-900 mb-3", children: feature.title }),
-          /* @__PURE__ */ jsx66("p", { className: "text-gray-600 leading-relaxed", children: feature.description })
+          /* @__PURE__ */ jsx70("div", { className: `w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300 ${hoveredIndex === index ? "bg-primary text-white" : "bg-primary/10 text-primary"}`, children: feature.icon }),
+          /* @__PURE__ */ jsx70("h3", { className: "text-xl font-semibold text-gray-900 mb-3", children: feature.title }),
+          /* @__PURE__ */ jsx70("p", { className: "text-gray-600 leading-relaxed", children: feature.description })
         ]
       },
       index
@@ -8598,7 +9241,7 @@ function FeaturesSection() {
 
 // app/components/home/StatsSection.tsx
 import { useEffect as useEffect14, useState as useState15, useRef as useRef12 } from "react";
-import { jsx as jsx67, jsxs as jsxs59 } from "react/jsx-runtime";
+import { jsx as jsx71, jsxs as jsxs63 } from "react/jsx-runtime";
 var stats = [
   { value: 4e3, suffix: "+", label: "\u5408\u4F5C\u5BA2\u6237", description: "\u904D\u5E03\u5168\u7403\u5404\u5730" },
   { value: 120, suffix: "+", label: "\u8986\u76D6\u56FD\u5BB6", description: "\u5168\u7403\u5316\u5E03\u5C40" },
@@ -8622,26 +9265,26 @@ function AnimatedNumber({ value, suffix }) {
       current += increment, current >= value ? (setCount(value), clearInterval(timer)) : setCount(Math.floor(current));
     }, duration / steps2);
     return () => clearInterval(timer);
-  }, [isVisible, value]), /* @__PURE__ */ jsxs59("div", { ref, className: "text-5xl md:text-6xl font-bold text-primary", children: [
+  }, [isVisible, value]), /* @__PURE__ */ jsxs63("div", { ref, className: "text-5xl md:text-6xl font-bold text-primary", children: [
     count.toLocaleString(),
     suffix
   ] });
 }
 function StatsSection() {
-  return /* @__PURE__ */ jsx67("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs59("div", { className: "max-w-7xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxs59("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx67("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6570\u636E\u8BF4\u8BDD" }),
-      /* @__PURE__ */ jsx67("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u7684\u6210\u5C31" }),
-      /* @__PURE__ */ jsx67("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u7528\u6570\u636E\u8BC1\u660E\u5B9E\u529B\uFF0C\u7528\u670D\u52A1\u8D62\u5F97\u4FE1\u4EFB" })
+  return /* @__PURE__ */ jsx71("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs63("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs63("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx71("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6570\u636E\u8BF4\u8BDD" }),
+      /* @__PURE__ */ jsx71("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u7684\u6210\u5C31" }),
+      /* @__PURE__ */ jsx71("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u7528\u6570\u636E\u8BC1\u660E\u5B9E\u529B\uFF0C\u7528\u670D\u52A1\u8D62\u5F97\u4FE1\u4EFB" })
     ] }),
-    /* @__PURE__ */ jsx67("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-8", children: stats.map((stat, index) => /* @__PURE__ */ jsxs59(
+    /* @__PURE__ */ jsx71("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-8", children: stats.map((stat, index) => /* @__PURE__ */ jsxs63(
       "div",
       {
         className: "text-center p-8 bg-gradient-cream rounded-xl hover:shadow-lg transition-shadow duration-300",
         children: [
-          /* @__PURE__ */ jsx67(AnimatedNumber, { value: stat.value, suffix: stat.suffix }),
-          /* @__PURE__ */ jsx67("div", { className: "text-xl font-semibold text-gray-900 mt-4", children: stat.label }),
-          /* @__PURE__ */ jsx67("div", { className: "text-gray-500 text-sm mt-2", children: stat.description })
+          /* @__PURE__ */ jsx71(AnimatedNumber, { value: stat.value, suffix: stat.suffix }),
+          /* @__PURE__ */ jsx71("div", { className: "text-xl font-semibold text-gray-900 mt-4", children: stat.label }),
+          /* @__PURE__ */ jsx71("div", { className: "text-gray-500 text-sm mt-2", children: stat.description })
         ]
       },
       index
@@ -8651,7 +9294,7 @@ function StatsSection() {
 
 // app/components/home/ServicesSection.tsx
 import { useState as useState16 } from "react";
-import { jsx as jsx68, jsxs as jsxs60 } from "react/jsx-runtime";
+import { jsx as jsx72, jsxs as jsxs64 } from "react/jsx-runtime";
 var services = [
   {
     title: "\u4E00\u7AD9\u5F0F\u8DE8\u5883\u7535\u5546\u89E3\u51B3\u65B9\u6848",
@@ -8674,15 +9317,15 @@ var services = [
 ];
 function ServicesSection() {
   let [activeService, setActiveService] = useState16(0);
-  return /* @__PURE__ */ jsx68("section", { className: "py-20 bg-gray-50", children: /* @__PURE__ */ jsxs60("div", { className: "max-w-7xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxs60("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx68("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u670D\u52A1\u5185\u5BB9" }),
-      /* @__PURE__ */ jsx68("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u63D0\u4F9B\u7684\u670D\u52A1" }),
-      /* @__PURE__ */ jsx68("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u5168\u94FE\u8DEF\u8DE8\u5883\u7535\u5546\u670D\u52A1\uFF0C\u6EE1\u8DB3\u60A8\u4ECE\u5F00\u5E97\u5230\u8FD0\u8425\u7684\u6240\u6709\u9700\u6C42" })
+  return /* @__PURE__ */ jsx72("section", { className: "py-20 bg-gray-50", children: /* @__PURE__ */ jsxs64("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs64("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx72("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u670D\u52A1\u5185\u5BB9" }),
+      /* @__PURE__ */ jsx72("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u63D0\u4F9B\u7684\u670D\u52A1" }),
+      /* @__PURE__ */ jsx72("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u5168\u94FE\u8DEF\u8DE8\u5883\u7535\u5546\u670D\u52A1\uFF0C\u6EE1\u8DB3\u60A8\u4ECE\u5F00\u5E97\u5230\u8FD0\u8425\u7684\u6240\u6709\u9700\u6C42" })
     ] }),
-    /* @__PURE__ */ jsxs60("div", { className: "grid lg:grid-cols-2 gap-12 items-center", children: [
-      /* @__PURE__ */ jsxs60("div", { className: "relative", children: [
-        /* @__PURE__ */ jsx68("div", { className: "aspect-video rounded-xl overflow-hidden shadow-2xl", children: /* @__PURE__ */ jsx68(
+    /* @__PURE__ */ jsxs64("div", { className: "grid lg:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxs64("div", { className: "relative", children: [
+        /* @__PURE__ */ jsx72("div", { className: "aspect-video rounded-xl overflow-hidden shadow-2xl", children: /* @__PURE__ */ jsx72(
           "img",
           {
             src: services[activeService].image,
@@ -8690,23 +9333,23 @@ function ServicesSection() {
             className: "w-full h-full object-cover transition-opacity duration-500"
           }
         ) }),
-        /* @__PURE__ */ jsx68("div", { className: "absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-xl flex items-center justify-center shadow-xl", children: /* @__PURE__ */ jsxs60("div", { className: "text-white text-center", children: [
-          /* @__PURE__ */ jsx68("div", { className: "text-3xl font-bold", children: activeService + 1 }),
-          /* @__PURE__ */ jsxs60("div", { className: "text-sm", children: [
+        /* @__PURE__ */ jsx72("div", { className: "absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-xl flex items-center justify-center shadow-xl", children: /* @__PURE__ */ jsxs64("div", { className: "text-white text-center", children: [
+          /* @__PURE__ */ jsx72("div", { className: "text-3xl font-bold", children: activeService + 1 }),
+          /* @__PURE__ */ jsxs64("div", { className: "text-sm", children: [
             "/ ",
             services.length
           ] })
         ] }) })
       ] }),
-      /* @__PURE__ */ jsx68("div", { className: "space-y-6", children: services.map((service, index) => /* @__PURE__ */ jsxs60(
+      /* @__PURE__ */ jsx72("div", { className: "space-y-6", children: services.map((service, index) => /* @__PURE__ */ jsxs64(
         "div",
         {
           className: `p-6 rounded-xl cursor-pointer transition-all duration-300 ${activeService === index ? "bg-white shadow-lg border-l-4 border-primary" : "bg-white/50 hover:bg-white hover:shadow-md"}`,
           onClick: () => setActiveService(index),
           children: [
-            /* @__PURE__ */ jsx68("h3", { className: `text-xl font-semibold mb-3 ${activeService === index ? "text-primary" : "text-gray-900"}`, children: service.title }),
-            /* @__PURE__ */ jsx68("p", { className: "text-gray-600 mb-4", children: service.description }),
-            /* @__PURE__ */ jsx68("div", { className: "flex flex-wrap gap-2", children: service.features.map((feature, i) => /* @__PURE__ */ jsx68(
+            /* @__PURE__ */ jsx72("h3", { className: `text-xl font-semibold mb-3 ${activeService === index ? "text-primary" : "text-gray-900"}`, children: service.title }),
+            /* @__PURE__ */ jsx72("p", { className: "text-gray-600 mb-4", children: service.description }),
+            /* @__PURE__ */ jsx72("div", { className: "flex flex-wrap gap-2", children: service.features.map((feature, i) => /* @__PURE__ */ jsx72(
               "span",
               {
                 className: `px-3 py-1 rounded-full text-sm ${activeService === index ? "bg-primary/10 text-primary" : "bg-gray-100 text-gray-600"}`,
@@ -8724,7 +9367,7 @@ function ServicesSection() {
 
 // app/components/home/TestimonialsSection.tsx
 import { useState as useState17, useEffect as useEffect15 } from "react";
-import { jsx as jsx69, jsxs as jsxs61 } from "react/jsx-runtime";
+import { jsx as jsx73, jsxs as jsxs65 } from "react/jsx-runtime";
 var testimonials = [
   {
     name: "\u5F20\u660E",
@@ -8758,15 +9401,15 @@ function TestimonialsSection() {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5e3);
     return () => clearInterval(timer);
-  }, []), /* @__PURE__ */ jsx69("section", { className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs61("div", { className: "max-w-7xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxs61("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx69("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5BA2\u6237\u8BC4\u4EF7" }),
-      /* @__PURE__ */ jsx69("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u542C\u542C\u4ED6\u4EEC\u600E\u4E48\u8BF4" }),
-      /* @__PURE__ */ jsx69("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6765\u81EA\u5408\u4F5C\u4F19\u4F34\u7684\u771F\u5B9E\u53CD\u9988" })
+  }, []), /* @__PURE__ */ jsx73("section", { className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs65("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs65("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx73("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5BA2\u6237\u8BC4\u4EF7" }),
+      /* @__PURE__ */ jsx73("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u542C\u542C\u4ED6\u4EEC\u600E\u4E48\u8BF4" }),
+      /* @__PURE__ */ jsx73("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6765\u81EA\u5408\u4F5C\u4F19\u4F34\u7684\u771F\u5B9E\u53CD\u9988" })
     ] }),
-    /* @__PURE__ */ jsxs61("div", { className: "relative max-w-4xl mx-auto", children: [
-      /* @__PURE__ */ jsx69("div", { className: "bg-white rounded-2xl p-8 md:p-12 shadow-xl", children: /* @__PURE__ */ jsxs61("div", { className: "flex flex-col md:flex-row gap-8 items-center", children: [
-        /* @__PURE__ */ jsx69("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx69(
+    /* @__PURE__ */ jsxs65("div", { className: "relative max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsx73("div", { className: "bg-white rounded-2xl p-8 md:p-12 shadow-xl", children: /* @__PURE__ */ jsxs65("div", { className: "flex flex-col md:flex-row gap-8 items-center", children: [
+        /* @__PURE__ */ jsx73("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx73(
           "img",
           {
             src: testimonials[currentIndex].avatar,
@@ -8774,16 +9417,16 @@ function TestimonialsSection() {
             className: "w-24 h-24 rounded-full object-cover border-4 border-primary/20"
           }
         ) }),
-        /* @__PURE__ */ jsxs61("div", { className: "flex-1", children: [
-          /* @__PURE__ */ jsx69("div", { className: "flex items-center gap-1 mb-4", children: [...Array(testimonials[currentIndex].rating)].map((_, i) => /* @__PURE__ */ jsx69("svg", { className: "w-5 h-5 text-yellow-400 fill-yellow-400", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsx69("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }) }, i)) }),
-          /* @__PURE__ */ jsxs61("p", { className: "text-gray-600 text-lg md:text-xl leading-relaxed mb-6", children: [
+        /* @__PURE__ */ jsxs65("div", { className: "flex-1", children: [
+          /* @__PURE__ */ jsx73("div", { className: "flex items-center gap-1 mb-4", children: [...Array(testimonials[currentIndex].rating)].map((_, i) => /* @__PURE__ */ jsx73("svg", { className: "w-5 h-5 text-yellow-400 fill-yellow-400", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsx73("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }) }, i)) }),
+          /* @__PURE__ */ jsxs65("p", { className: "text-gray-600 text-lg md:text-xl leading-relaxed mb-6", children: [
             '"',
             testimonials[currentIndex].content,
             '"'
           ] }),
-          /* @__PURE__ */ jsxs61("div", { children: [
-            /* @__PURE__ */ jsx69("div", { className: "font-semibold text-gray-900", children: testimonials[currentIndex].name }),
-            /* @__PURE__ */ jsxs61("div", { className: "text-gray-500 text-sm", children: [
+          /* @__PURE__ */ jsxs65("div", { children: [
+            /* @__PURE__ */ jsx73("div", { className: "font-semibold text-gray-900", children: testimonials[currentIndex].name }),
+            /* @__PURE__ */ jsxs65("div", { className: "text-gray-500 text-sm", children: [
               testimonials[currentIndex].title,
               " \xB7 ",
               testimonials[currentIndex].company
@@ -8791,7 +9434,7 @@ function TestimonialsSection() {
           ] })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsx69("div", { className: "flex justify-center gap-2 mt-8", children: testimonials.map((_, index) => /* @__PURE__ */ jsx69(
+      /* @__PURE__ */ jsx73("div", { className: "flex justify-center gap-2 mt-8", children: testimonials.map((_, index) => /* @__PURE__ */ jsx73(
         "button",
         {
           className: `w-3 h-3 rounded-full transition-all duration-300 ${currentIndex === index ? "bg-primary w-8" : "bg-gray-300 hover:bg-gray-400"}`,
@@ -8805,7 +9448,7 @@ function TestimonialsSection() {
 
 // app/components/home/PartnersSection.tsx
 import { Link as Link14 } from "@remix-run/react";
-import { jsx as jsx70, jsxs as jsxs62 } from "react/jsx-runtime";
+import { jsx as jsx74, jsxs as jsxs66 } from "react/jsx-runtime";
 var partners = [
   { name: "PayPal", description: "\u652F\u4ED8\u5408\u4F5C" },
   { name: "Stripe", description: "\u652F\u4ED8\u5408\u4F5C" },
@@ -8815,19 +9458,19 @@ var partners = [
   { name: "eBay", description: "\u5E73\u53F0\u5408\u4F5C" }
 ];
 function PartnersSection() {
-  return /* @__PURE__ */ jsx70("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-7xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxs62("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsx70("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5408\u4F5C\u4F19\u4F34" }),
-      /* @__PURE__ */ jsx70("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u503C\u5F97\u4FE1\u8D56\u7684\u4F19\u4F34" }),
-      /* @__PURE__ */ jsx70("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u4E0E\u5168\u7403\u77E5\u540D\u4F01\u4E1A\u5EFA\u7ACB\u957F\u671F\u5408\u4F5C\u5173\u7CFB" })
+  return /* @__PURE__ */ jsx74("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs66("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs66("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx74("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5408\u4F5C\u4F19\u4F34" }),
+      /* @__PURE__ */ jsx74("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u503C\u5F97\u4FE1\u8D56\u7684\u4F19\u4F34" }),
+      /* @__PURE__ */ jsx74("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u4E0E\u5168\u7403\u77E5\u540D\u4F01\u4E1A\u5EFA\u7ACB\u957F\u671F\u5408\u4F5C\u5173\u7CFB" })
     ] }),
-    /* @__PURE__ */ jsx70("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8", children: partners.map((partner, index) => /* @__PURE__ */ jsxs62(
+    /* @__PURE__ */ jsx74("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8", children: partners.map((partner, index) => /* @__PURE__ */ jsxs66(
       "div",
       {
         className: "flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors duration-300",
         children: [
-          /* @__PURE__ */ jsx70("div", { className: "text-2xl font-bold text-gray-700 mb-2", children: partner.name }),
-          /* @__PURE__ */ jsx70("div", { className: "text-xs text-gray-500", children: partner.description })
+          /* @__PURE__ */ jsx74("div", { className: "text-2xl font-bold text-gray-700 mb-2", children: partner.name }),
+          /* @__PURE__ */ jsx74("div", { className: "text-xs text-gray-500", children: partner.description })
         ]
       },
       index
@@ -8835,11 +9478,11 @@ function PartnersSection() {
   ] }) });
 }
 function CtaSection() {
-  return /* @__PURE__ */ jsx70("section", { className: "py-20 bg-gradient-to-br from-primary via-primary-light to-secondary", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-    /* @__PURE__ */ jsx70("h2", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "\u51C6\u5907\u597D\u5F00\u542F\u8DE8\u5883\u7535\u5546\u4E4B\u65C5\u4E86\u5417\uFF1F" }),
-    /* @__PURE__ */ jsx70("p", { className: "text-white/90 text-lg mb-10 max-w-2xl mx-auto", children: "\u52A0\u5165\u6211\u4EEC\uFF0C\u8BA9\u4E13\u4E1A\u56E2\u961F\u5E2E\u60A8\u5B9E\u73B0\u51FA\u6D77\u68A6\u60F3\u3002\u73B0\u5728\u54A8\u8BE2\uFF0C\u4EAB\u53D7\u4E13\u5C5E\u4F18\u60E0\uFF01" }),
-    /* @__PURE__ */ jsxs62("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
-      /* @__PURE__ */ jsx70(
+  return /* @__PURE__ */ jsx74("section", { className: "py-20 bg-gradient-to-br from-primary via-primary-light to-secondary", children: /* @__PURE__ */ jsxs66("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+    /* @__PURE__ */ jsx74("h2", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "\u51C6\u5907\u597D\u5F00\u542F\u8DE8\u5883\u7535\u5546\u4E4B\u65C5\u4E86\u5417\uFF1F" }),
+    /* @__PURE__ */ jsx74("p", { className: "text-white/90 text-lg mb-10 max-w-2xl mx-auto", children: "\u52A0\u5165\u6211\u4EEC\uFF0C\u8BA9\u4E13\u4E1A\u56E2\u961F\u5E2E\u60A8\u5B9E\u73B0\u51FA\u6D77\u68A6\u60F3\u3002\u73B0\u5728\u54A8\u8BE2\uFF0C\u4EAB\u53D7\u4E13\u5C5E\u4F18\u60E0\uFF01" }),
+    /* @__PURE__ */ jsxs66("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
+      /* @__PURE__ */ jsx74(
         Link14,
         {
           to: "/collections",
@@ -8847,7 +9490,7 @@ function CtaSection() {
           children: "\u7ACB\u5373\u54A8\u8BE2"
         }
       ),
-      /* @__PURE__ */ jsx70(
+      /* @__PURE__ */ jsx74(
         Link14,
         {
           to: "#features",
@@ -8860,21 +9503,21 @@ function CtaSection() {
 }
 
 // app/routes/index.tsx
-import { Fragment as Fragment17, jsx as jsx71, jsxs as jsxs63 } from "react/jsx-runtime";
+import { Fragment as Fragment17, jsx as jsx75, jsxs as jsxs67 } from "react/jsx-runtime";
 function Index() {
-  return /* @__PURE__ */ jsxs63(Fragment17, { children: [
-    /* @__PURE__ */ jsx71(HeroBanner, {}),
-    /* @__PURE__ */ jsx71(FeaturesSection, {}),
-    /* @__PURE__ */ jsx71(StatsSection, {}),
-    /* @__PURE__ */ jsx71(ServicesSection, {}),
-    /* @__PURE__ */ jsx71(TestimonialsSection, {}),
-    /* @__PURE__ */ jsx71(PartnersSection, {}),
-    /* @__PURE__ */ jsx71(CtaSection, {})
+  return /* @__PURE__ */ jsxs67(Fragment17, { children: [
+    /* @__PURE__ */ jsx75(HeroBanner, {}),
+    /* @__PURE__ */ jsx75(FeaturesSection, {}),
+    /* @__PURE__ */ jsx75(StatsSection, {}),
+    /* @__PURE__ */ jsx75(ServicesSection, {}),
+    /* @__PURE__ */ jsx75(TestimonialsSection, {}),
+    /* @__PURE__ */ jsx75(PartnersSection, {}),
+    /* @__PURE__ */ jsx75(CtaSection, {})
   ] });
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-6G2XSE2A.js", imports: ["/build/_shared/chunk-Y55AAQNO.js", "/build/_shared/chunk-P7QIFSSS.js", "/build/_shared/chunk-5SNCUZBH.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-B6TRSMPN.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-BT23CWUD.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-UQBW2EY6.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-RDJEKBF2.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-OC6DHXEJ.js", imports: ["/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-TVT5M4PF.js", imports: ["/build/_shared/chunk-QTIHDRK2.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-7LN7ZN5A.js", imports: ["/build/_shared/chunk-QTIHDRK2.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-2XRBWSRT.js", imports: ["/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-7DBQULKS.js", imports: ["/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-3COUBIS7.js", imports: ["/build/_shared/chunk-XI5I7AIR.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-MNOQKV2W.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-3P2KPY2Z.js", imports: ["/build/_shared/chunk-BT23CWUD.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-QF3JPUYS.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-DGWKEC24.js", imports: ["/build/_shared/chunk-PZ43M7RD.js", "/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-XCF6VTRO.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-2YV5UG6J.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-BUUS2I7K.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-KEMREN5H.js", imports: ["/build/_shared/chunk-XCF6VTRO.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-M2U5XRZL.js", imports: ["/build/_shared/chunk-PZ43M7RD.js", "/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-Q7LVL4TS.js", imports: ["/build/_shared/chunk-G6VLRDBT.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-IDZESRNX.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-TR6TJUHU.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-6UY2ONL3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-RLPJ2FSU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "518a6374", hmr: void 0, url: "/build/manifest-518A6374.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-AMHHY4R4.js", imports: ["/build/_shared/chunk-AD55GMQC.js", "/build/_shared/chunk-53HIUDMI.js", "/build/_shared/chunk-ACPERAUQ.js", "/build/_shared/chunk-KO3OK2JV.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EXE7Z3D2.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-FYUA2WBM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-DJNHAC5G.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-LGBZMBP3.js", imports: ["/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-YS7LJJRX.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-DSTRQEOJ.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-EG7FV5R3.js", imports: ["/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-QQYEOGEK.js", imports: ["/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-UTXDWTF6.js", imports: ["/build/_shared/chunk-4H2GH4XE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-6FI5IFBA.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-L4NQIECW.js", imports: ["/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-IPYQ66XH.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-QQWUOLRM.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3DQLFJI2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-AXLQDMCP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-K5U7UVOJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-KLLXK2R2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-YACEK4RB.js", imports: ["/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-ICZ7N7PO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-Y6YKMHBH.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-4AEA32PH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-NOI3P5A7.js", imports: ["/build/_shared/chunk-WDFERQDG.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-COJIXHSP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-B2N7GQ2U.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-34IGMYBW.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-H6EQJZ2E.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "9a25c5b8", hmr: void 0, url: "/build/manifest-9A25C5B8.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -8917,6 +9560,14 @@ var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fe
     index: void 0,
     caseSensitive: void 0,
     module: account_addresses_new_exports
+  },
+  "routes/payment-information": {
+    id: "routes/payment-information",
+    parentId: "root",
+    path: "payment-information",
+    index: void 0,
+    caseSensitive: void 0,
+    module: payment_information_exports
   },
   "routes/account.addresses": {
     id: "routes/account.addresses",
@@ -9022,6 +9673,14 @@ var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fe
     caseSensitive: void 0,
     module: api_logout_exports
   },
+  "routes/resources": {
+    id: "routes/resources",
+    parentId: "root",
+    path: "resources",
+    index: void 0,
+    caseSensitive: void 0,
+    module: resources_exports
+  },
   "routes/checkout": {
     id: "routes/checkout",
     parentId: "root",
@@ -9029,6 +9688,22 @@ var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fe
     index: void 0,
     caseSensitive: void 0,
     module: checkout_exports
+  },
+  "routes/products": {
+    id: "routes/products",
+    parentId: "root",
+    path: "products",
+    index: void 0,
+    caseSensitive: void 0,
+    module: products_exports
+  },
+  "routes/services": {
+    id: "routes/services",
+    parentId: "root",
+    path: "services",
+    index: void 0,
+    caseSensitive: void 0,
+    module: services_exports
   },
   "routes/account": {
     id: "routes/account",

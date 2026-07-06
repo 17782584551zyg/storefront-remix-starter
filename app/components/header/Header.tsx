@@ -8,11 +8,11 @@ import { classNames } from '~/utils/class-names';
 import { useTranslation } from 'react-i18next';
 
 const navItems = [
-  { label: '我们的服务', href: '#features' },
-  { label: '解决方案', href: '#services' },
-  { label: '产品', href: '/collections' },
-  { label: '关于', href: '/about' },
-  { label: '资源', href: '#' },
+  { label: 'Our Services', href: '/services' },
+  { label: 'Solutions', href: '/services' },
+  { label: 'Products', href: '/products' },
+  { label: 'About', href: '/about' },
+  { label: 'Resources', href: '/resources' },
 ];
 
 export function Header({
