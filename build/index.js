@@ -262,6 +262,720 @@ var require_en = __commonJS({
   }
 });
 
+// public/locales/fr.json
+var require_fr = __commonJS({
+  "public/locales/fr.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Ou",
+        readMore: "Lire la suite :",
+        tokenError: "Le jeton de v\xE9rification n'a pas \xE9t\xE9 fourni !",
+        shopByCategory: "Acheter par cat\xE9gorie",
+        browseCategories: "Parcourir toutes les cat\xE9gories",
+        resultsFor: "R\xE9sultats pour",
+        allResults: "Tous les r\xE9sultats",
+        defaultError: "Quelque chose s'est mal pass\xE9.",
+        unknowError: "Une erreur inconnue est survenue",
+        save: "Enregistrer",
+        cancel: "Annuler",
+        edit: "Modifier",
+        yes: "Oui",
+        shipping: "Livraison",
+        billing: "Facturation",
+        default: "Par d\xE9faut",
+        remove: "Supprimer",
+        quantity: "Quantit\xE9",
+        subtotal: "Sous-total",
+        total: "Total",
+        closePanel: "Fermer le panneau",
+        closeMenu: "Fermer le menu",
+        perPage: "par page",
+        prev: "Pr\xE9c.",
+        next: "Suiv.",
+        filters: "Filtres",
+        select: "S\xE9lectionner...",
+        home: "Accueil",
+        logoAlt: "Logo Tai Sourcing",
+        search: "Rechercher",
+        goHome: "Retour \xE0 l'accueil"
+      },
+      address: {
+        new: "Nouvelle adresse",
+        edit: "Modifier l'adresse",
+        company: "Soci\xE9t\xE9",
+        streetLine1: "Adresse",
+        streetLine2: "Appartement, suite, etc.",
+        city: "Ville",
+        country: "Pays",
+        selectCountry: "S\xE9lectionnez un pays...",
+        province: "\xC9tat / Province",
+        postalCode: "Code postal",
+        phoneNumber: "T\xE9l\xE9phone",
+        idError: "Param\xE8tre 'id' manquant",
+        deleteModal: {
+          title: "Supprimer l'adresse",
+          confirmation: "Voulez-vous supprimer cette adresse ?",
+          error: "L'adresse n'a pas pu \xEAtre supprim\xE9e"
+        }
+      },
+      account: {
+        title: "Titre",
+        firstName: "Pr\xE9nom",
+        lastName: "Nom",
+        fullName: "Nom complet",
+        phoneNumber: "Num\xE9ro de t\xE9l\xE9phone",
+        errorMessage: "Nous avons eu un probl\xE8me pour mettre \xE0 jour vos informations !",
+        verifyMessage: "Votre compte a \xE9t\xE9 v\xE9rifi\xE9 avec succ\xE8s. Redirection dans 5 secondes...",
+        verifyEmailMessage: "Votre nouvelle adresse e-mail a \xE9t\xE9 v\xE9rifi\xE9e avec succ\xE8s. Redirection dans 5 secondes...",
+        signInTitle: "Connectez-vous \xE0 votre compte",
+        signUp: "S'inscrire",
+        signIn: "Se connecter",
+        signOut: "Se d\xE9connecter",
+        create: "Cr\xE9er un nouveau compte",
+        createError: "Nous avons eu un probl\xE8me lors de la cr\xE9ation de votre compte !",
+        login: "connectez-vous \xE0 votre compte existant",
+        myAccount: "Mon compte",
+        welcomeBack: "Bon retour",
+        details: "D\xE9tails du compte",
+        purchaseHistory: "Historique des achats",
+        addresses: "Adresses",
+        register: "inscrivez-vous \xE0 un nouveau compte",
+        email: "E-mail",
+        emailAddress: "Adresse e-mail",
+        password: "Mot de passe",
+        repeatPassword: "R\xE9p\xE9ter le mot de passe",
+        rememberMe: "Se souvenir de moi",
+        forgotPassword: "Mot de passe oubli\xE9 ?",
+        errorSignIn: "Nous avons eu un probl\xE8me pour vous connecter !",
+        createdMessage: "Votre compte a \xE9t\xE9 cr\xE9\xE9 avec succ\xE8s ! Un lien de v\xE9rification a \xE9t\xE9 envoy\xE9 \xE0 votre adresse e-mail.",
+        currentPassword: "Mot de passe actuel",
+        newPassword: "Nouveau mot de passe",
+        confirmPassword: "Confirmer le mot de passe",
+        pwdSuccessHeading: "Succ\xE8s !",
+        pwdSuccessMessage: "Votre mot de passe a \xE9t\xE9 mis \xE0 jour.",
+        pwdErrorMessage: "Votre mot de passe a \xE9t\xE9 mis \xE0 jour.",
+        savePassword: "Enregistrer le mot de passe",
+        changePassword: "Changer le mot de passe",
+        changeEmailConfirmation: "en attente de confirmation",
+        changeEmailButton: "en attente de confirmation",
+        changeEmailModal: {
+          title: "Changer d'adresse e-mail",
+          heading: "Nous enverrons un e-mail de v\xE9rification \xE0 votre nouvelle adresse e-mail.",
+          currentEmail: "Votre adresse e-mail actuelle : ",
+          new: "Nouvelle adresse e-mail",
+          errorMessage: "Nous avons eu un probl\xE8me pour changer votre e-mail !"
+        }
+      },
+      cart: {
+        title: "Panier",
+        empty: "Votre panier est vide",
+        shippingMessage: "Les frais de livraison seront calcul\xE9s lors de la commande.",
+        checkout: "Passer la commande"
+      },
+      checkout: {
+        dummyPayment: "Ceci est un paiement factice \xE0 des fins de d\xE9monstration uniquement",
+        paymentErrorMessage: "Une erreur s'est produite lors du traitement du paiement",
+        payWith: "Payer avec",
+        deliveryMethod: "M\xE9thode de livraison",
+        paymentProcessing: "Traitement...",
+        paymentLoading: "Chargement des options...",
+        paymentMessage: "Remarque : votre paiement est encore en cours de traitement. Vous recevrez un e-mail de confirmation une fois le paiement termin\xE9.",
+        pay: "Payer",
+        progress: "Progression",
+        orderNotFound: "Aucune commande correspondante trouv\xE9e !",
+        orderErrorTitle: "Une erreur est survenue !",
+        orderErrorMessage: "Malheureusement, votre paiement n'a pas pu \xEAtre trait\xE9 ou ce lien de confirmation a expir\xE9.",
+        orderProcessing: "Veuillez patienter pendant que nous traitons votre commande...",
+        orderSuccessMessage: "Votre commande a \xE9t\xE9 re\xE7ue !",
+        braintreeError: "Erreur Braintree :",
+        stripeError: "Erreur Stripe :",
+        detailsTitle: "Informations de contact",
+        shippingTitle: "Informations de livraison",
+        goToPayment: "Proc\xE9der au paiement",
+        addNewAddress: "Ajouter une nouvelle adresse",
+        steps: {
+          shipping: "Livraison",
+          payment: "Paiement",
+          confirmation: "Confirmation"
+        }
+      },
+      order: {
+        placedAt: "Date de commande",
+        totalSum: "Montant total",
+        number: "Num\xE9ro de commande",
+        actions: "Actions",
+        actionsMessage: "Actions pour cette commande (Non impl\xE9ment\xE9)",
+        expand: "D\xE9plier cette commande",
+        notShipped: "Pas encore exp\xE9di\xE9",
+        trackAlert: "Ici, vous devriez lier votre service de livraison. Le code de suivi pour ce colis est",
+        trackPackage: "Suivre le colis",
+        detailedOverview: "Aper\xE7u d\xE9taill\xE9",
+        summary: "R\xE9sum\xE9 de la commande",
+        shippingAndHandling: "Livraison et manutention :",
+        totalWithoutTax: "Total avant taxe :",
+        estimatedTax: "Taxe estim\xE9e :",
+        appliedCoupons: "Coupons appliqu\xE9s :",
+        total: "Total :",
+        grandTotal: "Total g\xE9n\xE9ral :",
+        historyEmpty: "Vos futures commandes appara\xEEtront ici",
+        historyEnd: "Plus de commandes, fin atteinte",
+        items: {
+          fulfilled: "articles livr\xE9s",
+          subtotal: "Sous-total des articles :"
+        },
+        states: {
+          Draft: "Brouillon",
+          AddingItems: "Ajout d'articles",
+          ArrangingPayment: "En attente de paiement",
+          PaymentAuthorized: "Paiement autoris\xE9",
+          PaymentSettled: "Paiement r\xE9gl\xE9",
+          PartiallyShipped: "Partiellement exp\xE9di\xE9",
+          Shipped: "Exp\xE9di\xE9",
+          PartiallyDelivered: "Partiellement livr\xE9",
+          Delivered: "Livr\xE9",
+          Modifying: "Modification",
+          ArrangingAdditionalPayment: "En attente de paiement",
+          Cancelled: "Annul\xE9e",
+          Unknown: "Inconnu"
+        }
+      },
+      product: {
+        showing: "Affichage des produits",
+        to: "\xE0",
+        noResults: "Aucun r\xE9sultat !",
+        filterTip: "Essayez de modifier vos param\xE8tres de filtre.",
+        inStock: "En stock",
+        outOfStock: "\xC9puis\xE9",
+        lowStock: "Stock faible",
+        notFound: "Produit non trouv\xE9 !",
+        notFoundInfo: "Nous n'avons pas trouv\xE9 de produit \xE0 cette adresse !",
+        collections: "Collections",
+        collectionNotFound: "Collection non trouv\xE9e",
+        description: "Description",
+        selectOption: "S\xE9lectionnez une option",
+        inCart: "dans le panier",
+        addToCart: "Ajouter au panier",
+        addToFavorites: "Ajouter aux favoris",
+        shippingAndReturns: "Livraison et retours",
+        shippingInfo: "Livraison standard : 3 - 5 jours ouvrables. Livraison express : 1 - 3 jours ouvrables.",
+        shippingCostsInfo: "Les frais de livraison d\xE9pendent de l'adresse de livraison et seront calcul\xE9s lors de la commande.",
+        returnsInfo: "Les retours sont soumis aux conditions. Veuillez consulter la PAGE DES RETOURS pour plus d'informations.",
+        recentReviews: "Avis r\xE9cents",
+        recentRating: "sur 5 \xE9toiles"
+      },
+      footer: {
+        title: "Pied de page",
+        shop: "Boutique",
+        support: "Support",
+        subscribeHeader: "Abonnez-vous \xE0 notre newsletter",
+        subscribeIntro: "Soyez le premier \xE0 conna\xEEtre les offres exclusives et les promotions.",
+        emailPlaceholder: "Entrez votre e-mail",
+        subscribe: "S'abonner"
+      },
+      navigation: {
+        support: {
+          help: "Aide",
+          trackOrder: "Suivre la commande",
+          shipping: "Livraison",
+          returns: "Retours"
+        },
+        company: {
+          about: "\xC0 propos",
+          blog: "Blog",
+          responsibility: "Responsabilit\xE9 soci\xE9tale",
+          press: "Presse"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "Un kit de d\xE9marrage de vitrine de commerce headless construit avec",
+        link: "Commerce Headless Ultra Rapide avec Vendure et Remix",
+        demoCredentials: "Identifiants de d\xE9monstration",
+        exclusive: "Exclusif : Obtenez votre propre",
+        repoLinkLabel: "Kit de d\xE9marrage de vitrine GRATUIT",
+        registrationMessage: "L'inscription au compte n'est pas prise en charge par l'instance Vendure de d\xE9monstration. Pour l'utiliser, veuillez connecter la vitrine Remix \xE0 votre propre instance locale / de production.",
+        registrationError: "L'inscription ne peut pas \xEAtre utilis\xE9e avec la boutique de d\xE9monstration Vendure ! Veuillez connecter votre propre instance."
+      }
+    };
+  }
+});
+
+// public/locales/de.json
+var require_de = __commonJS({
+  "public/locales/de.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Oder",
+        readMore: "Weiterlesen:",
+        tokenError: "Verifizierungstoken wurde nicht bereitgestellt!",
+        shopByCategory: "Nach Kategorie shoppen",
+        browseCategories: "Alle Kategorien durchsuchen",
+        resultsFor: "Ergebnisse f\xFCr",
+        allResults: "Alle Ergebnisse",
+        defaultError: "Etwas ist schiefgelaufen.",
+        unknowError: "Ein unbekannter Fehler ist aufgetreten",
+        save: "Speichern",
+        cancel: "Abbrechen",
+        edit: "Bearbeiten",
+        yes: "Ja",
+        shipping: "Versand",
+        billing: "Rechnung",
+        default: "Standard",
+        remove: "Entfernen",
+        quantity: "Menge",
+        subtotal: "Zwischensumme",
+        total: "Gesamt",
+        closePanel: "Panel schlie\xDFen",
+        closeMenu: "Men\xFC schlie\xDFen",
+        perPage: "pro Seite",
+        prev: "Vorherig",
+        next: "N\xE4chste",
+        filters: "Filter",
+        select: "Ausw\xE4hlen...",
+        home: "Startseite",
+        logoAlt: "Tai Sourcing Logo",
+        search: "Suche",
+        goHome: "Zur\xFCck zur Startseite"
+      },
+      address: {
+        new: "Neue Adresse",
+        edit: "Adresse bearbeiten",
+        company: "Firma",
+        streetLine1: "Adresse",
+        streetLine2: "Wohnung, Suite, etc.",
+        city: "Stadt",
+        country: "Land",
+        selectCountry: "Land ausw\xE4hlen...",
+        province: "Bundesland / Provinz",
+        postalCode: "Postleitzahl",
+        phoneNumber: "Telefon",
+        idError: "Parameter 'id' fehlt",
+        deleteModal: {
+          title: "Adresse entfernen",
+          confirmation: "M\xF6chten Sie diese Adresse entfernen?",
+          error: "Adresse konnte nicht entfernt werden"
+        }
+      },
+      account: {
+        title: "Titel",
+        firstName: "Vorname",
+        lastName: "Nachname",
+        fullName: "Vollst\xE4ndiger Name",
+        phoneNumber: "Telefonnummer",
+        errorMessage: "Beim Aktualisieren Ihrer Details ist ein Problem aufgetreten!",
+        verifyMessage: "Ihr Konto wurde erfolgreich verifiziert. Weiterleitung in 5s...",
+        verifyEmailMessage: "Ihre neue E-Mail-Adresse wurde erfolgreich verifiziert. Weiterleitung in 5s...",
+        signInTitle: "Melden Sie sich bei Ihrem Konto an",
+        signUp: "Registrieren",
+        signIn: "Anmelden",
+        signOut: "Abmelden",
+        create: "Ein neues Konto erstellen",
+        createError: "Beim Erstellen Ihres Kontos ist ein Problem aufgetreten!",
+        login: "melden Sie sich bei Ihrem bestehenden Konto an",
+        myAccount: "Mein Konto",
+        welcomeBack: "Willkommen zur\xFCck",
+        details: "Kontodetails",
+        purchaseHistory: "Kaufhistorie",
+        addresses: "Adressen",
+        register: "registrieren Sie sich f\xFCr ein neues Konto",
+        email: "E-Mail",
+        emailAddress: "E-Mail-Adresse",
+        password: "Passwort",
+        repeatPassword: "Passwort wiederholen",
+        rememberMe: "Erinnere dich an mich",
+        forgotPassword: "Passwort vergessen?",
+        errorSignIn: "Beim Anmelden ist ein Problem aufgetreten!",
+        createdMessage: "Ihr Konto wurde erfolgreich erstellt! Ein Verifizierungslink wurde an Ihre E-Mail-Adresse gesendet.",
+        currentPassword: "Aktuelles Passwort",
+        newPassword: "Neues Passwort",
+        confirmPassword: "Passwort best\xE4tigen",
+        pwdSuccessHeading: "Erfolg!",
+        pwdSuccessMessage: "Ihr Passwort wurde aktualisiert.",
+        pwdErrorMessage: "Ihr Passwort wurde aktualisiert.",
+        savePassword: "Passwort speichern",
+        changePassword: "Passwort \xE4ndern",
+        changeEmailConfirmation: "best\xE4tigung ausstehend",
+        changeEmailButton: "best\xE4tigung ausstehend",
+        changeEmailModal: {
+          title: "E-Mail-Adresse \xE4ndern",
+          heading: "Wir senden eine Verifizierungsmail an Ihre neue E-Mail-Adresse.",
+          currentEmail: "Ihre aktuelle E-Mail-Adresse: ",
+          new: "Neue E-Mail-Adresse",
+          errorMessage: "Beim \xC4ndern Ihrer E-Mail ist ein Problem aufgetreten!"
+        }
+      },
+      cart: {
+        title: "Warenkorb",
+        empty: "Ihr Warenkorb ist leer",
+        shippingMessage: "Versandkosten werden bei der Bestellung berechnet.",
+        checkout: "Zur Kasse"
+      },
+      checkout: {
+        dummyPayment: "Dies ist eine Demo-Zahlung zu Demonstrationszwecken",
+        paymentErrorMessage: "Beim Verarbeiten der Zahlung ist ein Fehler aufgetreten",
+        payWith: "Zahlen mit",
+        deliveryMethod: "Versandart",
+        paymentProcessing: "Verarbeiten...",
+        paymentLoading: "Lade Optionen...",
+        paymentMessage: "Hinweis: Ihre Zahlung wird noch verarbeitet. Sie erhalten eine Best\xE4tigungs-E-Mail, sobald die Zahlung abgeschlossen ist.",
+        pay: "Zahlen",
+        progress: "Fortschritt",
+        orderNotFound: "Keine passende Bestellung gefunden!",
+        orderErrorTitle: "Ein Fehler ist aufgetreten!",
+        orderErrorMessage: "Leider konnte Ihre Zahlung nicht verarbeitet werden oder dieser Best\xE4tigungslink ist abgelaufen.",
+        orderProcessing: "Bitte warten Sie, w\xE4hrend wir Ihre Bestellung verarbeiten...",
+        orderSuccessMessage: "Ihre Bestellung wurde erhalten!",
+        braintreeError: "Braintree-Fehler:",
+        stripeError: "Stripe-Fehler:",
+        detailsTitle: "Kontaktinformationen",
+        shippingTitle: "Versandinformationen",
+        goToPayment: "Zur Zahlung fortfahren",
+        addNewAddress: "Eine neue Adresse hinzuf\xFCgen",
+        steps: {
+          shipping: "Versand",
+          payment: "Zahlung",
+          confirmation: "Best\xE4tigung"
+        }
+      },
+      order: {
+        placedAt: "Bestelldatum",
+        totalSum: "Gesamtsumme",
+        number: "Bestellnummer",
+        actions: "Aktionen",
+        actionsMessage: "Aktionen f\xFCr diese Bestellung (Nicht implementiert)",
+        expand: "Diese Bestellung erweitern",
+        notShipped: "Noch nicht versandt",
+        trackAlert: "Hier m\xFCssten Sie Ihren Versanddienst verkn\xFCpfen. Der Sendungsverfolgungscode f\xFCr dieses Paket lautet",
+        trackPackage: "Paket verfolgen",
+        detailedOverview: "Detaillierte \xDCbersicht",
+        summary: "Bestell\xFCbersicht",
+        shippingAndHandling: "Versand & Handhabung:",
+        totalWithoutTax: "Gesamt vor Steuern:",
+        estimatedTax: "Gesch\xE4tzte Steuer:",
+        appliedCoupons: "Angewandte Coupons:",
+        total: "Gesamt:",
+        grandTotal: "Endsumme:",
+        historyEmpty: "Ihre zuk\xFCnftigen Bestellungen werden hier angezeigt",
+        historyEnd: "Keine weiteren Bestellungen, Ende erreicht",
+        items: {
+          fulfilled: "Artikel erf\xFCllt",
+          subtotal: "Artikel-Zwischensumme:"
+        },
+        states: {
+          Draft: "Entwurf",
+          AddingItems: "Artikel hinzuf\xFCgen",
+          ArrangingPayment: "Zahlung ausstehend",
+          PaymentAuthorized: "Zahlung autorisiert",
+          PaymentSettled: "Zahlung abgeschlossen",
+          PartiallyShipped: "Teilweise versandt",
+          Shipped: "Versandt",
+          PartiallyDelivered: "Teilweise geliefert",
+          Delivered: "Geliefert",
+          Modifying: "Bearbeiten",
+          ArrangingAdditionalPayment: "Zahlung ausstehend",
+          Cancelled: "Abgebrochen",
+          Unknown: "Unbekannt"
+        }
+      },
+      product: {
+        showing: "Zeige Produkte",
+        to: "bis",
+        noResults: "Keine Ergebnisse!",
+        filterTip: "Versuchen Sie, Ihre Filtereinstellungen zu \xE4ndern.",
+        inStock: "Auf Lager",
+        outOfStock: "Ausverkauft",
+        lowStock: "Niedriger Lagerbestand",
+        notFound: "Produkt nicht gefunden!",
+        notFoundInfo: "Wir konnten kein Produkt an dieser Adresse finden!",
+        collections: "Sammlungen",
+        collectionNotFound: "Sammlung nicht gefunden",
+        description: "Beschreibung",
+        selectOption: "Option ausw\xE4hlen",
+        inCart: "im Warenkorb",
+        addToCart: "Zum Warenkorb hinzuf\xFCgen",
+        addToFavorites: "Zu Favoriten hinzuf\xFCgen",
+        shippingAndReturns: "Versand & R\xFCckgabe",
+        shippingInfo: "Standardversand: 3 - 5 Werktage. Expressversand: 1 - 3 Werktage.",
+        shippingCostsInfo: "Versandkosten h\xE4ngen von der Lieferadresse ab und werden bei der Bestellung berechnet.",
+        returnsInfo: "R\xFCckgaben unterliegen den Bedingungen. Bitte sehen Sie sich die R\xDCCKGABEPAGE f\xFCr weitere Informationen an.",
+        recentReviews: "K\xFCrzliche Bewertungen",
+        recentRating: "von 5 Sternen"
+      },
+      footer: {
+        title: "Fu\xDFzeile",
+        shop: "Shop",
+        support: "Support",
+        subscribeHeader: "Abonnieren Sie unseren Newsletter",
+        subscribeIntro: "Seien Sie der Erste, der von exklusiven Angeboten & Deals erf\xE4hrt.",
+        emailPlaceholder: "Geben Sie Ihre E-Mail ein",
+        subscribe: "Abonnieren"
+      },
+      navigation: {
+        support: {
+          help: "Hilfe",
+          trackOrder: "Bestellung verfolgen",
+          shipping: "Versand",
+          returns: "R\xFCckgaben"
+        },
+        company: {
+          about: "\xDCber",
+          blog: "Blog",
+          responsibility: "Unternehmerische Verantwortung",
+          press: "Presse"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "Ein Headless Commerce Storefront Starter Kit gebaut mit",
+        link: "Blitzschnelles Headless Commerce mit Vendure und Remix",
+        demoCredentials: "Demo-Anmeldeinformationen",
+        exclusive: "Exklusiv: Holen Sie sich Ihr eigenes",
+        repoLinkLabel: "KOSTENLOSES Storefront Starter Kit",
+        registrationMessage: "Die Kontoregistrierung wird von der Demo-Vendure-Instanz nicht unterst\xFCtzt. Um es zu verwenden, verbinden Sie bitte das Remix-Storefront mit Ihrer eigenen lokalen / Produktionsinstanz.",
+        registrationError: "Registrierung kann nicht mit dem Vendure Demo Shop verwendet werden! Bitte verbinden Sie Ihre eigene Instanz."
+      }
+    };
+  }
+});
+
+// public/locales/zh.json
+var require_zh = __commonJS({
+  "public/locales/zh.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "\u6216",
+        readMore: "\u9605\u8BFB\u66F4\u591A\uFF1A",
+        tokenError: "\u672A\u63D0\u4F9B\u9A8C\u8BC1\u4EE4\u724C\uFF01",
+        shopByCategory: "\u6309\u7C7B\u522B\u8D2D\u7269",
+        browseCategories: "\u6D4F\u89C8\u6240\u6709\u7C7B\u522B",
+        resultsFor: "\u641C\u7D22\u7ED3\u679C",
+        allResults: "\u6240\u6709\u7ED3\u679C",
+        defaultError: "\u51FA\u4E86\u70B9\u95EE\u9898\u3002",
+        unknowError: "\u53D1\u751F\u672A\u77E5\u9519\u8BEF",
+        save: "\u4FDD\u5B58",
+        cancel: "\u53D6\u6D88",
+        edit: "\u7F16\u8F91",
+        yes: "\u662F",
+        shipping: "\u8FD0\u8F93",
+        billing: "\u8D26\u5355",
+        default: "\u9ED8\u8BA4",
+        remove: "\u5220\u9664",
+        quantity: "\u6570\u91CF",
+        subtotal: "\u5C0F\u8BA1",
+        total: "\u603B\u8BA1",
+        closePanel: "\u5173\u95ED\u9762\u677F",
+        closeMenu: "\u5173\u95ED\u83DC\u5355",
+        perPage: "\u6BCF\u9875",
+        prev: "\u4E0A\u4E00\u9875",
+        next: "\u4E0B\u4E00\u9875",
+        filters: "\u7B5B\u9009",
+        select: "\u9009\u62E9...",
+        home: "\u9996\u9875",
+        logoAlt: "Tai Sourcing \u6807\u5FD7",
+        search: "\u641C\u7D22",
+        goHome: "\u8FD4\u56DE\u9996\u9875"
+      },
+      address: {
+        new: "\u65B0\u5730\u5740",
+        edit: "\u7F16\u8F91\u5730\u5740",
+        company: "\u516C\u53F8",
+        streetLine1: "\u5730\u5740",
+        streetLine2: "\u516C\u5BD3\u3001\u5957\u623F\u7B49",
+        city: "\u57CE\u5E02",
+        country: "\u56FD\u5BB6",
+        selectCountry: "\u9009\u62E9\u56FD\u5BB6...",
+        province: "\u5DDE/\u7701",
+        postalCode: "\u90AE\u653F\u7F16\u7801",
+        phoneNumber: "\u7535\u8BDD",
+        idError: "\u7F3A\u5C11\u53C2\u6570 'id'",
+        deleteModal: {
+          title: "\u5220\u9664\u5730\u5740",
+          confirmation: "\u60A8\u786E\u5B9A\u8981\u5220\u9664\u6B64\u5730\u5740\u5417\uFF1F",
+          error: "\u65E0\u6CD5\u5220\u9664\u5730\u5740"
+        }
+      },
+      account: {
+        title: "\u6807\u9898",
+        firstName: "\u540D\u5B57",
+        lastName: "\u59D3\u6C0F",
+        fullName: "\u5168\u540D",
+        phoneNumber: "\u7535\u8BDD\u53F7\u7801",
+        errorMessage: "\u66F4\u65B0\u60A8\u7684\u8BE6\u7EC6\u4FE1\u606F\u65F6\u9047\u5230\u95EE\u9898\uFF01",
+        verifyMessage: "\u60A8\u7684\u8D26\u6237\u5DF2\u6210\u529F\u9A8C\u8BC1\u30025\u79D2\u540E\u91CD\u5B9A\u5411...",
+        verifyEmailMessage: "\u60A8\u7684\u65B0\u7535\u5B50\u90AE\u7BB1\u5DF2\u6210\u529F\u9A8C\u8BC1\u30025\u79D2\u540E\u91CD\u5B9A\u5411...",
+        signInTitle: "\u767B\u5F55\u60A8\u7684\u8D26\u6237",
+        signUp: "\u6CE8\u518C",
+        signIn: "\u767B\u5F55",
+        signOut: "\u767B\u51FA",
+        create: "\u521B\u5EFA\u65B0\u8D26\u6237",
+        createError: "\u521B\u5EFA\u8D26\u6237\u65F6\u9047\u5230\u95EE\u9898\uFF01",
+        login: "\u767B\u5F55\u60A8\u73B0\u6709\u7684\u8D26\u6237",
+        myAccount: "\u6211\u7684\u8D26\u6237",
+        welcomeBack: "\u6B22\u8FCE\u56DE\u6765",
+        details: "\u8D26\u6237\u8BE6\u60C5",
+        purchaseHistory: "\u8D2D\u4E70\u5386\u53F2",
+        addresses: "\u5730\u5740",
+        register: "\u6CE8\u518C\u65B0\u8D26\u6237",
+        email: "\u7535\u5B50\u90AE\u7BB1",
+        emailAddress: "\u7535\u5B50\u90AE\u7BB1\u5730\u5740",
+        password: "\u5BC6\u7801",
+        repeatPassword: "\u91CD\u590D\u5BC6\u7801",
+        rememberMe: "\u8BB0\u4F4F\u6211",
+        forgotPassword: "\u5FD8\u8BB0\u5BC6\u7801\uFF1F",
+        errorSignIn: "\u767B\u5F55\u65F6\u9047\u5230\u95EE\u9898\uFF01",
+        createdMessage: "\u60A8\u7684\u8D26\u6237\u5DF2\u6210\u529F\u521B\u5EFA\uFF01\u9A8C\u8BC1\u94FE\u63A5\u5DF2\u53D1\u9001\u81F3\u60A8\u7684\u7535\u5B50\u90AE\u7BB1\u3002",
+        currentPassword: "\u5F53\u524D\u5BC6\u7801",
+        newPassword: "\u65B0\u5BC6\u7801",
+        confirmPassword: "\u786E\u8BA4\u5BC6\u7801",
+        pwdSuccessHeading: "\u6210\u529F\uFF01",
+        pwdSuccessMessage: "\u60A8\u7684\u5BC6\u7801\u5DF2\u66F4\u65B0\u3002",
+        pwdErrorMessage: "\u60A8\u7684\u5BC6\u7801\u5DF2\u66F4\u65B0\u3002",
+        savePassword: "\u4FDD\u5B58\u5BC6\u7801",
+        changePassword: "\u66F4\u6539\u5BC6\u7801",
+        changeEmailConfirmation: "\u7B49\u5F85\u786E\u8BA4",
+        changeEmailButton: "\u7B49\u5F85\u786E\u8BA4",
+        changeEmailModal: {
+          title: "\u66F4\u6539\u7535\u5B50\u90AE\u7BB1\u5730\u5740",
+          heading: "\u6211\u4EEC\u5C06\u5411\u60A8\u7684\u65B0\u7535\u5B50\u90AE\u7BB1\u53D1\u9001\u9A8C\u8BC1\u90AE\u4EF6\u3002",
+          currentEmail: "\u60A8\u5F53\u524D\u7684\u7535\u5B50\u90AE\u7BB1\u5730\u5740\uFF1A",
+          new: "\u65B0\u7535\u5B50\u90AE\u7BB1\u5730\u5740",
+          errorMessage: "\u66F4\u6539\u7535\u5B50\u90AE\u7BB1\u65F6\u9047\u5230\u95EE\u9898\uFF01"
+        }
+      },
+      cart: {
+        title: "\u8D2D\u7269\u8F66",
+        empty: "\u60A8\u7684\u8D2D\u7269\u8F66\u662F\u7A7A\u7684",
+        shippingMessage: "\u8FD0\u8D39\u5C06\u5728\u7ED3\u8D26\u65F6\u8BA1\u7B97\u3002",
+        checkout: "\u7ED3\u8D26"
+      },
+      checkout: {
+        dummyPayment: "\u8FD9\u53EA\u662F\u6F14\u793A\u7528\u7684\u865A\u62DF\u652F\u4ED8",
+        paymentErrorMessage: "\u5904\u7406\u652F\u4ED8\u65F6\u51FA\u9519",
+        payWith: "\u652F\u4ED8\u65B9\u5F0F",
+        deliveryMethod: "\u914D\u9001\u65B9\u5F0F",
+        paymentProcessing: "\u5904\u7406\u4E2D...",
+        paymentLoading: "\u52A0\u8F7D\u9009\u9879...",
+        paymentMessage: "\u6CE8\u610F\uFF1A\u60A8\u7684\u652F\u4ED8\u4ECD\u5728\u5904\u7406\u4E2D\u3002\u652F\u4ED8\u5B8C\u6210\u540E\uFF0C\u60A8\u5C06\u6536\u5230\u786E\u8BA4\u90AE\u4EF6\u3002",
+        pay: "\u652F\u4ED8",
+        progress: "\u8FDB\u5EA6",
+        orderNotFound: "\u672A\u627E\u5230\u5339\u914D\u7684\u8BA2\u5355\uFF01",
+        orderErrorTitle: "\u51FA\u9519\u4E86\uFF01",
+        orderErrorMessage: "\u5F88\u9057\u61BE\uFF0C\u60A8\u7684\u652F\u4ED8\u65E0\u6CD5\u5904\u7406\u6216\u6B64\u786E\u8BA4\u94FE\u63A5\u5DF2\u8FC7\u671F\u3002",
+        orderProcessing: "\u8BF7\u7A0D\u5019\uFF0C\u6211\u4EEC\u6B63\u5728\u5904\u7406\u60A8\u7684\u8BA2\u5355...",
+        orderSuccessMessage: "\u60A8\u7684\u8BA2\u5355\u5DF2\u6536\u5230\uFF01",
+        braintreeError: "Braintree \u9519\u8BEF\uFF1A",
+        stripeError: "Stripe \u9519\u8BEF\uFF1A",
+        detailsTitle: "\u8054\u7CFB\u4FE1\u606F",
+        shippingTitle: "\u914D\u9001\u4FE1\u606F",
+        goToPayment: "\u7EE7\u7EED\u652F\u4ED8",
+        addNewAddress: "\u6DFB\u52A0\u65B0\u5730\u5740",
+        steps: {
+          shipping: "\u914D\u9001",
+          payment: "\u652F\u4ED8",
+          confirmation: "\u786E\u8BA4"
+        }
+      },
+      order: {
+        placedAt: "\u4E0B\u5355\u65E5\u671F",
+        totalSum: "\u603B\u91D1\u989D",
+        number: "\u8BA2\u5355\u53F7",
+        actions: "\u64CD\u4F5C",
+        actionsMessage: "\u6B64\u8BA2\u5355\u7684\u64CD\u4F5C\uFF08\u672A\u5B9E\u73B0\uFF09",
+        expand: "\u5C55\u5F00\u6B64\u8BA2\u5355",
+        notShipped: "\u5C1A\u672A\u53D1\u8D27",
+        trackAlert: "\u60A8\u9700\u8981\u5728\u6B64\u94FE\u63A5\u914D\u9001\u670D\u52A1\u3002\u6B64\u5305\u88F9\u7684\u8FFD\u8E2A\u7801\u662F",
+        trackPackage: "\u8FFD\u8E2A\u5305\u88F9",
+        detailedOverview: "\u8BE6\u7EC6\u6982\u89C8",
+        summary: "\u8BA2\u5355\u6458\u8981",
+        shippingAndHandling: "\u8FD0\u8D39\u53CA\u5904\u7406\u8D39\uFF1A",
+        totalWithoutTax: "\u7A0E\u524D\u603B\u8BA1\uFF1A",
+        estimatedTax: "\u9884\u4F30\u7A0E\u8D39\uFF1A",
+        appliedCoupons: "\u5DF2\u5E94\u7528\u4F18\u60E0\u5238\uFF1A",
+        total: "\u603B\u8BA1\uFF1A",
+        grandTotal: "\u6700\u7EC8\u603B\u8BA1\uFF1A",
+        historyEmpty: "\u60A8\u672A\u6765\u7684\u8BA2\u5355\u5C06\u663E\u793A\u5728\u8FD9\u91CC",
+        historyEnd: "\u6CA1\u6709\u66F4\u591A\u8BA2\u5355\u4E86",
+        items: {
+          fulfilled: "\u5DF2\u5B8C\u6210\u9879\u76EE",
+          subtotal: "\u5546\u54C1\u5C0F\u8BA1\uFF1A"
+        },
+        states: {
+          Draft: "\u8349\u7A3F",
+          AddingItems: "\u6DFB\u52A0\u5546\u54C1",
+          ArrangingPayment: "\u7B49\u5F85\u652F\u4ED8",
+          PaymentAuthorized: "\u652F\u4ED8\u5DF2\u6388\u6743",
+          PaymentSettled: "\u652F\u4ED8\u5DF2\u7ED3\u7B97",
+          PartiallyShipped: "\u90E8\u5206\u53D1\u8D27",
+          Shipped: "\u5DF2\u53D1\u8D27",
+          PartiallyDelivered: "\u90E8\u5206\u914D\u9001",
+          Delivered: "\u5DF2\u914D\u9001",
+          Modifying: "\u4FEE\u6539\u4E2D",
+          ArrangingAdditionalPayment: "\u7B49\u5F85\u652F\u4ED8",
+          Cancelled: "\u5DF2\u53D6\u6D88",
+          Unknown: "\u672A\u77E5"
+        }
+      },
+      product: {
+        showing: "\u663E\u793A\u5546\u54C1",
+        to: "\u81F3",
+        noResults: "\u6CA1\u6709\u7ED3\u679C\uFF01",
+        filterTip: "\u5C1D\u8BD5\u66F4\u6539\u7B5B\u9009\u8BBE\u7F6E\u3002",
+        inStock: "\u6709\u5E93\u5B58",
+        outOfStock: "\u65E0\u5E93\u5B58",
+        lowStock: "\u5E93\u5B58\u4E0D\u8DB3",
+        notFound: "\u672A\u627E\u5230\u5546\u54C1\uFF01",
+        notFoundInfo: "\u6211\u4EEC\u5728\u8BE5\u5730\u5740\u627E\u4E0D\u5230\u4EFB\u4F55\u5546\u54C1\uFF01",
+        collections: "\u7CFB\u5217",
+        collectionNotFound: "\u672A\u627E\u5230\u7CFB\u5217",
+        description: "\u63CF\u8FF0",
+        selectOption: "\u9009\u62E9\u9009\u9879",
+        inCart: "\u5728\u8D2D\u7269\u8F66\u4E2D",
+        addToCart: "\u52A0\u5165\u8D2D\u7269\u8F66",
+        addToFavorites: "\u6DFB\u52A0\u5230\u6536\u85CF",
+        shippingAndReturns: "\u914D\u9001\u53CA\u9000\u6362",
+        shippingInfo: "\u6807\u51C6\u914D\u9001\uFF1A3-5\u4E2A\u5DE5\u4F5C\u65E5\u3002\u52A0\u6025\u914D\u9001\uFF1A1-3\u4E2A\u5DE5\u4F5C\u65E5\u3002",
+        shippingCostsInfo: "\u8FD0\u8D39\u53D6\u51B3\u4E8E\u914D\u9001\u5730\u5740\uFF0C\u5C06\u5728\u7ED3\u8D26\u65F6\u8BA1\u7B97\u3002",
+        returnsInfo: "\u9000\u6362\u9700\u9075\u5B88\u6761\u6B3E\u3002\u8BF7\u67E5\u770B\u9000\u6362\u9875\u9762\u4E86\u89E3\u66F4\u591A\u4FE1\u606F\u3002",
+        recentReviews: "\u6700\u65B0\u8BC4\u4EF7",
+        recentRating: "\u6EE1\u52065\u661F"
+      },
+      footer: {
+        title: "\u9875\u811A",
+        shop: "\u5546\u5E97",
+        support: "\u652F\u6301",
+        subscribeHeader: "\u8BA2\u9605\u6211\u4EEC\u7684\u65B0\u95FB\u901A\u8BAF",
+        subscribeIntro: "\u7B2C\u4E00\u65F6\u95F4\u4E86\u89E3\u72EC\u5BB6\u4F18\u60E0\u548C\u4FC3\u9500\u6D3B\u52A8\u3002",
+        emailPlaceholder: "\u8F93\u5165\u60A8\u7684\u90AE\u7BB1",
+        subscribe: "\u8BA2\u9605"
+      },
+      navigation: {
+        support: {
+          help: "\u5E2E\u52A9",
+          trackOrder: "\u8FFD\u8E2A\u8BA2\u5355",
+          shipping: "\u914D\u9001",
+          returns: "\u9000\u6362"
+        },
+        company: {
+          about: "\u5173\u4E8E",
+          blog: "\u535A\u5BA2",
+          responsibility: "\u4F01\u4E1A\u8D23\u4EFB",
+          press: "\u65B0\u95FB"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "\u4F7F\u7528\u6784\u5EFA\u7684\u65E0\u5934\u5546\u52A1\u5546\u5E97\u524D\u7AEF\u542F\u52A8\u5957\u4EF6",
+        link: "\u4F7F\u7528 Vendure \u548C Remix \u5B9E\u73B0\u95EA\u7535\u822C\u5FEB\u901F\u7684\u65E0\u5934\u5546\u52A1",
+        demoCredentials: "\u6F14\u793A\u51ED\u636E",
+        exclusive: "\u72EC\u5BB6\uFF1A\u83B7\u53D6\u60A8\u81EA\u5DF1\u7684",
+        repoLinkLabel: "\u514D\u8D39\u5546\u5E97\u524D\u7AEF\u542F\u52A8\u5957\u4EF6",
+        registrationMessage: "\u6F14\u793A Vendure \u5B9E\u4F8B\u4E0D\u652F\u6301\u8D26\u6237\u6CE8\u518C\u3002\u5982\u9700\u4F7F\u7528\uFF0C\u8BF7\u5C06 Remix \u5546\u5E97\u524D\u7AEF\u8FDE\u63A5\u5230\u60A8\u81EA\u5DF1\u7684\u672C\u5730/\u751F\u4EA7\u5B9E\u4F8B\u3002",
+        registrationError: "\u6CE8\u518C\u65E0\u6CD5\u4E0E Vendure \u6F14\u793A\u5546\u5E97\u4E00\u8D77\u4F7F\u7528\uFF01\u8BF7\u8FDE\u63A5\u60A8\u81EA\u5DF1\u7684\u5B9E\u4F8B\u3002"
+      }
+    };
+  }
+});
+
 // public/locales/es.json
 var require_es = __commonJS({
   "public/locales/es.json"(exports, module) {
@@ -269,129 +983,130 @@ var require_es = __commonJS({
       common: {
         or: "O",
         readMore: "Leer m\xE1s:",
-        tokenError: "\xA1No se proporcion\xF3 el token de verificaci\xF3n!",
-        shopByCategory: "Compra por categor\xEDa",
-        browseCategories: "Explorar todas las categor\xEDas",
-        resultsFor: "resultados para",
+        tokenError: "\xA1El token de verificaci\xF3n no fue proporcionado!",
+        shopByCategory: "Comprar por categor\xEDa",
+        browseCategories: "Navegar por todas las categor\xEDas",
+        resultsFor: "Resultados para",
         allResults: "Todos los resultados",
         defaultError: "Algo sali\xF3 mal.",
-        unknowError: "Un error desconocido ocurri\xF3",
-        save: "Ahorrar",
+        unknowError: "Ocurri\xF3 un error desconocido",
+        save: "Guardar",
         cancel: "Cancelar",
         edit: "Editar",
         yes: "S\xED",
         shipping: "Env\xEDo",
         billing: "Facturaci\xF3n",
-        default: "Por defecto",
+        default: "Predeterminado",
         remove: "Eliminar",
         quantity: "Cantidad",
-        subtotal: "Total parcial",
+        subtotal: "Subtotal",
         total: "Total",
         closePanel: "Cerrar panel",
         closeMenu: "Cerrar men\xFA",
         perPage: "por p\xE1gina",
-        prev: "Anterior.",
-        next: "Pr\xF3ximo",
+        prev: "Anterior",
+        next: "Siguiente",
         filters: "Filtros",
         select: "Seleccionar...",
-        home: "Hogar",
-        logoAlt: "logotipo de empresa",
+        home: "Inicio",
+        logoAlt: "Logo Tai Sourcing",
         search: "Buscar",
-        goHome: "Vete a casa"
+        goHome: "Ir al inicio"
       },
       address: {
-        new: "Nueva direccion",
+        new: "Nueva direcci\xF3n",
         edit: "Editar direcci\xF3n",
         company: "Compa\xF1\xEDa",
-        streetLine1: "DIRECCI\xD3N",
+        streetLine1: "Direcci\xF3n",
         streetLine2: "Apartamento, suite, etc.",
         city: "Ciudad",
         country: "Pa\xEDs",
         selectCountry: "Seleccione un pa\xEDs...",
-        province: "Provincia del estado",
-        postalCode: "C\xF3digo Postal",
+        province: "Estado / Provincia",
+        postalCode: "C\xF3digo postal",
         phoneNumber: "Tel\xE9fono",
         idError: "Falta el par\xE1metro 'id'",
         deleteModal: {
           title: "Eliminar direcci\xF3n",
-          confirmation: "\xBFQuieres eliminar esta direcci\xF3n?",
+          confirmation: "\xBFDesea eliminar esta direcci\xF3n?",
           error: "No se pudo eliminar la direcci\xF3n"
         }
       },
       account: {
         title: "T\xEDtulo",
-        firstName: "Nombre de pila",
+        firstName: "Nombre",
         lastName: "Apellido",
         fullName: "Nombre completo",
-        phoneNumber: "Nr tel\xE9fono.",
-        errorMessage: "\xA1Tuvimos un problema al actualizar sus datos!",
-        verifyMessage: "Su cuenta ha sido verificada exitosamente. ",
-        verifyEmailMessage: "Su nueva direcci\xF3n de correo electr\xF3nico se ha verificado correctamente. ",
-        signInTitle: "Iniciar sesi\xF3n en su cuenta",
-        signUp: "Inscribirse",
+        phoneNumber: "N\xFAmero de tel\xE9fono",
+        errorMessage: "\xA1Hubo un problema al actualizar sus detalles!",
+        verifyMessage: "Su cuenta ha sido verificada con \xE9xito. Redirigiendo en 5 segundos...",
+        verifyEmailMessage: "Su nueva direcci\xF3n de correo electr\xF3nico ha sido verificada con \xE9xito. Redirigiendo en 5 segundos...",
+        signInTitle: "Inicie sesi\xF3n en su cuenta",
+        signUp: "Registrarse",
         signIn: "Iniciar sesi\xF3n",
-        signOut: "desconectar",
-        create: "Crea una cuenta nueva",
-        createError: "\xA1Tuvimos un problema al crear tu cuenta!",
+        signOut: "Cerrar sesi\xF3n",
+        create: "Crear una nueva cuenta",
+        createError: "\xA1Hubo un problema al crear su cuenta!",
         login: "inicie sesi\xF3n en su cuenta existente",
         myAccount: "Mi cuenta",
         welcomeBack: "Bienvenido de nuevo",
-        details: "detalles de la cuenta",
+        details: "Detalles de la cuenta",
         purchaseHistory: "Historial de compras",
         addresses: "Direcciones",
-        register: "registre una nueva cuenta",
+        register: "registrarse para una nueva cuenta",
         email: "Correo electr\xF3nico",
         emailAddress: "Direcci\xF3n de correo electr\xF3nico",
         password: "Contrase\xF1a",
-        repeatPassword: "Repita la contrase\xF1a",
-        rememberMe: "Acu\xE9rdate de m\xED",
-        forgotPassword: "\xBFOlvidaste tu contrase\xF1a?",
-        errorSignIn: "\xA1Tuvimos un problema al iniciar sesi\xF3n!",
-        createdMessage: "\xA1Su cuenta ha sido creada con \xE9xito! ",
+        repeatPassword: "Repetir contrase\xF1a",
+        rememberMe: "Recu\xE9rdame",
+        forgotPassword: "\xBFOlvid\xF3 su contrase\xF1a?",
+        errorSignIn: "\xA1Hubo un problema al iniciar sesi\xF3n!",
+        createdMessage: "\xA1Su cuenta ha sido creada con \xE9xito! Se ha enviado un enlace de verificaci\xF3n a su direcci\xF3n de correo electr\xF3nico.",
         currentPassword: "Contrase\xF1a actual",
         newPassword: "Nueva contrase\xF1a",
-        confirmPassword: "confirmar Contrase\xF1a",
+        confirmPassword: "Confirmar contrase\xF1a",
         pwdSuccessHeading: "\xA1\xC9xito!",
         pwdSuccessMessage: "Su contrase\xF1a ha sido actualizada.",
         pwdErrorMessage: "Su contrase\xF1a ha sido actualizada.",
         savePassword: "Guardar contrase\xF1a",
-        changePassword: "Cambiar la contrase\xF1a",
-        changeEmailConfirmation: "pendiente de confirmaci\xF3n",
-        changeEmailButton: "pendiente de confirmaci\xF3n",
+        changePassword: "Cambiar contrase\xF1a",
+        changeEmailConfirmation: "esperando confirmaci\xF3n",
+        changeEmailButton: "esperando confirmaci\xF3n",
         changeEmailModal: {
           title: "Cambiar direcci\xF3n de correo electr\xF3nico",
-          heading: "Le enviaremos un correo electr\xF3nico de verificaci\xF3n a su nueva direcci\xF3n de correo electr\xF3nico.",
+          heading: "Enviaremos un correo de verificaci\xF3n a su nueva direcci\xF3n de correo electr\xF3nico.",
           currentEmail: "Su direcci\xF3n de correo electr\xF3nico actual: ",
           new: "Nueva direcci\xF3n de correo electr\xF3nico",
-          errorMessage: "\xA1Tuvimos un problema al cambiar tu correo electr\xF3nico!"
+          errorMessage: "\xA1Hubo un problema al cambiar su correo electr\xF3nico!"
         }
       },
       cart: {
-        title: "Carro de la compra",
-        empty: "Tu carrito esta vac\xEDo",
-        shippingMessage: "El env\xEDo se calcular\xE1 al finalizar la compra.",
-        checkout: "Verificar"
+        title: "Carrito",
+        empty: "Su carrito est\xE1 vac\xEDo",
+        shippingMessage: "Los gastos de env\xEDo se calcular\xE1n en el checkout.",
+        checkout: "Finalizar compra"
       },
       checkout: {
-        dummyPayment: "Este es un pago ficticio \xFAnicamente con fines de demostraci\xF3n.",
-        paymentErrorMessage: "Hubo un error al procesar el pago.",
+        dummyPayment: "Este es un pago ficticio solo para fines de demostraci\xF3n",
+        paymentErrorMessage: "Ocurri\xF3 un error al procesar el pago",
         payWith: "Pagar con",
         deliveryMethod: "M\xE9todo de entrega",
         paymentProcessing: "Procesando...",
         paymentLoading: "Cargando opciones...",
-        paymentMessage: "Nota: su pago a\xFAn se est\xE1 procesando. ",
+        paymentMessage: "Nota: su pago a\xFAn se est\xE1 procesando. Recibir\xE1 un correo de confirmaci\xF3n una vez completado el pago.",
         pay: "Pagar",
         progress: "Progreso",
-        orderNotFound: "\xA1No se encontr\xF3 ning\xFAn pedido coincidente!",
+        orderNotFound: "\xA1No se encontr\xF3 ninguna orden coincidente!",
         orderErrorTitle: "\xA1Ocurri\xF3 un error!",
-        orderErrorMessage: "Lamentablemente su pago no pudo ser procesado o este enlace de confirmaci\xF3n ha caducado.",
-        orderProcessing: "Por favor espere mientras procesamos su orden...",
-        orderSuccessMessage: "\xA1Tu orden ha sido recibida!",
+        orderErrorMessage: "Lamentablemente, su pago no pudo procesarse o este enlace de confirmaci\xF3n ha expirado.",
+        orderProcessing: "Espere mientras procesamos su pedido...",
+        orderSuccessMessage: "\xA1Su pedido ha sido recibido!",
         braintreeError: "Error de Braintree:",
-        stripeError: "Error de raya:",
-        detailsTitle: "Informaci\xF3n del contacto",
+        stripeError: "Error de Stripe:",
+        detailsTitle: "Informaci\xF3n de contacto",
         shippingTitle: "Informaci\xF3n de env\xEDo",
         goToPayment: "Proceder al pago",
+        addNewAddress: "Agregar una nueva direcci\xF3n",
         steps: {
           shipping: "Env\xEDo",
           payment: "Pago",
@@ -399,41 +1114,41 @@ var require_es = __commonJS({
         }
       },
       order: {
-        placedAt: "Fecha de colocaci\xF3n",
-        totalSum: "Suma total",
-        number: "N\xFAmero de orden",
-        actions: "Comportamiento",
-        actionsMessage: "Acciones para esta orden (No implementada)",
-        expand: "Ampliar este pedido",
-        notShipped: "No enviado a\xFAn",
-        trackAlert: "Aqu\xED deber\xE1 vincular su servicio de entrega. ",
-        trackPackage: "Paquete de seguimiento",
-        detailedOverview: "Descripci\xF3n detallada",
+        placedAt: "Fecha del pedido",
+        totalSum: "Monto total",
+        number: "N\xFAmero de pedido",
+        actions: "Acciones",
+        actionsMessage: "Acciones para este pedido (No implementado)",
+        expand: "Expandir este pedido",
+        notShipped: "A\xFAn no enviado",
+        trackAlert: "Aqu\xED deber\xEDa vincular su servicio de entrega. El c\xF3digo de seguimiento para este paquete es",
+        trackPackage: "Seguimiento del paquete",
+        detailedOverview: "Visi\xF3n detallada",
         summary: "Resumen del pedido",
-        shippingAndHandling: "Env\xEDo",
-        totalWithoutTax: "Total antes de los impuestos:",
+        shippingAndHandling: "Env\xEDo y manejo:",
+        totalWithoutTax: "Total antes de impuestos:",
         estimatedTax: "Impuesto estimado:",
         appliedCoupons: "Cupones aplicados:",
         total: "Total:",
-        grandTotal: "Gran total:",
-        historyEmpty: "Tus futuros pedidos aparecer\xE1n aqu\xED",
-        historyEnd: "No m\xE1s pedidos, final alcanzado",
+        grandTotal: "Total general:",
+        historyEmpty: "Sus futuros pedidos aparecer\xE1n aqu\xED",
+        historyEnd: "No hay m\xE1s pedidos, se alcanz\xF3 el final",
         items: {
           fulfilled: "art\xEDculos cumplidos",
-          subtotal: "Subtotal del art\xEDculo(s):"
+          subtotal: "Subtotal de art\xEDculo/s:"
         },
         states: {
           Draft: "Borrador",
-          AddingItems: "Agregar elementos",
-          ArrangingPayment: "En espera de pago",
+          AddingItems: "Agregando art\xEDculos",
+          ArrangingPayment: "Esperando pago",
           PaymentAuthorized: "Pago autorizado",
-          PaymentSettled: "Pago liquidado",
-          PartiallyShipped: "Parcialmente Enviado",
+          PaymentSettled: "Pago completado",
+          PartiallyShipped: "Parcialmente enviado",
           Shipped: "Enviado",
           PartiallyDelivered: "Parcialmente entregado",
           Delivered: "Entregado",
           Modifying: "Modificando",
-          ArrangingAdditionalPayment: "En espera de pago",
+          ArrangingAdditionalPayment: "Esperando pago",
           Cancelled: "Cancelado",
           Unknown: "Desconocido"
         }
@@ -442,10 +1157,10 @@ var require_es = __commonJS({
         showing: "Mostrando productos",
         to: "a",
         noResults: "\xA1No hay resultados!",
-        filterTip: "Intente cambiar la configuraci\xF3n de su filtro.",
+        filterTip: "Intente cambiar sus configuraciones de filtro.",
         inStock: "En stock",
         outOfStock: "Agotado",
-        lowStock: "Stock bajo",
+        lowStock: "Poco stock",
         notFound: "\xA1Producto no encontrado!",
         notFoundInfo: "\xA1No pudimos encontrar ning\xFAn producto en esa direcci\xF3n!",
         collections: "Colecciones",
@@ -453,521 +1168,1475 @@ var require_es = __commonJS({
         description: "Descripci\xF3n",
         selectOption: "Seleccionar opci\xF3n",
         inCart: "en el carrito",
-        addToCart: "A\xF1adir a la cesta",
-        addToFavorites: "Agregar a los favoritos",
-        shippingAndReturns: "Env\xEDo",
-        shippingInfo: "Env\xEDo est\xE1ndar: 3 - 5 d\xEDas laborables. ",
-        shippingCostsInfo: "Los costos de env\xEDo dependen de la direcci\xF3n de entrega y se calcular\xE1n durante el pago.",
-        returnsInfo: "Las devoluciones est\xE1n sujetas a t\xE9rminos. ",
+        addToCart: "Agregar al carrito",
+        addToFavorites: "Agregar a favoritos",
+        shippingAndReturns: "Env\xEDo y devoluciones",
+        shippingInfo: "Env\xEDo est\xE1ndar: 3 - 5 d\xEDas h\xE1biles. Env\xEDo express: 1 - 3 d\xEDas h\xE1biles.",
+        shippingCostsInfo: "Los gastos de env\xEDo dependen de la direcci\xF3n de entrega y se calcular\xE1n en el checkout.",
+        returnsInfo: "Las devoluciones est\xE1n sujetas a t\xE9rminos. Consulte la P\xC1GINA DE DEVOLUCIONES para obtener m\xE1s informaci\xF3n.",
         recentReviews: "Rese\xF1as recientes",
         recentRating: "de 5 estrellas"
       },
       footer: {
         title: "Pie de p\xE1gina",
-        shop: "Comercio",
-        support: "Apoyo",
-        subscribeHeader: "Suscr\xEDbete a nuestro bolet\xEDn",
-        subscribeIntro: "S\xE9 el primero en enterarte de ofertas exclusivas",
-        emailPlaceholder: "Introduce tu correo electr\xF3nico",
-        subscribe: "Suscribir"
+        shop: "Tienda",
+        support: "Soporte",
+        subscribeHeader: "Suscr\xEDbase a nuestro bolet\xEDn",
+        subscribeIntro: "Sea el primero en enterarse de ofertas exclusivas y ofertas.",
+        emailPlaceholder: "Ingrese su correo electr\xF3nico",
+        subscribe: "Suscribirse"
       },
       navigation: {
         support: {
           help: "Ayuda",
-          trackOrder: "Orden de pista",
+          trackOrder: "Seguimiento del pedido",
           shipping: "Env\xEDo",
           returns: "Devoluciones"
         },
         company: {
           about: "Acerca de",
           blog: "Blog",
-          responsibility: "Responsabilidad Corporativa",
+          responsibility: "Responsabilidad corporativa",
           press: "Prensa"
         }
       },
       vendure: {
-        title: "Iniciador de remezcla de Vendure",
-        intro: "Un kit inicial de escaparate de comercio sin cabeza construido con",
-        link: "Comercio sin cabeza a la velocidad del rayo con Vendure y Remix",
+        title: "Tai Sourcing",
+        intro: "Un kit de inicio de storefront de comercio sin cabeza construido con",
+        link: "Comercio sin cabeza ultrarr\xE1pido con Vendure y Remix",
         demoCredentials: "Credenciales de demostraci\xF3n",
-        exclusive: "Exclusivo: consigue el tuyo",
-        repoLinkLabel: "Kit de inicio de tienda GRATIS",
-        registrationMessage: "La instancia de demostraci\xF3n de Vendure no admite el registro de cuenta. ",
-        registrationError: "\xA1El registro no se puede utilizar con la tienda de demostraci\xF3n Vendure! "
+        exclusive: "Exclusivo: Obtenga su propio",
+        repoLinkLabel: "KIT DE INICIO DE STOREFRONT GRATUITO",
+        registrationMessage: "El registro de cuenta no es compatible con la instancia de demostraci\xF3n de Vendure. Para usarla, conecte el storefront de Remix a su propia instancia local / de producci\xF3n.",
+        registrationError: "\xA1El registro no se puede usar con la tienda de demostraci\xF3n de Vendure! Conecte su propia instancia."
       }
     };
   }
 });
 
-// public/locales/pt.json
-var require_pt = __commonJS({
-  "public/locales/pt.json"(exports, module) {
+// public/locales/it.json
+var require_it = __commonJS({
+  "public/locales/it.json"(exports, module) {
     module.exports = {
       common: {
-        or: "Ou",
-        readMore: "Consulte Mais informa\xE7\xE3o:",
-        tokenError: "O token de verifica\xE7\xE3o n\xE3o foi fornecido!",
-        shopByCategory: "Compre por categoria",
-        browseCategories: "Navegue por todas as categorias",
-        resultsFor: "Resultados para",
-        allResults: "Todos os resultados",
-        defaultError: "Algo deu errado.",
-        unknowError: "Ocorreu um erro desconhecido",
-        save: "Salvar",
-        cancel: "Cancelar",
-        edit: "Editar",
-        yes: "Sim",
-        shipping: "Envio",
-        billing: "Cobran\xE7a",
-        default: "Padr\xE3o",
-        remove: "Remover",
-        quantity: "Quantidade",
-        subtotal: "Subtotal",
-        total: "Total",
-        closePanel: "Fechar painel",
-        closeMenu: "Fechar menu",
-        perPage: "por p\xE1gina",
-        prev: "Anterior.",
-        next: "Pr\xF3ximo",
-        filters: "Filtros",
-        select: "Selecione...",
-        home: "Lar",
-        logoAlt: "Logotipo da venda",
-        search: "Procurar",
-        goHome: "Ir para casa"
+        or: "O",
+        readMore: "Leggi di pi\xF9:",
+        tokenError: "Il token di verifica non \xE8 stato fornito!",
+        shopByCategory: "Compra per categoria",
+        browseCategories: "Sfoglia tutte le categorie",
+        resultsFor: "Risultati per",
+        allResults: "Tutti i risultati",
+        defaultError: "Qualcosa \xE8 andato storto.",
+        unknowError: "Si \xE8 verificato un errore sconosciuto",
+        save: "Salva",
+        cancel: "Annulla",
+        edit: "Modifica",
+        yes: "S\xEC",
+        shipping: "Spedizione",
+        billing: "Fatturazione",
+        default: "Predefinito",
+        remove: "Rimuovi",
+        quantity: "Quantit\xE0",
+        subtotal: "Subtotale",
+        total: "Totale",
+        closePanel: "Chiudi pannello",
+        closeMenu: "Chiudi menu",
+        perPage: "per pagina",
+        prev: "Prec.",
+        next: "Succ.",
+        filters: "Filtri",
+        select: "Seleziona...",
+        home: "Home",
+        logoAlt: "Logo Tai Sourcing",
+        search: "Cerca",
+        goHome: "Vai a home"
       },
       address: {
-        new: "Novo endere\xE7o",
-        edit: "Editar Endere\xE7o",
-        company: "Empresa",
-        streetLine1: "Endere\xE7o",
-        streetLine2: "Apartamento, su\xEDte, etc.",
-        city: "Cidade",
-        country: "Pa\xEDs",
-        selectCountry: "Selecione um pais...",
-        province: "Estado/Prov\xEDncia",
-        postalCode: "C\xF3digo postal",
-        phoneNumber: "Telefone",
-        idError: "O par\xE2metro 'id' est\xE1 faltando",
+        new: "Nuovo indirizzo",
+        edit: "Modifica indirizzo",
+        company: "Azienda",
+        streetLine1: "Indirizzo",
+        streetLine2: "Appartamento, suite, ecc.",
+        city: "Citt\xE0",
+        country: "Paese",
+        selectCountry: "Seleziona un paese...",
+        province: "Stato / Provincia",
+        postalCode: "Codice postale",
+        phoneNumber: "Telefono",
+        idError: "Parametro 'id' mancante",
         deleteModal: {
-          title: "Remover endere\xE7o",
-          confirmation: "Deseja remover este endere\xE7o?",
-          error: "N\xE3o foi poss\xEDvel remover o endere\xE7o"
+          title: "Rimuovi indirizzo",
+          confirmation: "Vuoi rimuovere questo indirizzo?",
+          error: "Indirizzo non pu\xF2 essere rimosso"
         }
       },
       account: {
-        title: "T\xEDtulo",
-        firstName: "Primeiro nome",
-        lastName: "Sobrenome",
+        title: "Titolo",
+        firstName: "Nome",
+        lastName: "Cognome",
         fullName: "Nome completo",
-        phoneNumber: "N\xFAmero de telefone.",
-        errorMessage: "Tivemos um problema ao atualizar seus dados!",
-        verifyMessage: "Sua conta foi verificada com sucesso. ",
-        verifyEmailMessage: "Seu novo endere\xE7o de e-mail foi verificado com sucesso. ",
-        signInTitle: "Fa\xE7a login em sua conta",
-        signUp: "Inscrever-se",
-        signIn: "Entrar",
-        signOut: "sair",
-        create: "Criar uma nova conta",
-        createError: "Tivemos um problema ao criar sua conta!",
-        login: "fa\xE7a login em sua conta existente",
-        myAccount: "Minha conta",
-        welcomeBack: "bem vindo de volta",
-        details: "Detalhes da conta",
-        purchaseHistory: "Hist\xF3rico de compras",
-        addresses: "Endere\xE7os",
-        register: "registrar uma nova conta",
+        phoneNumber: "Numero di telefono",
+        errorMessage: "Si \xE8 verificato un problema durante l'aggiornamento dei tuoi dettagli!",
+        verifyMessage: "Il tuo account \xE8 stato verificato con successo. Reindirizzamento in 5 secondi...",
+        verifyEmailMessage: "Il tuo nuovo indirizzo e-mail \xE8 stato verificato con successo. Reindirizzamento in 5 secondi...",
+        signInTitle: "Accedi al tuo account",
+        signUp: "Registrati",
+        signIn: "Accedi",
+        signOut: "Esci",
+        create: "Crea un nuovo account",
+        createError: "Si \xE8 verificato un problema durante la creazione del tuo account!",
+        login: "accedi al tuo account esistente",
+        myAccount: "Il mio account",
+        welcomeBack: "Ben tornato",
+        details: "Dettagli account",
+        purchaseHistory: "Storico acquisti",
+        addresses: "Indirizzi",
+        register: "registrati a un nuovo account",
         email: "E-mail",
-        emailAddress: "Endere\xE7o de email",
-        password: "Senha",
-        repeatPassword: "Repita a senha",
-        rememberMe: "Lembre de mim",
-        forgotPassword: "Esqueceu sua senha?",
-        errorSignIn: "Tivemos um problema ao fazer seu login!",
-        createdMessage: "Sua conta foi criada com sucesso! ",
-        currentPassword: "Senha atual",
-        newPassword: "Nova Senha",
-        confirmPassword: "Confirme sua senha",
-        pwdSuccessHeading: "Sucesso!",
-        pwdSuccessMessage: "Sua senha foi atualizada.",
-        pwdErrorMessage: "Sua senha foi atualizada.",
-        savePassword: "Salvar senha",
-        changePassword: "Alterar a senha",
-        changeEmailConfirmation: "aguardando confirma\xE7\xE3o",
-        changeEmailButton: "aguardando confirma\xE7\xE3o",
+        emailAddress: "Indirizzo e-mail",
+        password: "Password",
+        repeatPassword: "Ripeti password",
+        rememberMe: "Ricorda me",
+        forgotPassword: "Password dimenticata?",
+        errorSignIn: "Si \xE8 verificato un problema durante l'accesso!",
+        createdMessage: "Il tuo account \xE8 stato creato con successo! Un link di verifica \xE8 stato inviato al tuo indirizzo e-mail.",
+        currentPassword: "Password corrente",
+        newPassword: "Nuova password",
+        confirmPassword: "Conferma password",
+        pwdSuccessHeading: "Successo!",
+        pwdSuccessMessage: "La tua password \xE8 stata aggiornata.",
+        pwdErrorMessage: "La tua password \xE8 stata aggiornata.",
+        savePassword: "Salva password",
+        changePassword: "Cambia password",
+        changeEmailConfirmation: "in attesa di conferma",
+        changeEmailButton: "in attesa di conferma",
         changeEmailModal: {
-          title: "Mude o endere\xE7o de email",
-          heading: "Enviaremos um e-mail de verifica\xE7\xE3o para seu novo endere\xE7o de e-mail.",
-          currentEmail: "Seu endere\xE7o de e-mail atual: ",
-          new: "Novo Endere\xE7o de Email",
-          errorMessage: "Tivemos um problema ao alterar seu e-mail!"
+          title: "Cambia indirizzo e-mail",
+          heading: "Invieremo un'e-mail di verifica al tuo nuovo indirizzo e-mail.",
+          currentEmail: "Il tuo indirizzo e-mail corrente: ",
+          new: "Nuovo indirizzo e-mail",
+          errorMessage: "Si \xE8 verificato un problema durante il cambio dell'e-mail!"
         }
       },
       cart: {
-        title: "Carrinho de compras",
-        empty: "Seu carrinho est\xE1 vazio",
-        shippingMessage: "O frete ser\xE1 calculado na finaliza\xE7\xE3o da compra.",
-        checkout: "Confira"
+        title: "Carrello",
+        empty: "Il tuo carrello \xE8 vuoto",
+        shippingMessage: "Le spese di spedizione verranno calcolate al checkout.",
+        checkout: "Checkout"
       },
       checkout: {
-        dummyPayment: "Este \xE9 um pagamento fict\xEDcio apenas para fins de demonstra\xE7\xE3o",
-        paymentErrorMessage: "Ocorreu um erro ao processar o pagamento",
-        payWith: "Pagar com",
-        deliveryMethod: "M\xE9todo de Entrega",
-        paymentProcessing: "Em processamento...",
-        paymentLoading: "Carregando op\xE7\xF5es...",
-        paymentMessage: "Observa\xE7\xE3o: seu pagamento ainda est\xE1 sendo processado. ",
-        pay: "Pagar",
+        dummyPayment: "Questo \xE8 un pagamento fittizio solo a scopo dimostrativo",
+        paymentErrorMessage: "Si \xE8 verificato un errore durante l'elaborazione del pagamento",
+        payWith: "Paga con",
+        deliveryMethod: "Metodo di consegna",
+        paymentProcessing: "Elaborazione...",
+        paymentLoading: "Caricamento opzioni...",
+        paymentMessage: "Nota: il tuo pagamento \xE8 ancora in elaborazione. Riceverai una conferma via e-mail una volta completato il pagamento.",
+        pay: "Paga",
         progress: "Progresso",
-        orderNotFound: "Nenhum pedido correspondente encontrado!",
-        orderErrorTitle: "Um erro ocorreu!",
-        orderErrorMessage: "Infelizmente, seu pagamento n\xE3o p\xF4de ser processado ou este link de confirma\xE7\xE3o expirou.",
-        orderProcessing: "Aguarde enquanto processamos seu pedido...",
-        orderSuccessMessage: "Seu pedido foi recebido!",
-        braintreeError: "Erro cerebral:",
-        stripeError: "Erro de faixa:",
-        detailsTitle: "Informa\xE7\xF5es de contato",
-        shippingTitle: "Informa\xE7\xE3o de envio",
-        goToPayment: "Prossiga para o pagamento",
+        orderNotFound: "Nessun ordine corrispondente trovato!",
+        orderErrorTitle: "Si \xE8 verificato un errore!",
+        orderErrorMessage: "Sfortunatamente il tuo pagamento non \xE8 stato elaborato o questo link di conferma \xE8 scaduto.",
+        orderProcessing: "Attendere mentre elaboriamo il tuo ordine...",
+        orderSuccessMessage: "Il tuo ordine \xE8 stato ricevuto!",
+        braintreeError: "Errore Braintree:",
+        stripeError: "Errore Stripe:",
+        detailsTitle: "Informazioni di contatto",
+        shippingTitle: "Informazioni di spedizione",
+        goToPayment: "Procedi al pagamento",
+        addNewAddress: "Aggiungi un nuovo indirizzo",
         steps: {
-          shipping: "Envio",
+          shipping: "Spedizione",
           payment: "Pagamento",
-          confirmation: "Confirma\xE7\xE3o"
+          confirmation: "Conferma"
         }
       },
       order: {
-        placedAt: "Data colocada",
-        totalSum: "Soma total",
-        number: "N\xFAmero do pedido",
-        actions: "A\xE7\xF5es",
-        actionsMessage: "A\xE7\xF5es para este pedido (n\xE3o implementadas)",
-        expand: "Expandir este pedido",
-        notShipped: "Ainda n\xE3o foi enviado",
-        trackAlert: "Aqui voc\xEA precisa vincular seu servi\xE7o de entrega. ",
-        trackPackage: "Rastrear pacote",
-        detailedOverview: "Vis\xE3o geral detalhada",
-        summary: "Resumo do pedido",
-        shippingAndHandling: "Envio",
-        totalWithoutTax: "Total antes de impostos:",
-        estimatedTax: "Imposto estimado:",
-        appliedCoupons: "Cupons aplicados:",
-        total: "Total:",
-        grandTotal: "Total geral:",
-        historyEmpty: "Seus pedidos futuros aparecer\xE3o aqui",
-        historyEnd: "N\xE3o h\xE1 mais pedidos, fim alcan\xE7ado",
+        placedAt: "Data ordine",
+        totalSum: "Importo totale",
+        number: "Numero ordine",
+        actions: "Azioni",
+        actionsMessage: "Azioni per questo ordine (Non implementato)",
+        expand: "Espandi questo ordine",
+        notShipped: "Non ancora spedito",
+        trackAlert: "Qui dovresti collegare il tuo servizio di consegna. Il codice di tracciamento per questo pacco \xE8",
+        trackPackage: "Traccia pacco",
+        detailedOverview: "Panoramica dettagliata",
+        summary: "Riepilogo ordine",
+        shippingAndHandling: "Spedizione e manipolazione:",
+        totalWithoutTax: "Totale prima delle tasse:",
+        estimatedTax: "Imposta stimata:",
+        appliedCoupons: "Coupon applicati:",
+        total: "Totale:",
+        grandTotal: "Totale generale:",
+        historyEmpty: "I tuoi ordini futuri appariranno qui",
+        historyEnd: "Non ci sono pi\xF9 ordini, fine raggiunta",
         items: {
-          fulfilled: "itens cumpridos",
-          subtotal: "Subtotal de itens:"
+          fulfilled: "articoli soddisfatti",
+          subtotal: "Subtotale articolo/i:"
         },
         states: {
-          Draft: "Rascunho",
-          AddingItems: "Adicionando itens",
-          ArrangingPayment: "Aguardando pagamento",
-          PaymentAuthorized: "Pagamento autorizado",
-          PaymentSettled: "Pagamento liquidado",
-          PartiallyShipped: "Enviado parcialmente",
-          Shipped: "Enviado",
-          PartiallyDelivered: "Parcialmente entregue",
-          Delivered: "Entregue",
-          Modifying: "Modificando",
-          ArrangingAdditionalPayment: "Aguardando pagamento",
-          Cancelled: "Cancelado",
-          Unknown: "Desconhecido"
+          Draft: "Bozza",
+          AddingItems: "Aggiungendo articoli",
+          ArrangingPayment: "In attesa di pagamento",
+          PaymentAuthorized: "Pagamento autorizzato",
+          PaymentSettled: "Pagamento completato",
+          PartiallyShipped: "Parzialmente spedito",
+          Shipped: "Spedito",
+          PartiallyDelivered: "Parzialmente consegnato",
+          Delivered: "Consegnato",
+          Modifying: "Modifica",
+          ArrangingAdditionalPayment: "In attesa di pagamento",
+          Cancelled: "Annullato",
+          Unknown: "Sconosciuto"
         }
       },
       product: {
-        showing: "Mostrando produtos",
-        to: "para",
-        noResults: "Sem resultados!",
-        filterTip: "Tente alterar as configura\xE7\xF5es do filtro.",
-        inStock: "Em estoque",
-        outOfStock: "Fora de estoque",
-        lowStock: "Baixo estoque",
-        notFound: "Produto n\xE3o encontrado!",
-        notFoundInfo: "N\xE3o encontramos nenhum produto nesse endere\xE7o!",
-        collections: "Cole\xE7\xF5es",
-        collectionNotFound: "Cole\xE7\xE3o n\xE3o encontrada",
-        description: "Descri\xE7\xE3o",
-        selectOption: "Selecione a op\xE7\xE3o",
-        inCart: "no carrinho",
-        addToCart: "Adicionar ao carrinho",
-        addToFavorites: "Adicionar aos favoritos",
-        shippingAndReturns: "Envio",
-        shippingInfo: "Envio padr\xE3o: 3 a 5 dias \xFAteis. ",
-        shippingCostsInfo: "Os custos de envio dependem do endere\xE7o de entrega e ser\xE3o calculados durante a finaliza\xE7\xE3o da compra.",
-        returnsInfo: "As devolu\xE7\xF5es est\xE3o sujeitas a termos. ",
-        recentReviews: "Avalia\xE7\xF5es recentes",
-        recentRating: "de 5 estrelas"
+        showing: "Mostrando prodotti",
+        to: "a",
+        noResults: "Nessun risultato!",
+        filterTip: "Prova a cambiare le impostazioni del filtro.",
+        inStock: "Disponibile",
+        outOfStock: "Esaurito",
+        lowStock: "Scorta bassa",
+        notFound: "Prodotto non trovato!",
+        notFoundInfo: "Non abbiamo trovato alcun prodotto a quell'indirizzo!",
+        collections: "Collezioni",
+        collectionNotFound: "Collezione non trovata",
+        description: "Descrizione",
+        selectOption: "Seleziona opzione",
+        inCart: "nel carrello",
+        addToCart: "Aggiungi al carrello",
+        addToFavorites: "Aggiungi ai preferiti",
+        shippingAndReturns: "Spedizione e resi",
+        shippingInfo: "Spedizione standard: 3 - 5 giorni lavorativi. Spedizione express: 1 - 3 giorni lavorativi.",
+        shippingCostsInfo: "Le spese di spedizione dipendono dall'indirizzo di consegna e verranno calcolate al checkout.",
+        returnsInfo: "I resi sono soggetti a termini. Consulta la PAGINA DEI RESI per ulteriori informazioni.",
+        recentReviews: "Recensioni recenti",
+        recentRating: "su 5 stelle"
       },
       footer: {
-        title: "Rodap\xE9",
-        shop: "Comprar",
-        support: "Apoiar",
-        subscribeHeader: "Assine a nossa newsletter",
-        subscribeIntro: "Seja o primeiro a saber sobre ofertas exclusivas",
-        emailPlaceholder: "Digite seu e-mail",
-        subscribe: "Se inscrever"
+        title: "Footer",
+        shop: "Negozio",
+        support: "Supporto",
+        subscribeHeader: "Iscriviti alla nostra newsletter",
+        subscribeIntro: "Essere il primo a conoscere offerte e deal esclusivi.",
+        emailPlaceholder: "Inserisci la tua e-mail",
+        subscribe: "Iscriviti"
       },
       navigation: {
         support: {
-          help: "Ajuda",
-          trackOrder: "Acompanhar Pedido",
-          shipping: "Envio",
-          returns: "Devolu\xE7\xF5es"
+          help: "Aiuto",
+          trackOrder: "Traccia ordine",
+          shipping: "Spedizione",
+          returns: "Resi"
         },
         company: {
-          about: "Sobre",
-          blog: "Blogue",
-          responsibility: "Responsabilidade corporativa",
-          press: "Imprensa"
+          about: "About",
+          blog: "Blog",
+          responsibility: "Responsabilit\xE0 aziendale",
+          press: "Stampa"
         }
       },
       vendure: {
-        title: "Vendure Remix inicial",
-        intro: "Um kit inicial para vitrine de com\xE9rcio sem cabe\xE7a desenvolvido com",
-        link: "Com\xE9rcio extremamente r\xE1pido e sem cabe\xE7a com venda e remix",
-        demoCredentials: "Credenciais de demonstra\xE7\xE3o",
-        exclusive: "Exclusivo: Adquira o seu",
-        repoLinkLabel: "Kit inicial GRATUITO para vitrine",
-        registrationMessage: "O registro da conta n\xE3o \xE9 compat\xEDvel com a inst\xE2ncia de demonstra\xE7\xE3o do Vendure. ",
-        registrationError: "O registro n\xE3o pode ser usado na loja de demonstra\xE7\xE3o Vendure! "
+        title: "Tai Sourcing",
+        intro: "Un kit di avvio per front-end di commerce headless costruito con",
+        link: "Commerce Headless Ultra Veloce con Vendure e Remix",
+        demoCredentials: "Credenziali demo",
+        exclusive: "Esclusivo: Ottieni il tuo",
+        repoLinkLabel: "KIT DI AVVIO PER FRONT-END GRATUITO",
+        registrationMessage: "La registrazione all'account non \xE8 supportata dall'istanza Vendure di demo. Per usarla, connetti il front-end Remix alla tua istanza locale/produzione.",
+        registrationError: "La registrazione non pu\xF2 essere utilizzata con il negozio demo Vendure! Connetti la tua istanza."
       }
     };
   }
 });
 
-// public/locales/pt-BR.json
-var require_pt_BR = __commonJS({
-  "public/locales/pt-BR.json"(exports, module) {
+// public/locales/nl.json
+var require_nl = __commonJS({
+  "public/locales/nl.json"(exports, module) {
     module.exports = {
       common: {
-        or: "Ou",
-        readMore: "Consulte Mais informa\xE7\xE3o:",
-        tokenError: "O token de verifica\xE7\xE3o n\xE3o foi fornecido!",
-        shopByCategory: "Compre por categoria",
-        browseCategories: "Navegue por todas as categorias",
-        resultsFor: "Resultados para",
-        allResults: "Todos os resultados",
-        defaultError: "Algo deu errado.",
-        unknowError: "Ocorreu um erro desconhecido",
-        save: "Salvar",
-        cancel: "Cancelar",
-        edit: "Editar",
-        yes: "Sim",
-        shipping: "Envio",
-        billing: "Cobran\xE7a",
-        default: "Padr\xE3o",
-        remove: "Remover",
-        quantity: "Quantidade",
-        subtotal: "Subtotal",
-        total: "Total",
-        closePanel: "Fechar painel",
-        closeMenu: "Fechar menu",
-        perPage: "por p\xE1gina",
-        prev: "Anterior.",
-        next: "Pr\xF3ximo",
-        filters: "Filtros",
-        select: "Selecione...",
-        home: "Lar",
-        logoAlt: "Logotipo da venda",
-        search: "Procurar",
-        goHome: "Ir para casa"
+        or: "Of",
+        readMore: "Lees verder:",
+        tokenError: "Verificatietoken is niet verstrekt!",
+        shopByCategory: "Winkel per categorie",
+        browseCategories: "Blader door alle categorie\xEBn",
+        resultsFor: "Resultaten voor",
+        allResults: "Alle resultaten",
+        defaultError: "Er is iets misgegaan.",
+        unknowError: "Er is een onbekende fout opgetreden",
+        save: "Opslaan",
+        cancel: "Annuleren",
+        edit: "Bewerken",
+        yes: "Ja",
+        shipping: "Verzending",
+        billing: "Facturatie",
+        default: "Standaard",
+        remove: "Verwijderen",
+        quantity: "Hoeveelheid",
+        subtotal: "Subtotaal",
+        total: "Totaal",
+        closePanel: "Paneel sluiten",
+        closeMenu: "Menu sluiten",
+        perPage: "per pagina",
+        prev: "Vorige",
+        next: "Volgende",
+        filters: "Filters",
+        select: "Selecteer...",
+        home: "Home",
+        logoAlt: "Tai Sourcing Logo",
+        search: "Zoeken",
+        goHome: "Ga naar home"
       },
       address: {
-        new: "Novo endere\xE7o",
-        edit: "Editar Endere\xE7o",
-        company: "Empresa",
-        streetLine1: "Endere\xE7o",
-        streetLine2: "Apartamento, su\xEDte, etc.",
-        city: "Cidade",
-        country: "Pa\xEDs",
-        selectCountry: "Selecione um pais...",
-        province: "Estado/Prov\xEDncia",
-        postalCode: "C\xF3digo postal",
-        phoneNumber: "Telefone",
-        idError: "O par\xE2metro 'id' est\xE1 faltando",
+        new: "Nieuw adres",
+        edit: "Adres bewerken",
+        company: "Bedrijf",
+        streetLine1: "Adres",
+        streetLine2: "Appartement, suite, etc.",
+        city: "Stad",
+        country: "Land",
+        selectCountry: "Selecteer een land...",
+        province: "Staat / Provincie",
+        postalCode: "Postcode",
+        phoneNumber: "Telefoon",
+        idError: "Parameter 'id' ontbreekt",
         deleteModal: {
-          title: "Remover endere\xE7o",
-          confirmation: "Deseja remover este endere\xE7o?",
-          error: "N\xE3o foi poss\xEDvel remover o endere\xE7o"
+          title: "Adres verwijderen",
+          confirmation: "Wilt u dit adres verwijderen?",
+          error: "Adres kon niet worden verwijderd"
         }
       },
       account: {
-        title: "T\xEDtulo",
-        firstName: "Primeiro nome",
-        lastName: "Sobrenome",
-        fullName: "Nome completo",
-        phoneNumber: "N\xFAmero de telefone.",
-        errorMessage: "Tivemos um problema ao atualizar seus dados!",
-        verifyMessage: "Sua conta foi verificada com sucesso. ",
-        verifyEmailMessage: "Seu novo endere\xE7o de e-mail foi verificado com sucesso. ",
-        signInTitle: "Fa\xE7a login em sua conta",
-        signUp: "Inscrever-se",
-        signIn: "Entrar",
-        signOut: "sair",
-        create: "Criar uma nova conta",
-        createError: "Tivemos um problema ao criar sua conta!",
-        login: "fa\xE7a login em sua conta existente",
-        myAccount: "Minha conta",
-        welcomeBack: "bem vindo de volta",
-        details: "Detalhes da conta",
-        purchaseHistory: "Hist\xF3rico de compras",
-        addresses: "Endere\xE7os",
-        register: "registrar uma nova conta",
+        title: "Titel",
+        firstName: "Voornaam",
+        lastName: "Achternaam",
+        fullName: "Volledige naam",
+        phoneNumber: "Telefoonnummer",
+        errorMessage: "Er is een probleem opgetreden bij het bijwerken van uw gegevens!",
+        verifyMessage: "Uw account is succesvol geverifieerd. Omleiden in 5 seconden...",
+        verifyEmailMessage: "Uw nieuwe e-mailadres is succesvol geverifieerd. Omleiden in 5 seconden...",
+        signInTitle: "Meld u aan bij uw account",
+        signUp: "Aanmelden",
+        signIn: "Inloggen",
+        signOut: "Uitloggen",
+        create: "Maak een nieuw account",
+        createError: "Er is een probleem opgetreden bij het aanmaken van uw account!",
+        login: "log in op uw bestaande account",
+        myAccount: "Mijn account",
+        welcomeBack: "Welkom terug",
+        details: "Accountgegevens",
+        purchaseHistory: "Aankoopgeschiedenis",
+        addresses: "Adressen",
+        register: "registreer voor een nieuw account",
         email: "E-mail",
-        emailAddress: "Endere\xE7o de email",
-        password: "Senha",
-        repeatPassword: "Repita a senha",
-        rememberMe: "Lembre de mim",
-        forgotPassword: "Esqueceu sua senha?",
-        errorSignIn: "Tivemos um problema ao fazer seu login!",
-        createdMessage: "Sua conta foi criada com sucesso! ",
-        currentPassword: "Senha atual",
-        newPassword: "Nova Senha",
-        confirmPassword: "Confirme sua senha",
-        pwdSuccessHeading: "Sucesso!",
-        pwdSuccessMessage: "Sua senha foi atualizada.",
-        pwdErrorMessage: "Sua senha foi atualizada.",
-        savePassword: "Salvar senha",
-        changePassword: "Alterar a senha",
-        changeEmailConfirmation: "aguardando confirma\xE7\xE3o",
-        changeEmailButton: "aguardando confirma\xE7\xE3o",
+        emailAddress: "E-mailadres",
+        password: "Wachtwoord",
+        repeatPassword: "Wachtwoord herhalen",
+        rememberMe: "Onthoud mij",
+        forgotPassword: "Wachtwoord vergeten?",
+        errorSignIn: "Er is een probleem opgetreden bij het inloggen!",
+        createdMessage: "Uw account is succesvol aangemaakt! Een verificatielink is naar uw e-mailadres gestuurd.",
+        currentPassword: "Huidig wachtwoord",
+        newPassword: "Nieuw wachtwoord",
+        confirmPassword: "Wachtwoord bevestigen",
+        pwdSuccessHeading: "Succes!",
+        pwdSuccessMessage: "Uw wachtwoord is bijgewerkt.",
+        pwdErrorMessage: "Uw wachtwoord is bijgewerkt.",
+        savePassword: "Wachtwoord opslaan",
+        changePassword: "Wachtwoord wijzigen",
+        changeEmailConfirmation: "in afwachting van bevestiging",
+        changeEmailButton: "in afwachting van bevestiging",
         changeEmailModal: {
-          title: "Mude o endere\xE7o de email",
-          heading: "Enviaremos um e-mail de verifica\xE7\xE3o para seu novo endere\xE7o de e-mail.",
-          currentEmail: "Seu endere\xE7o de e-mail atual: ",
-          new: "Novo Endere\xE7o de Email",
-          errorMessage: "Tivemos um problema ao alterar seu e-mail!"
+          title: "E-mailadres wijzigen",
+          heading: "We sturen een verificatie-e-mail naar uw nieuwe e-mailadres.",
+          currentEmail: "Uw huidige e-mailadres: ",
+          new: "Nieuw e-mailadres",
+          errorMessage: "Er is een probleem opgetreden bij het wijzigen van uw e-mail!"
         }
       },
       cart: {
-        title: "Carrinho de compras",
-        empty: "Seu carrinho est\xE1 vazio",
-        shippingMessage: "O frete ser\xE1 calculado na finaliza\xE7\xE3o da compra.",
-        checkout: "Confira"
+        title: "Winkelmand",
+        empty: "Uw winkelmand is leeg",
+        shippingMessage: "Verzendkosten worden berekend bij de aankoop.",
+        checkout: "Afrekenen"
       },
       checkout: {
-        dummyPayment: "Este \xE9 um pagamento fict\xEDcio apenas para fins de demonstra\xE7\xE3o",
-        paymentErrorMessage: "Ocorreu um erro ao processar o pagamento",
-        payWith: "Pagar com",
-        deliveryMethod: "M\xE9todo de Entrega",
-        paymentProcessing: "Em processamento...",
-        paymentLoading: "Carregando op\xE7\xF5es...",
-        paymentMessage: "Observa\xE7\xE3o: seu pagamento ainda est\xE1 sendo processado. ",
-        pay: "Pagar",
-        progress: "Progresso",
-        orderNotFound: "Nenhum pedido correspondente encontrado!",
-        orderErrorTitle: "Um erro ocorreu!",
-        orderErrorMessage: "Infelizmente, seu pagamento n\xE3o p\xF4de ser processado ou este link de confirma\xE7\xE3o expirou.",
-        orderProcessing: "Aguarde enquanto processamos seu pedido...",
-        orderSuccessMessage: "Seu pedido foi recebido!",
-        braintreeError: "Erro cerebral:",
-        stripeError: "Erro de faixa:",
-        detailsTitle: "Informa\xE7\xF5es de contato",
-        shippingTitle: "Informa\xE7\xE3o de envio",
-        goToPayment: "Prossiga para o pagamento",
+        dummyPayment: "Dit is een dummybetaling alleen voor demonstratiedoeleinden",
+        paymentErrorMessage: "Er is een fout opgetreden bij het verwerken van de betaling",
+        payWith: "Betalen met",
+        deliveryMethod: "Leveringsmethode",
+        paymentProcessing: "Verwerken...",
+        paymentLoading: "Opties laden...",
+        paymentMessage: "Opmerking: uw betaling wordt nog verwerkt. U ontvangt een bevestigings-e-mail zodra de betaling is voltooid.",
+        pay: "Betalen",
+        progress: "Voortgang",
+        orderNotFound: "Geen overeenkomstige bestelling gevonden!",
+        orderErrorTitle: "Er is een fout opgetreden!",
+        orderErrorMessage: "Helaas kon uw betaling niet worden verwerkt of deze bevestigingslink is verlopen.",
+        orderProcessing: "Wacht even terwijl we uw bestelling verwerken...",
+        orderSuccessMessage: "Uw bestelling is ontvangen!",
+        braintreeError: "Braintree-fout:",
+        stripeError: "Stripe-fout:",
+        detailsTitle: "Contactgegevens",
+        shippingTitle: "Verzendgegevens",
+        goToPayment: "Ga naar betaling",
+        addNewAddress: "Voeg een nieuw adres toe",
         steps: {
-          shipping: "Envio",
-          payment: "Pagamento",
-          confirmation: "Confirma\xE7\xE3o"
+          shipping: "Verzending",
+          payment: "Betaling",
+          confirmation: "Bevestiging"
         }
       },
       order: {
-        placedAt: "Data colocada",
-        totalSum: "Soma total",
-        number: "N\xFAmero do pedido",
-        actions: "A\xE7\xF5es",
-        actionsMessage: "A\xE7\xF5es para este pedido (n\xE3o implementadas)",
-        expand: "Expandir este pedido",
-        notShipped: "Ainda n\xE3o foi enviado",
-        trackAlert: "Aqui voc\xEA precisa vincular seu servi\xE7o de entrega. ",
-        trackPackage: "Rastrear pacote",
-        detailedOverview: "Vis\xE3o geral detalhada",
-        summary: "Resumo do pedido",
-        shippingAndHandling: "Envio",
-        totalWithoutTax: "Total antes de impostos:",
-        estimatedTax: "Imposto estimado:",
-        appliedCoupons: "Cupons aplicados:",
-        total: "Total:",
-        grandTotal: "Total geral:",
-        historyEmpty: "Seus pedidos futuros aparecer\xE3o aqui",
-        historyEnd: "N\xE3o h\xE1 mais pedidos, fim alcan\xE7ado",
+        placedAt: "Besteldatum",
+        totalSum: "Totaalbedrag",
+        number: "Bestelnummer",
+        actions: "Acties",
+        actionsMessage: "Acties voor deze bestelling (Niet ge\xEFmplementeerd)",
+        expand: "Deze bestelling uitklappen",
+        notShipped: "Nog niet verzonden",
+        trackAlert: "Hier zou u uw leveringsdienst moeten koppelen. De trackingcode voor dit pakket is",
+        trackPackage: "Pakket volgen",
+        detailedOverview: "Gedetailleerd overzicht",
+        summary: "Besteloverzicht",
+        shippingAndHandling: "Verzending & handeling:",
+        totalWithoutTax: "Totaal exclusief BTW:",
+        estimatedTax: "Geschatte BTW:",
+        appliedCoupons: "Toegepaste coupons:",
+        total: "Totaal:",
+        grandTotal: "Eindtotaal:",
+        historyEmpty: "Uw toekomstige bestellingen verschijnen hier",
+        historyEnd: "Geen meer bestellingen, einde bereikt",
         items: {
-          fulfilled: "itens cumpridos",
-          subtotal: "Subtotal de itens:"
+          fulfilled: "items vervuld",
+          subtotal: "Subtotaal items:"
         },
         states: {
-          Draft: "Rascunho",
-          AddingItems: "Adicionando itens",
-          ArrangingPayment: "Aguardando pagamento",
-          PaymentAuthorized: "Pagamento autorizado",
-          PaymentSettled: "Pagamento liquidado",
-          PartiallyShipped: "Enviado parcialmente",
-          Shipped: "Enviado",
-          PartiallyDelivered: "Parcialmente entregue",
-          Delivered: "Entregue",
-          Modifying: "Modificando",
-          ArrangingAdditionalPayment: "Aguardando pagamento",
-          Cancelled: "Cancelado",
-          Unknown: "Desconhecido"
+          Draft: "Concept",
+          AddingItems: "Items toevoegen",
+          ArrangingPayment: "Wachten op betaling",
+          PaymentAuthorized: "Betaling goedgekeurd",
+          PaymentSettled: "Betaling voltooid",
+          PartiallyShipped: "Gedeeltelijk verzonden",
+          Shipped: "Verzonden",
+          PartiallyDelivered: "Gedeeltelijk geleverd",
+          Delivered: "Geleverd",
+          Modifying: "Wijzigen",
+          ArrangingAdditionalPayment: "Wachten op betaling",
+          Cancelled: "Geannuleerd",
+          Unknown: "Onbekend"
         }
       },
       product: {
-        showing: "Mostrando produtos",
-        to: "para",
-        noResults: "Sem resultados!",
-        filterTip: "Tente alterar as configura\xE7\xF5es do filtro.",
-        inStock: "Em estoque",
-        outOfStock: "Fora de estoque",
-        lowStock: "Baixo estoque",
-        notFound: "Produto n\xE3o encontrado!",
-        notFoundInfo: "N\xE3o encontramos nenhum produto nesse endere\xE7o!",
-        collections: "Cole\xE7\xF5es",
-        collectionNotFound: "Cole\xE7\xE3o n\xE3o encontrada",
-        description: "Descri\xE7\xE3o",
-        selectOption: "Selecione a op\xE7\xE3o",
-        inCart: "no carrinho",
-        addToCart: "Adicionar ao carrinho",
-        addToFavorites: "Adicionar aos favoritos",
-        shippingAndReturns: "Envio",
-        shippingInfo: "Envio padr\xE3o: 3 a 5 dias \xFAteis. ",
-        shippingCostsInfo: "Os custos de envio dependem do endere\xE7o de entrega e ser\xE3o calculados durante a finaliza\xE7\xE3o da compra.",
-        returnsInfo: "As devolu\xE7\xF5es est\xE3o sujeitas a termos. ",
-        recentReviews: "Avalia\xE7\xF5es recentes",
-        recentRating: "de 5 estrelas"
+        showing: "Producten weergeven",
+        to: "tot",
+        noResults: "Geen resultaten!",
+        filterTip: "Probeer uw filterinstellingen te wijzigen.",
+        inStock: "Op voorraad",
+        outOfStock: "Uitverkocht",
+        lowStock: "Laag voorraad",
+        notFound: "Product niet gevonden!",
+        notFoundInfo: "We hebben geen product op dat adres kunnen vinden!",
+        collections: "Collecties",
+        collectionNotFound: "Collectie niet gevonden",
+        description: "Beschrijving",
+        selectOption: "Optie selecteren",
+        inCart: "in winkelmand",
+        addToCart: "Toevoegen aan winkelmand",
+        addToFavorites: "Toevoegen aan favorieten",
+        shippingAndReturns: "Verzending & retour",
+        shippingInfo: "Standaardverzending: 3 - 5 werkdagen. Expressverzending: 1 - 3 werkdagen.",
+        shippingCostsInfo: "Verzendkosten zijn afhankelijk van het leveringsadres en worden berekend bij de aankoop.",
+        returnsInfo: "Retouren zijn onderworpen aan voorwaarden. Zie de RETOURPAGINA voor meer informatie.",
+        recentReviews: "Recente recensies",
+        recentRating: "van 5 sterren"
       },
       footer: {
-        title: "Rodap\xE9",
-        shop: "Comprar",
-        support: "Apoiar",
-        subscribeHeader: "Assine a nossa newsletter",
-        subscribeIntro: "Seja o primeiro a saber sobre ofertas exclusivas",
-        emailPlaceholder: "Digite seu e-mail",
-        subscribe: "Se inscrever"
+        title: "Footer",
+        shop: "Winkel",
+        support: "Ondersteuning",
+        subscribeHeader: "Abonneer u op onze nieuwsbrief",
+        subscribeIntro: "Wees de eerste die exclusieve aanbiedingen & deals weet.",
+        emailPlaceholder: "Voer uw e-mail in",
+        subscribe: "Abonneren"
       },
       navigation: {
         support: {
-          help: "Ajuda",
-          trackOrder: "Acompanhar Pedido",
-          shipping: "Envio",
-          returns: "Devolu\xE7\xF5es"
+          help: "Hulp",
+          trackOrder: "Bestelling volgen",
+          shipping: "Verzending",
+          returns: "Retouren"
         },
         company: {
-          about: "Sobre",
-          blog: "Blogue",
-          responsibility: "Responsabilidade corporativa",
-          press: "Imprensa"
+          about: "Over",
+          blog: "Blog",
+          responsibility: "Maatschappelijke verantwoordelijkheid",
+          press: "Pers"
         }
       },
       vendure: {
-        title: "Vendure Remix inicial",
-        intro: "Um kit inicial para vitrine de com\xE9rcio sem cabe\xE7a desenvolvido com",
-        link: "Com\xE9rcio extremamente r\xE1pido e sem cabe\xE7a com venda e remix",
-        demoCredentials: "Credenciais de demonstra\xE7\xE3o",
-        exclusive: "Exclusivo: Adquira o seu",
-        repoLinkLabel: "Kit inicial GRATUITO para vitrine",
-        registrationMessage: "O registro da conta n\xE3o \xE9 compat\xEDvel com a inst\xE2ncia de demonstra\xE7\xE3o do Vendure. ",
-        registrationError: "O registro n\xE3o pode ser usado na loja de demonstra\xE7\xE3o Vendure! "
+        title: "Tai Sourcing",
+        intro: "Een headless commerce storefront starterkit gebouwd met",
+        link: "Bliksemsnelle Headless Commerce met Vendure en Remix",
+        demoCredentials: "Demo-referenties",
+        exclusive: "Exclusief: Krijg uw eigen",
+        repoLinkLabel: "GRATIS storefront starterkit",
+        registrationMessage: "Accountregistratie wordt niet ondersteund door de demo-Vendure-instantie. Om het te gebruiken, verbindt u de Remix-storefront met uw eigen lokale/productie-instantie.",
+        registrationError: "Registratie kan niet worden gebruikt met de Vendure-demo winkel! Verbind uw eigen instantie."
+      }
+    };
+  }
+});
+
+// public/locales/pl.json
+var require_pl = __commonJS({
+  "public/locales/pl.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Lub",
+        readMore: "Czytaj wi\u0119cej:",
+        tokenError: "Token weryfikacyjny nie zosta\u0142 dostarczony!",
+        shopByCategory: "Kupuj wed\u0142ug kategorii",
+        browseCategories: "Przegl\u0105daj wszystkie kategorie",
+        resultsFor: "Wyniki dla",
+        allResults: "Wszystkie wyniki",
+        defaultError: "Co\u015B posz\u0142o nie tak.",
+        unknowError: "Wyst\u0105pi\u0142 nieznany b\u0142\u0105d",
+        save: "Zapisz",
+        cancel: "Anuluj",
+        edit: "Edytuj",
+        yes: "Tak",
+        shipping: "Wysy\u0142ka",
+        billing: "Fakturacja",
+        default: "Domy\u015Blnie",
+        remove: "Usu\u0144",
+        quantity: "Ilo\u015B\u0107",
+        subtotal: "Podsumowanie",
+        total: "Suma",
+        closePanel: "Zamknij panel",
+        closeMenu: "Zamknij menu",
+        perPage: "na stron\u0119",
+        prev: "Poprzednia",
+        next: "Nast\u0119pna",
+        filters: "Filtry",
+        select: "Wybierz...",
+        home: "Strona g\u0142\xF3wna",
+        logoAlt: "Logo Tai Sourcing",
+        search: "Szukaj",
+        goHome: "Wr\xF3\u0107 do strony g\u0142\xF3wnej"
+      },
+      address: {
+        new: "Nowy adres",
+        edit: "Edytuj adres",
+        company: "Firma",
+        streetLine1: "Adres",
+        streetLine2: "Apartament, suite, etc.",
+        city: "Miasto",
+        country: "Kraj",
+        selectCountry: "Wybierz kraj...",
+        province: "Wojew\xF3dztwo / Provincia",
+        postalCode: "Kod pocztowy",
+        phoneNumber: "Telefon",
+        idError: "Brakuje parametru 'id'",
+        deleteModal: {
+          title: "Usu\u0144 adres",
+          confirmation: "Czy chcesz usun\u0105\u0107 ten adres?",
+          error: "Nie mo\u017Cna usun\u0105\u0107 adresu"
+        }
+      },
+      account: {
+        title: "Tytu\u0142",
+        firstName: "Imi\u0119",
+        lastName: "Nazwisko",
+        fullName: "Imi\u0119 i nazwisko",
+        phoneNumber: "Numer telefonu",
+        errorMessage: "Wyst\u0105pi\u0142 problem podczas aktualizacji Twoich danych!",
+        verifyMessage: "Twoje konto zosta\u0142o pomy\u015Blnie zweryfikowane. Przekierowanie za 5 sekund...",
+        verifyEmailMessage: "Tw\xF3j nowy adres e-mail zosta\u0142 pomy\u015Blnie zweryfikowany. Przekierowanie za 5 sekund...",
+        signInTitle: "Zaloguj si\u0119 do swojego konta",
+        signUp: "Zarejestruj si\u0119",
+        signIn: "Zaloguj si\u0119",
+        signOut: "Wyloguj si\u0119",
+        create: "Utw\xF3rz nowe konto",
+        createError: "Wyst\u0105pi\u0142 problem podczas tworzenia Twojego konta!",
+        login: "zaloguj si\u0119 do istniej\u0105cego konta",
+        myAccount: "Moje konto",
+        welcomeBack: "Witamy z powrotem",
+        details: "Szczeg\xF3\u0142y konta",
+        purchaseHistory: "Historia zakup\xF3w",
+        addresses: "Adresy",
+        register: "zarejestruj si\u0119 do nowego konta",
+        email: "E-mail",
+        emailAddress: "Adres e-mail",
+        password: "Has\u0142o",
+        repeatPassword: "Powt\xF3rz has\u0142o",
+        rememberMe: "Zapami\u0119taj mnie",
+        forgotPassword: "Zapomnia\u0142e\u015B has\u0142a?",
+        errorSignIn: "Wyst\u0105pi\u0142 problem podczas logowania!",
+        createdMessage: "Twoje konto zosta\u0142o pomy\u015Blnie utworzone! Link weryfikacyjny zosta\u0142 wys\u0142any na Tw\xF3j adres e-mail.",
+        currentPassword: "Aktualne has\u0142o",
+        newPassword: "Nowe has\u0142o",
+        confirmPassword: "Potwierd\u017A has\u0142o",
+        pwdSuccessHeading: "Sukces!",
+        pwdSuccessMessage: "Twoje has\u0142o zosta\u0142o zaktualizowane.",
+        pwdErrorMessage: "Twoje has\u0142o zosta\u0142o zaktualizowane.",
+        savePassword: "Zapisz has\u0142o",
+        changePassword: "Zmie\u0144 has\u0142o",
+        changeEmailConfirmation: "oczekuje potwierdzenia",
+        changeEmailButton: "oczekuje potwierdzenia",
+        changeEmailModal: {
+          title: "Zmie\u0144 adres e-mail",
+          heading: "Wy\u015Blemy e-mail weryfikacyjny na Tw\xF3j nowy adres e-mail.",
+          currentEmail: "Tw\xF3j aktualny adres e-mail: ",
+          new: "Nowy adres e-mail",
+          errorMessage: "Wyst\u0105pi\u0142 problem podczas zmiany e-maila!"
+        }
+      },
+      cart: {
+        title: "Koszyk",
+        empty: "Tw\xF3j koszyk jest pusty",
+        shippingMessage: "Koszt wysy\u0142ki zostanie obliczony podczas finalizacji zakupu.",
+        checkout: "Zam\xF3w"
+      },
+      checkout: {
+        dummyPayment: "Jest to testowa p\u0142atno\u015B\u0107 wy\u0142\u0105cznie w celach demonstracyjnych",
+        paymentErrorMessage: "Wyst\u0105pi\u0142 b\u0142\u0105d podczas przetwarzania p\u0142atno\u015Bci",
+        payWith: "Zap\u0142a\u0107 za pomoc\u0105",
+        deliveryMethod: "Spos\xF3b dostawy",
+        paymentProcessing: "Przetwarzanie...",
+        paymentLoading: "\u0141adowanie opcji...",
+        paymentMessage: "Uwaga: Twoja p\u0142atno\u015B\u0107 jest jeszcze w trakcie przetwarzania. Otrzymasz potwierdzenie e-mail po zako\u0144czeniu p\u0142atno\u015Bci.",
+        pay: "Zap\u0142a\u0107",
+        progress: "Post\u0119p",
+        orderNotFound: "Nie znaleziono pasuj\u0105cego zam\xF3wienia!",
+        orderErrorTitle: "Wyst\u0105pi\u0142 b\u0142\u0105d!",
+        orderErrorMessage: "Niestety nie uda\u0142o si\u0119 przetworzy\u0107 p\u0142atno\u015Bci lub link potwierdzaj\u0105cy wygas\u0142.",
+        orderProcessing: "Prosz\u0119 czeka\u0107 podczas przetwarzania zam\xF3wienia...",
+        orderSuccessMessage: "Otrzymali\u015Bmy Twoje zam\xF3wienie!",
+        braintreeError: "B\u0142\u0105d Braintree:",
+        stripeError: "B\u0142\u0105d Stripe:",
+        detailsTitle: "Informacje kontaktowe",
+        shippingTitle: "Informacje o dostawie",
+        goToPayment: "Przejd\u017A do p\u0142atno\u015Bci",
+        addNewAddress: "Dodaj nowy adres",
+        steps: {
+          shipping: "Wysy\u0142ka",
+          payment: "P\u0142atno\u015B\u0107",
+          confirmation: "Potwierdzenie"
+        }
+      },
+      order: {
+        placedAt: "Data zam\xF3wienia",
+        totalSum: "Kwota ca\u0142kowita",
+        number: "Numer zam\xF3wienia",
+        actions: "Akcje",
+        actionsMessage: "Akcje dla tego zam\xF3wienia (Nie zaimplementowano)",
+        expand: "Rozwi\u0144 to zam\xF3wienie",
+        notShipped: "Nie wys\u0142ano jeszcze",
+        trackAlert: "Tutaj powiniene\u015B podlinkowa\u0107 swoj\u0105 us\u0142ug\u0119 dostawy. Kod \u015Bledzenia dla tego paczki to",
+        trackPackage: "\u015Aled\u017A paczk\u0119",
+        detailedOverview: "Szczeg\xF3\u0142owy przegl\u0105d",
+        summary: "Podsumowanie zam\xF3wienia",
+        shippingAndHandling: "Wysy\u0142ka i obs\u0142uga:",
+        totalWithoutTax: "Suma przed podatkiem:",
+        estimatedTax: "Szacowany podatek:",
+        appliedCoupons: "Zastosowane kupony:",
+        total: "Suma:",
+        grandTotal: "Ko\u0144cowa suma:",
+        historyEmpty: "Twoje przysz\u0142e zam\xF3wienia pojawi\u0105 si\u0119 tutaj",
+        historyEnd: "Brak wi\u0119cej zam\xF3wie\u0144, koniec listy",
+        items: {
+          fulfilled: "elementy spe\u0142nione",
+          subtotal: "Podsumowanie element\xF3w:"
+        },
+        states: {
+          Draft: "Szkic",
+          AddingItems: "Dodawanie element\xF3w",
+          ArrangingPayment: "Oczekiwanie na p\u0142atno\u015B\u0107",
+          PaymentAuthorized: "P\u0142atno\u015B\u0107 autoryzowana",
+          PaymentSettled: "P\u0142atno\u015B\u0107 zako\u0144czona",
+          PartiallyShipped: "Cz\u0119\u015Bciowo wys\u0142ano",
+          Shipped: "Wys\u0142ano",
+          PartiallyDelivered: "Cz\u0119\u015Bciowo dostarczono",
+          Delivered: "Dostarczono",
+          Modifying: "Modyfikowanie",
+          ArrangingAdditionalPayment: "Oczekiwanie na p\u0142atno\u015B\u0107",
+          Cancelled: "Anulowano",
+          Unknown: "Nieznane"
+        }
+      },
+      product: {
+        showing: "Wy\u015Bwietlanie produkt\xF3w",
+        to: "do",
+        noResults: "Brak wynik\xF3w!",
+        filterTip: "Spr\xF3buj zmieni\u0107 ustawienia filtr\xF3w.",
+        inStock: "Dost\u0119pne",
+        outOfStock: "Niedost\u0119pne",
+        lowStock: "Ma\u0142o w magazynie",
+        notFound: "Produkt nie znaleziony!",
+        notFoundInfo: "Nie znale\u017Ali\u015Bmy produktu pod tym adresem!",
+        collections: "Kolekcje",
+        collectionNotFound: "Kolekcja nie znaleziona",
+        description: "Opis",
+        selectOption: "Wybierz opcj\u0119",
+        inCart: "w koszyku",
+        addToCart: "Dodaj do koszyka",
+        addToFavorites: "Dodaj do ulubionych",
+        shippingAndReturns: "Wysy\u0142ka i zwroty",
+        shippingInfo: "Dostawa standardowa: 3 - 5 dni roboczych. Dostawa ekspresowa: 1 - 3 dni roboczych.",
+        shippingCostsInfo: "Koszt wysy\u0142ki zale\u017Cy od adresu dostawy i zostanie obliczony podczas finalizacji zakupu.",
+        returnsInfo: "Zwroty podlegaj\u0105 warunkom. Zobacz STRON\u0118 ZWROT\xD3W dla wi\u0119cej informacji.",
+        recentReviews: "Ostatnie recenzje",
+        recentRating: "z 5 gwiazdek"
+      },
+      footer: {
+        title: "Stopka",
+        shop: "Sklep",
+        support: "Wsparcie",
+        subscribeHeader: "Zapisz si\u0119 do naszego newslettera",
+        subscribeIntro: "B\u0105d\u017A pierwszym, kt\xF3ry dowiedzie si\u0119 o wy\u0142\u0105cznych oferbach i promocjach.",
+        emailPlaceholder: "Wpisz sw\xF3j e-mail",
+        subscribe: "Zapisz si\u0119"
+      },
+      navigation: {
+        support: {
+          help: "Pomoc",
+          trackOrder: "\u015Aled\u017A zam\xF3wienie",
+          shipping: "Wysy\u0142ka",
+          returns: "Zwroty"
+        },
+        company: {
+          about: "O nas",
+          blog: "Blog",
+          responsibility: "Odpowiedzialno\u015B\u0107 spo\u0142eczna",
+          press: "Prasa"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "Starterkit dla headless commerce zbudowany z",
+        link: "Szybki Headless Commerce z Vendure i Remix",
+        demoCredentials: "Dane logowania demo",
+        exclusive: "Wy\u0142\u0105cznie: Uzyskaj w\u0142asny",
+        repoLinkLabel: "DARMOWY starterkit dla sklepu",
+        registrationMessage: "Rejestracja konta nie jest obs\u0142ugiwana przez demo instancj\u0119 Vendure. Aby j\u0105 u\u017Cy\u0107, po\u0142\u0105cz sklep Remix z w\u0142asn\u0105 instancj\u0105 lokaln\u0105/produkcyjn\u0105.",
+        registrationError: "Rejestracja nie mo\u017Ce by\u0107 u\u017Cyta z demo sklepem Vendure! Pod\u0142\u0105cz w\u0142asn\u0105 instancj\u0119."
+      }
+    };
+  }
+});
+
+// public/locales/sv.json
+var require_sv = __commonJS({
+  "public/locales/sv.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Eller",
+        readMore: "L\xE4s mer:",
+        tokenError: "Verifieringstoken tillhandah\xF6lls inte!",
+        shopByCategory: "Handla efter kategori",
+        browseCategories: "Bl\xE4ddra i alla kategorier",
+        resultsFor: "Resultat f\xF6r",
+        allResults: "Alla resultat",
+        defaultError: "N\xE5got gick fel.",
+        unknowError: "Ett ok\xE4nt fel uppstod",
+        save: "Spara",
+        cancel: "Avbryt",
+        edit: "Redigera",
+        yes: "Ja",
+        shipping: "Shipping",
+        billing: "Fakturering",
+        default: "Standard",
+        remove: "Ta bort",
+        quantity: "Antal",
+        subtotal: "Subtotal",
+        total: "Total",
+        closePanel: "St\xE4ng panel",
+        closeMenu: "St\xE4ng meny",
+        perPage: "per sida",
+        prev: "F\xF6reg\xE5ende",
+        next: "N\xE4sta",
+        filters: "Filter",
+        select: "V\xE4lj...",
+        home: "Hem",
+        logoAlt: "Tai Sourcing Logo",
+        search: "S\xF6k",
+        goHome: "G\xE5 hem"
+      },
+      address: {
+        new: "Ny adress",
+        edit: "Redigera adress",
+        company: "F\xF6retag",
+        streetLine1: "Adress",
+        streetLine2: "L\xE4genhet, suite, etc.",
+        city: "Stad",
+        country: "Land",
+        selectCountry: "V\xE4lj ett land...",
+        province: "Stat / Provins",
+        postalCode: "Postnummer",
+        phoneNumber: "Telefon",
+        idError: "Parameter 'id' saknas",
+        deleteModal: {
+          title: "Ta bort adress",
+          confirmation: "Vill du ta bort den h\xE4r adressen?",
+          error: "Adressen kunde inte tas bort"
+        }
+      },
+      account: {
+        title: "Titel",
+        firstName: "F\xF6rnamn",
+        lastName: "Efternamn",
+        fullName: "Fullst\xE4ndigt namn",
+        phoneNumber: "Telefonnummer",
+        errorMessage: "Vi st\xF6tte p\xE5 ett problem n\xE4r vi uppdaterade dina detaljer!",
+        verifyMessage: "Ditt konto har verifierats framg\xE5ngsrikt. Omdirigerar om 5 sekunder...",
+        verifyEmailMessage: "Din nya e-postadress har verifierats framg\xE5ngsrikt. Omdirigerar om 5 sekunder...",
+        signInTitle: "Logga in p\xE5 ditt konto",
+        signUp: "Registrera",
+        signIn: "Logga in",
+        signOut: "Logga ut",
+        create: "Skapa ett nytt konto",
+        createError: "Vi st\xF6tte p\xE5 ett problem n\xE4r vi skapade ditt konto!",
+        login: "logga in p\xE5 ditt befintliga konto",
+        myAccount: "Mitt konto",
+        welcomeBack: "V\xE4lkommen tillbaka",
+        details: "Konton detaljer",
+        purchaseHistory: "K\xF6phistoria",
+        addresses: "Adresser",
+        register: "registrera dig f\xF6r ett nytt konto",
+        email: "E-post",
+        emailAddress: "E-postadress",
+        password: "L\xF6senord",
+        repeatPassword: "Upprepa l\xF6senord",
+        rememberMe: "Kom ih\xE5g mig",
+        forgotPassword: "Gl\xF6mt l\xF6senord?",
+        errorSignIn: "Vi st\xF6tte p\xE5 ett problem n\xE4r vi loggade in!",
+        createdMessage: "Ditt konto har skapats framg\xE5ngsrikt! Ett verifieringsl\xE4nk har skickats till din e-postadress.",
+        currentPassword: "Nuvarande l\xF6senord",
+        newPassword: "Nytt l\xF6senord",
+        confirmPassword: "Bekr\xE4fta l\xF6senord",
+        pwdSuccessHeading: "Framg\xE5ng!",
+        pwdSuccessMessage: "Ditt l\xF6senord har uppdaterats.",
+        pwdErrorMessage: "Ditt l\xF6senord har uppdaterats.",
+        savePassword: "Spara l\xF6senord",
+        changePassword: "Byt l\xF6senord",
+        changeEmailConfirmation: "v\xE4ntar p\xE5 bekr\xE4ftelse",
+        changeEmailButton: "v\xE4ntar p\xE5 bekr\xE4ftelse",
+        changeEmailModal: {
+          title: "Byt e-postadress",
+          heading: "Vi kommer att skicka ett verifierings-e-post till din nya e-postadress.",
+          currentEmail: "Din nuvarande e-postadress: ",
+          new: "Ny e-postadress",
+          errorMessage: "Vi st\xF6tte p\xE5 ett problem n\xE4r vi bytte e-post!"
+        }
+      },
+      cart: {
+        title: "Varukorg",
+        empty: "Din varukorg \xE4r tom",
+        shippingMessage: "Fraktkostnader kommer att ber\xE4kna vid checkout.",
+        checkout: "Checkout"
+      },
+      checkout: {
+        dummyPayment: "Detta \xE4r en dummybetalning endast f\xF6r demonstrationssyften",
+        paymentErrorMessage: "Ett fel uppstod under betalningsbearbetningen",
+        payWith: "Betala med",
+        deliveryMethod: "Leveransmetod",
+        paymentProcessing: "Bearbetar...",
+        paymentLoading: "Laddar alternativ...",
+        paymentMessage: "Notera: din betalning bearbetas fortfarande. Du kommer att f\xE5 ett bekr\xE4ftelse-e-post n\xE4r betalningen har slutf\xF6rts.",
+        pay: "Betala",
+        progress: "Progression",
+        orderNotFound: "Ingen matchande order hittades!",
+        orderErrorTitle: "Ett fel uppstod!",
+        orderErrorMessage: "Tyv\xE4rr kunde din betalning inte bearbetas eller denna bekr\xE4ftelsel\xE4nk har g\xE5tt ut.",
+        orderProcessing: "V\xE4nligen v\xE4nta medan vi bearbetar din order...",
+        orderSuccessMessage: "Din order har mottagits!",
+        braintreeError: "Braintree-fel:",
+        stripeError: "Stripe-fel:",
+        detailsTitle: "Kontaktinformation",
+        shippingTitle: "Leveransinformation",
+        goToPayment: "Forts\xE4tt till betalning",
+        addNewAddress: "L\xE4gg till ny adress",
+        steps: {
+          shipping: "Frakt",
+          payment: "Betalning",
+          confirmation: "Bekr\xE4ftelse"
+        }
+      },
+      order: {
+        placedAt: "Orderdatum",
+        totalSum: "Totalsumma",
+        number: "Ordernummer",
+        actions: "\xC5tg\xE4rder",
+        actionsMessage: "\xC5tg\xE4rder f\xF6r denna order (Ej implementerad)",
+        expand: "Expandera denna order",
+        notShipped: "Inte \xE4nnu skickad",
+        trackAlert: "H\xE4r skulle du l\xE4nka din leveransservice. Sp\xE5rningskoden f\xF6r det h\xE4r paketet \xE4r",
+        trackPackage: "Sp\xE5ra paket",
+        detailedOverview: "Detaljerad \xF6versikt",
+        summary: "Ordersammanfattning",
+        shippingAndHandling: "Frakt & hantering:",
+        totalWithoutTax: "Total innan skatt:",
+        estimatedTax: "Ber\xE4knad skatt:",
+        appliedCoupons: "Till\xE4mpade kuponger:",
+        total: "Total:",
+        grandTotal: "Sluttotal:",
+        historyEmpty: "Dina framtida ordrar kommer att visas h\xE4r",
+        historyEnd: "Inga fler ordrar, slutet n\xE5tt",
+        items: {
+          fulfilled: "artiklar uppfyllda",
+          subtotal: "Artikel-subtotal:"
+        },
+        states: {
+          Draft: "Utkast",
+          AddingItems: "L\xE4gger till artiklar",
+          ArrangingPayment: "V\xE4ntar p\xE5 betalning",
+          PaymentAuthorized: "Betalning auktoriserad",
+          PaymentSettled: "Betalning slutf\xF6rd",
+          PartiallyShipped: "Delvis skickad",
+          Shipped: "Skickad",
+          PartiallyDelivered: "Delvis levererad",
+          Delivered: "Levererad",
+          Modifying: "Modifierar",
+          ArrangingAdditionalPayment: "V\xE4ntar p\xE5 betalning",
+          Cancelled: "Avbruten",
+          Unknown: "Ok\xE4nd"
+        }
+      },
+      product: {
+        showing: "Visar produkter",
+        to: "till",
+        noResults: "Inga resultat!",
+        filterTip: "F\xF6rs\xF6k \xE4ndra dina filterinst\xE4llningar.",
+        inStock: "I lager",
+        outOfStock: "Slut i lager",
+        lowStock: "L\xE5g lagersaldo",
+        notFound: "Produkt hittades inte!",
+        notFoundInfo: "Vi kunde inte hitta n\xE5gon produkt vid den h\xE4r adressen!",
+        collections: "Samlingar",
+        collectionNotFound: "Samling hittades inte",
+        description: "Beskrivning",
+        selectOption: "V\xE4lj option",
+        inCart: "i varukorg",
+        addToCart: "L\xE4gg till i varukorg",
+        addToFavorites: "L\xE4gg till i favoriter",
+        shippingAndReturns: "Frakt & returer",
+        shippingInfo: "Standardfrakt: 3 - 5 arbetsdagar. Expressfrakt: 1 - 3 arbetsdagar.",
+        shippingCostsInfo: "Fraktkostnader beror p\xE5 leveransadress och kommer att ber\xE4kna vid checkout.",
+        returnsInfo: "Returer \xE4r underkastade villkor. Se RETURSSIDAN f\xF6r mer information.",
+        recentReviews: "Senaste recensioner",
+        recentRating: "av 5 stj\xE4rnor"
+      },
+      footer: {
+        title: "Footer",
+        shop: "Butik",
+        support: "Support",
+        subscribeHeader: "Prenumerera p\xE5 v\xE5r nyhetsbrev",
+        subscribeIntro: "Var den f\xF6rsta att f\xE5 veta om exklusiva erbjudanden & dealar.",
+        emailPlaceholder: "Ange din e-post",
+        subscribe: "Prenumerera"
+      },
+      navigation: {
+        support: {
+          help: "Hj\xE4lp",
+          trackOrder: "Sp\xE5ra order",
+          shipping: "Frakt",
+          returns: "Returer"
+        },
+        company: {
+          about: "Om",
+          blog: "Blogg",
+          responsibility: "F\xF6retagsansvar",
+          press: "Press"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "En headless commerce storefront starterkit byggd med",
+        link: "Blixtsnabb Headless Commerce med Vendure och Remix",
+        demoCredentials: "Demo-autentiseringsuppgifter",
+        exclusive: "Exklusivt: F\xE5 din egen",
+        repoLinkLabel: "GRATIS storefront starterkit",
+        registrationMessage: "Kontoregistrering st\xF6ds inte av demo-Vendure-instansen. F\xF6r att anv\xE4nda den, anslut Remix-storefronten till din egna lokala/produktionsinstans.",
+        registrationError: "Registrering kan inte anv\xE4ndas med Vendure demo shop! Anslut din egen instans."
+      }
+    };
+  }
+});
+
+// public/locales/da.json
+var require_da = __commonJS({
+  "public/locales/da.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Eller",
+        readMore: "L\xE6s mere:",
+        tokenError: "Verifikationstoken blev ikke leveret!",
+        shopByCategory: "Shop efter kategori",
+        browseCategories: "Gennemse alle kategorier",
+        resultsFor: "Resultater for",
+        allResults: "Alle resultater",
+        defaultError: "Noget gik galt.",
+        unknowError: "En ukendt fejl opstod",
+        save: "Gem",
+        cancel: "Annull\xE9r",
+        edit: "Rediger",
+        yes: "Ja",
+        shipping: "Forsendelse",
+        billing: "Fakturering",
+        default: "Standard",
+        remove: "Fjern",
+        quantity: "Antal",
+        subtotal: "Subtotal",
+        total: "Total",
+        closePanel: "Luk panel",
+        closeMenu: "Luk menu",
+        perPage: "per side",
+        prev: "Forrige",
+        next: "N\xE6ste",
+        filters: "Filtre",
+        select: "V\xE6lg...",
+        home: "Hovedside",
+        logoAlt: "Tai Sourcing Logo",
+        search: "S\xF8g",
+        goHome: "G\xE5 hjem"
+      },
+      address: {
+        new: "Ny adresse",
+        edit: "Rediger adresse",
+        company: "Virksomhed",
+        streetLine1: "Adresse",
+        streetLine2: "Lejlighed, suite, etc.",
+        city: "By",
+        country: "Land",
+        selectCountry: "V\xE6lg et land...",
+        province: "Stat / Provins",
+        postalCode: "Postnummer",
+        phoneNumber: "Telefon",
+        idError: "Parameter 'id' mangler",
+        deleteModal: {
+          title: "Fjern adresse",
+          confirmation: "Vil du fjerne denne adresse?",
+          error: "Adressen kunne ikke fjernes"
+        }
+      },
+      account: {
+        title: "Titel",
+        firstName: "Fornavn",
+        lastName: "Efternavn",
+        fullName: "Fulde navn",
+        phoneNumber: "Telefonnummer",
+        errorMessage: "Vi st\xF8dt p\xE5 et problem under opdatering af dine detaljer!",
+        verifyMessage: "Din konto er blevet verificeret med succes. Omdirigerer om 5 sekunder...",
+        verifyEmailMessage: "Din nye e-mailadresse er blevet verificeret med succes. Omdirigerer om 5 sekunder...",
+        signInTitle: "Log ind p\xE5 din konto",
+        signUp: "Tilmeld",
+        signIn: "Log ind",
+        signOut: "Log ud",
+        create: "Opret en ny konto",
+        createError: "Vi st\xF8dt p\xE5 et problem under oprettelse af din konto!",
+        login: "log ind p\xE5 din eksisterende konto",
+        myAccount: "Min konto",
+        welcomeBack: "Velkommen tilbage",
+        details: "Kontooplysninger",
+        purchaseHistory: "K\xF8bshistorie",
+        addresses: "Adresser",
+        register: "tilmeld dig en ny konto",
+        email: "E-mail",
+        emailAddress: "E-mailadresse",
+        password: "Adgangskode",
+        repeatPassword: "Gentag adgangskode",
+        rememberMe: "Husk mig",
+        forgotPassword: "Glemt adgangskode?",
+        errorSignIn: "Vi st\xF8dt p\xE5 et problem under login!",
+        createdMessage: "Din konto er blevet oprettet med succes! En verificeringslink er blevet sendt til din e-mailadresse.",
+        currentPassword: "Nuv\xE6rende adgangskode",
+        newPassword: "Ny adgangskode",
+        confirmPassword: "Bekr\xE6ft adgangskode",
+        pwdSuccessHeading: "Succes!",
+        pwdSuccessMessage: "Din adgangskode er blevet opdateret.",
+        pwdErrorMessage: "Din adgangskode er blevet opdateret.",
+        savePassword: "Gem adgangskode",
+        changePassword: "Skift adgangskode",
+        changeEmailConfirmation: "afventer bekr\xE6ftelse",
+        changeEmailButton: "afventer bekr\xE6ftelse",
+        changeEmailModal: {
+          title: "Skift e-mailadresse",
+          heading: "Vi sender en verificerings-e-mail til din nye e-mailadresse.",
+          currentEmail: "Din nuv\xE6rende e-mailadresse: ",
+          new: "Ny e-mailadresse",
+          errorMessage: "Vi st\xF8dt p\xE5 et problem under skift af e-mail!"
+        }
+      },
+      cart: {
+        title: "Indk\xF8bskurv",
+        empty: "Din indk\xF8bskurv er tom",
+        shippingMessage: "Forsendelsesomkostninger beregnes ved checkout.",
+        checkout: "Checkout"
+      },
+      checkout: {
+        dummyPayment: "Dette er en dummybetaling kun til demonstrationsform\xE5l",
+        paymentErrorMessage: "Der opstod en fejl under behandlingen af betalingen",
+        payWith: "Betal med",
+        deliveryMethod: "Leveringsmetode",
+        paymentProcessing: "Behandler...",
+        paymentLoading: "Indl\xE6ser muligheder...",
+        paymentMessage: "Bem\xE6rk: Din betaling behandles stadig. Du vil modtage en bekr\xE6ftelses-e-mail, n\xE5r betalingen er gennemf\xF8rt.",
+        pay: "Betal",
+        progress: "Fremskridt",
+        orderNotFound: "Ingen matchende ordre fundet!",
+        orderErrorTitle: "Der opstod en fejl!",
+        orderErrorMessage: "Desv\xE6rre kunne din betaling ikke behandles, eller denne bekr\xE6ftelseslink er udl\xF8bet.",
+        orderProcessing: "Vent venligst, mens vi behandler din ordre...",
+        orderSuccessMessage: "Din ordre er modtaget!",
+        braintreeError: "Braintree-fejl:",
+        stripeError: "Stripe-fejl:",
+        detailsTitle: "Kontaktoplysninger",
+        shippingTitle: "Forsendelsesoplysninger",
+        goToPayment: "Forts\xE6t til betaling",
+        addNewAddress: "Tilf\xF8j ny adresse",
+        steps: {
+          shipping: "Forsendelse",
+          payment: "Betaling",
+          confirmation: "Bekr\xE6ftelse"
+        }
+      },
+      order: {
+        placedAt: "Ordredato",
+        totalSum: "Totalsum",
+        number: "Ordrenummer",
+        actions: "Handlinger",
+        actionsMessage: "Handlinger for denne ordre (Ikke implementeret)",
+        expand: "Udvid denne ordre",
+        notShipped: "Endnu ikke sendt",
+        trackAlert: "Her skulle du linke din leveringsservice. Sporingskoden for dette pakke er",
+        trackPackage: "Track pakke",
+        detailedOverview: "Detaljeret oversigt",
+        summary: "Ordresammenfatning",
+        shippingAndHandling: "Forsendelse & h\xE5ndtering:",
+        totalWithoutTax: "Total f\xF8r skat:",
+        estimatedTax: "Beregnet skat:",
+        appliedCoupons: "Anvendte kuponer:",
+        total: "Total:",
+        grandTotal: "Endelig total:",
+        historyEmpty: "Dine fremtidige ordrer vil blive vist her",
+        historyEnd: "Ingen flere ordrer, slutningen n\xE5et",
+        items: {
+          fulfilled: "varer opfyldt",
+          subtotal: "Vare-subtotal:"
+        },
+        states: {
+          Draft: "Udkast",
+          AddingItems: "Tilf\xF8jer varer",
+          ArrangingPayment: "Venter p\xE5 betaling",
+          PaymentAuthorized: "Betaling autoriseret",
+          PaymentSettled: "Betaling gennemf\xF8rt",
+          PartiallyShipped: "Delvist sendt",
+          Shipped: "Sendt",
+          PartiallyDelivered: "Delvist leveret",
+          Delivered: "Leveret",
+          Modifying: "Modificerer",
+          ArrangingAdditionalPayment: "Venter p\xE5 betaling",
+          Cancelled: "Annulleret",
+          Unknown: "Ukendt"
+        }
+      },
+      product: {
+        showing: "Viser produkter",
+        to: "til",
+        noResults: "Ingen resultater!",
+        filterTip: "Pr\xF8v at \xE6ndre dine filterindstillinger.",
+        inStock: "P\xE5 lager",
+        outOfStock: "Udsolgt",
+        lowStock: "Lav lagerbeholdning",
+        notFound: "Produkt ikke fundet!",
+        notFoundInfo: "Vi kunne ikke finde noget produkt p\xE5 denne adresse!",
+        collections: "Samlinger",
+        collectionNotFound: "Samling ikke fundet",
+        description: "Beskrivelse",
+        selectOption: "V\xE6lg option",
+        inCart: "i indk\xF8bskurv",
+        addToCart: "Tilf\xF8j til indk\xF8bskurv",
+        addToFavorites: "Tilf\xF8j til favoritter",
+        shippingAndReturns: "Forsendelse & returer",
+        shippingInfo: "Standardforsendelse: 3 - 5 arbejdsdage. Expressforsendelse: 1 - 3 arbejdsdage.",
+        shippingCostsInfo: "Forsendelsesomkostninger afh\xE6nger af leveringsadresse og beregnes ved checkout.",
+        returnsInfo: "Returer er underlagt betingelser. Se RETURSIDEN for flere oplysninger.",
+        recentReviews: "Seneste anmeldelser",
+        recentRating: "ud af 5 stjerner"
+      },
+      footer: {
+        title: "Footer",
+        shop: "Butik",
+        support: "Support",
+        subscribeHeader: "Tilmeld dig vores nyhedsbrev",
+        subscribeIntro: "V\xE6r den f\xF8rste til at vide om eksklusive tilbud & deals.",
+        emailPlaceholder: "Indtast din e-mail",
+        subscribe: "Tilmeld"
+      },
+      navigation: {
+        support: {
+          help: "Hj\xE6lp",
+          trackOrder: "Track ordre",
+          shipping: "Forsendelse",
+          returns: "Returer"
+        },
+        company: {
+          about: "Om",
+          blog: "Blog",
+          responsibility: "Virksomhedsansvar",
+          press: "Presse"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "En headless commerce storefront starterkit bygget med",
+        link: "Bliksnabbt Headless Commerce med Vendure og Remix",
+        demoCredentials: "Demo-oplysninger",
+        exclusive: "Eksklusivt: F\xE5 din egen",
+        repoLinkLabel: "GRATIS storefront starterkit",
+        registrationMessage: "Konto registrering underst\xF8ttes ikke af demo-Vendure-instansen. For at bruge den, skal du forbinde Remix-storefronten til din egen lokale/produktionsinstans.",
+        registrationError: "Registrering kan ikke bruges med Vendure demo shop! Forbind din egen instans."
+      }
+    };
+  }
+});
+
+// public/locales/no.json
+var require_no = __commonJS({
+  "public/locales/no.json"(exports, module) {
+    module.exports = {
+      common: {
+        or: "Eller",
+        readMore: "Les mer:",
+        tokenError: "Verifiseringstoken ble ikke gitt!",
+        shopByCategory: "Handle etter kategori",
+        browseCategories: "Bla gjennom alle kategorier",
+        resultsFor: "Resultater for",
+        allResults: "Alle resultater",
+        defaultError: "Noe gikk galt.",
+        unknowError: "En ukjent feil oppstod",
+        save: "Lagre",
+        cancel: "Avbryt",
+        edit: "Rediger",
+        yes: "Ja",
+        shipping: "Forsendelse",
+        billing: "Fakturering",
+        default: "Standard",
+        remove: "Fjern",
+        quantity: "Antall",
+        subtotal: "Subtotal",
+        total: "Total",
+        closePanel: "Lukk panel",
+        closeMenu: "Lukk meny",
+        perPage: "per side",
+        prev: "Forrige",
+        next: "Neste",
+        filters: "Filter",
+        select: "Velg...",
+        home: "Hovedside",
+        logoAlt: "Tai Sourcing Logo",
+        search: "S\xF8k",
+        goHome: "G\xE5 hjem"
+      },
+      address: {
+        new: "Ny adresse",
+        edit: "Rediger adresse",
+        company: "Bedrift",
+        streetLine1: "Adresse",
+        streetLine2: "Leilighet, suite, etc.",
+        city: "By",
+        country: "Land",
+        selectCountry: "Velg et land...",
+        province: "Stat / Provins",
+        postalCode: "Postnummer",
+        phoneNumber: "Telefon",
+        idError: "Parameter 'id' mangler",
+        deleteModal: {
+          title: "Fjern adresse",
+          confirmation: "Vil du fjerne denne adressen?",
+          error: "Adressen kunne ikke fjernes"
+        }
+      },
+      account: {
+        title: "Tittel",
+        firstName: "Fornavn",
+        lastName: "Etternavn",
+        fullName: "Fullt navn",
+        phoneNumber: "Telefonnummer",
+        errorMessage: "Vi st\xF8tte p\xE5 et problem under oppdatering av detaljene dine!",
+        verifyMessage: "Kontoen din er verifisert med suksess. Omdirigerer om 5 sekunder...",
+        verifyEmailMessage: "Den nye e-postadressen din er verifisert med suksess. Omdirigerer om 5 sekunder...",
+        signInTitle: "Logg inn p\xE5 kontoen din",
+        signUp: "Registrer",
+        signIn: "Logg inn",
+        signOut: "Logg ut",
+        create: "Opprett en ny konto",
+        createError: "Vi st\xF8tte p\xE5 et problem under opprettelse av kontoen din!",
+        login: "logg inn p\xE5 eksisterende konto",
+        myAccount: "Min konto",
+        welcomeBack: "Velkommen tilbake",
+        details: "Kontodetaljer",
+        purchaseHistory: "Kj\xF8phistorie",
+        addresses: "Adresser",
+        register: "registrer deg for en ny konto",
+        email: "E-post",
+        emailAddress: "E-postadresse",
+        password: "Passord",
+        repeatPassword: "Gjenta passord",
+        rememberMe: "Husk meg",
+        forgotPassword: "Glemt passord?",
+        errorSignIn: "Vi st\xF8tte p\xE5 et problem under innlogging!",
+        createdMessage: "Kontoen din er opprettet med suksess! En verifiseringslenke ble sendt til e-postadressen din.",
+        currentPassword: "N\xE5v\xE6rende passord",
+        newPassword: "Nytt passord",
+        confirmPassword: "Bekreft passord",
+        pwdSuccessHeading: "Suksess!",
+        pwdSuccessMessage: "Passordet ditt er oppdatert.",
+        pwdErrorMessage: "Passordet ditt er oppdatert.",
+        savePassword: "Lagre passord",
+        changePassword: "Bytt passord",
+        changeEmailConfirmation: "venter p\xE5 bekreftelse",
+        changeEmailButton: "venter p\xE5 bekreftelse",
+        changeEmailModal: {
+          title: "Bytt e-postadresse",
+          heading: "Vi sender en verifiserings-e-post til den nye e-postadressen din.",
+          currentEmail: "Din n\xE5v\xE6rende e-postadresse: ",
+          new: "Ny e-postadresse",
+          errorMessage: "Vi st\xF8tte p\xE5 et problem under endring av e-post!"
+        }
+      },
+      cart: {
+        title: "Handlekurv",
+        empty: "Handlekurven din er tom",
+        shippingMessage: "Forsendelsekostnader blir beregnet ved checkout.",
+        checkout: "Checkout"
+      },
+      checkout: {
+        dummyPayment: "Dette er en dummybetaling kun til demonstrasjonsform\xE5l",
+        paymentErrorMessage: "En feil oppstod under behandling av betalingen",
+        payWith: "Betal med",
+        deliveryMethod: "Leveringsmetode",
+        paymentProcessing: "Behandler...",
+        paymentLoading: "Laster inn alternativer...",
+        paymentMessage: "Merk: Betalingen din behandles fortsatt. Du vil motta en bekreftelses-e-post n\xE5r betalingen er fullf\xF8rt.",
+        pay: "Betal",
+        progress: "Framgang",
+        orderNotFound: "Ingen matchende ordre funnet!",
+        orderErrorTitle: "En feil oppstod!",
+        orderErrorMessage: "Dessverre kunne betalingen din ikke behandles, eller denne bekreftelseslenken har utl\xF8pt.",
+        orderProcessing: "Vennligst vent mens vi behandler ordren din...",
+        orderSuccessMessage: "Ordren din er mottatt!",
+        braintreeError: "Braintree-feil:",
+        stripeError: "Stripe-feil:",
+        detailsTitle: "Kontaktinformasjon",
+        shippingTitle: "Forsendelsesinformasjon",
+        goToPayment: "G\xE5 til betaling",
+        addNewAddress: "Legg til ny adresse",
+        steps: {
+          shipping: "Forsendelse",
+          payment: "Betaling",
+          confirmation: "Bekreftelse"
+        }
+      },
+      order: {
+        placedAt: "Ordredato",
+        totalSum: "Totalsum",
+        number: "Ordrenummer",
+        actions: "Handlinger",
+        actionsMessage: "Handlinger for denne ordren (Ikke implementert)",
+        expand: "Utvid denne ordren",
+        notShipped: "Ikke enn\xE5 sendt",
+        trackAlert: "Her skulle du koble til leveringsservicen din. Sporingskoden for denne pakken er",
+        trackPackage: "Spor pakke",
+        detailedOverview: "Detaljert oversikt",
+        summary: "Ordresammendrag",
+        shippingAndHandling: "Forsendelse & h\xE5ndtering:",
+        totalWithoutTax: "Total f\xF8r avgift:",
+        estimatedTax: "Estimert avgift:",
+        appliedCoupons: "Anvendte kuponger:",
+        total: "Total:",
+        grandTotal: "Endelig total:",
+        historyEmpty: "Fremtidige ordrer dine vil vises her",
+        historyEnd: "Ingen flere ordrer, slutten n\xE5dd",
+        items: {
+          fulfilled: "varer oppfylt",
+          subtotal: "Vare-subtotal:"
+        },
+        states: {
+          Draft: "Utkast",
+          AddingItems: "Legger til varer",
+          ArrangingPayment: "Venter p\xE5 betaling",
+          PaymentAuthorized: "Betaling autorisert",
+          PaymentSettled: "Betaling fullf\xF8rt",
+          PartiallyShipped: "Delvis sendt",
+          Shipped: "Sendt",
+          PartiallyDelivered: "Delvis levert",
+          Delivered: "Levert",
+          Modifying: "Modifiserer",
+          ArrangingAdditionalPayment: "Venter p\xE5 betaling",
+          Cancelled: "Avbrutt",
+          Unknown: "Ukjent"
+        }
+      },
+      product: {
+        showing: "Viser produkter",
+        to: "til",
+        noResults: "Ingen resultater!",
+        filterTip: "Pr\xF8v \xE5 endre filterinnstillingene dine.",
+        inStock: "P\xE5 lager",
+        outOfStock: "Utsolgt",
+        lowStock: "Lav lagerbeholdning",
+        notFound: "Produkt ikke funnet!",
+        notFoundInfo: "Vi kunne ikke finne noe produkt p\xE5 denne adressen!",
+        collections: "Samlinger",
+        collectionNotFound: "Samling ikke funnet",
+        description: "Beskrivelse",
+        selectOption: "Velg alternativ",
+        inCart: "i handlekurv",
+        addToCart: "Legg til i handlekurv",
+        addToFavorites: "Legg til i favoritter",
+        shippingAndReturns: "Forsendelse & returer",
+        shippingInfo: "Standardforsendelse: 3 - 5 arbeidsdager. Expressforsendelse: 1 - 3 arbeidsdager.",
+        shippingCostsInfo: "Forsendelsekostnader avhenger av leveringsadresse og blir beregnet ved checkout.",
+        returnsInfo: "Returer er underlagt vilk\xE5r. Se RETURSSIDEN for mer informasjon.",
+        recentReviews: "Nylige anmeldelser",
+        recentRating: "av 5 stjerner"
+      },
+      footer: {
+        title: "Footer",
+        shop: "Butikk",
+        support: "Support",
+        subscribeHeader: "Abonner p\xE5 nyhetsbrevet v\xE5rt",
+        subscribeIntro: "V\xE6r den f\xF8rste til \xE5 f\xE5 vite om eksklusive tilbud & deals.",
+        emailPlaceholder: "Skriv inn din e-post",
+        subscribe: "Abonner"
+      },
+      navigation: {
+        support: {
+          help: "Hjelp",
+          trackOrder: "Spor ordre",
+          shipping: "Forsendelse",
+          returns: "Returer"
+        },
+        company: {
+          about: "Om",
+          blog: "Blogg",
+          responsibility: "Bedriftsansvar",
+          press: "Press"
+        }
+      },
+      vendure: {
+        title: "Tai Sourcing",
+        intro: "En headless commerce storefront starterkit bygget med",
+        link: "Lynhurtig Headless Commerce med Vendure og Remix",
+        demoCredentials: "Demo-autentiseringsinformasjon",
+        exclusive: "Eksklusivt: F\xE5 din egen",
+        repoLinkLabel: "GRATIS storefront starterkit",
+        registrationMessage: "Kontoregistrering st\xF8ttes ikke av demo-Vendure-instansen. For \xE5 bruke den, koble Remix-storefronten til din egen lokale/produksjonsinstans.",
+        registrationError: "Registrering kan ikke brukes med Vendure demo shop! Koble til din egen instans."
       }
     };
   }
@@ -1139,12 +2808,11 @@ var DEFAULT_NS = "translation", RemixI18Next = class {
 
 // app/i18n.ts
 var i18n_default = {
-  supportedLngs: ["en", "es", "pt", "pt-BR"],
+  supportedLngs: ["en", "fr", "de", "zh", "es", "it", "nl", "pl", "sv", "da", "no"],
   fallbackLng: "en",
-  // Disabling suspense is recommended
   react: { useSuspense: !1 },
   backend: {
-    loadPath: "../public/locales/{{lng}}/{{ns}}.json"
+    loadPath: "../public/locales/{{lng}}.json"
   }
 };
 
@@ -1163,9 +2831,16 @@ import resourcesToBackend from "i18next-resources-to-backend";
 // app/languages.server.ts
 var languagesServer = {
   en: () => Promise.resolve().then(() => __toESM(require_en(), 1)),
+  fr: () => Promise.resolve().then(() => __toESM(require_fr(), 1)),
+  de: () => Promise.resolve().then(() => __toESM(require_de(), 1)),
+  zh: () => Promise.resolve().then(() => __toESM(require_zh(), 1)),
   es: () => Promise.resolve().then(() => __toESM(require_es(), 1)),
-  pt: () => Promise.resolve().then(() => __toESM(require_pt(), 1)),
-  "pt-BR": () => Promise.resolve().then(() => __toESM(require_pt_BR(), 1))
+  it: () => Promise.resolve().then(() => __toESM(require_it(), 1)),
+  nl: () => Promise.resolve().then(() => __toESM(require_nl(), 1)),
+  pl: () => Promise.resolve().then(() => __toESM(require_pl(), 1)),
+  sv: () => Promise.resolve().then(() => __toESM(require_sv(), 1)),
+  da: () => Promise.resolve().then(() => __toESM(require_da(), 1)),
+  no: () => Promise.resolve().then(() => __toESM(require_no(), 1))
 };
 function findLanguageJSON(language, namespace) {
   let lngNs = `${language}-${namespace}`, importFn = lngNs in languagesServer ? languagesServer[lngNs] : languagesServer[language];
@@ -1283,16 +2958,16 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData as useLoaderData2,
+  useLoaderData,
   useRouteError
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-GDWWSZD2.css";
+var tailwind_default = "/build/_assets/tailwind-PT4G3V7S.css";
 
 // app/components/header/Header.tsx
 import { Link } from "@remix-run/react";
-import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { ShoppingBagIcon, ChevronDownIcon, GlobeIcon } from "@heroicons/react/24/outline";
 
 // app/utils/use-root-loader.ts
 import { useMatches as useMatches2 } from "@remix-run/react";
@@ -1324,41 +2999,127 @@ function classNames(...classes) {
 
 // app/components/header/Header.tsx
 import { useTranslation as useTranslation2 } from "react-i18next";
-import { jsx as jsx2, jsxs } from "react/jsx-runtime";
+import { useState as useState2 } from "react";
+import { Fragment, jsx as jsx2, jsxs } from "react/jsx-runtime";
 var navItems = [
-  { label: "Our Services", href: "/services" },
-  { label: "Solutions", href: "/services" },
+  {
+    label: "Our Services",
+    children: [
+      { label: "Purchasing Service", href: "/services" },
+      { label: "Dropshipping Service", href: "/services" }
+    ]
+  },
+  {
+    label: "Solutions",
+    children: [
+      { label: "Shipping Solutions", href: "/services" },
+      { label: "Quality Control", href: "/services" }
+    ]
+  },
   { label: "Products", href: "/products" },
-  { label: "About", href: "/about" },
-  { label: "Resources", href: "/resources" }
+  {
+    label: "About",
+    children: [
+      { label: "Payment Information", href: "/payment-information" },
+      { label: "About Us", href: "/about" }
+    ]
+  },
+  {
+    label: "Resources",
+    children: [
+      { label: "Sourcing Guide", href: "/resources" },
+      { label: "Our Blog", href: "/resources" },
+      { label: "Import from China", href: "/resources" }
+    ]
+  }
+], languages = [
+  { code: "en", label: "English" },
+  { code: "fr", label: "Fran\xE7ais" },
+  { code: "de", label: "Deutsch" },
+  { code: "zh", label: "\u4E2D\u6587" },
+  { code: "es", label: "Espa\xF1ol" },
+  { code: "it", label: "Italiano" },
+  { code: "nl", label: "Nederlands" },
+  { code: "pl", label: "Polski" },
+  { code: "sv", label: "Svenska" },
+  { code: "da", label: "Dansk" },
+  { code: "no", label: "Norsk" }
 ];
 function Header({
   onCartIconClick,
   cartQuantity
 }) {
-  let isSignedIn = !!useRootLoader().activeCustomer.activeCustomer?.id, isScrollingUp = useScrollingUp(), { t } = useTranslation2();
+  let isSignedIn = !!useRootLoader().activeCustomer.activeCustomer?.id, isScrollingUp = useScrollingUp(), { t, i18n } = useTranslation2(), [activeDropdown, setActiveDropdown] = useState2(null), [showLangDropdown, setShowLangDropdown] = useState2(!1), changeLanguage = (code) => {
+    i18n.changeLanguage(code), setShowLangDropdown(!1);
+  };
   return /* @__PURE__ */ jsx2(
     "header",
     {
       className: classNames(
-        isScrollingUp ? "sticky top-0 z-10 animate-dropIn" : "",
+        isScrollingUp ? "sticky top-0 z-50 animate-dropIn" : "",
         "bg-white shadow-md"
       ),
       children: /* @__PURE__ */ jsxs("div", { className: "max-w-7xl mx-auto px-6 py-3 flex items-center justify-between", children: [
         /* @__PURE__ */ jsx2("div", { className: "flex items-center", children: /* @__PURE__ */ jsx2("h1", { className: "text-xl font-bold", children: /* @__PURE__ */ jsxs(Link, { to: "/", className: "flex items-center", children: [
-          /* @__PURE__ */ jsx2("span", { className: "text-primary font-bold", children: "JINGQO" }),
+          /* @__PURE__ */ jsx2("span", { className: "text-primary font-bold", children: "TAI" }),
           /* @__PURE__ */ jsx2("span", { className: "text-gray-800 font-medium", children: "Sourcing" })
         ] }) }) }),
-        /* @__PURE__ */ jsx2("nav", { className: "hidden lg:flex items-center space-x-8", children: navItems.map((item) => /* @__PURE__ */ jsx2(
+        /* @__PURE__ */ jsx2("nav", { className: "hidden lg:flex items-center space-x-1", children: navItems.map((item) => /* @__PURE__ */ jsx2("div", { className: "relative", children: item.children ? /* @__PURE__ */ jsxs(Fragment, { children: [
+          /* @__PURE__ */ jsxs(
+            "button",
+            {
+              className: "flex items-center space-x-1 text-gray-700 hover:text-primary font-medium transition-colors duration-300 px-3 py-2",
+              onMouseEnter: () => setActiveDropdown(item.label),
+              onMouseLeave: () => setActiveDropdown(null),
+              children: [
+                /* @__PURE__ */ jsx2("span", { children: item.label }),
+                /* @__PURE__ */ jsx2(ChevronDownIcon, { className: "w-4 h-4" })
+              ]
+            }
+          ),
+          activeDropdown === item.label && /* @__PURE__ */ jsx2("div", { className: "absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-48 z-50", children: item.children.map((child) => /* @__PURE__ */ jsx2(
+            Link,
+            {
+              to: child.href,
+              className: "block px-6 py-2 text-gray-600 hover:bg-primary/10 hover:text-primary text-sm transition-colors duration-200",
+              onMouseEnter: () => setActiveDropdown(item.label),
+              onMouseLeave: () => setActiveDropdown(null),
+              children: child.label
+            },
+            child.label
+          )) })
+        ] }) : /* @__PURE__ */ jsx2(
           Link,
           {
             to: item.href,
-            className: "text-gray-700 hover:text-primary font-medium transition-colors duration-300",
+            className: "px-3 py-2 text-gray-700 hover:text-primary font-medium transition-colors duration-300",
             children: item.label
-          },
-          item.label
-        )) }),
+          }
+        ) }, item.label)) }),
         /* @__PURE__ */ jsxs("div", { className: "flex items-center space-x-4", children: [
+          /* @__PURE__ */ jsxs("div", { className: "relative", children: [
+            /* @__PURE__ */ jsxs(
+              "button",
+              {
+                className: "flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors duration-300 px-2 py-1",
+                onClick: () => setShowLangDropdown(!showLangDropdown),
+                children: [
+                  /* @__PURE__ */ jsx2(GlobeIcon, { className: "w-4 h-4" }),
+                  /* @__PURE__ */ jsx2("span", { className: "text-sm", children: languages.find((l) => l.code === i18n.language)?.label || "English" }),
+                  /* @__PURE__ */ jsx2(ChevronDownIcon, { className: "w-3 h-3" })
+                ]
+              }
+            ),
+            showLangDropdown && /* @__PURE__ */ jsx2("div", { className: "absolute top-full right-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-40 z-50", children: languages.map((lang) => /* @__PURE__ */ jsx2(
+              "button",
+              {
+                className: `block w-full text-left px-4 py-2 text-sm transition-colors duration-200 ${i18n.language === lang.code ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-primary/10 hover:text-primary"}`,
+                onClick: () => changeLanguage(lang.code),
+                children: lang.label
+              },
+              lang.code
+            )) })
+          ] }),
           /* @__PURE__ */ jsx2("div", { className: "hidden md:block", children: /* @__PURE__ */ jsxs(
             Link,
             {
@@ -2224,10 +3985,10 @@ gql3`
 `;
 
 // app/root.tsx
-import { useEffect as useEffect4, useState as useState2 } from "react";
+import { useEffect as useEffect4, useState as useState3 } from "react";
 
 // app/components/cart/CartTray.tsx
-import { Fragment as Fragment2 } from "react";
+import { Fragment as Fragment3 } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -2235,12 +3996,12 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Form, Link as Link2 } from "@remix-run/react";
 
 // app/components/products/Price.tsx
-import { Fragment, jsx as jsx3, jsxs as jsxs2 } from "react/jsx-runtime";
+import { Fragment as Fragment2, jsx as jsx3, jsxs as jsxs2 } from "react/jsx-runtime";
 function Price({
   priceWithTax,
   currencyCode
 }) {
-  return priceWithTax == null || !currencyCode ? /* @__PURE__ */ jsx3(Fragment, {}) : typeof priceWithTax == "number" ? /* @__PURE__ */ jsx3(Fragment, { children: formatPrice(priceWithTax, currencyCode) }) : "value" in priceWithTax ? /* @__PURE__ */ jsx3(Fragment, { children: formatPrice(priceWithTax.value, currencyCode) }) : priceWithTax.min === priceWithTax.max ? /* @__PURE__ */ jsx3(Fragment, { children: formatPrice(priceWithTax.min, currencyCode) }) : /* @__PURE__ */ jsxs2(Fragment, { children: [
+  return priceWithTax == null || !currencyCode ? /* @__PURE__ */ jsx3(Fragment2, {}) : typeof priceWithTax == "number" ? /* @__PURE__ */ jsx3(Fragment2, { children: formatPrice(priceWithTax, currencyCode) }) : "value" in priceWithTax ? /* @__PURE__ */ jsx3(Fragment2, { children: formatPrice(priceWithTax.value, currencyCode) }) : priceWithTax.min === priceWithTax.max ? /* @__PURE__ */ jsx3(Fragment2, { children: formatPrice(priceWithTax.min, currencyCode) }) : /* @__PURE__ */ jsxs2(Fragment2, { children: [
     formatPrice(priceWithTax.min, currencyCode),
     " -",
     " ",
@@ -2342,7 +4103,7 @@ function CartTray({
   removeItem
 }) {
   let currencyCode = activeOrder?.currencyCode || "USD" /* Usd */, editable = !useLocation().pathname.startsWith("/checkout"), { t } = useTranslation4();
-  return /* @__PURE__ */ jsx5(Transition.Root, { show: open, as: Fragment2, children: /* @__PURE__ */ jsx5(
+  return /* @__PURE__ */ jsx5(Transition.Root, { show: open, as: Fragment3, children: /* @__PURE__ */ jsx5(
     Dialog,
     {
       as: "div",
@@ -2352,7 +4113,7 @@ function CartTray({
         /* @__PURE__ */ jsx5(
           Transition.Child,
           {
-            as: Fragment2,
+            as: Fragment3,
             enter: "ease-in-out duration-300",
             enterFrom: "opacity-0",
             enterTo: "opacity-100",
@@ -2365,7 +4126,7 @@ function CartTray({
         /* @__PURE__ */ jsx5("div", { className: "fixed inset-y-0 right-0 pl-10 max-w-full flex", children: /* @__PURE__ */ jsx5(
           Transition.Child,
           {
-            as: Fragment2,
+            as: Fragment3,
             enter: "transform transition ease-in-out duration-300 sm:duration-300",
             enterFrom: "translate-x-full",
             enterTo: "translate-x-0",
@@ -2560,28 +4321,24 @@ function Footer({
   return /* @__PURE__ */ jsx6("footer", { className: "bg-black text-white", children: /* @__PURE__ */ jsxs5("div", { className: "max-w-7xl mx-auto px-6 py-12", children: [
     /* @__PURE__ */ jsxs5("div", { className: "grid grid-cols-2 md:grid-cols-6 gap-8", children: [
       /* @__PURE__ */ jsx6("div", { className: "col-span-2", children: /* @__PURE__ */ jsxs5("h2", { className: "text-xl font-bold mb-6", children: [
-        /* @__PURE__ */ jsx6("span", { className: "text-primary", children: "JINGQO" }),
+        /* @__PURE__ */ jsx6("span", { className: "text-primary", children: "TAI" }),
         /* @__PURE__ */ jsx6("span", { className: "text-gray-300", children: "Sourcing" })
       ] }) }),
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "MAIN MENU" }),
         /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
           /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Home" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/products", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Our Products" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/about", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "About Jingsourcing" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/products", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Products" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/about", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "About Us" }) }),
           /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/payment-information", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Payment Information" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Information" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Sourcing Tutorial" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Payment Tutorial" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Visit Yiwu" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Our Blog" }) })
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Information" }) })
         ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "OUR SERVICE" }),
         /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/services", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Sourcing & Purchasing" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Dropshipping Service" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/services", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Purchasing Service" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "/services", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Dropshipping Service" }) }),
           /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Extra Service" }) }),
           /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Who We Support" }) })
         ] })
@@ -2589,27 +4346,22 @@ function Footer({
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "OUR SOLUTIONS" }),
         /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Private Label" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Product Development" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Solution" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Amazon FBA" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Shipping Solutions" }) }),
           /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Quality Control" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Credit Payment Terms" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Graphic Design" }) }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Affiliates Program" }) })
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Private Label" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "#", className: "text-gray-500 hover:text-primary text-sm transition-colors", children: "Amazon FBA" }) })
         ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
         /* @__PURE__ */ jsx6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-4", children: "CONTACT US" }),
         /* @__PURE__ */ jsxs5("ul", { className: "space-y-3", children: [
           /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm", children: "Email:" }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "mailto:info@jingsourcing.com", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "info@jingsourcing.com" }) }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "mailto:info@Taisourcing@gmail.com", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "info@Taisourcing@gmail.com" }) }),
           /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-3", children: "Tel:" }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "tel:+18653018888", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+1 865 301 8888" }) }),
-          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "(Call from outside China)" }),
-          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-3", children: "Tel:" }),
-          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "tel:+864009966066", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+86 400 996 6066" }) }),
-          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "(Call from China)" })
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "tel:+8617793529591", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+86 17793529591" }) }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-400 text-sm", children: "(Call from China)" }),
+          /* @__PURE__ */ jsx6("li", { className: "text-gray-500 text-sm mt-3", children: "WhatsApp:" }),
+          /* @__PURE__ */ jsx6("li", { children: /* @__PURE__ */ jsx6("a", { href: "https://wa.me/8617793529591", className: "text-gray-400 hover:text-primary text-sm transition-colors", children: "+86 17793529591" }) })
         ] })
       ] }),
       /* @__PURE__ */ jsxs5("div", { children: [
@@ -2623,7 +4375,7 @@ function Footer({
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ jsx6("div", { className: "mt-8 pt-8 border-t border-gray-800", children: /* @__PURE__ */ jsx6("div", { className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0", children: /* @__PURE__ */ jsx6("p", { className: "text-gray-500 text-sm", children: "Copyright 2026 | All Rights Reserved | Powered by Jingsourcing" }) }) })
+    /* @__PURE__ */ jsx6("div", { className: "mt-8 pt-8 border-t border-gray-800", children: /* @__PURE__ */ jsx6("div", { className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0", children: /* @__PURE__ */ jsx6("p", { className: "text-gray-500 text-sm", children: "Copyright 2026 | All Rights Reserved | Powered by Tai Sourcing" }) }) })
   ] }) });
 }
 
@@ -2696,7 +4448,7 @@ async function loader({ request, params, context }) {
   return json(loaderData, { headers: activeCustomer._headers });
 }
 function App() {
-  let [open, setOpen] = useState2(!1), loaderData = useLoaderData2(), { collections } = loaderData, { locale } = useLoaderData2(), { i18n } = useTranslation6(), {
+  let [open, setOpen] = useState3(!1), loaderData = useLoaderData(), { collections } = loaderData, { locale } = useLoaderData(), { i18n } = useTranslation6(), {
     activeOrderFetcher,
     activeOrder,
     adjustOrderLine: adjustOrderLine2,
@@ -3000,7 +4752,7 @@ gql5`
 `;
 
 // app/routes/checkout.confirmation.$orderCode.tsx
-import { useLoaderData as useLoaderData3 } from "@remix-run/react";
+import { useLoaderData as useLoaderData2 } from "@remix-run/react";
 
 // app/components/cart/CartTotals.tsx
 import { useTranslation as useTranslation7 } from "react-i18next";
@@ -3045,7 +4797,7 @@ function CartTotals({ order }) {
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/outline";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import { useRevalidator } from "@remix-run/react";
-import { useEffect as useEffect5, useState as useState3 } from "react";
+import { useEffect as useEffect5, useState as useState4 } from "react";
 import { useTranslation as useTranslation8 } from "react-i18next";
 import { jsx as jsx9, jsxs as jsxs8 } from "react/jsx-runtime";
 async function loader2({ params, request }) {
@@ -3062,7 +4814,7 @@ async function loader2({ params, request }) {
   }
 }
 function CheckoutConfirmation() {
-  let { order, error } = useLoaderData3(), revalidator = useRevalidator(), [retries, setRetries] = useState3(1), { t } = useTranslation8(), orderNotFound = !order && !error, orderErrored = !order && error, maxRetries = 5, retriesExhausted = retries >= maxRetries, retryTimeout = 2500, retry = () => {
+  let { order, error } = useLoaderData2(), revalidator = useRevalidator(), [retries, setRetries] = useState4(1), { t } = useTranslation8(), orderNotFound = !order && !error, orderErrored = !order && error, maxRetries = 5, retriesExhausted = retries >= maxRetries, retryTimeout = 2500, retry = () => {
     window && (setRetries(retries + 1), window.setTimeout(() => {
       retries > maxRetries || revalidator.revalidate();
     }, retryTimeout));
@@ -3120,7 +4872,7 @@ __export(account_addresses_addressId_exports, {
 });
 import {
   useActionData,
-  useLoaderData as useLoaderData4,
+  useLoaderData as useLoaderData3,
   useNavigate,
   useSubmit,
   useNavigation
@@ -3173,13 +4925,13 @@ var ModalContext = createContext(null), ModalProvider = ({ children, close }) =>
 
 // app/components/modal/Modal.tsx
 import clsx2 from "clsx";
-import { Fragment as Fragment3 } from "react";
+import { Fragment as Fragment4 } from "react";
 import { jsx as jsx12, jsxs as jsxs9 } from "react/jsx-runtime";
-var Modal = ({ isOpen, close, size = "medium", children, afterClose, afterOpen }) => /* @__PURE__ */ jsx12(Transition2, { appear: !0, show: isOpen, as: Fragment3, children: /* @__PURE__ */ jsxs9(Dialog2, { as: "div", className: "relative z-[75]", onClose: close, children: [
+var Modal = ({ isOpen, close, size = "medium", children, afterClose, afterOpen }) => /* @__PURE__ */ jsx12(Transition2, { appear: !0, show: isOpen, as: Fragment4, children: /* @__PURE__ */ jsxs9(Dialog2, { as: "div", className: "relative z-[75]", onClose: close, children: [
   /* @__PURE__ */ jsx12(
     Transition2.Child,
     {
-      as: Fragment3,
+      as: Fragment4,
       enter: "ease-out duration-300",
       enterFrom: "opacity-0",
       enterTo: "opacity-100",
@@ -3194,7 +4946,7 @@ var Modal = ({ isOpen, close, size = "medium", children, afterClose, afterOpen }
   /* @__PURE__ */ jsx12("div", { className: "fixed inset-0 overflow-y-auto", children: /* @__PURE__ */ jsx12("div", { className: "flex min-h-full items-center justify-center p-4 text-center", children: /* @__PURE__ */ jsx12(
     Transition2.Child,
     {
-      as: Fragment3,
+      as: Fragment4,
       enter: "ease-out duration-300",
       enterFrom: "opacity-0 scale-95",
       enterTo: "opacity-100 scale-100",
@@ -3256,9 +5008,9 @@ function HighlightedButton({ isSubmitting = !1, ...props }) {
 }
 
 // app/utils/use-toggle-state.tsx
-import { useState as useState4 } from "react";
+import { useState as useState5 } from "react";
 var useToggleState = (initialState = !1) => {
-  let [state, setState] = useState4(initialState), close = () => {
+  let [state, setState] = useState5(initialState), close = () => {
     setState(!1);
   }, open = () => {
     setState(!0);
@@ -3897,7 +5649,7 @@ async function action({ request, params }) {
   });
 }
 function EditAddress() {
-  let { address, availableCountries } = useLoaderData4(), actionData = useActionData(), navigation = useNavigation(), navigate = useNavigate(), { state, close } = use_toggle_state_default(!0), formRef = useRef(null), { t } = useTranslation11(), submit = useSubmit();
+  let { address, availableCountries } = useLoaderData3(), actionData = useActionData(), navigation = useNavigation(), navigate = useNavigate(), { state, close } = use_toggle_state_default(!0), formRef = useRef(null), { t } = useTranslation11(), submit = useSubmit();
   useEffect6(() => {
     actionData?.saved && close();
   }, [actionData]);
@@ -3940,7 +5692,7 @@ __export(verify_email_address_change_exports, {
   loader: () => loader4
 });
 import { useEffect as useEffect7, useRef as useRef2 } from "react";
-import { useLoaderData as useLoaderData5, useSearchParams } from "@remix-run/react";
+import { useLoaderData as useLoaderData4, useSearchParams } from "@remix-run/react";
 import { redirect as redirect2 } from "@remix-run/server-runtime";
 import { CheckCircleIcon as CheckCircleIcon2, XCircleIcon as XCircleIcon2 } from "@heroicons/react/24/outline";
 import { useTranslation as useTranslation12 } from "react-i18next";
@@ -3962,7 +5714,7 @@ async function action2({ request }) {
   return redirect2(redirectTarget);
 }
 function VerifyEmailAddressChangeTokenPage() {
-  let [searchParams] = useSearchParams(), result = useLoaderData5(), btnRef = useRef2(null), { t } = useTranslation12();
+  let [searchParams] = useSearchParams(), result = useLoaderData4(), btnRef = useRef2(null), { t } = useTranslation12();
   return useEffect7(() => {
     if (!result.success || !btnRef.current)
       return;
@@ -4016,7 +5768,7 @@ __export(account_addresses_new_exports, {
 });
 import {
   useActionData as useActionData2,
-  useLoaderData as useLoaderData6,
+  useLoaderData as useLoaderData5,
   useNavigate as useNavigate2,
   useNavigation as useNavigation2,
   useSubmit as useSubmit2
@@ -4053,7 +5805,7 @@ async function action3({ request, params }) {
   });
 }
 function NewAddress() {
-  let { availableCountries } = useLoaderData6(), navigation = useNavigation2(), actionData = useActionData2(), navigate = useNavigate2(), { state, close } = use_toggle_state_default(!0), { t } = useTranslation13(), formRef = useRef3(null), submit = useSubmit2();
+  let { availableCountries } = useLoaderData5(), navigation = useNavigation2(), actionData = useActionData2(), navigate = useNavigate2(), { state, close } = use_toggle_state_default(!0), { t } = useTranslation13(), formRef = useRef3(null), submit = useSubmit2();
   useEffect8(() => {
     actionData?.saved && close();
   }, [actionData]);
@@ -4176,17 +5928,17 @@ __export(account_addresses_exports, {
   default: () => AccountAddresses,
   loader: () => loader6
 });
-import { Outlet as Outlet2, useLoaderData as useLoaderData7 } from "@remix-run/react";
+import { Outlet as Outlet2, useLoaderData as useLoaderData6 } from "@remix-run/react";
 import { json as json4 } from "@remix-run/server-runtime";
 
 // app/components/account/AddAddressCard.tsx
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { Link as Link5 } from "@remix-run/react";
 import { useTranslation as useTranslation14 } from "react-i18next";
-import { Fragment as Fragment4, jsx as jsx22, jsxs as jsxs18 } from "react/jsx-runtime";
+import { Fragment as Fragment5, jsx as jsx22, jsxs as jsxs18 } from "react/jsx-runtime";
 function AddAddressCard() {
   let { t } = useTranslation14();
-  return /* @__PURE__ */ jsx22(Fragment4, { children: /* @__PURE__ */ jsxs18(
+  return /* @__PURE__ */ jsx22(Fragment5, { children: /* @__PURE__ */ jsxs18(
     Link5,
     {
       preventScrollReset: !0,
@@ -4210,7 +5962,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link as Link6, useFetcher as useFetcher2 } from "@remix-run/react";
 import clsx6 from "clsx";
-import { useState as useState5 } from "react";
+import { useState as useState6 } from "react";
 
 // app/components/ErrorMessage.tsx
 import { XCircleIcon as XCircleIcon3 } from "@heroicons/react/24/solid";
@@ -4230,13 +5982,13 @@ function ErrorMessage({
 
 // app/components/account/EditAddressCard.tsx
 import { useTranslation as useTranslation15 } from "react-i18next";
-import { Fragment as Fragment5, jsx as jsx24, jsxs as jsxs20 } from "react/jsx-runtime";
+import { Fragment as Fragment6, jsx as jsx24, jsxs as jsxs20 } from "react/jsx-runtime";
 function EditAddressCard({
   address,
   isActive = !1
 }) {
-  let setShipping = useFetcher2(), setBilling = useFetcher2(), deleteAddress = useFetcher2(), [isDeleteModalVisible, setDeleteModalVisible] = useState5(!1), { t } = useTranslation15();
-  return /* @__PURE__ */ jsxs20(Fragment5, { children: [
+  let setShipping = useFetcher2(), setBilling = useFetcher2(), deleteAddress = useFetcher2(), [isDeleteModalVisible, setDeleteModalVisible] = useState6(!1), { t } = useTranslation15();
+  return /* @__PURE__ */ jsxs20(Fragment6, { children: [
     /* @__PURE__ */ jsx24(
       Modal_default,
       {
@@ -4317,7 +6069,7 @@ function EditAddressCard({
               /* @__PURE__ */ jsx24("span", { className: "block text-sm font-medium", children: t("common.default") }),
               /* @__PURE__ */ jsxs20("span", { className: "block text-xs mt-1", children: [
                 address.defaultShippingAddress && t("common.shipping"),
-                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxs20(Fragment5, { children: [
+                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxs20(Fragment6, { children: [
                   /* @__PURE__ */ jsx24("br", {}),
                   "&\xA0"
                 ] }),
@@ -4401,7 +6153,7 @@ function EditAddressCard({
 }
 
 // app/routes/account.addresses.tsx
-import { Fragment as Fragment6, jsx as jsx25, jsxs as jsxs21 } from "react/jsx-runtime";
+import { Fragment as Fragment7, jsx as jsx25, jsxs as jsxs21 } from "react/jsx-runtime";
 async function loader6({ request }) {
   let activeCustomerAddresses = (await getActiveCustomerAddresses({ request })).activeCustomer;
   return json4({ activeCustomerAddresses });
@@ -4439,8 +6191,8 @@ async function action4({ request }) {
   );
 }
 function AccountAddresses() {
-  let { activeCustomerAddresses } = useLoaderData7();
-  return /* @__PURE__ */ jsxs21(Fragment6, { children: [
+  let { activeCustomerAddresses } = useLoaderData6();
+  return /* @__PURE__ */ jsxs21(Fragment7, { children: [
     /* @__PURE__ */ jsx25(Outlet2, {}),
     /* @__PURE__ */ jsx25("div", { className: "w-full", children: /* @__PURE__ */ jsxs21("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 mt-4", children: [
       /* @__PURE__ */ jsx25(AddAddressCard, {}),
@@ -4457,8 +6209,8 @@ __export(collections_slug_exports, {
   loader: () => loader7,
   meta: () => meta2
 });
-import { useLoaderData as useLoaderData8, useSubmit as useSubmit3 } from "@remix-run/react";
-import { useRef as useRef5, useState as useState6 } from "react";
+import { useLoaderData as useLoaderData7, useSubmit as useSubmit3 } from "@remix-run/react";
+import { useRef as useRef5, useState as useState7 } from "react";
 import { useTranslation as useTranslation22 } from "react-i18next";
 import { ValidatedForm as ValidatedForm2 } from "remix-validated-form";
 
@@ -4587,21 +6339,21 @@ function FiltersButton({
 }
 
 // app/components/facet-filter/FacetFilterControls.tsx
-import { Fragment as Fragment7 } from "react";
+import { Fragment as Fragment8 } from "react";
 import { Dialog as Dialog3, Disclosure, Transition as Transition3 } from "@headlessui/react";
 import { XMarkIcon as XMarkIcon3 } from "@heroicons/react/24/outline";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/solid";
 import { useSearchParams as useSearchParams2 } from "@remix-run/react";
 import { useTranslation as useTranslation18 } from "react-i18next";
-import { Fragment as Fragment8, jsx as jsx29, jsxs as jsxs25 } from "react/jsx-runtime";
+import { Fragment as Fragment9, jsx as jsx29, jsxs as jsxs25 } from "react/jsx-runtime";
 function FacetFilterControls({
   facetFilterTracker,
   mobileFiltersOpen,
   setMobileFiltersOpen
 }) {
   let [searchParams] = useSearchParams2(), q = searchParams.getAll("q"), { t } = useTranslation18();
-  return /* @__PURE__ */ jsxs25(Fragment8, { children: [
-    /* @__PURE__ */ jsx29(Transition3.Root, { show: mobileFiltersOpen, as: Fragment7, children: /* @__PURE__ */ jsxs25(
+  return /* @__PURE__ */ jsxs25(Fragment9, { children: [
+    /* @__PURE__ */ jsx29(Transition3.Root, { show: mobileFiltersOpen, as: Fragment8, children: /* @__PURE__ */ jsxs25(
       Dialog3,
       {
         as: "div",
@@ -4611,7 +6363,7 @@ function FacetFilterControls({
           /* @__PURE__ */ jsx29(
             Transition3.Child,
             {
-              as: Fragment7,
+              as: Fragment8,
               enter: "transition-opacity ease-linear duration-300",
               enterFrom: "opacity-0",
               enterTo: "opacity-100",
@@ -4624,7 +6376,7 @@ function FacetFilterControls({
           /* @__PURE__ */ jsx29("div", { className: "fixed inset-0 flex z-40", children: /* @__PURE__ */ jsx29(
             Transition3.Child,
             {
-              as: Fragment7,
+              as: Fragment8,
               enter: "transition ease-in-out duration-300 transform",
               enterFrom: "translate-x-full",
               enterTo: "translate-x-0",
@@ -4655,7 +6407,7 @@ function FacetFilterControls({
                       as: "div",
                       defaultOpen: !0,
                       className: "border-t border-gray-200 px-4 py-6",
-                      children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment8, { children: [
+                      children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment9, { children: [
                         /* @__PURE__ */ jsx29("h3", { className: "-mx-2 -my-3 flow-root", children: /* @__PURE__ */ jsxs25(Disclosure.Button, { className: "px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500", children: [
                           /* @__PURE__ */ jsx29("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
                           /* @__PURE__ */ jsx29("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx29(
@@ -4723,7 +6475,7 @@ function FacetFilterControls({
           as: "div",
           defaultOpen: !0,
           className: "border-b border-gray-200 py-6",
-          children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment8, { children: [
+          children: ({ open }) => /* @__PURE__ */ jsxs25(Fragment9, { children: [
             /* @__PURE__ */ jsx29("h3", { className: "-my-3 flow-root", children: /* @__PURE__ */ jsxs25(Disclosure.Button, { className: "py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500", children: [
               /* @__PURE__ */ jsx29("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }),
               /* @__PURE__ */ jsx29("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsx29(
@@ -5202,7 +6954,7 @@ async function loader7({ params, request, context }) {
   };
 }
 function CollectionSlug() {
-  let loaderData = useLoaderData8(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState6(!1);
+  let loaderData = useLoaderData7(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState7(!1);
   useRef5(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
@@ -5280,7 +7032,7 @@ __export(account_password_exports, {
 import { PencilIcon as PencilIcon2 } from "@heroicons/react/24/outline";
 import { useActionData as useActionData3, useNavigation as useNavigation4 } from "@remix-run/react";
 import { json as json5 } from "@remix-run/server-runtime";
-import { useEffect as useEffect9, useRef as useRef6, useState as useState7 } from "react";
+import { useEffect as useEffect9, useRef as useRef6, useState as useState8 } from "react";
 import { ValidatedForm as ValidatedForm3, validationError as validationError3 } from "remix-validated-form";
 import { z as z3 } from "zod";
 
@@ -5310,7 +7062,7 @@ function isValidationErrorResponseData(input) {
 
 // app/routes/account.password.tsx
 import { useTranslation as useTranslation23 } from "react-i18next";
-import { Fragment as Fragment9, jsx as jsx36, jsxs as jsxs32 } from "react/jsx-runtime";
+import { Fragment as Fragment10, jsx as jsx36, jsxs as jsxs32 } from "react/jsx-runtime";
 var validator3 = withZod(
   z3.object({
     currentPassword: z3.string().min(1, { message: "Password is required" }),
@@ -5335,7 +7087,7 @@ async function action5({ request }) {
   return res.__typename !== "Success" ? json5(res, { status: 401 }) : json5(res);
 }
 function AccountPassword() {
-  let [editing, setEditing] = useState7(!1), [isSaved, setIsSaved] = useState7(!1), [errorMessage, setErrorMessage] = useState7(), actionDataHook = useActionData3(), { state } = useNavigation4(), formRef = useRef6(null), { t } = useTranslation23();
+  let [editing, setEditing] = useState8(!1), [isSaved, setIsSaved] = useState8(!1), [errorMessage, setErrorMessage] = useState8(), actionDataHook = useActionData3(), { state } = useNavigation4(), formRef = useRef6(null), { t } = useTranslation23();
   return useEffect9(() => {
     if (!isValidationErrorResponseData(actionDataHook)) {
       if (isErrorResult(actionDataHook)) {
@@ -5345,7 +7097,7 @@ function AccountPassword() {
       actionDataHook?.success && (setErrorMessage(void 0), setIsSaved(!0), setEditing(!1), formRef.current?.reset());
     }
   }, [actionDataHook]), /* @__PURE__ */ jsx36(ValidatedForm3, { validator: validator3, method: "post", formRef, children: /* @__PURE__ */ jsxs32("div", { className: "p-4 space-y-4", children: [
-    editing && /* @__PURE__ */ jsxs32(Fragment9, { children: [
+    editing && /* @__PURE__ */ jsxs32(Fragment10, { children: [
       /* @__PURE__ */ jsx36("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: /* @__PURE__ */ jsx36("div", { children: /* @__PURE__ */ jsx36(
         Input,
         {
@@ -5400,7 +7152,7 @@ function AccountPassword() {
         }
       ),
       /* @__PURE__ */ jsx36(Button, { type: "reset", onClick: () => setEditing(!1), children: t("common.cancel") })
-    ] }) : /* @__PURE__ */ jsx36(Fragment9, { children: /* @__PURE__ */ jsxs32(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
+    ] }) : /* @__PURE__ */ jsx36(Fragment10, { children: /* @__PURE__ */ jsxs32(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
       /* @__PURE__ */ jsx36(PencilIcon2, { className: "w-4 h-4" }),
       " ",
       t("account.changePassword")
@@ -5543,7 +7295,7 @@ __export(checkout_payment_exports, {
   loader: () => loader9
 });
 import { json as json7, redirect as redirect4 } from "@remix-run/server-runtime";
-import { useLoaderData as useLoaderData9, useOutletContext } from "@remix-run/react";
+import { useLoaderData as useLoaderData8, useOutletContext } from "@remix-run/react";
 
 // app/components/checkout/stripe/StripePayments.tsx
 import { Elements } from "@stripe/react-stripe-js";
@@ -5662,13 +7414,13 @@ function DummyPayments({
 }
 
 // app/components/checkout/braintree/BraintreePayments.tsx
-import { useEffect as useEffect10, useState as useState8 } from "react";
+import { useEffect as useEffect10, useState as useState9 } from "react";
 import dropin from "braintree-web-drop-in";
 import { useSubmit as useSubmit4 } from "@remix-run/react";
 import { useTranslation as useTranslation26 } from "react-i18next";
 import { jsx as jsx40, jsxs as jsxs35 } from "react/jsx-runtime";
 function BraintreeDropIn(props) {
-  let { show, authorization, fullAmount, currencyCode } = props, { t } = useTranslation26(), [braintreeInstance, setBraintreeInstance] = useState8(), [enablePaymentButton, setEnablePaymentButton] = useState8(), [processing, setProcessing] = useState8(!1), submit = useSubmit4(), submitPayment = async () => {
+  let { show, authorization, fullAmount, currencyCode } = props, { t } = useTranslation26(), [braintreeInstance, setBraintreeInstance] = useState9(), [enablePaymentButton, setEnablePaymentButton] = useState9(), [processing, setProcessing] = useState9(!1), submit = useSubmit4(), submitPayment = async () => {
     if (setProcessing(!0), braintreeInstance)
       try {
         let result = await braintreeInstance.requestPaymentMethod(), formData = new FormData();
@@ -5891,7 +7643,7 @@ function CheckoutPayment() {
     brainTreeKey,
     brainTreeError,
     error
-  } = useLoaderData9(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
+  } = useLoaderData8(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
   return /* @__PURE__ */ jsx42("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
     (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsx42("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxs37("div", { children: [
       /* @__PURE__ */ jsx42("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }),
@@ -5948,11 +7700,11 @@ __export(account_history_exports, {
   default: () => AccountHistory,
   loader: () => loader10
 });
-import { useLoaderData as useLoaderData10, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
+import { useLoaderData as useLoaderData9, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
 import { json as json8, redirect as redirect5 } from "@remix-run/server-runtime";
 
 // app/components/account/OrderHistoryItem.tsx
-import { useState as useState9 } from "react";
+import { useState as useState10 } from "react";
 
 // app/components/account/OrderStateBadge.tsx
 import { useTranslation as useTranslation29 } from "react-i18next";
@@ -5998,16 +7750,16 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
 import { Link as Link10 } from "@remix-run/react";
 import { useTranslation as useTranslation30 } from "react-i18next";
-import { Fragment as Fragment10, jsx as jsx44, jsxs as jsxs38 } from "react/jsx-runtime";
+import { Fragment as Fragment11, jsx as jsx44, jsxs as jsxs38 } from "react/jsx-runtime";
 function OrderHistoryItem({
   order,
   isInitiallyExpanded = !1,
   areDetailsInitiallyExpanded = !1,
   className
 }) {
-  let [isExpanded, setIsExpanded] = useState9(isInitiallyExpanded), [areDetailsExpanded, setAreDetailsExpanded] = useState9(
+  let [isExpanded, setIsExpanded] = useState10(isInitiallyExpanded), [areDetailsExpanded, setAreDetailsExpanded] = useState10(
     areDetailsInitiallyExpanded
-  ), [isLineCalcExpanded, setIsLineCalcExpanded] = useState9(!1), { t } = useTranslation30();
+  ), [isLineCalcExpanded, setIsLineCalcExpanded] = useState10(!1), { t } = useTranslation30();
   return /* @__PURE__ */ jsxs38("div", { className: `border rounded-lg overflow-hidden ${className}`, children: [
     /* @__PURE__ */ jsxs38(
       "div",
@@ -6117,7 +7869,7 @@ function OrderHistoryItem({
                   className: "inline-flex gap-2 items-center w-fit text-gray-500 text-sm mt-1",
                   onClick: () => setIsLineCalcExpanded(!isLineCalcExpanded),
                   children: [
-                    isLineCalcExpanded && /* @__PURE__ */ jsxs38(Fragment10, { children: [
+                    isLineCalcExpanded && /* @__PURE__ */ jsxs38(Fragment11, { children: [
                       /* @__PURE__ */ jsx44("span", { title: t("common.quantity"), children: line.quantity }),
                       /* @__PURE__ */ jsx44("span", { className: "text-gray-300 select-none", children: "\xD7" }),
                       /* @__PURE__ */ jsx44("span", { title: "Price per unit", children: /* @__PURE__ */ jsx44(
@@ -6311,7 +8063,7 @@ async function loader10({ request }) {
   }) : redirect5("/sign-in");
 }
 function AccountHistory() {
-  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData10(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
+  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData9(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
     appliedPaginationPage,
     appliedPaginationLimit
   ), showingOrdersTo = translatePaginationTo(
@@ -6371,11 +8123,11 @@ __export(checkout_index_exports, {
   default: () => CheckoutShipping,
   loader: () => loader11
 });
-import { useState as useState10, useRef as useRef7 } from "react";
+import { useState as useState11, useRef as useRef7 } from "react";
 import { LockClosedIcon } from "@heroicons/react/24/solid";
 import {
   Form as Form4,
-  useLoaderData as useLoaderData11,
+  useLoaderData as useLoaderData10,
   useNavigate as useNavigate3,
   useOutletContext as useOutletContext2
 } from "@remix-run/react";
@@ -6618,7 +8370,7 @@ function AddressForm({
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation33 } from "react-i18next";
-import { Fragment as Fragment11, jsx as jsx47, jsxs as jsxs41 } from "react/jsx-runtime";
+import { Fragment as Fragment12, jsx as jsx47, jsxs as jsxs41 } from "react/jsx-runtime";
 function ShippingMethodSelector({
   eligibleShippingMethods,
   currencyCode,
@@ -6637,7 +8389,7 @@ function ShippingMethodSelector({
           active ? "ring-2 ring-primary-500" : "",
           "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
         ),
-        children: ({ checked, active }) => /* @__PURE__ */ jsxs41(Fragment11, { children: [
+        children: ({ checked, active }) => /* @__PURE__ */ jsxs41(Fragment12, { children: [
           /* @__PURE__ */ jsx47("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs41("span", { className: "flex flex-col", children: [
             /* @__PURE__ */ jsx47(
               RadioGroup.Label,
@@ -6690,7 +8442,7 @@ function ShippingMethodSelector({
 // app/components/checkout/ShippingAddressSelector.tsx
 import { RadioGroup as RadioGroup2 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/24/solid";
-import { Fragment as Fragment12, jsx as jsx48, jsxs as jsxs42 } from "react/jsx-runtime";
+import { Fragment as Fragment13, jsx as jsx48, jsxs as jsxs42 } from "react/jsx-runtime";
 function ShippingAddressSelector({
   addresses,
   selectedAddressIndex,
@@ -6705,7 +8457,7 @@ function ShippingAddressSelector({
         active ? "ring-2 ring-primary-500" : "",
         "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
       ),
-      children: ({ checked, active }) => /* @__PURE__ */ jsxs42(Fragment12, { children: [
+      children: ({ checked, active }) => /* @__PURE__ */ jsxs42(Fragment13, { children: [
         /* @__PURE__ */ jsx48("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxs42("span", { className: "flex flex-col", children: [
           /* @__PURE__ */ jsxs42(
             RadioGroup2.Label,
@@ -6791,7 +8543,7 @@ async function loader11({ request }) {
   }
 }
 function CheckoutShipping() {
-  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData11(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState10(!1), [addressFormChanged, setAddressFormChanged] = useState10(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState10(0), [isSubmitting, setIsSubmitting] = useState10(!1), customerFormRef = useRef7(null), addressFormRef = useRef7(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
+  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData10(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState11(!1), [addressFormChanged, setAddressFormChanged] = useState11(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState11(0), [isSubmitting, setIsSubmitting] = useState11(!1), customerFormRef = useRef7(null), addressFormRef = useRef7(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
     if (!customerFormRef.current)
       return;
     let formData = new FormData(customerFormRef.current), { emailAddress, firstName, lastName } = Object.fromEntries(
@@ -7067,13 +8819,13 @@ __export(account_index_exports, {
   validator: () => validator4
 });
 import { CheckIcon as CheckIcon2, PencilIcon as PencilIcon3, XMarkIcon as XMarkIcon4 } from "@heroicons/react/24/outline";
-import { useActionData as useActionData5, useLoaderData as useLoaderData12, useNavigation as useNavigation7 } from "@remix-run/react";
+import { useActionData as useActionData5, useLoaderData as useLoaderData11, useNavigation as useNavigation7 } from "@remix-run/react";
 import { json as json10, redirect as redirect8 } from "@remix-run/server-runtime";
-import { useEffect as useEffect11, useRef as useRef8, useState as useState11 } from "react";
+import { useEffect as useEffect11, useRef as useRef8, useState as useState12 } from "react";
 import { ValidatedForm as ValidatedForm5, validationError as validationError4 } from "remix-validated-form";
 import { z as z4 } from "zod";
 import { useTranslation as useTranslation36 } from "react-i18next";
-import { Fragment as Fragment13, jsx as jsx51, jsxs as jsxs45 } from "react/jsx-runtime";
+import { Fragment as Fragment14, jsx as jsx51, jsxs as jsxs45 } from "react/jsx-runtime";
 var validator4 = withZod(
   z4.object({
     title: z4.string(),
@@ -7138,7 +8890,7 @@ async function action9({ request }) {
   return formError({ message: "No valid form intent" }, { status: 401 });
 }
 function AccountDetails() {
-  let { activeCustomer } = useLoaderData12(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState11(), [emailSavedResponse, setEmailSavedResponse] = useState11(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState11(!1), emailInputRef = useRef8(null), formRef = useRef8(null);
+  let { activeCustomer } = useLoaderData11(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState12(), [emailSavedResponse, setEmailSavedResponse] = useState12(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState12(!1), emailInputRef = useRef8(null), formRef = useRef8(null);
   return useEffect11(() => {
     if (actionDataHook) {
       if (isEmailSavedResponse(actionDataHook)) {
@@ -7156,7 +8908,7 @@ function AccountDetails() {
     }
   }, [actionDataHook]), useEffect11(() => {
     formRef.current?.reset();
-  }, [isEditing]), /* @__PURE__ */ jsxs45(Fragment13, { children: [
+  }, [isEditing]), /* @__PURE__ */ jsxs45(Fragment14, { children: [
     /* @__PURE__ */ jsx51(
       Modal_default,
       {
@@ -7278,7 +9030,7 @@ function AccountDetails() {
                   className: "sm:w-1/4"
                 }
               ) }),
-              isEditing ? /* @__PURE__ */ jsxs45(Fragment13, { children: [
+              isEditing ? /* @__PURE__ */ jsxs45(Fragment14, { children: [
                 /* @__PURE__ */ jsx51("div", { children: /* @__PURE__ */ jsx51(
                   Input,
                   {
@@ -7303,7 +9055,7 @@ function AccountDetails() {
                 /* @__PURE__ */ jsx51("h3", { className: "text-sm text-gray-500", children: t("account.phoneNumber") }),
                 replaceEmptyString(phoneNumber)
               ] }) }),
-              /* @__PURE__ */ jsx51("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxs45(Fragment13, { children: [
+              /* @__PURE__ */ jsx51("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxs45(Fragment14, { children: [
                 formError && formError.intent === "updateDetails" /* UpdateDetails */ && /* @__PURE__ */ jsx51(
                   ErrorMessage,
                   {
@@ -7360,9 +9112,9 @@ __export(products_slug_exports, {
   shouldRevalidate: () => shouldRevalidate2
 });
 import { json as json11 } from "@remix-run/server-runtime";
-import { useState as useState12 } from "react";
+import { useState as useState13 } from "react";
 import {
-  useLoaderData as useLoaderData13,
+  useLoaderData as useLoaderData12,
   useOutletContext as useOutletContext3
 } from "@remix-run/react";
 import { CheckIcon as CheckIcon3, HeartIcon, PhotoIcon } from "@heroicons/react/24/solid";
@@ -7577,18 +9329,18 @@ async function loader13({ params, request }) {
 }
 var shouldRevalidate2 = () => !0;
 function ProductSlug() {
-  let { product, error } = useLoaderData13(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
+  let { product, error } = useLoaderData12(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
   if (!product)
     return /* @__PURE__ */ jsx56("div", { children: t("product.notFound") });
-  let findVariantById = (id) => product.variants.find((v) => v.id === id), [selectedVariantId, setSelectedVariantId] = useState12(
+  let findVariantById = (id) => product.variants.find((v) => v.id === id), [selectedVariantId, setSelectedVariantId] = useState13(
     product.variants[0].id
   ), selectedVariant = findVariantById(selectedVariantId);
   selectedVariant || setSelectedVariantId(product.variants[0].id);
   let qtyInCart = activeOrder?.lines.find((l) => l.productVariant.id === selectedVariantId)?.quantity ?? 0, asset = product.assets[0], brandName = product.facetValues.find(
     (fv) => fv.facet.code === "brand"
-  )?.name, [featuredAsset, setFeaturedAsset] = useState12(
+  )?.name, [featuredAsset, setFeaturedAsset] = useState13(
     selectedVariant?.featuredAsset
-  ), [isFavorite, setIsFavorite] = useState12(!1);
+  ), [isFavorite, setIsFavorite] = useState13(!1);
   return /* @__PURE__ */ jsxs48("div", { children: [
     /* @__PURE__ */ jsxs48("div", { className: "max-w-6xl mx-auto px-4", children: [
       /* @__PURE__ */ jsx56("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: product.name }),
@@ -7866,7 +9618,7 @@ var EMAIL_REGEX = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, validateRegi
 
 // app/routes/sign-up.index.tsx
 import { useTranslation as useTranslation40 } from "react-i18next";
-import { Fragment as Fragment14, jsx as jsx58, jsxs as jsxs50 } from "react/jsx-runtime";
+import { Fragment as Fragment15, jsx as jsx58, jsxs as jsxs50 } from "react/jsx-runtime";
 async function action10({ request }) {
   if (API_URL === DEMO_API_URL)
     return {
@@ -7887,7 +9639,7 @@ async function action10({ request }) {
 }
 function SignUpPage() {
   let [searchParams] = useSearchParams3(), formErrors = useActionData6(), { t } = useTranslation40();
-  return /* @__PURE__ */ jsx58(Fragment14, { children: /* @__PURE__ */ jsxs50("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+  return /* @__PURE__ */ jsx58(Fragment15, { children: /* @__PURE__ */ jsxs50("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
     /* @__PURE__ */ jsxs50("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
       /* @__PURE__ */ jsx58("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.create") }),
       /* @__PURE__ */ jsxs50("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
@@ -8726,7 +10478,7 @@ import {
   ShoppingBagIcon as ShoppingBagIcon2,
   UserCircleIcon
 } from "@heroicons/react/24/solid";
-import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData14 } from "@remix-run/react";
+import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData13 } from "@remix-run/react";
 import { json as json13, redirect as redirect12 } from "@remix-run/server-runtime";
 
 // app/components/tabs/Tab.tsx
@@ -8753,12 +10505,12 @@ function Tab({ Icon, text, to }) {
 }
 
 // app/components/tabs/TabsContainer.tsx
-import { Fragment as Fragment15, jsx as jsx64, jsxs as jsxs56 } from "react/jsx-runtime";
+import { Fragment as Fragment16, jsx as jsx64, jsxs as jsxs56 } from "react/jsx-runtime";
 function TabsContainer({
   tabs,
   children
 }) {
-  return /* @__PURE__ */ jsxs56(Fragment15, { children: [
+  return /* @__PURE__ */ jsxs56(Fragment16, { children: [
     /* @__PURE__ */ jsx64("div", { className: "border-b border-gray-200 mt-4", children: /* @__PURE__ */ jsx64("ul", { className: "gap-x-4 grid grid-cols-2 sm:grid-0 sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center text-gray-500", children: tabs.map((props) => /* @__PURE__ */ jsx64(
       Tab,
       {
@@ -8780,7 +10532,7 @@ async function loader16({ request }) {
   return activeCustomer ? json13({ activeCustomer }) : redirect12("/sign-in");
 }
 function AccountDashboard() {
-  let { activeCustomer } = useLoaderData14(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
+  let { activeCustomer } = useLoaderData13(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
     {
       Icon: UserCircleIcon,
       text: t("account.details"),
@@ -8834,7 +10586,7 @@ import { json as json14, redirect as redirect13 } from "@remix-run/server-runtim
 import { XCircleIcon as XCircleIcon7 } from "@heroicons/react/24/solid";
 import { ArrowPathIcon as ArrowPathIcon4 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation43 } from "react-i18next";
-import { Fragment as Fragment16, jsx as jsx66, jsxs as jsxs58 } from "react/jsx-runtime";
+import { Fragment as Fragment17, jsx as jsx66, jsxs as jsxs58 } from "react/jsx-runtime";
 async function action12({ params, request }) {
   let body = await request.formData(), email = body.get("email"), password = body.get("password");
   if (typeof email == "string" && typeof password == "string") {
@@ -8846,7 +10598,7 @@ async function action12({ params, request }) {
 }
 function SignInPage() {
   let [searchParams] = useSearchParams4(), login2 = useFetcher3(), { t } = useTranslation43();
-  return /* @__PURE__ */ jsx66(Fragment16, { children: /* @__PURE__ */ jsxs58("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+  return /* @__PURE__ */ jsx66(Fragment17, { children: /* @__PURE__ */ jsxs58("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
     /* @__PURE__ */ jsxs58("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
       /* @__PURE__ */ jsx66("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.signInTitle") }),
       /* @__PURE__ */ jsxs58("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
@@ -8996,8 +10748,8 @@ __export(search_exports, {
   default: () => Search,
   loader: () => loader17
 });
-import { useLoaderData as useLoaderData15, useSubmit as useSubmit6 } from "@remix-run/react";
-import { useRef as useRef10, useState as useState13 } from "react";
+import { useLoaderData as useLoaderData14, useSubmit as useSubmit6 } from "@remix-run/react";
+import { useRef as useRef10, useState as useState14 } from "react";
 import { ValidatedForm as ValidatedForm6 } from "remix-validated-form";
 import { useTranslation as useTranslation44 } from "react-i18next";
 import { jsx as jsx67, jsxs as jsxs59 } from "react/jsx-runtime";
@@ -9010,7 +10762,7 @@ var paginationLimitMinimumDefault3 = 25, allowedPaginationLimits3 = /* @__PURE__
   paginationLimitMinimumDefault3
 );
 function Search() {
-  let loaderData = useLoaderData15(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState13(!1);
+  let loaderData = useLoaderData14(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState14(!1);
   useRef10(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
@@ -9056,7 +10808,7 @@ __export(verify_exports, {
   loader: () => loader18
 });
 import { useEffect as useEffect13, useRef as useRef11 } from "react";
-import { useLoaderData as useLoaderData16, useSearchParams as useSearchParams5 } from "@remix-run/react";
+import { useLoaderData as useLoaderData15, useSearchParams as useSearchParams5 } from "@remix-run/react";
 import { redirect as redirect14 } from "@remix-run/server-runtime";
 import { CheckCircleIcon as CheckCircleIcon6, XCircleIcon as XCircleIcon8 } from "@heroicons/react/24/outline";
 import { useTranslation as useTranslation45 } from "react-i18next";
@@ -9083,7 +10835,7 @@ async function action13({ request }) {
   }), redirect14(redirectTarget, { headers });
 }
 function VerifyTokenPage() {
-  let [searchParams] = useSearchParams5(), result = useLoaderData16(), btnRef = useRef11(null), { t } = useTranslation45();
+  let [searchParams] = useSearchParams5(), result = useLoaderData15(), btnRef = useRef11(null), { t } = useTranslation45();
   return useEffect13(() => {
     if (!result.success || !btnRef.current)
       return;
@@ -9190,7 +10942,7 @@ function HeroBanner() {
 }
 
 // app/components/home/FeaturesSection.tsx
-import { useState as useState14 } from "react";
+import { useState as useState15 } from "react";
 import { jsx as jsx70, jsxs as jsxs62 } from "react/jsx-runtime";
 var features = [
   {
@@ -9215,7 +10967,7 @@ var features = [
   }
 ];
 function FeaturesSection() {
-  let [hoveredIndex, setHoveredIndex] = useState14(null);
+  let [hoveredIndex, setHoveredIndex] = useState15(null);
   return /* @__PURE__ */ jsx70("section", { id: "features", className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-7xl mx-auto px-6", children: [
     /* @__PURE__ */ jsxs62("div", { className: "text-center mb-16", children: [
       /* @__PURE__ */ jsx70("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6838\u5FC3\u4F18\u52BF" }),
@@ -9240,7 +10992,7 @@ function FeaturesSection() {
 }
 
 // app/components/home/StatsSection.tsx
-import { useEffect as useEffect14, useState as useState15, useRef as useRef12 } from "react";
+import { useEffect as useEffect14, useState as useState16, useRef as useRef12 } from "react";
 import { jsx as jsx71, jsxs as jsxs63 } from "react/jsx-runtime";
 var stats = [
   { value: 4e3, suffix: "+", label: "\u5408\u4F5C\u5BA2\u6237", description: "\u904D\u5E03\u5168\u7403\u5404\u5730" },
@@ -9249,7 +11001,7 @@ var stats = [
   { value: 200, suffix: "+", label: "\u4E13\u4E1A\u56E2\u961F", description: "\u6DF1\u8015\u884C\u4E1A" }
 ];
 function AnimatedNumber({ value, suffix }) {
-  let [count, setCount] = useState15(0), [isVisible, setIsVisible] = useState15(!1), ref = useRef12(null);
+  let [count, setCount] = useState16(0), [isVisible, setIsVisible] = useState16(!1), ref = useRef12(null);
   return useEffect14(() => {
     let observer = new IntersectionObserver(
       ([entry2]) => {
@@ -9293,7 +11045,7 @@ function StatsSection() {
 }
 
 // app/components/home/ServicesSection.tsx
-import { useState as useState16 } from "react";
+import { useState as useState17 } from "react";
 import { jsx as jsx72, jsxs as jsxs64 } from "react/jsx-runtime";
 var services = [
   {
@@ -9316,7 +11068,7 @@ var services = [
   }
 ];
 function ServicesSection() {
-  let [activeService, setActiveService] = useState16(0);
+  let [activeService, setActiveService] = useState17(0);
   return /* @__PURE__ */ jsx72("section", { className: "py-20 bg-gray-50", children: /* @__PURE__ */ jsxs64("div", { className: "max-w-7xl mx-auto px-6", children: [
     /* @__PURE__ */ jsxs64("div", { className: "text-center mb-16", children: [
       /* @__PURE__ */ jsx72("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u670D\u52A1\u5185\u5BB9" }),
@@ -9366,7 +11118,7 @@ function ServicesSection() {
 }
 
 // app/components/home/TestimonialsSection.tsx
-import { useState as useState17, useEffect as useEffect15 } from "react";
+import { useState as useState18, useEffect as useEffect15 } from "react";
 import { jsx as jsx73, jsxs as jsxs65 } from "react/jsx-runtime";
 var testimonials = [
   {
@@ -9395,7 +11147,7 @@ var testimonials = [
   }
 ];
 function TestimonialsSection() {
-  let [currentIndex, setCurrentIndex] = useState17(0);
+  let [currentIndex, setCurrentIndex] = useState18(0);
   return useEffect15(() => {
     let timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -9503,9 +11255,9 @@ function CtaSection() {
 }
 
 // app/routes/index.tsx
-import { Fragment as Fragment17, jsx as jsx75, jsxs as jsxs67 } from "react/jsx-runtime";
+import { Fragment as Fragment18, jsx as jsx75, jsxs as jsxs67 } from "react/jsx-runtime";
 function Index() {
-  return /* @__PURE__ */ jsxs67(Fragment17, { children: [
+  return /* @__PURE__ */ jsxs67(Fragment18, { children: [
     /* @__PURE__ */ jsx75(HeroBanner, {}),
     /* @__PURE__ */ jsx75(FeaturesSection, {}),
     /* @__PURE__ */ jsx75(StatsSection, {}),
@@ -9517,7 +11269,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-AMHHY4R4.js", imports: ["/build/_shared/chunk-AD55GMQC.js", "/build/_shared/chunk-53HIUDMI.js", "/build/_shared/chunk-ACPERAUQ.js", "/build/_shared/chunk-KO3OK2JV.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EXE7Z3D2.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-FYUA2WBM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-DJNHAC5G.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-LGBZMBP3.js", imports: ["/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-YS7LJJRX.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-DSTRQEOJ.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-EG7FV5R3.js", imports: ["/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-QQYEOGEK.js", imports: ["/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-UTXDWTF6.js", imports: ["/build/_shared/chunk-4H2GH4XE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-6FI5IFBA.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-L4NQIECW.js", imports: ["/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-IPYQ66XH.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-QQWUOLRM.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3DQLFJI2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-AXLQDMCP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-K5U7UVOJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-KLLXK2R2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-YACEK4RB.js", imports: ["/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-ICZ7N7PO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-Y6YKMHBH.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-4AEA32PH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-NOI3P5A7.js", imports: ["/build/_shared/chunk-WDFERQDG.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-COJIXHSP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-B2N7GQ2U.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-34IGMYBW.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-H6EQJZ2E.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "9a25c5b8", hmr: void 0, url: "/build/manifest-9A25C5B8.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-RCBUTEVL.js", imports: ["/build/_shared/chunk-AD55GMQC.js", "/build/_shared/chunk-53HIUDMI.js", "/build/_shared/chunk-ACPERAUQ.js", "/build/_shared/chunk-KO3OK2JV.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7QQPKD6X.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-FYUA2WBM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-DJNHAC5G.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-LGBZMBP3.js", imports: ["/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-YS7LJJRX.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-DSTRQEOJ.js", imports: ["/build/_shared/chunk-F3WQMVRE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-VRASZ7UA.js", "/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-YP65J6BA.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-RWGLEWQJ.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-EG7FV5R3.js", imports: ["/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-QQYEOGEK.js", imports: ["/build/_shared/chunk-VGI44BQ7.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-3WUGR47A.js", "/build/_shared/chunk-O3DVWKG4.js", "/build/_shared/chunk-WDFERQDG.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-UTXDWTF6.js", imports: ["/build/_shared/chunk-4H2GH4XE.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-6FI5IFBA.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-7FSP4XWR.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-L4NQIECW.js", imports: ["/build/_shared/chunk-EH2ORMHD.js", "/build/_shared/chunk-OOORIPCE.js", "/build/_shared/chunk-NJ2WJAV4.js", "/build/_shared/chunk-OOB7TJ2D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-IPYQ66XH.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-NJ2WJAV4.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-QQWUOLRM.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-3DQLFJI2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-AXLQDMCP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-K5U7UVOJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-KLLXK2R2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-YACEK4RB.js", imports: ["/build/_shared/chunk-OFM2TCWI.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-ICZ7N7PO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-Y6YKMHBH.js", imports: ["/build/_shared/chunk-IWK3KUI5.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-3L4AQNHD.js", "/build/_shared/chunk-XFSQSUBR.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-TAKZ7R2Q.js", "/build/_shared/chunk-WDFERQDG.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-4AEA32PH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-NOI3P5A7.js", imports: ["/build/_shared/chunk-WDFERQDG.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-COJIXHSP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-B2N7GQ2U.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-34IGMYBW.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-H6EQJZ2E.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "16a14d53", hmr: void 0, url: "/build/manifest-16A14D53.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

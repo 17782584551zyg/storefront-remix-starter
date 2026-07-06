@@ -1,9 +1,8 @@
 export default {
-  supportedLngs: ['en', 'es', 'pt', 'pt-BR'],
+  supportedLngs: ['en', 'fr', 'de', 'zh', 'es', 'it', 'nl', 'pl', 'sv', 'da', 'no'],
   fallbackLng: 'en',
-  // Disabling suspense is recommended
   react: { useSuspense: false },
   backend: {
-    loadPath: '../public/locales/{{lng}}/{{ns}}.json',
+    loadPath: '../public/locales/{{lng}}.json',
   },
 };
