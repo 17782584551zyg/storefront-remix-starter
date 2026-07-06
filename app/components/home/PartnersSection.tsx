@@ -54,7 +54,7 @@ export function CtaSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/collections"
-            className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-4 bg-gradient-to-r from-white to-orange-50 text-primary font-semibold rounded-lg hover:from-orange-50 hover:to-orange-100 transition-all duration-300 shadow-lg hover:shadow-xl border border-orange-200"
           >
             立即咨询
           </Link>
