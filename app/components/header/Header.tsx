@@ -1,5 +1,5 @@
 import { Link } from '@remix-run/react';
-import { ShoppingBagIcon, ChevronDownIcon, GlobeIcon } from '@heroicons/react/24/outline';
+import { ShoppingBagIcon, ChevronDownIcon, LanguagesIcon } from '@heroicons/react/24/outline';
 import { SearchBar } from '~/components/header/SearchBar';
 import { useRootLoader } from '~/utils/use-root-loader';
 import { UserIcon } from '@heroicons/react/24/solid';
@@ -138,7 +138,7 @@ export function Header({
               className="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors duration-300 px-2 py-1"
               onClick={() => setShowLangDropdown(!showLangDropdown)}
             >
-              <GlobeIcon className="w-4 h-4" />
+              <LanguagesIcon className="w-4 h-4" />
               <span className="text-sm">{languages.find(l => l.code === i18n.language)?.label || 'English'}</span>
               <ChevronDownIcon className="w-3 h-3" />
             </button>
