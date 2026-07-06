@@ -1210,8 +1210,8 @@ async function getFixedT(request) {
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import { jsx } from "react/jsx-runtime";
 var ABORT_DELAY = 5e3;
-async function handleCfRequest(request, responseStatusCode, responseHeaders, remixContext, jsx67) {
-  let body = await ReactDOM.renderToReadableStream(jsx67, {
+async function handleCfRequest(request, responseStatusCode, responseHeaders, remixContext, jsx73) {
+  let body = await ReactDOM.renderToReadableStream(jsx73, {
     signal: request.signal,
     onError(error) {
       console.error(error), responseStatusCode = 500;
@@ -1222,10 +1222,10 @@ async function handleCfRequest(request, responseStatusCode, responseHeaders, rem
     status: responseStatusCode
   });
 }
-async function handleNodeRequest(request, responseStatusCode, responseHeaders, remixContext, jsx67) {
+async function handleNodeRequest(request, responseStatusCode, responseHeaders, remixContext, jsx73) {
   let callbackName = isbot(request.headers.get("user-agent")) ? "onAllReady" : "onShellReady";
   return new Promise((resolve, reject) => {
-    let didError = !1, { pipe, abort } = ReactDOM.renderToPipeableStream(jsx67, {
+    let didError = !1, { pipe, abort } = ReactDOM.renderToPipeableStream(jsx73, {
       [callbackName]: async () => {
         let { PassThrough } = await safeRequireNodeDependency("node:stream"), { createReadableStreamFromReadable } = await safeRequireNodeDependency("@remix-run/node"), body = new PassThrough(), stream = createReadableStreamFromReadable(body);
         responseHeaders.set("Content-Type", "text/html"), resolve(
@@ -1253,13 +1253,13 @@ async function handleRequest(request, responseStatusCode, responseHeaders, remix
     ...i18n_default,
     lng
   });
-  let jsx67 = /* @__PURE__ */ jsx(I18nextProvider, { i18n: instance, children: /* @__PURE__ */ jsx(RemixServer, { context: remixContext, url: request.url }) });
+  let jsx73 = /* @__PURE__ */ jsx(I18nextProvider, { i18n: instance, children: /* @__PURE__ */ jsx(RemixServer, { context: remixContext, url: request.url }) });
   return (IS_CF_PAGES ? handleCfRequest : handleNodeRequest)(
     request,
     responseStatusCode,
     responseHeaders,
     remixContext,
-    jsx67
+    jsx73
   );
 }
 
@@ -1288,7 +1288,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-DADRK4ZX.css";
+var tailwind_default = "/build/_assets/tailwind-6VBY7XPI.css";
 
 // app/components/header/Header.tsx
 import { Link } from "@remix-run/react";
@@ -8556,113 +8556,385 @@ function VerifyTokenPage() {
 // app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
-  default: () => Index,
-  loader: () => loader19
+  default: () => Index
 });
-import { useLoaderData as useLoaderData17 } from "@remix-run/react";
-import { BookOpenIcon } from "@heroicons/react/24/solid";
-import { useTranslation as useTranslation47 } from "react-i18next";
-import { Fragment as Fragment17, jsx as jsx66, jsxs as jsxs57 } from "react/jsx-runtime";
-async function loader19({ request }) {
-  return {
-    collections: await getCollections(request, { take: 20 })
-  };
-}
-function Index() {
-  let { collections } = useLoaderData17(), { t } = useTranslation47(), headerImage = collections[0]?.featuredAsset?.preview;
-  return /* @__PURE__ */ jsxs57(Fragment17, { children: [
-    /* @__PURE__ */ jsxs57("div", { className: "relative", children: [
-      /* @__PURE__ */ jsxs57("div", { "aria-hidden": "true", className: "absolute inset-0 overflow-hidden", children: [
-        headerImage && /* @__PURE__ */ jsx66(
-          "img",
+
+// app/components/home/HeroBanner.tsx
+import { Link as Link14 } from "@remix-run/react";
+import { jsx as jsx66, jsxs as jsxs57 } from "react/jsx-runtime";
+function HeroBanner() {
+  return /* @__PURE__ */ jsxs57("section", { className: "relative min-h-screen flex items-center justify-center overflow-hidden", children: [
+    /* @__PURE__ */ jsx66("div", { className: "absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary" }),
+    /* @__PURE__ */ jsxs57("div", { className: "absolute inset-0 opacity-10", children: [
+      /* @__PURE__ */ jsx66("div", { className: "absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" }),
+      /* @__PURE__ */ jsx66("div", { className: "absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl" }),
+      /* @__PURE__ */ jsx66("div", { className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white rounded-full blur-3xl" })
+    ] }),
+    /* @__PURE__ */ jsxs57("div", { className: "relative z-10 max-w-6xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsx66("div", { className: "animate-fade-in-up", children: /* @__PURE__ */ jsx66("span", { className: "inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6", children: "\u8DE8\u5883\u7535\u5546\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848" }) }),
+      /* @__PURE__ */ jsx66("h1", { className: "animate-fade-in-up delay-100 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight", children: "\u6211\u4EEC\u8BA9\u4F60\u8F7B\u677E\u4ECE\u4E2D\u56FD\u51FA\u6D77" }),
+      /* @__PURE__ */ jsx66("p", { className: "animate-fade-in-up delay-200 text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed", children: "\u4E13\u6CE8\u8DE8\u5883\u7535\u5546\u9886\u57DF\uFF0C\u63D0\u4F9B\u5168\u94FE\u8DEF\u670D\u52A1\u652F\u6301\uFF0C\u52A9\u529B\u4E2D\u56FD\u54C1\u724C\u8D70\u5411\u5168\u7403\u5E02\u573A\u3002 \u4ECE\u9009\u54C1\u3001\u7269\u6D41\u5230\u652F\u4ED8\uFF0C\u4E00\u7AD9\u5F0F\u89E3\u51B3\u51FA\u6D77\u96BE\u9898\u3002" }),
+      /* @__PURE__ */ jsxs57("div", { className: "animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 justify-center items-center", children: [
+        /* @__PURE__ */ jsx66(
+          Link14,
           {
-            className: "absolute inset-0 w-full",
-            src: headerImage + "?w=800",
-            alt: "header"
+            to: "/collections",
+            className: "px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1",
+            children: "\u7ACB\u5373\u5F00\u59CB"
           }
         ),
-        /* @__PURE__ */ jsx66("div", { className: "absolute inset-0 bg-gradient-to-br from-zinc-400 to-black mix-blend-darken" })
+        /* @__PURE__ */ jsx66(
+          Link14,
+          {
+            to: "#features",
+            className: "px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300",
+            children: "\u4E86\u89E3\u66F4\u591A"
+          }
+        )
       ] }),
-      /* @__PURE__ */ jsx66(
+      /* @__PURE__ */ jsx66("div", { className: "animate-fade-in-up delay-400 mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto", children: [
+        { number: "4000+", label: "\u5408\u4F5C\u5BA2\u6237" },
+        { number: "120+", label: "\u8986\u76D6\u56FD\u5BB6" },
+        { number: "500M+", label: "\u5E74\u4EA4\u6613\u989D" },
+        { number: "200+", label: "\u4E13\u4E1A\u56E2\u961F" }
+      ].map((stat, index) => /* @__PURE__ */ jsxs57("div", { className: "text-center", children: [
+        /* @__PURE__ */ jsx66("div", { className: "text-3xl md:text-4xl font-bold text-white", children: stat.number }),
+        /* @__PURE__ */ jsx66("div", { className: "text-white/80 text-sm mt-1", children: stat.label })
+      ] }, index)) })
+    ] }),
+    /* @__PURE__ */ jsx66("div", { className: "absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce", children: /* @__PURE__ */ jsx66("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) }) })
+  ] });
+}
+
+// app/components/home/FeaturesSection.tsx
+import { useState as useState14 } from "react";
+import { jsx as jsx67, jsxs as jsxs58 } from "react/jsx-runtime";
+var features = [
+  {
+    icon: /* @__PURE__ */ jsx67("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx67("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) }),
+    title: "\u5168\u7403\u4ED3\u50A8\u914D\u9001",
+    description: "\u8986\u76D6\u5168\u7403120+\u56FD\u5BB6\u7684\u4ED3\u50A8\u7F51\u7EDC\uFF0C\u667A\u80FD\u5206\u4ED3\u7BA1\u7406\uFF0C\u6700\u5FEB3\u5929\u9001\u8FBE\uFF0C\u8BA9\u60A8\u7684\u5546\u54C1\u5FEB\u901F\u89E6\u8FBE\u5168\u7403\u6D88\u8D39\u8005\u3002"
+  },
+  {
+    icon: /* @__PURE__ */ jsx67("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx67("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
+    title: "\u4E13\u4E1A\u9009\u54C1\u6307\u5BFC",
+    description: "\u57FA\u4E8E\u5927\u6570\u636E\u5206\u6790\u7684\u9009\u54C1\u63A8\u8350\uFF0C\u8D44\u6DF1\u9009\u54C1\u56E2\u961F\u4E00\u5BF9\u4E00\u6307\u5BFC\uFF0C\u5E2E\u52A9\u60A8\u6316\u6398\u7206\u6B3E\u4EA7\u54C1\uFF0C\u964D\u4F4E\u9009\u54C1\u98CE\u9669\u3002"
+  },
+  {
+    icon: /* @__PURE__ */ jsx67("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx67("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" }) }),
+    title: "\u5168\u94FE\u8DEF\u7269\u6D41\u670D\u52A1",
+    description: "\u4ECE\u56FD\u5185\u63FD\u6536\u3001\u56FD\u9645\u8FD0\u8F93\u5230\u672B\u7AEF\u6D3E\u9001\uFF0C\u63D0\u4F9B\u95E8\u5230\u95E8\u4E00\u7AD9\u5F0F\u7269\u6D41\u89E3\u51B3\u65B9\u6848\uFF0C\u5168\u7A0B\u53EF\u8FFD\u8E2A\u3002"
+  },
+  {
+    icon: /* @__PURE__ */ jsx67("svg", { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsx67("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }) }),
+    title: "\u591A\u5E01\u79CD\u6536\u6B3E\u652F\u6301",
+    description: "\u652F\u6301\u7F8E\u5143\u3001\u6B27\u5143\u3001\u82F1\u9551\u7B4930+\u4E3B\u6D41\u5E01\u79CD\u6536\u6B3E\uFF0C\u6C47\u7387\u900F\u660E\uFF0C\u624B\u7EED\u8D39\u4F4E\uFF0C\u8D44\u91D1\u5B89\u5168\u6709\u4FDD\u969C\u3002"
+  }
+];
+function FeaturesSection() {
+  let [hoveredIndex, setHoveredIndex] = useState14(null);
+  return /* @__PURE__ */ jsx67("section", { id: "features", className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs58("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs58("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx67("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6838\u5FC3\u4F18\u52BF" }),
+      /* @__PURE__ */ jsx67("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u4E3A\u4EC0\u4E48\u9009\u62E9\u6211\u4EEC" }),
+      /* @__PURE__ */ jsx67("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6DF1\u8015\u8DE8\u5883\u7535\u5546\u9886\u57DF\u591A\u5E74\uFF0C\u79EF\u7D2F\u4E86\u4E30\u5BCC\u7684\u884C\u4E1A\u7ECF\u9A8C\u548C\u8D44\u6E90\uFF0C\u81F4\u529B\u4E8E\u4E3A\u5BA2\u6237\u63D0\u4F9B\u6700\u4F18\u8D28\u7684\u670D\u52A1\u3002" })
+    ] }),
+    /* @__PURE__ */ jsx67("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8", children: features.map((feature, index) => /* @__PURE__ */ jsxs58(
+      "div",
+      {
+        className: `p-8 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${hoveredIndex === index ? "transform -translate-y-2" : ""}`,
+        onMouseEnter: () => setHoveredIndex(index),
+        onMouseLeave: () => setHoveredIndex(null),
+        children: [
+          /* @__PURE__ */ jsx67("div", { className: `w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300 ${hoveredIndex === index ? "bg-primary text-white" : "bg-primary/10 text-primary"}`, children: feature.icon }),
+          /* @__PURE__ */ jsx67("h3", { className: "text-xl font-semibold text-gray-900 mb-3", children: feature.title }),
+          /* @__PURE__ */ jsx67("p", { className: "text-gray-600 leading-relaxed", children: feature.description })
+        ]
+      },
+      index
+    )) })
+  ] }) });
+}
+
+// app/components/home/StatsSection.tsx
+import { useEffect as useEffect14, useState as useState15, useRef as useRef12 } from "react";
+import { jsx as jsx68, jsxs as jsxs59 } from "react/jsx-runtime";
+var stats = [
+  { value: 4e3, suffix: "+", label: "\u5408\u4F5C\u5BA2\u6237", description: "\u904D\u5E03\u5168\u7403\u5404\u5730" },
+  { value: 120, suffix: "+", label: "\u8986\u76D6\u56FD\u5BB6", description: "\u5168\u7403\u5316\u5E03\u5C40" },
+  { value: 500, suffix: "M+", label: "\u5E74\u4EA4\u6613\u989D", description: "\u7A33\u6B65\u589E\u957F" },
+  { value: 200, suffix: "+", label: "\u4E13\u4E1A\u56E2\u961F", description: "\u6DF1\u8015\u884C\u4E1A" }
+];
+function AnimatedNumber({ value, suffix }) {
+  let [count, setCount] = useState15(0), [isVisible, setIsVisible] = useState15(!1), ref = useRef12(null);
+  return useEffect14(() => {
+    let observer = new IntersectionObserver(
+      ([entry2]) => {
+        entry2.isIntersecting && setIsVisible(!0);
+      },
+      { threshold: 0.5 }
+    );
+    return ref.current && observer.observe(ref.current), () => observer.disconnect();
+  }, []), useEffect14(() => {
+    if (!isVisible)
+      return;
+    let duration = 2e3, steps2 = 60, increment = value / steps2, current = 0, timer = setInterval(() => {
+      current += increment, current >= value ? (setCount(value), clearInterval(timer)) : setCount(Math.floor(current));
+    }, duration / steps2);
+    return () => clearInterval(timer);
+  }, [isVisible, value]), /* @__PURE__ */ jsxs59("div", { ref, className: "text-5xl md:text-6xl font-bold text-primary", children: [
+    count.toLocaleString(),
+    suffix
+  ] });
+}
+function StatsSection() {
+  return /* @__PURE__ */ jsx68("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs59("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs59("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx68("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u6570\u636E\u8BF4\u8BDD" }),
+      /* @__PURE__ */ jsx68("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u7684\u6210\u5C31" }),
+      /* @__PURE__ */ jsx68("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u7528\u6570\u636E\u8BC1\u660E\u5B9E\u529B\uFF0C\u7528\u670D\u52A1\u8D62\u5F97\u4FE1\u4EFB" })
+    ] }),
+    /* @__PURE__ */ jsx68("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-8", children: stats.map((stat, index) => /* @__PURE__ */ jsxs59(
+      "div",
+      {
+        className: "text-center p-8 bg-gradient-cream rounded-xl hover:shadow-lg transition-shadow duration-300",
+        children: [
+          /* @__PURE__ */ jsx68(AnimatedNumber, { value: stat.value, suffix: stat.suffix }),
+          /* @__PURE__ */ jsx68("div", { className: "text-xl font-semibold text-gray-900 mt-4", children: stat.label }),
+          /* @__PURE__ */ jsx68("div", { className: "text-gray-500 text-sm mt-2", children: stat.description })
+        ]
+      },
+      index
+    )) })
+  ] }) });
+}
+
+// app/components/home/ServicesSection.tsx
+import { useState as useState16 } from "react";
+import { jsx as jsx69, jsxs as jsxs60 } from "react/jsx-runtime";
+var services = [
+  {
+    title: "\u4E00\u7AD9\u5F0F\u8DE8\u5883\u7535\u5546\u89E3\u51B3\u65B9\u6848",
+    description: "\u4ECE\u5E97\u94FA\u642D\u5EFA\u5230\u8FD0\u8425\u63A8\u5E7F\uFF0C\u63D0\u4F9B\u5168\u65B9\u4F4D\u7684\u8DE8\u5883\u7535\u5546\u670D\u52A1\u652F\u6301\uFF0C\u8BA9\u60A8\u4E13\u6CE8\u4E8E\u4EA7\u54C1\u672C\u8EAB\u3002",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20e-commerce%20dashboard%20with%20analytics%20charts%20and%20global%20sales%20data%20visualization&image_size=landscape_16_9",
+    features: ["\u5E97\u94FA\u6CE8\u518C", "\u4EA7\u54C1\u4E0A\u67B6", "\u8FD0\u8425\u4F18\u5316", "\u6570\u636E\u5206\u6790"]
+  },
+  {
+    title: "\u667A\u80FD\u4ED3\u50A8\u7269\u6D41\u670D\u52A1",
+    description: "\u5168\u7403\u667A\u80FD\u5206\u4ED3\uFF0C\u5C31\u8FD1\u53D1\u8D27\uFF0C\u964D\u4F4E\u7269\u6D41\u6210\u672C\uFF0C\u63D0\u5347\u914D\u9001\u6548\u7387\uFF0C\u8BA9\u60A8\u7684\u5BA2\u6237\u4EAB\u53D7\u66F4\u597D\u7684\u8D2D\u7269\u4F53\u9A8C\u3002",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20warehouse%20with%20automated%20storage%20system%20and%20global%20shipping%20containers&image_size=landscape_16_9",
+    features: ["\u5168\u7403\u4ED3\u50A8", "\u667A\u80FD\u5206\u4ED3", "\u5FEB\u901F\u914D\u9001", "\u5B9E\u65F6\u8FFD\u8E2A"]
+  },
+  {
+    title: "\u591A\u5E73\u53F0\u6536\u6B3E\u89E3\u51B3\u65B9\u6848",
+    description: "\u652F\u6301PayPal\u3001Stripe\u7B49\u4E3B\u6D41\u6536\u6B3E\u65B9\u5F0F\uFF0C\u591A\u5E01\u79CD\u81EA\u52A8\u5151\u6362\uFF0C\u8D44\u91D1\u5B89\u5168\u6709\u4FDD\u969C\uFF0C\u5230\u8D26\u901F\u5EA6\u5FEB\u3002",
+    image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Secure%20payment%20processing%20system%20with%20multiple%20currency%20icons%20and%20financial%20security%20badges&image_size=landscape_16_9",
+    features: ["\u591A\u5E73\u53F0\u6536\u6B3E", "\u591A\u5E01\u79CD\u652F\u6301", "\u5B89\u5168\u4FDD\u969C", "\u5FEB\u901F\u5230\u8D26"]
+  }
+];
+function ServicesSection() {
+  let [activeService, setActiveService] = useState16(0);
+  return /* @__PURE__ */ jsx69("section", { className: "py-20 bg-gray-50", children: /* @__PURE__ */ jsxs60("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs60("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx69("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u670D\u52A1\u5185\u5BB9" }),
+      /* @__PURE__ */ jsx69("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u6211\u4EEC\u63D0\u4F9B\u7684\u670D\u52A1" }),
+      /* @__PURE__ */ jsx69("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u5168\u94FE\u8DEF\u8DE8\u5883\u7535\u5546\u670D\u52A1\uFF0C\u6EE1\u8DB3\u60A8\u4ECE\u5F00\u5E97\u5230\u8FD0\u8425\u7684\u6240\u6709\u9700\u6C42" })
+    ] }),
+    /* @__PURE__ */ jsxs60("div", { className: "grid lg:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxs60("div", { className: "relative", children: [
+        /* @__PURE__ */ jsx69("div", { className: "aspect-video rounded-xl overflow-hidden shadow-2xl", children: /* @__PURE__ */ jsx69(
+          "img",
+          {
+            src: services[activeService].image,
+            alt: services[activeService].title,
+            className: "w-full h-full object-cover transition-opacity duration-500"
+          }
+        ) }),
+        /* @__PURE__ */ jsx69("div", { className: "absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-xl flex items-center justify-center shadow-xl", children: /* @__PURE__ */ jsxs60("div", { className: "text-white text-center", children: [
+          /* @__PURE__ */ jsx69("div", { className: "text-3xl font-bold", children: activeService + 1 }),
+          /* @__PURE__ */ jsxs60("div", { className: "text-sm", children: [
+            "/ ",
+            services.length
+          ] })
+        ] }) })
+      ] }),
+      /* @__PURE__ */ jsx69("div", { className: "space-y-6", children: services.map((service, index) => /* @__PURE__ */ jsxs60(
         "div",
         {
-          "aria-hidden": "true",
-          className: "absolute inset-0 bg-gray-900 opacity-50"
+          className: `p-6 rounded-xl cursor-pointer transition-all duration-300 ${activeService === index ? "bg-white shadow-lg border-l-4 border-primary" : "bg-white/50 hover:bg-white hover:shadow-md"}`,
+          onClick: () => setActiveService(index),
+          children: [
+            /* @__PURE__ */ jsx69("h3", { className: `text-xl font-semibold mb-3 ${activeService === index ? "text-primary" : "text-gray-900"}`, children: service.title }),
+            /* @__PURE__ */ jsx69("p", { className: "text-gray-600 mb-4", children: service.description }),
+            /* @__PURE__ */ jsx69("div", { className: "flex flex-wrap gap-2", children: service.features.map((feature, i) => /* @__PURE__ */ jsx69(
+              "span",
+              {
+                className: `px-3 py-1 rounded-full text-sm ${activeService === index ? "bg-primary/10 text-primary" : "bg-gray-100 text-gray-600"}`,
+                children: feature
+              },
+              i
+            )) })
+          ]
+        },
+        index
+      )) })
+    ] })
+  ] }) });
+}
+
+// app/components/home/TestimonialsSection.tsx
+import { useState as useState17, useEffect as useEffect15 } from "react";
+import { jsx as jsx70, jsxs as jsxs61 } from "react/jsx-runtime";
+var testimonials = [
+  {
+    name: "\u5F20\u660E",
+    title: "\u521B\u59CB\u4EBA",
+    company: "\u67D0\u77E5\u540D\u8DE8\u5883\u7535\u5546\u54C1\u724C",
+    avatar: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20Chinese%20businessman%20portrait%20headshot%20neutral%20background&image_size=square",
+    content: "\u4E0E\u4ED6\u4EEC\u5408\u4F5C\u4E24\u5E74\u591A\u4E86\uFF0C\u4ECE\u4E00\u4E2A\u5C0F\u5E97\u94FA\u53D1\u5C55\u5230\u73B0\u5728\u5E74\u9500\u552E\u989D\u8FC7\u5343\u4E07\uFF0C\u79BB\u4E0D\u5F00\u4ED6\u4EEC\u4E13\u4E1A\u7684\u670D\u52A1\u548C\u652F\u6301\u3002\u56E2\u961F\u975E\u5E38\u8D1F\u8D23\u4EFB\uFF0C\u9047\u5230\u95EE\u9898\u603B\u80FD\u53CA\u65F6\u89E3\u51B3\u3002",
+    rating: 5
+  },
+  {
+    name: "\u674E\u534E",
+    title: "\u8FD0\u8425\u603B\u76D1",
+    company: "\u67D0\u5BB6\u5C45\u54C1\u724C",
+    avatar: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20Chinese%20businesswoman%20portrait%20headshot%20neutral%20background&image_size=square",
+    content: "\u7269\u6D41\u65F6\u6548\u63D0\u5347\u4E8650%\uFF0C\u5BA2\u6237\u597D\u8BC4\u7387\u660E\u663E\u4E0A\u5347\u3002\u4ED6\u4EEC\u7684\u667A\u80FD\u4ED3\u50A8\u7CFB\u7EDF\u771F\u7684\u5F88\u5F3A\u5927\uFF0C\u5E2E\u6211\u4EEC\u7701\u4E86\u5F88\u591A\u6210\u672C\u548C\u7CBE\u529B\u3002",
+    rating: 5
+  },
+  {
+    name: "\u738B\u5F3A",
+    title: "CEO",
+    company: "\u67D0\u7535\u5B50\u4EA7\u54C1\u516C\u53F8",
+    avatar: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20Chinese%20tech%20CEO%20portrait%20headshot%20neutral%20background&image_size=square",
+    content: "\u6536\u6B3E\u5B89\u5168\u6709\u4FDD\u969C\uFF0C\u5230\u8D26\u901F\u5EA6\u5FEB\u3002\u6700\u5173\u952E\u7684\u662F\u6C47\u7387\u900F\u660E\uFF0C\u6CA1\u6709\u9690\u85CF\u8D39\u7528\uFF0C\u8BA9\u6211\u4EEC\u7684\u8D44\u91D1\u7BA1\u7406\u66F4\u52A0\u987A\u7545\u3002",
+    rating: 5
+  }
+];
+function TestimonialsSection() {
+  let [currentIndex, setCurrentIndex] = useState17(0);
+  return useEffect15(() => {
+    let timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5e3);
+    return () => clearInterval(timer);
+  }, []), /* @__PURE__ */ jsx70("section", { className: "py-20 bg-gradient-cream", children: /* @__PURE__ */ jsxs61("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs61("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx70("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5BA2\u6237\u8BC4\u4EF7" }),
+      /* @__PURE__ */ jsx70("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u542C\u542C\u4ED6\u4EEC\u600E\u4E48\u8BF4" }),
+      /* @__PURE__ */ jsx70("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u6765\u81EA\u5408\u4F5C\u4F19\u4F34\u7684\u771F\u5B9E\u53CD\u9988" })
+    ] }),
+    /* @__PURE__ */ jsxs61("div", { className: "relative max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsx70("div", { className: "bg-white rounded-2xl p-8 md:p-12 shadow-xl", children: /* @__PURE__ */ jsxs61("div", { className: "flex flex-col md:flex-row gap-8 items-center", children: [
+        /* @__PURE__ */ jsx70("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsx70(
+          "img",
+          {
+            src: testimonials[currentIndex].avatar,
+            alt: testimonials[currentIndex].name,
+            className: "w-24 h-24 rounded-full object-cover border-4 border-primary/20"
+          }
+        ) }),
+        /* @__PURE__ */ jsxs61("div", { className: "flex-1", children: [
+          /* @__PURE__ */ jsx70("div", { className: "flex items-center gap-1 mb-4", children: [...Array(testimonials[currentIndex].rating)].map((_, i) => /* @__PURE__ */ jsx70("svg", { className: "w-5 h-5 text-yellow-400 fill-yellow-400", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsx70("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }) }, i)) }),
+          /* @__PURE__ */ jsxs61("p", { className: "text-gray-600 text-lg md:text-xl leading-relaxed mb-6", children: [
+            '"',
+            testimonials[currentIndex].content,
+            '"'
+          ] }),
+          /* @__PURE__ */ jsxs61("div", { children: [
+            /* @__PURE__ */ jsx70("div", { className: "font-semibold text-gray-900", children: testimonials[currentIndex].name }),
+            /* @__PURE__ */ jsxs61("div", { className: "text-gray-500 text-sm", children: [
+              testimonials[currentIndex].title,
+              " \xB7 ",
+              testimonials[currentIndex].company
+            ] })
+          ] })
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsx70("div", { className: "flex justify-center gap-2 mt-8", children: testimonials.map((_, index) => /* @__PURE__ */ jsx70(
+        "button",
+        {
+          className: `w-3 h-3 rounded-full transition-all duration-300 ${currentIndex === index ? "bg-primary w-8" : "bg-gray-300 hover:bg-gray-400"}`,
+          onClick: () => setCurrentIndex(index)
+        },
+        index
+      )) })
+    ] })
+  ] }) });
+}
+
+// app/components/home/PartnersSection.tsx
+import { Link as Link15 } from "@remix-run/react";
+import { jsx as jsx71, jsxs as jsxs62 } from "react/jsx-runtime";
+var partners = [
+  { name: "PayPal", description: "\u652F\u4ED8\u5408\u4F5C" },
+  { name: "Stripe", description: "\u652F\u4ED8\u5408\u4F5C" },
+  { name: "UPS", description: "\u7269\u6D41\u5408\u4F5C" },
+  { name: "DHL", description: "\u7269\u6D41\u5408\u4F5C" },
+  { name: "Amazon", description: "\u5E73\u53F0\u5408\u4F5C" },
+  { name: "eBay", description: "\u5E73\u53F0\u5408\u4F5C" }
+];
+function PartnersSection() {
+  return /* @__PURE__ */ jsx71("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxs62("div", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsx71("span", { className: "inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4", children: "\u5408\u4F5C\u4F19\u4F34" }),
+      /* @__PURE__ */ jsx71("h2", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "\u503C\u5F97\u4FE1\u8D56\u7684\u4F19\u4F34" }),
+      /* @__PURE__ */ jsx71("p", { className: "text-gray-600 max-w-2xl mx-auto", children: "\u4E0E\u5168\u7403\u77E5\u540D\u4F01\u4E1A\u5EFA\u7ACB\u957F\u671F\u5408\u4F5C\u5173\u7CFB" })
+    ] }),
+    /* @__PURE__ */ jsx71("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8", children: partners.map((partner, index) => /* @__PURE__ */ jsxs62(
+      "div",
+      {
+        className: "flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors duration-300",
+        children: [
+          /* @__PURE__ */ jsx71("div", { className: "text-2xl font-bold text-gray-700 mb-2", children: partner.name }),
+          /* @__PURE__ */ jsx71("div", { className: "text-xs text-gray-500", children: partner.description })
+        ]
+      },
+      index
+    )) })
+  ] }) });
+}
+function CtaSection() {
+  return /* @__PURE__ */ jsx71("section", { className: "py-20 bg-gradient-to-br from-primary via-primary-light to-secondary", children: /* @__PURE__ */ jsxs62("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+    /* @__PURE__ */ jsx71("h2", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "\u51C6\u5907\u597D\u5F00\u542F\u8DE8\u5883\u7535\u5546\u4E4B\u65C5\u4E86\u5417\uFF1F" }),
+    /* @__PURE__ */ jsx71("p", { className: "text-white/90 text-lg mb-10 max-w-2xl mx-auto", children: "\u52A0\u5165\u6211\u4EEC\uFF0C\u8BA9\u4E13\u4E1A\u56E2\u961F\u5E2E\u60A8\u5B9E\u73B0\u51FA\u6D77\u68A6\u60F3\u3002\u73B0\u5728\u54A8\u8BE2\uFF0C\u4EAB\u53D7\u4E13\u5C5E\u4F18\u60E0\uFF01" }),
+    /* @__PURE__ */ jsxs62("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
+      /* @__PURE__ */ jsx71(
+        Link15,
+        {
+          to: "/collections",
+          className: "px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl",
+          children: "\u7ACB\u5373\u54A8\u8BE2"
         }
       ),
-      /* @__PURE__ */ jsxs57("div", { className: "relative max-w-3xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-64 lg:px-0", children: [
-        /* @__PURE__ */ jsx66("div", { className: "relative bg-zinc-800 bg-opacity-0 rounded-lg p-0", children: /* @__PURE__ */ jsx66("h1", { className: "text-6xl text-transparent bg-clip-text font-extrabold tracking-normal lg:text-6xl bg-gradient-to-r from-yellow-600 via-red-500 to-blue-600", children: t("vendure.title") }) }),
-        /* @__PURE__ */ jsxs57("p", { className: "mt-4 text-2xl text-white", children: [
-          t("vendure.intro"),
-          " ",
-          /* @__PURE__ */ jsx66(
-            "a",
-            {
-              href: "https://www.vendure.io",
-              className: "text-blue-300 hover:text-blue-500",
-              children: "Vendure"
-            }
-          ),
-          " ",
-          "&",
-          " ",
-          /* @__PURE__ */ jsx66(
-            "a",
-            {
-              href: "~/routes/__cart/index",
-              className: "text-red-300 hover:text-red-500",
-              children: "Remix"
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxs57("p", { className: "mt-4 text-gray-300 space-x-1", children: [
-          /* @__PURE__ */ jsx66(BookOpenIcon, { className: "w-5 h-5 inline" }),
-          /* @__PURE__ */ jsx66("span", { children: t("common.readMore") }),
-          /* @__PURE__ */ jsx66(
-            "a",
-            {
-              className: "text-primary-200 hover:text-primary-400",
-              href: "https://www.vendure.io/blog/2022/05/lightning-fast-headless-commerce-with-vendure-and-remix",
-              children: t("vendure.link")
-            }
-          )
-        ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxs57(
-      "section",
-      {
-        "aria-labelledby": "category-heading",
-        className: "pt-24 sm:pt-32 xl:max-w-7xl xl:mx-auto xl:px-8",
-        children: [
-          /* @__PURE__ */ jsx66("div", { className: "px-4 sm:px-6 lg:px-8 xl:px-0", children: /* @__PURE__ */ jsx66(
-            "h2",
-            {
-              id: "category-heading",
-              className: "text-2xl font-light tracking-tight text-gray-900",
-              children: t("common.shopByCategory")
-            }
-          ) }),
-          /* @__PURE__ */ jsx66("div", { className: "mt-4 flow-root", children: /* @__PURE__ */ jsx66("div", { className: "-my-2", children: /* @__PURE__ */ jsx66("div", { className: "box-content py-2 px-2 relative overflow-x-auto xl:overflow-visible", children: /* @__PURE__ */ jsx66("div", { className: "grid justify-items-center grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:gap-x-8", children: collections.map((collection) => /* @__PURE__ */ jsx66(CollectionCard, { collection }, collection.id)) }) }) }) }),
-          /* @__PURE__ */ jsx66("div", { className: "mt-6 px-4 sm:hidden", children: /* @__PURE__ */ jsxs57(
-            "a",
-            {
-              href: "~/routes/__cart/index#",
-              className: "block text-sm font-semibold text-primary-600 hover:text-primary-500",
-              children: [
-                t("common.browseCategories"),
-                /* @__PURE__ */ jsx66("span", { "aria-hidden": "true", children: " \u2192" })
-              ]
-            }
-          ) })
-        ]
-      }
-    )
+      /* @__PURE__ */ jsx71(
+        Link15,
+        {
+          to: "#features",
+          className: "px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300",
+          children: "\u4E86\u89E3\u66F4\u591A"
+        }
+      )
+    ] })
+  ] }) });
+}
+
+// app/routes/index.tsx
+import { Fragment as Fragment17, jsx as jsx72, jsxs as jsxs63 } from "react/jsx-runtime";
+function Index() {
+  return /* @__PURE__ */ jsxs63(Fragment17, { children: [
+    /* @__PURE__ */ jsx72(HeroBanner, {}),
+    /* @__PURE__ */ jsx72(FeaturesSection, {}),
+    /* @__PURE__ */ jsx72(StatsSection, {}),
+    /* @__PURE__ */ jsx72(ServicesSection, {}),
+    /* @__PURE__ */ jsx72(TestimonialsSection, {}),
+    /* @__PURE__ */ jsx72(PartnersSection, {}),
+    /* @__PURE__ */ jsx72(CtaSection, {})
   ] });
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-2JYYUWB2.js", imports: ["/build/_shared/chunk-XZETH7W4.js", "/build/_shared/chunk-5SNCUZBH.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TOVDXLSF.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-GWIOKQ6C.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-AOLAHBJE.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-R6T47D6D.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-EL5QSIM3.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-YS3VDK5D.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-JABBYUDB.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-AOLAHBJE.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-GMCWZWGA.js", imports: ["/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-JABBYUDB.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-AOLAHBJE.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-GZ44LML5.js", imports: ["/build/_shared/chunk-QRKFCJEA.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-YS3VDK5D.js", "/build/_shared/chunk-JABBYUDB.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-DXX5OCL6.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-AOLAHBJE.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-ZAJZYWED.js", imports: ["/build/_shared/chunk-QRKFCJEA.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-YS3VDK5D.js", "/build/_shared/chunk-JABBYUDB.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-DXX5OCL6.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-AOLAHBJE.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-B76HNH4Z.js", imports: ["/build/_shared/chunk-Z4WBO5FA.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-DXX5OCL6.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-AIKBNPT4.js", imports: ["/build/_shared/chunk-YS3VDK5D.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-T64QB22V.js", imports: ["/build/_shared/chunk-GONRQCUA.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-QVDIKDJO.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-S5TTWVQH.js", imports: ["/build/_shared/chunk-GWIOKQ6C.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-7DN7TOVA.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-D3KRJQJS.js", imports: ["/build/_shared/chunk-YBXEA6SZ.js", "/build/_shared/chunk-PF2NMLNN.js", "/build/_shared/chunk-Z4WBO5FA.js", "/build/_shared/chunk-25QMTEPQ.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-DXX5OCL6.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-V5GBEZII.js", imports: ["/build/_shared/chunk-YBXEA6SZ.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-BUUS2I7K.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-NXP2FHGJ.js", imports: ["/build/_shared/chunk-25QMTEPQ.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-UCRAY75R.js", imports: ["/build/_shared/chunk-PF2NMLNN.js", "/build/_shared/chunk-Z4WBO5FA.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-DXX5OCL6.js", "/build/_shared/chunk-LRDBHRHQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-LQYAQRO4.js", imports: ["/build/_shared/chunk-G6VLRDBT.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-JNUEXPPK.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-TTTARZFW.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-ZC2VUFCZ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-2ISZAI4B.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "ed46e360", hmr: void 0, url: "/build/manifest-ED46E360.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-6G2XSE2A.js", imports: ["/build/_shared/chunk-Y55AAQNO.js", "/build/_shared/chunk-P7QIFSSS.js", "/build/_shared/chunk-5SNCUZBH.js", "/build/_shared/chunk-ADMCF34Z.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-F5Z22QST.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-BT23CWUD.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-UQBW2EY6.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-RDJEKBF2.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-OC6DHXEJ.js", imports: ["/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-AP55ILEZ.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-TVT5M4PF.js", imports: ["/build/_shared/chunk-QTIHDRK2.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-7LN7ZN5A.js", imports: ["/build/_shared/chunk-QTIHDRK2.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-3MYQSFD7.js", "/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-GMMIVMMZ.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-WBSBB5ZQ.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-2XRBWSRT.js", imports: ["/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-7DBQULKS.js", imports: ["/build/_shared/chunk-DGG5UJIV.js", "/build/_shared/chunk-PUM2QQOE.js", "/build/_shared/chunk-XBDAUQ4P.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-G6VLRDBT.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-T2TXWNQU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-BISR3XEP.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-3COUBIS7.js", imports: ["/build/_shared/chunk-XI5I7AIR.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-MNOQKV2W.js", imports: ["/build/_shared/chunk-66LLSQOW.js", "/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-WU24DXF6.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-3P2KPY2Z.js", imports: ["/build/_shared/chunk-BT23CWUD.js", "/build/_shared/chunk-4BFBOUGQ.js", "/build/_shared/chunk-D7ASHLJU.js", "/build/_shared/chunk-2WTGKK3O.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-QF3JPUYS.js", imports: ["/build/_shared/chunk-XZVEKXM5.js", "/build/_shared/chunk-EIQWTKFI.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G5EWVEI5.js", "/build/_shared/chunk-ZXVIEAYD.js", "/build/_shared/chunk-D7ASHLJU.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-DGWKEC24.js", imports: ["/build/_shared/chunk-PZ43M7RD.js", "/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-XCF6VTRO.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ZHLRKWOG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-BUUS2I7K.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-KEMREN5H.js", imports: ["/build/_shared/chunk-XCF6VTRO.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-6MW4WS3D.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-M2U5XRZL.js", imports: ["/build/_shared/chunk-PZ43M7RD.js", "/build/_shared/chunk-PTZWPXYL.js", "/build/_shared/chunk-I4XRSTCJ.js", "/build/_shared/chunk-MYVCZFDW.js", "/build/_shared/chunk-N6ACKCS5.js", "/build/_shared/chunk-6MW4WS3D.js", "/build/_shared/chunk-G6VLRDBT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-Q7LVL4TS.js", imports: ["/build/_shared/chunk-G6VLRDBT.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-IDZESRNX.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-TR6TJUHU.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-6UY2ONL3.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-RLPJ2FSU.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "0b4a7997", hmr: void 0, url: "/build/manifest-0B4A7997.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "production", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

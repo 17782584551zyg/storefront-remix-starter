@@ -1,5 +1,5 @@
 @tailwind base;
-/* @tailwind components; */
+@tailwind components;
 @tailwind utilities;
 
 @layer base {
@@ -24,5 +24,115 @@
 
   .text-inherit {
     color: inherit;
+  }
+
+  .bg-gradient-orange {
+    background: linear-gradient(135deg, #FF7D00 0%, #FFA726 50%, #FFB74D 100%);
+  }
+
+  .bg-gradient-cream {
+    background: linear-gradient(180deg, #FFF8F0 0%, #FFFFFF 100%);
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(180deg, #1A1A1A 0%, #0D0D0D 100%);
+  }
+}
+
+@theme {
+  --color-primary: #FF7D00;
+  --color-primary-light: #FFA726;
+  --color-primary-dark: #E65100;
+  --color-secondary: #FFB74D;
+  --color-accent: #FF8F00;
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #FFE0B2;
+  --color-dark: #1A1A1A;
+  --color-dark-light: #2D2D2D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
   }
 }
