@@ -1,37 +1,42 @@
 import { Link } from '@remix-run/react';
 
-const partners = [
-  { name: 'PayPal', description: '支付合作' },
-  { name: 'Stripe', description: '支付合作' },
-  { name: 'UPS', description: '物流合作' },
-  { name: 'DHL', description: '物流合作' },
-  { name: 'Amazon', description: '平台合作' },
-  { name: 'eBay', description: '平台合作' },
-];
-
 export function PartnersSection() {
+  const partners = [
+    { name: 'PayPal', description: 'Payment Partner' },
+    { name: 'Stripe', description: 'Payment Partner' },
+    { name: 'UPS', description: 'Logistics Partner' },
+    { name: 'DHL', description: 'Logistics Partner' },
+    { name: 'Amazon', description: 'Platform Partner' },
+    { name: 'eBay', description: 'Platform Partner' },
+  ];
+
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            合作伙伴
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            值得信赖的伙伴
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Our Partners
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            与全球知名企业建立长期合作关系
+          <p className="text-gray-600">
+            Trusted Partners
+          </p>
+          <p className="text-gray-500 mt-2">
+            Long-term cooperative relationships with world-renowned enterprises
           </p>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {partners.map((partner, index) => (
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {partners.map((partner) => (
             <div
-              key={index}
-              className="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors duration-300"
+              key={partner.name}
+              className="bg-white rounded-xl p-6 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow"
             >
-              <div className="text-2xl font-bold text-gray-700 mb-2">{partner.name}</div>
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3">
+                <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="font-semibold text-gray-900">{partner.name}</div>
               <div className="text-xs text-gray-500">{partner.description}</div>
             </div>
           ))}
@@ -43,27 +48,29 @@ export function PartnersSection() {
 
 export function CtaSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary-light to-secondary">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          准备好开启跨境电商之旅了吗？
-        </h2>
-        <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-          加入我们，让专业团队帮您实现出海梦想。现在咨询，享受专属优惠！
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            to="/collections"
-            className="px-8 py-4 bg-gradient-to-r from-white to-orange-50 text-primary font-semibold rounded-lg hover:from-orange-50 hover:to-orange-100 transition-all duration-300 shadow-lg hover:shadow-xl border border-orange-200"
-          >
-            立即咨询
-          </Link>
-          <Link
-            to="#features"
-            className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
-          >
-            了解更多
-          </Link>
+    <section className="py-12 bg-gradient-to-r from-orange-500 to-orange-600">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to Start Your Cross-Border Journey?
+          </h2>
+          <p className="text-white/80 mb-8">
+            Join us and let our professional team help you achieve your import dreams. Consult now and enjoy exclusive discounts!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/services"
+              className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg"
+            >
+              Get a Free Consultation
+            </Link>
+            <Link
+              to="/about"
+              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
       </div>
     </section>

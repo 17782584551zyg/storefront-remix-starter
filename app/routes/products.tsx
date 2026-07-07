@@ -1,26 +1,14 @@
+import { json, LoaderFunction } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
+import { getCollections } from '~/providers/collections/collections';
+
+export const loader: LoaderFunction = async ({ request }) => {
+  const collections = await getCollections(request);
+  return json({ collections });
+};
+
 export default function ProductsPage() {
-  const categories = [
-    { name: 'Apparel', icon: 'shirt' },
-    { name: 'Furniture', icon: 'sofa' },
-    { name: 'Bags & Cases', icon: 'briefcase' },
-    { name: 'Beauty', icon: 'sparkles' },
-    { name: 'Toys', icon: 'toy' },
-    { name: 'Sports', icon: 'dumbbell' },
-    { name: 'Home', icon: 'home' },
-    { name: 'Garden & Outdoor', icon: 'flower' },
-    { name: 'Electronics', icon: 'smartphone' },
-    { name: 'Pet Supplies', icon: 'cat' },
-    { name: 'Natural & Gifts', icon: 'gift' },
-    { name: 'Hardware', icon: 'wrench' },
-    { name: 'Office Supplies', icon: 'pen-tool' },
-    { name: 'Automotive', icon: 'car' },
-    { name: 'Health Products', icon: 'heart' },
-    { name: 'Industrial', icon: 'factory' },
-    { name: 'Packaging', icon: 'package' },
-    { name: 'Dropship', icon: 'truck' },
-    { name: 'Jewelry', icon: 'gem' },
-    { name: 'Lighting', icon: 'lightbulb' },
-  ];
+  const { collections } = useLoaderData<{ collections: Array<{ id: string; name: string; slug: string; featuredAsset?: { preview: string } }> }>();
 
   const iconMap: Record<string, string> = {
     'shirt': 'M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z',
@@ -43,17 +31,43 @@ export default function ProductsPage() {
     'truck': 'M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4',
     'gem': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
     'lightbulb': 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
+    'default': 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
+  };
+
+  const getIconForName = (name: string): string => {
+    const lowerName = name.toLowerCase();
+    if (lowerName.includes('apparel') || lowerName.includes('clothing') || lowerName.includes('shirt') || lowerName.includes('dress')) return iconMap['shirt'];
+    if (lowerName.includes('furniture') || lowerName.includes('sofa') || lowerName.includes('chair')) return iconMap['sofa'];
+    if (lowerName.includes('bag') || lowerName.includes('case') || lowerName.includes('briefcase')) return iconMap['briefcase'];
+    if (lowerName.includes('beauty') || lowerName.includes('cosmetic') || lowerName.includes('makeup')) return iconMap['sparkles'];
+    if (lowerName.includes('toy') || lowerName.includes('game')) return iconMap['toy'];
+    if (lowerName.includes('sport') || lowerName.includes('fitness') || lowerName.includes('dumbbell')) return iconMap['dumbbell'];
+    if (lowerName.includes('home') || lowerName.includes('house')) return iconMap['home'];
+    if (lowerName.includes('garden') || lowerName.includes('flower') || lowerName.includes('outdoor')) return iconMap['flower'];
+    if (lowerName.includes('electronic') || lowerName.includes('phone') || lowerName.includes('smart')) return iconMap['smartphone'];
+    if (lowerName.includes('pet') || lowerName.includes('cat') || lowerName.includes('dog')) return iconMap['cat'];
+    if (lowerName.includes('gift') || lowerName.includes('natural')) return iconMap['gift'];
+    if (lowerName.includes('hardware') || lowerName.includes('tool')) return iconMap['wrench'];
+    if (lowerName.includes('office') || lowerName.includes('stationery')) return iconMap['pen-tool'];
+    if (lowerName.includes('automotive') || lowerName.includes('car') || lowerName.includes('vehicle')) return iconMap['car'];
+    if (lowerName.includes('health') || lowerName.includes('medical') || lowerName.includes('heart')) return iconMap['heart'];
+    if (lowerName.includes('industrial') || lowerName.includes('factory')) return iconMap['factory'];
+    if (lowerName.includes('packaging') || lowerName.includes('box')) return iconMap['package'];
+    if (lowerName.includes('dropship') || lowerName.includes('shipping') || lowerName.includes('truck')) return iconMap['truck'];
+    if (lowerName.includes('jewelry') || lowerName.includes('gem') || lowerName.includes('ring')) return iconMap['gem'];
+    if (lowerName.includes('lighting') || lowerName.includes('lamp') || lowerName.includes('bulb')) return iconMap['lightbulb'];
+    return iconMap['default'];
   };
 
   return (
     <div className="min-h-screen">
-      <section className="py-16 bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10">
+      <section className="py-16 bg-gradient-to-r from-orange-500/10 via-orange-500/5 to-amber-500/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">4,000+ Clients Trust Us</h2>
               <p className="text-gray-600">Find your reliable products and save, let's factory price.</p>
-              <button className="mt-4 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300">
+              <button className="mt-4 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
               </button>
             </div>
@@ -63,7 +77,7 @@ export default function ProductsPage() {
                 alt="Warehouse"
                 className="w-80 h-60 object-cover rounded-xl shadow-lg"
               />
-              <div className="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">98%</div>
                 <div className="text-sm">Customer Satisfaction</div>
               </div>
@@ -80,19 +94,29 @@ export default function ProductsPage() {
           </div>
           
           <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4">
-            {categories.map((category, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-primary/10 hover:shadow-md transition-all duration-300 cursor-pointer"
-              >
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2">
-                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconMap[category.icon] || ''} />
-                  </svg>
+            {collections && collections.length > 0 ? (
+              collections.map((category, index) => (
+                <div
+                  key={category.id || index}
+                  className="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-md transition-all duration-300 cursor-pointer"
+                >
+                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2">
+                    {category.featuredAsset ? (
+                      <img src={category.featuredAsset.preview} alt={category.name} className="w-6 h-6 object-contain" />
+                    ) : (
+                      <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconForName(category.name)} />
+                      </svg>
+                    )}
+                  </div>
+                  <span className="text-sm text-gray-700 text-center">{category.name}</span>
                 </div>
-                <span className="text-sm text-gray-700 text-center">{category.name}</span>
+              ))
+            ) : (
+              <div className="col-span-full text-center py-12">
+                <p className="text-gray-500">No categories found.</p>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between">
@@ -100,7 +124,7 @@ export default function ProductsPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Are you looking for more categories?</h3>
               <p className="text-gray-600">If you cannot find your target product, we can also source any product for you.</p>
             </div>
-            <button className="mt-4 md:mt-0 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300">
+            <button className="mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
               Tell us more
             </button>
           </div>
@@ -118,7 +142,7 @@ export default function ProductsPage() {
               <p className="text-gray-600 mb-6">
                 Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality.
               </p>
-              <button className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300">
+              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
                 Get a free quote
               </button>
             </div>
@@ -153,7 +177,7 @@ export default function ProductsPage() {
               <p className="text-gray-600 mb-6">
                 If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production.
               </p>
-              <button className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300">
+              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
                 Share my idea
               </button>
             </div>
@@ -168,30 +192,30 @@ export default function ProductsPage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-primary">
+            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Why friendly to small businesses</h3>
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <p className="text-gray-600 mb-4">
                 Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business.
               </p>
-              <button className="text-primary font-semibold hover:underline">15% cheaper than Alibaba -&gt;</button>
+              <button className="text-orange-500 font-semibold hover:underline">15% cheaper than Alibaba -&gt;</button>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-primary">
+            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-bold text-gray-900">Our 1-1 agent assists you in every aspect</h3>
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <p className="text-gray-600 mb-4">
                 We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between.
               </p>
-              <button className="text-primary font-semibold hover:underline">Product quality is our priority -&gt;</button>
+              <button className="text-orange-500 font-semibold hover:underline">Product quality is our priority -&gt;</button>
             </div>
           </div>
         </div>
@@ -215,21 +239,21 @@ export default function ProductsPage() {
               <input
                 type="text"
                 placeholder="First Name"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Subscribe Now
               </button>

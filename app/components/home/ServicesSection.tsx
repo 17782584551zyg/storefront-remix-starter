@@ -1,95 +1,81 @@
-import { useState } from 'react';
-
-const services = [
-  {
-    title: '一站式跨境电商解决方案',
-    description: '从店铺搭建到运营推广，提供全方位的跨境电商服务支持，让您专注于产品本身。',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20e-commerce%20dashboard%20with%20analytics%20charts%20and%20global%20sales%20data%20visualization&image_size=landscape_16_9',
-    features: ['店铺注册', '产品上架', '运营优化', '数据分析'],
-  },
-  {
-    title: '智能仓储物流服务',
-    description: '全球智能分仓，就近发货，降低物流成本，提升配送效率，让您的客户享受更好的购物体验。',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20warehouse%20with%20automated%20storage%20system%20and%20global%20shipping%20containers&image_size=landscape_16_9',
-    features: ['全球仓储', '智能分仓', '快速配送', '实时追踪'],
-  },
-  {
-    title: '多平台收款解决方案',
-    description: '支持PayPal、Stripe等主流收款方式，多币种自动兑换，资金安全有保障，到账速度快。',
-    image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Secure%20payment%20processing%20system%20with%20multiple%20currency%20icons%20and%20financial%20security%20badges&image_size=landscape_16_9',
-    features: ['多平台收款', '多币种支持', '安全保障', '快速到账'],
-  },
-];
+import { Link } from '@remix-run/react';
 
 export function ServicesSection() {
-  const [activeService, setActiveService] = useState(0);
+  const services = [
+    {
+      title: 'One-Stop Cross-Border E-commerce Solutions',
+      description: 'From store setup to operations and promotion, providing comprehensive cross-border e-commerce service support, allowing you to focus on your products.',
+      features: ['Store Registration', 'Product Listing', 'Operations Optimization', 'Data Analysis'],
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Ecommerce%20dashboard%20with%20analytics%20charts&image_size=square',
+      link: '/services',
+    },
+    {
+      title: 'Intelligent Warehousing & Logistics',
+      description: 'Global intelligent warehouse distribution, shipping from nearest location, reducing logistics costs, improving delivery efficiency, providing your customers with better shopping experience.',
+      features: ['Global Warehousing', 'Intelligent Distribution', 'Fast Delivery', 'Real-time Tracking'],
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20logistics%20warehouse%20with%20robots&image_size=square',
+      link: '/solutions/shipping',
+    },
+    {
+      title: 'Multi-Platform Payment Solutions',
+      description: 'Supporting PayPal, Stripe and other mainstream payment methods, multi-currency automatic conversion, fund security guaranteed, fast arrival.',
+      features: ['Multi-Platform Payment', 'Multi-Currency Support', 'Security Guarantee', 'Fast Settlement'],
+      image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Secure%20payment%20transaction%20interface&image_size=square',
+      link: '/payment-information',
+    },
+  ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            服务内容
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            我们提供的服务
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Our Services
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            全链路跨境电商服务，满足您从开店到运营的所有需求
+          <p className="text-gray-600">
+            What We Offer
+          </p>
+          <p className="text-gray-500 mt-2">
+            Full-chain cross-border e-commerce services, meeting all your needs from store opening to operations
           </p>
         </div>
-        
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
               <img
-                src={services[activeService].image}
-                alt={services[activeService].title}
-                className="w-full h-full object-cover transition-opacity duration-500"
+                src={service.image}
+                alt={service.title}
+                className="w-full h-48 object-cover"
               />
-            </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary rounded-xl flex items-center justify-center shadow-xl">
-              <div className="text-white text-center">
-                <div className="text-3xl font-bold">{activeService + 1}</div>
-                <div className="text-sm">/ {services.length}</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="space-y-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`p-6 rounded-xl cursor-pointer transition-all duration-300 ${
-                  activeService === index
-                    ? 'bg-white shadow-lg border-l-4 border-primary'
-                    : 'bg-white/50 hover:bg-white hover:shadow-md'
-                }`}
-                onClick={() => setActiveService(index)}
-              >
-                <h3 className={`text-xl font-semibold mb-3 ${
-                  activeService === index ? 'text-primary' : 'text-gray-900'
-                }`}>
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {service.features.map((feature, i) => (
-                    <span
-                      key={i}
-                      className={`px-3 py-1 rounded-full text-sm ${
-                        activeService === index
-                          ? 'bg-primary/10 text-primary'
-                          : 'bg-gray-100 text-gray-600'
-                      }`}
-                    >
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
+                <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
+                      <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
                       {feature}
-                    </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
+                <Link
+                  to={service.link}
+                  className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
+                >
+                  Learn More
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: colors.sky,
-        secondary: colors.emerald,
+        primary: colors.orange,
+        secondary: colors.amber,
       },
       animation: {
         dropIn: 'dropIn 0.2s ease-out',

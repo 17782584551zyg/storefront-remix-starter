@@ -1,87 +1,80 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
-const stats = [
-  { value: 4000, suffix: '+', label: '合作客户', description: '遍布全球各地' },
-  { value: 120, suffix: '+', label: '覆盖国家', description: '全球化布局' },
-  { value: 500, suffix: 'M+', label: '年交易额', description: '稳步增长' },
-  { value: 200, suffix: '+', label: '专业团队', description: '深耕行业' },
-];
+export function StatsSection() {
+  const stats = [
+    { value: 4000, suffix: '+', label: 'Clients', description: 'Worldwide' },
+    { value: 120, suffix: '+', label: 'Countries', description: 'Global Coverage' },
+    { value: 500, suffix: 'M+', label: 'Annual Revenue', description: 'Steady Growth' },
+    { value: 200, suffix: '+', label: 'Team Members', description: 'Industry Experts' },
+  ];
 
-function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [counts, setCounts] = useState<number[]>(stats.map(() => 0));
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            stats.forEach((stat, index) => {
+              const duration = 2000;
+              const steps = 60;
+              const increment = stat.value / steps;
+              let current = 0;
+              const timer = setInterval(() => {
+                current += increment;
+                if (current >= stat.value) {
+                  clearInterval(timer);
+                  const newCounts = [...counts];
+                  newCounts[index] = stat.value;
+                  setCounts(newCounts);
+                } else {
+                  const newCounts = [...counts];
+                  newCounts[index] = Math.floor(current);
+                  setCounts(newCounts);
+                }
+              }, duration / steps);
+            });
+          }
+        });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const section = document.getElementById('stats-section');
+    if (section) {
+      observer.observe(section);
     }
 
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible) return;
-
-    const duration = 2000;
-    const steps = 60;
-    const increment = value / steps;
-    let current = 0;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= value) {
-        setCount(value);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, duration / steps);
-
-    return () => clearInterval(timer);
-  }, [isVisible, value]);
+    return () => {
+      observer.disconnect();
+    };
+  }, [hasAnimated, counts]);
 
   return (
-    <div ref={ref} className="text-5xl md:text-6xl font-bold text-primary">
-      {count.toLocaleString()}{suffix}
-    </div>
-  );
-}
-
-export function StatsSection() {
-  return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            数据说话
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            我们的成就
+    <section id="stats-section" className="py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Numbers Speak
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            用数据证明实力，用服务赢得信任
+          <p className="text-white/80">
+            Our Achievements
+          </p>
+          <p className="text-white/60 mt-2">
+            Proving strength with data, winning trust with service
           </p>
         </div>
-        
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center p-8 bg-gradient-cream rounded-xl hover:shadow-lg transition-shadow duration-300"
-            >
-              <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-              <div className="text-xl font-semibold text-gray-900 mt-4">{stat.label}</div>
-              <div className="text-gray-500 text-sm mt-2">{stat.description}</div>
+            <div key={stat.label} className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">
+                {counts[index]}{stat.suffix}
+              </div>
+              <div className="text-xl font-semibold mb-1">{stat.label}</div>
+              <div className="text-sm text-white/60">{stat.description}</div>
             </div>
           ))}
         </div>

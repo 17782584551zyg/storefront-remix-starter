@@ -1,83 +1,62 @@
-import { useState } from 'react';
-
-const features = [
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    ),
-    title: '全球仓储配送',
-    description: '覆盖全球120+国家的仓储网络，智能分仓管理，最快3天送达，让您的商品快速触达全球消费者。',
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-    title: '专业选品指导',
-    description: '基于大数据分析的选品推荐，资深选品团队一对一指导，帮助您挖掘爆款产品，降低选品风险。',
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    ),
-    title: '全链路物流服务',
-    description: '从国内揽收、国际运输到末端派送，提供门到门一站式物流解决方案，全程可追踪。',
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-    title: '多币种收款支持',
-    description: '支持美元、欧元、英镑等30+主流币种收款，汇率透明，手续费低，资金安全有保障。',
-  },
-];
-
 export function FeaturesSection() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const features = [
+    {
+      icon: 'warehouse',
+      title: 'Global Warehousing & Shipping',
+      description: 'Warehouse network covering 120+ countries worldwide, intelligent warehouse management, fastest delivery in 3 days, enabling your products to reach global consumers quickly.',
+    },
+    {
+      icon: 'search',
+      title: 'Professional Product Sourcing',
+      description: 'Big data analysis based product recommendations, one-on-one guidance from senior sourcing team, helping you discover hot-selling products and reduce sourcing risks.',
+    },
+    {
+      icon: 'truck',
+      title: 'Full-Chain Logistics Service',
+      description: 'From domestic pickup, international shipping to last-mile delivery, providing door-to-door one-stop logistics solutions with full tracking capability.',
+    },
+    {
+      icon: 'credit-card',
+      title: 'Multi-Currency Payment Support',
+      description: 'Supporting 30+ major currencies including USD, EUR, GBP, transparent exchange rates, low fees, and guaranteed fund security.',
+    },
+  ];
+
+  const iconPaths: Record<string, string> = {
+    warehouse: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    search: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v4h4v3l4-7h-4V7z',
+    truck: 'M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4',
+    'credit-card': 'M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z',
+  };
 
   return (
-    <section id="features" className="py-20 bg-gradient-cream">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-            核心优势
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            为什么选择我们
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Core Advantages
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            深耕跨境电商领域多年，积累了丰富的行业经验和资源，致力于为客户提供最优质的服务。
+          <p className="text-gray-600">
+            Why Choose Us
+          </p>
+          <p className="text-gray-500 mt-2">
+            Years of experience in cross-border e-commerce, accumulated rich industry experience and resources, committed to providing the best quality service for clients.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature) => (
             <div
-              key={index}
-              className={`p-8 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${
-                hoveredIndex === index ? 'transform -translate-y-2' : ''
-              }`}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              key={feature.title}
+              className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className={`w-16 h-16 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300 ${
-                hoveredIndex === index ? 'bg-primary text-white' : 'bg-primary/10 text-primary'
-              }`}>
-                {feature.icon}
+              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={iconPaths[feature.icon]} />
+                </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+              <p className="text-gray-600 text-sm">{feature.description}</p>
             </div>
           ))}
         </div>

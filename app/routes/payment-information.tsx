@@ -4,11 +4,11 @@ export default function PaymentInformationPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Payment Methods Accepted by Jingsourcing
+            Payment Methods Accepted by TaiSourcing
           </h1>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
           <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-            The official payment methods that Jingsourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@jingsourcing.com for further confirmation.
+            The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@Taisourcing@gmail.com for further confirmation.
           </p>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function PaymentInformationPage() {
             
             <div className="bg-gray-50 rounded-xl p-6 space-y-2">
               <p className="text-gray-700"><strong>Our Payoneer Account:</strong> PAY@JINGQSOURCING.COM</p>
-              <p className="text-gray-700"><strong>Account Name:</strong> Yiwu Jingqsourcing Ecommerce Co., Limited (义乌市京祺供应链电子商务有限公司)</p>
+              <p className="text-gray-700"><strong>Account Name:</strong> Yiwu TaiSourcing Ecommerce Co., Limited</p>
             </div>
           </div>
 

@@ -74,7 +74,7 @@ export default function ResourcesPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="py-20 bg-gradient-to-r from-primary via-primary-light to-secondary relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-white rounded-full blur-3xl" />
