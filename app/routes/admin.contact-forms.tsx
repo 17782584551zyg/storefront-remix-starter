@@ -11,17 +11,20 @@ export const loader: LoaderFunction = async () => {
     },
     body: JSON.stringify({
       query: `{
-        contactForms {
-          id
-          firstName
-          lastName
-          email
-          phone
-          country
-          company
-          message
-          source
-          createdAt
+        contactForms(take: 100, skip: 0) {
+          items {
+            id
+            firstName
+            lastName
+            email
+            phone
+            country
+            company
+            message
+            source
+            createdAt
+          }
+          totalItems
         }
       }`,
     }),
@@ -30,23 +33,27 @@ export const loader: LoaderFunction = async () => {
   const data = await response.json();
   
   return json({
-    contactForms: data.data?.contactForms || [],
+    contactForms: data.data?.contactForms?.items || [],
+    totalItems: data.data?.contactForms?.totalItems || 0,
   });
 };
 
 export default function AdminContactForms() {
-  const { contactForms } = useLoaderData<{ contactForms: Array<{
-    id: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    country: string;
-    company: string;
-    message: string;
-    source: string;
-    createdAt: string;
-  }> }>();
+  const { contactForms, totalItems } = useLoaderData<{ 
+    contactForms: Array<{
+      id: string;
+      firstName: string;
+      lastName: string;
+      email: string;
+      phone: string;
+      country: string;
+      company: string;
+      message: string;
+      source: string;
+      createdAt: string;
+    }>;
+    totalItems: number;
+  }>();
   
   return (
     <div className="min-h-screen bg-gray-50 py-8">
@@ -54,7 +61,7 @@ export default function AdminContactForms() {
         <div className="bg-white rounded-xl shadow-lg p-8">
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-2xl font-bold text-gray-900">Contact Form Submissions</h1>
-            <span className="text-sm text-gray-500">{contactForms.length} records</span>
+            <span className="text-sm text-gray-500">{totalItems} records</span>
           </div>
           
           <div className="overflow-x-auto">
@@ -88,7 +95,9 @@ export default function AdminContactForms() {
                         form.source === 'monthly-report' ? 'bg-green-100 text-green-800' :
                         'bg-gray-100 text-gray-800'
                       }`}>
-                        {form.source || 'unknown'}
+                        {form.source === 'services' ? 'Services' :
+                         form.source === 'monthly-report' ? 'Monthly Report' :
+                         (form.source || 'Unknown')}
                       </span>
                     </td>
                     <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">
