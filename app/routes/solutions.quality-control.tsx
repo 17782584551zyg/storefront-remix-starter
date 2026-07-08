@@ -1,7 +1,6 @@
 import { json, LoaderFunction } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
+import { useLoaderData, useMatches } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
-import { BACKEND_URL } from '~/constants';
 
 export const loader: LoaderFunction = async () => {
   return json({ images: pageImages['quality-control'] || {} });
@@ -9,11 +8,14 @@ export const loader: LoaderFunction = async () => {
 
 export default function QualityControlPage() {
   const { images } = useLoaderData<{ images: Record<string, string> }>();
+  const matches = useMatches();
+  const rootData = matches.find(m => m.pathname === '/')?.data as { backendUrl: string } | undefined;
+  const backendUrl = rootData?.backendUrl || '';
   
   const getImageUrl = (name: string) => {
     const path = images[name];
-    if (path) {
-      return `${BACKEND_URL}${path}`;
+    if (path && backendUrl) {
+      return `${backendUrl}${path}`;
     }
     return null;
   };

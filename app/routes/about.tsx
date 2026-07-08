@@ -12,7 +12,7 @@ export default function AboutPage() {
 
           <div className="space-y-6">
               <p className="text-gray-600 leading-relaxed">
-                TaiSourcing was founded in Yiwu, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China.
+                TaiSourcing was founded in Xi'an, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe.

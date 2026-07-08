@@ -43,7 +43,7 @@ export default function ServicesPage() {
       });
     } catch (error) {
       console.error('Failed to submit form:', error);
-      alert('Failed to submit. Please try again or email us at Taisourcing@gmail.com');
+      alert('Failed to submit. Please try again or email us at info@taisourcing.asia');
     } finally {
       setSubmitting(false);
     }
@@ -109,7 +109,7 @@ export default function ServicesPage() {
               Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance.
             </p>
             <p className="text-gray-500 mt-4 text-sm">
-              If you encounter any issues with submission, you can also email us directly at Taisourcing@gmail.com.
+              If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia.
             </p>
             <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
           </div>

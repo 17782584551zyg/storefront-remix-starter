@@ -34,16 +34,9 @@ const navItems = [
 
 const languages = [
   { code: 'en', label: 'English' },
-  { code: 'fr', label: 'Français' },
-  { code: 'de', label: 'Deutsch' },
   { code: 'zh', label: '中文' },
-  { code: 'es', label: 'Español' },
-  { code: 'it', label: 'Italiano' },
-  { code: 'nl', label: 'Nederlands' },
-  { code: 'pl', label: 'Polski' },
-  { code: 'sv', label: 'Svenska' },
-  { code: 'da', label: 'Dansk' },
-  { code: 'no', label: 'Norsk' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'fr', label: 'Français' },
 ];
 
 export function Header({

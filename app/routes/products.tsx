@@ -2,6 +2,8 @@ import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
 import { BACKEND_URL } from '~/constants';
+import { useState } from 'react';
+import { graphqlClient } from '~/lib/graphql-client';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const collections = await getCollections(request);
@@ -10,6 +12,60 @@ export const loader: LoaderFunction = async ({ request }) => {
 
 export default function ProductsPage() {
   const { collections } = useLoaderData<{ collections: Array<{ id: string; name: string; slug: string; featuredAsset?: { preview: string } }> }>();
+
+  const [reportFormData, setReportFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    country: '',
+    company: '',
+  });
+  const [reportSubmitting, setReportSubmitting] = useState(false);
+  const [reportSubmitted, setReportSubmitted] = useState(false);
+
+  const handleReportChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setReportFormData({
+      ...reportFormData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleReportSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setReportSubmitting(true);
+    try {
+      await graphqlClient.request(`
+        mutation CreateContactForm($input: CreateContactFormInput!) {
+          createContactForm(input: $input) {
+            id
+            firstName
+            email
+            createdAt
+          }
+        }
+      `, {
+        input: {
+          ...reportFormData,
+          source: 'monthly-report',
+        },
+      });
+      setReportSubmitted(true);
+      setReportFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        country: '',
+        company: '',
+      });
+    } catch (error) {
+      console.error('Failed to submit monthly report form:', error);
+      alert('Failed to submit. Please try again or email us at info@taisourcing.asia');
+    } finally {
+      setReportSubmitting(false);
+    }
+  };
 
   const iconMap: Record<string, string> = {
     'shirt': 'M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z',
@@ -222,44 +278,120 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-white rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-center gap-6">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Product%20catalog%20book%20or%20magazine%20cover&image_size=portrait_4_3"
-                alt="Product Catalog"
-                className="w-32 h-40 object-cover rounded-lg"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Product monthly report</h3>
-                <p className="text-gray-600">We will send the hottest products from "1688.com" to your inbox for free!</p>
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Product Monthly Report
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Subscribe to receive the hottest products from "1688.com" directly to your inbox for free!
+            </p>
+            <p className="text-gray-500 mt-4 text-sm">
+              If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia.
+            </p>
+            <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
+          </div>
+
+          {reportSubmitted ? (
+            <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
               </div>
+              <h3 className="text-xl font-bold text-green-700 mb-2">Thank You!</h3>
+              <p className="text-green-600">Your subscription request has been submitted successfully. We will send the monthly report to your email.</p>
             </div>
-            <form className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
+          ) : (
+            <form onSubmit={handleReportSubmit} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={reportFormData.firstName}
+                    onChange={handleReportChange}
+                    placeholder="First Name*"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={reportFormData.lastName}
+                    onChange={handleReportChange}
+                    placeholder="Last Name*"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    value={reportFormData.email}
+                    onChange={handleReportChange}
+                    placeholder="Email*"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={reportFormData.phone}
+                    onChange={handleReportChange}
+                    placeholder="Phone Number"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <select
+                    name="country"
+                    value={reportFormData.country}
+                    onChange={handleReportChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  >
+                    <option value="">Select your country*</option>
+                    <option value="US">United States</option>
+                    <option value="CN">China</option>
+                    <option value="DE">Germany</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="JP">Japan</option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="company"
+                    value={reportFormData.company || ''}
+                    onChange={handleReportChange}
+                    placeholder="Company Name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
               <button
                 type="submit"
-                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                disabled={reportSubmitting}
+                className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Subscribe Now
+                {reportSubmitting ? 'Submitting...' : 'Subscribe Now'}
               </button>
             </form>
-          </div>
+          )}
         </div>
       </section>
     </div>

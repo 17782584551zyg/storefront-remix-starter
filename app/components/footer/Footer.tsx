@@ -65,7 +65,7 @@ export default function Footer({
             <ul className="space-y-4">
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">Email</div>
-                <a href="mailto:Taisourcing@gmail.com" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Taisourcing@gmail.com</a>
+                <a href="mailto:info@taisourcing.asia" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">info@taisourcing.asia</a>
               </li>
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">Tel (China)</div>

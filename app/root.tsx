@@ -22,7 +22,7 @@ import {
 } from '@remix-run/server-runtime';
 import { getCollections } from '~/providers/collections/collections';
 import { activeChannel } from '~/providers/channel/channel';
-import { APP_META_DESCRIPTION, APP_META_TITLE } from '~/constants';
+import { APP_META_DESCRIPTION, APP_META_TITLE, BACKEND_URL } from '~/constants';
 import { useEffect, useState } from 'react';
 import { CartTray } from '~/components/cart/CartTray';
 import { getActiveCustomer } from '~/providers/customer/customer';
@@ -70,6 +70,7 @@ export type RootLoaderData = {
   activeChannel: Awaited<ReturnType<typeof activeChannel>>;
   collections: Awaited<ReturnType<typeof getCollections>>;
   locale: string;
+  backendUrl: string;
 };
 
 export async function loader({ request, params, context }: DataFunctionArgs) {
@@ -86,6 +87,7 @@ export async function loader({ request, params, context }: DataFunctionArgs) {
     activeChannel: await activeChannel({ request }),
     collections: topLevelCollections,
     locale,
+    backendUrl: BACKEND_URL,
   };
 
   return json(loaderData, { headers: activeCustomer._headers });

@@ -2971,7 +2971,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-KNSJCPLJ.css";
+var tailwind_default = "/build/_assets/tailwind-NNCJRPJK.css";
 
 // app/components/header/Header.tsx
 import { Link, useLocation } from "@remix-run/react";
@@ -3033,16 +3033,9 @@ var navItems = [
   }
 ], languages = [
   { code: "en", label: "English" },
-  { code: "fr", label: "Fran\xE7ais" },
-  { code: "de", label: "Deutsch" },
   { code: "zh", label: "\u4E2D\u6587" },
-  { code: "es", label: "Espa\xF1ol" },
-  { code: "it", label: "Italiano" },
-  { code: "nl", label: "Nederlands" },
-  { code: "pl", label: "Polski" },
-  { code: "sv", label: "Svenska" },
-  { code: "da", label: "Dansk" },
-  { code: "no", label: "Norsk" }
+  { code: "de", label: "Deutsch" },
+  { code: "fr", label: "Fran\xE7ais" }
 ];
 function Header({
   onCartIconClick,
@@ -3072,25 +3065,25 @@ function Header({
         /* @__PURE__ */ jsxDEV2("div", { className: "flex items-center", children: /* @__PURE__ */ jsxDEV2("h1", { className: "text-xl font-bold", children: /* @__PURE__ */ jsxDEV2(Link, { to: "/", className: "flex items-center", children: [
           /* @__PURE__ */ jsxDEV2("span", { className: "text-orange-500 font-bold", children: "Tai" }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 104,
+            lineNumber: 97,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV2("span", { className: "text-gray-800 font-medium", children: "Sourcing" }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 105,
+            lineNumber: 98,
             columnNumber: 19
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 103,
+          lineNumber: 96,
           columnNumber: 13
         }, this) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 102,
+          lineNumber: 95,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 101,
+          lineNumber: 94,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV2("nav", { className: "hidden lg:flex items-center space-x-1", children: navItems.map((item) => /* @__PURE__ */ jsxDEV2(
@@ -3110,12 +3103,12 @@ function Header({
                   children: [
                     /* @__PURE__ */ jsxDEV2("span", { children: item.label }, void 0, !1, {
                       fileName: "app/components/header/Header.tsx",
-                      lineNumber: 124,
+                      lineNumber: 117,
                       columnNumber: 21
                     }, this),
                     /* @__PURE__ */ jsxDEV2(ChevronDownIcon, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/components/header/Header.tsx",
-                      lineNumber: 125,
+                      lineNumber: 118,
                       columnNumber: 21
                     }, this)
                   ]
@@ -3124,7 +3117,7 @@ function Header({
                 !0,
                 {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 119,
+                  lineNumber: 112,
                   columnNumber: 19
                 },
                 this
@@ -3141,18 +3134,18 @@ function Header({
                 !1,
                 {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 130,
+                  lineNumber: 123,
                   columnNumber: 25
                 },
                 this
               )) }, void 0, !1, {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 128,
+                lineNumber: 121,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 118,
+              lineNumber: 111,
               columnNumber: 17
             }, this) : /* @__PURE__ */ jsxDEV2(
               Link,
@@ -3165,7 +3158,7 @@ function Header({
               !1,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 143,
+                lineNumber: 136,
                 columnNumber: 17
               },
               this
@@ -3175,13 +3168,13 @@ function Header({
           !1,
           {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 112,
+            lineNumber: 105,
             columnNumber: 13
           },
           this
         )) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 110,
+          lineNumber: 103,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV2("div", { className: "flex items-center space-x-4", children: [
@@ -3196,17 +3189,17 @@ function Header({
                 children: [
                   /* @__PURE__ */ jsxDEV2(GlobeAltIcon, { className: "w-4 h-4" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 160,
+                    lineNumber: 153,
                     columnNumber: 15
                   }, this),
                   /* @__PURE__ */ jsxDEV2("span", { className: "text-sm", children: languages.find((l) => l.code === currentLocale)?.label || "English" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 161,
+                    lineNumber: 154,
                     columnNumber: 15
                   }, this),
                   /* @__PURE__ */ jsxDEV2(ChevronDownIcon, { className: "w-3 h-3" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 162,
+                    lineNumber: 155,
                     columnNumber: 15
                   }, this)
                 ]
@@ -3215,7 +3208,7 @@ function Header({
               !0,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 156,
+                lineNumber: 149,
                 columnNumber: 13
               },
               this
@@ -3231,18 +3224,18 @@ function Header({
               !1,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 167,
+                lineNumber: 160,
                 columnNumber: 19
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 165,
+              lineNumber: 158,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 155,
+            lineNumber: 148,
             columnNumber: 11
           }, this),
           isProductPage && /* @__PURE__ */ jsxDEV2("div", { className: "hidden md:block", children: /* @__PURE__ */ jsxDEV2(
@@ -3253,12 +3246,12 @@ function Header({
               children: [
                 /* @__PURE__ */ jsxDEV2(UserIcon, { className: "w-4 h-4" }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 188,
+                  lineNumber: 181,
                   columnNumber: 17
                 }, this),
                 /* @__PURE__ */ jsxDEV2("span", { className: "text-sm", children: t(isSignedIn ? "account.myAccount" : "account.signIn") }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 189,
+                  lineNumber: 182,
                   columnNumber: 17
                 }, this)
               ]
@@ -3267,13 +3260,13 @@ function Header({
             !0,
             {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 184,
+              lineNumber: 177,
               columnNumber: 15
             },
             this
           ) }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 183,
+            lineNumber: 176,
             columnNumber: 13
           }, this),
           isProductPage && /* @__PURE__ */ jsxDEV2(
@@ -3285,12 +3278,12 @@ function Header({
               children: [
                 /* @__PURE__ */ jsxDEV2(ShoppingBagIcon, {}, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 201,
+                  lineNumber: 194,
                   columnNumber: 15
                 }, this),
                 cartQuantity ? /* @__PURE__ */ jsxDEV2("div", { className: "absolute rounded-full -top-2 -right-2 bg-orange-500 min-w-6 min-h-6 flex items-center justify-center text-xs text-white p-1", children: cartQuantity }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 203,
+                  lineNumber: 196,
                   columnNumber: 17
                 }, this) : ""
               ]
@@ -3299,19 +3292,19 @@ function Header({
             !0,
             {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 196,
+              lineNumber: 189,
               columnNumber: 13
             },
             this
           )
         ] }, void 0, !0, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 154,
+          lineNumber: 147,
           columnNumber: 9
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/header/Header.tsx",
-        lineNumber: 100,
+        lineNumber: 93,
         columnNumber: 7
       }, this)
     },
@@ -3319,7 +3312,7 @@ function Header({
     !1,
     {
       fileName: "app/components/header/Header.tsx",
-      lineNumber: 94,
+      lineNumber: 87,
       columnNumber: 5
     },
     this
@@ -4980,7 +4973,7 @@ function Footer({
               lineNumber: 67,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV6("a", { href: "mailto:Taisourcing@gmail.com", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Taisourcing@gmail.com" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV6("a", { href: "mailto:info@taisourcing.asia", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "info@taisourcing.asia" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
               lineNumber: 68,
               columnNumber: 17
@@ -5180,7 +5173,8 @@ async function loader({ request, params, context }) {
     activeCustomer,
     activeChannel: await activeChannel({ request }),
     collections: topLevelCollections,
-    locale
+    locale,
+    backendUrl: BACKEND_URL
   };
   return json(loaderData, { headers: activeCustomer._headers });
 }
@@ -5198,32 +5192,32 @@ function App() {
     /* @__PURE__ */ jsxDEV7("head", { children: [
       /* @__PURE__ */ jsxDEV7("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 119,
+        lineNumber: 121,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 120,
+        lineNumber: 122,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7("link", { rel: "icon", href: "/favicon.ico", type: "image/png" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 121,
+        lineNumber: 123,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 122,
+        lineNumber: 124,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 123,
+        lineNumber: 125,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 118,
+      lineNumber: 120,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV7("body", { children: [
@@ -5237,7 +5231,7 @@ function App() {
         !1,
         {
           fileName: "app/root.tsx",
-          lineNumber: 126,
+          lineNumber: 128,
           columnNumber: 9
         },
         this
@@ -5256,13 +5250,13 @@ function App() {
         !1,
         {
           fileName: "app/root.tsx",
-          lineNumber: 131,
+          lineNumber: 133,
           columnNumber: 11
         },
         this
       ) }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 130,
+        lineNumber: 132,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(
@@ -5278,39 +5272,39 @@ function App() {
         !1,
         {
           fileName: "app/root.tsx",
-          lineNumber: 140,
+          lineNumber: 142,
           columnNumber: 9
         },
         this
       ),
       /* @__PURE__ */ jsxDEV7(ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 147,
+        lineNumber: 149,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 148,
+        lineNumber: 150,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Footer, { collections }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 149,
+        lineNumber: 151,
         columnNumber: 9
       }, this),
       devMode && /* @__PURE__ */ jsxDEV7(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 151,
+        lineNumber: 153,
         columnNumber: 21
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 125,
+      lineNumber: 127,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 117,
+    lineNumber: 119,
     columnNumber: 5
   }, this);
 }
@@ -5323,49 +5317,49 @@ function DefaultSparseErrorPage({
     /* @__PURE__ */ jsxDEV7("head", { children: [
       /* @__PURE__ */ jsxDEV7("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 177,
+        lineNumber: 179,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 178,
+        lineNumber: 180,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7("link", { rel: "icon", href: "/favicon.ico", type: "image/png" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 179,
+        lineNumber: 181,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 180,
+        lineNumber: 182,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 181,
+        lineNumber: 183,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 176,
+      lineNumber: 178,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV7("body", { children: [
       /* @__PURE__ */ jsxDEV7("main", { className: "flex flex-col items-center px-4 py-16 sm:py-32 text-center", children: [
         /* @__PURE__ */ jsxDEV7("span", { className: "text-sm font-semibold text-gray-500 uppercase tracking-wide", children: tagline }, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 185,
+          lineNumber: 187,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV7("h1", { className: "mt-2 font-bold text-gray-900 tracking-tight text-4xl sm:text-5xl", children: headline }, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 188,
+          lineNumber: 190,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV7("p", { className: "mt-4 text-base text-gray-500 max-w-full break-words", children: description }, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 191,
+          lineNumber: 193,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV7("div", { className: "mt-6", children: /* @__PURE__ */ jsxDEV7(
@@ -5379,43 +5373,43 @@ function DefaultSparseErrorPage({
           !1,
           {
             fileName: "app/root.tsx",
-            lineNumber: 195,
+            lineNumber: 197,
             columnNumber: 13
           },
           this
         ) }, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 194,
+          lineNumber: 196,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/root.tsx",
-        lineNumber: 184,
+        lineNumber: 186,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 203,
+        lineNumber: 205,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV7(Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 204,
+        lineNumber: 206,
         columnNumber: 9
       }, this),
       devMode && /* @__PURE__ */ jsxDEV7(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 205,
+        lineNumber: 207,
         columnNumber: 21
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 183,
+      lineNumber: 185,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 175,
+    lineNumber: 177,
     columnNumber: 5
   }, this);
 }
@@ -5432,7 +5426,7 @@ function ErrorBoundary() {
     !1,
     {
       fileName: "app/root.tsx",
-      lineNumber: 227,
+      lineNumber: 229,
       columnNumber: 5
     },
     this
@@ -7219,15 +7213,15 @@ __export(solutions_quality_control_exports, {
   loader: () => loader5
 });
 import { json as json3 } from "@remix-run/node";
-import { useLoaderData as useLoaderData5 } from "@remix-run/react";
+import { useLoaderData as useLoaderData5, useMatches as useMatches3 } from "@remix-run/react";
 
 // app/data/page-images.json
 var page_images_default = {
   "shipping-solutions": {
     "hero-image": "/assets/preview/2a/hero-image__preview.png",
     "international-express": "/assets/preview/ce/international-express__preview.png",
-    "sea-freight": "/assets/preview/11/air-freight__preview.png",
-    "air-freight": "/assets/preview/4b/1sea-freight__preview.png",
+    "sea-freight": "/assets/preview/4b/1sea-freight__preview.png",
+    "air-freight": "/assets/preview/11/air-freight__preview.png",
     "railway-freight": "/assets/preview/d3/railway-freight__preview.jpg"
   },
   "quality-control": {
@@ -7241,31 +7235,31 @@ var page_images_default = {
 import { jsxDEV as jsxDEV20 } from "react/jsx-dev-runtime";
 var loader5 = async () => json3({ images: page_images_default["quality-control"] || {} });
 function QualityControlPage() {
-  let { images } = useLoaderData5(), getImageUrl = (name) => {
+  let { images } = useLoaderData5(), backendUrl = useMatches3().find((m) => m.pathname === "/")?.data?.backendUrl || "", getImageUrl = (name) => {
     let path = images[name];
-    return path ? `${BACKEND_URL}${path}` : null;
+    return path && backendUrl ? `${backendUrl}${path}` : null;
   };
   return /* @__PURE__ */ jsxDEV20("div", { className: "min-h-screen", children: [
     /* @__PURE__ */ jsxDEV20("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
       /* @__PURE__ */ jsxDEV20("div", { children: [
         /* @__PURE__ */ jsxDEV20("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Quality Control" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 27,
+          lineNumber: 29,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("p", { className: "text-white/90 text-lg mb-8", children: "Quality inspection is crucial. We take it very seriously to ensure your supply chain is worry-free." }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 30,
+          lineNumber: 32,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get a Quote" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 33,
+          lineNumber: 35,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 26,
+        lineNumber: 28,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "relative", children: [
@@ -7280,7 +7274,7 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 38,
+            lineNumber: 40,
             columnNumber: 15
           },
           this
@@ -7288,75 +7282,75 @@ function QualityControlPage() {
         /* @__PURE__ */ jsxDEV20("div", { className: "absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg", children: /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-3", children: [
           /* @__PURE__ */ jsxDEV20("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 47,
+            lineNumber: 49,
             columnNumber: 23
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 46,
+            lineNumber: 48,
             columnNumber: 21
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 45,
+            lineNumber: 47,
             columnNumber: 19
           }, this),
           /* @__PURE__ */ jsxDEV20("div", { children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "text-sm text-gray-500", children: "Inspection Method" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 51,
+              lineNumber: 53,
               columnNumber: 21
             }, this),
             /* @__PURE__ */ jsxDEV20("div", { className: "font-semibold text-gray-900", children: "AQL 2.5 Standard" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 52,
+              lineNumber: 54,
               columnNumber: 21
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 50,
+            lineNumber: 52,
             columnNumber: 19
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 44,
+          lineNumber: 46,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 43,
+          lineNumber: 45,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 37,
+        lineNumber: 39,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 25,
+      lineNumber: 27,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 24,
+      lineNumber: 26,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Our Quality Guarantee" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 64,
+          lineNumber: 66,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "When you choose our Pro Plan and use our selected suppliers, we guarantee your product quality." }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 67,
+          lineNumber: 69,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 63,
+        lineNumber: 65,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-8", children: [
@@ -7364,133 +7358,133 @@ function QualityControlPage() {
           /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-4 mb-6", children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 77,
+              lineNumber: 79,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 76,
+              lineNumber: 78,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 75,
+              lineNumber: 77,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900", children: "Free Replacement" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 80,
+              lineNumber: 82,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 74,
+            lineNumber: 76,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "If we find defective products during quality inspection at our warehouse, we will help you replace them for free." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 82,
+            lineNumber: 84,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 73,
+          lineNumber: 75,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "bg-gray-50 rounded-xl p-8 border-l-4 border-orange-500", children: [
           /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-4 mb-6", children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 91,
+              lineNumber: 93,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 90,
+              lineNumber: 92,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 89,
+              lineNumber: 91,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900", children: "15-Day Warranty" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 94,
+              lineNumber: 96,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 88,
+            lineNumber: 90,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "If you find product defects within 15 days after receiving the goods and provide relevant evidence, we will arrange replacements or refunds." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 96,
+            lineNumber: 98,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 87,
+          lineNumber: 89,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 72,
+        lineNumber: 74,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 62,
+      lineNumber: 64,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 61,
+      lineNumber: 63,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "How We Inspect Your Products" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 107,
+          lineNumber: 109,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 110,
+          lineNumber: 112,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 106,
+        lineNumber: 108,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "order-2 md:order-1", children: [
           /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "General Inspection" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 115,
+            lineNumber: 117,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "Whether you choose our Pro Plan or Basic Plan, your goods will be sent to our warehouse for free comprehensive inspection. We follow Level II standards, AQL 2.5 standards, just like other inspection companies." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 116,
+            lineNumber: 118,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "For defective products, if you use our selected suppliers, we will handle quality issues for free. If you use your own suppliers, we can assist in solving the problem, but there may be charges for logistics and re-inspection fees." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 119,
+            lineNumber: 121,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-6", children: "If you need a customized inspection solution or a lower defect rate, contact our agent for details on any additional costs." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 122,
+            lineNumber: 124,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Contact Our Agent" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 125,
+            lineNumber: 127,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 114,
+          lineNumber: 116,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "order-1 md:order-2", children: /* @__PURE__ */ jsxDEV20(
@@ -7504,18 +7498,18 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 130,
+            lineNumber: 132,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 129,
+          lineNumber: 131,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 113,
+        lineNumber: 115,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
@@ -7530,156 +7524,156 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 140,
+            lineNumber: 142,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 139,
+          lineNumber: 141,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { children: [
           /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Full Inspection" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 147,
+            lineNumber: 149,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "To achieve 0% defect rate, we recommend our full inspection service to identify and remove all defective products. Our standard rate is $5 per hour. Contact our agent to discuss your needs and get a customized quote." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 148,
+            lineNumber: 150,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get Started Now" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 151,
+            lineNumber: 153,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 146,
+          lineNumber: 148,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 138,
+        lineNumber: 140,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 105,
+      lineNumber: 107,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 104,
+      lineNumber: 106,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV20("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-8", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "98%" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 163,
+          lineNumber: 165,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Defect Detection Rate" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 164,
+          lineNumber: 166,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 162,
+        lineNumber: 164,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "24h" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 167,
+          lineNumber: 169,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Inspection Report" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 168,
+          lineNumber: 170,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 166,
+        lineNumber: 168,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "50+" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 171,
+          lineNumber: 173,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Quality Inspectors" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 172,
+          lineNumber: 174,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 170,
+        lineNumber: 172,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "10K+" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 175,
+          lineNumber: 177,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Products Inspected Monthly" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 176,
+          lineNumber: 178,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 174,
+        lineNumber: 176,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 161,
+      lineNumber: 163,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 160,
+      lineNumber: 162,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 159,
+      lineNumber: 161,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
       /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Need Custom Quality Control Solutions?" }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 184,
+        lineNumber: 186,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("p", { className: "text-white/90 text-lg mb-8", children: "Our quality control team will analyze your product requirements and provide the most suitable inspection plan." }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 187,
+        lineNumber: 189,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Our QC Team" }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 190,
+        lineNumber: 192,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 183,
+      lineNumber: 185,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 182,
+      lineNumber: 184,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/solutions.quality-control.tsx",
-    lineNumber: 22,
+    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
@@ -8162,26 +8156,227 @@ function DropshippingPage() {
   }, this);
 }
 
+// app/routes/admin.contact-forms.tsx
+var admin_contact_forms_exports = {};
+__export(admin_contact_forms_exports, {
+  default: () => AdminContactForms,
+  loader: () => loader7
+});
+import { json as json5 } from "@remix-run/node";
+import { useLoaderData as useLoaderData7 } from "@remix-run/react";
+import { jsxDEV as jsxDEV23 } from "react/jsx-dev-runtime";
+var loader7 = async () => {
+  let data = await (await fetch(`${BACKEND_URL}/admin-api`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer superadmin"
+    },
+    body: JSON.stringify({
+      query: `{
+        contactForms {
+          id
+          firstName
+          lastName
+          email
+          phone
+          country
+          company
+          message
+          source
+          createdAt
+        }
+      }`
+    })
+  })).json();
+  return json5({
+    contactForms: data.data?.contactForms || []
+  });
+};
+function AdminContactForms() {
+  let { contactForms } = useLoaderData7();
+  return /* @__PURE__ */ jsxDEV23("div", { className: "min-h-screen bg-gray-50 py-8", children: /* @__PURE__ */ jsxDEV23("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV23("div", { className: "bg-white rounded-xl shadow-lg p-8", children: [
+    /* @__PURE__ */ jsxDEV23("div", { className: "flex items-center justify-between mb-8", children: [
+      /* @__PURE__ */ jsxDEV23("h1", { className: "text-2xl font-bold text-gray-900", children: "Contact Form Submissions" }, void 0, !1, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 56,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV23("span", { className: "text-sm text-gray-500", children: [
+        contactForms.length,
+        " records"
+      ] }, void 0, !0, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 57,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/admin.contact-forms.tsx",
+      lineNumber: 55,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV23("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxDEV23("table", { className: "w-full", children: [
+      /* @__PURE__ */ jsxDEV23("thead", { children: /* @__PURE__ */ jsxDEV23("tr", { className: "bg-gray-50", children: [
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "ID" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 64,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Name" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 65,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Email" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 66,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Phone" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 67,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Country" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 68,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Company" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 69,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Source" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 70,
+          columnNumber: 19
+        }, this),
+        /* @__PURE__ */ jsxDEV23("th", { className: "px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider", children: "Created At" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 71,
+          columnNumber: 19
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 63,
+        columnNumber: 17
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 62,
+        columnNumber: 15
+      }, this),
+      /* @__PURE__ */ jsxDEV23("tbody", { className: "bg-white divide-y divide-gray-200", children: contactForms.map((form) => /* @__PURE__ */ jsxDEV23("tr", { className: "hover:bg-gray-50", children: [
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-900", children: form.id }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 77,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-900", children: [
+          form.firstName,
+          " ",
+          form.lastName
+        ] }, void 0, !0, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 78,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-500", children: form.email }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 81,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-500", children: form.phone || "-" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 82,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-500", children: form.country || "-" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 83,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-500", children: form.company || "-" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 84,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap", children: /* @__PURE__ */ jsxDEV23("span", { className: `px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${form.source === "services" ? "bg-blue-100 text-blue-800" : form.source === "monthly-report" ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"}`, children: form.source || "unknown" }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 86,
+          columnNumber: 23
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 85,
+          columnNumber: 21
+        }, this),
+        /* @__PURE__ */ jsxDEV23("td", { className: "px-4 py-4 whitespace-nowrap text-sm text-gray-500", children: new Date(form.createdAt).toLocaleString() }, void 0, !1, {
+          fileName: "app/routes/admin.contact-forms.tsx",
+          lineNumber: 94,
+          columnNumber: 21
+        }, this)
+      ] }, form.id, !0, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 76,
+        columnNumber: 19
+      }, this)) }, void 0, !1, {
+        fileName: "app/routes/admin.contact-forms.tsx",
+        lineNumber: 74,
+        columnNumber: 15
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/admin.contact-forms.tsx",
+      lineNumber: 61,
+      columnNumber: 13
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/admin.contact-forms.tsx",
+      lineNumber: 60,
+      columnNumber: 11
+    }, this),
+    contactForms.length === 0 && /* @__PURE__ */ jsxDEV23("div", { className: "text-center py-12", children: /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-500", children: "No submissions found." }, void 0, !1, {
+      fileName: "app/routes/admin.contact-forms.tsx",
+      lineNumber: 105,
+      columnNumber: 15
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/admin.contact-forms.tsx",
+      lineNumber: 104,
+      columnNumber: 13
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/admin.contact-forms.tsx",
+    lineNumber: 54,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/admin.contact-forms.tsx",
+    lineNumber: 53,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/admin.contact-forms.tsx",
+    lineNumber: 52,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/payment-information.tsx
 var payment_information_exports = {};
 __export(payment_information_exports, {
   default: () => PaymentInformationPage
 });
-import { jsxDEV as jsxDEV23 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV24 } from "react/jsx-dev-runtime";
 function PaymentInformationPage() {
-  return /* @__PURE__ */ jsxDEV23("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV23("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxDEV23("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV23("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Payment Methods Accepted by TaiSourcing" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV24("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV24("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsxDEV24("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Payment Methods Accepted by TaiSourcing" }, void 0, !1, {
         fileName: "app/routes/payment-information.tsx",
         lineNumber: 6,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "w-24 h-1 bg-primary mx-auto rounded-full" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV24("div", { className: "w-24 h-1 bg-primary mx-auto rounded-full" }, void 0, !1, {
         fileName: "app/routes/payment-information.tsx",
         lineNumber: 9,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mt-6 max-w-2xl mx-auto", children: "The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to Taisourcing@gmail.com for further confirmation." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mt-6 max-w-2xl mx-auto", children: "The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@taisourcing.asia for further confirmation." }, void 0, !1, {
         fileName: "app/routes/payment-information.tsx",
         lineNumber: 10,
         columnNumber: 11
@@ -8195,25 +8390,25 @@ function PaymentInformationPage() {
       lineNumber: 4,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV23("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV23("div", { className: "max-w-4xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV23("div", { className: "mb-12", children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "1. PayPal" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-4xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV24("div", { className: "mb-12", children: [
+        /* @__PURE__ */ jsxDEV24("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "1. PayPal" }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 19,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-6", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 20,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-8", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-8", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 23,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-          /* @__PURE__ */ jsxDEV23("strong", { children: "Our PayPal Account:" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-700", children: [
+          /* @__PURE__ */ jsxDEV24("strong", { children: "Our PayPal Account:" }, void 0, !1, {
             fileName: "app/routes/payment-information.tsx",
             lineNumber: 28,
             columnNumber: 44
@@ -8233,28 +8428,28 @@ function PaymentInformationPage() {
         lineNumber: 18,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV23("div", { children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "2. Alibaba Trade Assurance" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV24("div", { children: [
+        /* @__PURE__ */ jsxDEV24("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "2. Alibaba Trade Assurance" }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 33,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 34,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-6", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 37,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "To finish the payment, you need to provide the Alibaba account email to your agent. Then your agent will help create a Trade Assurance Order on Alibaba, and guide you to finish the payment." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "To finish the payment, you need to provide the Alibaba account email to your agent. Then your agent will help create a Trade Assurance Order on Alibaba, and guide you to finish the payment." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 40,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600", children: "Please note that you need to pay 2% more of the amount, because it's the fee charged by Alibaba from our side. Each payment should be less than $5,000, or we need to split the amount into several payments." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "Please note that you need to pay 2% more of the amount, because it's the fee charged by Alibaba from our side. Each payment should be less than $5,000, or we need to split the amount into several payments." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 43,
           columnNumber: 13
@@ -8284,59 +8479,59 @@ function PaymentInformationPage() {
 var solutions_shipping_exports = {};
 __export(solutions_shipping_exports, {
   default: () => ShippingSolutionsPage,
-  loader: () => loader7
+  loader: () => loader8
 });
-import { json as json5 } from "@remix-run/node";
-import { useLoaderData as useLoaderData7 } from "@remix-run/react";
-import { jsxDEV as jsxDEV24 } from "react/jsx-dev-runtime";
-var loader7 = async () => json5({ images: page_images_default["shipping-solutions"] || {} });
+import { json as json6 } from "@remix-run/node";
+import { useLoaderData as useLoaderData8, useMatches as useMatches4 } from "@remix-run/react";
+import { jsxDEV as jsxDEV25 } from "react/jsx-dev-runtime";
+var loader8 = async () => json6({ images: page_images_default["shipping-solutions"] || {} });
 function ShippingSolutionsPage() {
-  let { images } = useLoaderData7(), getImageUrl = (name) => {
+  let { images } = useLoaderData8(), backendUrl = useMatches4().find((m) => m.pathname === "/")?.data?.backendUrl || "", getImageUrl = (name) => {
     let path = images[name];
-    return path ? `${BACKEND_URL}${path}` : null;
+    return path && backendUrl ? `${backendUrl}${path}` : null;
   };
-  return /* @__PURE__ */ jsxDEV24("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV24("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden", children: [
-      /* @__PURE__ */ jsxDEV24("div", { className: "absolute inset-0 opacity-10", children: [
-        /* @__PURE__ */ jsxDEV24("div", { className: "absolute top-20 right-20 w-72 h-72 bg-white rounded-full blur-3xl" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV25("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV25("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden", children: [
+      /* @__PURE__ */ jsxDEV25("div", { className: "absolute inset-0 opacity-10", children: [
+        /* @__PURE__ */ jsxDEV25("div", { className: "absolute top-20 right-20 w-72 h-72 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 25,
+          lineNumber: 27,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV24("div", { className: "absolute bottom-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV25("div", { className: "absolute bottom-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 26,
+          lineNumber: 28,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6 relative z-10", children: /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
-        /* @__PURE__ */ jsxDEV24("div", { children: [
-          /* @__PURE__ */ jsxDEV24("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Fast & Secure Global Shipping" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV25("div", { className: "max-w-6xl mx-auto px-6 relative z-10", children: /* @__PURE__ */ jsxDEV25("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+        /* @__PURE__ */ jsxDEV25("div", { children: [
+          /* @__PURE__ */ jsxDEV25("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Fast & Secure Global Shipping" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 32,
+            lineNumber: 34,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("p", { className: "text-white/90 text-lg mb-8", children: "Providing flexible shipping solutions for businesses of any size." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("p", { className: "text-white/90 text-lg mb-8", children: "Providing flexible shipping solutions for businesses of any size." }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 35,
+            lineNumber: 37,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 38,
+            lineNumber: 40,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 31,
+          lineNumber: 33,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("div", { className: "relative", children: [
-          /* @__PURE__ */ jsxDEV24(
+        /* @__PURE__ */ jsxDEV25("div", { className: "relative", children: [
+          /* @__PURE__ */ jsxDEV25(
             "img",
             {
               src: getImageUrl("hero-image") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3",
@@ -8347,92 +8542,92 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 43,
+              lineNumber: 45,
               columnNumber: 15
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV24("div", { className: "absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg", children: /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center justify-between", children: [
-            /* @__PURE__ */ jsxDEV24("div", { children: [
-              /* @__PURE__ */ jsxDEV24("div", { className: "text-sm text-gray-500", children: "Delivery Time" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { className: "absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg", children: /* @__PURE__ */ jsxDEV25("div", { className: "flex items-center justify-between", children: [
+            /* @__PURE__ */ jsxDEV25("div", { children: [
+              /* @__PURE__ */ jsxDEV25("div", { className: "text-sm text-gray-500", children: "Delivery Time" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 51,
+                lineNumber: 53,
                 columnNumber: 21
               }, this),
-              /* @__PURE__ */ jsxDEV24("div", { className: "text-xl font-bold text-orange-500", children: "3-5 Days" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("div", { className: "text-xl font-bold text-orange-500", children: "3-5 Days" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 50,
+              lineNumber: 52,
               columnNumber: 19
             }, this),
-            /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-2", children: [
-              /* @__PURE__ */ jsxDEV24("div", { className: "w-3 h-3 bg-green-500 rounded-full animate-pulse" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("div", { className: "flex items-center gap-2", children: [
+              /* @__PURE__ */ jsxDEV25("div", { className: "w-3 h-3 bg-green-500 rounded-full animate-pulse" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 55,
+                lineNumber: 57,
                 columnNumber: 21
               }, this),
-              /* @__PURE__ */ jsxDEV24("span", { className: "text-sm text-green-600 font-medium", children: "On Time" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("span", { className: "text-sm text-green-600 font-medium", children: "On Time" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 54,
+              lineNumber: 56,
               columnNumber: 19
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 49,
+            lineNumber: 51,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 48,
+            lineNumber: 50,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 42,
+          lineNumber: 44,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 30,
+        lineNumber: 32,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 29,
+        lineNumber: 31,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV24("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "International Express" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV25("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV25("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV25("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV25("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "International Express" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 68,
+          lineNumber: 70,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "For goods under 500kg, our international express service can deliver directly to your door in 3-5 days in most countries and regions." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600", children: "For goods under 500kg, our international express service can deliver directly to your door in 3-5 days in most countries and regions." }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 71,
+          lineNumber: 73,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 67,
+        lineNumber: 69,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
-        /* @__PURE__ */ jsxDEV24("div", { className: "relative", children: [
-          /* @__PURE__ */ jsxDEV24(
+      /* @__PURE__ */ jsxDEV25("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+        /* @__PURE__ */ jsxDEV25("div", { className: "relative", children: [
+          /* @__PURE__ */ jsxDEV25(
             "img",
             {
               src: getImageUrl("international-express") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3",
@@ -8443,175 +8638,175 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 78,
+              lineNumber: 80,
               columnNumber: 15
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV24("div", { className: "absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-medium", children: "DHL, UPS, FedEx, DPD" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { className: "absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-medium", children: "DHL, UPS, FedEx, DPD" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 83,
+            lineNumber: 85,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 77,
+          lineNumber: 79,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("div", { className: "space-y-6", children: [
-          /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV25("div", { className: "space-y-6", children: [
+          /* @__PURE__ */ jsxDEV25("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 94,
+              columnNumber: 21
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 93,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
               lineNumber: 92,
-              columnNumber: 21
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 91,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 90,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("div", { children: [
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Competitive Pricing" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("div", { children: [
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Competitive Pricing" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 96,
+                lineNumber: 98,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "Enjoy our discounted express rates based on shipment weight for lower shipping costs." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600", children: "Enjoy our discounted express rates based on shipment weight for lower shipping costs." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 97,
+                lineNumber: 99,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 95,
+              lineNumber: 97,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 89,
+            lineNumber: 91,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 106,
+              columnNumber: 21
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 105,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
               lineNumber: 104,
-              columnNumber: 21
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 103,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 102,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("div", { children: [
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Dangerous Goods Shipping" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("div", { children: [
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Dangerous Goods Shipping" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 108,
+                lineNumber: 110,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "Our network safely transports all types of goods including batteries, liquids, and powders." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600", children: "Our network safely transports all types of goods including batteries, liquids, and powders." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 109,
+                lineNumber: 111,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 107,
+              lineNumber: 109,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 101,
+            lineNumber: 103,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 118,
+              columnNumber: 21
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/solutions.shipping.tsx",
+              lineNumber: 117,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
               lineNumber: 116,
-              columnNumber: 21
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 115,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 114,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("div", { children: [
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Insurance Coverage" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("div", { children: [
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Insurance Coverage" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 120,
+                lineNumber: 122,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "In case of damage, we work closely with carriers and suppliers to ensure compensation for shipping costs and product value." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600", children: "In case of damage, we work closely with carriers and suppliers to ensure compensation for shipping costs and product value." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 121,
+                lineNumber: 123,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 119,
+              lineNumber: 121,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 113,
+            lineNumber: 115,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { className: "pt-4", children: /* @__PURE__ */ jsxDEV24("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a Quote" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { className: "pt-4", children: /* @__PURE__ */ jsxDEV25("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a Quote" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 126,
+            lineNumber: 128,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 125,
+            lineNumber: 127,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 88,
+          lineNumber: 90,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 76,
+        lineNumber: 78,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 66,
+      lineNumber: 68,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 65,
+      lineNumber: 67,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV24("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Port to Port Shipping" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV25("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV25("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV25("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV25("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Port to Port Shipping" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 138,
+          lineNumber: 140,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "If you prefer to use your own freight forwarder for local logistics, we can deliver your goods to any designated sea, air, or railway port." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600", children: "If you prefer to use your own freight forwarder for local logistics, we can deliver your goods to any designated sea, air, or railway port." }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 141,
+          lineNumber: 143,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 137,
+        lineNumber: 139,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV24("div", { className: "space-y-8", children: [
-        /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
-          /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
+      /* @__PURE__ */ jsxDEV25("div", { className: "space-y-8", children: [
+        /* @__PURE__ */ jsxDEV25("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
+          /* @__PURE__ */ jsxDEV25("div", { children: /* @__PURE__ */ jsxDEV25(
             "img",
             {
               src: getImageUrl("sea-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3",
@@ -8622,111 +8817,111 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 149,
+              lineNumber: 151,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 148,
+            lineNumber: 150,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
-              /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "flex items-center gap-3 mb-4", children: [
+              /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 159,
+                lineNumber: 161,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 158,
+                lineNumber: 160,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 157,
+                lineNumber: 159,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Sea Freight" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-xl font-bold text-gray-900", children: "Sea Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 162,
+                lineNumber: 164,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 156,
+              lineNumber: 158,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "This is the most economical shipping method. From China to destination ports, it only takes 15-40 days. We will advise your shipment to choose LCL or FCL." }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600 mb-4", children: "This is the most economical shipping method. From China to destination ports, it only takes 15-40 days. We will advise your shipment to choose LCL or FCL." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 164,
+              lineNumber: 166,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("ul", { className: "space-y-2 text-gray-600", children: [
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 170,
+                  lineNumber: 172,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 169,
+                  lineNumber: 171,
                   columnNumber: 21
                 }, this),
                 "FCL (Full Container Load)"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 168,
+                lineNumber: 170,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 176,
+                  lineNumber: 178,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 175,
+                  lineNumber: 177,
                   columnNumber: 21
                 }, this),
                 "LCL (Less than Container Load)"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 174,
+                lineNumber: 176,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 182,
+                  lineNumber: 184,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 181,
+                  lineNumber: 183,
                   columnNumber: 21
                 }, this),
                 "15-40 days transit time"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 180,
+                lineNumber: 182,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 167,
+              lineNumber: 169,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 155,
+            lineNumber: 157,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 147,
+          lineNumber: 149,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
-          /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
+        /* @__PURE__ */ jsxDEV25("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
+          /* @__PURE__ */ jsxDEV25("div", { children: /* @__PURE__ */ jsxDEV25(
             "img",
             {
               src: getImageUrl("air-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3",
@@ -8737,111 +8932,111 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 192,
+              lineNumber: 194,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 191,
+            lineNumber: 193,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
-              /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "flex items-center gap-3 mb-4", children: [
+              /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 202,
+                lineNumber: 204,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 201,
+                lineNumber: 203,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 200,
+                lineNumber: 202,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Air Freight" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-xl font-bold text-gray-900", children: "Air Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 205,
+                lineNumber: 207,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 199,
+              lineNumber: 201,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "This is the fastest shipping method. From China to destination airports, it only takes 2-5 days. For goods over 500kg, this option is more cost-effective than international express." }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600 mb-4", children: "This is the fastest shipping method. From China to destination airports, it only takes 2-5 days. For goods over 500kg, this option is more cost-effective than international express." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 207,
+              lineNumber: 209,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("ul", { className: "space-y-2 text-gray-600", children: [
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 213,
+                  lineNumber: 215,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 212,
+                  lineNumber: 214,
                   columnNumber: 21
                 }, this),
                 "2-5 days transit time"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 211,
+                lineNumber: 213,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 219,
+                  lineNumber: 221,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 218,
+                  lineNumber: 220,
                   columnNumber: 21
                 }, this),
                 "Cost-effective for bulk cargo"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 217,
+                lineNumber: 219,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 225,
+                  lineNumber: 227,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 224,
+                  lineNumber: 226,
                   columnNumber: 21
                 }, this),
                 "Direct flights available"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 223,
+                lineNumber: 225,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 210,
+              lineNumber: 212,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 198,
+            lineNumber: 200,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 190,
+          lineNumber: 192,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
-          /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
+        /* @__PURE__ */ jsxDEV25("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
+          /* @__PURE__ */ jsxDEV25("div", { children: /* @__PURE__ */ jsxDEV25(
             "img",
             {
               src: getImageUrl("railway-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3",
@@ -8852,151 +9047,151 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 235,
+              lineNumber: 237,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 234,
+            lineNumber: 236,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV24("div", { children: [
-            /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
-              /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV25("div", { children: [
+            /* @__PURE__ */ jsxDEV25("div", { className: "flex items-center gap-3 mb-4", children: [
+              /* @__PURE__ */ jsxDEV25("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV25("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV25("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 245,
+                lineNumber: 247,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 244,
+                lineNumber: 246,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 243,
+                lineNumber: 245,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Railway Freight" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("h3", { className: "text-xl font-bold text-gray-900", children: "Railway Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 248,
+                lineNumber: 250,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 242,
+              lineNumber: 244,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "We provide China-Europe Railway Express FCL/LCL transport services. Railway freight takes half the time of sea freight and costs less than air freight." }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("p", { className: "text-gray-600 mb-4", children: "We provide China-Europe Railway Express FCL/LCL transport services. Railway freight takes half the time of sea freight and costs less than air freight." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 250,
+              lineNumber: 252,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV25("ul", { className: "space-y-2 text-gray-600", children: [
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 256,
+                  lineNumber: 258,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 255,
+                  lineNumber: 257,
                   columnNumber: 21
                 }, this),
                 "China-Europe Railway Express"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 254,
+                lineNumber: 256,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 262,
+                  lineNumber: 264,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 261,
+                  lineNumber: 263,
                   columnNumber: 21
                 }, this),
                 "Half the time of sea freight"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 260,
+                lineNumber: 262,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
-                /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV25("li", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxDEV25("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV25("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 268,
+                  lineNumber: 270,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 267,
+                  lineNumber: 269,
                   columnNumber: 21
                 }, this),
                 "Lower cost than air freight"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 266,
+                lineNumber: 268,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 253,
+              lineNumber: 255,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 241,
+            lineNumber: 243,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 233,
+          lineNumber: 235,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 146,
+        lineNumber: 148,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 136,
+      lineNumber: 138,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 135,
+      lineNumber: 137,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Need Custom Shipping Solutions?" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV25("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV25("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsxDEV25("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Need Custom Shipping Solutions?" }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 281,
+        lineNumber: 283,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV24("p", { className: "text-white/90 text-lg mb-8", children: "Our logistics experts will analyze your shipping needs and provide the most cost-effective solution." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV25("p", { className: "text-white/90 text-lg mb-8", children: "Our logistics experts will analyze your shipping needs and provide the most cost-effective solution." }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 284,
+        lineNumber: 286,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV24("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Our Logistics Team" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV25("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Our Logistics Team" }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 287,
+        lineNumber: 289,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 280,
+      lineNumber: 282,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 279,
+      lineNumber: 281,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/solutions.shipping.tsx",
-    lineNumber: 22,
+    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
@@ -9006,31 +9201,31 @@ var account_addresses_exports = {};
 __export(account_addresses_exports, {
   action: () => action4,
   default: () => AccountAddresses,
-  loader: () => loader8
+  loader: () => loader9
 });
-import { Outlet as Outlet2, useLoaderData as useLoaderData8 } from "@remix-run/react";
-import { json as json6 } from "@remix-run/server-runtime";
+import { Outlet as Outlet2, useLoaderData as useLoaderData9 } from "@remix-run/react";
+import { json as json7 } from "@remix-run/server-runtime";
 
 // app/components/account/AddAddressCard.tsx
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { Link as Link5 } from "@remix-run/react";
 import { useTranslation as useTranslation14 } from "react-i18next";
-import { Fragment as Fragment5, jsxDEV as jsxDEV25 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment5, jsxDEV as jsxDEV26 } from "react/jsx-dev-runtime";
 function AddAddressCard() {
   let { t } = useTranslation14();
-  return /* @__PURE__ */ jsxDEV25(Fragment5, { children: /* @__PURE__ */ jsxDEV25(
+  return /* @__PURE__ */ jsxDEV26(Fragment5, { children: /* @__PURE__ */ jsxDEV26(
     Link5,
     {
       preventScrollReset: !0,
       className: "border border-gray-200 p-5 min-h-[220px] h-full w-full flex flex-col justify-between",
       to: "/account/addresses/new",
       children: [
-        /* @__PURE__ */ jsxDEV25("span", { className: "text-base-semi", children: t("address.new") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV26("span", { className: "text-base-semi", children: t("address.new") }, void 0, !1, {
           fileName: "app/components/account/AddAddressCard.tsx",
           lineNumber: 15,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV25(PlusIcon, { className: "w-6 h-6" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV26(PlusIcon, { className: "w-6 h-6" }, void 0, !1, {
           fileName: "app/components/account/AddAddressCard.tsx",
           lineNumber: 16,
           columnNumber: 9
@@ -9066,13 +9261,13 @@ import { useState as useState6 } from "react";
 
 // app/components/ErrorMessage.tsx
 import { XCircleIcon as XCircleIcon3 } from "@heroicons/react/24/solid";
-import { jsxDEV as jsxDEV26 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV27 } from "react/jsx-dev-runtime";
 function ErrorMessage({
   heading,
   message
 }) {
-  return /* @__PURE__ */ jsxDEV26("div", { className: "rounded-md bg-red-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxDEV26("div", { className: "flex", children: [
-    /* @__PURE__ */ jsxDEV26("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV26(XCircleIcon3, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV27("div", { className: "rounded-md bg-red-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxDEV27("div", { className: "flex", children: [
+    /* @__PURE__ */ jsxDEV27("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV27(XCircleIcon3, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }, void 0, !1, {
       fileName: "app/components/ErrorMessage.tsx",
       lineNumber: 14,
       columnNumber: 11
@@ -9081,13 +9276,13 @@ function ErrorMessage({
       lineNumber: 13,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV26("div", { className: "ml-3", children: [
-      /* @__PURE__ */ jsxDEV26("h3", { className: "text-sm font-medium text-red-800", children: heading }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV27("div", { className: "ml-3", children: [
+      /* @__PURE__ */ jsxDEV27("h3", { className: "text-sm font-medium text-red-800", children: heading }, void 0, !1, {
         fileName: "app/components/ErrorMessage.tsx",
         lineNumber: 17,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV26("p", { className: "text-sm text-red-700 mt-2", children: message }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV27("p", { className: "text-sm text-red-700 mt-2", children: message }, void 0, !1, {
         fileName: "app/components/ErrorMessage.tsx",
         lineNumber: 18,
         columnNumber: 11
@@ -9110,32 +9305,32 @@ function ErrorMessage({
 
 // app/components/account/EditAddressCard.tsx
 import { useTranslation as useTranslation15 } from "react-i18next";
-import { Fragment as Fragment6, jsxDEV as jsxDEV27 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment6, jsxDEV as jsxDEV28 } from "react/jsx-dev-runtime";
 function EditAddressCard({
   address,
   isActive = !1
 }) {
   let setShipping = useFetcher2(), setBilling = useFetcher2(), deleteAddress = useFetcher2(), [isDeleteModalVisible, setDeleteModalVisible] = useState6(!1), { t } = useTranslation15();
-  return /* @__PURE__ */ jsxDEV27(Fragment6, { children: [
-    /* @__PURE__ */ jsxDEV27(
+  return /* @__PURE__ */ jsxDEV28(Fragment6, { children: [
+    /* @__PURE__ */ jsxDEV28(
       Modal_default,
       {
         isOpen: isDeleteModalVisible,
         close: () => setDeleteModalVisible(deleteAddress.state !== "idle"),
-        children: /* @__PURE__ */ jsxDEV27(deleteAddress.Form, { method: "post", preventScrollReset: !0, children: [
-          /* @__PURE__ */ jsxDEV27(Modal_default.Title, { children: t("address.deleteModal.title") }, void 0, !1, {
+        children: /* @__PURE__ */ jsxDEV28(deleteAddress.Form, { method: "post", preventScrollReset: !0, children: [
+          /* @__PURE__ */ jsxDEV28(Modal_default.Title, { children: t("address.deleteModal.title") }, void 0, !1, {
             fileName: "app/components/account/EditAddressCard.tsx",
             lineNumber: 44,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV27(Modal_default.Body, { children: /* @__PURE__ */ jsxDEV27("div", { className: "space-y-4 my-4", children: [
+          /* @__PURE__ */ jsxDEV28(Modal_default.Body, { children: /* @__PURE__ */ jsxDEV28("div", { className: "space-y-4 my-4", children: [
             t("address.deleteModal.confirmation"),
-            /* @__PURE__ */ jsxDEV27("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV28("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
               fileName: "app/components/account/EditAddressCard.tsx",
               lineNumber: 48,
               columnNumber: 15
             }, this),
-            deleteAddress.data && /* @__PURE__ */ jsxDEV27(
+            deleteAddress.data && /* @__PURE__ */ jsxDEV28(
               ErrorMessage,
               {
                 heading: t("address.deleteModal.error"),
@@ -9159,8 +9354,8 @@ function EditAddressCard({
             lineNumber: 45,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV27(Modal_default.Footer, { children: [
-            /* @__PURE__ */ jsxDEV27(
+          /* @__PURE__ */ jsxDEV28(Modal_default.Footer, { children: [
+            /* @__PURE__ */ jsxDEV28(
               Button,
               {
                 type: "button",
@@ -9177,7 +9372,7 @@ function EditAddressCard({
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV27(
+            /* @__PURE__ */ jsxDEV28(
               HighlightedButton,
               {
                 type: "submit",
@@ -9216,7 +9411,7 @@ function EditAddressCard({
       },
       this
     ),
-    /* @__PURE__ */ jsxDEV27(
+    /* @__PURE__ */ jsxDEV28(
       "div",
       {
         className: clsx6(
@@ -9226,22 +9421,22 @@ function EditAddressCard({
           }
         ),
         children: [
-          /* @__PURE__ */ jsxDEV27("div", { className: "flex justify-between", children: [
-            /* @__PURE__ */ jsxDEV27("div", { className: "flex flex-col", children: [
-              /* @__PURE__ */ jsxDEV27("span", { className: "text-left text-base-semi", children: address.fullName }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV28("div", { className: "flex justify-between", children: [
+            /* @__PURE__ */ jsxDEV28("div", { className: "flex flex-col", children: [
+              /* @__PURE__ */ jsxDEV28("span", { className: "text-left text-base-semi", children: address.fullName }, void 0, !1, {
                 fileName: "app/components/account/EditAddressCard.tsx",
                 lineNumber: 90,
                 columnNumber: 13
               }, this),
-              address.company && /* @__PURE__ */ jsxDEV27("span", { className: "text-small-regular text-gray-700", children: address.company }, void 0, !1, {
+              address.company && /* @__PURE__ */ jsxDEV28("span", { className: "text-small-regular text-gray-700", children: address.company }, void 0, !1, {
                 fileName: "app/components/account/EditAddressCard.tsx",
                 lineNumber: 92,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV27("div", { className: "flex flex-col text-left text-base-regular mt-2", children: [
-                /* @__PURE__ */ jsxDEV27("span", { children: [
+              /* @__PURE__ */ jsxDEV28("div", { className: "flex flex-col text-left text-base-regular mt-2", children: [
+                /* @__PURE__ */ jsxDEV28("span", { children: [
                   address.streetLine1,
-                  address.streetLine2 && /* @__PURE__ */ jsxDEV27("span", { children: [
+                  address.streetLine2 && /* @__PURE__ */ jsxDEV28("span", { children: [
                     ", ",
                     address.streetLine2
                   ] }, void 0, !0, {
@@ -9254,7 +9449,7 @@ function EditAddressCard({
                   lineNumber: 97,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ jsxDEV27("span", { children: [
+                /* @__PURE__ */ jsxDEV28("span", { children: [
                   address.postalCode,
                   ", ",
                   address.city
@@ -9263,7 +9458,7 @@ function EditAddressCard({
                   lineNumber: 101,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ jsxDEV27("span", { children: [
+                /* @__PURE__ */ jsxDEV28("span", { children: [
                   address.province && `${address.province}, `,
                   address.country?.code?.toUpperCase()
                 ] }, void 0, !0, {
@@ -9281,16 +9476,16 @@ function EditAddressCard({
               lineNumber: 89,
               columnNumber: 11
             }, this),
-            (address.defaultShippingAddress || address.defaultBillingAddress) && /* @__PURE__ */ jsxDEV27("div", { className: "text-end text-gray-500 uppercase tracking-wider", children: [
-              /* @__PURE__ */ jsxDEV27("span", { className: "block text-sm font-medium", children: t("common.default") }, void 0, !1, {
+            (address.defaultShippingAddress || address.defaultBillingAddress) && /* @__PURE__ */ jsxDEV28("div", { className: "text-end text-gray-500 uppercase tracking-wider", children: [
+              /* @__PURE__ */ jsxDEV28("span", { className: "block text-sm font-medium", children: t("common.default") }, void 0, !1, {
                 fileName: "app/components/account/EditAddressCard.tsx",
                 lineNumber: 114,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV27("span", { className: "block text-xs mt-1", children: [
+              /* @__PURE__ */ jsxDEV28("span", { className: "block text-xs mt-1", children: [
                 address.defaultShippingAddress && t("common.shipping"),
-                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxDEV27(Fragment6, { children: [
-                  /* @__PURE__ */ jsxDEV27("br", {}, void 0, !1, {
+                address.defaultShippingAddress && address.defaultBillingAddress && /* @__PURE__ */ jsxDEV28(Fragment6, { children: [
+                  /* @__PURE__ */ jsxDEV28("br", {}, void 0, !1, {
                     fileName: "app/components/account/EditAddressCard.tsx",
                     lineNumber: 122,
                     columnNumber: 23
@@ -9317,9 +9512,9 @@ function EditAddressCard({
             lineNumber: 87,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ jsxDEV27("div", { className: "flex flex-col md:flex-row items-start gap-4", children: [
-            /* @__PURE__ */ jsxDEV27("div", { className: "flex items-center gap-4", children: [
-              /* @__PURE__ */ jsxDEV27(
+          /* @__PURE__ */ jsxDEV28("div", { className: "flex flex-col md:flex-row items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV28("div", { className: "flex items-center gap-4", children: [
+              /* @__PURE__ */ jsxDEV28(
                 Link6,
                 {
                   role: "button",
@@ -9327,7 +9522,7 @@ function EditAddressCard({
                   className: "text-gray-700 flex items-center gap-x-2",
                   to: `/account/addresses/${address.id}`,
                   children: [
-                    /* @__PURE__ */ jsxDEV27(PencilIcon, { className: "w-4 h-4" }, void 0, !1, {
+                    /* @__PURE__ */ jsxDEV28(PencilIcon, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/components/account/EditAddressCard.tsx",
                       lineNumber: 140,
                       columnNumber: 15
@@ -9344,7 +9539,7 @@ function EditAddressCard({
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV27(
+              /* @__PURE__ */ jsxDEV28(
                 "button",
                 {
                   type: "button",
@@ -9353,11 +9548,11 @@ function EditAddressCard({
                   disabled: deleteAddress.state !== "idle",
                   onClick: () => setDeleteModalVisible(!0),
                   children: [
-                    deleteAddress.state === "idle" ? /* @__PURE__ */ jsxDEV27(TrashIcon, { className: "w-4 h-4" }, void 0, !1, {
+                    deleteAddress.state === "idle" ? /* @__PURE__ */ jsxDEV28(TrashIcon, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/components/account/EditAddressCard.tsx",
                       lineNumber: 151,
                       columnNumber: 17
-                    }, this) : /* @__PURE__ */ jsxDEV27(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
+                    }, this) : /* @__PURE__ */ jsxDEV28(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
                       fileName: "app/components/account/EditAddressCard.tsx",
                       lineNumber: 153,
                       columnNumber: 17
@@ -9379,14 +9574,14 @@ function EditAddressCard({
               lineNumber: 133,
               columnNumber: 11
             }, this),
-            (!address.defaultShippingAddress || !address.defaultBillingAddress) && /* @__PURE__ */ jsxDEV27("div", { children: /* @__PURE__ */ jsxDEV27("span", { className: "text-gray-500 flex gap-4", children: [
-              !address.defaultShippingAddress && /* @__PURE__ */ jsxDEV27(setShipping.Form, { method: "post", children: [
-                /* @__PURE__ */ jsxDEV27("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
+            (!address.defaultShippingAddress || !address.defaultBillingAddress) && /* @__PURE__ */ jsxDEV28("div", { children: /* @__PURE__ */ jsxDEV28("span", { className: "text-gray-500 flex gap-4", children: [
+              !address.defaultShippingAddress && /* @__PURE__ */ jsxDEV28(setShipping.Form, { method: "post", children: [
+                /* @__PURE__ */ jsxDEV28("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
                   fileName: "app/components/account/EditAddressCard.tsx",
                   lineNumber: 165,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV27(
+                /* @__PURE__ */ jsxDEV28(
                   "button",
                   {
                     name: "_action",
@@ -9396,11 +9591,11 @@ function EditAddressCard({
                     className: "text-gray-700 flex items-center gap-2",
                     disabled: setShipping.state !== "idle",
                     children: [
-                      setShipping.state === "idle" ? /* @__PURE__ */ jsxDEV27(TruckIcon, { className: "w-4 h-4" }, void 0, !1, {
+                      setShipping.state === "idle" ? /* @__PURE__ */ jsxDEV28(TruckIcon, { className: "w-4 h-4" }, void 0, !1, {
                         fileName: "app/components/account/EditAddressCard.tsx",
                         lineNumber: 175,
                         columnNumber: 25
-                      }, this) : /* @__PURE__ */ jsxDEV27(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
+                      }, this) : /* @__PURE__ */ jsxDEV28(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
                         fileName: "app/components/account/EditAddressCard.tsx",
                         lineNumber: 177,
                         columnNumber: 25
@@ -9422,13 +9617,13 @@ function EditAddressCard({
                 lineNumber: 164,
                 columnNumber: 19
               }, this),
-              !address.defaultBillingAddress && /* @__PURE__ */ jsxDEV27(setBilling.Form, { method: "post", children: [
-                /* @__PURE__ */ jsxDEV27("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
+              !address.defaultBillingAddress && /* @__PURE__ */ jsxDEV28(setBilling.Form, { method: "post", children: [
+                /* @__PURE__ */ jsxDEV28("input", { type: "hidden", name: "id", value: address.id }, void 0, !1, {
                   fileName: "app/components/account/EditAddressCard.tsx",
                   lineNumber: 186,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV27(
+                /* @__PURE__ */ jsxDEV28(
                   "button",
                   {
                     name: "_action",
@@ -9438,11 +9633,11 @@ function EditAddressCard({
                     className: "text-gray-700 flex items-center gap-2",
                     disabled: setBilling.state !== "idle",
                     children: [
-                      setBilling.state === "idle" ? /* @__PURE__ */ jsxDEV27(CreditCardIcon, { className: "w-4 h-4" }, void 0, !1, {
+                      setBilling.state === "idle" ? /* @__PURE__ */ jsxDEV28(CreditCardIcon, { className: "w-4 h-4" }, void 0, !1, {
                         fileName: "app/components/account/EditAddressCard.tsx",
                         lineNumber: 196,
                         columnNumber: 25
-                      }, this) : /* @__PURE__ */ jsxDEV27(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
+                      }, this) : /* @__PURE__ */ jsxDEV28(ArrowPathIcon2, { className: "w-4 h-4 animate-spin" }, void 0, !1, {
                         fileName: "app/components/account/EditAddressCard.tsx",
                         lineNumber: 198,
                         columnNumber: 25
@@ -9497,15 +9692,15 @@ function EditAddressCard({
 }
 
 // app/routes/account.addresses.tsx
-import { Fragment as Fragment7, jsxDEV as jsxDEV28 } from "react/jsx-dev-runtime";
-async function loader8({ request }) {
+import { Fragment as Fragment7, jsxDEV as jsxDEV29 } from "react/jsx-dev-runtime";
+async function loader9({ request }) {
   let activeCustomerAddresses = (await getActiveCustomerAddresses({ request })).activeCustomer;
-  return json6({ activeCustomerAddresses });
+  return json7({ activeCustomerAddresses });
 }
 async function action4({ request }) {
   let formData = await request.formData(), id = formData.get("id"), _action = formData.get("_action"), t = await getFixedT(request);
   if (!id || id.length === 0)
-    return json6(
+    return json7(
       {
         errorCode: "IDENTIFIER_CHANGE_TOKEN_INVALID_ERROR" /* IdentifierChangeTokenInvalidError */,
         // TODO: I dont think this error is 100% appropriate - decide later
@@ -9522,9 +9717,9 @@ async function action4({ request }) {
     return updateCustomerAddress({ id, defaultBillingAddress: !0 }, { request }), null;
   if (_action === "deleteAddress") {
     let { success } = await deleteCustomerAddress(id, { request });
-    return json6(null, { status: success ? 200 : 400 });
+    return json7(null, { status: success ? 200 : 400 });
   }
-  return json6(
+  return json7(
     {
       message: t("common.unknowError"),
       errorCode: "UNKNOWN_ERROR" /* UnknownError */
@@ -9535,20 +9730,20 @@ async function action4({ request }) {
   );
 }
 function AccountAddresses() {
-  let { activeCustomerAddresses } = useLoaderData8();
-  return /* @__PURE__ */ jsxDEV28(Fragment7, { children: [
-    /* @__PURE__ */ jsxDEV28(Outlet2, {}, void 0, !1, {
+  let { activeCustomerAddresses } = useLoaderData9();
+  return /* @__PURE__ */ jsxDEV29(Fragment7, { children: [
+    /* @__PURE__ */ jsxDEV29(Outlet2, {}, void 0, !1, {
       fileName: "app/routes/account.addresses.tsx",
       lineNumber: 70,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV28("div", { className: "w-full", children: /* @__PURE__ */ jsxDEV28("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 mt-4", children: [
-      /* @__PURE__ */ jsxDEV28(AddAddressCard, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV29("div", { className: "w-full", children: /* @__PURE__ */ jsxDEV29("div", { className: "grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 mt-4", children: [
+      /* @__PURE__ */ jsxDEV29(AddAddressCard, {}, void 0, !1, {
         fileName: "app/routes/account.addresses.tsx",
         lineNumber: 73,
         columnNumber: 11
       }, this),
-      activeCustomerAddresses?.addresses.map((address) => /* @__PURE__ */ jsxDEV28(EditAddressCard, { address }, address.id, !1, {
+      activeCustomerAddresses?.addresses.map((address) => /* @__PURE__ */ jsxDEV29(EditAddressCard, { address }, address.id, !1, {
         fileName: "app/routes/account.addresses.tsx",
         lineNumber: 76,
         columnNumber: 15
@@ -9574,10 +9769,10 @@ var collections_slug_exports = {};
 __export(collections_slug_exports, {
   CatchBoundary: () => CatchBoundary2,
   default: () => CollectionSlug,
-  loader: () => loader9,
+  loader: () => loader10,
   meta: () => meta2
 });
-import { useLoaderData as useLoaderData9, useSubmit as useSubmit3 } from "@remix-run/react";
+import { useLoaderData as useLoaderData10, useSubmit as useSubmit3 } from "@remix-run/react";
 import { useRef as useRef6, useState as useState7 } from "react";
 import { useTranslation as useTranslation22 } from "react-i18next";
 import { ValidatedForm as ValidatedForm2 } from "remix-validated-form";
@@ -9586,19 +9781,19 @@ import { ValidatedForm as ValidatedForm2 } from "remix-validated-form";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { Link as Link7 } from "@remix-run/react";
 import { useTranslation as useTranslation16 } from "react-i18next";
-import { jsxDEV as jsxDEV29 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV30 } from "react/jsx-dev-runtime";
 function Breadcrumbs({
   items
 }) {
   let { t } = useTranslation16();
-  return /* @__PURE__ */ jsxDEV29("nav", { className: "flex", "aria-label": "Breadcrumb", children: /* @__PURE__ */ jsxDEV29("ol", { role: "list", className: "flex items-center space-x-1 md:space-x-4", children: [
-    /* @__PURE__ */ jsxDEV29("li", { children: /* @__PURE__ */ jsxDEV29("div", { children: /* @__PURE__ */ jsxDEV29(Link7, { to: "/", className: "text-gray-400 hover:text-gray-500", children: [
-      /* @__PURE__ */ jsxDEV29(HomeIcon, { className: "flex-shrink-0 h-5 w-5", "aria-hidden": "true" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV30("nav", { className: "flex", "aria-label": "Breadcrumb", children: /* @__PURE__ */ jsxDEV30("ol", { role: "list", className: "flex items-center space-x-1 md:space-x-4", children: [
+    /* @__PURE__ */ jsxDEV30("li", { children: /* @__PURE__ */ jsxDEV30("div", { children: /* @__PURE__ */ jsxDEV30(Link7, { to: "/", className: "text-gray-400 hover:text-gray-500", children: [
+      /* @__PURE__ */ jsxDEV30(HomeIcon, { className: "flex-shrink-0 h-5 w-5", "aria-hidden": "true" }, void 0, !1, {
         fileName: "app/components/Breadcrumbs.tsx",
         lineNumber: 18,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV29("span", { className: "sr-only", children: t("home") }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV30("span", { className: "sr-only", children: t("home") }, void 0, !1, {
         fileName: "app/components/Breadcrumbs.tsx",
         lineNumber: 19,
         columnNumber: 15
@@ -9616,8 +9811,8 @@ function Breadcrumbs({
       lineNumber: 15,
       columnNumber: 9
     }, this),
-    items.filter((item) => item.name !== "__root_collection__").map((item, index) => /* @__PURE__ */ jsxDEV29("li", { children: /* @__PURE__ */ jsxDEV29("div", { className: "flex items-center", children: [
-      /* @__PURE__ */ jsxDEV29(
+    items.filter((item) => item.name !== "__root_collection__").map((item, index) => /* @__PURE__ */ jsxDEV30("li", { children: /* @__PURE__ */ jsxDEV30("div", { className: "flex items-center", children: [
+      /* @__PURE__ */ jsxDEV30(
         "svg",
         {
           className: "flex-shrink-0 h-5 w-5 text-gray-300",
@@ -9625,7 +9820,7 @@ function Breadcrumbs({
           fill: "currentColor",
           viewBox: "0 0 20 20",
           "aria-hidden": "true",
-          children: /* @__PURE__ */ jsxDEV29("path", { d: "M5.555 17.776l8-16 .894.448-8 16-.894-.448z" }, void 0, !1, {
+          children: /* @__PURE__ */ jsxDEV30("path", { d: "M5.555 17.776l8-16 .894.448-8 16-.894-.448z" }, void 0, !1, {
             fileName: "app/components/Breadcrumbs.tsx",
             lineNumber: 35,
             columnNumber: 19
@@ -9640,7 +9835,7 @@ function Breadcrumbs({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV29(
+      /* @__PURE__ */ jsxDEV30(
         Link7,
         {
           to: "/collections/" + item.slug,
@@ -9678,18 +9873,18 @@ function Breadcrumbs({
 
 // app/components/collections/CollectionCard.tsx
 import { Link as Link8 } from "@remix-run/react";
-import { jsxDEV as jsxDEV30 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV31 } from "react/jsx-dev-runtime";
 function CollectionCard({
   collection
 }) {
-  return /* @__PURE__ */ jsxDEV30(
+  return /* @__PURE__ */ jsxDEV31(
     Link8,
     {
       to: "/collections/" + collection.slug,
       prefetch: "intent",
       className: "max-w-[300px] relative rounded-lg overflow-hidden hover:opacity-75 xl:w-auto",
       children: [
-        /* @__PURE__ */ jsxDEV30("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsxDEV30("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsxDEV30("img", { src: BACKEND_URL + (collection.featuredAsset?.preview || "") + "?w=300&h=300" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV31("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsxDEV31("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsxDEV31("img", { src: BACKEND_URL + (collection.featuredAsset?.preview || "") + "?w=300&h=300" }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
           lineNumber: 19,
           columnNumber: 11
@@ -9702,7 +9897,7 @@ function CollectionCard({
           lineNumber: 17,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ jsxDEV30(
+        /* @__PURE__ */ jsxDEV31(
           "span",
           {
             "aria-hidden": "true",
@@ -9717,7 +9912,7 @@ function CollectionCard({
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV30("span", { className: "absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white", children: collection.name }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV31("span", { className: "absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white", children: collection.name }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
           lineNumber: 26,
           columnNumber: 7
@@ -9772,30 +9967,30 @@ var FacetFilterTracker = class {
 // app/components/FiltersButton.tsx
 import { FunnelIcon } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation17 } from "react-i18next";
-import { jsxDEV as jsxDEV31 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV32 } from "react/jsx-dev-runtime";
 function FiltersButton({
   filterCount,
   onClick
 }) {
   let { t } = useTranslation17();
-  return /* @__PURE__ */ jsxDEV31(
+  return /* @__PURE__ */ jsxDEV32(
     "button",
     {
       type: "button",
       className: "flex space-x-2 items-center border rounded p-2 ml-4 sm:ml-6 text-gray-400 hover:text-gray-500 lg:hidden",
       onClick,
       children: [
-        filterCount ? /* @__PURE__ */ jsxDEV31("span", { className: "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-200 text-primary-800", children: filterCount }, void 0, !1, {
+        filterCount ? /* @__PURE__ */ jsxDEV32("span", { className: "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-200 text-primary-800", children: filterCount }, void 0, !1, {
           fileName: "app/components/FiltersButton.tsx",
           lineNumber: 20,
           columnNumber: 9
         }, this) : "",
-        /* @__PURE__ */ jsxDEV31("span", { children: t("common.filters") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV32("span", { children: t("common.filters") }, void 0, !1, {
           fileName: "app/components/FiltersButton.tsx",
           lineNumber: 26,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ jsxDEV31(FunnelIcon, { className: "w-5 h-5", "aria-hidden": "true" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV32(FunnelIcon, { className: "w-5 h-5", "aria-hidden": "true" }, void 0, !1, {
           fileName: "app/components/FiltersButton.tsx",
           lineNumber: 27,
           columnNumber: 7
@@ -9820,22 +10015,22 @@ import { XMarkIcon as XMarkIcon3 } from "@heroicons/react/24/outline";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/solid";
 import { useSearchParams as useSearchParams2 } from "@remix-run/react";
 import { useTranslation as useTranslation18 } from "react-i18next";
-import { Fragment as Fragment9, jsxDEV as jsxDEV32 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment9, jsxDEV as jsxDEV33 } from "react/jsx-dev-runtime";
 function FacetFilterControls({
   facetFilterTracker,
   mobileFiltersOpen,
   setMobileFiltersOpen
 }) {
   let [searchParams] = useSearchParams2(), q = searchParams.getAll("q"), { t } = useTranslation18();
-  return /* @__PURE__ */ jsxDEV32(Fragment9, { children: [
-    /* @__PURE__ */ jsxDEV32(Transition3.Root, { show: mobileFiltersOpen, as: Fragment8, children: /* @__PURE__ */ jsxDEV32(
+  return /* @__PURE__ */ jsxDEV33(Fragment9, { children: [
+    /* @__PURE__ */ jsxDEV33(Transition3.Root, { show: mobileFiltersOpen, as: Fragment8, children: /* @__PURE__ */ jsxDEV33(
       Dialog3,
       {
         as: "div",
         className: "relative z-40 lg:hidden",
         onClose: setMobileFiltersOpen,
         children: [
-          /* @__PURE__ */ jsxDEV32(
+          /* @__PURE__ */ jsxDEV33(
             Transition3.Child,
             {
               as: Fragment8,
@@ -9845,7 +10040,7 @@ function FacetFilterControls({
               leave: "transition-opacity ease-linear duration-300",
               leaveFrom: "opacity-100",
               leaveTo: "opacity-0",
-              children: /* @__PURE__ */ jsxDEV32("div", { className: "fixed inset-0 bg-black bg-opacity-25" }, void 0, !1, {
+              children: /* @__PURE__ */ jsxDEV33("div", { className: "fixed inset-0 bg-black bg-opacity-25" }, void 0, !1, {
                 fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                 lineNumber: 40,
                 columnNumber: 13
@@ -9860,7 +10055,7 @@ function FacetFilterControls({
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV32("div", { className: "fixed inset-0 flex z-40", children: /* @__PURE__ */ jsxDEV32(
+          /* @__PURE__ */ jsxDEV33("div", { className: "fixed inset-0 flex z-40", children: /* @__PURE__ */ jsxDEV33(
             Transition3.Child,
             {
               as: Fragment8,
@@ -9870,26 +10065,26 @@ function FacetFilterControls({
               leave: "transition ease-in-out duration-300 transform",
               leaveFrom: "translate-x-0",
               leaveTo: "translate-x-full",
-              children: /* @__PURE__ */ jsxDEV32(Dialog3.Panel, { className: "ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto", children: [
-                /* @__PURE__ */ jsxDEV32("div", { className: "px-4 flex items-center justify-between", children: [
-                  /* @__PURE__ */ jsxDEV32("h2", { className: "text-lg font-medium text-gray-900", children: t("common.filters") }, void 0, !1, {
+              children: /* @__PURE__ */ jsxDEV33(Dialog3.Panel, { className: "ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto", children: [
+                /* @__PURE__ */ jsxDEV33("div", { className: "px-4 flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxDEV33("h2", { className: "text-lg font-medium text-gray-900", children: t("common.filters") }, void 0, !1, {
                     fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                     lineNumber: 55,
                     columnNumber: 19
                   }, this),
-                  /* @__PURE__ */ jsxDEV32(
+                  /* @__PURE__ */ jsxDEV33(
                     "button",
                     {
                       type: "button",
                       className: "-mr-2 w-10 h-10 bg-white p-2 rounded-md flex items-center justify-center text-gray-400",
                       onClick: () => setMobileFiltersOpen(!1),
                       children: [
-                        /* @__PURE__ */ jsxDEV32("span", { className: "sr-only", children: t("common.closeMenu") }, void 0, !1, {
+                        /* @__PURE__ */ jsxDEV33("span", { className: "sr-only", children: t("common.closeMenu") }, void 0, !1, {
                           fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                           lineNumber: 63,
                           columnNumber: 21
                         }, this),
-                        /* @__PURE__ */ jsxDEV32(XMarkIcon3, { className: "h-6 w-6", "aria-hidden": "true" }, void 0, !1, {
+                        /* @__PURE__ */ jsxDEV33(XMarkIcon3, { className: "h-6 w-6", "aria-hidden": "true" }, void 0, !1, {
                           fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                           lineNumber: 64,
                           columnNumber: 21
@@ -9910,26 +10105,26 @@ function FacetFilterControls({
                   lineNumber: 54,
                   columnNumber: 17
                 }, this),
-                /* @__PURE__ */ jsxDEV32("div", { className: "mt-4 border-t border-gray-200", children: [
-                  /* @__PURE__ */ jsxDEV32("input", { type: "hidden", name: "q", value: q }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV33("div", { className: "mt-4 border-t border-gray-200", children: [
+                  /* @__PURE__ */ jsxDEV33("input", { type: "hidden", name: "q", value: q }, void 0, !1, {
                     fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                     lineNumber: 68,
                     columnNumber: 19
                   }, this),
-                  facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsxDEV32(
+                  facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsxDEV33(
                     Disclosure,
                     {
                       as: "div",
                       defaultOpen: !0,
                       className: "border-t border-gray-200 px-4 py-6",
-                      children: ({ open }) => /* @__PURE__ */ jsxDEV32(Fragment9, { children: [
-                        /* @__PURE__ */ jsxDEV32("h3", { className: "-mx-2 -my-3 flow-root", children: /* @__PURE__ */ jsxDEV32(Disclosure.Button, { className: "px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500", children: [
-                          /* @__PURE__ */ jsxDEV32("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }, void 0, !1, {
+                      children: ({ open }) => /* @__PURE__ */ jsxDEV33(Fragment9, { children: [
+                        /* @__PURE__ */ jsxDEV33("h3", { className: "-mx-2 -my-3 flow-root", children: /* @__PURE__ */ jsxDEV33(Disclosure.Button, { className: "px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500", children: [
+                          /* @__PURE__ */ jsxDEV33("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }, void 0, !1, {
                             fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                             lineNumber: 80,
                             columnNumber: 31
                           }, this),
-                          /* @__PURE__ */ jsxDEV32("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsxDEV32(
+                          /* @__PURE__ */ jsxDEV33("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsxDEV33(
                             MinusSmallIcon,
                             {
                               className: "h-5 w-5",
@@ -9943,7 +10138,7 @@ function FacetFilterControls({
                               columnNumber: 35
                             },
                             this
-                          ) : /* @__PURE__ */ jsxDEV32(
+                          ) : /* @__PURE__ */ jsxDEV33(
                             PlusSmallIcon,
                             {
                               className: "h-5 w-5",
@@ -9971,12 +10166,12 @@ function FacetFilterControls({
                           lineNumber: 78,
                           columnNumber: 27
                         }, this),
-                        /* @__PURE__ */ jsxDEV32(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsxDEV32("div", { className: "space-y-6", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxDEV32(
+                        /* @__PURE__ */ jsxDEV33(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsxDEV33("div", { className: "space-y-6", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxDEV33(
                           "div",
                           {
                             className: "flex items-center",
                             children: [
-                              /* @__PURE__ */ jsxDEV32(
+                              /* @__PURE__ */ jsxDEV33(
                                 "input",
                                 {
                                   id: `filter-mobile-${facet.id}-${optionIdx}`,
@@ -9999,7 +10194,7 @@ function FacetFilterControls({
                                 },
                                 this
                               ),
-                              /* @__PURE__ */ jsxDEV32(
+                              /* @__PURE__ */ jsxDEV33(
                                 "label",
                                 {
                                   htmlFor: `filter-mobile-${facet.id}-${optionIdx}`,
@@ -10088,26 +10283,26 @@ function FacetFilterControls({
       lineNumber: 25,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV32("div", { className: "hidden lg:block", children: [
-      /* @__PURE__ */ jsxDEV32("input", { type: "hidden", name: "q", value: q }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV33("div", { className: "hidden lg:block", children: [
+      /* @__PURE__ */ jsxDEV33("input", { type: "hidden", name: "q", value: q }, void 0, !1, {
         fileName: "app/components/facet-filter/FacetFilterControls.tsx",
         lineNumber: 142,
         columnNumber: 9
       }, this),
-      facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsxDEV32(
+      facetFilterTracker.facetsWithValues.map((facet) => /* @__PURE__ */ jsxDEV33(
         Disclosure,
         {
           as: "div",
           defaultOpen: !0,
           className: "border-b border-gray-200 py-6",
-          children: ({ open }) => /* @__PURE__ */ jsxDEV32(Fragment9, { children: [
-            /* @__PURE__ */ jsxDEV32("h3", { className: "-my-3 flow-root", children: /* @__PURE__ */ jsxDEV32(Disclosure.Button, { className: "py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500", children: [
-              /* @__PURE__ */ jsxDEV32("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }, void 0, !1, {
+          children: ({ open }) => /* @__PURE__ */ jsxDEV33(Fragment9, { children: [
+            /* @__PURE__ */ jsxDEV33("h3", { className: "-my-3 flow-root", children: /* @__PURE__ */ jsxDEV33(Disclosure.Button, { className: "py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500", children: [
+              /* @__PURE__ */ jsxDEV33("span", { className: "font-medium text-gray-900 uppercase", children: facet.name }, void 0, !1, {
                 fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                 lineNumber: 154,
                 columnNumber: 21
               }, this),
-              /* @__PURE__ */ jsxDEV32("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsxDEV32(
+              /* @__PURE__ */ jsxDEV33("span", { className: "ml-6 flex items-center", children: open ? /* @__PURE__ */ jsxDEV33(
                 MinusSmallIcon,
                 {
                   className: "h-5 w-5",
@@ -10121,7 +10316,7 @@ function FacetFilterControls({
                   columnNumber: 25
                 },
                 this
-              ) : /* @__PURE__ */ jsxDEV32(PlusSmallIcon, { className: "h-5 w-5", "aria-hidden": "true" }, void 0, !1, {
+              ) : /* @__PURE__ */ jsxDEV33(PlusSmallIcon, { className: "h-5 w-5", "aria-hidden": "true" }, void 0, !1, {
                 fileName: "app/components/facet-filter/FacetFilterControls.tsx",
                 lineNumber: 164,
                 columnNumber: 25
@@ -10139,8 +10334,8 @@ function FacetFilterControls({
               lineNumber: 152,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV32(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsxDEV32("div", { className: "space-y-4", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxDEV32("div", { className: "flex items-center", children: [
-              /* @__PURE__ */ jsxDEV32(
+            /* @__PURE__ */ jsxDEV33(Disclosure.Panel, { className: "pt-6", children: /* @__PURE__ */ jsxDEV33("div", { className: "space-y-4", children: facet.values.map((value, optionIdx) => /* @__PURE__ */ jsxDEV33("div", { className: "flex items-center", children: [
+              /* @__PURE__ */ jsxDEV33(
                 "input",
                 {
                   id: `filter-${facet.id}-${optionIdx}`,
@@ -10161,7 +10356,7 @@ function FacetFilterControls({
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV32(
+              /* @__PURE__ */ jsxDEV33(
                 "label",
                 {
                   htmlFor: `filter-${facet.id}-${optionIdx}`,
@@ -10219,7 +10414,7 @@ function FacetFilterControls({
 
 // app/components/products/ProductCard.tsx
 import { Link as Link9 } from "@remix-run/react";
-import { jsxDEV as jsxDEV33 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV34 } from "react/jsx-dev-runtime";
 function ProductCard({
   productAsset,
   productName,
@@ -10227,8 +10422,8 @@ function ProductCard({
   priceWithTax,
   currencyCode
 }) {
-  return /* @__PURE__ */ jsxDEV33(Link9, { className: "flex flex-col", prefetch: "intent", to: `/products/${slug}`, children: [
-    /* @__PURE__ */ jsxDEV33(
+  return /* @__PURE__ */ jsxDEV34(Link9, { className: "flex flex-col", prefetch: "intent", to: `/products/${slug}`, children: [
+    /* @__PURE__ */ jsxDEV34(
       "img",
       {
         className: "rounded-xl flex-grow object-cover aspect-[7/8]",
@@ -10244,17 +10439,17 @@ function ProductCard({
       },
       this
     ),
-    /* @__PURE__ */ jsxDEV33("div", { className: "h-2" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV34("div", { className: "h-2" }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
       lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV33("div", { className: "text-sm text-gray-700", children: productName }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV34("div", { className: "text-sm text-gray-700", children: productName }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
       lineNumber: 22,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV33("div", { className: "text-sm font-medium text-gray-900", children: /* @__PURE__ */ jsxDEV33(Price, { priceWithTax, currencyCode }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV34("div", { className: "text-sm font-medium text-gray-900", children: /* @__PURE__ */ jsxDEV34(Price, { priceWithTax, currencyCode }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
       lineNumber: 24,
       columnNumber: 9
@@ -10303,7 +10498,7 @@ import { ArrowPathIcon as ArrowPathIcon3 } from "@heroicons/react/24/solid";
 import { useNavigation as useNavigation3 } from "@remix-run/react";
 import clsx7 from "clsx";
 import { useTranslation as useTranslation19 } from "react-i18next";
-import { jsxDEV as jsxDEV34 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV35 } from "react/jsx-dev-runtime";
 function Pagination({
   appliedPaginationLimit,
   allowedPaginationLimits: allowedPaginationLimits4,
@@ -10312,7 +10507,7 @@ function Pagination({
   ...props
 }) {
   let navigation = useNavigation3(), { t } = useTranslation19();
-  return /* @__PURE__ */ jsxDEV34(
+  return /* @__PURE__ */ jsxDEV35(
     "div",
     {
       ...props,
@@ -10321,20 +10516,20 @@ function Pagination({
         props.className
       ),
       children: [
-        /* @__PURE__ */ jsxDEV34("span", { className: "flex gap-4 items-center", children: [
-          navigation.state !== "idle" && /* @__PURE__ */ jsxDEV34(ArrowPathIcon3, { className: "animate-spin h-6 w-6 text-gray-500" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV35("span", { className: "flex gap-4 items-center", children: [
+          navigation.state !== "idle" && /* @__PURE__ */ jsxDEV35(ArrowPathIcon3, { className: "animate-spin h-6 w-6 text-gray-500" }, void 0, !1, {
             fileName: "app/components/Pagination.tsx",
             lineNumber: 36,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV34(
+          /* @__PURE__ */ jsxDEV35(
             Select,
             {
               name: "limit",
               required: !0,
               noPlaceholder: !0,
               defaultValue: appliedPaginationLimit,
-              children: Array.from(allowedPaginationLimits4).map((x) => /* @__PURE__ */ jsxDEV34("option", { value: x, children: [
+              children: Array.from(allowedPaginationLimits4).map((x) => /* @__PURE__ */ jsxDEV35("option", { value: x, children: [
                 x,
                 " ",
                 t("common.perPage")
@@ -10358,8 +10553,8 @@ function Pagination({
           lineNumber: 34,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ jsxDEV34("div", { className: "flex", role: "group", children: [
-          /* @__PURE__ */ jsxDEV34(
+        /* @__PURE__ */ jsxDEV35("div", { className: "flex", role: "group", children: [
+          /* @__PURE__ */ jsxDEV35(
             Button,
             {
               name: "page",
@@ -10378,7 +10573,7 @@ function Pagination({
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV34(
+          /* @__PURE__ */ jsxDEV35(
             Button,
             {
               name: "page",
@@ -10417,21 +10612,21 @@ function Pagination({
 
 // app/components/products/NoResultsHint.tsx
 import { useTranslation as useTranslation20 } from "react-i18next";
-import { jsxDEV as jsxDEV35 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV36 } from "react/jsx-dev-runtime";
 function NoResultsHint({
   facetFilterTracker,
   ...props
 }) {
   let { t } = useTranslation20();
-  return /* @__PURE__ */ jsxDEV35("div", { ...props, children: [
-    /* @__PURE__ */ jsxDEV35("h2", { className: "text-2xl sm:text-4xl font-light tracking-tight text-gray-900", children: t("product.noResults") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV36("div", { ...props, children: [
+    /* @__PURE__ */ jsxDEV36("h2", { className: "text-2xl sm:text-4xl font-light tracking-tight text-gray-900", children: t("product.noResults") }, void 0, !1, {
       fileName: "app/components/products/NoResultsHint.tsx",
       lineNumber: 13,
       columnNumber: 7
     }, this),
     facetFilterTracker?.facetsWithValues.some(
       (f) => f.values.some((v) => v.selected)
-    ) && /* @__PURE__ */ jsxDEV35("h3", { className: "text-lg sm:text-2xl font-light tracking-tight text-gray-900", children: t("product.filterTip") }, void 0, !1, {
+    ) && /* @__PURE__ */ jsxDEV36("h3", { className: "text-lg sm:text-2xl font-light tracking-tight text-gray-900", children: t("product.filterTip") }, void 0, !1, {
       fileName: "app/components/products/NoResultsHint.tsx",
       lineNumber: 19,
       columnNumber: 9
@@ -10446,7 +10641,7 @@ function NoResultsHint({
 // app/components/products/FilterableProductGrid.tsx
 import { useRef as useRef5 } from "react";
 import { useTranslation as useTranslation21 } from "react-i18next";
-import { jsxDEV as jsxDEV36 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV37 } from "react/jsx-dev-runtime";
 function FilterableProductGrid({
   result,
   resultWithoutFacetValueFilters,
@@ -10462,8 +10657,8 @@ function FilterableProductGrid({
     result,
     resultWithoutFacetValueFilters,
     facetValueIds
-  ), /* @__PURE__ */ jsxDEV36("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
-    /* @__PURE__ */ jsxDEV36(
+  ), /* @__PURE__ */ jsxDEV37("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
+    /* @__PURE__ */ jsxDEV37(
       FacetFilterControls,
       {
         facetFilterTracker: facetValuesTracker.current,
@@ -10479,8 +10674,8 @@ function FilterableProductGrid({
       },
       this
     ),
-    result.items.length > 0 ? /* @__PURE__ */ jsxDEV36("div", { className: "sm:col-span-5 lg:col-span-4 space-y-6", children: [
-      /* @__PURE__ */ jsxDEV36("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: result.items.map((item) => /* @__PURE__ */ jsxDEV36(ProductCard, { ...item }, item.productId, !1, {
+    result.items.length > 0 ? /* @__PURE__ */ jsxDEV37("div", { className: "sm:col-span-5 lg:col-span-4 space-y-6", children: [
+      /* @__PURE__ */ jsxDEV37("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: result.items.map((item) => /* @__PURE__ */ jsxDEV37(ProductCard, { ...item }, item.productId, !1, {
         fileName: "app/components/products/FilterableProductGrid.tsx",
         lineNumber: 53,
         columnNumber: 15
@@ -10489,8 +10684,8 @@ function FilterableProductGrid({
         lineNumber: 51,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV36("div", { className: "flex flex-row justify-between items-center gap-4", children: [
-        /* @__PURE__ */ jsxDEV36("span", { className: "self-start text-gray-500 text-sm mt-2", children: [
+      /* @__PURE__ */ jsxDEV37("div", { className: "flex flex-row justify-between items-center gap-4", children: [
+        /* @__PURE__ */ jsxDEV37("span", { className: "self-start text-gray-500 text-sm mt-2", children: [
           t("product.showing"),
           " ",
           translatePaginationFrom(
@@ -10510,7 +10705,7 @@ function FilterableProductGrid({
           lineNumber: 58,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV36(
+        /* @__PURE__ */ jsxDEV37(
           Pagination,
           {
             appliedPaginationLimit,
@@ -10536,7 +10731,7 @@ function FilterableProductGrid({
       fileName: "app/components/products/FilterableProductGrid.tsx",
       lineNumber: 50,
       columnNumber: 9
-    }, this) : /* @__PURE__ */ jsxDEV36(
+    }, this) : /* @__PURE__ */ jsxDEV37(
       NoResultsHint,
       {
         facetFilterTracker: facetValuesTracker.current,
@@ -10749,7 +10944,7 @@ function filteredSearchLoaderFromPagination(allowedPaginationLimits4, pagination
 }
 
 // app/routes/collections.$slug.tsx
-import { jsxDEV as jsxDEV37 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV38 } from "react/jsx-dev-runtime";
 var meta2 = ({ data }) => [
   {
     title: data?.collection ? `${data.collection?.name} - ${APP_META_TITLE}` : APP_META_TITLE
@@ -10762,7 +10957,7 @@ var meta2 = ({ data }) => [
   allowedPaginationLimits,
   paginationLimitMinimumDefault
 );
-async function loader9({ params, request, context }) {
+async function loader10({ params, request, context }) {
   let {
     result,
     resultWithoutFacetValueFilters,
@@ -10790,21 +10985,21 @@ async function loader9({ params, request, context }) {
   };
 }
 function CollectionSlug() {
-  let loaderData = useLoaderData9(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState7(!1);
+  let loaderData = useLoaderData10(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState7(!1);
   useRef6(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
     facetValueIds
   );
   let submit = useSubmit3(), { t } = useTranslation22();
-  return /* @__PURE__ */ jsxDEV37("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxDEV37("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ jsxDEV37("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: collection.name }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV38("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxDEV38("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ jsxDEV38("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: collection.name }, void 0, !1, {
         fileName: "app/routes/collections.$slug.tsx",
         lineNumber: 85,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV37(
+      /* @__PURE__ */ jsxDEV38(
         FiltersButton,
         {
           filterCount: facetValueIds.length,
@@ -10824,18 +11019,18 @@ function CollectionSlug() {
       lineNumber: 84,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV37(Breadcrumbs, { items: collection.breadcrumbs }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV38(Breadcrumbs, { items: collection.breadcrumbs }, void 0, !1, {
       fileName: "app/routes/collections.$slug.tsx",
       lineNumber: 95,
       columnNumber: 7
     }, this),
-    collection.children?.length ? /* @__PURE__ */ jsxDEV37("div", { className: "max-w-2xl mx-auto py-16 sm:py-16 lg:max-w-none border-b mb-16", children: [
-      /* @__PURE__ */ jsxDEV37("h2", { className: "text-2xl font-light text-gray-900", children: t("product.collections") }, void 0, !1, {
+    collection.children?.length ? /* @__PURE__ */ jsxDEV38("div", { className: "max-w-2xl mx-auto py-16 sm:py-16 lg:max-w-none border-b mb-16", children: [
+      /* @__PURE__ */ jsxDEV38("h2", { className: "text-2xl font-light text-gray-900", children: t("product.collections") }, void 0, !1, {
         fileName: "app/routes/collections.$slug.tsx",
         lineNumber: 98,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV37("div", { className: "mt-6 grid max-w-xs sm:max-w-none mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4", children: collection.children.map((child) => /* @__PURE__ */ jsxDEV37(
+      /* @__PURE__ */ jsxDEV38("div", { className: "mt-6 grid max-w-xs sm:max-w-none mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4", children: collection.children.map((child) => /* @__PURE__ */ jsxDEV38(
         CollectionCard,
         {
           collection: child
@@ -10858,13 +11053,13 @@ function CollectionSlug() {
       lineNumber: 97,
       columnNumber: 9
     }, this) : "",
-    /* @__PURE__ */ jsxDEV37(
+    /* @__PURE__ */ jsxDEV38(
       ValidatedForm2,
       {
         validator: withZod(validator2),
         method: "get",
         onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
-        children: /* @__PURE__ */ jsxDEV37(
+        children: /* @__PURE__ */ jsxDEV38(
           FilterableProductGrid,
           {
             allowedPaginationLimits,
@@ -10899,25 +11094,25 @@ function CollectionSlug() {
 }
 function CatchBoundary2() {
   let { t } = useTranslation22();
-  return /* @__PURE__ */ jsxDEV37("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxDEV37("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.collectionNotFound") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV38("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxDEV38("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.collectionNotFound") }, void 0, !1, {
       fileName: "app/routes/collections.$slug.tsx",
       lineNumber: 135,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV37("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
-      /* @__PURE__ */ jsxDEV37("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV38("div", { className: "mt-6 grid sm:grid-cols-5 gap-x-4", children: [
+      /* @__PURE__ */ jsxDEV38("div", { className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 140,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 141,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 142,
           columnNumber: 11
@@ -10927,23 +11122,23 @@ function CatchBoundary2() {
         lineNumber: 139,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV37("div", { className: "sm:col-span-5 lg:col-span-4", children: /* @__PURE__ */ jsxDEV37("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: [
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV38("div", { className: "sm:col-span-5 lg:col-span-4", children: /* @__PURE__ */ jsxDEV38("div", { className: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8", children: [
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 146,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 147,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 148,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV37("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV38("div", { className: "h-64 bg-slate-200 rounded" }, void 0, !1, {
           fileName: "app/routes/collections.$slug.tsx",
           lineNumber: 149,
           columnNumber: 13
@@ -10978,20 +11173,20 @@ __export(account_password_exports, {
 });
 import { PencilIcon as PencilIcon2 } from "@heroicons/react/24/outline";
 import { useActionData as useActionData3, useNavigation as useNavigation4 } from "@remix-run/react";
-import { json as json7 } from "@remix-run/server-runtime";
+import { json as json8 } from "@remix-run/server-runtime";
 import { useEffect as useEffect10, useRef as useRef7, useState as useState8 } from "react";
 import { ValidatedForm as ValidatedForm3, validationError as validationError3 } from "remix-validated-form";
 import { z as z3 } from "zod";
 
 // app/components/SuccessMessage.tsx
 import { CheckIcon } from "@heroicons/react/24/solid";
-import { jsxDEV as jsxDEV38 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV39 } from "react/jsx-dev-runtime";
 function SuccessMessage({
   heading,
   message
 }) {
-  return /* @__PURE__ */ jsxDEV38("div", { className: "rounded-md bg-green-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxDEV38("div", { className: "flex", children: [
-    /* @__PURE__ */ jsxDEV38("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV38(CheckIcon, { className: "h-5 w-5 text-green-400", "aria-hidden": "true" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV39("div", { className: "rounded-md bg-green-50 p-4 max-w-lg", children: /* @__PURE__ */ jsxDEV39("div", { className: "flex", children: [
+    /* @__PURE__ */ jsxDEV39("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV39(CheckIcon, { className: "h-5 w-5 text-green-400", "aria-hidden": "true" }, void 0, !1, {
       fileName: "app/components/SuccessMessage.tsx",
       lineNumber: 14,
       columnNumber: 11
@@ -11000,13 +11195,13 @@ function SuccessMessage({
       lineNumber: 13,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV38("div", { className: "ml-3", children: [
-      /* @__PURE__ */ jsxDEV38("h3", { className: "text-sm font-medium text-green-800", children: heading }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV39("div", { className: "ml-3", children: [
+      /* @__PURE__ */ jsxDEV39("h3", { className: "text-sm font-medium text-green-800", children: heading }, void 0, !1, {
         fileName: "app/components/SuccessMessage.tsx",
         lineNumber: 17,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV38("p", { className: "text-sm text-green-700 mt-2", children: message }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV39("p", { className: "text-sm text-green-700 mt-2", children: message }, void 0, !1, {
         fileName: "app/components/SuccessMessage.tsx",
         lineNumber: 18,
         columnNumber: 11
@@ -11037,7 +11232,7 @@ function isValidationErrorResponseData(input) {
 
 // app/routes/account.password.tsx
 import { useTranslation as useTranslation23 } from "react-i18next";
-import { Fragment as Fragment10, jsxDEV as jsxDEV39 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment10, jsxDEV as jsxDEV40 } from "react/jsx-dev-runtime";
 var validator3 = withZod(
   z3.object({
     currentPassword: z3.string().min(1, { message: "Password is required" }),
@@ -11059,7 +11254,7 @@ async function action5({ request }) {
     { currentPassword, newPassword },
     { request }
   );
-  return res.__typename !== "Success" ? json7(res, { status: 401 }) : json7(res);
+  return res.__typename !== "Success" ? json8(res, { status: 401 }) : json8(res);
 }
 function AccountPassword() {
   let [editing, setEditing] = useState8(!1), [isSaved, setIsSaved] = useState8(!1), [errorMessage, setErrorMessage] = useState8(), actionDataHook = useActionData3(), { state } = useNavigation4(), formRef = useRef7(null), { t } = useTranslation23();
@@ -11071,9 +11266,9 @@ function AccountPassword() {
       }
       actionDataHook?.success && (setErrorMessage(void 0), setIsSaved(!0), setEditing(!1), formRef.current?.reset());
     }
-  }, [actionDataHook]), /* @__PURE__ */ jsxDEV39(ValidatedForm3, { validator: validator3, method: "post", formRef, children: /* @__PURE__ */ jsxDEV39("div", { className: "p-4 space-y-4", children: [
-    editing && /* @__PURE__ */ jsxDEV39(Fragment10, { children: [
-      /* @__PURE__ */ jsxDEV39("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: /* @__PURE__ */ jsxDEV39("div", { children: /* @__PURE__ */ jsxDEV39(
+  }, [actionDataHook]), /* @__PURE__ */ jsxDEV40(ValidatedForm3, { validator: validator3, method: "post", formRef, children: /* @__PURE__ */ jsxDEV40("div", { className: "p-4 space-y-4", children: [
+    editing && /* @__PURE__ */ jsxDEV40(Fragment10, { children: [
+      /* @__PURE__ */ jsxDEV40("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: /* @__PURE__ */ jsxDEV40("div", { children: /* @__PURE__ */ jsxDEV40(
         Input,
         {
           required: !0,
@@ -11098,8 +11293,8 @@ function AccountPassword() {
         lineNumber: 94,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV39("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: [
-        /* @__PURE__ */ jsxDEV39("div", { children: /* @__PURE__ */ jsxDEV39(
+      /* @__PURE__ */ jsxDEV40("div", { className: "gap-4 grid grid-cols-1 md:grid-cols-2", children: [
+        /* @__PURE__ */ jsxDEV40("div", { children: /* @__PURE__ */ jsxDEV40(
           Input,
           {
             required: !0,
@@ -11120,7 +11315,7 @@ function AccountPassword() {
           lineNumber: 105,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV39("div", { children: /* @__PURE__ */ jsxDEV39(
+        /* @__PURE__ */ jsxDEV40("div", { children: /* @__PURE__ */ jsxDEV40(
           Input,
           {
             required: !0,
@@ -11151,7 +11346,7 @@ function AccountPassword() {
       lineNumber: 93,
       columnNumber: 11
     }, this),
-    isSaved && /* @__PURE__ */ jsxDEV39(
+    isSaved && /* @__PURE__ */ jsxDEV40(
       SuccessMessage,
       {
         heading: t("account.pwdSuccessHeading"),
@@ -11166,7 +11361,7 @@ function AccountPassword() {
       },
       this
     ),
-    errorMessage && /* @__PURE__ */ jsxDEV39(
+    errorMessage && /* @__PURE__ */ jsxDEV40(
       ErrorMessage,
       {
         heading: t("account.pwdErrorMessage"),
@@ -11181,8 +11376,8 @@ function AccountPassword() {
       },
       this
     ),
-    editing ? /* @__PURE__ */ jsxDEV39("div", { className: "flex gap-3", children: [
-      /* @__PURE__ */ jsxDEV39(
+    editing ? /* @__PURE__ */ jsxDEV40("div", { className: "flex gap-3", children: [
+      /* @__PURE__ */ jsxDEV40(
         HighlightedButton,
         {
           type: "submit",
@@ -11198,7 +11393,7 @@ function AccountPassword() {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV39(Button, { type: "reset", onClick: () => setEditing(!1), children: t("common.cancel") }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV40(Button, { type: "reset", onClick: () => setEditing(!1), children: t("common.cancel") }, void 0, !1, {
         fileName: "app/routes/account.password.tsx",
         lineNumber: 144,
         columnNumber: 13
@@ -11207,8 +11402,8 @@ function AccountPassword() {
       fileName: "app/routes/account.password.tsx",
       lineNumber: 137,
       columnNumber: 11
-    }, this) : /* @__PURE__ */ jsxDEV39(Fragment10, { children: /* @__PURE__ */ jsxDEV39(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
-      /* @__PURE__ */ jsxDEV39(PencilIcon2, { className: "w-4 h-4" }, void 0, !1, {
+    }, this) : /* @__PURE__ */ jsxDEV40(Fragment10, { children: /* @__PURE__ */ jsxDEV40(HighlightedButton, { type: "button", onClick: () => setEditing(!0), children: [
+      /* @__PURE__ */ jsxDEV40(PencilIcon2, { className: "w-4 h-4" }, void 0, !1, {
         fileName: "app/routes/account.password.tsx",
         lineNumber: 151,
         columnNumber: 15
@@ -11239,9 +11434,9 @@ function AccountPassword() {
 var api_active_order_exports = {};
 __export(api_active_order_exports, {
   action: () => action6,
-  loader: () => loader10
+  loader: () => loader11
 });
-import { json as json8 } from "@remix-run/server-runtime";
+import { json as json9 } from "@remix-run/server-runtime";
 
 // app/utils/validation.ts
 function shippingFormDataIsValid(data) {
@@ -11254,9 +11449,9 @@ function replaceEmptyString(input) {
 
 // app/routes/api.active-order.tsx
 var AUTH_TOKEN_SESSION_KEY2 = "authToken";
-async function loader10({ request }) {
+async function loader11({ request }) {
   let sessionStorage2 = await getSessionStorage(), session = await sessionStorage2.getSession(request.headers.get("Cookie")), result = await getActiveOrder({ request, authToken: session.get(AUTH_TOKEN_SESSION_KEY2) }), authToken = result._headers?.get("x-vendure-auth-token");
-  return authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken), json8(
+  return authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken), json9(
     { activeOrder: result.activeOrder },
     { headers: { "Set-Cookie": await sessionStorage2.commitSession(session) } }
   );
@@ -11354,7 +11549,7 @@ async function action6({ request, params }) {
   );
   session.flash("activeOrderError", error), authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken);
   let finalOrder = (activeOrder ? { activeOrder } : await getActiveOrder({ request, authToken })).activeOrder;
-  return json8(
+  return json9(
     { activeOrder: finalOrder },
     {
       headers: { "Set-Cookie": await sessionStorage2.commitSession(session) }
@@ -11367,10 +11562,10 @@ var checkout_payment_exports = {};
 __export(checkout_payment_exports, {
   action: () => action7,
   default: () => CheckoutPayment,
-  loader: () => loader11
+  loader: () => loader12
 });
-import { json as json9, redirect as redirect4 } from "@remix-run/server-runtime";
-import { useLoaderData as useLoaderData10, useOutletContext } from "@remix-run/react";
+import { json as json10, redirect as redirect4 } from "@remix-run/server-runtime";
+import { useLoaderData as useLoaderData11, useOutletContext } from "@remix-run/react";
 
 // app/components/checkout/stripe/StripePayments.tsx
 import { Elements } from "@stripe/react-stripe-js";
@@ -11384,10 +11579,10 @@ import {
 } from "@stripe/react-stripe-js";
 import { CreditCardIcon as CreditCardIcon2 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation24 } from "react-i18next";
-import { jsxDEV as jsxDEV40 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV41 } from "react/jsx-dev-runtime";
 var CheckoutForm = ({ orderCode }) => {
   let stripe = useStripe(), elements = useElements(), { t } = useTranslation24();
-  return /* @__PURE__ */ jsxDEV40("form", { onSubmit: async (event) => {
+  return /* @__PURE__ */ jsxDEV41("form", { onSubmit: async (event) => {
     if (event.preventDefault(), !stripe || !elements)
       return;
     let result = await stripe.confirmPayment({
@@ -11399,23 +11594,23 @@ var CheckoutForm = ({ orderCode }) => {
     });
     result.error && console.log(result.error.message);
   }, children: [
-    /* @__PURE__ */ jsxDEV40(PaymentElement, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV41(PaymentElement, {}, void 0, !1, {
       fileName: "app/components/checkout/stripe/CheckoutForm.tsx",
       lineNumber: 46,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV40(
+    /* @__PURE__ */ jsxDEV41(
       "button",
       {
         disabled: !stripe,
         className: "flex w-full px-6 bg-primary-600 hover:bg-primary-700 items-center justify-center space-x-2 py-3 my-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
         children: [
-          /* @__PURE__ */ jsxDEV40(CreditCardIcon2, { className: "w-5 h-5" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV41(CreditCardIcon2, { className: "w-5 h-5" }, void 0, !1, {
             fileName: "app/components/checkout/stripe/CheckoutForm.tsx",
             lineNumber: 51,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ jsxDEV40("span", { children: [
+          /* @__PURE__ */ jsxDEV41("span", { children: [
             t("checkout.payWith"),
             " Stripe"
           ] }, void 0, !0, {
@@ -11442,7 +11637,7 @@ var CheckoutForm = ({ orderCode }) => {
 };
 
 // app/components/checkout/stripe/StripePayments.tsx
-import { jsxDEV as jsxDEV41 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV42 } from "react/jsx-dev-runtime";
 var _stripe;
 function getStripe(publishableKey) {
   return _stripe || (_stripe = loadStripe(publishableKey)), _stripe;
@@ -11456,7 +11651,7 @@ function StripePayments({
     // passing the client secret obtained from the server
     clientSecret
   }, stripePromise = getStripe(publishableKey);
-  return /* @__PURE__ */ jsxDEV41(Elements, { stripe: stripePromise, options, children: /* @__PURE__ */ jsxDEV41(CheckoutForm, { orderCode }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV42(Elements, { stripe: stripePromise, options, children: /* @__PURE__ */ jsxDEV42(CheckoutForm, { orderCode }, void 0, !1, {
     fileName: "app/components/checkout/stripe/StripePayments.tsx",
     lineNumber: 30,
     columnNumber: 7
@@ -11471,20 +11666,20 @@ function StripePayments({
 import { CreditCardIcon as CreditCardIcon3, XCircleIcon as XCircleIcon4 } from "@heroicons/react/24/solid";
 import { Form as Form2 } from "@remix-run/react";
 import { useTranslation as useTranslation25 } from "react-i18next";
-import { jsxDEV as jsxDEV42 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV43 } from "react/jsx-dev-runtime";
 function DummyPayments({
   paymentMethod,
   paymentError
 }) {
   let { t } = useTranslation25();
-  return /* @__PURE__ */ jsxDEV42("div", { className: "flex flex-col items-center", children: [
-    /* @__PURE__ */ jsxDEV42("p", { className: "text-gray-600 text-sm p-6", children: t("checkout.dummyPayment") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV43("div", { className: "flex flex-col items-center", children: [
+    /* @__PURE__ */ jsxDEV43("p", { className: "text-gray-600 text-sm p-6", children: t("checkout.dummyPayment") }, void 0, !1, {
       fileName: "app/components/checkout/DummyPayments.tsx",
       lineNumber: 17,
       columnNumber: 7
     }, this),
-    paymentError && /* @__PURE__ */ jsxDEV42("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxDEV42("div", { className: "flex", children: [
-      /* @__PURE__ */ jsxDEV42("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV42(
+    paymentError && /* @__PURE__ */ jsxDEV43("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxDEV43("div", { className: "flex", children: [
+      /* @__PURE__ */ jsxDEV43("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV43(
         XCircleIcon4,
         {
           className: "h-5 w-5 text-red-400",
@@ -11503,13 +11698,13 @@ function DummyPayments({
         lineNumber: 21,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV42("div", { className: "ml-3", children: [
-        /* @__PURE__ */ jsxDEV42("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV43("div", { className: "ml-3", children: [
+        /* @__PURE__ */ jsxDEV43("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }, void 0, !1, {
           fileName: "app/components/checkout/DummyPayments.tsx",
           lineNumber: 28,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV42("div", { className: "mt-2 text-sm text-red-700", children: paymentError }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV43("div", { className: "mt-2 text-sm text-red-700", children: paymentError }, void 0, !1, {
           fileName: "app/components/checkout/DummyPayments.tsx",
           lineNumber: 31,
           columnNumber: 15
@@ -11528,8 +11723,8 @@ function DummyPayments({
       lineNumber: 19,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV42(Form2, { method: "post", children: [
-      /* @__PURE__ */ jsxDEV42(
+    /* @__PURE__ */ jsxDEV43(Form2, { method: "post", children: [
+      /* @__PURE__ */ jsxDEV43(
         "input",
         {
           type: "hidden",
@@ -11545,18 +11740,18 @@ function DummyPayments({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV42(
+      /* @__PURE__ */ jsxDEV43(
         "button",
         {
           type: "submit",
           className: "flex px-6 bg-primary-600 hover:bg-primary-700 items-center justify-center space-x-2 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
           children: [
-            /* @__PURE__ */ jsxDEV42(CreditCardIcon3, { className: "w-5 h-5" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV43(CreditCardIcon3, { className: "w-5 h-5" }, void 0, !1, {
               fileName: "app/components/checkout/DummyPayments.tsx",
               lineNumber: 46,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV42("span", { children: [
+            /* @__PURE__ */ jsxDEV43("span", { children: [
               t("checkout.payWith"),
               " ",
               paymentMethod.name
@@ -11593,7 +11788,7 @@ import { useEffect as useEffect11, useState as useState9 } from "react";
 import dropin from "braintree-web-drop-in";
 import { useSubmit as useSubmit4 } from "@remix-run/react";
 import { useTranslation as useTranslation26 } from "react-i18next";
-import { jsxDEV as jsxDEV43 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV44 } from "react/jsx-dev-runtime";
 function BraintreeDropIn(props) {
   let { show, authorization, fullAmount, currencyCode } = props, { t } = useTranslation26(), [braintreeInstance, setBraintreeInstance] = useState9(), [enablePaymentButton, setEnablePaymentButton] = useState9(), [processing, setProcessing] = useState9(!1), submit = useSubmit4(), submitPayment = async () => {
     if (setProcessing(!0), braintreeInstance)
@@ -11633,23 +11828,23 @@ function BraintreeDropIn(props) {
         initializeBraintree();
       }) : initializeBraintree();
     }
-  }, [show]), /* @__PURE__ */ jsxDEV43(
+  }, [show]), /* @__PURE__ */ jsxDEV44(
     "div",
     {
       style: { display: `${show ? "block" : "none"}` },
       className: "w-full h-full",
       children: [
-        /* @__PURE__ */ jsxDEV43("div", { id: "braintree-drop-in-div" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV44("div", { id: "braintree-drop-in-div" }, void 0, !1, {
           fileName: "app/components/checkout/braintree/BraintreePayments.tsx",
           lineNumber: 92,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ jsxDEV43("input", { type: "hidden", name: "paymentMethodCode", value: "braintree" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV44("input", { type: "hidden", name: "paymentMethodCode", value: "braintree" }, void 0, !1, {
           fileName: "app/components/checkout/braintree/BraintreePayments.tsx",
           lineNumber: 94,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ jsxDEV43(
+        /* @__PURE__ */ jsxDEV44(
           "button",
           {
             onClick: submitPayment,
@@ -11660,7 +11855,7 @@ function BraintreeDropIn(props) {
             disabled: !braintreeInstance || !enablePaymentButton,
             children: [
               t(processing ? "checkout.paymentProcessing" : braintreeInstance ? "checkout.pay" : "checkout.paymentLoading"),
-              processing ? /* @__PURE__ */ jsxDEV43(
+              processing ? /* @__PURE__ */ jsxDEV44(
                 "svg",
                 {
                   "aria-hidden": "true",
@@ -11669,7 +11864,7 @@ function BraintreeDropIn(props) {
                   fill: "none",
                   xmlns: "http://www.w3.org/2000/svg",
                   children: [
-                    /* @__PURE__ */ jsxDEV43(
+                    /* @__PURE__ */ jsxDEV44(
                       "path",
                       {
                         d: "M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z",
@@ -11684,7 +11879,7 @@ function BraintreeDropIn(props) {
                       },
                       this
                     ),
-                    /* @__PURE__ */ jsxDEV43(
+                    /* @__PURE__ */ jsxDEV44(
                       "path",
                       {
                         d: "M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z",
@@ -11737,7 +11932,7 @@ function BraintreeDropIn(props) {
 // app/components/checkout/PayPalPayments.tsx
 import { Form as Form3, useActionData as useActionData4, useNavigation as useNavigation5 } from "@remix-run/react";
 import { useTranslation as useTranslation27 } from "react-i18next";
-import { jsxDEV as jsxDEV44 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV45 } from "react/jsx-dev-runtime";
 function PayPalPayments({
   paymentMethod,
   paymentError
@@ -11745,9 +11940,9 @@ function PayPalPayments({
   let { t } = useTranslation27(), actionData = useActionData4(), navigation = useNavigation5();
   actionData?.approvalUrl && (window.location.href = actionData.approvalUrl);
   let currentError = actionData?.error || paymentError;
-  return /* @__PURE__ */ jsxDEV44("div", { className: "flex flex-col items-center", children: [
-    currentError && /* @__PURE__ */ jsxDEV44("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxDEV44("div", { className: "flex", children: [
-      /* @__PURE__ */ jsxDEV44("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV44("svg", { className: "h-5 w-5 text-red-400", viewBox: "0 0 20 20", fill: "currentColor", children: /* @__PURE__ */ jsxDEV44("path", { fillRule: "evenodd", d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z", clipRule: "evenodd" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV45("div", { className: "flex flex-col items-center", children: [
+    currentError && /* @__PURE__ */ jsxDEV45("div", { className: "rounded-md bg-red-50 p-4 mb-8", children: /* @__PURE__ */ jsxDEV45("div", { className: "flex", children: [
+      /* @__PURE__ */ jsxDEV45("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV45("svg", { className: "h-5 w-5 text-red-400", viewBox: "0 0 20 20", fill: "currentColor", children: /* @__PURE__ */ jsxDEV45("path", { fillRule: "evenodd", d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z", clipRule: "evenodd" }, void 0, !1, {
         fileName: "app/components/checkout/PayPalPayments.tsx",
         lineNumber: 30,
         columnNumber: 17
@@ -11760,13 +11955,13 @@ function PayPalPayments({
         lineNumber: 28,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV44("div", { className: "ml-3", children: [
-        /* @__PURE__ */ jsxDEV44("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV45("div", { className: "ml-3", children: [
+        /* @__PURE__ */ jsxDEV45("h3", { className: "text-sm font-medium text-red-800", children: t("checkout.paymentErrorMessage") }, void 0, !1, {
           fileName: "app/components/checkout/PayPalPayments.tsx",
           lineNumber: 34,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV44("div", { className: "mt-2 text-sm text-red-700", children: currentError }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV45("div", { className: "mt-2 text-sm text-red-700", children: currentError }, void 0, !1, {
           fileName: "app/components/checkout/PayPalPayments.tsx",
           lineNumber: 37,
           columnNumber: 15
@@ -11785,8 +11980,8 @@ function PayPalPayments({
       lineNumber: 26,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV44(Form3, { method: "post", children: [
-      /* @__PURE__ */ jsxDEV44(
+    /* @__PURE__ */ jsxDEV45(Form3, { method: "post", children: [
+      /* @__PURE__ */ jsxDEV45(
         "input",
         {
           type: "hidden",
@@ -11802,7 +11997,7 @@ function PayPalPayments({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV44(
+      /* @__PURE__ */ jsxDEV45(
         "input",
         {
           type: "hidden",
@@ -11818,14 +12013,14 @@ function PayPalPayments({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV44(
+      /* @__PURE__ */ jsxDEV45(
         "button",
         {
           type: "submit",
           disabled: navigation.state === "loading",
           className: "flex px-8 bg-blue-600 hover:bg-blue-700 items-center justify-center space-x-3 py-4 border border-transparent text-base font-medium rounded-lg shadow-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
           children: [
-            /* @__PURE__ */ jsxDEV44("svg", { className: "w-6 h-6", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ jsxDEV44("path", { d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV45("svg", { className: "w-6 h-6", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ jsxDEV45("path", { d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" }, void 0, !1, {
               fileName: "app/components/checkout/PayPalPayments.tsx",
               lineNumber: 59,
               columnNumber: 13
@@ -11834,7 +12029,7 @@ function PayPalPayments({
               lineNumber: 58,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV44("span", { className: "font-bold text-lg", children: navigation.state === "loading" ? t("checkout.processing") : `${t("checkout.payWith")} PayPal` }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV45("span", { className: "font-bold text-lg", children: navigation.state === "loading" ? t("checkout.processing") : `${t("checkout.payWith")} PayPal` }, void 0, !1, {
               fileName: "app/components/checkout/PayPalPayments.tsx",
               lineNumber: 61,
               columnNumber: 11
@@ -11855,7 +12050,7 @@ function PayPalPayments({
       lineNumber: 42,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV44("p", { className: "text-gray-500 text-xs mt-4", children: t("checkout.paypalSecure") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV45("p", { className: "text-gray-500 text-xs mt-4", children: t("checkout.paypalSecure") }, void 0, !1, {
       fileName: "app/components/checkout/PayPalPayments.tsx",
       lineNumber: 66,
       columnNumber: 7
@@ -11869,8 +12064,8 @@ function PayPalPayments({
 
 // app/routes/checkout.payment.tsx
 import { useTranslation as useTranslation28 } from "react-i18next";
-import { jsxDEV as jsxDEV45 } from "react/jsx-dev-runtime";
-async function loader11({ params, request }) {
+import { jsxDEV as jsxDEV46 } from "react/jsx-dev-runtime";
+async function loader12({ params, request }) {
   let session = await getSessionStorage().then(
     (sessionStorage2) => sessionStorage2.getSession(request?.headers.get("Cookie"))
   ), activeOrder = (await getActiveOrder({ request })).activeOrder;
@@ -11896,7 +12091,7 @@ async function loader11({ params, request }) {
     } catch (e) {
       brainTreeError = e.message;
     }
-  return json9({
+  return json10({
     eligiblePaymentMethods,
     stripePaymentIntent,
     stripePublishableKey,
@@ -11918,7 +12113,7 @@ async function action7({ params, request }) {
         { request }
       );
       if (transitionResult.transitionOrderToState?.__typename !== "Order")
-        return json9({
+        return json10({
           error: transitionResult.transitionOrderToState?.message || "Failed to transition order state"
         });
     }
@@ -11928,11 +12123,11 @@ async function action7({ params, request }) {
     );
     if (result.addPaymentToOrder.__typename === "Order") {
       let approvalUrl = result.addPaymentToOrder.payments?.[result.addPaymentToOrder.payments.length - 1]?.metadata?.public?.approvalUrl;
-      return approvalUrl ? json9({ approvalUrl }) : redirect4(
+      return approvalUrl ? json10({ approvalUrl }) : redirect4(
         `/checkout/confirmation/${result.addPaymentToOrder.code}`
       );
     } else
-      return json9({
+      return json10({
         error: result.addPaymentToOrder?.message || "Payment failed"
       });
   }
@@ -11946,15 +12141,15 @@ function CheckoutPayment() {
     brainTreeKey,
     brainTreeError,
     error
-  } = useLoaderData10(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
-  return /* @__PURE__ */ jsxDEV45("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
-    (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsxDEV45("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxDEV45("div", { children: [
-      /* @__PURE__ */ jsxDEV45("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }, void 0, !1, {
+  } = useLoaderData11(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
+  return /* @__PURE__ */ jsxDEV46("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
+    (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsxDEV46("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxDEV46("div", { children: [
+      /* @__PURE__ */ jsxDEV46("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }, void 0, !1, {
         fileName: "app/routes/checkout.payment.tsx",
         lineNumber: 149,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ jsxDEV45("p", { className: "text-sm", children: brainTreeError }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV46("p", { className: "text-sm", children: brainTreeError }, void 0, !1, {
         fileName: "app/routes/checkout.payment.tsx",
         lineNumber: 152,
         columnNumber: 17
@@ -11963,7 +12158,7 @@ function CheckoutPayment() {
       fileName: "app/routes/checkout.payment.tsx",
       lineNumber: 148,
       columnNumber: 15
-    }, this) : /* @__PURE__ */ jsxDEV45(
+    }, this) : /* @__PURE__ */ jsxDEV46(
       BraintreeDropIn,
       {
         fullAmount: activeOrder?.totalWithTax ?? 0,
@@ -11983,13 +12178,13 @@ function CheckoutPayment() {
       fileName: "app/routes/checkout.payment.tsx",
       lineNumber: 146,
       columnNumber: 11
-    }, this) : paymentMethod.code.includes("stripe") ? /* @__PURE__ */ jsxDEV45("div", { className: "py-12", children: stripeError ? /* @__PURE__ */ jsxDEV45("div", { children: [
-      /* @__PURE__ */ jsxDEV45("p", { className: "text-red-700 font-bold", children: t("checkout.stripeError") }, void 0, !1, {
+    }, this) : paymentMethod.code.includes("stripe") ? /* @__PURE__ */ jsxDEV46("div", { className: "py-12", children: stripeError ? /* @__PURE__ */ jsxDEV46("div", { children: [
+      /* @__PURE__ */ jsxDEV46("p", { className: "text-red-700 font-bold", children: t("checkout.stripeError") }, void 0, !1, {
         fileName: "app/routes/checkout.payment.tsx",
         lineNumber: 169,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ jsxDEV45("p", { className: "text-sm", children: stripeError }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV46("p", { className: "text-sm", children: stripeError }, void 0, !1, {
         fileName: "app/routes/checkout.payment.tsx",
         lineNumber: 172,
         columnNumber: 17
@@ -11998,7 +12193,7 @@ function CheckoutPayment() {
       fileName: "app/routes/checkout.payment.tsx",
       lineNumber: 168,
       columnNumber: 15
-    }, this) : /* @__PURE__ */ jsxDEV45(
+    }, this) : /* @__PURE__ */ jsxDEV46(
       StripePayments,
       {
         orderCode: activeOrder?.code ?? "",
@@ -12017,7 +12212,7 @@ function CheckoutPayment() {
       fileName: "app/routes/checkout.payment.tsx",
       lineNumber: 166,
       columnNumber: 11
-    }, this) : paymentMethod.code.includes("paypal") ? /* @__PURE__ */ jsxDEV45("div", { className: "py-12", children: /* @__PURE__ */ jsxDEV45(
+    }, this) : paymentMethod.code.includes("paypal") ? /* @__PURE__ */ jsxDEV46("div", { className: "py-12", children: /* @__PURE__ */ jsxDEV46(
       PayPalPayments,
       {
         paymentMethod,
@@ -12035,7 +12230,7 @@ function CheckoutPayment() {
       fileName: "app/routes/checkout.payment.tsx",
       lineNumber: 183,
       columnNumber: 11
-    }, this) : /* @__PURE__ */ jsxDEV45("div", { className: "py-12", children: /* @__PURE__ */ jsxDEV45(
+    }, this) : /* @__PURE__ */ jsxDEV46("div", { className: "py-12", children: /* @__PURE__ */ jsxDEV46(
       DummyPayments,
       {
         paymentMethod,
@@ -12077,17 +12272,17 @@ function getPaymentError(error) {
 var account_history_exports = {};
 __export(account_history_exports, {
   default: () => AccountHistory,
-  loader: () => loader12
+  loader: () => loader13
 });
-import { useLoaderData as useLoaderData11, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
-import { json as json10, redirect as redirect5 } from "@remix-run/server-runtime";
+import { useLoaderData as useLoaderData12, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
+import { json as json11, redirect as redirect5 } from "@remix-run/server-runtime";
 
 // app/components/account/OrderHistoryItem.tsx
 import { useState as useState10 } from "react";
 
 // app/components/account/OrderStateBadge.tsx
 import { useTranslation as useTranslation29 } from "react-i18next";
-import { jsxDEV as jsxDEV46 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV47 } from "react/jsx-dev-runtime";
 function OrderStateBadge({ state }) {
   let { t } = useTranslation29(), colorClasses = "";
   switch (state) {
@@ -12115,7 +12310,7 @@ function OrderStateBadge({ state }) {
       colorClasses = "bg-red-100 text-red-800";
       break;
   }
-  return /* @__PURE__ */ jsxDEV46(
+  return /* @__PURE__ */ jsxDEV47(
     "span",
     {
       className: `text-xs font-medium px-2.5 py-0.5 rounded uppercase whitespace-nowrap ${colorClasses}`,
@@ -12137,7 +12332,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
 import { Link as Link10 } from "@remix-run/react";
 import { useTranslation as useTranslation30 } from "react-i18next";
-import { Fragment as Fragment11, jsxDEV as jsxDEV47 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment11, jsxDEV as jsxDEV48 } from "react/jsx-dev-runtime";
 function OrderHistoryItem({
   order,
   isInitiallyExpanded = !1,
@@ -12147,8 +12342,8 @@ function OrderHistoryItem({
   let [isExpanded, setIsExpanded] = useState10(isInitiallyExpanded), [areDetailsExpanded, setAreDetailsExpanded] = useState10(
     areDetailsInitiallyExpanded
   ), [isLineCalcExpanded, setIsLineCalcExpanded] = useState10(!1), { t } = useTranslation30();
-  return /* @__PURE__ */ jsxDEV47("div", { className: `border rounded-lg overflow-hidden ${className}`, children: [
-    /* @__PURE__ */ jsxDEV47(
+  return /* @__PURE__ */ jsxDEV48("div", { className: `border rounded-lg overflow-hidden ${className}`, children: [
+    /* @__PURE__ */ jsxDEV48(
       "div",
       {
         className: `p-4 lg:p-6\r
@@ -12156,14 +12351,14 @@ function OrderHistoryItem({
             bg-gray-50 border-b\r
         `,
         children: [
-          /* @__PURE__ */ jsxDEV47("div", { className: "flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 text-sm", children: [
-            /* @__PURE__ */ jsxDEV47("div", { children: [
-              /* @__PURE__ */ jsxDEV47("span", { className: "block font-medium", children: t("order.placedAt") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV48("div", { className: "flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 text-sm", children: [
+            /* @__PURE__ */ jsxDEV48("div", { children: [
+              /* @__PURE__ */ jsxDEV48("span", { className: "block font-medium", children: t("order.placedAt") }, void 0, !1, {
                 fileName: "app/components/account/OrderHistoryItem.tsx",
                 lineNumber: 46,
                 columnNumber: 13
               }, this),
-              /* @__PURE__ */ jsxDEV47(
+              /* @__PURE__ */ jsxDEV48(
                 "span",
                 {
                   className: "text-gray-500",
@@ -12188,13 +12383,13 @@ function OrderHistoryItem({
               lineNumber: 45,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV47("div", { children: [
-              /* @__PURE__ */ jsxDEV47("span", { className: "block font-medium", children: t("order.totalSum") }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV48("div", { children: [
+              /* @__PURE__ */ jsxDEV48("span", { className: "block font-medium", children: t("order.totalSum") }, void 0, !1, {
                 fileName: "app/components/account/OrderHistoryItem.tsx",
                 lineNumber: 62,
                 columnNumber: 13
               }, this),
-              /* @__PURE__ */ jsxDEV47("span", { className: "text-gray-500", children: /* @__PURE__ */ jsxDEV47(
+              /* @__PURE__ */ jsxDEV48("span", { className: "text-gray-500", children: /* @__PURE__ */ jsxDEV48(
                 Price,
                 {
                   currencyCode: order?.currencyCode,
@@ -12218,13 +12413,13 @@ function OrderHistoryItem({
               lineNumber: 61,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV47("div", { children: [
-              /* @__PURE__ */ jsxDEV47("span", { className: "block font-medium", children: t("order.number") }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV48("div", { children: [
+              /* @__PURE__ */ jsxDEV48("span", { className: "block font-medium", children: t("order.number") }, void 0, !1, {
                 fileName: "app/components/account/OrderHistoryItem.tsx",
                 lineNumber: 72,
                 columnNumber: 13
               }, this),
-              /* @__PURE__ */ jsxDEV47("span", { className: "text-gray-500", children: order?.code || "--" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV48("span", { className: "text-gray-500", children: order?.code || "--" }, void 0, !1, {
                 fileName: "app/components/account/OrderHistoryItem.tsx",
                 lineNumber: 73,
                 columnNumber: 13
@@ -12239,25 +12434,25 @@ function OrderHistoryItem({
             lineNumber: 43,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ jsxDEV47("div", { className: "gap-4 lg:gap-6 flex flex-col items-end self-stretch justify-between md:flex-row md:items-center self-start", children: [
-            /* @__PURE__ */ jsxDEV47(OrderStateBadge, { state: order?.state }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV48("div", { className: "gap-4 lg:gap-6 flex flex-col items-end self-stretch justify-between md:flex-row md:items-center self-start", children: [
+            /* @__PURE__ */ jsxDEV48(OrderStateBadge, { state: order?.state }, void 0, !1, {
               fileName: "app/components/account/OrderHistoryItem.tsx",
               lineNumber: 79,
               columnNumber: 11
             }, this),
-            /* @__PURE__ */ jsxDEV47("div", { className: "flex", role: "group", children: [
-              /* @__PURE__ */ jsxDEV47(
+            /* @__PURE__ */ jsxDEV48("div", { className: "flex", role: "group", children: [
+              /* @__PURE__ */ jsxDEV48(
                 Button,
                 {
                   title: t("order.actionsMessage"),
                   className: "bg-white text-sm rounded-r-none border-r-0",
                   children: [
-                    /* @__PURE__ */ jsxDEV47("span", { className: "text-xs hidden", children: t("order.actions") }, void 0, !1, {
+                    /* @__PURE__ */ jsxDEV48("span", { className: "text-xs hidden", children: t("order.actions") }, void 0, !1, {
                       fileName: "app/components/account/OrderHistoryItem.tsx",
                       lineNumber: 85,
                       columnNumber: 15
                     }, this),
-                    /* @__PURE__ */ jsxDEV47(EllipsisVerticalIcon, { className: "w-5 h-5" }, void 0, !1, {
+                    /* @__PURE__ */ jsxDEV48(EllipsisVerticalIcon, { className: "w-5 h-5" }, void 0, !1, {
                       fileName: "app/components/account/OrderHistoryItem.tsx",
                       lineNumber: 86,
                       columnNumber: 15
@@ -12273,13 +12468,13 @@ function OrderHistoryItem({
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV47(
+              /* @__PURE__ */ jsxDEV48(
                 Button,
                 {
                   className: "bg-white text-sm rounded-l-none",
                   onClick: () => setIsExpanded(!isExpanded),
                   title: t("order.expand"),
-                  children: /* @__PURE__ */ jsxDEV47(
+                  children: /* @__PURE__ */ jsxDEV48(
                     ChevronRightIcon,
                     {
                       className: `w-5 h-5 transition-transform duration-100 ${isExpanded && "rotate-90"}`
@@ -12324,18 +12519,18 @@ function OrderHistoryItem({
       },
       this
     ),
-    isExpanded && /* @__PURE__ */ jsxDEV47("div", { className: "flex flex-col", children: [
-      order?.lines.map((line, key) => /* @__PURE__ */ jsxDEV47(
+    isExpanded && /* @__PURE__ */ jsxDEV48("div", { className: "flex flex-col", children: [
+      order?.lines.map((line, key) => /* @__PURE__ */ jsxDEV48(
         "div",
         {
           className: "p-4 lg:p-6 border-b flex flex-row gap-8 justify-between group",
-          children: /* @__PURE__ */ jsxDEV47("div", { className: "inline-flex justify-center items-center justify gap-4", children: [
-            /* @__PURE__ */ jsxDEV47(
+          children: /* @__PURE__ */ jsxDEV48("div", { className: "inline-flex justify-center items-center justify gap-4", children: [
+            /* @__PURE__ */ jsxDEV48(
               Link10,
               {
                 to: `/products/${line.productVariant.product.slug}`,
                 className: "hover:opacity-50 transition-opacity",
-                children: /* @__PURE__ */ jsxDEV47(
+                children: /* @__PURE__ */ jsxDEV48(
                   "img",
                   {
                     src: line.featuredAsset?.source,
@@ -12360,8 +12555,8 @@ function OrderHistoryItem({
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV47("span", { className: "flex flex-1 flex-col gap-0", children: [
-              /* @__PURE__ */ jsxDEV47(
+            /* @__PURE__ */ jsxDEV48("span", { className: "flex flex-1 flex-col gap-0", children: [
+              /* @__PURE__ */ jsxDEV48(
                 Link10,
                 {
                   to: `/products/${line.productVariant.product.slug}`,
@@ -12378,24 +12573,24 @@ function OrderHistoryItem({
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV47(
+              /* @__PURE__ */ jsxDEV48(
                 "button",
                 {
                   className: "inline-flex gap-2 items-center w-fit text-gray-500 text-sm mt-1",
                   onClick: () => setIsLineCalcExpanded(!isLineCalcExpanded),
                   children: [
-                    isLineCalcExpanded && /* @__PURE__ */ jsxDEV47(Fragment11, { children: [
-                      /* @__PURE__ */ jsxDEV47("span", { title: t("common.quantity"), children: line.quantity }, void 0, !1, {
+                    isLineCalcExpanded && /* @__PURE__ */ jsxDEV48(Fragment11, { children: [
+                      /* @__PURE__ */ jsxDEV48("span", { title: t("common.quantity"), children: line.quantity }, void 0, !1, {
                         fileName: "app/components/account/OrderHistoryItem.tsx",
                         lineNumber: 138,
                         columnNumber: 25
                       }, this),
-                      /* @__PURE__ */ jsxDEV47("span", { className: "text-gray-300 select-none", children: "\xD7" }, void 0, !1, {
+                      /* @__PURE__ */ jsxDEV48("span", { className: "text-gray-300 select-none", children: "\xD7" }, void 0, !1, {
                         fileName: "app/components/account/OrderHistoryItem.tsx",
                         lineNumber: 141,
                         columnNumber: 25
                       }, this),
-                      /* @__PURE__ */ jsxDEV47("span", { title: "Price per unit", children: /* @__PURE__ */ jsxDEV47(
+                      /* @__PURE__ */ jsxDEV48("span", { title: "Price per unit", children: /* @__PURE__ */ jsxDEV48(
                         Price,
                         {
                           currencyCode: line.productVariant.currencyCode,
@@ -12414,7 +12609,7 @@ function OrderHistoryItem({
                         lineNumber: 142,
                         columnNumber: 25
                       }, this),
-                      /* @__PURE__ */ jsxDEV47("span", { className: "text-gray-300 select-none", children: "\u039E" }, void 0, !1, {
+                      /* @__PURE__ */ jsxDEV48("span", { className: "text-gray-300 select-none", children: "\u039E" }, void 0, !1, {
                         fileName: "app/components/account/OrderHistoryItem.tsx",
                         lineNumber: 148,
                         columnNumber: 25
@@ -12424,7 +12619,7 @@ function OrderHistoryItem({
                       lineNumber: 137,
                       columnNumber: 23
                     }, this),
-                    /* @__PURE__ */ jsxDEV47("span", { title: "Subtotal", children: /* @__PURE__ */ jsxDEV47(
+                    /* @__PURE__ */ jsxDEV48("span", { title: "Subtotal", children: /* @__PURE__ */ jsxDEV48(
                       Price,
                       {
                         currencyCode: line.productVariant.currencyCode,
@@ -12454,7 +12649,7 @@ function OrderHistoryItem({
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV47("span", { className: "text-gray-500 text-xs mt-2 tracking-wide", children: [
+              /* @__PURE__ */ jsxDEV48("span", { className: "text-gray-500 text-xs mt-2 tracking-wide", children: [
                 line.fulfillmentLines?.reduce(
                   (acc, fLine) => acc + fLine.quantity,
                   0
@@ -12464,7 +12659,7 @@ function OrderHistoryItem({
                 )} ${t("common.or")} ${line.quantity} ${t(
                   "order.items.fulfilled"
                 )}`,
-                line.fulfillmentLines?.filter((fLine) => fLine.quantity > 0).map((fLine, key2) => /* @__PURE__ */ jsxDEV47(
+                line.fulfillmentLines?.filter((fLine) => fLine.quantity > 0).map((fLine, key2) => /* @__PURE__ */ jsxDEV48(
                   "span",
                   {
                     className: "block first:mt-2",
@@ -12514,8 +12709,8 @@ function OrderHistoryItem({
         },
         this
       )),
-      /* @__PURE__ */ jsxDEV47("div", { className: "p-2 lg:py-3 lg:px-6 gap-2 lg:gap-6 grid grid-cols-2 sm:flex justify-end items-center", children: [
-        order?.fulfillments?.map((f, i) => /* @__PURE__ */ jsxDEV47(
+      /* @__PURE__ */ jsxDEV48("div", { className: "p-2 lg:py-3 lg:px-6 gap-2 lg:gap-6 grid grid-cols-2 sm:flex justify-end items-center", children: [
+        order?.fulfillments?.map((f, i) => /* @__PURE__ */ jsxDEV48(
           Button,
           {
             onClickCapture: () => alert(`${t("trackAlert")} "${f.trackingCode}"`),
@@ -12535,18 +12730,18 @@ function OrderHistoryItem({
           },
           this
         )),
-        /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48(
           Button,
           {
             onClick: () => setAreDetailsExpanded(!areDetailsExpanded),
             className: "col-start-2",
             children: [
-              /* @__PURE__ */ jsxDEV47("span", { className: "text-xs", children: t("order.detailedOverview") }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV48("span", { className: "text-xs", children: t("order.detailedOverview") }, void 0, !1, {
                 fileName: "app/components/account/OrderHistoryItem.tsx",
                 lineNumber: 212,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV47(
+              /* @__PURE__ */ jsxDEV48(
                 ChevronRightIcon,
                 {
                   className: `w-5 h-5 transition-transform duration-100 ${areDetailsExpanded && "rotate-90"}`
@@ -12576,18 +12771,18 @@ function OrderHistoryItem({
         lineNumber: 194,
         columnNumber: 11
       }, this),
-      areDetailsExpanded && /* @__PURE__ */ jsxDEV47("div", { className: "p-2 lg:p-3 grid grid-cols-2 gap-1 text-sm max-w-sm self-center md:self-end", children: [
-        /* @__PURE__ */ jsxDEV47("h6", { className: "font-medium col-span-full", children: t("order.summary") }, void 0, !1, {
+      areDetailsExpanded && /* @__PURE__ */ jsxDEV48("div", { className: "p-2 lg:p-3 grid grid-cols-2 gap-1 text-sm max-w-sm self-center md:self-end", children: [
+        /* @__PURE__ */ jsxDEV48("h6", { className: "font-medium col-span-full", children: t("order.summary") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 224,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.items.subtotal") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.items.subtotal") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 227,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12606,12 +12801,12 @@ function OrderHistoryItem({
           lineNumber: 228,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.shippingAndHandling") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.shippingAndHandling") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 235,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12633,12 +12828,12 @@ function OrderHistoryItem({
           lineNumber: 236,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.totalWithoutTax") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.totalWithoutTax") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 246,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12660,12 +12855,12 @@ function OrderHistoryItem({
           lineNumber: 247,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.estimatedTax") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.estimatedTax") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 257,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12687,12 +12882,12 @@ function OrderHistoryItem({
           lineNumber: 258,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.total") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.total") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 268,
           columnNumber: 15
         }, this),
-        order?.totalWithTax && order.discounts ? /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        order?.totalWithTax && order.discounts ? /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12713,17 +12908,17 @@ function OrderHistoryItem({
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 270,
           columnNumber: 17
-        }, this) : /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: "--" }, void 0, !1, {
+        }, this) : /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: "--" }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 283,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { children: t("order.appliedCoupons") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { children: t("order.appliedCoupons") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 286,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12745,12 +12940,12 @@ function OrderHistoryItem({
           lineNumber: 287,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "font-medium", children: t("order.grandTotal") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV48("span", { className: "font-medium", children: t("order.grandTotal") }, void 0, !1, {
           fileName: "app/components/account/OrderHistoryItem.tsx",
           lineNumber: 297,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV47("span", { className: "font-medium text-end", children: /* @__PURE__ */ jsxDEV47(
+        /* @__PURE__ */ jsxDEV48("span", { className: "font-medium text-end", children: /* @__PURE__ */ jsxDEV48(
           Price,
           {
             currencyCode: order?.currencyCode,
@@ -12789,7 +12984,7 @@ function OrderHistoryItem({
 // app/routes/account.history.tsx
 import { ValidatedForm as ValidatedForm4 } from "remix-validated-form";
 import { useTranslation as useTranslation31 } from "react-i18next";
-import { jsxDEV as jsxDEV48 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV49 } from "react/jsx-dev-runtime";
 var paginationLimitMinimumDefault2 = 10, allowedPaginationLimits2 = /* @__PURE__ */ new Set([
   paginationLimitMinimumDefault2,
   20,
@@ -12797,7 +12992,7 @@ var paginationLimitMinimumDefault2 = 10, allowedPaginationLimits2 = /* @__PURE__
 ]), orderPaginationSchema = paginationValidationSchema(
   allowedPaginationLimits2
 );
-async function loader12({ request }) {
+async function loader13({ request }) {
   let url = new URL(request.url), limit = url.searchParams.get("limit") ?? paginationLimitMinimumDefault2, page = url.searchParams.get("page") ?? 1, zodResult = orderPaginationSchema.safeParse({ limit, page });
   if (!zodResult.success)
     return url.search = "", redirect5(url.href);
@@ -12808,14 +13003,14 @@ async function loader12({ request }) {
     sort: { createdAt: "DESC" /* Desc */ },
     filter: { active: { eq: !1 } }
   }, res = await getActiveCustomerOrderList(orderListOptions, { request });
-  return res.activeCustomer ? json10({
+  return res.activeCustomer ? json11({
     orderList: res.activeCustomer.orders,
     appliedPaginationLimit: zodResult.data.limit,
     appliedPaginationPage: zodResult.data.page
   }) : redirect5("/sign-in");
 }
 function AccountHistory() {
-  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData11(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
+  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData12(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
     appliedPaginationPage,
     appliedPaginationLimit
   ), showingOrdersTo = translatePaginationTo(
@@ -12823,18 +13018,18 @@ function AccountHistory() {
     appliedPaginationLimit,
     orderList.items.length
   );
-  return /* @__PURE__ */ jsxDEV48("div", { className: "pt-10 relative", children: [
-    navigation.state !== "idle" && /* @__PURE__ */ jsxDEV48("div", { className: "absolute top-0 left-0 w-full h-full z-100 bg-white bg-opacity-75" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV49("div", { className: "pt-10 relative", children: [
+    navigation.state !== "idle" && /* @__PURE__ */ jsxDEV49("div", { className: "absolute top-0 left-0 w-full h-full z-100 bg-white bg-opacity-75" }, void 0, !1, {
       fileName: "app/routes/account.history.tsx",
       lineNumber: 82,
       columnNumber: 9
     }, this),
-    orderList.items.length === 0 && /* @__PURE__ */ jsxDEV48("div", { className: "py-16 text-3xl text-center italic text-gray-300 select-none flex justify-center items-center", children: orderList.totalItems === 0 ? t("order.historyEmpty") : t("order.historyEnd") }, void 0, !1, {
+    orderList.items.length === 0 && /* @__PURE__ */ jsxDEV49("div", { className: "py-16 text-3xl text-center italic text-gray-300 select-none flex justify-center items-center", children: orderList.totalItems === 0 ? t("order.historyEmpty") : t("order.historyEnd") }, void 0, !1, {
       fileName: "app/routes/account.history.tsx",
       lineNumber: 86,
       columnNumber: 9
     }, this),
-    orderList.items?.map((item) => /* @__PURE__ */ jsxDEV48(
+    orderList.items?.map((item) => /* @__PURE__ */ jsxDEV49(
       OrderHistoryItem,
       {
         order: item,
@@ -12850,8 +13045,8 @@ function AccountHistory() {
       },
       this
     )),
-    /* @__PURE__ */ jsxDEV48("div", { className: "flex flex-row justify-between items-center gap-4", children: [
-      /* @__PURE__ */ jsxDEV48("span", { className: "self-start text-gray-500 text-sm ml-4 lg:ml-6 mt-2", children: [
+    /* @__PURE__ */ jsxDEV49("div", { className: "flex flex-row justify-between items-center gap-4", children: [
+      /* @__PURE__ */ jsxDEV49("span", { className: "self-start text-gray-500 text-sm ml-4 lg:ml-6 mt-2", children: [
         "Showing orders ",
         showingOrdersFrom,
         " to ",
@@ -12864,7 +13059,7 @@ function AccountHistory() {
         lineNumber: 105,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV48(
+      /* @__PURE__ */ jsxDEV49(
         ValidatedForm4,
         {
           validator: withZod(
@@ -12873,7 +13068,7 @@ function AccountHistory() {
           method: "get",
           onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
           preventScrollReset: !0,
-          children: /* @__PURE__ */ jsxDEV48(
+          children: /* @__PURE__ */ jsxDEV49(
             Pagination,
             {
               appliedPaginationLimit,
@@ -12916,21 +13111,21 @@ function AccountHistory() {
 var checkout_index_exports = {};
 __export(checkout_index_exports, {
   default: () => CheckoutShipping,
-  loader: () => loader13
+  loader: () => loader14
 });
 import { useState as useState11, useRef as useRef8 } from "react";
 import { LockClosedIcon } from "@heroicons/react/24/solid";
 import {
   Form as Form4,
-  useLoaderData as useLoaderData12,
+  useLoaderData as useLoaderData13,
   useNavigate as useNavigate3,
   useOutletContext as useOutletContext2
 } from "@remix-run/react";
-import { json as json11, redirect as redirect6 } from "@remix-run/server-runtime";
+import { json as json12, redirect as redirect6 } from "@remix-run/server-runtime";
 
 // app/components/account/AddressForm.tsx
 import { useTranslation as useTranslation32 } from "react-i18next";
-import { jsxDEV as jsxDEV49 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV50 } from "react/jsx-dev-runtime";
 function AddressForm({
   address,
   defaultFullName,
@@ -12938,9 +13133,9 @@ function AddressForm({
   onBlur
 }) {
   let { t } = useTranslation32();
-  return /* @__PURE__ */ jsxDEV49("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
-    /* @__PURE__ */ jsxDEV49("div", { children: [
-      /* @__PURE__ */ jsxDEV49(
+  return /* @__PURE__ */ jsxDEV50("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
+    /* @__PURE__ */ jsxDEV50("div", { children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "fullName",
@@ -12948,7 +13143,7 @@ function AddressForm({
           children: [
             t("account.fullName"),
             " ",
-            /* @__PURE__ */ jsxDEV49("span", { className: "text-red-500", children: "*" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("span", { className: "text-red-500", children: "*" }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 24,
               columnNumber: 35
@@ -12964,7 +13159,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -12994,8 +13189,8 @@ function AddressForm({
       lineNumber: 19,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "company",
@@ -13011,7 +13206,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13038,8 +13233,8 @@ function AddressForm({
       lineNumber: 40,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "streetLine1",
@@ -13047,7 +13242,7 @@ function AddressForm({
           children: [
             t("address.streetLine1"),
             " ",
-            /* @__PURE__ */ jsxDEV49("span", { className: "text-red-500", children: "*" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("span", { className: "text-red-500", children: "*" }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 63,
               columnNumber: 38
@@ -13063,7 +13258,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13093,8 +13288,8 @@ function AddressForm({
       lineNumber: 58,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "streetLine2",
@@ -13110,7 +13305,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13137,8 +13332,8 @@ function AddressForm({
       lineNumber: 79,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "city",
@@ -13146,7 +13341,7 @@ function AddressForm({
           children: [
             t("address.city"),
             " ",
-            /* @__PURE__ */ jsxDEV49("span", { className: "text-red-500", children: "*" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("span", { className: "text-red-500", children: "*" }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 102,
               columnNumber: 31
@@ -13162,7 +13357,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13192,8 +13387,8 @@ function AddressForm({
       lineNumber: 97,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "countryCode",
@@ -13201,7 +13396,7 @@ function AddressForm({
           children: [
             t("address.country"),
             " ",
-            /* @__PURE__ */ jsxDEV49("span", { className: "text-red-500", children: "*" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("span", { className: "text-red-500", children: "*" }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 123,
               columnNumber: 34
@@ -13217,7 +13412,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: availableCountries && /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: availableCountries && /* @__PURE__ */ jsxDEV50(
         "select",
         {
           id: "countryCode",
@@ -13227,12 +13422,12 @@ function AddressForm({
           onBlur,
           className: "block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm",
           children: [
-            /* @__PURE__ */ jsxDEV49("option", { value: "", disabled: !0, children: t("address.selectCountry") }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("option", { value: "", disabled: !0, children: t("address.selectCountry") }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 135,
               columnNumber: 15
             }, this),
-            availableCountries.map((item) => /* @__PURE__ */ jsxDEV49("option", { value: item.code, children: item.name }, item.id, !1, {
+            availableCountries.map((item) => /* @__PURE__ */ jsxDEV50("option", { value: item.code, children: item.name }, item.id, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 139,
               columnNumber: 17
@@ -13257,8 +13452,8 @@ function AddressForm({
       lineNumber: 118,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "province",
@@ -13274,7 +13469,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13302,8 +13497,8 @@ function AddressForm({
       lineNumber: 148,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "postalCode",
@@ -13311,7 +13506,7 @@ function AddressForm({
           children: [
             t("address.postalCode"),
             " ",
-            /* @__PURE__ */ jsxDEV49("span", { className: "text-red-500", children: "*" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV50("span", { className: "text-red-500", children: "*" }, void 0, !1, {
               fileName: "app/components/account/AddressForm.tsx",
               lineNumber: 172,
               columnNumber: 37
@@ -13327,7 +13522,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13357,8 +13552,8 @@ function AddressForm({
       lineNumber: 167,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV49("div", { className: "sm:col-span-2", children: [
-      /* @__PURE__ */ jsxDEV49(
+    /* @__PURE__ */ jsxDEV50("div", { className: "sm:col-span-2", children: [
+      /* @__PURE__ */ jsxDEV50(
         "label",
         {
           htmlFor: "phoneNumber",
@@ -13374,7 +13569,7 @@ function AddressForm({
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV49("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV49(
+      /* @__PURE__ */ jsxDEV50("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV50(
         "input",
         {
           type: "text",
@@ -13413,7 +13608,7 @@ function AddressForm({
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon3 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation33 } from "react-i18next";
-import { Fragment as Fragment12, jsxDEV as jsxDEV50 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment12, jsxDEV as jsxDEV51 } from "react/jsx-dev-runtime";
 function ShippingMethodSelector({
   eligibleShippingMethods,
   currencyCode,
@@ -13421,13 +13616,13 @@ function ShippingMethodSelector({
   onChange
 }) {
   let { t } = useTranslation33();
-  return /* @__PURE__ */ jsxDEV50(RadioGroup, { value: shippingMethodId, onChange, children: [
-    /* @__PURE__ */ jsxDEV50(RadioGroup.Label, { className: "text-lg font-medium text-gray-900", children: t("checkout.deliveryMethod") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV51(RadioGroup, { value: shippingMethodId, onChange, children: [
+    /* @__PURE__ */ jsxDEV51(RadioGroup.Label, { className: "text-lg font-medium text-gray-900", children: t("checkout.deliveryMethod") }, void 0, !1, {
       fileName: "app/components/checkout/ShippingMethodSelector.tsx",
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV50("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: eligibleShippingMethods.map((shippingMethod) => /* @__PURE__ */ jsxDEV50(
+    /* @__PURE__ */ jsxDEV51("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: eligibleShippingMethods.map((shippingMethod) => /* @__PURE__ */ jsxDEV51(
       RadioGroup.Option,
       {
         value: shippingMethod.id,
@@ -13436,9 +13631,9 @@ function ShippingMethodSelector({
           active ? "ring-2 ring-primary-500" : "",
           "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
         ),
-        children: ({ checked, active }) => /* @__PURE__ */ jsxDEV50(Fragment12, { children: [
-          /* @__PURE__ */ jsxDEV50("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxDEV50("span", { className: "flex flex-col", children: [
-            /* @__PURE__ */ jsxDEV50(
+        children: ({ checked, active }) => /* @__PURE__ */ jsxDEV51(Fragment12, { children: [
+          /* @__PURE__ */ jsxDEV51("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxDEV51("span", { className: "flex flex-col", children: [
+            /* @__PURE__ */ jsxDEV51(
               RadioGroup.Label,
               {
                 as: "span",
@@ -13454,12 +13649,12 @@ function ShippingMethodSelector({
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV50(
+            /* @__PURE__ */ jsxDEV51(
               RadioGroup.Description,
               {
                 as: "span",
                 className: "mt-6 text-sm font-medium text-gray-900",
-                children: /* @__PURE__ */ jsxDEV50(
+                children: /* @__PURE__ */ jsxDEV51(
                   Price,
                   {
                     priceWithTax: shippingMethod.priceWithTax,
@@ -13493,7 +13688,7 @@ function ShippingMethodSelector({
             lineNumber: 45,
             columnNumber: 17
           }, this),
-          checked ? /* @__PURE__ */ jsxDEV50(
+          checked ? /* @__PURE__ */ jsxDEV51(
             CheckCircleIcon3,
             {
               className: "h-5 w-5 text-primary-600",
@@ -13508,7 +13703,7 @@ function ShippingMethodSelector({
             },
             this
           ) : null,
-          /* @__PURE__ */ jsxDEV50(
+          /* @__PURE__ */ jsxDEV51(
             "span",
             {
               className: classNames(
@@ -13556,13 +13751,13 @@ function ShippingMethodSelector({
 // app/components/checkout/ShippingAddressSelector.tsx
 import { RadioGroup as RadioGroup2 } from "@headlessui/react";
 import { CheckCircleIcon as CheckCircleIcon4 } from "@heroicons/react/24/solid";
-import { Fragment as Fragment13, jsxDEV as jsxDEV51 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment13, jsxDEV as jsxDEV52 } from "react/jsx-dev-runtime";
 function ShippingAddressSelector({
   addresses,
   selectedAddressIndex,
   onChange
 }) {
-  return /* @__PURE__ */ jsxDEV51(RadioGroup2, { value: selectedAddressIndex, onChange, children: /* @__PURE__ */ jsxDEV51("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: (addresses || []).map((address, index) => /* @__PURE__ */ jsxDEV51(
+  return /* @__PURE__ */ jsxDEV52(RadioGroup2, { value: selectedAddressIndex, onChange, children: /* @__PURE__ */ jsxDEV52("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: (addresses || []).map((address, index) => /* @__PURE__ */ jsxDEV52(
     RadioGroup2.Option,
     {
       value: index,
@@ -13571,9 +13766,9 @@ function ShippingAddressSelector({
         active ? "ring-2 ring-primary-500" : "",
         "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
       ),
-      children: ({ checked, active }) => /* @__PURE__ */ jsxDEV51(Fragment13, { children: [
-        /* @__PURE__ */ jsxDEV51("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxDEV51("span", { className: "flex flex-col", children: [
-          /* @__PURE__ */ jsxDEV51(
+      children: ({ checked, active }) => /* @__PURE__ */ jsxDEV52(Fragment13, { children: [
+        /* @__PURE__ */ jsxDEV52("span", { className: "flex-1 flex", children: /* @__PURE__ */ jsxDEV52("span", { className: "flex flex-col", children: [
+          /* @__PURE__ */ jsxDEV52(
             RadioGroup2.Label,
             {
               as: "span",
@@ -13593,38 +13788,38 @@ function ShippingAddressSelector({
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV51(
+          /* @__PURE__ */ jsxDEV52(
             RadioGroup2.Description,
             {
               as: "span",
               className: "mt-6 text-sm text-gray-800",
-              children: /* @__PURE__ */ jsxDEV51("ul", { children: [
-                /* @__PURE__ */ jsxDEV51("li", { children: address.streetLine1 }, void 0, !1, {
+              children: /* @__PURE__ */ jsxDEV52("ul", { children: [
+                /* @__PURE__ */ jsxDEV52("li", { children: address.streetLine1 }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 54,
                   columnNumber: 25
                 }, this),
-                /* @__PURE__ */ jsxDEV51("li", { children: address.streetLine2 }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV52("li", { children: address.streetLine2 }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 55,
                   columnNumber: 25
                 }, this),
-                /* @__PURE__ */ jsxDEV51("li", { children: address.city }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV52("li", { children: address.city }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 56,
                   columnNumber: 25
                 }, this),
-                /* @__PURE__ */ jsxDEV51("li", { children: address.province }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV52("li", { children: address.province }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 57,
                   columnNumber: 25
                 }, this),
-                /* @__PURE__ */ jsxDEV51("li", { children: address.postalCode }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV52("li", { children: address.postalCode }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 58,
                   columnNumber: 25
                 }, this),
-                /* @__PURE__ */ jsxDEV51("li", { children: address.country.name }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV52("li", { children: address.country.name }, void 0, !1, {
                   fileName: "app/components/checkout/ShippingAddressSelector.tsx",
                   lineNumber: 59,
                   columnNumber: 25
@@ -13653,7 +13848,7 @@ function ShippingAddressSelector({
           lineNumber: 41,
           columnNumber: 17
         }, this),
-        checked ? /* @__PURE__ */ jsxDEV51(
+        checked ? /* @__PURE__ */ jsxDEV52(
           CheckCircleIcon4,
           {
             className: "h-5 w-5 text-primary-600",
@@ -13668,7 +13863,7 @@ function ShippingAddressSelector({
           },
           this
         ) : null,
-        /* @__PURE__ */ jsxDEV51(
+        /* @__PURE__ */ jsxDEV52(
           "span",
           {
             className: classNames(
@@ -13714,8 +13909,8 @@ function ShippingAddressSelector({
 
 // app/routes/checkout._index.tsx
 import { useTranslation as useTranslation34 } from "react-i18next";
-import { jsxDEV as jsxDEV52 } from "react/jsx-dev-runtime";
-async function loader13({ request }) {
+import { jsxDEV as jsxDEV53 } from "react/jsx-dev-runtime";
+async function loader14({ request }) {
   try {
     let session = await (await getSessionStorage()).getSession(request.headers.get("Cookie"));
     console.log("CHECKOUT LOADER: session retrieved");
@@ -13733,7 +13928,7 @@ async function loader13({ request }) {
     let { activeCustomer } = await getActiveCustomerAddresses({ request });
     console.log("CHECKOUT LOADER: activeCustomer:", activeCustomer?.id ? `id=${activeCustomer.id}` : "null");
     let error = session.get("activeOrderError");
-    return console.log("CHECKOUT LOADER: returning json data"), json11({
+    return console.log("CHECKOUT LOADER: returning json data"), json12({
       availableCountries,
       eligibleShippingMethods,
       activeCustomer,
@@ -13744,7 +13939,7 @@ async function loader13({ request }) {
   }
 }
 function CheckoutShipping() {
-  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData12(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState11(!1), [addressFormChanged, setAddressFormChanged] = useState11(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState11(0), [isSubmitting, setIsSubmitting] = useState11(!1), customerFormRef = useRef8(null), addressFormRef = useRef8(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
+  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData13(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState11(!1), [addressFormChanged, setAddressFormChanged] = useState11(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState11(0), [isSubmitting, setIsSubmitting] = useState11(!1), customerFormRef = useRef8(null), addressFormRef = useRef8(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
     if (!customerFormRef.current)
       return;
     let formData = new FormData(customerFormRef.current), { emailAddress, firstName, lastName } = Object.fromEntries(
@@ -13801,15 +13996,15 @@ function CheckoutShipping() {
       setIsSubmitting(!1), navigate("./payment");
     }, 300));
   };
-  return /* @__PURE__ */ jsxDEV52("div", { children: [
-    /* @__PURE__ */ jsxDEV52("div", { children: [
-      /* @__PURE__ */ jsxDEV52("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.detailsTitle") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV53("div", { children: [
+    /* @__PURE__ */ jsxDEV53("div", { children: [
+      /* @__PURE__ */ jsxDEV53("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.detailsTitle") }, void 0, !1, {
         fileName: "app/routes/checkout._index.tsx",
         lineNumber: 220,
         columnNumber: 9
       }, this),
-      isSignedIn ? /* @__PURE__ */ jsxDEV52("div", { children: [
-        /* @__PURE__ */ jsxDEV52("p", { className: "mt-2 text-gray-600", children: [
+      isSignedIn ? /* @__PURE__ */ jsxDEV53("div", { children: [
+        /* @__PURE__ */ jsxDEV53("p", { className: "mt-2 text-gray-600", children: [
           customer?.firstName,
           " ",
           customer?.lastName
@@ -13818,7 +14013,7 @@ function CheckoutShipping() {
           lineNumber: 226,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV52("p", { children: customer?.emailAddress }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV53("p", { children: customer?.emailAddress }, void 0, !1, {
           fileName: "app/routes/checkout._index.tsx",
           lineNumber: 229,
           columnNumber: 13
@@ -13827,7 +14022,7 @@ function CheckoutShipping() {
         fileName: "app/routes/checkout._index.tsx",
         lineNumber: 225,
         columnNumber: 11
-      }, this) : /* @__PURE__ */ jsxDEV52(
+      }, this) : /* @__PURE__ */ jsxDEV53(
         Form4,
         {
           ref: customerFormRef,
@@ -13836,13 +14031,13 @@ function CheckoutShipping() {
           onSubmit: handleCustomerFormSubmit,
           onChange: () => setCustomerFormChanged(!0),
           children: [
-            /* @__PURE__ */ jsxDEV52("input", { type: "hidden", name: "action", value: "setOrderCustomer" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV53("input", { type: "hidden", name: "action", value: "setOrderCustomer" }, void 0, !1, {
               fileName: "app/routes/checkout._index.tsx",
               lineNumber: 239,
               columnNumber: 13
             }, this),
-            /* @__PURE__ */ jsxDEV52("div", { className: "mt-4", children: [
-              /* @__PURE__ */ jsxDEV52(
+            /* @__PURE__ */ jsxDEV53("div", { className: "mt-4", children: [
+              /* @__PURE__ */ jsxDEV53(
                 "label",
                 {
                   htmlFor: "emailAddress",
@@ -13858,7 +14053,7 @@ function CheckoutShipping() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV52("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV52(
+              /* @__PURE__ */ jsxDEV53("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV53(
                 "input",
                 {
                   type: "email",
@@ -13883,7 +14078,7 @@ function CheckoutShipping() {
                 lineNumber: 247,
                 columnNumber: 15
               }, this),
-              error?.errorCode === "EMAIL_ADDRESS_CONFLICT_ERROR" && /* @__PURE__ */ jsxDEV52("p", { className: "mt-2 text-sm text-red-600", id: "email-error", children: error.message }, void 0, !1, {
+              error?.errorCode === "EMAIL_ADDRESS_CONFLICT_ERROR" && /* @__PURE__ */ jsxDEV53("p", { className: "mt-2 text-sm text-red-600", id: "email-error", children: error.message }, void 0, !1, {
                 fileName: "app/routes/checkout._index.tsx",
                 lineNumber: 260,
                 columnNumber: 17
@@ -13893,9 +14088,9 @@ function CheckoutShipping() {
               lineNumber: 240,
               columnNumber: 13
             }, this),
-            /* @__PURE__ */ jsxDEV52("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
-              /* @__PURE__ */ jsxDEV52("div", { children: [
-                /* @__PURE__ */ jsxDEV52(
+            /* @__PURE__ */ jsxDEV53("div", { className: "mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4", children: [
+              /* @__PURE__ */ jsxDEV53("div", { children: [
+                /* @__PURE__ */ jsxDEV53(
                   "label",
                   {
                     htmlFor: "firstName",
@@ -13911,7 +14106,7 @@ function CheckoutShipping() {
                   },
                   this
                 ),
-                /* @__PURE__ */ jsxDEV52("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV52(
+                /* @__PURE__ */ jsxDEV53("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV53(
                   "input",
                   {
                     type: "text",
@@ -13941,8 +14136,8 @@ function CheckoutShipping() {
                 lineNumber: 266,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV52("div", { children: [
-                /* @__PURE__ */ jsxDEV52(
+              /* @__PURE__ */ jsxDEV53("div", { children: [
+                /* @__PURE__ */ jsxDEV53(
                   "label",
                   {
                     htmlFor: "lastName",
@@ -13958,7 +14153,7 @@ function CheckoutShipping() {
                   },
                   this
                 ),
-                /* @__PURE__ */ jsxDEV52("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV52(
+                /* @__PURE__ */ jsxDEV53("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV53(
                   "input",
                   {
                     type: "text",
@@ -14009,7 +14204,7 @@ function CheckoutShipping() {
       lineNumber: 219,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV52(
+    /* @__PURE__ */ jsxDEV53(
       Form4,
       {
         ref: addressFormRef,
@@ -14018,12 +14213,12 @@ function CheckoutShipping() {
         onSubmit: handleAddressFormSubmit,
         onChange: () => setAddressFormChanged(!0),
         children: [
-          /* @__PURE__ */ jsxDEV52("input", { type: "hidden", name: "action", value: "setCheckoutShipping" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV53("input", { type: "hidden", name: "action", value: "setCheckoutShipping" }, void 0, !1, {
             fileName: "app/routes/checkout._index.tsx",
             lineNumber: 319,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ jsxDEV52("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV52("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.shippingTitle") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV53("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV53("h2", { className: "text-lg font-medium text-gray-900", children: t("checkout.shippingTitle") }, void 0, !1, {
             fileName: "app/routes/checkout._index.tsx",
             lineNumber: 321,
             columnNumber: 11
@@ -14032,8 +14227,8 @@ function CheckoutShipping() {
             lineNumber: 320,
             columnNumber: 9
           }, this),
-          isSignedIn && activeCustomer.addresses?.length ? /* @__PURE__ */ jsxDEV52("div", { children: [
-            /* @__PURE__ */ jsxDEV52(
+          isSignedIn && activeCustomer.addresses?.length ? /* @__PURE__ */ jsxDEV53("div", { children: [
+            /* @__PURE__ */ jsxDEV53(
               ShippingAddressSelector,
               {
                 addresses: activeCustomer.addresses,
@@ -14049,7 +14244,7 @@ function CheckoutShipping() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV52("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV52(
+            /* @__PURE__ */ jsxDEV53("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV53(
               "button",
               {
                 type: "button",
@@ -14074,7 +14269,7 @@ function CheckoutShipping() {
             fileName: "app/routes/checkout._index.tsx",
             lineNumber: 326,
             columnNumber: 11
-          }, this) : /* @__PURE__ */ jsxDEV52(
+          }, this) : /* @__PURE__ */ jsxDEV53(
             AddressForm,
             {
               availableCountries,
@@ -14091,7 +14286,7 @@ function CheckoutShipping() {
             },
             this
           ),
-          isSignedIn && !activeCustomer.addresses?.length && /* @__PURE__ */ jsxDEV52(
+          isSignedIn && !activeCustomer.addresses?.length && /* @__PURE__ */ jsxDEV53(
             AddressForm,
             {
               availableCountries,
@@ -14119,7 +14314,7 @@ function CheckoutShipping() {
       },
       this
     ),
-    /* @__PURE__ */ jsxDEV52("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV52(
+    /* @__PURE__ */ jsxDEV53("div", { className: "mt-10 border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV53(
       ShippingMethodSelector,
       {
         eligibleShippingMethods,
@@ -14140,7 +14335,7 @@ function CheckoutShipping() {
       lineNumber: 360,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV52(
+    /* @__PURE__ */ jsxDEV53(
       "button",
       {
         type: "button",
@@ -14151,12 +14346,12 @@ function CheckoutShipping() {
           "flex w-full items-center justify-center space-x-2 mt-24 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
         ),
         children: [
-          /* @__PURE__ */ jsxDEV52(LockClosedIcon, { className: "w-5 h-5" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV53(LockClosedIcon, { className: "w-5 h-5" }, void 0, !1, {
             fileName: "app/routes/checkout._index.tsx",
             lineNumber: 382,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ jsxDEV52("span", { children: t(isSubmitting ? "checkout.processing" : "checkout.goToPayment") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV53("span", { children: t(isSubmitting ? "checkout.processing" : "checkout.goToPayment") }, void 0, !1, {
             fileName: "app/routes/checkout._index.tsx",
             lineNumber: 383,
             columnNumber: 9
@@ -14189,14 +14384,14 @@ import { CheckCircleIcon as CheckCircleIcon5 } from "@heroicons/react/24/outline
 import { Form as Form5 } from "@remix-run/react";
 import { redirect as redirect7 } from "@remix-run/server-runtime";
 import { useTranslation as useTranslation35 } from "react-i18next";
-import { jsxDEV as jsxDEV53 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV54 } from "react/jsx-dev-runtime";
 async function action8() {
   return redirect7("/");
 }
 function SuccessPage() {
   let { t } = useTranslation35();
-  return /* @__PURE__ */ jsxDEV53("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxDEV53("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md border-2 rounded-md border-green-600", children: /* @__PURE__ */ jsxDEV53("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: /* @__PURE__ */ jsxDEV53(Form5, { className: "space-y-6", method: "post", children: /* @__PURE__ */ jsxDEV53("div", { children: [
-    /* @__PURE__ */ jsxDEV53("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxDEV53("div", { className: "flex-grow", children: /* @__PURE__ */ jsxDEV53(
+  return /* @__PURE__ */ jsxDEV54("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxDEV54("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md border-2 rounded-md border-green-600", children: /* @__PURE__ */ jsxDEV54("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: /* @__PURE__ */ jsxDEV54(Form5, { className: "space-y-6", method: "post", children: /* @__PURE__ */ jsxDEV54("div", { children: [
+    /* @__PURE__ */ jsxDEV54("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxDEV54("div", { className: "flex-grow", children: /* @__PURE__ */ jsxDEV54(
       CheckCircleIcon5,
       {
         className: "h-20 w-20 m-auto mb-2 text-green-600",
@@ -14219,12 +14414,12 @@ function SuccessPage() {
       lineNumber: 19,
       columnNumber: 15
     }, this),
-    /* @__PURE__ */ jsxDEV53("p", { className: "text-center mb-5", children: t("account.createdMessage") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV54("p", { className: "text-center mb-5", children: t("account.createdMessage") }, void 0, !1, {
       fileName: "app/routes/sign-up.success.tsx",
       lineNumber: 27,
       columnNumber: 15
     }, this),
-    /* @__PURE__ */ jsxDEV53(
+    /* @__PURE__ */ jsxDEV54(
       "button",
       {
         type: "submit",
@@ -14268,17 +14463,17 @@ var account_index_exports = {};
 __export(account_index_exports, {
   action: () => action9,
   default: () => AccountDetails,
-  loader: () => loader14,
+  loader: () => loader15,
   validator: () => validator4
 });
 import { CheckIcon as CheckIcon2, PencilIcon as PencilIcon3, XMarkIcon as XMarkIcon4 } from "@heroicons/react/24/outline";
-import { useActionData as useActionData5, useLoaderData as useLoaderData13, useNavigation as useNavigation7 } from "@remix-run/react";
-import { json as json12, redirect as redirect8 } from "@remix-run/server-runtime";
+import { useActionData as useActionData5, useLoaderData as useLoaderData14, useNavigation as useNavigation7 } from "@remix-run/react";
+import { json as json13, redirect as redirect8 } from "@remix-run/server-runtime";
 import { useEffect as useEffect12, useRef as useRef9, useState as useState12 } from "react";
 import { ValidatedForm as ValidatedForm5, validationError as validationError4 } from "remix-validated-form";
 import { z as z4 } from "zod";
 import { useTranslation as useTranslation36 } from "react-i18next";
-import { Fragment as Fragment14, jsxDEV as jsxDEV54 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment14, jsxDEV as jsxDEV55 } from "react/jsx-dev-runtime";
 var validator4 = withZod(
   z4.object({
     title: z4.string(),
@@ -14292,9 +14487,9 @@ var validator4 = withZod(
     password: z4.string().min(1, { message: "Password is required" })
   })
 );
-async function loader14({ request }) {
+async function loader15({ request }) {
   let { activeCustomer } = await getActiveCustomerDetails({ request });
-  return activeCustomer ? json12({ activeCustomer }) : redirect8("/sign-in");
+  return activeCustomer ? json13({ activeCustomer }) : redirect8("/sign-in");
 }
 function isFormError(err) {
   return err.message !== void 0;
@@ -14306,7 +14501,7 @@ function isCustomerUpdatedResponse(response) {
   return response.customerUpdated !== void 0;
 }
 async function action9({ request }) {
-  let body = await request.formData(), intent = body.get("intent"), formError = (formError2, init) => json12(formError2, init);
+  let body = await request.formData(), intent = body.get("intent"), formError = (formError2, init) => json13(formError2, init);
   if (intent === "updateEmail" /* UpdateEmail */) {
     let result = await changeEmailValidator.validate(body);
     if (result.error)
@@ -14321,7 +14516,7 @@ async function action9({ request }) {
       {
         status: 401
       }
-    ) : json12(
+    ) : json13(
       {
         newEmailAddress: email
       },
@@ -14336,14 +14531,14 @@ async function action9({ request }) {
     return await updateCustomer(
       { title, firstName, lastName, phoneNumber },
       { request }
-    ), json12({
+    ), json13({
       customerUpdated: !0
     });
   }
   return formError({ message: "No valid form intent" }, { status: 401 });
 }
 function AccountDetails() {
-  let { activeCustomer } = useLoaderData13(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState12(), [emailSavedResponse, setEmailSavedResponse] = useState12(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState12(!1), emailInputRef = useRef9(null), formRef = useRef9(null);
+  let { activeCustomer } = useLoaderData14(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState12(), [emailSavedResponse, setEmailSavedResponse] = useState12(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState12(!1), emailInputRef = useRef9(null), formRef = useRef9(null);
   return useEffect12(() => {
     if (actionDataHook) {
       if (isEmailSavedResponse(actionDataHook)) {
@@ -14361,30 +14556,30 @@ function AccountDetails() {
     }
   }, [actionDataHook]), useEffect12(() => {
     formRef.current?.reset();
-  }, [isEditing]), /* @__PURE__ */ jsxDEV54(Fragment14, { children: [
-    /* @__PURE__ */ jsxDEV54(
+  }, [isEditing]), /* @__PURE__ */ jsxDEV55(Fragment14, { children: [
+    /* @__PURE__ */ jsxDEV55(
       Modal_default,
       {
         isOpen: showChangeEmailModal,
         close: () => closeChangeEmailModal(),
         afterOpen: () => emailInputRef.current?.focus(),
         size: "small",
-        children: /* @__PURE__ */ jsxDEV54(ValidatedForm5, { validator: changeEmailValidator, method: "post", children: [
-          /* @__PURE__ */ jsxDEV54(Modal_default.Title, { children: t("account.changeEmailModal.title") }, void 0, !1, {
+        children: /* @__PURE__ */ jsxDEV55(ValidatedForm5, { validator: changeEmailValidator, method: "post", children: [
+          /* @__PURE__ */ jsxDEV55(Modal_default.Title, { children: t("account.changeEmailModal.title") }, void 0, !1, {
             fileName: "app/routes/account._index.tsx",
             lineNumber: 200,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV54(Modal_default.Body, { children: /* @__PURE__ */ jsxDEV54("div", { className: "space-y-4 my-8", children: [
-            /* @__PURE__ */ jsxDEV54("p", { children: t("account.changeEmailModal.heading") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV55(Modal_default.Body, { children: /* @__PURE__ */ jsxDEV55("div", { className: "space-y-4 my-8", children: [
+            /* @__PURE__ */ jsxDEV55("p", { children: t("account.changeEmailModal.heading") }, void 0, !1, {
               fileName: "app/routes/account._index.tsx",
               lineNumber: 203,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV54("p", { children: [
+            /* @__PURE__ */ jsxDEV55("p", { children: [
               t("account.changeEmailModal.currentEmail"),
               " ",
-              /* @__PURE__ */ jsxDEV54("strong", { children: emailAddress }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV55("strong", { children: emailAddress }, void 0, !1, {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 206,
                 columnNumber: 17
@@ -14394,8 +14589,8 @@ function AccountDetails() {
               lineNumber: 204,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV54("div", { className: "space-y-1", children: [
-              /* @__PURE__ */ jsxDEV54(
+            /* @__PURE__ */ jsxDEV55("div", { className: "space-y-1", children: [
+              /* @__PURE__ */ jsxDEV55(
                 "input",
                 {
                   type: "hidden",
@@ -14411,7 +14606,7 @@ function AccountDetails() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV54(
+              /* @__PURE__ */ jsxDEV55(
                 Input,
                 {
                   ref: emailInputRef,
@@ -14429,7 +14624,7 @@ function AccountDetails() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV54(
+              /* @__PURE__ */ jsxDEV55(
                 Input,
                 {
                   label: t("account.password"),
@@ -14446,7 +14641,7 @@ function AccountDetails() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV54("input", { type: "submit", hidden: !0 }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV55("input", { type: "submit", hidden: !0 }, void 0, !1, {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 228,
                 columnNumber: 17
@@ -14456,7 +14651,7 @@ function AccountDetails() {
               lineNumber: 209,
               columnNumber: 15
             }, this),
-            formError && formError.intent === "updateEmail" /* UpdateEmail */ && /* @__PURE__ */ jsxDEV54(
+            formError && formError.intent === "updateEmail" /* UpdateEmail */ && /* @__PURE__ */ jsxDEV55(
               ErrorMessage,
               {
                 heading: t("account.changeEmailModal.errorMessage"),
@@ -14480,13 +14675,13 @@ function AccountDetails() {
             lineNumber: 201,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV54(Modal_default.Footer, { children: [
-            /* @__PURE__ */ jsxDEV54(Button, { type: "reset", onClick: () => closeChangeEmailModal(), children: t("common.cancel") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV55(Modal_default.Footer, { children: [
+            /* @__PURE__ */ jsxDEV55(Button, { type: "reset", onClick: () => closeChangeEmailModal(), children: t("common.cancel") }, void 0, !1, {
               fileName: "app/routes/account._index.tsx",
               lineNumber: 239,
               columnNumber: 13
             }, this),
-            /* @__PURE__ */ jsxDEV54(
+            /* @__PURE__ */ jsxDEV55(
               HighlightedButton,
               {
                 type: "submit",
@@ -14522,21 +14717,21 @@ function AccountDetails() {
       },
       this
     ),
-    /* @__PURE__ */ jsxDEV54("div", { className: "space-y-10 p-4 mt-5", children: [
-      /* @__PURE__ */ jsxDEV54("div", { className: "grid grid-cols-2 gap-4", children: [
-        /* @__PURE__ */ jsxDEV54("div", { className: "col-span-2", children: [
-          /* @__PURE__ */ jsxDEV54("h3", { className: "text-sm text-gray-500", children: t("account.email") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV55("div", { className: "space-y-10 p-4 mt-5", children: [
+      /* @__PURE__ */ jsxDEV55("div", { className: "grid grid-cols-2 gap-4", children: [
+        /* @__PURE__ */ jsxDEV55("div", { className: "col-span-2", children: [
+          /* @__PURE__ */ jsxDEV55("h3", { className: "text-sm text-gray-500", children: t("account.email") }, void 0, !1, {
             fileName: "app/routes/account._index.tsx",
             lineNumber: 255,
             columnNumber: 13
           }, this),
-          emailSavedResponse ? /* @__PURE__ */ jsxDEV54("span", { children: [
-            /* @__PURE__ */ jsxDEV54("span", { className: "italic text-gray-800", children: emailSavedResponse.newEmailAddress }, void 0, !1, {
+          emailSavedResponse ? /* @__PURE__ */ jsxDEV55("span", { children: [
+            /* @__PURE__ */ jsxDEV55("span", { className: "italic text-gray-800", children: emailSavedResponse.newEmailAddress }, void 0, !1, {
               fileName: "app/routes/account._index.tsx",
               lineNumber: 258,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV54("span", { className: "ml-2 bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300", children: t("account.changeEmailConfirmation") }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV55("span", { className: "ml-2 bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300", children: t("account.changeEmailConfirmation") }, void 0, !1, {
               fileName: "app/routes/account._index.tsx",
               lineNumber: 261,
               columnNumber: 17
@@ -14545,7 +14740,7 @@ function AccountDetails() {
             fileName: "app/routes/account._index.tsx",
             lineNumber: 257,
             columnNumber: 15
-          }, this) : /* @__PURE__ */ jsxDEV54("span", { children: emailAddress }, void 0, !1, {
+          }, this) : /* @__PURE__ */ jsxDEV55("span", { children: emailAddress }, void 0, !1, {
             fileName: "app/routes/account._index.tsx",
             lineNumber: 266,
             columnNumber: 15
@@ -14555,13 +14750,13 @@ function AccountDetails() {
           lineNumber: 254,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV54("div", { className: "col-span-2", children: /* @__PURE__ */ jsxDEV54(
+        /* @__PURE__ */ jsxDEV55("div", { className: "col-span-2", children: /* @__PURE__ */ jsxDEV55(
           HighlightedButton,
           {
             type: "button",
             onClick: () => openChangeEmailModal(),
             children: [
-              /* @__PURE__ */ jsxDEV54(PencilIcon3, { className: "w-4 h-4" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV55(PencilIcon3, { className: "w-4 h-4" }, void 0, !1, {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 274,
                 columnNumber: 15
@@ -14588,7 +14783,7 @@ function AccountDetails() {
         lineNumber: 253,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV54("div", { className: "border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV54(
+      /* @__PURE__ */ jsxDEV55("div", { className: "border-t border-gray-200 pt-10", children: /* @__PURE__ */ jsxDEV55(
         ValidatedForm5,
         {
           validator: validator4,
@@ -14602,7 +14797,7 @@ function AccountDetails() {
             phoneNumber: phoneNumber ?? void 0
           },
           children: [
-            /* @__PURE__ */ jsxDEV54(
+            /* @__PURE__ */ jsxDEV55(
               "input",
               {
                 type: "hidden",
@@ -14618,8 +14813,8 @@ function AccountDetails() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV54("div", { className: "gap-4 grid sm:grid-cols-2", children: [
-              isEditing && /* @__PURE__ */ jsxDEV54("div", { className: "col-span-2", children: /* @__PURE__ */ jsxDEV54(
+            /* @__PURE__ */ jsxDEV55("div", { className: "gap-4 grid sm:grid-cols-2", children: [
+              isEditing && /* @__PURE__ */ jsxDEV55("div", { className: "col-span-2", children: /* @__PURE__ */ jsxDEV55(
                 Input,
                 {
                   label: t("account.title"),
@@ -14639,8 +14834,8 @@ function AccountDetails() {
                 lineNumber: 299,
                 columnNumber: 17
               }, this),
-              isEditing ? /* @__PURE__ */ jsxDEV54(Fragment14, { children: [
-                /* @__PURE__ */ jsxDEV54("div", { children: /* @__PURE__ */ jsxDEV54(
+              isEditing ? /* @__PURE__ */ jsxDEV55(Fragment14, { children: [
+                /* @__PURE__ */ jsxDEV55("div", { children: /* @__PURE__ */ jsxDEV55(
                   Input,
                   {
                     label: t("account.firstName"),
@@ -14660,7 +14855,7 @@ function AccountDetails() {
                   lineNumber: 309,
                   columnNumber: 19
                 }, this),
-                /* @__PURE__ */ jsxDEV54("div", { children: /* @__PURE__ */ jsxDEV54(
+                /* @__PURE__ */ jsxDEV55("div", { children: /* @__PURE__ */ jsxDEV55(
                   Input,
                   {
                     label: t("account.lastName"),
@@ -14684,8 +14879,8 @@ function AccountDetails() {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 308,
                 columnNumber: 17
-              }, this) : /* @__PURE__ */ jsxDEV54("div", { children: [
-                /* @__PURE__ */ jsxDEV54("h3", { className: "text-sm text-gray-500", children: t("account.fullName") }, void 0, !1, {
+              }, this) : /* @__PURE__ */ jsxDEV55("div", { children: [
+                /* @__PURE__ */ jsxDEV55("h3", { className: "text-sm text-gray-500", children: t("account.fullName") }, void 0, !1, {
                   fileName: "app/routes/account._index.tsx",
                   lineNumber: 326,
                   columnNumber: 19
@@ -14696,12 +14891,12 @@ function AccountDetails() {
                 lineNumber: 325,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV54("div", { children: isEditing ? /* @__PURE__ */ jsxDEV54(Input, { label: t("account.phoneNumber"), name: "phoneNumber" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV55("div", { children: isEditing ? /* @__PURE__ */ jsxDEV55(Input, { label: t("account.phoneNumber"), name: "phoneNumber" }, void 0, !1, {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 335,
                 columnNumber: 19
-              }, this) : /* @__PURE__ */ jsxDEV54("div", { children: [
-                /* @__PURE__ */ jsxDEV54("h3", { className: "text-sm text-gray-500", children: t("account.phoneNumber") }, void 0, !1, {
+              }, this) : /* @__PURE__ */ jsxDEV55("div", { children: [
+                /* @__PURE__ */ jsxDEV55("h3", { className: "text-sm text-gray-500", children: t("account.phoneNumber") }, void 0, !1, {
                   fileName: "app/routes/account._index.tsx",
                   lineNumber: 338,
                   columnNumber: 21
@@ -14716,8 +14911,8 @@ function AccountDetails() {
                 lineNumber: 333,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV54("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxDEV54(Fragment14, { children: [
-                formError && formError.intent === "updateDetails" /* UpdateDetails */ && /* @__PURE__ */ jsxDEV54(
+              /* @__PURE__ */ jsxDEV55("div", { className: "col-span-2", children: isEditing ? /* @__PURE__ */ jsxDEV55(Fragment14, { children: [
+                formError && formError.intent === "updateDetails" /* UpdateDetails */ && /* @__PURE__ */ jsxDEV55(
                   ErrorMessage,
                   {
                     heading: t("account.errorMessage"),
@@ -14732,14 +14927,14 @@ function AccountDetails() {
                   },
                   this
                 ),
-                /* @__PURE__ */ jsxDEV54("div", { className: "flex gap-x-4", children: [
-                  /* @__PURE__ */ jsxDEV54(
+                /* @__PURE__ */ jsxDEV55("div", { className: "flex gap-x-4", children: [
+                  /* @__PURE__ */ jsxDEV55(
                     HighlightedButton,
                     {
                       type: "submit",
                       isSubmitting: state === "submitting",
                       children: [
-                        /* @__PURE__ */ jsxDEV54(CheckIcon2, { className: "w-4 h-4" }, void 0, !1, {
+                        /* @__PURE__ */ jsxDEV55(CheckIcon2, { className: "w-4 h-4" }, void 0, !1, {
                           fileName: "app/routes/account._index.tsx",
                           lineNumber: 361,
                           columnNumber: 25
@@ -14757,8 +14952,8 @@ function AccountDetails() {
                     },
                     this
                   ),
-                  /* @__PURE__ */ jsxDEV54(Button, { type: "reset", onClick: () => setIsEditing(!1), children: [
-                    /* @__PURE__ */ jsxDEV54(XMarkIcon4, { className: "w-4 h-4" }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV55(Button, { type: "reset", onClick: () => setIsEditing(!1), children: [
+                    /* @__PURE__ */ jsxDEV55(XMarkIcon4, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/routes/account._index.tsx",
                       lineNumber: 365,
                       columnNumber: 25
@@ -14779,13 +14974,13 @@ function AccountDetails() {
                 fileName: "app/routes/account._index.tsx",
                 lineNumber: 347,
                 columnNumber: 19
-              }, this) : /* @__PURE__ */ jsxDEV54(
+              }, this) : /* @__PURE__ */ jsxDEV55(
                 HighlightedButton,
                 {
                   type: "button",
                   onClick: () => setIsEditing(!0),
                   children: [
-                    /* @__PURE__ */ jsxDEV54(PencilIcon3, { className: "w-4 h-4" }, void 0, !1, {
+                    /* @__PURE__ */ jsxDEV55(PencilIcon3, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/routes/account._index.tsx",
                       lineNumber: 374,
                       columnNumber: 21
@@ -14844,24 +15039,24 @@ var products_slug_exports = {};
 __export(products_slug_exports, {
   CatchBoundary: () => CatchBoundary3,
   default: () => ProductSlug,
-  loader: () => loader15,
+  loader: () => loader16,
   meta: () => meta3,
   shouldRevalidate: () => shouldRevalidate2
 });
-import { json as json13 } from "@remix-run/server-runtime";
+import { json as json14 } from "@remix-run/server-runtime";
 import { useState as useState13 } from "react";
 import {
-  useLoaderData as useLoaderData14,
+  useLoaderData as useLoaderData15,
   useOutletContext as useOutletContext3
 } from "@remix-run/react";
 import { CheckIcon as CheckIcon3, HeartIcon, PhotoIcon } from "@heroicons/react/24/solid";
 
 // app/components/Alert.tsx
 import { XCircleIcon as XCircleIcon5 } from "@heroicons/react/24/solid";
-import { jsxDEV as jsxDEV55 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV56 } from "react/jsx-dev-runtime";
 function Alert({ message }) {
-  return /* @__PURE__ */ jsxDEV55("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV55("div", { className: "flex", children: [
-    /* @__PURE__ */ jsxDEV55("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV55(XCircleIcon5, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV56("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV56("div", { className: "flex", children: [
+    /* @__PURE__ */ jsxDEV56("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV56(XCircleIcon5, { className: "h-5 w-5 text-red-400", "aria-hidden": "true" }, void 0, !1, {
       fileName: "app/components/Alert.tsx",
       lineNumber: 8,
       columnNumber: 11
@@ -14870,7 +15065,7 @@ function Alert({ message }) {
       lineNumber: 7,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV55("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV55("h3", { className: "text-sm font-medium text-red-800", children: message }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV56("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV56("h3", { className: "text-sm font-medium text-red-800", children: message }, void 0, !1, {
       fileName: "app/components/Alert.tsx",
       lineNumber: 11,
       columnNumber: 11
@@ -14892,7 +15087,7 @@ function Alert({ message }) {
 
 // app/components/products/StockLevelLabel.tsx
 import { useTranslation as useTranslation37 } from "react-i18next";
-import { jsxDEV as jsxDEV56 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV57 } from "react/jsx-dev-runtime";
 function StockLevelLabel({ stockLevel }) {
   let { t } = useTranslation37(), stockLevelLabel = "", badgeClasses = "bg-gray-100 text-gray-800";
   switch (stockLevel) {
@@ -14906,7 +15101,7 @@ function StockLevelLabel({ stockLevel }) {
       stockLevelLabel = t("product.lowStock"), badgeClasses = "bg-yellow-100 text-yellow-800";
       break;
   }
-  return /* @__PURE__ */ jsxDEV56(
+  return /* @__PURE__ */ jsxDEV57(
     "span",
     {
       className: "inline-flex items-center px-2 py-0.5 rounded text-xs font-medium " + badgeClasses,
@@ -14926,7 +15121,7 @@ function StockLevelLabel({ stockLevel }) {
 // app/components/products/TopReviews.tsx
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation38 } from "react-i18next";
-import { jsxDEV as jsxDEV57 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV58 } from "react/jsx-dev-runtime";
 var reviews = [
   {
     id: 1,
@@ -14966,20 +15161,20 @@ var reviews = [
 ];
 function TopReviews() {
   let { t } = useTranslation38();
-  return /* @__PURE__ */ jsxDEV57("div", { className: "", children: /* @__PURE__ */ jsxDEV57("div", { className: "max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-6xl lg:px-8", children: [
-    /* @__PURE__ */ jsxDEV57("h2", { className: "text-lg font-medium text-gray-900", children: t("product.recentReviews") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV58("div", { className: "", children: /* @__PURE__ */ jsxDEV58("div", { className: "max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-6xl lg:px-8", children: [
+    /* @__PURE__ */ jsxDEV58("h2", { className: "text-lg font-medium text-gray-900", children: t("product.recentReviews") }, void 0, !1, {
       fileName: "app/components/products/TopReviews.tsx",
       lineNumber: 60,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV57("div", { className: "mt-6 pb-10 border-t border-gray-200 divide-y divide-gray-200 space-y-10", children: reviews.map((review) => /* @__PURE__ */ jsxDEV57(
+    /* @__PURE__ */ jsxDEV58("div", { className: "mt-6 pb-10 border-t border-gray-200 divide-y divide-gray-200 space-y-10", children: reviews.map((review) => /* @__PURE__ */ jsxDEV58(
       "div",
       {
         className: "pt-10 lg:grid lg:grid-cols-12 lg:gap-x-8",
         children: [
-          /* @__PURE__ */ jsxDEV57("div", { className: "lg:col-start-5 lg:col-span-8 xl:col-start-4 xl:col-span-9 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:items-start", children: [
-            /* @__PURE__ */ jsxDEV57("div", { className: "flex items-center xl:col-span-1", children: [
-              /* @__PURE__ */ jsxDEV57("div", { className: "flex items-center", children: [0, 1, 2, 3, 4].map((rating) => /* @__PURE__ */ jsxDEV57(
+          /* @__PURE__ */ jsxDEV58("div", { className: "lg:col-start-5 lg:col-span-8 xl:col-start-4 xl:col-span-9 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:items-start", children: [
+            /* @__PURE__ */ jsxDEV58("div", { className: "flex items-center xl:col-span-1", children: [
+              /* @__PURE__ */ jsxDEV58("div", { className: "flex items-center", children: [0, 1, 2, 3, 4].map((rating) => /* @__PURE__ */ jsxDEV58(
                 StarIcon,
                 {
                   className: classNames(
@@ -15001,9 +15196,9 @@ function TopReviews() {
                 lineNumber: 71,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV57("p", { className: "ml-3 text-sm text-gray-700", children: [
+              /* @__PURE__ */ jsxDEV58("p", { className: "ml-3 text-sm text-gray-700", children: [
                 review.rating,
-                /* @__PURE__ */ jsxDEV57("span", { className: "sr-only", children: [
+                /* @__PURE__ */ jsxDEV58("span", { className: "sr-only", children: [
                   " ",
                   t("product.recentRating")
                 ] }, void 0, !0, {
@@ -15021,13 +15216,13 @@ function TopReviews() {
               lineNumber: 70,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV57("div", { className: "mt-4 lg:mt-6 xl:mt-0 xl:col-span-2", children: [
-              /* @__PURE__ */ jsxDEV57("h3", { className: "text-sm font-medium text-gray-900", children: review.title }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV58("div", { className: "mt-4 lg:mt-6 xl:mt-0 xl:col-span-2", children: [
+              /* @__PURE__ */ jsxDEV58("h3", { className: "text-sm font-medium text-gray-900", children: review.title }, void 0, !1, {
                 fileName: "app/components/products/TopReviews.tsx",
                 lineNumber: 95,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV57(
+              /* @__PURE__ */ jsxDEV58(
                 "div",
                 {
                   className: "mt-3 space-y-6 text-sm text-gray-500",
@@ -15054,13 +15249,13 @@ function TopReviews() {
             lineNumber: 69,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV57("div", { className: "mt-6 flex items-center text-sm lg:mt-0 lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:flex-col lg:items-start xl:col-span-3", children: [
-            /* @__PURE__ */ jsxDEV57("p", { className: "font-medium text-gray-900", children: review.author }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV58("div", { className: "mt-6 flex items-center text-sm lg:mt-0 lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:flex-col lg:items-start xl:col-span-3", children: [
+            /* @__PURE__ */ jsxDEV58("p", { className: "font-medium text-gray-900", children: review.author }, void 0, !1, {
               fileName: "app/components/products/TopReviews.tsx",
               lineNumber: 109,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV57(
+            /* @__PURE__ */ jsxDEV58(
               "time",
               {
                 dateTime: review.datetime,
@@ -15109,7 +15304,7 @@ function TopReviews() {
 
 // app/components/products/ScrollableContainer.tsx
 import { useRef as useRef10, useEffect as useEffect13 } from "react";
-import { jsxDEV as jsxDEV58 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV59 } from "react/jsx-dev-runtime";
 function ScrollableContainer({ children }) {
   let spanRef = useRef10(null), pos = {
     top: 0,
@@ -15138,7 +15333,7 @@ function ScrollableContainer({ children }) {
     spanRef.current.addEventListener("wheel", wheelHandler, {
       passive: !1
     });
-  }), /* @__PURE__ */ jsxDEV58(
+  }), /* @__PURE__ */ jsxDEV59(
     "span",
     {
       className: "py-2 mt-2 flex flex-row flex-nowrap space-x-4 md:overflow-x-hidden overflow-x-auto cursor-grab touch-pan-x",
@@ -15162,13 +15357,13 @@ function ScrollableContainer({ children }) {
 
 // app/routes/products.$slug.tsx
 import { useTranslation as useTranslation39 } from "react-i18next";
-import { jsxDEV as jsxDEV59 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV60 } from "react/jsx-dev-runtime";
 var meta3 = ({ data }) => [
   {
     title: data?.product?.name ? `${data.product.name} - ${APP_META_TITLE}` : APP_META_TITLE
   }
 ];
-async function loader15({ params, request }) {
+async function loader16({ params, request }) {
   let { product } = await getProductBySlug(params.slug, { request });
   if (!product)
     throw new Response("Not Found", {
@@ -15177,7 +15372,7 @@ async function loader15({ params, request }) {
   let sessionStorage2 = await getSessionStorage(), session = await sessionStorage2.getSession(
     request?.headers.get("Cookie")
   ), error = session.get("activeOrderError");
-  return json13(
+  return json14(
     { product, error },
     {
       headers: {
@@ -15188,9 +15383,9 @@ async function loader15({ params, request }) {
 }
 var shouldRevalidate2 = () => !0;
 function ProductSlug() {
-  let { product, error } = useLoaderData14(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
+  let { product, error } = useLoaderData15(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
   if (!product)
-    return /* @__PURE__ */ jsxDEV59("div", { children: t("product.notFound") }, void 0, !1, {
+    return /* @__PURE__ */ jsxDEV60("div", { children: t("product.notFound") }, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
       lineNumber: 68,
       columnNumber: 12
@@ -15204,14 +15399,14 @@ function ProductSlug() {
   )?.name, [featuredAsset, setFeaturedAsset] = useState13(
     selectedVariant?.featuredAsset || product.featuredAsset
   ), [isFavorite, setIsFavorite] = useState13(!1);
-  return /* @__PURE__ */ jsxDEV59("div", { children: [
-    /* @__PURE__ */ jsxDEV59("div", { className: "max-w-6xl mx-auto px-4", children: [
-      /* @__PURE__ */ jsxDEV59("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: product.name }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV60("div", { children: [
+    /* @__PURE__ */ jsxDEV60("div", { className: "max-w-6xl mx-auto px-4", children: [
+      /* @__PURE__ */ jsxDEV60("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: product.name }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
         lineNumber: 100,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV59(
+      /* @__PURE__ */ jsxDEV60(
         Breadcrumbs,
         {
           items: product.collections[product.collections.length - 1]?.breadcrumbs ?? []
@@ -15225,9 +15420,9 @@ function ProductSlug() {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV59("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
-        /* @__PURE__ */ jsxDEV59("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: [
-          /* @__PURE__ */ jsxDEV59("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV59("div", { className: "w-full h-full object-center object-cover rounded-lg", children: /* @__PURE__ */ jsxDEV59(
+      /* @__PURE__ */ jsxDEV60("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
+        /* @__PURE__ */ jsxDEV60("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: [
+          /* @__PURE__ */ jsxDEV60("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV60("div", { className: "w-full h-full object-center object-cover rounded-lg", children: /* @__PURE__ */ jsxDEV60(
             "img",
             {
               src: BACKEND_URL + (featuredAsset?.preview || product.featuredAsset?.preview || "") + "?w=800",
@@ -15251,14 +15446,14 @@ function ProductSlug() {
             lineNumber: 112,
             columnNumber: 13
           }, this),
-          product.assets.length > 1 && /* @__PURE__ */ jsxDEV59(ScrollableContainer, { children: product.assets.map((asset2) => /* @__PURE__ */ jsxDEV59(
+          product.assets.length > 1 && /* @__PURE__ */ jsxDEV60(ScrollableContainer, { children: product.assets.map((asset2) => /* @__PURE__ */ jsxDEV60(
             "div",
             {
               className: `basis-1/3 md:basis-1/4 flex-shrink-0 select-none touch-pan-x rounded-lg ${featuredAsset?.id == asset2.id ? "outline outline-2 outline-primary outline-offset-[-2px]" : ""}`,
               onClick: () => {
                 setFeaturedAsset(asset2);
               },
-              children: /* @__PURE__ */ jsxDEV59(
+              children: /* @__PURE__ */ jsxDEV60(
                 "img",
                 {
                   draggable: "false",
@@ -15293,14 +15488,14 @@ function ProductSlug() {
           lineNumber: 111,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV59("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
-          /* @__PURE__ */ jsxDEV59("div", { className: "", children: [
-            /* @__PURE__ */ jsxDEV59("h3", { className: "sr-only", children: t("product.description") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV60("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
+          /* @__PURE__ */ jsxDEV60("div", { className: "", children: [
+            /* @__PURE__ */ jsxDEV60("h3", { className: "sr-only", children: t("product.description") }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
               lineNumber: 157,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV59(
+            /* @__PURE__ */ jsxDEV60(
               "div",
               {
                 className: "text-base text-gray-700",
@@ -15322,14 +15517,14 @@ function ProductSlug() {
             lineNumber: 156,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV59(activeOrderFetcher.Form, { method: "post", action: "/api/active-order", children: [
-            /* @__PURE__ */ jsxDEV59("input", { type: "hidden", name: "action", value: "addItemToOrder" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV60(activeOrderFetcher.Form, { method: "post", action: "/api/active-order", children: [
+            /* @__PURE__ */ jsxDEV60("input", { type: "hidden", name: "action", value: "addItemToOrder" }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
               lineNumber: 167,
               columnNumber: 15
             }, this),
-            1 < product.variants.length ? /* @__PURE__ */ jsxDEV59("div", { className: "mt-4", children: [
-              /* @__PURE__ */ jsxDEV59(
+            1 < product.variants.length ? /* @__PURE__ */ jsxDEV60("div", { className: "mt-4", children: [
+              /* @__PURE__ */ jsxDEV60(
                 "label",
                 {
                   htmlFor: "option",
@@ -15345,7 +15540,7 @@ function ProductSlug() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV59(
+              /* @__PURE__ */ jsxDEV60(
                 "select",
                 {
                   className: "mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md",
@@ -15357,7 +15552,7 @@ function ProductSlug() {
                     let variant = findVariantById(e.target.value);
                     variant && setFeaturedAsset(variant.featuredAsset);
                   },
-                  children: product.variants.map((variant) => /* @__PURE__ */ jsxDEV59("option", { value: variant.id, children: variant.name }, variant.id, !1, {
+                  children: product.variants.map((variant) => /* @__PURE__ */ jsxDEV60("option", { value: variant.id, children: variant.name }, variant.id, !1, {
                     fileName: "app/routes/products.$slug.tsx",
                     lineNumber: 191,
                     columnNumber: 23
@@ -15376,7 +15571,7 @@ function ProductSlug() {
               fileName: "app/routes/products.$slug.tsx",
               lineNumber: 169,
               columnNumber: 17
-            }, this) : /* @__PURE__ */ jsxDEV59(
+            }, this) : /* @__PURE__ */ jsxDEV60(
               "input",
               {
                 type: "hidden",
@@ -15392,8 +15587,8 @@ function ProductSlug() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV59("div", { className: "mt-10 flex flex-col sm:flex-row sm:items-center", children: [
-              /* @__PURE__ */ jsxDEV59("p", { className: "text-3xl text-gray-900 mr-4", children: /* @__PURE__ */ jsxDEV59(
+            /* @__PURE__ */ jsxDEV60("div", { className: "mt-10 flex flex-col sm:flex-row sm:items-center", children: [
+              /* @__PURE__ */ jsxDEV60("p", { className: "text-3xl text-gray-900 mr-4", children: /* @__PURE__ */ jsxDEV60(
                 Price,
                 {
                   priceWithTax: selectedVariant?.priceWithTax,
@@ -15412,8 +15607,8 @@ function ProductSlug() {
                 lineNumber: 206,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV59("div", { className: "flex sm:flex-col1 align-baseline", children: [
-                /* @__PURE__ */ jsxDEV59(
+              /* @__PURE__ */ jsxDEV60("div", { className: "flex sm:flex-col1 align-baseline", children: [
+                /* @__PURE__ */ jsxDEV60(
                   "button",
                   {
                     type: "submit",
@@ -15422,8 +15617,8 @@ function ProductSlug() {
                                       justify-center text-base font-medium text-white focus:outline-none
                                       focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500 sm:w-full`,
                     disabled: activeOrderFetcher.state !== "idle",
-                    children: qtyInCart ? /* @__PURE__ */ jsxDEV59("span", { className: "flex items-center", children: [
-                      /* @__PURE__ */ jsxDEV59(CheckIcon3, { className: "w-5 h-5 mr-1" }, void 0, !1, {
+                    children: qtyInCart ? /* @__PURE__ */ jsxDEV60("span", { className: "flex items-center", children: [
+                      /* @__PURE__ */ jsxDEV60(CheckIcon3, { className: "w-5 h-5 mr-1" }, void 0, !1, {
                         fileName: "app/routes/products.$slug.tsx",
                         lineNumber: 229,
                         columnNumber: 25
@@ -15447,14 +15642,14 @@ function ProductSlug() {
                   },
                   this
                 ),
-                /* @__PURE__ */ jsxDEV59(
+                /* @__PURE__ */ jsxDEV60(
                   "button",
                   {
                     type: "button",
                     className: `ml-4 py-3 px-3 rounded-md flex items-center justify-center transition-colors ${isFavorite ? "text-red-500 hover:text-red-600" : "text-gray-400 hover:bg-gray-100 hover:text-gray-500"}`,
                     onClick: () => setIsFavorite(!isFavorite),
                     children: [
-                      /* @__PURE__ */ jsxDEV59(
+                      /* @__PURE__ */ jsxDEV60(
                         HeartIcon,
                         {
                           className: `h-6 w-6 flex-shrink-0 ${isFavorite ? "fill-current" : ""}`,
@@ -15469,7 +15664,7 @@ function ProductSlug() {
                         },
                         this
                       ),
-                      /* @__PURE__ */ jsxDEV59("span", { className: "sr-only", children: t(isFavorite ? "product.removeFromFavorites" : "product.addToFavorites") }, void 0, !1, {
+                      /* @__PURE__ */ jsxDEV60("span", { className: "sr-only", children: t(isFavorite ? "product.removeFromFavorites" : "product.addToFavorites") }, void 0, !1, {
                         fileName: "app/routes/products.$slug.tsx",
                         lineNumber: 248,
                         columnNumber: 21
@@ -15495,13 +15690,13 @@ function ProductSlug() {
               lineNumber: 205,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV59("div", { className: "mt-2 flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsxDEV59("span", { className: "text-gray-500", children: selectedVariant?.sku }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV60("div", { className: "mt-2 flex items-center space-x-2", children: [
+              /* @__PURE__ */ jsxDEV60("span", { className: "text-gray-500", children: selectedVariant?.sku }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 255,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV59(StockLevelLabel, { stockLevel: selectedVariant?.stockLevel }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV60(StockLevelLabel, { stockLevel: selectedVariant?.stockLevel }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 256,
                 columnNumber: 17
@@ -15511,7 +15706,7 @@ function ProductSlug() {
               lineNumber: 254,
               columnNumber: 15
             }, this),
-            addItemToOrderError && /* @__PURE__ */ jsxDEV59("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV59(Alert, { message: addItemToOrderError }, void 0, !1, {
+            addItemToOrderError && /* @__PURE__ */ jsxDEV60("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV60(Alert, { message: addItemToOrderError }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
               lineNumber: 260,
               columnNumber: 19
@@ -15520,24 +15715,24 @@ function ProductSlug() {
               lineNumber: 259,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV59("section", { className: "mt-12 pt-12 border-t text-xs", children: [
-              /* @__PURE__ */ jsxDEV59("h3", { className: "text-gray-600 font-bold mb-2", children: t("product.shippingAndReturns") }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV60("section", { className: "mt-12 pt-12 border-t text-xs", children: [
+              /* @__PURE__ */ jsxDEV60("h3", { className: "text-gray-600 font-bold mb-2", children: t("product.shippingAndReturns") }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 265,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV59("div", { className: "text-gray-500 space-y-1", children: [
-                /* @__PURE__ */ jsxDEV59("p", { children: t("product.shippingInfo") }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV60("div", { className: "text-gray-500 space-y-1", children: [
+                /* @__PURE__ */ jsxDEV60("p", { children: t("product.shippingInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 269,
                   columnNumber: 19
                 }, this),
-                /* @__PURE__ */ jsxDEV59("p", { children: t("product.shippingCostsInfo") }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV60("p", { children: t("product.shippingCostsInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 270,
                   columnNumber: 19
                 }, this),
-                /* @__PURE__ */ jsxDEV59("p", { children: t("product.returnsInfo") }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV60("p", { children: t("product.returnsInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 271,
                   columnNumber: 19
@@ -15552,19 +15747,19 @@ function ProductSlug() {
               lineNumber: 264,
               columnNumber: 15
             }, this),
-            product.customFields && /* @__PURE__ */ jsxDEV59("section", { className: "mt-12 pt-12 border-t", children: [
-              /* @__PURE__ */ jsxDEV59("h3", { className: "text-gray-600 font-bold mb-4", children: "Product Details" }, void 0, !1, {
+            product.customFields && /* @__PURE__ */ jsxDEV60("section", { className: "mt-12 pt-12 border-t", children: [
+              /* @__PURE__ */ jsxDEV60("h3", { className: "text-gray-600 font-bold mb-4", children: "Product Details" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 277,
                 columnNumber: 19
               }, this),
-              product.customFields.weight && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Weight" }, void 0, !1, {
+              product.customFields.weight && /* @__PURE__ */ jsxDEV60("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsxDEV60("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Weight" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 280,
                   columnNumber: 23
                 }, this),
-                /* @__PURE__ */ jsxDEV59("p", { className: "text-gray-600", children: product.customFields.weight }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV60("p", { className: "text-gray-600", children: product.customFields.weight }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 281,
                   columnNumber: 23
@@ -15574,13 +15769,13 @@ function ProductSlug() {
                 lineNumber: 279,
                 columnNumber: 21
               }, this),
-              product.customFields.specifications && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Specifications" }, void 0, !1, {
+              product.customFields.specifications && /* @__PURE__ */ jsxDEV60("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsxDEV60("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Specifications" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 286,
                   columnNumber: 23
                 }, this),
-                /* @__PURE__ */ jsxDEV59(
+                /* @__PURE__ */ jsxDEV60(
                   "div",
                   {
                     className: "text-gray-600",
@@ -15602,13 +15797,13 @@ function ProductSlug() {
                 lineNumber: 285,
                 columnNumber: 21
               }, this),
-              product.customFields.usage && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Usage Instructions" }, void 0, !1, {
+              product.customFields.usage && /* @__PURE__ */ jsxDEV60("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsxDEV60("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Usage Instructions" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 297,
                   columnNumber: 23
                 }, this),
-                /* @__PURE__ */ jsxDEV59(
+                /* @__PURE__ */ jsxDEV60(
                   "div",
                   {
                     className: "text-gray-600",
@@ -15630,13 +15825,13 @@ function ProductSlug() {
                 lineNumber: 296,
                 columnNumber: 21
               }, this),
-              product.customFields.detailImage && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
-                /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-2", children: "Detail Image" }, void 0, !1, {
+              product.customFields.detailImage && /* @__PURE__ */ jsxDEV60("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsxDEV60("h4", { className: "text-sm font-medium text-gray-900 mb-2", children: "Detail Image" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
                   lineNumber: 308,
                   columnNumber: 23
                 }, this),
-                /* @__PURE__ */ jsxDEV59(
+                /* @__PURE__ */ jsxDEV60(
                   "img",
                   {
                     src: BACKEND_URL + product.customFields.detailImage.preview + "?w=600",
@@ -15682,7 +15877,7 @@ function ProductSlug() {
       lineNumber: 99,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV59("div", { className: "mt-24", children: /* @__PURE__ */ jsxDEV59(TopReviews, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV60("div", { className: "mt-24", children: /* @__PURE__ */ jsxDEV60(TopReviews, {}, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
       lineNumber: 323,
       columnNumber: 9
@@ -15699,14 +15894,14 @@ function ProductSlug() {
 }
 function CatchBoundary3() {
   let { t } = useTranslation39();
-  return /* @__PURE__ */ jsxDEV59("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxDEV59("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.notFound") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV60("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxDEV60("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.notFound") }, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
       lineNumber: 334,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV59("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
-      /* @__PURE__ */ jsxDEV59("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: /* @__PURE__ */ jsxDEV59("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV59("div", { className: "w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center", children: /* @__PURE__ */ jsxDEV59(PhotoIcon, { className: "w-48 text-white" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV60("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
+      /* @__PURE__ */ jsxDEV60("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: /* @__PURE__ */ jsxDEV60("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV60("div", { className: "w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center", children: /* @__PURE__ */ jsxDEV60(PhotoIcon, { className: "w-48 text-white" }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
         lineNumber: 342,
         columnNumber: 15
@@ -15723,26 +15918,26 @@ function CatchBoundary3() {
         lineNumber: 339,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV59("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
-        /* @__PURE__ */ jsxDEV59("div", { className: "", children: t("product.notFoundInfo") }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV60("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
+        /* @__PURE__ */ jsxDEV60("div", { className: "", children: t("product.notFoundInfo") }, void 0, !1, {
           fileName: "app/routes/products.$slug.tsx",
           lineNumber: 349,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV59("div", { className: "flex-1 space-y-3 py-1", children: [
-          /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV60("div", { className: "flex-1 space-y-3 py-1", children: [
+          /* @__PURE__ */ jsxDEV60("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
             fileName: "app/routes/products.$slug.tsx",
             lineNumber: 351,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV59("div", { className: "space-y-3", children: [
-            /* @__PURE__ */ jsxDEV59("div", { className: "grid grid-cols-3 gap-4", children: [
-              /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded col-span-2" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV60("div", { className: "space-y-3", children: [
+            /* @__PURE__ */ jsxDEV60("div", { className: "grid grid-cols-3 gap-4", children: [
+              /* @__PURE__ */ jsxDEV60("div", { className: "h-2 bg-slate-200 rounded col-span-2" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 354,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV60("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
                 lineNumber: 355,
                 columnNumber: 17
@@ -15752,7 +15947,7 @@ function CatchBoundary3() {
               lineNumber: 353,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV60("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
               lineNumber: 357,
               columnNumber: 15
@@ -15798,11 +15993,11 @@ function getAddItemToOrderError(error) {
 var paypal_return_exports = {};
 __export(paypal_return_exports, {
   default: () => PayPalReturn,
-  loader: () => loader16
+  loader: () => loader17
 });
 import { redirect as redirect9 } from "@remix-run/server-runtime";
-import { jsxDEV as jsxDEV60 } from "react/jsx-dev-runtime";
-async function loader16({ request }) {
+import { jsxDEV as jsxDEV61 } from "react/jsx-dev-runtime";
+async function loader17({ request }) {
   let orderCode = new URL(request.url).searchParams.get("orderCode");
   if (!orderCode)
     return redirect9("/");
@@ -15816,13 +16011,13 @@ async function loader16({ request }) {
   return redirect9("/checkout/payment");
 }
 function PayPalReturn() {
-  return /* @__PURE__ */ jsxDEV60("div", { className: "flex flex-col items-center justify-center h-screen", children: [
-    /* @__PURE__ */ jsxDEV60("div", { className: "animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV61("div", { className: "flex flex-col items-center justify-center h-screen", children: [
+    /* @__PURE__ */ jsxDEV61("div", { className: "animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4" }, void 0, !1, {
       fileName: "app/routes/paypal-return.tsx",
       lineNumber: 28,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV60("p", { className: "text-gray-600", children: "Processing your payment..." }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV61("p", { className: "text-gray-600", children: "Processing your payment..." }, void 0, !1, {
       fileName: "app/routes/paypal-return.tsx",
       lineNumber: 29,
       columnNumber: 7
@@ -15841,7 +16036,7 @@ __export(sign_up_index_exports, {
   default: () => SignUpPage
 });
 import { Form as Form6, Link as Link11, useActionData as useActionData6, useSearchParams as useSearchParams3 } from "@remix-run/react";
-import { json as json14, redirect as redirect10 } from "@remix-run/server-runtime";
+import { json as json15, redirect as redirect10 } from "@remix-run/server-runtime";
 import { XCircleIcon as XCircleIcon6 } from "@heroicons/react/24/solid";
 
 // app/utils/registration-helper.ts
@@ -15857,7 +16052,7 @@ var EMAIL_REGEX = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, validateRegi
 
 // app/routes/sign-up.index.tsx
 import { useTranslation as useTranslation40 } from "react-i18next";
-import { Fragment as Fragment15, jsxDEV as jsxDEV61 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment15, jsxDEV as jsxDEV62 } from "react/jsx-dev-runtime";
 async function action10({ request }) {
   if (API_URL === DEMO_API_URL)
     return {
@@ -15873,22 +16068,22 @@ async function action10({ request }) {
     let formError = {
       form: result.errorCode
     };
-    return json14(formError, { status: 401 });
+    return json15(formError, { status: 401 });
   }
 }
 function SignUpPage() {
   let [searchParams] = useSearchParams3(), formErrors = useActionData6(), { t } = useTranslation40();
-  return /* @__PURE__ */ jsxDEV61(Fragment15, { children: /* @__PURE__ */ jsxDEV61("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
-    /* @__PURE__ */ jsxDEV61("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
-      /* @__PURE__ */ jsxDEV61("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.create") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV62(Fragment15, { children: /* @__PURE__ */ jsxDEV62("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+    /* @__PURE__ */ jsxDEV62("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
+      /* @__PURE__ */ jsxDEV62("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.create") }, void 0, !1, {
         fileName: "app/routes/sign-up.index.tsx",
         lineNumber: 50,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV61("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
+      /* @__PURE__ */ jsxDEV62("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
         t("common.or"),
         " ",
-        /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62(
           Link11,
           {
             to: "/sign-in",
@@ -15914,8 +16109,8 @@ function SignUpPage() {
       lineNumber: 49,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV61("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV61("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
-      /* @__PURE__ */ jsxDEV61("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: /* @__PURE__ */ jsxDEV61("p", { children: t("vendure.registrationMessage") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV62("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV62("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
+      /* @__PURE__ */ jsxDEV62("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: /* @__PURE__ */ jsxDEV62("p", { children: t("vendure.registrationMessage") }, void 0, !1, {
         fileName: "app/routes/sign-up.index.tsx",
         lineNumber: 67,
         columnNumber: 15
@@ -15924,8 +16119,8 @@ function SignUpPage() {
         lineNumber: 66,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV61(Form6, { className: "space-y-6", method: "post", children: [
-        /* @__PURE__ */ jsxDEV61(
+      /* @__PURE__ */ jsxDEV62(Form6, { className: "space-y-6", method: "post", children: [
+        /* @__PURE__ */ jsxDEV62(
           "input",
           {
             type: "hidden",
@@ -15941,8 +16136,8 @@ function SignUpPage() {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV61("div", { children: [
-          /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: [
+          /* @__PURE__ */ jsxDEV62(
             "label",
             {
               htmlFor: "email",
@@ -15958,8 +16153,8 @@ function SignUpPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV61("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsxDEV61(
+          /* @__PURE__ */ jsxDEV62("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsxDEV62(
               "input",
               {
                 id: "email",
@@ -15977,7 +16172,7 @@ function SignUpPage() {
               },
               this
             ),
-            formErrors?.email && /* @__PURE__ */ jsxDEV61("div", { className: "text-xs text-red-700", children: formErrors.email }, void 0, !1, {
+            formErrors?.email && /* @__PURE__ */ jsxDEV62("div", { className: "text-xs text-red-700", children: formErrors.email }, void 0, !1, {
               fileName: "app/routes/sign-up.index.tsx",
               lineNumber: 91,
               columnNumber: 21
@@ -15992,8 +16187,8 @@ function SignUpPage() {
           lineNumber: 75,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV61("div", { children: [
-          /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: [
+          /* @__PURE__ */ jsxDEV62(
             "label",
             {
               htmlFor: "firstName",
@@ -16009,7 +16204,7 @@ function SignUpPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV61("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV61(
+          /* @__PURE__ */ jsxDEV62("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV62(
             "input",
             {
               id: "firstName",
@@ -16036,8 +16231,8 @@ function SignUpPage() {
           lineNumber: 98,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV61("div", { children: [
-          /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: [
+          /* @__PURE__ */ jsxDEV62(
             "label",
             {
               htmlFor: "lastName",
@@ -16053,7 +16248,7 @@ function SignUpPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV61("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV61(
+          /* @__PURE__ */ jsxDEV62("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV62(
             "input",
             {
               id: "lastName",
@@ -16080,8 +16275,8 @@ function SignUpPage() {
           lineNumber: 116,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV61("div", { children: [
-          /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: [
+          /* @__PURE__ */ jsxDEV62(
             "label",
             {
               htmlFor: "password",
@@ -16097,8 +16292,8 @@ function SignUpPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV61("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsxDEV61(
+          /* @__PURE__ */ jsxDEV62("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsxDEV62(
               "input",
               {
                 id: "password",
@@ -16116,7 +16311,7 @@ function SignUpPage() {
               },
               this
             ),
-            formErrors?.password && /* @__PURE__ */ jsxDEV61("div", { className: "text-xs text-red-700", children: formErrors.password }, void 0, !1, {
+            formErrors?.password && /* @__PURE__ */ jsxDEV62("div", { className: "text-xs text-red-700", children: formErrors.password }, void 0, !1, {
               fileName: "app/routes/sign-up.index.tsx",
               lineNumber: 150,
               columnNumber: 21
@@ -16131,8 +16326,8 @@ function SignUpPage() {
           lineNumber: 134,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV61("div", { children: [
-          /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: [
+          /* @__PURE__ */ jsxDEV62(
             "label",
             {
               htmlFor: "repeatPassword",
@@ -16148,8 +16343,8 @@ function SignUpPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV61("div", { className: "mt-1", children: [
-            /* @__PURE__ */ jsxDEV61(
+          /* @__PURE__ */ jsxDEV62("div", { className: "mt-1", children: [
+            /* @__PURE__ */ jsxDEV62(
               "input",
               {
                 id: "repeatPassword",
@@ -16167,7 +16362,7 @@ function SignUpPage() {
               },
               this
             ),
-            formErrors?.repeatPassword && /* @__PURE__ */ jsxDEV61("div", { className: "text-xs text-red-700", children: formErrors.repeatPassword }, void 0, !1, {
+            formErrors?.repeatPassword && /* @__PURE__ */ jsxDEV62("div", { className: "text-xs text-red-700", children: formErrors.repeatPassword }, void 0, !1, {
               fileName: "app/routes/sign-up.index.tsx",
               lineNumber: 172,
               columnNumber: 21
@@ -16182,8 +16377,8 @@ function SignUpPage() {
           lineNumber: 156,
           columnNumber: 15
         }, this),
-        formErrors?.form && /* @__PURE__ */ jsxDEV61("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV61("div", { className: "flex", children: [
-          /* @__PURE__ */ jsxDEV61("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV61(
+        formErrors?.form && /* @__PURE__ */ jsxDEV62("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV62("div", { className: "flex", children: [
+          /* @__PURE__ */ jsxDEV62("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV62(
             XCircleIcon6,
             {
               className: "h-5 w-5 text-red-400",
@@ -16202,13 +16397,13 @@ function SignUpPage() {
             lineNumber: 181,
             columnNumber: 21
           }, this),
-          /* @__PURE__ */ jsxDEV61("div", { className: "ml-3", children: [
-            /* @__PURE__ */ jsxDEV61("h3", { className: "text-sm font-medium text-red-800", children: t("account.createError") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV62("div", { className: "ml-3", children: [
+            /* @__PURE__ */ jsxDEV62("h3", { className: "text-sm font-medium text-red-800", children: t("account.createError") }, void 0, !1, {
               fileName: "app/routes/sign-up.index.tsx",
               lineNumber: 188,
               columnNumber: 23
             }, this),
-            /* @__PURE__ */ jsxDEV61("p", { className: "text-sm text-red-700 mt-2", children: formErrors.form }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV62("p", { className: "text-sm text-red-700 mt-2", children: formErrors.form }, void 0, !1, {
               fileName: "app/routes/sign-up.index.tsx",
               lineNumber: 191,
               columnNumber: 23
@@ -16227,7 +16422,7 @@ function SignUpPage() {
           lineNumber: 179,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ jsxDEV61("div", { children: /* @__PURE__ */ jsxDEV61(
+        /* @__PURE__ */ jsxDEV62("div", { children: /* @__PURE__ */ jsxDEV62(
           "button",
           {
             type: "submit",
@@ -16272,13 +16467,33 @@ function SignUpPage() {
   }, this);
 }
 
+// app/routes/api.assets.$.tsx
+var api_assets_exports = {};
+__export(api_assets_exports, {
+  loader: () => loader18
+});
+async function loader18({ params, request }) {
+  let assetPath = params["*"], url = `${BACKEND_URL}/assets/${assetPath}`, response = await fetch(url);
+  if (!response.ok)
+    return new Response(null, { status: response.status });
+  let responseHeaders = new Headers(), contentType = response.headers.get("content-type");
+  contentType && responseHeaders.set("Content-Type", contentType);
+  let contentLength = response.headers.get("content-length");
+  contentLength && responseHeaders.set("Content-Length", contentLength), responseHeaders.set("Access-Control-Allow-Origin", "*");
+  let arrayBuffer = await response.arrayBuffer();
+  return new Response(arrayBuffer, {
+    status: response.status,
+    headers: responseHeaders
+  });
+}
+
 // app/routes/api.shop-api.tsx
 var api_shop_api_exports = {};
 __export(api_shop_api_exports, {
   action: () => action11,
-  loader: () => loader17
+  loader: () => loader19
 });
-async function loader17() {
+async function loader19() {
   return new Response(null, { status: 404 });
 }
 async function action11({ request }) {
@@ -16301,14 +16516,14 @@ async function action11({ request }) {
 var api_logout_exports = {};
 __export(api_logout_exports, {
   action: () => action12,
-  loader: () => loader18
+  loader: () => loader20
 });
 import { redirect as redirect11 } from "@remix-run/server-runtime";
 async function action12({ request }) {
   let result = await logout({ request });
   return redirect11("/", { headers: result._headers });
 }
-async function loader18() {
+async function loader20() {
   return redirect11("/");
 }
 
@@ -16317,17 +16532,17 @@ var resources_exports = {};
 __export(resources_exports, {
   default: () => ResourcesPage
 });
-import { jsxDEV as jsxDEV62 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV63 } from "react/jsx-dev-runtime";
 function ResourcesPage() {
-  return /* @__PURE__ */ jsxDEV62("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV62("section", { className: "py-20 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden", children: [
-      /* @__PURE__ */ jsxDEV62("div", { className: "absolute inset-0 opacity-10", children: [
-        /* @__PURE__ */ jsxDEV62("div", { className: "absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV63("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV63("section", { className: "py-20 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden", children: [
+      /* @__PURE__ */ jsxDEV63("div", { className: "absolute inset-0 opacity-10", children: [
+        /* @__PURE__ */ jsxDEV63("div", { className: "absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 79,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV62("div", { className: "absolute bottom-10 right-10 w-80 h-80 bg-white rounded-full blur-3xl" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV63("div", { className: "absolute bottom-10 right-10 w-80 h-80 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 80,
           columnNumber: 11
@@ -16337,18 +16552,18 @@ function ResourcesPage() {
         lineNumber: 78,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV62("div", { className: "max-w-4xl mx-auto px-6 text-center relative z-10", children: [
-        /* @__PURE__ */ jsxDEV62("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Exclusive Tips About Importing from China" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV63("div", { className: "max-w-4xl mx-auto px-6 text-center relative z-10", children: [
+        /* @__PURE__ */ jsxDEV63("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Exclusive Tips About Importing from China" }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 84,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV62("p", { className: "text-white/90 text-lg mb-8 leading-relaxed", children: "Many people want to import goods from China, but always worrying about things like language barriers, complicated international trade process, scams, or bad quality products. In this most practical guide, it's easy for you to learn all knowledge of the whole importing process from choosing profitable products to checking suppliers. To help you understand better, a corresponding video course of each step will be provided." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV63("p", { className: "text-white/90 text-lg mb-8 leading-relaxed", children: "Many people want to import goods from China, but always worrying about things like language barriers, complicated international trade process, scams, or bad quality products. In this most practical guide, it's easy for you to learn all knowledge of the whole importing process from choosing profitable products to checking suppliers. To help you understand better, a corresponding video course of each step will be provided." }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 87,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ jsxDEV62("div", { className: "animate-bounce", children: /* @__PURE__ */ jsxDEV62("svg", { className: "w-8 h-8 text-white mx-auto", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV62("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV63("div", { className: "animate-bounce", children: /* @__PURE__ */ jsxDEV63("svg", { className: "w-8 h-8 text-white mx-auto", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV63("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 92,
           columnNumber: 15
@@ -16371,8 +16586,8 @@ function ResourcesPage() {
       lineNumber: 77,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV62("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV62("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV62("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV62("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Episode Guide" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV63("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV63("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV63("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV63("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Episode Guide" }, void 0, !1, {
         fileName: "app/routes/resources.tsx",
         lineNumber: 101,
         columnNumber: 13
@@ -16381,7 +16596,7 @@ function ResourcesPage() {
         lineNumber: 100,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV62("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6", children: [
+      /* @__PURE__ */ jsxDEV63("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6", children: [
         {
           number: 1,
           title: "Chapter 1",
@@ -16452,13 +16667,13 @@ function ResourcesPage() {
           duration: "25 mins video, 12 mins read",
           image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20and%20logistics%20planning&image_size=landscape_4_3"
         }
-      ].map((chapter) => /* @__PURE__ */ jsxDEV62(
+      ].map((chapter) => /* @__PURE__ */ jsxDEV63(
         "div",
         {
           className: "bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group",
           children: [
-            /* @__PURE__ */ jsxDEV62("div", { className: "relative", children: [
-              /* @__PURE__ */ jsxDEV62(
+            /* @__PURE__ */ jsxDEV63("div", { className: "relative", children: [
+              /* @__PURE__ */ jsxDEV63(
                 "img",
                 {
                   src: chapter.image,
@@ -16474,7 +16689,7 @@ function ResourcesPage() {
                 },
                 this
               ),
-              /* @__PURE__ */ jsxDEV62("div", { className: "absolute top-4 left-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold", children: chapter.number }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV63("div", { className: "absolute top-4 left-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold", children: chapter.number }, void 0, !1, {
                 fileName: "app/routes/resources.tsx",
                 lineNumber: 116,
                 columnNumber: 19
@@ -16484,24 +16699,24 @@ function ResourcesPage() {
               lineNumber: 110,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV62("div", { className: "p-5", children: [
-              /* @__PURE__ */ jsxDEV62("h3", { className: "text-lg font-bold text-gray-900 mb-2", children: chapter.title }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV63("div", { className: "p-5", children: [
+              /* @__PURE__ */ jsxDEV63("h3", { className: "text-lg font-bold text-gray-900 mb-2", children: chapter.title }, void 0, !1, {
                 fileName: "app/routes/resources.tsx",
                 lineNumber: 121,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV62("p", { className: "text-gray-600 text-sm mb-3 line-clamp-2", children: chapter.subtitle }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV63("p", { className: "text-gray-600 text-sm mb-3 line-clamp-2", children: chapter.subtitle }, void 0, !1, {
                 fileName: "app/routes/resources.tsx",
                 lineNumber: 122,
                 columnNumber: 19
               }, this),
-              /* @__PURE__ */ jsxDEV62("div", { className: "flex items-center justify-between", children: [
-                /* @__PURE__ */ jsxDEV62("span", { className: "text-primary text-sm font-medium", children: "Watch Video" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV63("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxDEV63("span", { className: "text-primary text-sm font-medium", children: "Watch Video" }, void 0, !1, {
                   fileName: "app/routes/resources.tsx",
                   lineNumber: 124,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV62("span", { className: "text-gray-500 text-xs", children: chapter.duration }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV63("span", { className: "text-gray-500 text-xs", children: chapter.duration }, void 0, !1, {
                   fileName: "app/routes/resources.tsx",
                   lineNumber: 125,
                   columnNumber: 21
@@ -16540,10 +16755,10 @@ function ResourcesPage() {
       lineNumber: 98,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV62("section", { className: "py-16 bg-gray-100", children: /* @__PURE__ */ jsxDEV62("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV62("div", { className: "grid md:grid-cols-3 gap-8", children: [
-      /* @__PURE__ */ jsxDEV62("div", { className: "bg-white rounded-xl p-8", children: [
-        /* @__PURE__ */ jsxDEV62("div", { className: "flex items-center gap-3 mb-6", children: [
-          /* @__PURE__ */ jsxDEV62("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV62("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV62("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV63("section", { className: "py-16 bg-gray-100", children: /* @__PURE__ */ jsxDEV63("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV63("div", { className: "grid md:grid-cols-3 gap-8", children: [
+      /* @__PURE__ */ jsxDEV63("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxDEV63("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsxDEV63("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV63("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV63("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" }, void 0, !1, {
             fileName: "app/routes/resources.tsx",
             lineNumber: 141,
             columnNumber: 21
@@ -16556,13 +16771,13 @@ function ResourcesPage() {
             lineNumber: 139,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV62("div", { children: [
-            /* @__PURE__ */ jsxDEV62("h3", { className: "font-bold text-gray-900", children: "Ebook Resource" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV63("div", { children: [
+            /* @__PURE__ */ jsxDEV63("h3", { className: "font-bold text-gray-900", children: "Ebook Resource" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 145,
               columnNumber: 19
             }, this),
-            /* @__PURE__ */ jsxDEV62("p", { className: "text-sm text-gray-500", children: "Free Resource" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV63("p", { className: "text-sm text-gray-500", children: "Free Resource" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 146,
               columnNumber: 19
@@ -16577,9 +16792,9 @@ function ResourcesPage() {
           lineNumber: 138,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV62("form", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxDEV62("div", { className: "grid grid-cols-2 gap-4", children: [
-            /* @__PURE__ */ jsxDEV62(
+        /* @__PURE__ */ jsxDEV63("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxDEV63("div", { className: "grid grid-cols-2 gap-4", children: [
+            /* @__PURE__ */ jsxDEV63(
               "input",
               {
                 type: "text",
@@ -16595,7 +16810,7 @@ function ResourcesPage() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV62(
+            /* @__PURE__ */ jsxDEV63(
               "input",
               {
                 type: "text",
@@ -16616,7 +16831,7 @@ function ResourcesPage() {
             lineNumber: 150,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "input",
             {
               type: "email",
@@ -16632,7 +16847,7 @@ function ResourcesPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "button",
             {
               type: "submit",
@@ -16658,9 +16873,9 @@ function ResourcesPage() {
         lineNumber: 137,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV62("div", { className: "bg-white rounded-xl p-8", children: [
-        /* @__PURE__ */ jsxDEV62("div", { className: "flex items-center gap-3 mb-6", children: [
-          /* @__PURE__ */ jsxDEV62("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV62("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV62("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV63("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxDEV63("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsxDEV63("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV63("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV63("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" }, void 0, !1, {
             fileName: "app/routes/resources.tsx",
             lineNumber: 180,
             columnNumber: 21
@@ -16673,13 +16888,13 @@ function ResourcesPage() {
             lineNumber: 178,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV62("div", { children: [
-            /* @__PURE__ */ jsxDEV62("h3", { className: "font-bold text-gray-900", children: "Get Our Monthly Report" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV63("div", { children: [
+            /* @__PURE__ */ jsxDEV63("h3", { className: "font-bold text-gray-900", children: "Get Our Monthly Report" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 184,
               columnNumber: 19
             }, this),
-            /* @__PURE__ */ jsxDEV62("p", { className: "text-sm text-gray-500", children: "Free Report" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV63("p", { className: "text-sm text-gray-500", children: "Free Report" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 185,
               columnNumber: 19
@@ -16694,9 +16909,9 @@ function ResourcesPage() {
           lineNumber: 177,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV62("form", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxDEV62("div", { className: "grid grid-cols-2 gap-4", children: [
-            /* @__PURE__ */ jsxDEV62(
+        /* @__PURE__ */ jsxDEV63("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxDEV63("div", { className: "grid grid-cols-2 gap-4", children: [
+            /* @__PURE__ */ jsxDEV63(
               "input",
               {
                 type: "text",
@@ -16712,7 +16927,7 @@ function ResourcesPage() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV62(
+            /* @__PURE__ */ jsxDEV63(
               "input",
               {
                 type: "text",
@@ -16733,7 +16948,7 @@ function ResourcesPage() {
             lineNumber: 189,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "input",
             {
               type: "email",
@@ -16749,7 +16964,7 @@ function ResourcesPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "button",
             {
               type: "submit",
@@ -16775,9 +16990,9 @@ function ResourcesPage() {
         lineNumber: 176,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV62("div", { className: "bg-white rounded-xl p-8", children: [
-        /* @__PURE__ */ jsxDEV62("div", { className: "flex items-center gap-3 mb-6", children: [
-          /* @__PURE__ */ jsxDEV62("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV62("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV62("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV63("div", { className: "bg-white rounded-xl p-8", children: [
+        /* @__PURE__ */ jsxDEV63("div", { className: "flex items-center gap-3 mb-6", children: [
+          /* @__PURE__ */ jsxDEV63("div", { className: "w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxDEV63("svg", { className: "w-6 h-6 text-primary", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV63("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" }, void 0, !1, {
             fileName: "app/routes/resources.tsx",
             lineNumber: 219,
             columnNumber: 21
@@ -16790,13 +17005,13 @@ function ResourcesPage() {
             lineNumber: 217,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV62("div", { children: [
-            /* @__PURE__ */ jsxDEV62("h3", { className: "font-bold text-gray-900", children: "Ready to import from China?" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV63("div", { children: [
+            /* @__PURE__ */ jsxDEV63("h3", { className: "font-bold text-gray-900", children: "Ready to import from China?" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 223,
               columnNumber: 19
             }, this),
-            /* @__PURE__ */ jsxDEV62("p", { className: "text-sm text-gray-500", children: "Get 1-1 agent" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV63("p", { className: "text-sm text-gray-500", children: "Get 1-1 agent" }, void 0, !1, {
               fileName: "app/routes/resources.tsx",
               lineNumber: 224,
               columnNumber: 19
@@ -16811,13 +17026,13 @@ function ResourcesPage() {
           lineNumber: 216,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV62("p", { className: "text-gray-600 mb-6", children: "Ask for 1-1 agent to help you start your importing business now!" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV63("p", { className: "text-gray-600 mb-6", children: "Ask for 1-1 agent to help you start your importing business now!" }, void 0, !1, {
           fileName: "app/routes/resources.tsx",
           lineNumber: 227,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV62("form", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxDEV62(
+        /* @__PURE__ */ jsxDEV63("form", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxDEV63(
             "input",
             {
               type: "text",
@@ -16833,7 +17048,7 @@ function ResourcesPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "input",
             {
               type: "email",
@@ -16849,7 +17064,7 @@ function ResourcesPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV62(
+          /* @__PURE__ */ jsxDEV63(
             "button",
             {
               type: "submit",
@@ -16903,13 +17118,13 @@ __export(checkout_exports, {
 import { ChevronRightIcon as ChevronRightIcon2 } from "@heroicons/react/24/solid";
 import { Outlet as Outlet3, useLocation as useLocation3, useOutletContext as useOutletContext4 } from "@remix-run/react";
 import { useTranslation as useTranslation41 } from "react-i18next";
-import { jsxDEV as jsxDEV63 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV64 } from "react/jsx-dev-runtime";
 var steps = ["shipping", "payment", "confirmation"];
 function Checkout() {
   let outletContext = useOutletContext4(), { activeOrder, adjustOrderLine: adjustOrderLine2, removeItem } = outletContext, location2 = useLocation3(), { t } = useTranslation41(), state = "shipping";
   location2.pathname === "/checkout/payment" ? state = "payment" : location2.pathname.startsWith("/checkout/confirmation") && (state = "confirmation");
   let isConfirmationPage = state === "confirmation";
-  return /* @__PURE__ */ jsxDEV63("div", { className: "bg-gray-50", children: /* @__PURE__ */ jsxDEV63(
+  return /* @__PURE__ */ jsxDEV64("div", { className: "bg-gray-50", children: /* @__PURE__ */ jsxDEV64(
     "div",
     {
       className: classNames(
@@ -16917,27 +17132,27 @@ function Checkout() {
         "max-w-2xl mx-auto pt-8 pb-24 px-4 sm:px-6 lg:px-8"
       ),
       children: [
-        /* @__PURE__ */ jsxDEV63("h2", { className: "sr-only", children: t("cart.checkout") }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV64("h2", { className: "sr-only", children: t("cart.checkout") }, void 0, !1, {
           fileName: "app/routes/checkout.tsx",
           lineNumber: 33,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV63(
+        /* @__PURE__ */ jsxDEV64(
           "nav",
           {
             "aria-label": t("cart.progress"),
             className: "hidden sm:block pb-8 mb-8 border-b",
-            children: /* @__PURE__ */ jsxDEV63("ol", { role: "list", className: "flex space-x-4 justify-center", children: steps.map((step, stepIdx) => /* @__PURE__ */ jsxDEV63("li", { className: "flex items-center", children: [
-              step === state ? /* @__PURE__ */ jsxDEV63("span", { "aria-current": "page", className: "text-primary-600", children: t(`checkout.steps.${step}`) }, void 0, !1, {
+            children: /* @__PURE__ */ jsxDEV64("ol", { role: "list", className: "flex space-x-4 justify-center", children: steps.map((step, stepIdx) => /* @__PURE__ */ jsxDEV64("li", { className: "flex items-center", children: [
+              step === state ? /* @__PURE__ */ jsxDEV64("span", { "aria-current": "page", className: "text-primary-600", children: t(`checkout.steps.${step}`) }, void 0, !1, {
                 fileName: "app/routes/checkout.tsx",
                 lineNumber: 42,
                 columnNumber: 19
-              }, this) : /* @__PURE__ */ jsxDEV63("span", { children: t(`checkout.steps.${step}`) }, void 0, !1, {
+              }, this) : /* @__PURE__ */ jsxDEV64("span", { children: t(`checkout.steps.${step}`) }, void 0, !1, {
                 fileName: "app/routes/checkout.tsx",
                 lineNumber: 46,
                 columnNumber: 19
               }, this),
-              stepIdx !== steps.length - 1 ? /* @__PURE__ */ jsxDEV63(
+              stepIdx !== steps.length - 1 ? /* @__PURE__ */ jsxDEV64(
                 ChevronRightIcon2,
                 {
                   className: "w-5 h-5 text-gray-300 ml-4",
@@ -16971,8 +17186,8 @@ function Checkout() {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV63("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16", children: [
-          /* @__PURE__ */ jsxDEV63("div", { className: isConfirmationPage ? "lg:col-span-2" : "", children: /* @__PURE__ */ jsxDEV63(Outlet3, { context: outletContext }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV64("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16", children: [
+          /* @__PURE__ */ jsxDEV64("div", { className: isConfirmationPage ? "lg:col-span-2" : "", children: /* @__PURE__ */ jsxDEV64(Outlet3, { context: outletContext }, void 0, !1, {
             fileName: "app/routes/checkout.tsx",
             lineNumber: 61,
             columnNumber: 13
@@ -16981,13 +17196,13 @@ function Checkout() {
             lineNumber: 60,
             columnNumber: 11
           }, this),
-          !isConfirmationPage && /* @__PURE__ */ jsxDEV63("div", { className: "mt-10 lg:mt-0", children: [
-            /* @__PURE__ */ jsxDEV63("h2", { className: "text-lg font-medium text-gray-900 mb-4", children: t("order.summary") }, void 0, !1, {
+          !isConfirmationPage && /* @__PURE__ */ jsxDEV64("div", { className: "mt-10 lg:mt-0", children: [
+            /* @__PURE__ */ jsxDEV64("h2", { className: "text-lg font-medium text-gray-900 mb-4", children: t("order.summary") }, void 0, !1, {
               fileName: "app/routes/checkout.tsx",
               lineNumber: 67,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ jsxDEV63(
+            /* @__PURE__ */ jsxDEV64(
               CartContents,
               {
                 orderLines: activeOrder?.lines ?? [],
@@ -17005,7 +17220,7 @@ function Checkout() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV63(CartTotals, { order: activeOrder }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV64(CartTotals, { order: activeOrder }, void 0, !1, {
               fileName: "app/routes/checkout.tsx",
               lineNumber: 78,
               columnNumber: 15
@@ -17041,17 +17256,82 @@ function Checkout() {
 var products_exports = {};
 __export(products_exports, {
   default: () => ProductsPage,
-  loader: () => loader19
+  loader: () => loader21
 });
-import { json as json15 } from "@remix-run/node";
-import { useLoaderData as useLoaderData15 } from "@remix-run/react";
-import { jsxDEV as jsxDEV64 } from "react/jsx-dev-runtime";
-var loader19 = async ({ request }) => {
+import { json as json16 } from "@remix-run/node";
+import { useLoaderData as useLoaderData16 } from "@remix-run/react";
+import { useState as useState14 } from "react";
+
+// app/lib/graphql-client.ts
+var GraphqlClient = class {
+  async request(query, variables) {
+    let result = await (await fetch("/api/shop-api", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        query,
+        variables
+      })
+    })).json();
+    if (result.errors)
+      throw new Error(result.errors.map((e) => e.message).join(`
+`));
+    return result.data;
+  }
+}, graphqlClient = new GraphqlClient();
+
+// app/routes/products.tsx
+import { jsxDEV as jsxDEV65 } from "react/jsx-dev-runtime";
+var loader21 = async ({ request }) => {
   let collections = await getCollections(request);
-  return json15({ collections });
+  return json16({ collections });
 };
 function ProductsPage() {
-  let { collections } = useLoaderData15(), iconMap = {
+  let { collections } = useLoaderData16(), [reportFormData, setReportFormData] = useState14({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    country: "",
+    company: ""
+  }), [reportSubmitting, setReportSubmitting] = useState14(!1), [reportSubmitted, setReportSubmitted] = useState14(!1), handleReportChange = (e) => {
+    setReportFormData({
+      ...reportFormData,
+      [e.target.name]: e.target.value
+    });
+  }, handleReportSubmit = async (e) => {
+    e.preventDefault(), setReportSubmitting(!0);
+    try {
+      await graphqlClient.request(`
+        mutation CreateContactForm($input: CreateContactFormInput!) {
+          createContactForm(input: $input) {
+            id
+            firstName
+            email
+            createdAt
+          }
+        }
+      `, {
+        input: {
+          ...reportFormData,
+          source: "monthly-report"
+        }
+      }), setReportSubmitted(!0), setReportFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        country: "",
+        company: ""
+      });
+    } catch (error) {
+      console.error("Failed to submit monthly report form:", error), alert("Failed to submit. Please try again or email us at info@taisourcing.asia");
+    } finally {
+      setReportSubmitting(!1);
+    }
+  }, iconMap = {
     shirt: "M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z",
     sofa: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z",
     briefcase: "M6 2a2 2 0 00-2 2v16l4-4h10a2 2 0 002-2V4a2 2 0 00-2-2H6z",
@@ -17077,31 +17357,31 @@ function ProductsPage() {
     let lowerName = name.toLowerCase();
     return lowerName.includes("apparel") || lowerName.includes("clothing") || lowerName.includes("shirt") || lowerName.includes("dress") ? iconMap.shirt : lowerName.includes("furniture") || lowerName.includes("sofa") || lowerName.includes("chair") ? iconMap.sofa : lowerName.includes("bag") || lowerName.includes("case") || lowerName.includes("briefcase") ? iconMap.briefcase : lowerName.includes("beauty") || lowerName.includes("cosmetic") || lowerName.includes("makeup") ? iconMap.sparkles : lowerName.includes("toy") || lowerName.includes("game") ? iconMap.toy : lowerName.includes("sport") || lowerName.includes("fitness") || lowerName.includes("dumbbell") ? iconMap.dumbbell : lowerName.includes("home") || lowerName.includes("house") ? iconMap.home : lowerName.includes("garden") || lowerName.includes("flower") || lowerName.includes("outdoor") ? iconMap.flower : lowerName.includes("electronic") || lowerName.includes("phone") || lowerName.includes("smart") ? iconMap.smartphone : lowerName.includes("pet") || lowerName.includes("cat") || lowerName.includes("dog") ? iconMap.cat : lowerName.includes("gift") || lowerName.includes("natural") ? iconMap.gift : lowerName.includes("hardware") || lowerName.includes("tool") ? iconMap.wrench : lowerName.includes("office") || lowerName.includes("stationery") ? iconMap["pen-tool"] : lowerName.includes("automotive") || lowerName.includes("car") || lowerName.includes("vehicle") ? iconMap.car : lowerName.includes("health") || lowerName.includes("medical") || lowerName.includes("heart") ? iconMap.heart : lowerName.includes("industrial") || lowerName.includes("factory") ? iconMap.factory : lowerName.includes("packaging") || lowerName.includes("box") ? iconMap.package : lowerName.includes("dropship") || lowerName.includes("shipping") || lowerName.includes("truck") ? iconMap.truck : lowerName.includes("jewelry") || lowerName.includes("gem") || lowerName.includes("ring") ? iconMap.gem : lowerName.includes("lighting") || lowerName.includes("lamp") || lowerName.includes("bulb") ? iconMap.lightbulb : iconMap.default;
   };
-  return /* @__PURE__ */ jsxDEV64("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-gradient-to-r from-orange-500/10 via-orange-500/5 to-amber-500/10", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "flex flex-col md:flex-row items-center justify-between gap-8", children: [
-      /* @__PURE__ */ jsxDEV64("div", { children: [
-        /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-2", children: "4,000+ Clients Trust Us" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV65("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-gradient-to-r from-orange-500/10 via-orange-500/5 to-amber-500/10", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV65("div", { className: "flex flex-col md:flex-row items-center justify-between gap-8", children: [
+      /* @__PURE__ */ jsxDEV65("div", { children: [
+        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-2", children: "4,000+ Clients Trust Us" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 69,
+          lineNumber: 125,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "Find your reliable products and save, let's factory price." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600", children: "Find your reliable products and save, let's factory price." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 70,
+          lineNumber: 126,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("button", { className: "mt-4 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get Started" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("button", { className: "mt-4 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get Started" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 71,
+          lineNumber: 127,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 68,
+        lineNumber: 124,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV64("div", { className: "relative", children: [
-        /* @__PURE__ */ jsxDEV64(
+      /* @__PURE__ */ jsxDEV65("div", { className: "relative", children: [
+        /* @__PURE__ */ jsxDEV65(
           "img",
           {
             src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Warehouse%20interior%20with%20shelves%20full%20of%20products%20and%20shipping%20boxes&image_size=landscape_4_3",
@@ -17112,87 +17392,87 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 76,
+            lineNumber: 132,
             columnNumber: 15
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV64("div", { className: "absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-lg shadow-lg", children: [
-          /* @__PURE__ */ jsxDEV64("div", { className: "text-2xl font-bold", children: "98%" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("div", { className: "absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-lg shadow-lg", children: [
+          /* @__PURE__ */ jsxDEV65("div", { className: "text-2xl font-bold", children: "98%" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 82,
+            lineNumber: 138,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV64("div", { className: "text-sm", children: "Customer Satisfaction" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV65("div", { className: "text-sm", children: "Customer Satisfaction" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 83,
+            lineNumber: 139,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 81,
+          lineNumber: 137,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 75,
+        lineNumber: 131,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 67,
+      lineNumber: 123,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 66,
+      lineNumber: 122,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 65,
+      lineNumber: 121,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV64("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Product categories" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV65("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Product categories" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 93,
+          lineNumber: 149,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "Browse through our product categories to find items for your business." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600", children: "Browse through our product categories to find items for your business." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 94,
+          lineNumber: 150,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 92,
+        lineNumber: 148,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV64("div", { className: "grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4", children: collections && collections.length > 0 ? collections.map((category, index) => /* @__PURE__ */ jsxDEV64(
+      /* @__PURE__ */ jsxDEV65("div", { className: "grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4", children: collections && collections.length > 0 ? collections.map((category, index) => /* @__PURE__ */ jsxDEV65(
         "div",
         {
           className: "flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-md transition-all duration-300 cursor-pointer",
           children: [
-            /* @__PURE__ */ jsxDEV64("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2", children: category.featuredAsset ? /* @__PURE__ */ jsxDEV64("img", { src: BACKEND_URL + category.featuredAsset.preview, alt: category.name, className: "w-6 h-6 object-contain" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV65("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2", children: category.featuredAsset ? /* @__PURE__ */ jsxDEV65("img", { src: BACKEND_URL + category.featuredAsset.preview, alt: category.name, className: "w-6 h-6 object-contain" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 106,
+              lineNumber: 162,
               columnNumber: 23
-            }, this) : /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: getIconForName(category.name) }, void 0, !1, {
+            }, this) : /* @__PURE__ */ jsxDEV65("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: getIconForName(category.name) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 109,
+              lineNumber: 165,
               columnNumber: 25
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 108,
+              lineNumber: 164,
               columnNumber: 23
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 104,
+              lineNumber: 160,
               columnNumber: 19
             }, this),
-            /* @__PURE__ */ jsxDEV64("span", { className: "text-sm text-gray-700 text-center", children: category.name }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV65("span", { className: "text-sm text-gray-700 text-center", children: category.name }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 113,
+              lineNumber: 169,
               columnNumber: 19
             }, this)
           ]
@@ -17201,88 +17481,88 @@ function ProductsPage() {
         !0,
         {
           fileName: "app/routes/products.tsx",
-          lineNumber: 100,
+          lineNumber: 156,
           columnNumber: 17
         },
         this
-      )) : /* @__PURE__ */ jsxDEV64("div", { className: "col-span-full text-center py-12", children: /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-500", children: "No categories found." }, void 0, !1, {
+      )) : /* @__PURE__ */ jsxDEV65("div", { className: "col-span-full text-center py-12", children: /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-500", children: "No categories found." }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 118,
+        lineNumber: 174,
         columnNumber: 17
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 117,
+        lineNumber: 173,
         columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 97,
+        lineNumber: 153,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV64("div", { className: "mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between", children: [
-        /* @__PURE__ */ jsxDEV64("div", { children: [
-          /* @__PURE__ */ jsxDEV64("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Are you looking for more categories?" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV65("div", { className: "mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between", children: [
+        /* @__PURE__ */ jsxDEV65("div", { children: [
+          /* @__PURE__ */ jsxDEV65("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Are you looking for more categories?" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 125,
+            lineNumber: 181,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "If you cannot find your target product, we can also source any product for you." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600", children: "If you cannot find your target product, we can also source any product for you." }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 126,
+            lineNumber: 182,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 124,
+          lineNumber: 180,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV64("button", { className: "mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Tell us more" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("button", { className: "mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Tell us more" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 128,
+          lineNumber: 184,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 123,
+        lineNumber: 179,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 91,
+      lineNumber: 147,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 90,
+      lineNumber: 146,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
-      /* @__PURE__ */ jsxDEV64("div", { children: [
-        /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Customized products sourcing" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV65("div", { children: [
+        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Customized products sourcing" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 139,
+          lineNumber: 195,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 140,
+          lineNumber: 196,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 143,
+          lineNumber: 199,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a free quote" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a free quote" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 146,
+          lineNumber: 202,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 138,
+        lineNumber: 194,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV64("div", { className: "grid grid-cols-2 gap-4", children: [
-        /* @__PURE__ */ jsxDEV64(
+      /* @__PURE__ */ jsxDEV65("div", { className: "grid grid-cols-2 gap-4", children: [
+        /* @__PURE__ */ jsxDEV65(
           "img",
           {
             src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Custom%20product%20manufacturing%20process%20with%20design%20sketches&image_size=square",
@@ -17293,12 +17573,12 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 151,
+            lineNumber: 207,
             columnNumber: 15
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV64(
+        /* @__PURE__ */ jsxDEV65(
           "img",
           {
             src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20production%20line%20for%20custom%20products&image_size=square",
@@ -17309,31 +17589,31 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 156,
+            lineNumber: 212,
             columnNumber: 15
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 150,
+        lineNumber: 206,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 137,
+      lineNumber: 193,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 136,
+      lineNumber: 192,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 135,
+      lineNumber: 191,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
-      /* @__PURE__ */ jsxDEV64("div", { className: "relative", children: /* @__PURE__ */ jsxDEV64(
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV65("div", { className: "relative", children: /* @__PURE__ */ jsxDEV65(
         "img",
         {
           src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20and%20product%20development%20process&image_size=landscape_4_3",
@@ -17344,271 +17624,426 @@ function ProductsPage() {
         !1,
         {
           fileName: "app/routes/products.tsx",
-          lineNumber: 170,
+          lineNumber: 226,
           columnNumber: 15
         },
         this
       ) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 169,
+        lineNumber: 225,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV64("div", { children: [
-        /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "New Product Development" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV65("div", { children: [
+        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "New Product Development" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 177,
+          lineNumber: 233,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production." }, void 0, !1, {
-          fileName: "app/routes/products.tsx",
-          lineNumber: 178,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ jsxDEV64("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Share my idea" }, void 0, !1, {
-          fileName: "app/routes/products.tsx",
-          lineNumber: 181,
-          columnNumber: 15
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/products.tsx",
-        lineNumber: 176,
-        columnNumber: 13
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 168,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 167,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 166,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV64("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "We can do more than Alibaba" }, void 0, !1, {
-        fileName: "app/routes/products.tsx",
-        lineNumber: 192,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/products.tsx",
-        lineNumber: 191,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-8", children: [
-        /* @__PURE__ */ jsxDEV64("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500", children: [
-          /* @__PURE__ */ jsxDEV64("div", { className: "flex items-center justify-between mb-4", children: [
-            /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900", children: "Why friendly to small businesses" }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 198,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 200,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 199,
-              columnNumber: 17
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 197,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-4", children: "Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business." }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 203,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV64("button", { className: "text-orange-500 font-semibold hover:underline", children: "15% cheaper than Alibaba ->" }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 206,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/products.tsx",
-          lineNumber: 196,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV64("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500", children: [
-          /* @__PURE__ */ jsxDEV64("div", { className: "flex items-center justify-between mb-4", children: [
-            /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900", children: "Our 1-1 agent assists you in every aspect" }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 211,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 213,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/products.tsx",
-              lineNumber: 212,
-              columnNumber: 17
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 210,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-4", children: "We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between." }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 216,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV64("button", { className: "text-orange-500 font-semibold hover:underline", children: "Product quality is our priority ->" }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 219,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/products.tsx",
-          lineNumber: 209,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/products.tsx",
-        lineNumber: 195,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 190,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 189,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "bg-white rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8", children: [
-      /* @__PURE__ */ jsxDEV64("div", { className: "flex items-center gap-6", children: [
-        /* @__PURE__ */ jsxDEV64(
-          "img",
-          {
-            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Product%20catalog%20book%20or%20magazine%20cover&image_size=portrait_4_3",
-            alt: "Product Catalog",
-            className: "w-32 h-40 object-cover rounded-lg"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 229,
-            columnNumber: 15
-          },
-          this
-        ),
-        /* @__PURE__ */ jsxDEV64("div", { children: [
-          /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900 mb-2", children: "Product monthly report" }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 235,
-            columnNumber: 17
-          }, this),
-          /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: 'We will send the hottest products from "1688.com" to your inbox for free!' }, void 0, !1, {
-            fileName: "app/routes/products.tsx",
-            lineNumber: 236,
-            columnNumber: 17
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-6", children: "If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
           lineNumber: 234,
           columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Share my idea" }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 237,
+          columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 228,
+        lineNumber: 232,
         columnNumber: 13
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/products.tsx",
+      lineNumber: 224,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/products.tsx",
+      lineNumber: 223,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/products.tsx",
+      lineNumber: 222,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV65("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "We can do more than Alibaba" }, void 0, !1, {
+        fileName: "app/routes/products.tsx",
+        lineNumber: 248,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/products.tsx",
+        lineNumber: 247,
+        columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV64("form", { className: "flex flex-col sm:flex-row gap-4", children: [
-        /* @__PURE__ */ jsxDEV64(
-          "input",
-          {
-            type: "text",
-            placeholder: "First Name",
-            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-          },
-          void 0,
-          !1,
-          {
+      /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-8", children: [
+        /* @__PURE__ */ jsxDEV65("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500", children: [
+          /* @__PURE__ */ jsxDEV65("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-gray-900", children: "Why friendly to small businesses" }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 254,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV65("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 256,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 255,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 240,
+            lineNumber: 253,
             columnNumber: 15
-          },
-          this
-        ),
-        /* @__PURE__ */ jsxDEV64(
-          "input",
-          {
-            type: "text",
-            placeholder: "Last Name",
-            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-          },
-          void 0,
-          !1,
-          {
+          }, this),
+          /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-4", children: "Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business." }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 245,
+            lineNumber: 259,
             columnNumber: 15
-          },
-          this
-        ),
-        /* @__PURE__ */ jsxDEV64(
-          "input",
-          {
-            type: "email",
-            placeholder: "Your Email",
-            className: "px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
-          },
-          void 0,
-          !1,
-          {
+          }, this),
+          /* @__PURE__ */ jsxDEV65("button", { className: "text-orange-500 font-semibold hover:underline", children: "15% cheaper than Alibaba ->" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 250,
+            lineNumber: 262,
             columnNumber: 15
-          },
-          this
-        ),
-        /* @__PURE__ */ jsxDEV64(
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 252,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV65("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500", children: [
+          /* @__PURE__ */ jsxDEV65("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-gray-900", children: "Our 1-1 agent assists you in every aspect" }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 267,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV65("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 269,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 268,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 266,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-4", children: "We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between." }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 272,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV65("button", { className: "text-orange-500 font-semibold hover:underline", children: "Product quality is our priority ->" }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 275,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 265,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/products.tsx",
+        lineNumber: 251,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/products.tsx",
+      lineNumber: 246,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/products.tsx",
+      lineNumber: 245,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-4xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV65("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Product Monthly Report" }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 284,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 max-w-2xl mx-auto leading-relaxed", children: 'Subscribe to receive the hottest products from "1688.com" directly to your inbox for free!' }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 287,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-500 mt-4 text-sm", children: "If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia." }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 290,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV65("div", { className: "w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 293,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/products.tsx",
+        lineNumber: 283,
+        columnNumber: 11
+      }, this),
+      reportSubmitted ? /* @__PURE__ */ jsxDEV65("div", { className: "bg-green-50 border border-green-200 rounded-xl p-8 text-center", children: [
+        /* @__PURE__ */ jsxDEV65("div", { className: "w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxDEV65("svg", { className: "w-8 h-8 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 300,
+          columnNumber: 19
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 299,
+          columnNumber: 17
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 298,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-green-700 mb-2", children: "Thank You!" }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 303,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-green-600", children: "Your subscription request has been submitted successfully. We will send the monthly report to your email." }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 304,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/products.tsx",
+        lineNumber: 297,
+        columnNumber: 13
+      }, this) : /* @__PURE__ */ jsxDEV65("form", { onSubmit: handleReportSubmit, className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "input",
+            {
+              type: "text",
+              name: "firstName",
+              value: reportFormData.firstName,
+              onChange: handleReportChange,
+              placeholder: "First Name*",
+              required: !0,
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 310,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 309,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "input",
+            {
+              type: "text",
+              name: "lastName",
+              value: reportFormData.lastName,
+              onChange: handleReportChange,
+              placeholder: "Last Name*",
+              required: !0,
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 321,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 320,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 308,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "input",
+            {
+              type: "email",
+              name: "email",
+              value: reportFormData.email,
+              onChange: handleReportChange,
+              placeholder: "Email*",
+              required: !0,
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 335,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 334,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "input",
+            {
+              type: "tel",
+              name: "phone",
+              value: reportFormData.phone,
+              onChange: handleReportChange,
+              placeholder: "Phone Number",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 346,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 345,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 333,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "select",
+            {
+              name: "country",
+              value: reportFormData.country,
+              onChange: handleReportChange,
+              required: !0,
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent",
+              children: [
+                /* @__PURE__ */ jsxDEV65("option", { value: "", children: "Select your country*" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 366,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV65("option", { value: "US", children: "United States" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 367,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV65("option", { value: "CN", children: "China" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 368,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV65("option", { value: "DE", children: "Germany" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 369,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV65("option", { value: "UK", children: "United Kingdom" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 370,
+                  columnNumber: 21
+                }, this),
+                /* @__PURE__ */ jsxDEV65("option", { value: "JP", children: "Japan" }, void 0, !1, {
+                  fileName: "app/routes/products.tsx",
+                  lineNumber: 371,
+                  columnNumber: 21
+                }, this)
+              ]
+            },
+            void 0,
+            !0,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 359,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 358,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+            "input",
+            {
+              type: "text",
+              name: "company",
+              value: reportFormData.company || "",
+              onChange: handleReportChange,
+              placeholder: "Company Name",
+              className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/products.tsx",
+              lineNumber: 375,
+              columnNumber: 19
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/routes/products.tsx",
+            lineNumber: 374,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 357,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV65(
           "button",
           {
             type: "submit",
-            className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg",
-            children: "Subscribe Now"
+            disabled: reportSubmitting,
+            className: "w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed",
+            children: reportSubmitting ? "Submitting..." : "Subscribe Now"
           },
           void 0,
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 255,
+            lineNumber: 386,
             columnNumber: 15
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 239,
+        lineNumber: 307,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 227,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/products.tsx",
-      lineNumber: 226,
+      lineNumber: 282,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 225,
+      lineNumber: 281,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/products.tsx",
-    lineNumber: 64,
+    lineNumber: 120,
     columnNumber: 5
   }, this);
 }
@@ -17618,39 +18053,17 @@ var services_exports = {};
 __export(services_exports, {
   default: () => ServicesPage
 });
-import { useState as useState14 } from "react";
-
-// app/lib/graphql-client.ts
-var GraphqlClient = class {
-  async request(query, variables) {
-    let result = await (await fetch("/api/shop-api", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        query,
-        variables
-      })
-    })).json();
-    if (result.errors)
-      throw new Error(result.errors.map((e) => e.message).join(`
-`));
-    return result.data;
-  }
-}, graphqlClient = new GraphqlClient();
-
-// app/routes/services.tsx
-import { jsxDEV as jsxDEV65 } from "react/jsx-dev-runtime";
+import { useState as useState15 } from "react";
+import { jsxDEV as jsxDEV66 } from "react/jsx-dev-runtime";
 function ServicesPage() {
-  let [formData, setFormData] = useState14({
+  let [formData, setFormData] = useState15({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     country: "",
     message: ""
-  }), [submitting, setSubmitting] = useState14(!1), [submitted, setSubmitted] = useState14(!1), handleSubmit = async (e) => {
+  }), [submitting, setSubmitting] = useState15(!1), [submitted, setSubmitted] = useState15(!1), handleSubmit = async (e) => {
     e.preventDefault(), setSubmitting(!0);
     try {
       await graphqlClient.request(`
@@ -17676,7 +18089,7 @@ function ServicesPage() {
         message: ""
       });
     } catch (error) {
-      console.error("Failed to submit form:", error), alert("Failed to submit. Please try again or email us at Taisourcing@gmail.com");
+      console.error("Failed to submit form:", error), alert("Failed to submit. Please try again or email us at info@taisourcing.asia");
     } finally {
       setSubmitting(!1);
     }
@@ -17686,14 +18099,14 @@ function ServicesPage() {
       [e.target.name]: e.target.value
     });
   };
-  return /* @__PURE__ */ jsxDEV65("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV65("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV65("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-4", children: "Start Your Project" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV66("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV66("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV66("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsxDEV66("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-4", children: "Start Your Project" }, void 0, !1, {
         fileName: "app/routes/services.tsx",
         lineNumber: 63,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV65("div", { className: "w-24 h-1 bg-white/50 mx-auto rounded-full" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV66("div", { className: "w-24 h-1 bg-white/50 mx-auto rounded-full" }, void 0, !1, {
         fileName: "app/routes/services.tsx",
         lineNumber: 66,
         columnNumber: 11
@@ -17707,21 +18120,21 @@ function ServicesPage() {
       lineNumber: 61,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-8", children: [
-      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-orange-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
-        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-orange-600 mb-4", children: "Find New Suppliers" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV66("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV66("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV66("div", { className: "grid md:grid-cols-2 gap-8", children: [
+      /* @__PURE__ */ jsxDEV66("div", { className: "border-2 border-orange-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
+        /* @__PURE__ */ jsxDEV66("h3", { className: "text-xl font-bold text-orange-600 mb-4", children: "Find New Suppliers" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 74,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 75,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-orange-600 font-medium mb-6", children: [
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-orange-600 font-medium mb-6", children: [
           "Check out our ",
-          /* @__PURE__ */ jsxDEV65("span", { className: "underline", children: "Pro Service Plan" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV66("span", { className: "underline", children: "Pro Service Plan" }, void 0, !1, {
             fileName: "app/routes/services.tsx",
             lineNumber: 79,
             columnNumber: 31
@@ -17732,7 +18145,7 @@ function ServicesPage() {
           lineNumber: 78,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 81,
           columnNumber: 15
@@ -17742,20 +18155,20 @@ function ServicesPage() {
         lineNumber: 73,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
-        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-blue-600 mb-4", children: "Manage My Suppliers" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV66("div", { className: "border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
+        /* @__PURE__ */ jsxDEV66("h3", { className: "text-xl font-bold text-blue-600 mb-4", children: "Manage My Suppliers" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 87,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you prefer to use your own suppliers, we can collaborate with them and manage the entire purchasing process from production to quality inspection and door-to-door logistics. Our support will significantly enhance your sourcing efficiency." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you prefer to use your own suppliers, we can collaborate with them and manage the entire purchasing process from production to quality inspection and door-to-door logistics. Our support will significantly enhance your sourcing efficiency." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 88,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-blue-600 font-medium mb-6", children: [
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-blue-600 font-medium mb-6", children: [
           "Discover more details about our ",
-          /* @__PURE__ */ jsxDEV65("span", { className: "underline", children: "Basic Service Plan" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV66("span", { className: "underline", children: "Basic Service Plan" }, void 0, !1, {
             fileName: "app/routes/services.tsx",
             lineNumber: 92,
             columnNumber: 49
@@ -17766,7 +18179,7 @@ function ServicesPage() {
           lineNumber: 91,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 94,
           columnNumber: 15
@@ -17789,24 +18202,24 @@ function ServicesPage() {
       lineNumber: 70,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-4xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV65("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Submit Your Sourcing Request" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV66("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV66("div", { className: "max-w-4xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV66("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV66("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Submit Your Sourcing Request" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 105,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 max-w-2xl mx-auto leading-relaxed", children: "Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-gray-600 max-w-2xl mx-auto leading-relaxed", children: "Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 108,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-500 mt-4 text-sm", children: "If you encounter any issues with submission, you can also email us directly at Taisourcing@gmail.com." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-gray-500 mt-4 text-sm", children: "If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 111,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { className: "w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("div", { className: "w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 114,
           columnNumber: 13
@@ -17816,8 +18229,8 @@ function ServicesPage() {
         lineNumber: 104,
         columnNumber: 11
       }, this),
-      submitted ? /* @__PURE__ */ jsxDEV65("div", { className: "bg-green-50 border border-green-200 rounded-xl p-8 text-center", children: [
-        /* @__PURE__ */ jsxDEV65("div", { className: "w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxDEV65("svg", { className: "w-8 h-8 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }, void 0, !1, {
+      submitted ? /* @__PURE__ */ jsxDEV66("div", { className: "bg-green-50 border border-green-200 rounded-xl p-8 text-center", children: [
+        /* @__PURE__ */ jsxDEV66("div", { className: "w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxDEV66("svg", { className: "w-8 h-8 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV66("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 121,
           columnNumber: 19
@@ -17830,12 +18243,12 @@ function ServicesPage() {
           lineNumber: 119,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-green-700 mb-2", children: "Thank You!" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("h3", { className: "text-xl font-bold text-green-700 mb-2", children: "Thank You!" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 124,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-green-600", children: "Your request has been submitted successfully. Our team will contact you shortly." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV66("p", { className: "text-green-600", children: "Your request has been submitted successfully. Our team will contact you shortly." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 125,
           columnNumber: 15
@@ -17844,9 +18257,9 @@ function ServicesPage() {
         fileName: "app/routes/services.tsx",
         lineNumber: 118,
         columnNumber: 13
-      }, this) : /* @__PURE__ */ jsxDEV65("form", { onSubmit: handleSubmit, className: "space-y-6", children: [
-        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+      }, this) : /* @__PURE__ */ jsxDEV66("form", { onSubmit: handleSubmit, className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV66("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "input",
             {
               type: "text",
@@ -17870,7 +18283,7 @@ function ServicesPage() {
             lineNumber: 130,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "input",
             {
               type: "text",
@@ -17899,8 +18312,8 @@ function ServicesPage() {
           lineNumber: 129,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+        /* @__PURE__ */ jsxDEV66("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "input",
             {
               type: "email",
@@ -17924,7 +18337,7 @@ function ServicesPage() {
             lineNumber: 155,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "input",
             {
               type: "tel",
@@ -17953,8 +18366,8 @@ function ServicesPage() {
           lineNumber: 154,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+        /* @__PURE__ */ jsxDEV66("div", { className: "grid md:grid-cols-2 gap-6", children: [
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "select",
             {
               name: "country",
@@ -17963,32 +18376,32 @@ function ServicesPage() {
               required: !0,
               className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent",
               children: [
-                /* @__PURE__ */ jsxDEV65("option", { value: "", children: "Select your country*" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "", children: "Select your country*" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 188,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV65("option", { value: "US", children: "United States" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "US", children: "United States" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 189,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV65("option", { value: "CN", children: "China" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "CN", children: "China" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 190,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV65("option", { value: "DE", children: "Germany" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "DE", children: "Germany" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 191,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV65("option", { value: "UK", children: "United Kingdom" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "UK", children: "United Kingdom" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 192,
                   columnNumber: 21
                 }, this),
-                /* @__PURE__ */ jsxDEV65("option", { value: "JP", children: "Japan" }, void 0, !1, {
+                /* @__PURE__ */ jsxDEV66("option", { value: "JP", children: "Japan" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
                   lineNumber: 193,
                   columnNumber: 21
@@ -18008,7 +18421,7 @@ function ServicesPage() {
             lineNumber: 180,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+          /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
             "input",
             {
               type: "text",
@@ -18036,7 +18449,7 @@ function ServicesPage() {
           lineNumber: 179,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
+        /* @__PURE__ */ jsxDEV66("div", { children: /* @__PURE__ */ jsxDEV66(
           "textarea",
           {
             name: "message",
@@ -18060,7 +18473,7 @@ function ServicesPage() {
           lineNumber: 208,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65(
+        /* @__PURE__ */ jsxDEV66(
           "button",
           {
             type: "submit",
@@ -18102,7 +18515,7 @@ function ServicesPage() {
 var account_exports = {};
 __export(account_exports, {
   default: () => AccountDashboard,
-  loader: () => loader20
+  loader: () => loader22
 });
 import {
   HashtagIcon,
@@ -18110,21 +18523,21 @@ import {
   ShoppingBagIcon as ShoppingBagIcon2,
   UserCircleIcon
 } from "@heroicons/react/24/solid";
-import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData16 } from "@remix-run/react";
-import { json as json16, redirect as redirect12 } from "@remix-run/server-runtime";
+import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData17 } from "@remix-run/react";
+import { json as json17, redirect as redirect12 } from "@remix-run/server-runtime";
 
 // app/components/tabs/Tab.tsx
-import { NavLink, useMatches as useMatches3, useResolvedPath } from "@remix-run/react";
-import { jsxDEV as jsxDEV66 } from "react/jsx-dev-runtime";
+import { NavLink, useMatches as useMatches5, useResolvedPath } from "@remix-run/react";
+import { jsxDEV as jsxDEV67 } from "react/jsx-dev-runtime";
 function Tab({ Icon, text, to }) {
-  let resolved = useResolvedPath(to), isActive = useMatches3().find((m) => m.pathname === resolved.pathname);
-  return /* @__PURE__ */ jsxDEV66("li", { className: isActive ? "cursor-default" : "cursor-pointer", children: /* @__PURE__ */ jsxDEV66(
+  let resolved = useResolvedPath(to), isActive = useMatches5().find((m) => m.pathname === resolved.pathname);
+  return /* @__PURE__ */ jsxDEV67("li", { className: isActive ? "cursor-default" : "cursor-pointer", children: /* @__PURE__ */ jsxDEV67(
     NavLink,
     {
       to,
       className: `group w-full gap-x-2 max-w-[12rem] inline-flex items-center justify-around p-4 rounded-t-lg border-b-2 ${isActive ? "text-primary-500 border-primary-500" : "border-transparent hover:text-gray-600 hover:border-gray-300"}`,
       children: [
-        /* @__PURE__ */ jsxDEV66(
+        /* @__PURE__ */ jsxDEV67(
           Icon,
           {
             className: `w-5 h-5 ${isActive ? "text-primary-500" : "text-gray-400 group-hover:text-gray-500"}`
@@ -18138,7 +18551,7 @@ function Tab({ Icon, text, to }) {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV66("p", { className: "flex-1", children: text }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV67("p", { className: "flex-1", children: text }, void 0, !1, {
           fileName: "app/components/tabs/Tab.tsx",
           lineNumber: 37,
           columnNumber: 9
@@ -18161,13 +18574,13 @@ function Tab({ Icon, text, to }) {
 }
 
 // app/components/tabs/TabsContainer.tsx
-import { Fragment as Fragment16, jsxDEV as jsxDEV67 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment16, jsxDEV as jsxDEV68 } from "react/jsx-dev-runtime";
 function TabsContainer({
   tabs,
   children
 }) {
-  return /* @__PURE__ */ jsxDEV67(Fragment16, { children: [
-    /* @__PURE__ */ jsxDEV67("div", { className: "border-b border-gray-200 mt-4", children: /* @__PURE__ */ jsxDEV67("ul", { className: "gap-x-4 grid grid-cols-2 sm:grid-0 sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center text-gray-500", children: tabs.map((props) => /* @__PURE__ */ jsxDEV67(
+  return /* @__PURE__ */ jsxDEV68(Fragment16, { children: [
+    /* @__PURE__ */ jsxDEV68("div", { className: "border-b border-gray-200 mt-4", children: /* @__PURE__ */ jsxDEV68("ul", { className: "gap-x-4 grid grid-cols-2 sm:grid-0 sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center text-gray-500", children: tabs.map((props) => /* @__PURE__ */ jsxDEV68(
       Tab,
       {
         Icon: props.Icon,
@@ -18201,13 +18614,13 @@ function TabsContainer({
 
 // app/routes/account.tsx
 import { useTranslation as useTranslation42 } from "react-i18next";
-import { jsxDEV as jsxDEV68 } from "react/jsx-dev-runtime";
-async function loader20({ request }) {
+import { jsxDEV as jsxDEV69 } from "react/jsx-dev-runtime";
+async function loader22({ request }) {
   let { activeCustomer } = await getActiveCustomerDetails({ request });
-  return activeCustomer ? json16({ activeCustomer }) : redirect12("/sign-in");
+  return activeCustomer ? json17({ activeCustomer }) : redirect12("/sign-in");
 }
 function AccountDashboard() {
-  let { activeCustomer } = useLoaderData16(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
+  let { activeCustomer } = useLoaderData17(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
     {
       Icon: UserCircleIcon,
       text: t("account.details"),
@@ -18229,13 +18642,13 @@ function AccountDashboard() {
       to: "./password"
     }
   ];
-  return /* @__PURE__ */ jsxDEV68("div", { className: "max-w-6xl xl:mx-auto px-4", children: [
-    /* @__PURE__ */ jsxDEV68("h2", { className: "text-3xl sm:text-5xl font-light text-gray-900 my-8", children: t("account.myAccount") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV69("div", { className: "max-w-6xl xl:mx-auto px-4", children: [
+    /* @__PURE__ */ jsxDEV69("h2", { className: "text-3xl sm:text-5xl font-light text-gray-900 my-8", children: t("account.myAccount") }, void 0, !1, {
       fileName: "app/routes/account.tsx",
       lineNumber: 52,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV68("p", { className: "text-gray-700 text-lg -mt-4", children: [
+    /* @__PURE__ */ jsxDEV69("p", { className: "text-gray-700 text-lg -mt-4", children: [
       t("account.welcomeBack"),
       ", ",
       firstName,
@@ -18246,7 +18659,7 @@ function AccountDashboard() {
       lineNumber: 55,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV68(Form7, { method: "post", action: "/api/logout", children: /* @__PURE__ */ jsxDEV68(
+    /* @__PURE__ */ jsxDEV69(Form7, { method: "post", action: "/api/logout", children: /* @__PURE__ */ jsxDEV69(
       "button",
       {
         type: "submit",
@@ -18266,7 +18679,7 @@ function AccountDashboard() {
       lineNumber: 58,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV68(TabsContainer, { tabs, children: /* @__PURE__ */ jsxDEV68(Outlet4, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV69(TabsContainer, { tabs, children: /* @__PURE__ */ jsxDEV69(Outlet4, {}, void 0, !1, {
       fileName: "app/routes/account.tsx",
       lineNumber: 67,
       columnNumber: 9
@@ -18289,33 +18702,33 @@ __export(sign_in_exports, {
   default: () => SignInPage
 });
 import { Link as Link12, useFetcher as useFetcher3, useSearchParams as useSearchParams4 } from "@remix-run/react";
-import { json as json17, redirect as redirect13 } from "@remix-run/server-runtime";
+import { json as json18, redirect as redirect13 } from "@remix-run/server-runtime";
 import { XCircleIcon as XCircleIcon7 } from "@heroicons/react/24/solid";
 import { ArrowPathIcon as ArrowPathIcon4 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation43 } from "react-i18next";
-import { Fragment as Fragment17, jsxDEV as jsxDEV69 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment17, jsxDEV as jsxDEV70 } from "react/jsx-dev-runtime";
 async function action13({ params, request }) {
   let body = await request.formData(), email = body.get("email"), password = body.get("password");
   if (typeof email == "string" && typeof password == "string") {
     let rememberMe = !!body.get("rememberMe"), redirectTo = body.get("redirectTo") || "/account", result = await login(email, password, rememberMe, { request });
-    return result.__typename === "CurrentUser" ? redirect13(redirectTo, { headers: result._headers }) : json17(result, {
+    return result.__typename === "CurrentUser" ? redirect13(redirectTo, { headers: result._headers }) : json18(result, {
       status: 401
     });
   }
 }
 function SignInPage() {
   let [searchParams] = useSearchParams4(), login2 = useFetcher3(), { t } = useTranslation43();
-  return /* @__PURE__ */ jsxDEV69(Fragment17, { children: /* @__PURE__ */ jsxDEV69("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
-    /* @__PURE__ */ jsxDEV69("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
-      /* @__PURE__ */ jsxDEV69("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.signInTitle") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV70(Fragment17, { children: /* @__PURE__ */ jsxDEV70("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: [
+    /* @__PURE__ */ jsxDEV70("div", { className: "sm:mx-auto sm:w-full sm:max-w-md", children: [
+      /* @__PURE__ */ jsxDEV70("h2", { className: "mt-6 text-center text-3xl text-gray-900", children: t("account.signInTitle") }, void 0, !1, {
         fileName: "app/routes/sign-in.tsx",
         lineNumber: 37,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV69("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
+      /* @__PURE__ */ jsxDEV70("p", { className: "mt-2 text-center text-sm text-gray-600", children: [
         t("common.or"),
         " ",
-        /* @__PURE__ */ jsxDEV69(
+        /* @__PURE__ */ jsxDEV70(
           Link12,
           {
             to: "/sign-up",
@@ -18341,17 +18754,17 @@ function SignInPage() {
       lineNumber: 36,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV69("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV69("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
-      /* @__PURE__ */ jsxDEV69("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: [
-        /* @__PURE__ */ jsxDEV69("p", { children: t("vendure.demoCredentials") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV70("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV70("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: [
+      /* @__PURE__ */ jsxDEV70("div", { className: "bg-yellow-50 border border-yellow-400 text-yellow-800 rounded p-4 text-center text-sm", children: [
+        /* @__PURE__ */ jsxDEV70("p", { children: t("vendure.demoCredentials") }, void 0, !1, {
           fileName: "app/routes/sign-in.tsx",
           lineNumber: 54,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV69("p", { children: [
+        /* @__PURE__ */ jsxDEV70("p", { children: [
           t("account.emailAddress"),
           ": ",
-          /* @__PURE__ */ jsxDEV69("span", { className: "font-bold", children: "test@vendure.io" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV70("span", { className: "font-bold", children: "info@taisourcing.asia" }, void 0, !1, {
             fileName: "app/routes/sign-in.tsx",
             lineNumber: 58,
             columnNumber: 17
@@ -18361,10 +18774,10 @@ function SignInPage() {
           lineNumber: 55,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV69("p", { children: [
+        /* @__PURE__ */ jsxDEV70("p", { children: [
           t("account.password"),
           ": ",
-          /* @__PURE__ */ jsxDEV69("span", { className: "font-bold", children: "test" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV70("span", { className: "font-bold", children: "test" }, void 0, !1, {
             fileName: "app/routes/sign-in.tsx",
             lineNumber: 61,
             columnNumber: 42
@@ -18379,8 +18792,8 @@ function SignInPage() {
         lineNumber: 53,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV69(login2.Form, { method: "post", children: /* @__PURE__ */ jsxDEV69("fieldset", { disabled: login2.state !== "idle", className: "space-y-6", children: [
-        /* @__PURE__ */ jsxDEV69(
+      /* @__PURE__ */ jsxDEV70(login2.Form, { method: "post", children: /* @__PURE__ */ jsxDEV70("fieldset", { disabled: login2.state !== "idle", className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV70(
           "input",
           {
             type: "hidden",
@@ -18396,8 +18809,8 @@ function SignInPage() {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV69("div", { children: [
-          /* @__PURE__ */ jsxDEV69(
+        /* @__PURE__ */ jsxDEV70("div", { children: [
+          /* @__PURE__ */ jsxDEV70(
             "label",
             {
               htmlFor: "email",
@@ -18413,7 +18826,7 @@ function SignInPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV69("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV69(
+          /* @__PURE__ */ jsxDEV70("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV70(
             "input",
             {
               id: "email",
@@ -18421,7 +18834,7 @@ function SignInPage() {
               type: "email",
               autoComplete: "email",
               required: !0,
-              defaultValue: "test@vendure.io",
+              defaultValue: "info@taisourcing.asia",
               placeholder: t("account.emailAddress"),
               className: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm disabled:text-gray-400 disabled:bg-gray-200 disabled:cursor-not-allowed"
             },
@@ -18443,8 +18856,8 @@ function SignInPage() {
           lineNumber: 71,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ jsxDEV69("div", { children: [
-          /* @__PURE__ */ jsxDEV69(
+        /* @__PURE__ */ jsxDEV70("div", { children: [
+          /* @__PURE__ */ jsxDEV70(
             "label",
             {
               htmlFor: "password",
@@ -18460,7 +18873,7 @@ function SignInPage() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV69("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV69(
+          /* @__PURE__ */ jsxDEV70("div", { className: "mt-1", children: /* @__PURE__ */ jsxDEV70(
             "input",
             {
               id: "password",
@@ -18490,9 +18903,9 @@ function SignInPage() {
           lineNumber: 92,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ jsxDEV69("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxDEV69("div", { className: "flex items-center", children: [
-            /* @__PURE__ */ jsxDEV69(
+        /* @__PURE__ */ jsxDEV70("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxDEV70("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ jsxDEV70(
               "input",
               {
                 id: "rememberMe",
@@ -18510,7 +18923,7 @@ function SignInPage() {
               },
               this
             ),
-            /* @__PURE__ */ jsxDEV69(
+            /* @__PURE__ */ jsxDEV70(
               "label",
               {
                 htmlFor: "rememberMe",
@@ -18531,7 +18944,7 @@ function SignInPage() {
             lineNumber: 114,
             columnNumber: 19
           }, this),
-          /* @__PURE__ */ jsxDEV69("div", { className: "text-sm", children: /* @__PURE__ */ jsxDEV69(
+          /* @__PURE__ */ jsxDEV70("div", { className: "text-sm", children: /* @__PURE__ */ jsxDEV70(
             "a",
             {
               href: "#",
@@ -18556,8 +18969,8 @@ function SignInPage() {
           lineNumber: 113,
           columnNumber: 17
         }, this),
-        login2.data && login2.state === "idle" && /* @__PURE__ */ jsxDEV69("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV69("div", { className: "flex", children: [
-          /* @__PURE__ */ jsxDEV69("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV69(
+        login2.data && login2.state === "idle" && /* @__PURE__ */ jsxDEV70("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV70("div", { className: "flex", children: [
+          /* @__PURE__ */ jsxDEV70("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV70(
             XCircleIcon7,
             {
               className: "h-5 w-5 text-red-400",
@@ -18576,13 +18989,13 @@ function SignInPage() {
             lineNumber: 143,
             columnNumber: 23
           }, this),
-          /* @__PURE__ */ jsxDEV69("div", { className: "ml-3", children: [
-            /* @__PURE__ */ jsxDEV69("h3", { className: "text-sm font-medium text-red-800", children: t("account.errorSignIn") }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV70("div", { className: "ml-3", children: [
+            /* @__PURE__ */ jsxDEV70("h3", { className: "text-sm font-medium text-red-800", children: t("account.errorSignIn") }, void 0, !1, {
               fileName: "app/routes/sign-in.tsx",
               lineNumber: 150,
               columnNumber: 25
             }, this),
-            /* @__PURE__ */ jsxDEV69("p", { className: "text-sm text-red-700 mt-2", children: login2.data.message }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV70("p", { className: "text-sm text-red-700 mt-2", children: login2.data.message }, void 0, !1, {
               fileName: "app/routes/sign-in.tsx",
               lineNumber: 153,
               columnNumber: 25
@@ -18601,13 +19014,13 @@ function SignInPage() {
           lineNumber: 141,
           columnNumber: 19
         }, this),
-        /* @__PURE__ */ jsxDEV69("div", { children: /* @__PURE__ */ jsxDEV69(
+        /* @__PURE__ */ jsxDEV70("div", { children: /* @__PURE__ */ jsxDEV70(
           Button,
           {
             type: "submit",
             className: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
-            children: /* @__PURE__ */ jsxDEV69("span", { className: "flex gap-4 items-center", children: [
-              login2.state !== "idle" && /* @__PURE__ */ jsxDEV69(ArrowPathIcon4, { className: "animate-spin h-5 w-5 text-gray-500" }, void 0, !1, {
+            children: /* @__PURE__ */ jsxDEV70("span", { className: "flex gap-4 items-center", children: [
+              login2.state !== "idle" && /* @__PURE__ */ jsxDEV70(ArrowPathIcon4, { className: "animate-spin h-5 w-5 text-gray-500" }, void 0, !1, {
                 fileName: "app/routes/sign-in.tsx",
                 lineNumber: 168,
                 columnNumber: 25
@@ -18665,37 +19078,37 @@ function SignInPage() {
 var search_exports = {};
 __export(search_exports, {
   default: () => Search,
-  loader: () => loader21
+  loader: () => loader23
 });
-import { useLoaderData as useLoaderData17, useSubmit as useSubmit6 } from "@remix-run/react";
-import { useRef as useRef11, useState as useState15 } from "react";
+import { useLoaderData as useLoaderData18, useSubmit as useSubmit6 } from "@remix-run/react";
+import { useRef as useRef11, useState as useState16 } from "react";
 import { ValidatedForm as ValidatedForm6 } from "remix-validated-form";
 import { useTranslation as useTranslation44 } from "react-i18next";
-import { jsxDEV as jsxDEV70 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV71 } from "react/jsx-dev-runtime";
 var paginationLimitMinimumDefault3 = 25, allowedPaginationLimits3 = /* @__PURE__ */ new Set([
   paginationLimitMinimumDefault3,
   50,
   100
-]), validator5 = withZod(paginationValidationSchema(allowedPaginationLimits3)), { filteredSearchLoader: loader21 } = filteredSearchLoaderFromPagination(
+]), validator5 = withZod(paginationValidationSchema(allowedPaginationLimits3)), { filteredSearchLoader: loader23 } = filteredSearchLoaderFromPagination(
   allowedPaginationLimits3,
   paginationLimitMinimumDefault3
 );
 function Search() {
-  let loaderData = useLoaderData17(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState15(!1);
+  let loaderData = useLoaderData18(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState16(!1);
   useRef11(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
     facetValueIds
   );
   let submit = useSubmit6(), { t } = useTranslation44();
-  return /* @__PURE__ */ jsxDEV70("div", { className: "max-w-6xl mx-auto px-4", children: [
-    /* @__PURE__ */ jsxDEV70("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ jsxDEV70("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: term ? `${t("common.resultsFor")} "${term}"` : t("common.allResults") }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV71("div", { className: "max-w-6xl mx-auto px-4", children: [
+    /* @__PURE__ */ jsxDEV71("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ jsxDEV71("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: term ? `${t("common.resultsFor")} "${term}"` : t("common.allResults") }, void 0, !1, {
         fileName: "app/routes/search.tsx",
         lineNumber: 43,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV70(
+      /* @__PURE__ */ jsxDEV71(
         FiltersButton,
         {
           filterCount: facetValueIds.length,
@@ -18715,13 +19128,13 @@ function Search() {
       lineNumber: 42,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV70(
+    /* @__PURE__ */ jsxDEV71(
       ValidatedForm6,
       {
         validator: validator5,
         method: "get",
         onChange: (e) => submit(e.currentTarget, { preventScrollReset: !0 }),
-        children: /* @__PURE__ */ jsxDEV70(
+        children: /* @__PURE__ */ jsxDEV71(
           FilterableProductGrid,
           {
             allowedPaginationLimits: allowedPaginationLimits3,
@@ -18760,15 +19173,15 @@ var verify_exports = {};
 __export(verify_exports, {
   action: () => action14,
   default: () => VerifyTokenPage,
-  loader: () => loader22
+  loader: () => loader24
 });
 import { useEffect as useEffect14, useRef as useRef12 } from "react";
-import { useLoaderData as useLoaderData18, useSearchParams as useSearchParams5 } from "@remix-run/react";
+import { useLoaderData as useLoaderData19, useSearchParams as useSearchParams5 } from "@remix-run/react";
 import { redirect as redirect14 } from "@remix-run/server-runtime";
 import { CheckCircleIcon as CheckCircleIcon6, XCircleIcon as XCircleIcon8 } from "@heroicons/react/24/outline";
 import { useTranslation as useTranslation45 } from "react-i18next";
-import { jsxDEV as jsxDEV71 } from "react/jsx-dev-runtime";
-async function loader22({
+import { jsxDEV as jsxDEV72 } from "react/jsx-dev-runtime";
+async function loader24({
   request
 }) {
   let token = new URL(request.url).searchParams.get("token");
@@ -18790,14 +19203,14 @@ async function action14({ request }) {
   }), redirect14(redirectTarget, { headers });
 }
 function VerifyTokenPage() {
-  let [searchParams] = useSearchParams5(), result = useLoaderData18(), btnRef = useRef12(null), { t } = useTranslation45();
+  let [searchParams] = useSearchParams5(), result = useLoaderData19(), btnRef = useRef12(null), { t } = useTranslation45();
   return useEffect14(() => {
     if (!result.success || !btnRef.current)
       return;
     let submitBtn = btnRef.current;
     setTimeout(() => submitBtn.click(), 5e3);
-  }, [result]), /* @__PURE__ */ jsxDEV71("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxDEV71("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV71("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: result.success ? /* @__PURE__ */ jsxDEV71("div", { className: "rounded-md bg-green-100 p-4", children: /* @__PURE__ */ jsxDEV71("div", { className: "flex items-center", children: [
-    /* @__PURE__ */ jsxDEV71("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV71(
+  }, [result]), /* @__PURE__ */ jsxDEV72("div", { className: "flex flex-col justify-center py-12 sm:px-6 lg:px-8", children: /* @__PURE__ */ jsxDEV72("div", { className: "mt-8 sm:mx-auto sm:w-full sm:max-w-md", children: /* @__PURE__ */ jsxDEV72("div", { className: "bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10", children: result.success ? /* @__PURE__ */ jsxDEV72("div", { className: "rounded-md bg-green-100 p-4", children: /* @__PURE__ */ jsxDEV72("div", { className: "flex items-center", children: [
+    /* @__PURE__ */ jsxDEV72("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV72(
       CheckCircleIcon6,
       {
         className: "h-5 w-5 text-green-600",
@@ -18816,7 +19229,7 @@ function VerifyTokenPage() {
       lineNumber: 79,
       columnNumber: 17
     }, this),
-    /* @__PURE__ */ jsxDEV71("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV71("p", { className: "text-sm text-green-700", children: t("account.verifyMessage") }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV72("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV72("p", { className: "text-sm text-green-700", children: t("account.verifyMessage") }, void 0, !1, {
       fileName: "app/routes/verify.tsx",
       lineNumber: 86,
       columnNumber: 19
@@ -18825,8 +19238,8 @@ function VerifyTokenPage() {
       lineNumber: 85,
       columnNumber: 17
     }, this),
-    /* @__PURE__ */ jsxDEV71("form", { method: "post", children: [
-      /* @__PURE__ */ jsxDEV71(
+    /* @__PURE__ */ jsxDEV72("form", { method: "post", children: [
+      /* @__PURE__ */ jsxDEV72(
         "input",
         {
           type: "hidden",
@@ -18842,7 +19255,7 @@ function VerifyTokenPage() {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV71(
+      /* @__PURE__ */ jsxDEV72(
         "input",
         {
           type: "hidden",
@@ -18858,7 +19271,7 @@ function VerifyTokenPage() {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV71(
+      /* @__PURE__ */ jsxDEV72(
         "button",
         {
           ref: btnRef,
@@ -18887,8 +19300,8 @@ function VerifyTokenPage() {
     fileName: "app/routes/verify.tsx",
     lineNumber: 77,
     columnNumber: 13
-  }, this) : /* @__PURE__ */ jsxDEV71("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV71("div", { className: "flex", children: [
-    /* @__PURE__ */ jsxDEV71("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV71(
+  }, this) : /* @__PURE__ */ jsxDEV72("div", { className: "rounded-md bg-red-50 p-4", children: /* @__PURE__ */ jsxDEV72("div", { className: "flex", children: [
+    /* @__PURE__ */ jsxDEV72("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV72(
       XCircleIcon8,
       {
         className: "h-5 w-5 text-red-400",
@@ -18907,7 +19320,7 @@ function VerifyTokenPage() {
       lineNumber: 112,
       columnNumber: 17
     }, this),
-    /* @__PURE__ */ jsxDEV71("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV71("p", { className: "text-sm text-red-700", children: result.error }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV72("div", { className: "ml-3", children: /* @__PURE__ */ jsxDEV72("p", { className: "text-sm text-red-700", children: result.error }, void 0, !1, {
       fileName: "app/routes/verify.tsx",
       lineNumber: 119,
       columnNumber: 19
@@ -18944,17 +19357,17 @@ var about_exports = {};
 __export(about_exports, {
   default: () => AboutPage
 });
-import { jsxDEV as jsxDEV72 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV73 } from "react/jsx-dev-runtime";
 function AboutPage() {
-  return /* @__PURE__ */ jsxDEV72("div", { className: "min-h-screen", children: [
-    /* @__PURE__ */ jsxDEV72("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV72("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV72("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Your Trusted Sourcing Partner in China" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV73("div", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV73("section", { className: "py-20 bg-white", children: /* @__PURE__ */ jsxDEV73("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV73("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV73("h1", { className: "text-3xl md:text-4xl font-bold text-gray-900 mb-4", children: "Your Trusted Sourcing Partner in China" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 7,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 10,
           columnNumber: 13
@@ -18964,13 +19377,13 @@ function AboutPage() {
         lineNumber: 6,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "TaiSourcing was founded in Yiwu, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("div", { className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "TaiSourcing was founded in Xi'an, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China." }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 14,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe." }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 17,
           columnNumber: 15
@@ -18989,14 +19402,14 @@ function AboutPage() {
       lineNumber: 4,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV72("div", { className: "text-center mb-12", children: [
-        /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-4", children: "What Makes Us Unique" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV73("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV73("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV73("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV73("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-4", children: "What Makes Us Unique" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 29,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 32,
           columnNumber: 13
@@ -19006,14 +19419,14 @@ function AboutPage() {
         lineNumber: 28,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("div", { className: "grid md:grid-cols-3 gap-8", children: [
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Competitive Prices" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("div", { className: "grid md:grid-cols-3 gap-8", children: [
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Competitive Prices" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 37,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We always encourage our clients to compare our quotes with those they receive from other suppliers before selecting our service plans. Over 90% of them choose our Pro Plan because we consistently offer the most competitive prices." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "We always encourage our clients to compare our quotes with those they receive from other suppliers before selecting our service plans. Over 90% of them choose our Pro Plan because we consistently offer the most competitive prices." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 38,
             columnNumber: 15
@@ -19023,13 +19436,13 @@ function AboutPage() {
           lineNumber: 36,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Quality Assurance" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Quality Assurance" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 44,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We place a strong emphasis on product quality. We conduct thorough inspections of products before we ship them out. And we are the only sourcing company that provides 1-by-1 product inspections to minimize the defect rate to 0." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "We place a strong emphasis on product quality. We conduct thorough inspections of products before we ship them out. And we are the only sourcing company that provides 1-by-1 product inspections to minimize the defect rate to 0." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 45,
             columnNumber: 15
@@ -19039,13 +19452,13 @@ function AboutPage() {
           lineNumber: 43,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "In-house Production Department" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "In-house Production Department" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 51,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Although we are a sourcing company, we have our own production department capable of handling tasks that many factories are unable or unwilling to do. These tasks include product repackaging, bundling, eCommerce preparation, dropshipping, and fulfillment services." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "Although we are a sourcing company, we have our own production department capable of handling tasks that many factories are unable or unwilling to do. These tasks include product repackaging, bundling, eCommerce preparation, dropshipping, and fulfillment services." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 52,
             columnNumber: 15
@@ -19055,13 +19468,13 @@ function AboutPage() {
           lineNumber: 50,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Professional Sourcing Team" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Professional Sourcing Team" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 58,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Our company has over 100 employees, each with years of experience in China sourcing across a wide range of products. In contrast, most other sourcing agents have smaller teams of fewer than 10 people with expertise limited to specific categories." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "Our company has over 100 employees, each with years of experience in China sourcing across a wide range of products. In contrast, most other sourcing agents have smaller teams of fewer than 10 people with expertise limited to specific categories." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 59,
             columnNumber: 15
@@ -19071,13 +19484,13 @@ function AboutPage() {
           lineNumber: 57,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Special Support for Growing Businesses" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Special Support for Growing Businesses" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 65,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "For large-scale or rapidly expanding companies, we offer a range of tailored additional services. This includes assigning a team of up to 20 people, offering credit payment options, and more." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "For large-scale or rapidly expanding companies, we offer a range of tailored additional services. This includes assigning a team of up to 20 people, offering credit payment options, and more." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 66,
             columnNumber: 15
@@ -19087,13 +19500,13 @@ function AboutPage() {
           lineNumber: 64,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
-          /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Global Logistics Network" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("div", { className: "border-t-4 border-orange-500 pt-6", children: [
+          /* @__PURE__ */ jsxDEV73("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Global Logistics Network" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 72,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We have established partnerships with major logistics providers worldwide, enabling us to offer competitive shipping rates and reliable delivery to over 200 countries and regions." }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 leading-relaxed", children: "We have established partnerships with major logistics providers worldwide, enabling us to offer competitive shipping rates and reliable delivery to over 200 countries and regions." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
             lineNumber: 73,
             columnNumber: 15
@@ -19117,19 +19530,19 @@ function AboutPage() {
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-6", children: "Find Us on Social Media" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV73("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV73("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsxDEV73("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-6", children: "Find Us on Social Media" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
         lineNumber: 83,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 mb-8", children: "We are consistently active on social media, sharing knowledge about sourcing, international trading, e-commerce, and more." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("p", { className: "text-gray-600 mb-8", children: "We are consistently active on social media, sharing knowledge about sourcing, international trading, e-commerce, and more." }, void 0, !1, {
         fileName: "app/routes/about.tsx",
         lineNumber: 86,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("div", { className: "flex justify-center gap-6", children: [
-        /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-blue-600", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("div", { className: "flex justify-center gap-6", children: [
+        /* @__PURE__ */ jsxDEV73("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV73("svg", { className: "w-7 h-7 text-blue-600", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV73("path", { d: "M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 93,
           columnNumber: 17
@@ -19142,7 +19555,7 @@ function AboutPage() {
           lineNumber: 91,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-blue-400", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV73("svg", { className: "w-7 h-7 text-blue-400", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV73("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 98,
           columnNumber: 17
@@ -19155,7 +19568,7 @@ function AboutPage() {
           lineNumber: 96,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-red-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV73("svg", { className: "w-7 h-7 text-red-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV73("path", { d: "M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 103,
           columnNumber: 17
@@ -19168,7 +19581,7 @@ function AboutPage() {
           lineNumber: 101,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-green-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.322-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.269-.03-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV73("svg", { className: "w-7 h-7 text-green-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV73("path", { d: "M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.322-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.269-.03-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 108,
           columnNumber: 17
@@ -19181,7 +19594,7 @@ function AboutPage() {
           lineNumber: 106,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-black", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M12 0c-6.627 0-12 5.372-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.628-5.373-12-12-12z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV73("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV73("svg", { className: "w-7 h-7 text-black", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV73("path", { d: "M12 0c-6.627 0-12 5.372-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.628-5.373-12-12-12z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 113,
           columnNumber: 17
@@ -19208,18 +19621,18 @@ function AboutPage() {
       lineNumber: 81,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Ready to Start Your Sourcing Journey?" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV73("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV73("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
+      /* @__PURE__ */ jsxDEV73("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Ready to Start Your Sourcing Journey?" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
         lineNumber: 122,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("p", { className: "text-white/90 text-lg mb-8", children: "Join thousands of businesses that trust TaiSourcing for their China sourcing needs." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("p", { className: "text-white/90 text-lg mb-8", children: "Join thousands of businesses that trust TaiSourcing for their China sourcing needs." }, void 0, !1, {
         fileName: "app/routes/about.tsx",
         lineNumber: 125,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started Today" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV73("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started Today" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
         lineNumber: 128,
         columnNumber: 11
@@ -19248,26 +19661,26 @@ __export(routes_exports, {
 
 // app/components/home/HeroBanner.tsx
 import { Link as Link13 } from "@remix-run/react";
-import { jsxDEV as jsxDEV73 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV74 } from "react/jsx-dev-runtime";
 function HeroBanner() {
-  return /* @__PURE__ */ jsxDEV73("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 text-white", children: /* @__PURE__ */ jsxDEV73("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV73("div", { className: "flex flex-col md:flex-row items-center justify-between gap-12", children: [
-    /* @__PURE__ */ jsxDEV73("div", { className: "flex-1 text-center md:text-left", children: [
-      /* @__PURE__ */ jsxDEV73("h1", { className: "text-3xl md:text-4xl font-bold mb-6", children: "One-Stop Cross-Border E-commerce Solutions" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV74("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 text-white", children: /* @__PURE__ */ jsxDEV74("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV74("div", { className: "flex flex-col md:flex-row items-center justify-between gap-12", children: [
+    /* @__PURE__ */ jsxDEV74("div", { className: "flex-1 text-center md:text-left", children: [
+      /* @__PURE__ */ jsxDEV74("h1", { className: "text-3xl md:text-4xl font-bold mb-6", children: "One-Stop Cross-Border E-commerce Solutions" }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
         lineNumber: 9,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("p", { className: "text-lg mb-8 opacity-90", children: "We help you easily import from China" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV74("p", { className: "text-lg mb-8 opacity-90", children: "We help you easily import from China" }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
         lineNumber: 12,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("p", { className: "text-white/80 mb-8 max-w-xl mx-auto md:mx-0", children: "Focused on cross-border e-commerce, providing full-chain service support to help Chinese brands go global. From product sourcing, logistics to payment, one-stop solution for your import challenges." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV74("p", { className: "text-white/80 mb-8 max-w-xl mx-auto md:mx-0", children: "Focused on cross-border e-commerce, providing full-chain service support to help Chinese brands go global. From product sourcing, logistics to payment, one-stop solution for your import challenges." }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
         lineNumber: 15,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("div", { className: "flex flex-col sm:flex-row gap-4 justify-center md:justify-start", children: /* @__PURE__ */ jsxDEV73(
+      /* @__PURE__ */ jsxDEV74("div", { className: "flex flex-col sm:flex-row gap-4 justify-center md:justify-start", children: /* @__PURE__ */ jsxDEV74(
         Link13,
         {
           to: "/services",
@@ -19287,23 +19700,23 @@ function HeroBanner() {
         lineNumber: 18,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("p", { className: "text-sm mt-4 text-white/70 text-center md:text-left", children: "No experience needed, our expert agents will handle it all for you." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV74("p", { className: "text-sm mt-4 text-white/70 text-center md:text-left", children: "No experience needed, our expert agents will handle it all for you." }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
         lineNumber: 26,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("div", { className: "flex items-center justify-center md:justify-start gap-8 mt-12", children: [
+      /* @__PURE__ */ jsxDEV74("div", { className: "flex items-center justify-center md:justify-start gap-8 mt-12", children: [
         { number: "4000+", label: "Clients" },
         { number: "120+", label: "Countries" },
         { number: "500M+", label: "Annual Revenue" },
         { number: "200+", label: "Team Members" }
-      ].map((stat) => /* @__PURE__ */ jsxDEV73("div", { className: "text-center", children: [
-        /* @__PURE__ */ jsxDEV73("div", { className: "text-2xl font-bold", children: stat.number }, void 0, !1, {
+      ].map((stat) => /* @__PURE__ */ jsxDEV74("div", { className: "text-center", children: [
+        /* @__PURE__ */ jsxDEV74("div", { className: "text-2xl font-bold", children: stat.number }, void 0, !1, {
           fileName: "app/components/home/HeroBanner.tsx",
           lineNumber: 37,
           columnNumber: 19
         }, this),
-        /* @__PURE__ */ jsxDEV73("div", { className: "text-sm opacity-80", children: stat.label }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV74("div", { className: "text-sm opacity-80", children: stat.label }, void 0, !1, {
           fileName: "app/components/home/HeroBanner.tsx",
           lineNumber: 38,
           columnNumber: 19
@@ -19322,7 +19735,7 @@ function HeroBanner() {
       lineNumber: 8,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ jsxDEV73("div", { className: "flex-1", children: /* @__PURE__ */ jsxDEV73(
+    /* @__PURE__ */ jsxDEV74("div", { className: "flex-1", children: /* @__PURE__ */ jsxDEV74(
       "img",
       {
         src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20ecommerce%20warehouse%20with%20shipping%20boxes%20and%20technology&image_size=landscape_4_3",
@@ -19358,7 +19771,7 @@ function HeroBanner() {
 }
 
 // app/components/home/FeaturesSection.tsx
-import { jsxDEV as jsxDEV74 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV75 } from "react/jsx-dev-runtime";
 function FeaturesSection() {
   let features = [
     {
@@ -19387,19 +19800,19 @@ function FeaturesSection() {
     truck: "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4",
     "credit-card": "M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
   };
-  return /* @__PURE__ */ jsxDEV74("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV74("div", { className: "max-w-6xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxDEV74("div", { className: "text-center mb-12", children: [
-      /* @__PURE__ */ jsxDEV74("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Core Advantages" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV75("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV75("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV75("div", { className: "text-center mb-12", children: [
+      /* @__PURE__ */ jsxDEV75("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Core Advantages" }, void 0, !1, {
         fileName: "app/components/home/FeaturesSection.tsx",
         lineNumber: 36,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV74("p", { className: "text-gray-600", children: "Why Choose Us" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV75("p", { className: "text-gray-600", children: "Why Choose Us" }, void 0, !1, {
         fileName: "app/components/home/FeaturesSection.tsx",
         lineNumber: 39,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV74("p", { className: "text-gray-500 mt-2", children: "Years of experience in cross-border e-commerce, accumulated rich industry experience and resources, committed to providing the best quality service for clients." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV75("p", { className: "text-gray-500 mt-2", children: "Years of experience in cross-border e-commerce, accumulated rich industry experience and resources, committed to providing the best quality service for clients." }, void 0, !1, {
         fileName: "app/components/home/FeaturesSection.tsx",
         lineNumber: 42,
         columnNumber: 11
@@ -19409,12 +19822,12 @@ function FeaturesSection() {
       lineNumber: 35,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV74("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8", children: features.map((feature) => /* @__PURE__ */ jsxDEV74(
+    /* @__PURE__ */ jsxDEV75("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8", children: features.map((feature) => /* @__PURE__ */ jsxDEV75(
       "div",
       {
         className: "bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300",
         children: [
-          /* @__PURE__ */ jsxDEV74("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxDEV74("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV74("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: iconPaths[feature.icon] }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV75("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxDEV75("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV75("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: iconPaths[feature.icon] }, void 0, !1, {
             fileName: "app/components/home/FeaturesSection.tsx",
             lineNumber: 55,
             columnNumber: 19
@@ -19427,12 +19840,12 @@ function FeaturesSection() {
             lineNumber: 53,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV74("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: feature.title }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV75("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: feature.title }, void 0, !1, {
             fileName: "app/components/home/FeaturesSection.tsx",
             lineNumber: 58,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV74("p", { className: "text-gray-600 text-sm", children: feature.description }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV75("p", { className: "text-gray-600 text-sm", children: feature.description }, void 0, !1, {
             fileName: "app/components/home/FeaturesSection.tsx",
             lineNumber: 59,
             columnNumber: 15
@@ -19464,15 +19877,15 @@ function FeaturesSection() {
 }
 
 // app/components/home/StatsSection.tsx
-import { useEffect as useEffect15, useState as useState16 } from "react";
-import { jsxDEV as jsxDEV75 } from "react/jsx-dev-runtime";
+import { useEffect as useEffect15, useState as useState17 } from "react";
+import { jsxDEV as jsxDEV76 } from "react/jsx-dev-runtime";
 function StatsSection() {
   let stats = [
     { value: 4e3, suffix: "+", label: "Clients", description: "Worldwide" },
     { value: 120, suffix: "+", label: "Countries", description: "Global Coverage" },
     { value: 500, suffix: "M+", label: "Annual Revenue", description: "Steady Growth" },
     { value: 200, suffix: "+", label: "Team Members", description: "Industry Experts" }
-  ], [counts, setCounts] = useState16(stats.map(() => 0)), [hasAnimated, setHasAnimated] = useState16(!1);
+  ], [counts, setCounts] = useState17(stats.map(() => 0)), [hasAnimated, setHasAnimated] = useState17(!1);
   return useEffect15(() => {
     let observer = new IntersectionObserver(
       (entries) => {
@@ -19496,19 +19909,19 @@ function StatsSection() {
     return section && observer.observe(section), () => {
       observer.disconnect();
     };
-  }, [hasAnimated, counts]), /* @__PURE__ */ jsxDEV75("section", { id: "stats-section", className: "py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white", children: /* @__PURE__ */ jsxDEV75("div", { className: "max-w-6xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxDEV75("div", { className: "text-center mb-12", children: [
-      /* @__PURE__ */ jsxDEV75("h2", { className: "text-2xl md:text-3xl font-bold mb-4", children: "Numbers Speak" }, void 0, !1, {
+  }, [hasAnimated, counts]), /* @__PURE__ */ jsxDEV76("section", { id: "stats-section", className: "py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white", children: /* @__PURE__ */ jsxDEV76("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV76("div", { className: "text-center mb-12", children: [
+      /* @__PURE__ */ jsxDEV76("h2", { className: "text-2xl md:text-3xl font-bold mb-4", children: "Numbers Speak" }, void 0, !1, {
         fileName: "app/components/home/StatsSection.tsx",
         lineNumber: 59,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV75("p", { className: "text-white/80", children: "Our Achievements" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV76("p", { className: "text-white/80", children: "Our Achievements" }, void 0, !1, {
         fileName: "app/components/home/StatsSection.tsx",
         lineNumber: 62,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV75("p", { className: "text-white/60 mt-2", children: "Proving strength with data, winning trust with service" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV76("p", { className: "text-white/60 mt-2", children: "Proving strength with data, winning trust with service" }, void 0, !1, {
         fileName: "app/components/home/StatsSection.tsx",
         lineNumber: 65,
         columnNumber: 11
@@ -19518,8 +19931,8 @@ function StatsSection() {
       lineNumber: 58,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV75("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-8", children: stats.map((stat, index) => /* @__PURE__ */ jsxDEV75("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxDEV75("div", { className: "text-4xl md:text-5xl font-bold mb-2", children: [
+    /* @__PURE__ */ jsxDEV76("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-8", children: stats.map((stat, index) => /* @__PURE__ */ jsxDEV76("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxDEV76("div", { className: "text-4xl md:text-5xl font-bold mb-2", children: [
         counts[index],
         stat.suffix
       ] }, void 0, !0, {
@@ -19527,12 +19940,12 @@ function StatsSection() {
         lineNumber: 73,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV75("div", { className: "text-xl font-semibold mb-1", children: stat.label }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV76("div", { className: "text-xl font-semibold mb-1", children: stat.label }, void 0, !1, {
         fileName: "app/components/home/StatsSection.tsx",
         lineNumber: 76,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV75("div", { className: "text-sm text-white/60", children: stat.description }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV76("div", { className: "text-sm text-white/60", children: stat.description }, void 0, !1, {
         fileName: "app/components/home/StatsSection.tsx",
         lineNumber: 77,
         columnNumber: 15
@@ -19559,21 +19972,21 @@ function StatsSection() {
 
 // app/components/home/ServicesSection.tsx
 import { Link as Link14 } from "@remix-run/react";
-import { jsxDEV as jsxDEV76 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV77 } from "react/jsx-dev-runtime";
 function ServicesSection() {
-  return /* @__PURE__ */ jsxDEV76("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV76("div", { className: "max-w-6xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxDEV76("div", { className: "text-center mb-12", children: [
-      /* @__PURE__ */ jsxDEV76("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Our Services" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV77("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV77("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV77("div", { className: "text-center mb-12", children: [
+      /* @__PURE__ */ jsxDEV77("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Our Services" }, void 0, !1, {
         fileName: "app/components/home/ServicesSection.tsx",
         lineNumber: 32,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV76("p", { className: "text-gray-600", children: "What We Offer" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600", children: "What We Offer" }, void 0, !1, {
         fileName: "app/components/home/ServicesSection.tsx",
         lineNumber: 35,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV76("p", { className: "text-gray-500 mt-2", children: "Full-chain cross-border e-commerce services, meeting all your needs from store opening to operations" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-500 mt-2", children: "Full-chain cross-border e-commerce services, meeting all your needs from store opening to operations" }, void 0, !1, {
         fileName: "app/components/home/ServicesSection.tsx",
         lineNumber: 38,
         columnNumber: 11
@@ -19583,7 +19996,7 @@ function ServicesSection() {
       lineNumber: 31,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV76("div", { className: "grid md:grid-cols-3 gap-8", children: [
+    /* @__PURE__ */ jsxDEV77("div", { className: "grid md:grid-cols-3 gap-8", children: [
       {
         title: "One-Stop Cross-Border E-commerce Solutions",
         description: "From store setup to operations and promotion, providing comprehensive cross-border e-commerce service support, allowing you to focus on your products.",
@@ -19605,12 +20018,12 @@ function ServicesSection() {
         image: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Secure%20payment%20transaction%20interface&image_size=square",
         link: "/payment-information"
       }
-    ].map((service) => /* @__PURE__ */ jsxDEV76(
+    ].map((service) => /* @__PURE__ */ jsxDEV77(
       "div",
       {
         className: "bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300",
         children: [
-          /* @__PURE__ */ jsxDEV76(
+          /* @__PURE__ */ jsxDEV77(
             "img",
             {
               src: service.image,
@@ -19626,19 +20039,19 @@ function ServicesSection() {
             },
             this
           ),
-          /* @__PURE__ */ jsxDEV76("div", { className: "p-6", children: [
-            /* @__PURE__ */ jsxDEV76("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: service.title }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV77("div", { className: "p-6", children: [
+            /* @__PURE__ */ jsxDEV77("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: service.title }, void 0, !1, {
               fileName: "app/components/home/ServicesSection.tsx",
               lineNumber: 55,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV76("p", { className: "text-gray-600 text-sm mb-4", children: service.description }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600 text-sm mb-4", children: service.description }, void 0, !1, {
               fileName: "app/components/home/ServicesSection.tsx",
               lineNumber: 56,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV76("ul", { className: "space-y-2 mb-6", children: service.features.map((feature) => /* @__PURE__ */ jsxDEV76("li", { className: "flex items-center gap-2 text-sm text-gray-700", children: [
-              /* @__PURE__ */ jsxDEV76("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV76("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV77("ul", { className: "space-y-2 mb-6", children: service.features.map((feature) => /* @__PURE__ */ jsxDEV77("li", { className: "flex items-center gap-2 text-sm text-gray-700", children: [
+              /* @__PURE__ */ jsxDEV77("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV77("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                 fileName: "app/components/home/ServicesSection.tsx",
                 lineNumber: 61,
                 columnNumber: 25
@@ -19657,14 +20070,14 @@ function ServicesSection() {
               lineNumber: 57,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV76(
+            /* @__PURE__ */ jsxDEV77(
               Link14,
               {
                 to: service.link,
                 className: "inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors",
                 children: [
                   "Learn More",
-                  /* @__PURE__ */ jsxDEV76("svg", { className: "w-4 h-4 ml-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV76("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }, void 0, !1, {
+                  /* @__PURE__ */ jsxDEV77("svg", { className: "w-4 h-4 ml-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV77("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }, void 0, !1, {
                     fileName: "app/components/home/ServicesSection.tsx",
                     lineNumber: 73,
                     columnNumber: 21
@@ -19716,21 +20129,21 @@ function ServicesSection() {
 }
 
 // app/components/home/TestimonialsSection.tsx
-import { jsxDEV as jsxDEV77 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV78 } from "react/jsx-dev-runtime";
 function TestimonialsSection() {
-  return /* @__PURE__ */ jsxDEV77("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV77("div", { className: "max-w-6xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxDEV77("div", { className: "text-center mb-12", children: [
-      /* @__PURE__ */ jsxDEV77("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Client Testimonials" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV78("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV78("div", { className: "text-center mb-12", children: [
+      /* @__PURE__ */ jsxDEV78("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Client Testimonials" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
         lineNumber: 21,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600", children: "What They Say" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV78("p", { className: "text-gray-600", children: "What They Say" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
         lineNumber: 24,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-500 mt-2", children: "Real feedback from our partners" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV78("p", { className: "text-gray-500 mt-2", children: "Real feedback from our partners" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
         lineNumber: 27,
         columnNumber: 11
@@ -19740,7 +20153,7 @@ function TestimonialsSection() {
       lineNumber: 20,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV77("div", { className: "grid md:grid-cols-3 gap-8", children: [
+    /* @__PURE__ */ jsxDEV78("div", { className: "grid md:grid-cols-3 gap-8", children: [
       {
         name: "James Wilson",
         content: "We have been working together for over two years. From a small store to now with annual sales of over 10 million, we cannot do without their professional service and support. The team is very responsible and always solves problems promptly."
@@ -19753,12 +20166,12 @@ function TestimonialsSection() {
         name: "Michael Brown",
         content: "Payment security is guaranteed, and funds arrive quickly. Most importantly, the exchange rate is transparent with no hidden fees, making our fund management much smoother."
       }
-    ].map((testimonial) => /* @__PURE__ */ jsxDEV77(
+    ].map((testimonial) => /* @__PURE__ */ jsxDEV78(
       "div",
       {
         className: "bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300",
         children: [
-          /* @__PURE__ */ jsxDEV77("div", { className: "flex items-center gap-1 mb-4", children: [...Array(5)].map((_, i) => /* @__PURE__ */ jsxDEV77("svg", { className: "w-4 h-4 text-yellow-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV77("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV78("div", { className: "flex items-center gap-1 mb-4", children: [...Array(5)].map((_, i) => /* @__PURE__ */ jsxDEV78("svg", { className: "w-4 h-4 text-yellow-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV78("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }, void 0, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
             lineNumber: 41,
             columnNumber: 21
@@ -19771,13 +20184,13 @@ function TestimonialsSection() {
             lineNumber: 38,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600 mb-6", children: testimonial.content }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV78("p", { className: "text-gray-600 mb-6", children: testimonial.content }, void 0, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
             lineNumber: 45,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV77("div", { className: "flex items-center gap-4", children: [
-            /* @__PURE__ */ jsxDEV77("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV77("svg", { className: "w-6 h-6 text-gray-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV77("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV78("div", { className: "flex items-center gap-4", children: [
+            /* @__PURE__ */ jsxDEV78("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV78("svg", { className: "w-6 h-6 text-gray-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV78("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
               lineNumber: 49,
               columnNumber: 21
@@ -19790,7 +20203,7 @@ function TestimonialsSection() {
               lineNumber: 47,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV77("div", { children: /* @__PURE__ */ jsxDEV77("div", { className: "font-semibold text-gray-900", children: testimonial.name }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV78("div", { children: /* @__PURE__ */ jsxDEV78("div", { className: "font-semibold text-gray-900", children: testimonial.name }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
               lineNumber: 53,
               columnNumber: 19
@@ -19832,21 +20245,21 @@ function TestimonialsSection() {
 
 // app/components/home/PartnersSection.tsx
 import { Link as Link15 } from "@remix-run/react";
-import { jsxDEV as jsxDEV78 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV79 } from "react/jsx-dev-runtime";
 function CtaSection() {
-  return /* @__PURE__ */ jsxDEV78("section", { className: "py-12 bg-gradient-to-r from-orange-500 to-orange-600", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-3xl mx-auto text-center", children: [
-    /* @__PURE__ */ jsxDEV78("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-4", children: "Ready to Start Your Cross-Border Journey?" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV79("section", { className: "py-12 bg-gradient-to-r from-orange-500 to-orange-600", children: /* @__PURE__ */ jsxDEV79("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV79("div", { className: "max-w-3xl mx-auto text-center", children: [
+    /* @__PURE__ */ jsxDEV79("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-4", children: "Ready to Start Your Cross-Border Journey?" }, void 0, !1, {
       fileName: "app/components/home/PartnersSection.tsx",
       lineNumber: 54,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ jsxDEV78("p", { className: "text-white/80 mb-8", children: "Join us and let our professional team help you achieve your import dreams. Consult now and enjoy exclusive discounts!" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV79("p", { className: "text-white/80 mb-8", children: "Join us and let our professional team help you achieve your import dreams. Consult now and enjoy exclusive discounts!" }, void 0, !1, {
       fileName: "app/components/home/PartnersSection.tsx",
       lineNumber: 57,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ jsxDEV78("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
-      /* @__PURE__ */ jsxDEV78(
+    /* @__PURE__ */ jsxDEV79("div", { className: "flex flex-col sm:flex-row gap-4 justify-center", children: [
+      /* @__PURE__ */ jsxDEV79(
         Link15,
         {
           to: "/services",
@@ -19862,7 +20275,7 @@ function CtaSection() {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV78(
+      /* @__PURE__ */ jsxDEV79(
         Link15,
         {
           to: "/about",
@@ -19899,35 +20312,35 @@ function CtaSection() {
 }
 
 // app/routes/index.tsx
-import { Fragment as Fragment18, jsxDEV as jsxDEV79 } from "react/jsx-dev-runtime";
+import { Fragment as Fragment18, jsxDEV as jsxDEV80 } from "react/jsx-dev-runtime";
 function Index() {
-  return /* @__PURE__ */ jsxDEV79(Fragment18, { children: [
-    /* @__PURE__ */ jsxDEV79(HeroBanner, {}, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV80(Fragment18, { children: [
+    /* @__PURE__ */ jsxDEV80(HeroBanner, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 11,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(FeaturesSection, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV80(FeaturesSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 12,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(StatsSection, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV80(StatsSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 13,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(ServicesSection, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV80(ServicesSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 14,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(TestimonialsSection, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV80(TestimonialsSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 15,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(CtaSection, {}, void 0, !1, {
+    /* @__PURE__ */ jsxDEV80(CtaSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
       lineNumber: 16,
       columnNumber: 7
@@ -19940,7 +20353,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-RI7VYTL7.js", imports: ["/build/_shared/chunk-OAPPX4FA.js", "/build/_shared/chunk-7LRNVKNK.js", "/build/_shared/chunk-MCQ6ZGWR.js", "/build/_shared/chunk-WEAPBHQG.js", "/build/_shared/chunk-BBL5WSQK.js", "/build/_shared/chunk-7PHB3BFD.js", "/build/_shared/chunk-CG66FP4Q.js", "/build/_shared/chunk-JR22VO6P.js", "/build/_shared/chunk-CJ4MY3PQ.js", "/build/_shared/chunk-PZDJHGND.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YQGM3X33.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-TXC7NXDB.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-QCPVTLBM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-DXQCECEI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-UHIUPRMM.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-EON7S7ES.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-M2EEFBKF.js", imports: ["/build/_shared/chunk-6KORWPLL.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-HTFMR3UE.js", imports: ["/build/_shared/chunk-6KORWPLL.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-RE2XK7LT.js", imports: ["/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-7CW3L53G.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-VQJ67ND7.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-O22KF3EY.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.shop-api": { id: "routes/api.shop-api", parentId: "root", path: "api/shop-api", index: void 0, caseSensitive: void 0, module: "/build/routes/api.shop-api-ECYXIH6W.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-XNVWE6TG.js", imports: ["/build/_shared/chunk-34YREHXS.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-Q5K25WUE.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-5XRHSNNC.js", imports: ["/build/_shared/chunk-TXC7NXDB.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-VE5XUPHL.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-JYDXLL72.js", imports: ["/build/_shared/chunk-H33VLQP5.js", "/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-6YLESL7E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-PFKX2VAW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-35VRFI6G.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-PWOLDICS.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-HCLX4TXQ.js", imports: ["/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-FN2SQOXN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-DCU3PJXE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-F54AIKLN.js", imports: ["/build/_shared/chunk-H33VLQP5.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-DHI5FWHN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services.dropshipping": { id: "routes/services.dropshipping", parentId: "routes/services", path: "dropshipping", index: void 0, caseSensitive: void 0, module: "/build/routes/services.dropshipping-4MXF64QL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-WHID7IMQ.js", imports: ["/build/_shared/chunk-W4JLFH3K.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-PNCMHWBP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-NAGZQO4M.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.quality-control": { id: "routes/solutions.quality-control", parentId: "root", path: "solutions/quality-control", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.quality-control-QGNOAYC4.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.shipping": { id: "routes/solutions.shipping", parentId: "root", path: "solutions/shipping", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.shipping-5BZSTMYM.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-XCOMG2T6.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-XPS5YBTZ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "0614f6fa", hmr: { runtime: "/build/_shared\\chunk-CG66FP4Q.js", timestamp: 1783419427666 }, url: "/build/manifest-0614F6FA.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-RI7VYTL7.js", imports: ["/build/_shared/chunk-OAPPX4FA.js", "/build/_shared/chunk-7LRNVKNK.js", "/build/_shared/chunk-MCQ6ZGWR.js", "/build/_shared/chunk-WEAPBHQG.js", "/build/_shared/chunk-BBL5WSQK.js", "/build/_shared/chunk-7PHB3BFD.js", "/build/_shared/chunk-CG66FP4Q.js", "/build/_shared/chunk-JR22VO6P.js", "/build/_shared/chunk-CJ4MY3PQ.js", "/build/_shared/chunk-PZDJHGND.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XBJZBHSF.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-OLT4PQNE.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-EHDZMP5U.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-DXQCECEI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-UHIUPRMM.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-EON7S7ES.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-W2TOAPXO.js", imports: ["/build/_shared/chunk-CPCM3TRH.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-2IPIHAQH.js", imports: ["/build/_shared/chunk-CPCM3TRH.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-RE2XK7LT.js", imports: ["/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-7CW3L53G.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/admin.contact-forms": { id: "routes/admin.contact-forms", parentId: "root", path: "admin/contact-forms", index: void 0, caseSensitive: void 0, module: "/build/routes/admin.contact-forms-RJ3IB2EF.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-VQJ67ND7.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.assets.$": { id: "routes/api.assets.$", parentId: "root", path: "api/assets/*", index: void 0, caseSensitive: void 0, module: "/build/routes/api.assets.$-ASFMKK5X.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-O22KF3EY.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.shop-api": { id: "routes/api.shop-api", parentId: "root", path: "api/shop-api", index: void 0, caseSensitive: void 0, module: "/build/routes/api.shop-api-ECYXIH6W.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-P4KWDDQA.js", imports: ["/build/_shared/chunk-34YREHXS.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-SJIWYENZ.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-IAFGH4C4.js", imports: ["/build/_shared/chunk-OLT4PQNE.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-CVT2GEG6.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-X7W7OFLF.js", "/build/_shared/chunk-76TTLXDT.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-GUNJYEMO.js", imports: ["/build/_shared/chunk-GAHPXXYR.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-FN2SQOXN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-6YLESL7E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-EUTMQDS5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-35VRFI6G.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-QJUQNJW4.js", imports: ["/build/_shared/chunk-L4DMO4TQ.js", "/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-GCIDPFCS.js", imports: ["/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-FN2SQOXN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-DCU3PJXE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-J2FFXTLG.js", imports: ["/build/_shared/chunk-GAHPXXYR.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-FN2SQOXN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-CZ4Y2W4M.js", imports: ["/build/_shared/chunk-L4DMO4TQ.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services.dropshipping": { id: "routes/services.dropshipping", parentId: "routes/services", path: "dropshipping", index: void 0, caseSensitive: void 0, module: "/build/routes/services.dropshipping-4MXF64QL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-PX66VLO6.js", imports: ["/build/_shared/chunk-W4JLFH3K.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-LRYD5JT3.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-NAGZQO4M.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.quality-control": { id: "routes/solutions.quality-control", parentId: "root", path: "solutions/quality-control", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.quality-control-FEZUPMSF.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.shipping": { id: "routes/solutions.shipping", parentId: "root", path: "solutions/shipping", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.shipping-WD3XGW2N.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-XCOMG2T6.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-XPS5YBTZ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "61990556", hmr: { runtime: "/build/_shared\\chunk-CG66FP4Q.js", timestamp: 1783505821025 }, url: "/build/manifest-61990556.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public\\build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -19999,6 +20412,14 @@ var mode = "development", assetsBuildDirectory = "public\\build", future = { v3_
     index: void 0,
     caseSensitive: void 0,
     module: services_dropshipping_exports
+  },
+  "routes/admin.contact-forms": {
+    id: "routes/admin.contact-forms",
+    parentId: "root",
+    path: "admin/contact-forms",
+    index: void 0,
+    caseSensitive: void 0,
+    module: admin_contact_forms_exports
   },
   "routes/payment-information": {
     id: "routes/payment-information",
@@ -20111,6 +20532,14 @@ var mode = "development", assetsBuildDirectory = "public\\build", future = { v3_
     index: void 0,
     caseSensitive: void 0,
     module: sign_up_index_exports
+  },
+  "routes/api.assets.$": {
+    id: "routes/api.assets.$",
+    parentId: "root",
+    path: "api/assets/*",
+    index: void 0,
+    caseSensitive: void 0,
+    module: api_assets_exports
   },
   "routes/api.shop-api": {
     id: "routes/api.shop-api",

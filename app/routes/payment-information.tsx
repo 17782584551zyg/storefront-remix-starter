@@ -8,7 +8,7 @@ export default function PaymentInformationPage() {
           </h1>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
           <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-            The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to Taisourcing@gmail.com for further confirmation.
+            The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@taisourcing.asia for further confirmation.
           </p>
         </div>
       </section>
