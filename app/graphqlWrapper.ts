@@ -41,7 +41,10 @@ async function sendQuery<Response, Variables = {}>(options: {
     }
   }
 
-  return fetch(API_URL, {
+  const isServer = typeof window === 'undefined';
+  const url = isServer ? API_URL : '/api/shop-api';
+  
+  return fetch(url, {
     method: 'POST',
     body: JSON.stringify(options),
     headers,

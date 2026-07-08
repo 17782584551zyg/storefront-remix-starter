@@ -11,7 +11,7 @@ import {
 } from '@remix-run/react';
 import { CheckIcon, HeartIcon, PhotoIcon } from '@heroicons/react/24/solid';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
-import { APP_META_TITLE } from '~/constants';
+import { APP_META_TITLE, BACKEND_URL } from '~/constants';
 import { CartLoaderData } from '~/routes/api.active-order';
 import { getSessionStorage } from '~/sessions';
 import { ErrorCode, ErrorResult } from '~/generated/graphql';
@@ -89,7 +89,7 @@ export default function ProductSlug() {
   )?.name;
 
   const [featuredAsset, setFeaturedAsset] = useState(
-    selectedVariant?.featuredAsset,
+    selectedVariant?.featuredAsset || product.featuredAsset,
   );
 
   const [isFavorite, setIsFavorite] = useState(false);
@@ -113,7 +113,8 @@ export default function ProductSlug() {
               <div className="w-full h-full object-center object-cover rounded-lg">
                 <img
                   src={
-                    (featuredAsset?.preview || product.featuredAsset?.preview) +
+                    BACKEND_URL +
+                    (featuredAsset?.preview || product.featuredAsset?.preview || '') +
                     '?w=800'
                   }
                   alt={product.name}
@@ -139,8 +140,9 @@ export default function ProductSlug() {
                       draggable="false"
                       className="rounded-lg select-none h-24 w-full object-cover"
                       src={
+                        BACKEND_URL +
                         asset.preview +
-                        '?preset=full' /* not ideal, but technically prevents loading 2 seperate images */
+                        '?preset=full'
                       }
                     />
                   </div>
@@ -305,7 +307,7 @@ export default function ProductSlug() {
                     <div className="mb-4">
                       <h4 className="text-sm font-medium text-gray-900 mb-2">Detail Image</h4>
                       <img
-                        src={product.customFields.detailImage.preview + '?w=600'}
+                        src={BACKEND_URL + product.customFields.detailImage.preview + '?w=600'}
                         alt="Product Detail"
                         className="max-w-full rounded-lg"
                       />

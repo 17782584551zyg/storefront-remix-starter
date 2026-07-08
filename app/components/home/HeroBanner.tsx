@@ -20,15 +20,12 @@ export function HeroBanner() {
                 to="/services"
                 className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Get Started
-              </Link>
-              <Link
-                to="/about"
-                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
-              >
-                Learn More
+                Find new suppliers
               </Link>
             </div>
+            <p className="text-sm mt-4 text-white/70 text-center md:text-left">
+              No experience needed, our expert agents will handle it all for you.
+            </p>
             <div className="flex items-center justify-center md:justify-start gap-8 mt-12">
               {[
                 { number: '4000+', label: 'Clients' },

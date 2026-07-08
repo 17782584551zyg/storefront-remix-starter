@@ -2,7 +2,7 @@ import { API_URL } from '~/constants';
 
 export class GraphqlClient {
   async request<T = any>(query: string, variables?: Record<string, any>): Promise<T> {
-    const response = await fetch(API_URL, {
+    const response = await fetch('/api/shop-api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,3 +24,5 @@ export class GraphqlClient {
 }
 
 export const graphqlClient = new GraphqlClient();
+
+export { API_URL };

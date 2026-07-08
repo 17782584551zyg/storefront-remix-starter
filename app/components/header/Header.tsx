@@ -13,7 +13,6 @@ const navItems = [
     label: 'Our Services',
     children: [
       { label: 'Purchasing Service', href: '/services' },
-      { label: 'Dropshipping Service', href: '/services/dropshipping' },
     ],
   },
   {
@@ -29,14 +28,6 @@ const navItems = [
     children: [
       { label: 'Payment Information', href: '/payment-information' },
       { label: 'About Us', href: '/about' },
-    ],
-  },
-  {
-    label: 'Resources',
-    children: [
-      { label: 'Sourcing Guide', href: '/resources' },
-      { label: 'Our Blog', href: '/resources' },
-      { label: 'Import from China', href: '/resources' },
     ],
   },
 ];
@@ -188,17 +179,19 @@ export function Header({
               </div>
             )}
           </div>
-          <div className="hidden md:block">
-            <Link
-              to={isSignedIn ? '/account' : '/sign-in'}
-              className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300"
-            >
-              <UserIcon className="w-4 h-4" />
-              <span className="text-sm">
-                {isSignedIn ? t('account.myAccount') : t('account.signIn')}
-              </span>
-            </Link>
-          </div>
+          {isProductPage && (
+            <div className="hidden md:block">
+              <Link
+                to={isSignedIn ? '/account' : '/sign-in'}
+                className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300"
+              >
+                <UserIcon className="w-4 h-4" />
+                <span className="text-sm">
+                  {isSignedIn ? t('account.myAccount') : t('account.signIn')}
+                </span>
+              </Link>
+            </div>
+          )}
           {isProductPage && (
             <button
               className="relative w-9 h-9 bg-orange-50 rounded-full text-orange-500 p-1 hover:bg-orange-100 transition-colors duration-300"

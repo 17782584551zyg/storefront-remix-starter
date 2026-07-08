@@ -1,4 +1,23 @@
+import { json, LoaderFunction } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
+import pageImages from '~/data/page-images.json';
+import { BACKEND_URL } from '~/constants';
+
+export const loader: LoaderFunction = async () => {
+  return json({ images: pageImages['shipping-solutions'] || {} });
+};
+
 export default function ShippingSolutionsPage() {
+  const { images } = useLoaderData<{ images: Record<string, string> }>();
+  
+  const getImageUrl = (name: string) => {
+    const path = images[name];
+    if (path) {
+      return `${BACKEND_URL}${path}`;
+    }
+    return null;
+  };
+  
   return (
     <div className="min-h-screen">
       <section className="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden">
@@ -22,7 +41,7 @@ export default function ShippingSolutionsPage() {
             </div>
             <div className="relative">
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3"
+                src={getImageUrl('hero-image') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3'}
                 alt="Global Shipping"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
@@ -57,7 +76,7 @@ export default function ShippingSolutionsPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3"
+                src={getImageUrl('international-express') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3'}
                 alt="International Express"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
@@ -128,7 +147,7 @@ export default function ShippingSolutionsPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm">
               <div>
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3"
+                  src={getImageUrl('sea-freight') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3'}
                   alt="Sea Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
@@ -171,7 +190,7 @@ export default function ShippingSolutionsPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm">
               <div>
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3"
+                  src={getImageUrl('air-freight') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3'}
                   alt="Air Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
@@ -214,7 +233,7 @@ export default function ShippingSolutionsPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm">
               <div>
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3"
+                  src={getImageUrl('railway-freight') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3'}
                   alt="Railway Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
@@ -229,14 +248,14 @@ export default function ShippingSolutionsPage() {
                   <h3 className="text-xl font-bold text-gray-900">Railway Freight</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  We provide new Asia-Europe land bridge FCL/LCL transport. Railway freight takes half the time of sea freight and costs less than air freight.
+                  We provide China-Europe Railway Express FCL/LCL transport services. Railway freight takes half the time of sea freight and costs less than air freight.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Asia-Europe land bridge
+                    China-Europe Railway Express
                   </li>
                   <li className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">

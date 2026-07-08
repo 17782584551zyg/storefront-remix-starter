@@ -55,7 +55,6 @@ export default function Footer({
             <h3 className="text-sm font-semibold text-gray-400 uppercase mb-6">OUR SERVICE</h3>
             <ul className="space-y-3">
               <li><a href="/services" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Purchasing Service</a></li>
-              <li><a href="/services/dropshipping" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Dropshipping Service</a></li>
               <li><a href="/solutions/shipping" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Shipping Solutions</a></li>
               <li><a href="/solutions/quality-control" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Quality Control</a></li>
             </ul>
@@ -66,7 +65,7 @@ export default function Footer({
             <ul className="space-y-4">
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">Email</div>
-                <a href="mailto:info@Taisourcing@gmail.com" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">info@Taisourcing@gmail.com</a>
+                <a href="mailto:Taisourcing@gmail.com" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Taisourcing@gmail.com</a>
               </li>
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">Tel (China)</div>

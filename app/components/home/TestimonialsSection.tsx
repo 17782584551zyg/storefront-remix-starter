@@ -1,21 +1,15 @@
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: 'Zhang Ming',
-      title: 'Founder',
-      company: 'A Well-Known Cross-Border Brand',
+      name: 'James Wilson',
       content: 'We have been working together for over two years. From a small store to now with annual sales of over 10 million, we cannot do without their professional service and support. The team is very responsible and always solves problems promptly.',
     },
     {
-      name: 'Li Hua',
-      title: 'Operations Director',
-      company: 'A Home Goods Brand',
+      name: 'Sarah Johnson',
       content: 'Logistics efficiency has improved by 50%, and customer satisfaction has significantly increased. Their intelligent warehousing system is really powerful, saving us a lot of costs and effort.',
     },
     {
-      name: 'Wang Qiang',
-      title: 'CEO',
-      company: 'An Electronics Company',
+      name: 'Michael Brown',
       content: 'Payment security is guaranteed, and funds arrive quickly. Most importantly, the exchange rate is transparent with no hidden fees, making our fund management much smoother.',
     },
   ];
@@ -57,7 +51,6 @@ export function TestimonialsSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-500">{testimonial.title} @ {testimonial.company}</div>
                 </div>
               </div>
             </div>

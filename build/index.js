@@ -2971,7 +2971,7 @@ import {
 } from "@remix-run/react";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-EWWB45FK.css";
+var tailwind_default = "/build/_assets/tailwind-KNSJCPLJ.css";
 
 // app/components/header/Header.tsx
 import { Link, useLocation } from "@remix-run/react";
@@ -3013,8 +3013,7 @@ var navItems = [
   {
     label: "Our Services",
     children: [
-      { label: "Purchasing Service", href: "/services" },
-      { label: "Dropshipping Service", href: "/services/dropshipping" }
+      { label: "Purchasing Service", href: "/services" }
     ]
   },
   {
@@ -3030,14 +3029,6 @@ var navItems = [
     children: [
       { label: "Payment Information", href: "/payment-information" },
       { label: "About Us", href: "/about" }
-    ]
-  },
-  {
-    label: "Resources",
-    children: [
-      { label: "Sourcing Guide", href: "/resources" },
-      { label: "Our Blog", href: "/resources" },
-      { label: "Import from China", href: "/resources" }
     ]
   }
 ], languages = [
@@ -3081,25 +3072,25 @@ function Header({
         /* @__PURE__ */ jsxDEV2("div", { className: "flex items-center", children: /* @__PURE__ */ jsxDEV2("h1", { className: "text-xl font-bold", children: /* @__PURE__ */ jsxDEV2(Link, { to: "/", className: "flex items-center", children: [
           /* @__PURE__ */ jsxDEV2("span", { className: "text-orange-500 font-bold", children: "Tai" }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 113,
+            lineNumber: 104,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV2("span", { className: "text-gray-800 font-medium", children: "Sourcing" }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 114,
+            lineNumber: 105,
             columnNumber: 19
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 112,
+          lineNumber: 103,
           columnNumber: 13
         }, this) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 111,
+          lineNumber: 102,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 110,
+          lineNumber: 101,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV2("nav", { className: "hidden lg:flex items-center space-x-1", children: navItems.map((item) => /* @__PURE__ */ jsxDEV2(
@@ -3119,12 +3110,12 @@ function Header({
                   children: [
                     /* @__PURE__ */ jsxDEV2("span", { children: item.label }, void 0, !1, {
                       fileName: "app/components/header/Header.tsx",
-                      lineNumber: 133,
+                      lineNumber: 124,
                       columnNumber: 21
                     }, this),
                     /* @__PURE__ */ jsxDEV2(ChevronDownIcon, { className: "w-4 h-4" }, void 0, !1, {
                       fileName: "app/components/header/Header.tsx",
-                      lineNumber: 134,
+                      lineNumber: 125,
                       columnNumber: 21
                     }, this)
                   ]
@@ -3133,7 +3124,7 @@ function Header({
                 !0,
                 {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 128,
+                  lineNumber: 119,
                   columnNumber: 19
                 },
                 this
@@ -3150,18 +3141,18 @@ function Header({
                 !1,
                 {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 139,
+                  lineNumber: 130,
                   columnNumber: 25
                 },
                 this
               )) }, void 0, !1, {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 137,
+                lineNumber: 128,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 127,
+              lineNumber: 118,
               columnNumber: 17
             }, this) : /* @__PURE__ */ jsxDEV2(
               Link,
@@ -3174,7 +3165,7 @@ function Header({
               !1,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 152,
+                lineNumber: 143,
                 columnNumber: 17
               },
               this
@@ -3184,13 +3175,13 @@ function Header({
           !1,
           {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 121,
+            lineNumber: 112,
             columnNumber: 13
           },
           this
         )) }, void 0, !1, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 119,
+          lineNumber: 110,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ jsxDEV2("div", { className: "flex items-center space-x-4", children: [
@@ -3205,17 +3196,17 @@ function Header({
                 children: [
                   /* @__PURE__ */ jsxDEV2(GlobeAltIcon, { className: "w-4 h-4" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 169,
+                    lineNumber: 160,
                     columnNumber: 15
                   }, this),
                   /* @__PURE__ */ jsxDEV2("span", { className: "text-sm", children: languages.find((l) => l.code === currentLocale)?.label || "English" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 170,
+                    lineNumber: 161,
                     columnNumber: 15
                   }, this),
                   /* @__PURE__ */ jsxDEV2(ChevronDownIcon, { className: "w-3 h-3" }, void 0, !1, {
                     fileName: "app/components/header/Header.tsx",
-                    lineNumber: 171,
+                    lineNumber: 162,
                     columnNumber: 15
                   }, this)
                 ]
@@ -3224,7 +3215,7 @@ function Header({
               !0,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 165,
+                lineNumber: 156,
                 columnNumber: 13
               },
               this
@@ -3240,21 +3231,21 @@ function Header({
               !1,
               {
                 fileName: "app/components/header/Header.tsx",
-                lineNumber: 176,
+                lineNumber: 167,
                 columnNumber: 19
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 174,
+              lineNumber: 165,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 164,
+            lineNumber: 155,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ jsxDEV2("div", { className: "hidden md:block", children: /* @__PURE__ */ jsxDEV2(
+          isProductPage && /* @__PURE__ */ jsxDEV2("div", { className: "hidden md:block", children: /* @__PURE__ */ jsxDEV2(
             Link,
             {
               to: isSignedIn ? "/account" : "/sign-in",
@@ -3262,13 +3253,13 @@ function Header({
               children: [
                 /* @__PURE__ */ jsxDEV2(UserIcon, { className: "w-4 h-4" }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 196,
-                  columnNumber: 15
+                  lineNumber: 188,
+                  columnNumber: 17
                 }, this),
                 /* @__PURE__ */ jsxDEV2("span", { className: "text-sm", children: t(isSignedIn ? "account.myAccount" : "account.signIn") }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 197,
-                  columnNumber: 15
+                  lineNumber: 189,
+                  columnNumber: 17
                 }, this)
               ]
             },
@@ -3276,14 +3267,14 @@ function Header({
             !0,
             {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 192,
-              columnNumber: 13
+              lineNumber: 184,
+              columnNumber: 15
             },
             this
           ) }, void 0, !1, {
             fileName: "app/components/header/Header.tsx",
-            lineNumber: 191,
-            columnNumber: 11
+            lineNumber: 183,
+            columnNumber: 13
           }, this),
           isProductPage && /* @__PURE__ */ jsxDEV2(
             "button",
@@ -3294,12 +3285,12 @@ function Header({
               children: [
                 /* @__PURE__ */ jsxDEV2(ShoppingBagIcon, {}, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 208,
+                  lineNumber: 201,
                   columnNumber: 15
                 }, this),
                 cartQuantity ? /* @__PURE__ */ jsxDEV2("div", { className: "absolute rounded-full -top-2 -right-2 bg-orange-500 min-w-6 min-h-6 flex items-center justify-center text-xs text-white p-1", children: cartQuantity }, void 0, !1, {
                   fileName: "app/components/header/Header.tsx",
-                  lineNumber: 210,
+                  lineNumber: 203,
                   columnNumber: 17
                 }, this) : ""
               ]
@@ -3308,19 +3299,19 @@ function Header({
             !0,
             {
               fileName: "app/components/header/Header.tsx",
-              lineNumber: 203,
+              lineNumber: 196,
               columnNumber: 13
             },
             this
           )
         ] }, void 0, !0, {
           fileName: "app/components/header/Header.tsx",
-          lineNumber: 163,
+          lineNumber: 154,
           columnNumber: 9
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/header/Header.tsx",
-        lineNumber: 109,
+        lineNumber: 100,
         columnNumber: 7
       }, this)
     },
@@ -3328,7 +3319,7 @@ function Header({
     !1,
     {
       fileName: "app/components/header/Header.tsx",
-      lineNumber: 103,
+      lineNumber: 94,
       columnNumber: 5
     },
     this
@@ -3347,7 +3338,7 @@ import gql2 from "graphql-tag";
 import { print } from "graphql";
 
 // app/constants.ts
-var APP_META_TITLE = "Vendure Remix Storefront", APP_META_DESCRIPTION = "A headless commerce storefront starter kit built with Remix & Vendure", DEMO_API_URL = "https://readonlydemo.vendure.io/shop-api", API_URL = typeof process < "u" ? process.env.VENDURE_API_URL ?? DEMO_API_URL : DEMO_API_URL;
+var APP_META_TITLE = "Vendure Remix Storefront", APP_META_DESCRIPTION = "A headless commerce storefront starter kit built with Remix & Vendure", DEMO_API_URL = "https://readonlydemo.vendure.io/shop-api", API_URL = typeof process < "u" ? process.env.VENDURE_API_URL ?? DEMO_API_URL : DEMO_API_URL, BACKEND_URL = API_URL.replace("/shop-api", "");
 
 // app/generated/graphql.ts
 import gql from "graphql-tag";
@@ -4084,7 +4075,7 @@ async function sendQuery(options) {
       token && headers.append("Authorization", `Bearer ${token}`);
     }
   }
-  return fetch(API_URL, {
+  return fetch(typeof window > "u" ? API_URL : "/api/shop-api", {
     method: "POST",
     body: JSON.stringify(options),
     headers
@@ -4236,7 +4227,7 @@ function CartContents({
     /* @__PURE__ */ jsxDEV4("div", { className: "flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV4(
       "img",
       {
-        src: line.featuredAsset?.preview + "?preset=thumb",
+        src: BACKEND_URL + (line.featuredAsset?.preview || "") + "?preset=thumb",
         alt: line.productVariant.name,
         className: "w-full h-full object-center object-cover"
       },
@@ -4244,24 +4235,24 @@ function CartContents({
       !1,
       {
         fileName: "app/components/cart/CartContents.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 15
       },
       this
     ) }, void 0, !1, {
       fileName: "app/components/cart/CartContents.tsx",
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ jsxDEV4("div", { className: "ml-4 flex-1 flex flex-col", children: [
       /* @__PURE__ */ jsxDEV4("div", { children: /* @__PURE__ */ jsxDEV4("div", { className: "flex justify-between text-base font-medium text-gray-900", children: [
         /* @__PURE__ */ jsxDEV4("h3", { children: /* @__PURE__ */ jsxDEV4(Link2, { to: `/products/${line.productVariant.product.slug}`, children: line.productVariant.name }, void 0, !1, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 39,
+          lineNumber: 40,
           columnNumber: 21
         }, this) }, void 0, !1, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 38,
+          lineNumber: 39,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ jsxDEV4("p", { className: "ml-4", children: /* @__PURE__ */ jsxDEV4(
@@ -4274,29 +4265,29 @@ function CartContents({
           !1,
           {
             fileName: "app/components/cart/CartContents.tsx",
-            lineNumber: 44,
+            lineNumber: 45,
             columnNumber: 21
           },
           this
         ) }, void 0, !1, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 43,
+          lineNumber: 44,
           columnNumber: 19
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/cart/CartContents.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 17
       }, this) }, void 0, !1, {
         fileName: "app/components/cart/CartContents.tsx",
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ jsxDEV4("div", { className: "flex-1 flex items-center text-sm", children: [
         editable ? /* @__PURE__ */ jsxDEV4(Form, { children: [
           /* @__PURE__ */ jsxDEV4("label", { htmlFor: `quantity-${line.id}`, className: "mr-2", children: t("common.quantity") }, void 0, !1, {
             fileName: "app/components/cart/CartContents.tsx",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 21
           }, this),
           /* @__PURE__ */ jsxDEV4(
@@ -4311,42 +4302,42 @@ function CartContents({
               children: [
                 /* @__PURE__ */ jsxDEV4("option", { value: 1, children: "1" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 68,
+                  lineNumber: 69,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 2, children: "2" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 69,
+                  lineNumber: 70,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 3, children: "3" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 70,
+                  lineNumber: 71,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 4, children: "4" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 71,
+                  lineNumber: 72,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 5, children: "5" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 72,
+                  lineNumber: 73,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 6, children: "6" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 73,
+                  lineNumber: 74,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 7, children: "7" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 74,
+                  lineNumber: 75,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV4("option", { value: 8, children: "8" }, void 0, !1, {
                   fileName: "app/components/cart/CartContents.tsx",
-                  lineNumber: 75,
+                  lineNumber: 76,
                   columnNumber: 23
                 }, this)
               ]
@@ -4355,34 +4346,34 @@ function CartContents({
             !0,
             {
               fileName: "app/components/cart/CartContents.tsx",
-              lineNumber: 57,
+              lineNumber: 58,
               columnNumber: 21
             },
             this
           )
         ] }, void 0, !0, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 53,
+          lineNumber: 54,
           columnNumber: 19
         }, this) : /* @__PURE__ */ jsxDEV4("div", { className: "text-gray-800", children: [
           /* @__PURE__ */ jsxDEV4("span", { className: "mr-1", children: t("common.quantity") }, void 0, !1, {
             fileName: "app/components/cart/CartContents.tsx",
-            lineNumber: 80,
+            lineNumber: 81,
             columnNumber: 21
           }, this),
           /* @__PURE__ */ jsxDEV4("span", { className: "font-medium", children: line.quantity }, void 0, !1, {
             fileName: "app/components/cart/CartContents.tsx",
-            lineNumber: 81,
+            lineNumber: 82,
             columnNumber: 21
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 79,
+          lineNumber: 80,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ jsxDEV4("div", { className: "flex-1" }, void 0, !1, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 84,
+          lineNumber: 85,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ jsxDEV4("div", { className: "flex", children: isEditable && /* @__PURE__ */ jsxDEV4(
@@ -4399,36 +4390,36 @@ function CartContents({
           !1,
           {
             fileName: "app/components/cart/CartContents.tsx",
-            lineNumber: 87,
+            lineNumber: 88,
             columnNumber: 21
           },
           this
         ) }, void 0, !1, {
           fileName: "app/components/cart/CartContents.tsx",
-          lineNumber: 85,
+          lineNumber: 86,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/cart/CartContents.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 15
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/cart/CartContents.tsx",
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 13
     }, this)
   ] }, line.id, !0, {
     fileName: "app/components/cart/CartContents.tsx",
-    lineNumber: 26,
+    lineNumber: 27,
     columnNumber: 11
   }, this)) }, void 0, !1, {
     fileName: "app/components/cart/CartContents.tsx",
-    lineNumber: 24,
+    lineNumber: 25,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/cart/CartContents.tsx",
-    lineNumber: 23,
+    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
@@ -4948,31 +4939,22 @@ function Footer({
             lineNumber: 57,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV6("li", { children: /* @__PURE__ */ jsxDEV6("a", { href: "/services/dropshipping", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Dropshipping Service" }, void 0, !1, {
-            fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 58,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 58,
-            columnNumber: 15
-          }, this),
           /* @__PURE__ */ jsxDEV6("li", { children: /* @__PURE__ */ jsxDEV6("a", { href: "/solutions/shipping", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Shipping Solutions" }, void 0, !1, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 59,
+            lineNumber: 58,
             columnNumber: 19
           }, this) }, void 0, !1, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 59,
+            lineNumber: 58,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV6("li", { children: /* @__PURE__ */ jsxDEV6("a", { href: "/solutions/quality-control", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Quality Control" }, void 0, !1, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 60,
+            lineNumber: 59,
             columnNumber: 19
           }, this) }, void 0, !1, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 60,
+            lineNumber: 59,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
@@ -4988,98 +4970,98 @@ function Footer({
       /* @__PURE__ */ jsxDEV6("div", { children: [
         /* @__PURE__ */ jsxDEV6("h3", { className: "text-sm font-semibold text-gray-400 uppercase mb-6", children: "CONTACT US" }, void 0, !1, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 65,
+          lineNumber: 64,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV6("ul", { className: "space-y-4", children: [
           /* @__PURE__ */ jsxDEV6("li", { children: [
             /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-500 text-xs uppercase mb-1", children: "Email" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 68,
+              lineNumber: 67,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV6("a", { href: "mailto:info@Taisourcing@gmail.com", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "info@Taisourcing@gmail.com" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV6("a", { href: "mailto:Taisourcing@gmail.com", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Taisourcing@gmail.com" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 69,
+              lineNumber: 68,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 67,
+            lineNumber: 66,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV6("li", { children: [
             /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-500 text-xs uppercase mb-1", children: "Tel (China)" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 72,
+              lineNumber: 71,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV6("a", { href: "tel:+8617793529591", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "+86 17793529591" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 73,
+              lineNumber: 72,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 71,
+            lineNumber: 70,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV6("li", { children: [
             /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-500 text-xs uppercase mb-1", children: "WhatsApp" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 76,
+              lineNumber: 75,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV6("a", { href: "https://wa.me/8617793529591", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "+86 17793529591" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 77,
+              lineNumber: 76,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 75,
+            lineNumber: 74,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 66,
+          lineNumber: 65,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV6("div", { className: "mt-6", children: [
           /* @__PURE__ */ jsxDEV6("h4", { className: "text-sm font-semibold text-gray-400 uppercase mb-3", children: "WORKING HOURS" }, void 0, !1, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 81,
+            lineNumber: 80,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV6("ul", { className: "space-y-1", children: [
             /* @__PURE__ */ jsxDEV6("li", { className: "text-gray-400 text-sm", children: "Mon-Fri: 9:00 AM - 6:00 PM" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 83,
+              lineNumber: 82,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV6("li", { className: "text-gray-400 text-sm", children: "Sat: 9:00 AM - 4:00 PM" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 84,
+              lineNumber: 83,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV6("li", { className: "text-gray-500 text-xs mt-1", children: "(China Standard Time)" }, void 0, !1, {
               fileName: "app/components/footer/Footer.tsx",
-              lineNumber: 85,
+              lineNumber: 84,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/footer/Footer.tsx",
-            lineNumber: 82,
+            lineNumber: 81,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 80,
+          lineNumber: 79,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/footer/Footer.tsx",
-        lineNumber: 64,
+        lineNumber: 63,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
@@ -5090,37 +5072,37 @@ function Footer({
     /* @__PURE__ */ jsxDEV6("div", { className: "mt-12 pt-8 border-t border-gray-800", children: /* @__PURE__ */ jsxDEV6("div", { className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0", children: [
       /* @__PURE__ */ jsxDEV6("p", { className: "text-gray-500 text-sm", children: "Copyright 2026 Tai Sourcing. All Rights Reserved." }, void 0, !1, {
         fileName: "app/components/footer/Footer.tsx",
-        lineNumber: 93,
+        lineNumber: 92,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV6("div", { className: "flex space-x-6", children: [
         /* @__PURE__ */ jsxDEV6("a", { href: "#", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Privacy Policy" }, void 0, !1, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 97,
+          lineNumber: 96,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV6("a", { href: "#", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Terms of Service" }, void 0, !1, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 98,
+          lineNumber: 97,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV6("a", { href: "#", className: "text-gray-400 hover:text-orange-500 text-sm transition-colors", children: "Cookie Policy" }, void 0, !1, {
           fileName: "app/components/footer/Footer.tsx",
-          lineNumber: 99,
+          lineNumber: 98,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/footer/Footer.tsx",
-        lineNumber: 96,
+        lineNumber: 95,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/footer/Footer.tsx",
-      lineNumber: 92,
+      lineNumber: 91,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/components/footer/Footer.tsx",
-      lineNumber: 91,
+      lineNumber: 90,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -7233,38 +7215,64 @@ function VerifyEmailAddressChangeTokenPage() {
 // app/routes/solutions.quality-control.tsx
 var solutions_quality_control_exports = {};
 __export(solutions_quality_control_exports, {
-  default: () => QualityControlPage
+  default: () => QualityControlPage,
+  loader: () => loader5
 });
+import { json as json3 } from "@remix-run/node";
+import { useLoaderData as useLoaderData5 } from "@remix-run/react";
+
+// app/data/page-images.json
+var page_images_default = {
+  "shipping-solutions": {
+    "hero-image": "/assets/preview/2a/hero-image__preview.png",
+    "international-express": "/assets/preview/ce/international-express__preview.png",
+    "sea-freight": "/assets/preview/11/air-freight__preview.png",
+    "air-freight": "/assets/preview/4b/1sea-freight__preview.png",
+    "railway-freight": "/assets/preview/d3/railway-freight__preview.jpg"
+  },
+  "quality-control": {
+    "hero-image": "/assets/preview/56/quality-control__preview.webp",
+    "general-inspection": "/assets/preview/6a/general-inspection-qc-__preview.jpg",
+    "full-inspection": "/assets/preview/f5/full-inspection-qc-service__preview.jpg"
+  }
+};
+
+// app/routes/solutions.quality-control.tsx
 import { jsxDEV as jsxDEV20 } from "react/jsx-dev-runtime";
+var loader5 = async () => json3({ images: page_images_default["quality-control"] || {} });
 function QualityControlPage() {
+  let { images } = useLoaderData5(), getImageUrl = (name) => {
+    let path = images[name];
+    return path ? `${BACKEND_URL}${path}` : null;
+  };
   return /* @__PURE__ */ jsxDEV20("div", { className: "min-h-screen", children: [
     /* @__PURE__ */ jsxDEV20("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
       /* @__PURE__ */ jsxDEV20("div", { children: [
         /* @__PURE__ */ jsxDEV20("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Quality Control" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 8,
+          lineNumber: 27,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("p", { className: "text-white/90 text-lg mb-8", children: "Quality inspection is crucial. We take it very seriously to ensure your supply chain is worry-free." }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 11,
+          lineNumber: 30,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get a Quote" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 14,
+          lineNumber: 33,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 7,
+        lineNumber: 26,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "relative", children: [
         /* @__PURE__ */ jsxDEV20(
           "img",
           {
-            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20inspectors%20checking%20products%20in%20factory&image_size=landscape_4_3",
+            src: getImageUrl("hero-image") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20inspectors%20checking%20products%20in%20factory&image_size=landscape_4_3",
             alt: "Quality Control",
             className: "w-full aspect-video object-cover rounded-xl shadow-lg"
           },
@@ -7272,7 +7280,7 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 19,
+            lineNumber: 38,
             columnNumber: 15
           },
           this
@@ -7280,75 +7288,75 @@ function QualityControlPage() {
         /* @__PURE__ */ jsxDEV20("div", { className: "absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg", children: /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-3", children: [
           /* @__PURE__ */ jsxDEV20("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 28,
+            lineNumber: 47,
             columnNumber: 23
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 27,
+            lineNumber: 46,
             columnNumber: 21
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 26,
+            lineNumber: 45,
             columnNumber: 19
           }, this),
           /* @__PURE__ */ jsxDEV20("div", { children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "text-sm text-gray-500", children: "Inspection Method" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 32,
+              lineNumber: 51,
               columnNumber: 21
             }, this),
             /* @__PURE__ */ jsxDEV20("div", { className: "font-semibold text-gray-900", children: "AQL 2.5 Standard" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 33,
+              lineNumber: 52,
               columnNumber: 21
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 31,
+            lineNumber: 50,
             columnNumber: 19
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 25,
+          lineNumber: 44,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 24,
+          lineNumber: 43,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 18,
+        lineNumber: 37,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 6,
+      lineNumber: 25,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 5,
+      lineNumber: 24,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 4,
+      lineNumber: 23,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Our Quality Guarantee" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 45,
+          lineNumber: 64,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "When you choose our Pro Plan and use our selected suppliers, we guarantee your product quality." }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 48,
+          lineNumber: 67,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 44,
+        lineNumber: 63,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-8", children: [
@@ -7356,139 +7364,139 @@ function QualityControlPage() {
           /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-4 mb-6", children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 58,
+              lineNumber: 77,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 57,
+              lineNumber: 76,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 56,
+              lineNumber: 75,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900", children: "Free Replacement" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 61,
+              lineNumber: 80,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 55,
+            lineNumber: 74,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "If we find defective products during quality inspection at our warehouse, we will help you replace them for free." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 63,
+            lineNumber: 82,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 54,
+          lineNumber: 73,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "bg-gray-50 rounded-xl p-8 border-l-4 border-orange-500", children: [
           /* @__PURE__ */ jsxDEV20("div", { className: "flex items-center gap-4 mb-6", children: [
             /* @__PURE__ */ jsxDEV20("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV20("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV20("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 72,
+              lineNumber: 91,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 71,
+              lineNumber: 90,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 70,
+              lineNumber: 89,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900", children: "15-Day Warranty" }, void 0, !1, {
               fileName: "app/routes/solutions.quality-control.tsx",
-              lineNumber: 75,
+              lineNumber: 94,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 69,
+            lineNumber: 88,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600", children: "If you find product defects within 15 days after receiving the goods and provide relevant evidence, we will arrange replacements or refunds." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 77,
+            lineNumber: 96,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 68,
+          lineNumber: 87,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 53,
+        lineNumber: 72,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 43,
+      lineNumber: 62,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 42,
+      lineNumber: 61,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "How We Inspect Your Products" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 88,
+          lineNumber: 107,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 91,
+          lineNumber: 110,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 87,
+        lineNumber: 106,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center mb-12", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "order-2 md:order-1", children: [
           /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "General Inspection" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 96,
+            lineNumber: 115,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "Whether you choose our Pro Plan or Basic Plan, your goods will be sent to our warehouse for free comprehensive inspection. We follow Level II standards, AQL 2.5 standards, just like other inspection companies." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 97,
+            lineNumber: 116,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "For defective products, if you use our selected suppliers, we will handle quality issues for free. If you use your own suppliers, we can assist in solving the problem, but there may be charges for logistics and re-inspection fees." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 100,
+            lineNumber: 119,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-6", children: "If you need a customized inspection solution or a lower defect rate, contact our agent for details on any additional costs." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 103,
+            lineNumber: 122,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Contact Our Agent" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 106,
+            lineNumber: 125,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 95,
+          lineNumber: 114,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "order-1 md:order-2", children: /* @__PURE__ */ jsxDEV20(
           "img",
           {
-            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Workers%20inspecting%20products%20in%20warehouse%20with%20checklist&image_size=landscape_4_3",
+            src: getImageUrl("general-inspection") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Workers%20inspecting%20products%20in%20warehouse%20with%20checklist&image_size=landscape_4_3",
             alt: "General Inspection",
             className: "w-full aspect-video object-cover rounded-xl shadow-lg"
           },
@@ -7496,25 +7504,25 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 111,
+            lineNumber: 130,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 110,
+          lineNumber: 129,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 94,
+        lineNumber: 113,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { children: /* @__PURE__ */ jsxDEV20(
           "img",
           {
-            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20worker%20testing%20product%20with%20tools&image_size=landscape_4_3",
+            src: getImageUrl("full-inspection") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20worker%20testing%20product%20with%20tools&image_size=landscape_4_3",
             alt: "Full Inspection",
             className: "w-full aspect-video object-cover rounded-xl shadow-lg"
           },
@@ -7522,156 +7530,156 @@ function QualityControlPage() {
           !1,
           {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 121,
+            lineNumber: 140,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 120,
+          lineNumber: 139,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { children: [
           /* @__PURE__ */ jsxDEV20("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Full Inspection" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 128,
+            lineNumber: 147,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("p", { className: "text-gray-600 mb-4", children: "To achieve 0% defect rate, we recommend our full inspection service to identify and remove all defective products. Our standard rate is $5 per hour. Contact our agent to discuss your needs and get a customized quote." }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 129,
+            lineNumber: 148,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV20("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get Started Now" }, void 0, !1, {
             fileName: "app/routes/solutions.quality-control.tsx",
-            lineNumber: 132,
+            lineNumber: 151,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 127,
+          lineNumber: 146,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 119,
+        lineNumber: 138,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 86,
+      lineNumber: 105,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 85,
+      lineNumber: 104,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV20("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-8", children: [
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "98%" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 144,
+          lineNumber: 163,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Defect Detection Rate" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 145,
+          lineNumber: 164,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 143,
+        lineNumber: 162,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "24h" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 148,
+          lineNumber: 167,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Inspection Report" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 149,
+          lineNumber: 168,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 147,
+        lineNumber: 166,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "50+" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 152,
+          lineNumber: 171,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Quality Inspectors" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 153,
+          lineNumber: 172,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 151,
+        lineNumber: 170,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV20("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV20("div", { className: "text-4xl font-bold text-orange-500 mb-2", children: "10K+" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 156,
+          lineNumber: 175,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV20("div", { className: "text-gray-600", children: "Products Inspected Monthly" }, void 0, !1, {
           fileName: "app/routes/solutions.quality-control.tsx",
-          lineNumber: 157,
+          lineNumber: 176,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 155,
+        lineNumber: 174,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 142,
+      lineNumber: 161,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 141,
+      lineNumber: 160,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 140,
+      lineNumber: 159,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV20("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV20("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
       /* @__PURE__ */ jsxDEV20("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Need Custom Quality Control Solutions?" }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 165,
+        lineNumber: 184,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("p", { className: "text-white/90 text-lg mb-8", children: "Our quality control team will analyze your product requirements and provide the most suitable inspection plan." }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 168,
+        lineNumber: 187,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV20("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Our QC Team" }, void 0, !1, {
         fileName: "app/routes/solutions.quality-control.tsx",
-        lineNumber: 171,
+        lineNumber: 190,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 164,
+      lineNumber: 183,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.quality-control.tsx",
-      lineNumber: 163,
+      lineNumber: 182,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/solutions.quality-control.tsx",
-    lineNumber: 3,
+    lineNumber: 22,
     columnNumber: 5
   }, this);
 }
@@ -7681,23 +7689,23 @@ var account_addresses_new_exports = {};
 __export(account_addresses_new_exports, {
   action: () => action3,
   default: () => NewAddress,
-  loader: () => loader5
+  loader: () => loader6
 });
 import {
   useActionData as useActionData2,
-  useLoaderData as useLoaderData5,
+  useLoaderData as useLoaderData6,
   useNavigate as useNavigate2,
   useNavigation as useNavigation2,
   useSubmit as useSubmit2
 } from "@remix-run/react";
-import { json as json3 } from "@remix-run/server-runtime";
+import { json as json4 } from "@remix-run/server-runtime";
 import { useRef as useRef4, useEffect as useEffect9 } from "react";
 import { validationError as validationError2 } from "remix-validated-form";
 import { useTranslation as useTranslation13 } from "react-i18next";
 import { jsxDEV as jsxDEV21 } from "react/jsx-dev-runtime";
-async function loader5({ request, params }) {
+async function loader6({ request, params }) {
   let { availableCountries } = await getAvailableCountries({ request });
-  return json3({ availableCountries });
+  return json4({ availableCountries });
 }
 async function action3({ request, params }) {
   let body = await request.formData(), result = await validator.validate(body);
@@ -7717,12 +7725,12 @@ async function action3({ request, params }) {
       streetLine2: data.streetLine2
     },
     { request }
-  ), json3({
+  ), json4({
     saved: !0
   });
 }
 function NewAddress() {
-  let { availableCountries } = useLoaderData5(), navigation = useNavigation2(), actionData = useActionData2(), navigate = useNavigate2(), { state, close } = use_toggle_state_default(!0), { t } = useTranslation13(), formRef = useRef4(null), submit = useSubmit2();
+  let { availableCountries } = useLoaderData6(), navigation = useNavigation2(), actionData = useActionData2(), navigate = useNavigate2(), { state, close } = use_toggle_state_default(!0), { t } = useTranslation13(), formRef = useRef4(null), submit = useSubmit2();
   useEffect9(() => {
     actionData?.saved && close();
   }, [actionData]);
@@ -7805,12 +7813,26 @@ import { jsxDEV as jsxDEV22 } from "react/jsx-dev-runtime";
 function DropshippingPage() {
   return /* @__PURE__ */ jsxDEV22("div", { className: "min-h-screen", children: [
     /* @__PURE__ */ jsxDEV22("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV22("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
-      /* @__PURE__ */ jsxDEV22("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "We Help You Ship Globally" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "We Help You Dropship Worldwide" }, void 0, !1, {
         fileName: "app/routes/services.dropshipping.tsx",
         lineNumber: 6,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV22("p", { className: "text-white/90 text-lg max-w-2xl mx-auto", children: "Besides bulk shipping, if you place an order valued at $1000 or more under our Pro Plan or Basic Plan, we can also ship your products directly to your customers." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("p", { className: "text-white/90 text-lg max-w-3xl mx-auto", children: [
+        "In addition to shipping your products in bulk, we can also deliver your products individually to your end customers if you make a single order worth $1,000 or more under our ",
+        /* @__PURE__ */ jsxDEV22("span", { className: "font-semibold", children: "Pro Plan" }, void 0, !1, {
+          fileName: "app/routes/services.dropshipping.tsx",
+          lineNumber: 10,
+          columnNumber: 187
+        }, this),
+        " or ",
+        /* @__PURE__ */ jsxDEV22("span", { className: "font-semibold", children: "Basic Plan" }, void 0, !1, {
+          fileName: "app/routes/services.dropshipping.tsx",
+          lineNumber: 10,
+          columnNumber: 238
+        }, this),
+        "."
+      ] }, void 0, !0, {
         fileName: "app/routes/services.dropshipping.tsx",
         lineNumber: 9,
         columnNumber: 11
@@ -7834,29 +7856,16 @@ function DropshippingPage() {
         lineNumber: 17,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "grid md:grid-cols-2 gap-6", children: [
-        /* @__PURE__ */ jsxDEV22("div", { className: "bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border border-orange-200", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-6", children: /* @__PURE__ */ jsxDEV22("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV22("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 27,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 26,
-            columnNumber: 17
-          }, this) }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6", children: [
+        /* @__PURE__ */ jsxDEV22("div", { className: "bg-white rounded-xl p-6 border-2 border-orange-200 hover:border-orange-400 transition-colors duration-300", children: [
+          /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-bold text-orange-600 mb-3", children: "Competitive Product Price" }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
             lineNumber: 25,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Competitive Product Prices" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm leading-relaxed", children: "We specialize in finding and sourcing directly from competitive factories, setting us apart from typical dropshipping agencies that primarily work with wholesalers and only assist clients in purchasing ready-made products." }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 30,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 leading-relaxed", children: "We focus on purchasing directly from competitive factories, which is different from traditional agents who mainly collaborate with trading companies. We truly achieve the role of a typical dropshipping agent for our customers." }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 31,
+            lineNumber: 26,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
@@ -7864,91 +7873,52 @@ function DropshippingPage() {
           lineNumber: 24,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV22("div", { className: "bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-6", children: /* @__PURE__ */ jsxDEV22("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV22("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV22("div", { className: "bg-white rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-colors duration-300", children: [
+          /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-bold text-blue-600 mb-3", children: "Lower Logistics & Fulfillment Costs" }, void 0, !1, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 32,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm leading-relaxed", children: "Unlike typical dropshipping companies, we prioritize sourcing as our main profit source and don't have profit expectations on logistics. Dropshipping is simply a convenient logistics solution we provide to our clients." }, void 0, !1, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 33,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/services.dropshipping.tsx",
+          lineNumber: 31,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV22("div", { className: "bg-white rounded-xl p-6 border-2 border-orange-200 hover:border-orange-400 transition-colors duration-300", children: [
+          /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-bold text-orange-600 mb-3", children: "More Customization Flexibility" }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
             lineNumber: 39,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 38,
-            columnNumber: 17
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 37,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Reduce Logistics & Fulfillment Costs" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm leading-relaxed", children: "As an experienced sourcing company, we excel in customizing and manufacturing products. We can assist you in product development, packaging customization, and other tasks that other dropshipping companies may not offer." }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 42,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 leading-relaxed", children: "Unlike typical dropshipping companies, we prioritize purchasing as our main profit source, while logistics serves as a supporting function. Dropshipping is just a one-stop logistics solution we provide to customers." }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 43,
+            lineNumber: 40,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.dropshipping.tsx",
-          lineNumber: 36,
+          lineNumber: 38,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV22("div", { className: "bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border border-orange-200", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-6", children: /* @__PURE__ */ jsxDEV22("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV22("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV22("div", { className: "bg-white rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-colors duration-300", children: [
+          /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-bold text-blue-600 mb-3", children: "In-house IT Solutions" }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 51,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 50,
-            columnNumber: 17
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 49,
+            lineNumber: 46,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "More Customization Flexibility" }, void 0, !1, {
+          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm leading-relaxed", children: "Whether your store is set up on platforms like Shopify or you have a self-built system, our dedicated IT team can seamlessly integrate your store with our systems and provide comprehensive technical support." }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 54,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 leading-relaxed", children: "As a well-rounded sourcing company, we excel in customization and product development. We can help complete tasks such as packaging customization and other tasks that other dropshipping companies cannot accomplish." }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 55,
+            lineNumber: 47,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.dropshipping.tsx",
-          lineNumber: 48,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV22("div", { className: "bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-6", children: /* @__PURE__ */ jsxDEV22("svg", { className: "w-6 h-6 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV22("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 63,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 62,
-            columnNumber: 17
-          }, this) }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 61,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Internal IT Solutions" }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 66,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 leading-relaxed", children: "Whether you are on Shopify, eBay, or your own website, our professional IT team can seamlessly integrate your store with our system, providing comprehensive technical support." }, void 0, !1, {
-            fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 67,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/services.dropshipping.tsx",
-          lineNumber: 60,
+          lineNumber: 45,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
@@ -7958,11 +7928,11 @@ function DropshippingPage() {
       }, this),
       /* @__PURE__ */ jsxDEV22("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxDEV22("button", { className: "px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Start Dropshipping" }, void 0, !1, {
         fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 74,
+        lineNumber: 54,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 73,
+        lineNumber: 53,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
@@ -7974,199 +7944,215 @@ function DropshippingPage() {
       lineNumber: 15,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV22("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV22("div", { className: "max-w-6xl mx-auto px-6", children: [
-      /* @__PURE__ */ jsxDEV22("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV22("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-4", children: "Complete 4 Simple Steps with TaiSourcing" }, void 0, !1, {
-        fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 84,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 83,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
-        /* @__PURE__ */ jsxDEV22("div", { className: "relative", children: [
-          /* @__PURE__ */ jsxDEV22("div", { className: "absolute top-0 left-0 w-1 h-full bg-white/20" }, void 0, !1, {
+    /* @__PURE__ */ jsxDEV22("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV22("div", { className: "max-w-6xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV22("div", { className: "text-center mb-12", children: [
+        /* @__PURE__ */ jsxDEV22("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Dropship with TaiSourcing in 4 Simple Steps" }, void 0, !1, {
+          fileName: "app/routes/services.dropshipping.tsx",
+          lineNumber: 64,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV22("div", { className: "flex items-center justify-center gap-2", children: [
+          /* @__PURE__ */ jsxDEV22("div", { className: "w-16 h-0.5 bg-orange-500" }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 91,
+            lineNumber: 68,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ jsxDEV22("div", { className: "space-y-8 pl-8", children: [
-            /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-6", children: [
-              /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-orange-500 font-bold", children: "1" }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 95,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 94,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV22("div", { children: [
-                /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-semibold text-white mb-2", children: "Submit your inquiry and choose a service plan." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 98,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ jsxDEV22("p", { className: "text-white/80", children: "Tell us about your products and requirements." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 99,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, !0, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 97,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/routes/services.dropshipping.tsx",
-              lineNumber: 93,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-6", children: [
-              /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-orange-500 font-bold", children: "2" }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 105,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 104,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV22("div", { children: [
-                /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-semibold text-white mb-2", children: "We will track production and collect products to the warehouse." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 108,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ jsxDEV22("p", { className: "text-white/80", children: "Quality inspection and packaging." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 109,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, !0, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 107,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/routes/services.dropshipping.tsx",
-              lineNumber: 103,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-6", children: [
-              /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-orange-500 font-bold", children: "3" }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 115,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 114,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV22("div", { children: [
-                /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-semibold text-white mb-2", children: "We integrate your store with our system and fulfill orders for your customers." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 118,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ jsxDEV22("p", { className: "text-white/80", children: "Auto-sync orders and shipping." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 119,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, !0, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 117,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/routes/services.dropshipping.tsx",
-              lineNumber: 113,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-6", children: [
-              /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-orange-500 font-bold", children: "4" }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 125,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 124,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV22("div", { children: [
-                /* @__PURE__ */ jsxDEV22("h3", { className: "text-xl font-semibold text-white mb-2", children: "The system automatically updates logistics tracking and order status." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 128,
-                  columnNumber: 21
-                }, this),
-                /* @__PURE__ */ jsxDEV22("p", { className: "text-white/80", children: "Real-time tracking for you and your customers." }, void 0, !1, {
-                  fileName: "app/routes/services.dropshipping.tsx",
-                  lineNumber: 129,
-                  columnNumber: 21
-                }, this)
-              ] }, void 0, !0, {
-                fileName: "app/routes/services.dropshipping.tsx",
-                lineNumber: 127,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/routes/services.dropshipping.tsx",
-              lineNumber: 123,
-              columnNumber: 17
-            }, this)
-          ] }, void 0, !0, {
+          /* @__PURE__ */ jsxDEV22("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV22("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" }, void 0, !1, {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 92,
+            lineNumber: 70,
+            columnNumber: 17
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 69,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV22("div", { className: "w-16 h-0.5 bg-orange-500" }, void 0, !1, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 72,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.dropshipping.tsx",
-          lineNumber: 90,
+          lineNumber: 67,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/services.dropshipping.tsx",
+        lineNumber: 63,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV22("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
+        /* @__PURE__ */ jsxDEV22("div", { className: "space-y-8", children: [
+          /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-white font-bold", children: "1" }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 80,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 79,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV22("div", { children: [
+              /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-semibold text-gray-900 mb-1", children: "Submit your inquiry and choose a service plan." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 83,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm", children: "Tell us about your products and requirements to get started." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 84,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 82,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 78,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-white font-bold", children: "2" }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 90,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 89,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV22("div", { children: [
+              /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-semibold text-gray-900 mb-1", children: "We follow up on production and collect products to our warehouse." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 93,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm", children: "Quality inspection and professional packaging." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 94,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 92,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 88,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-white font-bold", children: "3" }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 100,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 99,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV22("div", { children: [
+              /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-semibold text-gray-900 mb-1", children: "We integrate your store with our system and fulfill orders for your end customers." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 103,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm", children: "Automated order sync and fast shipping." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 104,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 102,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 98,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV22("div", { className: "flex items-start gap-4", children: [
+            /* @__PURE__ */ jsxDEV22("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV22("span", { className: "text-white font-bold", children: "4" }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 110,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 109,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV22("div", { children: [
+              /* @__PURE__ */ jsxDEV22("h3", { className: "text-lg font-semibold text-gray-900 mb-1", children: "The system automatically updates logistics tracking and order status." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 113,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV22("p", { className: "text-gray-600 text-sm", children: "Real-time tracking for you and your customers." }, void 0, !1, {
+                fileName: "app/routes/services.dropshipping.tsx",
+                lineNumber: 114,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/routes/services.dropshipping.tsx",
+              lineNumber: 112,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/routes/services.dropshipping.tsx",
+            lineNumber: 108,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/services.dropshipping.tsx",
+          lineNumber: 77,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV22("div", { className: "relative", children: /* @__PURE__ */ jsxDEV22(
+        /* @__PURE__ */ jsxDEV22("div", { children: /* @__PURE__ */ jsxDEV22(
           "img",
           {
-            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Woman%20working%20in%20warehouse%20with%20laptop%20and%20shipping%20boxes&image_size=landscape_4_3",
-            alt: "Dropshipping",
+            src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Woman%20business%20owner%20working%20in%20warehouse%20with%20laptop%20and%20shipping%20boxes%20ecommerce%20fulfillment&image_size=landscape_4_3",
+            alt: "Dropshipping Process",
             className: "w-full aspect-video object-cover rounded-xl shadow-lg"
           },
           void 0,
           !1,
           {
             fileName: "app/routes/services.dropshipping.tsx",
-            lineNumber: 136,
+            lineNumber: 120,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/services.dropshipping.tsx",
-          lineNumber: 135,
+          lineNumber: 119,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 89,
+        lineNumber: 76,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV22("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxDEV22("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Us Now to Get Started" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV22("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxDEV22("button", { className: "px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get in Touch to Start Today" }, void 0, !1, {
         fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 145,
+        lineNumber: 129,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/services.dropshipping.tsx",
-        lineNumber: 144,
+        lineNumber: 128,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/services.dropshipping.tsx",
-      lineNumber: 82,
+      lineNumber: 62,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/services.dropshipping.tsx",
-      lineNumber: 81,
+      lineNumber: 61,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -8195,7 +8181,7 @@ function PaymentInformationPage() {
         lineNumber: 9,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mt-6 max-w-2xl mx-auto", children: "The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to info@Taisourcing@gmail.com for further confirmation." }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mt-6 max-w-2xl mx-auto", children: "The official payment methods that TaiSourcing accepts are listed in the following. If you have any questions about payments, or someone offers other payment information which is not listed here, please send an email to Taisourcing@gmail.com for further confirmation." }, void 0, !1, {
         fileName: "app/routes/payment-information.tsx",
         lineNumber: 10,
         columnNumber: 11
@@ -8211,102 +8197,35 @@ function PaymentInformationPage() {
     }, this),
     /* @__PURE__ */ jsxDEV23("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV23("div", { className: "max-w-4xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV23("div", { className: "mb-12", children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "1. Wire Transfer From All Countries" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "1. PayPal" }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 19,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "Wire transfer is the most frequently used method in international trading with the lowest transfer fee ($20 to $40 based on banks for any amount of USD payments)." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 20,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "Wire transfer is the most frequently used method in international trading with the lowest transfer fee ($20 to $40 based on banks for any amount of USD payments)." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-8", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
           lineNumber: 23,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-8", children: "You can finish wire transfer by visiting local banks or using online wire transfer companies like Veem ($20 fee), Wise ($10-$30 fees). Please note we only accept USD payments." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 26,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Account Name:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 31,
-              columnNumber: 44
-            }, this),
-            " Jingqosource Trading Co., Limited"
-          ] }, void 0, !0, {
+        /* @__PURE__ */ jsxDEV23("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
+          /* @__PURE__ */ jsxDEV23("strong", { children: "Our PayPal Account:" }, void 0, !1, {
             fileName: "app/routes/payment-information.tsx",
-            lineNumber: 31,
-            columnNumber: 15
+            lineNumber: 28,
+            columnNumber: 44
           }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Account Number:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 32,
-              columnNumber: 44
-            }, this),
-            " 621483010782818345"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 32,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Account Address:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 33,
-              columnNumber: 44
-            }, this),
-            " Room 101, 828 Chengxin Ave, Yiwu, Zhejiang, China, Post code 322000."
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 33,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "SWIFT / T Code:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 34,
-              columnNumber: 44
-            }, this),
-            " SZDBCCNBS"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 34,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Beneficiary Bank:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 35,
-              columnNumber: 44
-            }, this),
-            " PING AN BANK CO., LTD"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 35,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Bank Address:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 36,
-              columnNumber: 44
-            }, this),
-            " NO. 5047, ROAD SHENNAN DONG, SHENZHEN, P. R. CHINA"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 36,
-            columnNumber: 15
-          }, this)
+          " 17782584551@163.com"
         ] }, void 0, !0, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 30,
+          lineNumber: 28,
+          columnNumber: 15
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/payment-information.tsx",
+          lineNumber: 27,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
@@ -8314,128 +8233,35 @@ function PaymentInformationPage() {
         lineNumber: 18,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "mb-12", children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "2. Payoneer" }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 41,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "Payoneer is quite popular with Amazon sellers to withdraw money from Amazon and arrange payment to suppliers. If you already have a Payoneer account and it has balance, you can directly pay to our Payoneer account." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 42,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "Payoneer is quite popular with Amazon sellers to withdraw money from Amazon and arrange payment to suppliers. If you already have a Payoneer account and it has balance, you can directly pay to our Payoneer account." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 45,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-8", children: "Payoneer charges $1 fee for paying us in this way, but you still need to pay 0.5% more of the amount if you utilize the balance of Payoneer account, because it's the fee charged by Payoneer from our side." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 48,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: [
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Our Payoneer Account:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 53,
-              columnNumber: 44
-            }, this),
-            " PAY@JINGQSOURCING.COM"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 53,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsxDEV23("strong", { children: "Account Name:" }, void 0, !1, {
-              fileName: "app/routes/payment-information.tsx",
-              lineNumber: 54,
-              columnNumber: 44
-            }, this),
-            " Yiwu TaiSourcing Ecommerce Co., Limited"
-          ] }, void 0, !0, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 54,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 52,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/payment-information.tsx",
-        lineNumber: 40,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV23("div", { className: "mb-12", children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "3. PayPal" }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 59,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 60,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-8", children: "PayPal is one of the most convenient payment methods for small orders. However, PayPal charges higher fees (around 4.4% + $0.3 of the total amount) and the money will be frozen for 21 days for new accounts." }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 63,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV23("div", { className: "bg-gray-50 rounded-xl p-6 space-y-2", children: /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-700", children: [
-          /* @__PURE__ */ jsxDEV23("strong", { children: "Our PayPal Account:" }, void 0, !1, {
-            fileName: "app/routes/payment-information.tsx",
-            lineNumber: 68,
-            columnNumber: 44
-          }, this),
-          " PAY@JINGQSOURCING.COM"
-        ] }, void 0, !0, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 68,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/payment-information.tsx",
-          lineNumber: 67,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/payment-information.tsx",
-        lineNumber: 58,
-        columnNumber: 11
-      }, this),
       /* @__PURE__ */ jsxDEV23("div", { children: [
-        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "4. Alibaba Trade Assurance" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV23("h2", { className: "text-xl font-bold text-gray-900 mb-6", children: "2. Alibaba Trade Assurance" }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 73,
+          lineNumber: 33,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 74,
+          lineNumber: 34,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-6", children: "In order to provide more payment methods to meet different needs, our company has become Alibaba Gold Supplier to offer the Trade Assurance Payment service." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 77,
+          lineNumber: 37,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600 mb-4", children: "To finish the payment, you need to provide the Alibaba account email to your agent. Then your agent will help create a Trade Assurance Order on Alibaba, and guide you to finish the payment." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 80,
+          lineNumber: 40,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV23("p", { className: "text-gray-600", children: "Please note that you need to pay 2% more of the amount, because it's the fee charged by Alibaba from our side. Each payment should be less than $5,000, or we need to split the amount into several payments." }, void 0, !1, {
           fileName: "app/routes/payment-information.tsx",
-          lineNumber: 83,
+          lineNumber: 43,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/payment-information.tsx",
-        lineNumber: 72,
+        lineNumber: 32,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
@@ -8457,55 +8283,63 @@ function PaymentInformationPage() {
 // app/routes/solutions.shipping.tsx
 var solutions_shipping_exports = {};
 __export(solutions_shipping_exports, {
-  default: () => ShippingSolutionsPage
+  default: () => ShippingSolutionsPage,
+  loader: () => loader7
 });
+import { json as json5 } from "@remix-run/node";
+import { useLoaderData as useLoaderData7 } from "@remix-run/react";
 import { jsxDEV as jsxDEV24 } from "react/jsx-dev-runtime";
+var loader7 = async () => json5({ images: page_images_default["shipping-solutions"] || {} });
 function ShippingSolutionsPage() {
+  let { images } = useLoaderData7(), getImageUrl = (name) => {
+    let path = images[name];
+    return path ? `${BACKEND_URL}${path}` : null;
+  };
   return /* @__PURE__ */ jsxDEV24("div", { className: "min-h-screen", children: [
     /* @__PURE__ */ jsxDEV24("section", { className: "py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 relative overflow-hidden", children: [
       /* @__PURE__ */ jsxDEV24("div", { className: "absolute inset-0 opacity-10", children: [
         /* @__PURE__ */ jsxDEV24("div", { className: "absolute top-20 right-20 w-72 h-72 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 6,
+          lineNumber: 25,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV24("div", { className: "absolute bottom-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 7,
+          lineNumber: 26,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 5,
+        lineNumber: 24,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6 relative z-10", children: /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
         /* @__PURE__ */ jsxDEV24("div", { children: [
           /* @__PURE__ */ jsxDEV24("h1", { className: "text-3xl md:text-4xl font-bold text-white mb-6", children: "Fast & Secure Global Shipping" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 13,
+            lineNumber: 32,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("p", { className: "text-white/90 text-lg mb-8", children: "Providing flexible shipping solutions for businesses of any size." }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 16,
+            lineNumber: 35,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 19,
+            lineNumber: 38,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 12,
+          lineNumber: 31,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("div", { className: "relative", children: [
           /* @__PURE__ */ jsxDEV24(
             "img",
             {
-              src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3",
+              src: getImageUrl("hero-image") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3",
               alt: "Global Shipping",
               className: "w-full aspect-video object-cover rounded-xl shadow-lg"
             },
@@ -8513,7 +8347,7 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 24,
+              lineNumber: 43,
               columnNumber: 15
             },
             this
@@ -8522,78 +8356,78 @@ function ShippingSolutionsPage() {
             /* @__PURE__ */ jsxDEV24("div", { children: [
               /* @__PURE__ */ jsxDEV24("div", { className: "text-sm text-gray-500", children: "Delivery Time" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 32,
+                lineNumber: 51,
                 columnNumber: 21
               }, this),
               /* @__PURE__ */ jsxDEV24("div", { className: "text-xl font-bold text-orange-500", children: "3-5 Days" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 33,
+                lineNumber: 52,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 31,
+              lineNumber: 50,
               columnNumber: 19
             }, this),
             /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-2", children: [
               /* @__PURE__ */ jsxDEV24("div", { className: "w-3 h-3 bg-green-500 rounded-full animate-pulse" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 36,
+                lineNumber: 55,
                 columnNumber: 21
               }, this),
               /* @__PURE__ */ jsxDEV24("span", { className: "text-sm text-green-600 font-medium", children: "On Time" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 37,
+                lineNumber: 56,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 35,
+              lineNumber: 54,
               columnNumber: 19
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 30,
+            lineNumber: 49,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 29,
+            lineNumber: 48,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 23,
+          lineNumber: 42,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 11,
+        lineNumber: 30,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 10,
+        lineNumber: 29,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 4,
+      lineNumber: 23,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV24("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "International Express" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 49,
+          lineNumber: 68,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "For goods under 500kg, our international express service can deliver directly to your door in 3-5 days in most countries and regions." }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 52,
+          lineNumber: 71,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 48,
+        lineNumber: 67,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
@@ -8601,7 +8435,7 @@ function ShippingSolutionsPage() {
           /* @__PURE__ */ jsxDEV24(
             "img",
             {
-              src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3",
+              src: getImageUrl("international-express") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3",
               alt: "International Express",
               className: "w-full aspect-video object-cover rounded-xl shadow-lg"
             },
@@ -8609,170 +8443,170 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 59,
+              lineNumber: 78,
               columnNumber: 15
             },
             this
           ),
           /* @__PURE__ */ jsxDEV24("div", { className: "absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-medium", children: "DHL, UPS, FedEx, DPD" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 64,
+            lineNumber: 83,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 58,
+          lineNumber: 77,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("div", { className: "space-y-6", children: [
           /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 73,
+              lineNumber: 92,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 72,
+              lineNumber: 91,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 71,
+              lineNumber: 90,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("div", { children: [
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Competitive Pricing" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 77,
+                lineNumber: 96,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "Enjoy our discounted express rates based on shipment weight for lower shipping costs." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 78,
+                lineNumber: 97,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 76,
+              lineNumber: 95,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 70,
+            lineNumber: 89,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 85,
+              lineNumber: 104,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 84,
+              lineNumber: 103,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 83,
+              lineNumber: 102,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("div", { children: [
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Dangerous Goods Shipping" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 89,
+                lineNumber: 108,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "Our network safely transports all types of goods including batteries, liquids, and powders." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 90,
+                lineNumber: 109,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 88,
+              lineNumber: 107,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 82,
+            lineNumber: 101,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { className: "flex items-start gap-4", children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 97,
+              lineNumber: 116,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 96,
+              lineNumber: 115,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 95,
+              lineNumber: 114,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("div", { children: [
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Insurance Coverage" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 101,
+                lineNumber: 120,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "In case of damage, we work closely with carriers and suppliers to ensure compensation for shipping costs and product value." }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 102,
+                lineNumber: 121,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 100,
+              lineNumber: 119,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 94,
+            lineNumber: 113,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { className: "pt-4", children: /* @__PURE__ */ jsxDEV24("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a Quote" }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 107,
+            lineNumber: 126,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 106,
+            lineNumber: 125,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 69,
+          lineNumber: 88,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 57,
+        lineNumber: 76,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 47,
+      lineNumber: 66,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 46,
+      lineNumber: 65,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV24("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Port to Port Shipping" }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 119,
+          lineNumber: 138,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600", children: "If you prefer to use your own freight forwarder for local logistics, we can deliver your goods to any designated sea, air, or railway port." }, void 0, !1, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 122,
+          lineNumber: 141,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 118,
+        lineNumber: 137,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV24("div", { className: "space-y-8", children: [
@@ -8780,7 +8614,7 @@ function ShippingSolutionsPage() {
           /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
             "img",
             {
-              src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3",
+              src: getImageUrl("sea-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3",
               alt: "Sea Freight",
               className: "w-full aspect-video object-cover rounded-xl"
             },
@@ -8788,114 +8622,114 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 130,
+              lineNumber: 149,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 129,
+            lineNumber: 148,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
               /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 140,
+                lineNumber: 159,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 139,
+                lineNumber: 158,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 138,
+                lineNumber: 157,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Sea Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 143,
+                lineNumber: 162,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 137,
+              lineNumber: 156,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "This is the most economical shipping method. From China to destination ports, it only takes 15-40 days. We will advise your shipment to choose LCL or FCL." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 145,
+              lineNumber: 164,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 151,
+                  lineNumber: 170,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 150,
+                  lineNumber: 169,
                   columnNumber: 21
                 }, this),
                 "FCL (Full Container Load)"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 149,
+                lineNumber: 168,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 157,
+                  lineNumber: 176,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 156,
+                  lineNumber: 175,
                   columnNumber: 21
                 }, this),
                 "LCL (Less than Container Load)"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 155,
+                lineNumber: 174,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 163,
+                  lineNumber: 182,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 162,
+                  lineNumber: 181,
                   columnNumber: 21
                 }, this),
                 "15-40 days transit time"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 161,
+                lineNumber: 180,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 148,
+              lineNumber: 167,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 136,
+            lineNumber: 155,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 128,
+          lineNumber: 147,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
           /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
             "img",
             {
-              src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3",
+              src: getImageUrl("air-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3",
               alt: "Air Freight",
               className: "w-full aspect-video object-cover rounded-xl"
             },
@@ -8903,114 +8737,114 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 173,
+              lineNumber: 192,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 172,
+            lineNumber: 191,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
               /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 183,
+                lineNumber: 202,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 182,
+                lineNumber: 201,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 181,
+                lineNumber: 200,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Air Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 186,
+                lineNumber: 205,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 180,
+              lineNumber: 199,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "This is the fastest shipping method. From China to destination airports, it only takes 2-5 days. For goods over 500kg, this option is more cost-effective than international express." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 188,
+              lineNumber: 207,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 194,
+                  lineNumber: 213,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 193,
+                  lineNumber: 212,
                   columnNumber: 21
                 }, this),
                 "2-5 days transit time"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 192,
+                lineNumber: 211,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 200,
+                  lineNumber: 219,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 199,
+                  lineNumber: 218,
                   columnNumber: 21
                 }, this),
                 "Cost-effective for bulk cargo"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 198,
+                lineNumber: 217,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 206,
+                  lineNumber: 225,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 205,
+                  lineNumber: 224,
                   columnNumber: 21
                 }, this),
                 "Direct flights available"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 204,
+                lineNumber: 223,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 191,
+              lineNumber: 210,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 179,
+            lineNumber: 198,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 171,
+          lineNumber: 190,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV24("div", { className: "grid md:grid-cols-2 gap-8 items-center bg-white rounded-xl p-8 shadow-sm", children: [
           /* @__PURE__ */ jsxDEV24("div", { children: /* @__PURE__ */ jsxDEV24(
             "img",
             {
-              src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3",
+              src: getImageUrl("railway-freight") || "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3",
               alt: "Railway Freight",
               className: "w-full aspect-video object-cover rounded-xl"
             },
@@ -9018,151 +8852,151 @@ function ShippingSolutionsPage() {
             !1,
             {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 216,
+              lineNumber: 235,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 215,
+            lineNumber: 234,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV24("div", { children: [
             /* @__PURE__ */ jsxDEV24("div", { className: "flex items-center gap-3 mb-4", children: [
               /* @__PURE__ */ jsxDEV24("div", { className: "w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV24("svg", { className: "w-5 h-5 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV24("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 226,
+                lineNumber: 245,
                 columnNumber: 23
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 225,
+                lineNumber: 244,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 224,
+                lineNumber: 243,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("h3", { className: "text-xl font-bold text-gray-900", children: "Railway Freight" }, void 0, !1, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 229,
+                lineNumber: 248,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 223,
+              lineNumber: 242,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "We provide new Asia-Europe land bridge FCL/LCL transport. Railway freight takes half the time of sea freight and costs less than air freight." }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV24("p", { className: "text-gray-600 mb-4", children: "We provide China-Europe Railway Express FCL/LCL transport services. Railway freight takes half the time of sea freight and costs less than air freight." }, void 0, !1, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 231,
+              lineNumber: 250,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV24("ul", { className: "space-y-2 text-gray-600", children: [
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 237,
+                  lineNumber: 256,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 236,
+                  lineNumber: 255,
                   columnNumber: 21
                 }, this),
-                "Asia-Europe land bridge"
+                "China-Europe Railway Express"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 235,
+                lineNumber: 254,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 243,
+                  lineNumber: 262,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 242,
+                  lineNumber: 261,
                   columnNumber: 21
                 }, this),
                 "Half the time of sea freight"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 241,
+                lineNumber: 260,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV24("li", { className: "flex items-center gap-2", children: [
                 /* @__PURE__ */ jsxDEV24("svg", { className: "w-4 h-4 text-green-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV24("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 249,
+                  lineNumber: 268,
                   columnNumber: 23
                 }, this) }, void 0, !1, {
                   fileName: "app/routes/solutions.shipping.tsx",
-                  lineNumber: 248,
+                  lineNumber: 267,
                   columnNumber: 21
                 }, this),
                 "Lower cost than air freight"
               ] }, void 0, !0, {
                 fileName: "app/routes/solutions.shipping.tsx",
-                lineNumber: 247,
+                lineNumber: 266,
                 columnNumber: 19
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/solutions.shipping.tsx",
-              lineNumber: 234,
+              lineNumber: 253,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/solutions.shipping.tsx",
-            lineNumber: 222,
+            lineNumber: 241,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/solutions.shipping.tsx",
-          lineNumber: 214,
+          lineNumber: 233,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 127,
+        lineNumber: 146,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 117,
+      lineNumber: 136,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 116,
+      lineNumber: 135,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV24("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV24("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
       /* @__PURE__ */ jsxDEV24("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Need Custom Shipping Solutions?" }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 262,
+        lineNumber: 281,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV24("p", { className: "text-white/90 text-lg mb-8", children: "Our logistics experts will analyze your shipping needs and provide the most cost-effective solution." }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 265,
+        lineNumber: 284,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV24("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Contact Our Logistics Team" }, void 0, !1, {
         fileName: "app/routes/solutions.shipping.tsx",
-        lineNumber: 268,
+        lineNumber: 287,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 261,
+      lineNumber: 280,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/solutions.shipping.tsx",
-      lineNumber: 260,
+      lineNumber: 279,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/solutions.shipping.tsx",
-    lineNumber: 3,
+    lineNumber: 22,
     columnNumber: 5
   }, this);
 }
@@ -9172,10 +9006,10 @@ var account_addresses_exports = {};
 __export(account_addresses_exports, {
   action: () => action4,
   default: () => AccountAddresses,
-  loader: () => loader6
+  loader: () => loader8
 });
-import { Outlet as Outlet2, useLoaderData as useLoaderData6 } from "@remix-run/react";
-import { json as json4 } from "@remix-run/server-runtime";
+import { Outlet as Outlet2, useLoaderData as useLoaderData8 } from "@remix-run/react";
+import { json as json6 } from "@remix-run/server-runtime";
 
 // app/components/account/AddAddressCard.tsx
 import { PlusIcon } from "@heroicons/react/24/outline";
@@ -9664,14 +9498,14 @@ function EditAddressCard({
 
 // app/routes/account.addresses.tsx
 import { Fragment as Fragment7, jsxDEV as jsxDEV28 } from "react/jsx-dev-runtime";
-async function loader6({ request }) {
+async function loader8({ request }) {
   let activeCustomerAddresses = (await getActiveCustomerAddresses({ request })).activeCustomer;
-  return json4({ activeCustomerAddresses });
+  return json6({ activeCustomerAddresses });
 }
 async function action4({ request }) {
   let formData = await request.formData(), id = formData.get("id"), _action = formData.get("_action"), t = await getFixedT(request);
   if (!id || id.length === 0)
-    return json4(
+    return json6(
       {
         errorCode: "IDENTIFIER_CHANGE_TOKEN_INVALID_ERROR" /* IdentifierChangeTokenInvalidError */,
         // TODO: I dont think this error is 100% appropriate - decide later
@@ -9688,9 +9522,9 @@ async function action4({ request }) {
     return updateCustomerAddress({ id, defaultBillingAddress: !0 }, { request }), null;
   if (_action === "deleteAddress") {
     let { success } = await deleteCustomerAddress(id, { request });
-    return json4(null, { status: success ? 200 : 400 });
+    return json6(null, { status: success ? 200 : 400 });
   }
-  return json4(
+  return json6(
     {
       message: t("common.unknowError"),
       errorCode: "UNKNOWN_ERROR" /* UnknownError */
@@ -9701,7 +9535,7 @@ async function action4({ request }) {
   );
 }
 function AccountAddresses() {
-  let { activeCustomerAddresses } = useLoaderData6();
+  let { activeCustomerAddresses } = useLoaderData8();
   return /* @__PURE__ */ jsxDEV28(Fragment7, { children: [
     /* @__PURE__ */ jsxDEV28(Outlet2, {}, void 0, !1, {
       fileName: "app/routes/account.addresses.tsx",
@@ -9740,10 +9574,10 @@ var collections_slug_exports = {};
 __export(collections_slug_exports, {
   CatchBoundary: () => CatchBoundary2,
   default: () => CollectionSlug,
-  loader: () => loader7,
+  loader: () => loader9,
   meta: () => meta2
 });
-import { useLoaderData as useLoaderData7, useSubmit as useSubmit3 } from "@remix-run/react";
+import { useLoaderData as useLoaderData9, useSubmit as useSubmit3 } from "@remix-run/react";
 import { useRef as useRef6, useState as useState7 } from "react";
 import { useTranslation as useTranslation22 } from "react-i18next";
 import { ValidatedForm as ValidatedForm2 } from "remix-validated-form";
@@ -9855,17 +9689,17 @@ function CollectionCard({
       prefetch: "intent",
       className: "max-w-[300px] relative rounded-lg overflow-hidden hover:opacity-75 xl:w-auto",
       children: [
-        /* @__PURE__ */ jsxDEV30("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsxDEV30("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsxDEV30("img", { src: collection.featuredAsset?.preview + "?w=300&h=300" }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV30("span", { "aria-hidden": "true", className: "", children: /* @__PURE__ */ jsxDEV30("div", { className: "w-full h-full object-center object-cover", children: /* @__PURE__ */ jsxDEV30("img", { src: BACKEND_URL + (collection.featuredAsset?.preview || "") + "?w=300&h=300" }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
-          lineNumber: 18,
+          lineNumber: 19,
           columnNumber: 11
         }, this) }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
-          lineNumber: 17,
+          lineNumber: 18,
           columnNumber: 9
         }, this) }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 7
         }, this),
         /* @__PURE__ */ jsxDEV30(
@@ -9878,14 +9712,14 @@ function CollectionCard({
           !1,
           {
             fileName: "app/components/collections/CollectionCard.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 7
           },
           this
         ),
         /* @__PURE__ */ jsxDEV30("span", { className: "absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white", children: collection.name }, void 0, !1, {
           fileName: "app/components/collections/CollectionCard.tsx",
-          lineNumber: 25,
+          lineNumber: 26,
           columnNumber: 7
         }, this)
       ]
@@ -9894,7 +9728,7 @@ function CollectionCard({
     !0,
     {
       fileName: "app/components/collections/CollectionCard.tsx",
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 5
     },
     this
@@ -10399,39 +10233,39 @@ function ProductCard({
       {
         className: "rounded-xl flex-grow object-cover aspect-[7/8]",
         alt: "",
-        src: productAsset?.preview + "?w=300&h=400"
+        src: BACKEND_URL + (productAsset?.preview || "") + "?w=300&h=400"
       },
       void 0,
       !1,
       {
         fileName: "app/components/products/ProductCard.tsx",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 7
       },
       this
     ),
     /* @__PURE__ */ jsxDEV33("div", { className: "h-2" }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV33("div", { className: "text-sm text-gray-700", children: productName }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
-      lineNumber: 21,
+      lineNumber: 22,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV33("div", { className: "text-sm font-medium text-gray-900", children: /* @__PURE__ */ jsxDEV33(Price, { priceWithTax, currencyCode }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/components/products/ProductCard.tsx",
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/products/ProductCard.tsx",
-    lineNumber: 14,
+    lineNumber: 15,
     columnNumber: 5
   }, this);
 }
@@ -10928,7 +10762,7 @@ var meta2 = ({ data }) => [
   allowedPaginationLimits,
   paginationLimitMinimumDefault
 );
-async function loader7({ params, request, context }) {
+async function loader9({ params, request, context }) {
   let {
     result,
     resultWithoutFacetValueFilters,
@@ -10956,7 +10790,7 @@ async function loader7({ params, request, context }) {
   };
 }
 function CollectionSlug() {
-  let loaderData = useLoaderData7(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState7(!1);
+  let loaderData = useLoaderData9(), { collection, result, resultWithoutFacetValueFilters, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState7(!1);
   useRef6(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
@@ -11144,7 +10978,7 @@ __export(account_password_exports, {
 });
 import { PencilIcon as PencilIcon2 } from "@heroicons/react/24/outline";
 import { useActionData as useActionData3, useNavigation as useNavigation4 } from "@remix-run/react";
-import { json as json5 } from "@remix-run/server-runtime";
+import { json as json7 } from "@remix-run/server-runtime";
 import { useEffect as useEffect10, useRef as useRef7, useState as useState8 } from "react";
 import { ValidatedForm as ValidatedForm3, validationError as validationError3 } from "remix-validated-form";
 import { z as z3 } from "zod";
@@ -11225,7 +11059,7 @@ async function action5({ request }) {
     { currentPassword, newPassword },
     { request }
   );
-  return res.__typename !== "Success" ? json5(res, { status: 401 }) : json5(res);
+  return res.__typename !== "Success" ? json7(res, { status: 401 }) : json7(res);
 }
 function AccountPassword() {
   let [editing, setEditing] = useState8(!1), [isSaved, setIsSaved] = useState8(!1), [errorMessage, setErrorMessage] = useState8(), actionDataHook = useActionData3(), { state } = useNavigation4(), formRef = useRef7(null), { t } = useTranslation23();
@@ -11405,9 +11239,9 @@ function AccountPassword() {
 var api_active_order_exports = {};
 __export(api_active_order_exports, {
   action: () => action6,
-  loader: () => loader8
+  loader: () => loader10
 });
-import { json as json6 } from "@remix-run/server-runtime";
+import { json as json8 } from "@remix-run/server-runtime";
 
 // app/utils/validation.ts
 function shippingFormDataIsValid(data) {
@@ -11420,9 +11254,9 @@ function replaceEmptyString(input) {
 
 // app/routes/api.active-order.tsx
 var AUTH_TOKEN_SESSION_KEY2 = "authToken";
-async function loader8({ request }) {
+async function loader10({ request }) {
   let sessionStorage2 = await getSessionStorage(), session = await sessionStorage2.getSession(request.headers.get("Cookie")), result = await getActiveOrder({ request, authToken: session.get(AUTH_TOKEN_SESSION_KEY2) }), authToken = result._headers?.get("x-vendure-auth-token");
-  return authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken), json6(
+  return authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken), json8(
     { activeOrder: result.activeOrder },
     { headers: { "Set-Cookie": await sessionStorage2.commitSession(session) } }
   );
@@ -11520,7 +11354,7 @@ async function action6({ request, params }) {
   );
   session.flash("activeOrderError", error), authToken && session.set(AUTH_TOKEN_SESSION_KEY2, authToken);
   let finalOrder = (activeOrder ? { activeOrder } : await getActiveOrder({ request, authToken })).activeOrder;
-  return json6(
+  return json8(
     { activeOrder: finalOrder },
     {
       headers: { "Set-Cookie": await sessionStorage2.commitSession(session) }
@@ -11533,10 +11367,10 @@ var checkout_payment_exports = {};
 __export(checkout_payment_exports, {
   action: () => action7,
   default: () => CheckoutPayment,
-  loader: () => loader9
+  loader: () => loader11
 });
-import { json as json7, redirect as redirect4 } from "@remix-run/server-runtime";
-import { useLoaderData as useLoaderData8, useOutletContext } from "@remix-run/react";
+import { json as json9, redirect as redirect4 } from "@remix-run/server-runtime";
+import { useLoaderData as useLoaderData10, useOutletContext } from "@remix-run/react";
 
 // app/components/checkout/stripe/StripePayments.tsx
 import { Elements } from "@stripe/react-stripe-js";
@@ -12036,7 +11870,7 @@ function PayPalPayments({
 // app/routes/checkout.payment.tsx
 import { useTranslation as useTranslation28 } from "react-i18next";
 import { jsxDEV as jsxDEV45 } from "react/jsx-dev-runtime";
-async function loader9({ params, request }) {
+async function loader11({ params, request }) {
   let session = await getSessionStorage().then(
     (sessionStorage2) => sessionStorage2.getSession(request?.headers.get("Cookie"))
   ), activeOrder = (await getActiveOrder({ request })).activeOrder;
@@ -12062,7 +11896,7 @@ async function loader9({ params, request }) {
     } catch (e) {
       brainTreeError = e.message;
     }
-  return json7({
+  return json9({
     eligiblePaymentMethods,
     stripePaymentIntent,
     stripePublishableKey,
@@ -12084,7 +11918,7 @@ async function action7({ params, request }) {
         { request }
       );
       if (transitionResult.transitionOrderToState?.__typename !== "Order")
-        return json7({
+        return json9({
           error: transitionResult.transitionOrderToState?.message || "Failed to transition order state"
         });
     }
@@ -12094,11 +11928,11 @@ async function action7({ params, request }) {
     );
     if (result.addPaymentToOrder.__typename === "Order") {
       let approvalUrl = result.addPaymentToOrder.payments?.[result.addPaymentToOrder.payments.length - 1]?.metadata?.public?.approvalUrl;
-      return approvalUrl ? json7({ approvalUrl }) : redirect4(
+      return approvalUrl ? json9({ approvalUrl }) : redirect4(
         `/checkout/confirmation/${result.addPaymentToOrder.code}`
       );
     } else
-      return json7({
+      return json9({
         error: result.addPaymentToOrder?.message || "Payment failed"
       });
   }
@@ -12112,7 +11946,7 @@ function CheckoutPayment() {
     brainTreeKey,
     brainTreeError,
     error
-  } = useLoaderData8(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
+  } = useLoaderData10(), { activeOrderFetcher, activeOrder } = useOutletContext(), { t } = useTranslation28(), paymentError = getPaymentError(error);
   return /* @__PURE__ */ jsxDEV45("div", { className: "flex flex-col items-center divide-gray-200 divide-y", children: eligiblePaymentMethods.map(
     (paymentMethod) => paymentMethod.code.includes("braintree") ? /* @__PURE__ */ jsxDEV45("div", { className: "py-3 w-full", children: brainTreeError ? /* @__PURE__ */ jsxDEV45("div", { children: [
       /* @__PURE__ */ jsxDEV45("p", { className: "text-red-700 font-bold", children: t("checkout.braintreeError") }, void 0, !1, {
@@ -12243,10 +12077,10 @@ function getPaymentError(error) {
 var account_history_exports = {};
 __export(account_history_exports, {
   default: () => AccountHistory,
-  loader: () => loader10
+  loader: () => loader12
 });
-import { useLoaderData as useLoaderData9, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
-import { json as json8, redirect as redirect5 } from "@remix-run/server-runtime";
+import { useLoaderData as useLoaderData11, useNavigation as useNavigation6, useSubmit as useSubmit5 } from "@remix-run/react";
+import { json as json10, redirect as redirect5 } from "@remix-run/server-runtime";
 
 // app/components/account/OrderHistoryItem.tsx
 import { useState as useState10 } from "react";
@@ -12963,7 +12797,7 @@ var paginationLimitMinimumDefault2 = 10, allowedPaginationLimits2 = /* @__PURE__
 ]), orderPaginationSchema = paginationValidationSchema(
   allowedPaginationLimits2
 );
-async function loader10({ request }) {
+async function loader12({ request }) {
   let url = new URL(request.url), limit = url.searchParams.get("limit") ?? paginationLimitMinimumDefault2, page = url.searchParams.get("page") ?? 1, zodResult = orderPaginationSchema.safeParse({ limit, page });
   if (!zodResult.success)
     return url.search = "", redirect5(url.href);
@@ -12974,14 +12808,14 @@ async function loader10({ request }) {
     sort: { createdAt: "DESC" /* Desc */ },
     filter: { active: { eq: !1 } }
   }, res = await getActiveCustomerOrderList(orderListOptions, { request });
-  return res.activeCustomer ? json8({
+  return res.activeCustomer ? json10({
     orderList: res.activeCustomer.orders,
     appliedPaginationLimit: zodResult.data.limit,
     appliedPaginationPage: zodResult.data.page
   }) : redirect5("/sign-in");
 }
 function AccountHistory() {
-  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData9(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
+  let { orderList, appliedPaginationLimit, appliedPaginationPage } = useLoaderData11(), submit = useSubmit5(), navigation = useNavigation6(), { t } = useTranslation31(), showingOrdersFrom = translatePaginationFrom(
     appliedPaginationPage,
     appliedPaginationLimit
   ), showingOrdersTo = translatePaginationTo(
@@ -13082,17 +12916,17 @@ function AccountHistory() {
 var checkout_index_exports = {};
 __export(checkout_index_exports, {
   default: () => CheckoutShipping,
-  loader: () => loader11
+  loader: () => loader13
 });
 import { useState as useState11, useRef as useRef8 } from "react";
 import { LockClosedIcon } from "@heroicons/react/24/solid";
 import {
   Form as Form4,
-  useLoaderData as useLoaderData10,
+  useLoaderData as useLoaderData12,
   useNavigate as useNavigate3,
   useOutletContext as useOutletContext2
 } from "@remix-run/react";
-import { json as json9, redirect as redirect6 } from "@remix-run/server-runtime";
+import { json as json11, redirect as redirect6 } from "@remix-run/server-runtime";
 
 // app/components/account/AddressForm.tsx
 import { useTranslation as useTranslation32 } from "react-i18next";
@@ -13881,7 +13715,7 @@ function ShippingAddressSelector({
 // app/routes/checkout._index.tsx
 import { useTranslation as useTranslation34 } from "react-i18next";
 import { jsxDEV as jsxDEV52 } from "react/jsx-dev-runtime";
-async function loader11({ request }) {
+async function loader13({ request }) {
   try {
     let session = await (await getSessionStorage()).getSession(request.headers.get("Cookie"));
     console.log("CHECKOUT LOADER: session retrieved");
@@ -13899,7 +13733,7 @@ async function loader11({ request }) {
     let { activeCustomer } = await getActiveCustomerAddresses({ request });
     console.log("CHECKOUT LOADER: activeCustomer:", activeCustomer?.id ? `id=${activeCustomer.id}` : "null");
     let error = session.get("activeOrderError");
-    return console.log("CHECKOUT LOADER: returning json data"), json9({
+    return console.log("CHECKOUT LOADER: returning json data"), json11({
       availableCountries,
       eligibleShippingMethods,
       activeCustomer,
@@ -13910,7 +13744,7 @@ async function loader11({ request }) {
   }
 }
 function CheckoutShipping() {
-  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData10(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState11(!1), [addressFormChanged, setAddressFormChanged] = useState11(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState11(0), [isSubmitting, setIsSubmitting] = useState11(!1), customerFormRef = useRef8(null), addressFormRef = useRef8(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
+  let { availableCountries, eligibleShippingMethods, activeCustomer, error } = useLoaderData12(), { activeOrderFetcher, activeOrder } = useOutletContext2(), [customerFormChanged, setCustomerFormChanged] = useState11(!1), [addressFormChanged, setAddressFormChanged] = useState11(!1), [selectedAddressIndex, setSelectedAddressIndex] = useState11(0), [isSubmitting, setIsSubmitting] = useState11(!1), customerFormRef = useRef8(null), addressFormRef = useRef8(null), navigate = useNavigate3(), { t } = useTranslation34(), { customer, shippingAddress } = activeOrder ?? {}, isSignedIn = !!activeCustomer?.id, addresses = activeCustomer?.addresses ?? [], defaultFullName = shippingAddress?.fullName ?? (customer ? `${customer.firstName} ${customer.lastName}` : ""), hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName, hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode, hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0, hasShippingMethod = activeOrder?.shippingLines?.length > 0, canProceedToPayment = hasCustomerInfo && (hasShippingAddress || hasSelectedAddress) && hasShippingMethod && activeOrder?.lines?.length > 0, submitCustomerFormData = () => {
     if (!customerFormRef.current)
       return;
     let formData = new FormData(customerFormRef.current), { emailAddress, firstName, lastName } = Object.fromEntries(
@@ -14434,12 +14268,12 @@ var account_index_exports = {};
 __export(account_index_exports, {
   action: () => action9,
   default: () => AccountDetails,
-  loader: () => loader12,
+  loader: () => loader14,
   validator: () => validator4
 });
 import { CheckIcon as CheckIcon2, PencilIcon as PencilIcon3, XMarkIcon as XMarkIcon4 } from "@heroicons/react/24/outline";
-import { useActionData as useActionData5, useLoaderData as useLoaderData11, useNavigation as useNavigation7 } from "@remix-run/react";
-import { json as json10, redirect as redirect8 } from "@remix-run/server-runtime";
+import { useActionData as useActionData5, useLoaderData as useLoaderData13, useNavigation as useNavigation7 } from "@remix-run/react";
+import { json as json12, redirect as redirect8 } from "@remix-run/server-runtime";
 import { useEffect as useEffect12, useRef as useRef9, useState as useState12 } from "react";
 import { ValidatedForm as ValidatedForm5, validationError as validationError4 } from "remix-validated-form";
 import { z as z4 } from "zod";
@@ -14458,9 +14292,9 @@ var validator4 = withZod(
     password: z4.string().min(1, { message: "Password is required" })
   })
 );
-async function loader12({ request }) {
+async function loader14({ request }) {
   let { activeCustomer } = await getActiveCustomerDetails({ request });
-  return activeCustomer ? json10({ activeCustomer }) : redirect8("/sign-in");
+  return activeCustomer ? json12({ activeCustomer }) : redirect8("/sign-in");
 }
 function isFormError(err) {
   return err.message !== void 0;
@@ -14472,7 +14306,7 @@ function isCustomerUpdatedResponse(response) {
   return response.customerUpdated !== void 0;
 }
 async function action9({ request }) {
-  let body = await request.formData(), intent = body.get("intent"), formError = (formError2, init) => json10(formError2, init);
+  let body = await request.formData(), intent = body.get("intent"), formError = (formError2, init) => json12(formError2, init);
   if (intent === "updateEmail" /* UpdateEmail */) {
     let result = await changeEmailValidator.validate(body);
     if (result.error)
@@ -14487,7 +14321,7 @@ async function action9({ request }) {
       {
         status: 401
       }
-    ) : json10(
+    ) : json12(
       {
         newEmailAddress: email
       },
@@ -14502,14 +14336,14 @@ async function action9({ request }) {
     return await updateCustomer(
       { title, firstName, lastName, phoneNumber },
       { request }
-    ), json10({
+    ), json12({
       customerUpdated: !0
     });
   }
   return formError({ message: "No valid form intent" }, { status: 401 });
 }
 function AccountDetails() {
-  let { activeCustomer } = useLoaderData11(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState12(), [emailSavedResponse, setEmailSavedResponse] = useState12(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState12(!1), emailInputRef = useRef9(null), formRef = useRef9(null);
+  let { activeCustomer } = useLoaderData13(), actionDataHook = useActionData5(), { t } = useTranslation36(), { firstName, lastName, title, phoneNumber, emailAddress } = activeCustomer, fullName = `${title ? title + " " : ""}${firstName} ${lastName}`, { state } = useNavigation7(), [formError, setFormError] = useState12(), [emailSavedResponse, setEmailSavedResponse] = useState12(), [showChangeEmailModal, openChangeEmailModal, closeChangeEmailModal] = use_toggle_state_default(!1), [isEditing, setIsEditing] = useState12(!1), emailInputRef = useRef9(null), formRef = useRef9(null);
   return useEffect12(() => {
     if (actionDataHook) {
       if (isEmailSavedResponse(actionDataHook)) {
@@ -15010,14 +14844,14 @@ var products_slug_exports = {};
 __export(products_slug_exports, {
   CatchBoundary: () => CatchBoundary3,
   default: () => ProductSlug,
-  loader: () => loader13,
+  loader: () => loader15,
   meta: () => meta3,
   shouldRevalidate: () => shouldRevalidate2
 });
-import { json as json11 } from "@remix-run/server-runtime";
+import { json as json13 } from "@remix-run/server-runtime";
 import { useState as useState13 } from "react";
 import {
-  useLoaderData as useLoaderData12,
+  useLoaderData as useLoaderData14,
   useOutletContext as useOutletContext3
 } from "@remix-run/react";
 import { CheckIcon as CheckIcon3, HeartIcon, PhotoIcon } from "@heroicons/react/24/solid";
@@ -15334,7 +15168,7 @@ var meta3 = ({ data }) => [
     title: data?.product?.name ? `${data.product.name} - ${APP_META_TITLE}` : APP_META_TITLE
   }
 ];
-async function loader13({ params, request }) {
+async function loader15({ params, request }) {
   let { product } = await getProductBySlug(params.slug, { request });
   if (!product)
     throw new Response("Not Found", {
@@ -15343,7 +15177,7 @@ async function loader13({ params, request }) {
   let sessionStorage2 = await getSessionStorage(), session = await sessionStorage2.getSession(
     request?.headers.get("Cookie")
   ), error = session.get("activeOrderError");
-  return json11(
+  return json13(
     { product, error },
     {
       headers: {
@@ -15354,7 +15188,7 @@ async function loader13({ params, request }) {
 }
 var shouldRevalidate2 = () => !0;
 function ProductSlug() {
-  let { product, error } = useLoaderData12(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
+  let { product, error } = useLoaderData14(), { activeOrderFetcher } = useOutletContext3(), { activeOrder } = activeOrderFetcher.data ?? {}, addItemToOrderError = getAddItemToOrderError(error), { t } = useTranslation39();
   if (!product)
     return /* @__PURE__ */ jsxDEV59("div", { children: t("product.notFound") }, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
@@ -15368,7 +15202,7 @@ function ProductSlug() {
   let qtyInCart = activeOrder?.lines.find((l) => l.productVariant.id === selectedVariantId)?.quantity ?? 0, asset = product.assets[0], brandName = product.facetValues.find(
     (fv) => fv.facet.code === "brand"
   )?.name, [featuredAsset, setFeaturedAsset] = useState13(
-    selectedVariant?.featuredAsset
+    selectedVariant?.featuredAsset || product.featuredAsset
   ), [isFavorite, setIsFavorite] = useState13(!1);
   return /* @__PURE__ */ jsxDEV59("div", { children: [
     /* @__PURE__ */ jsxDEV59("div", { className: "max-w-6xl mx-auto px-4", children: [
@@ -15396,7 +15230,7 @@ function ProductSlug() {
           /* @__PURE__ */ jsxDEV59("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV59("div", { className: "w-full h-full object-center object-cover rounded-lg", children: /* @__PURE__ */ jsxDEV59(
             "img",
             {
-              src: (featuredAsset?.preview || product.featuredAsset?.preview) + "?w=800",
+              src: BACKEND_URL + (featuredAsset?.preview || product.featuredAsset?.preview || "") + "?w=800",
               alt: product.name,
               className: "w-full h-full object-center object-cover rounded-lg"
             },
@@ -15429,13 +15263,13 @@ function ProductSlug() {
                 {
                   draggable: "false",
                   className: "rounded-lg select-none h-24 w-full object-cover",
-                  src: asset2.preview + "?preset=full"
+                  src: BACKEND_URL + asset2.preview + "?preset=full"
                 },
                 void 0,
                 !1,
                 {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 138,
+                  lineNumber: 139,
                   columnNumber: 21
                 },
                 this
@@ -15445,13 +15279,13 @@ function ProductSlug() {
             !1,
             {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 128,
+              lineNumber: 129,
               columnNumber: 19
             },
             this
           )) }, void 0, !1, {
             fileName: "app/routes/products.$slug.tsx",
-            lineNumber: 126,
+            lineNumber: 127,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
@@ -15463,7 +15297,7 @@ function ProductSlug() {
           /* @__PURE__ */ jsxDEV59("div", { className: "", children: [
             /* @__PURE__ */ jsxDEV59("h3", { className: "sr-only", children: t("product.description") }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 155,
+              lineNumber: 157,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV59(
@@ -15478,20 +15312,20 @@ function ProductSlug() {
               !1,
               {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 157,
+                lineNumber: 159,
                 columnNumber: 15
               },
               this
             )
           ] }, void 0, !0, {
             fileName: "app/routes/products.$slug.tsx",
-            lineNumber: 154,
+            lineNumber: 156,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV59(activeOrderFetcher.Form, { method: "post", action: "/api/active-order", children: [
             /* @__PURE__ */ jsxDEV59("input", { type: "hidden", name: "action", value: "addItemToOrder" }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 165,
+              lineNumber: 167,
               columnNumber: 15
             }, this),
             1 < product.variants.length ? /* @__PURE__ */ jsxDEV59("div", { className: "mt-4", children: [
@@ -15506,7 +15340,7 @@ function ProductSlug() {
                 !1,
                 {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 168,
+                  lineNumber: 170,
                   columnNumber: 19
                 },
                 this
@@ -15525,7 +15359,7 @@ function ProductSlug() {
                   },
                   children: product.variants.map((variant) => /* @__PURE__ */ jsxDEV59("option", { value: variant.id, children: variant.name }, variant.id, !1, {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 189,
+                    lineNumber: 191,
                     columnNumber: 23
                   }, this))
                 },
@@ -15533,14 +15367,14 @@ function ProductSlug() {
                 !1,
                 {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 174,
+                  lineNumber: 176,
                   columnNumber: 19
                 },
                 this
               )
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 167,
+              lineNumber: 169,
               columnNumber: 17
             }, this) : /* @__PURE__ */ jsxDEV59(
               "input",
@@ -15553,7 +15387,7 @@ function ProductSlug() {
               !1,
               {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 196,
+                lineNumber: 198,
                 columnNumber: 17
               },
               this
@@ -15569,13 +15403,13 @@ function ProductSlug() {
                 !1,
                 {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 205,
+                  lineNumber: 207,
                   columnNumber: 19
                 },
                 this
               ) }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 204,
+                lineNumber: 206,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV59("div", { className: "flex sm:flex-col1 align-baseline", children: [
@@ -15591,7 +15425,7 @@ function ProductSlug() {
                     children: qtyInCart ? /* @__PURE__ */ jsxDEV59("span", { className: "flex items-center", children: [
                       /* @__PURE__ */ jsxDEV59(CheckIcon3, { className: "w-5 h-5 mr-1" }, void 0, !1, {
                         fileName: "app/routes/products.$slug.tsx",
-                        lineNumber: 227,
+                        lineNumber: 229,
                         columnNumber: 25
                       }, this),
                       " ",
@@ -15600,7 +15434,7 @@ function ProductSlug() {
                       t("product.inCart")
                     ] }, void 0, !0, {
                       fileName: "app/routes/products.$slug.tsx",
-                      lineNumber: 226,
+                      lineNumber: 228,
                       columnNumber: 23
                     }, this) : t("product.addToCart")
                   },
@@ -15608,7 +15442,7 @@ function ProductSlug() {
                   !1,
                   {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 211,
+                    lineNumber: 213,
                     columnNumber: 19
                   },
                   this
@@ -15630,14 +15464,14 @@ function ProductSlug() {
                         !1,
                         {
                           fileName: "app/routes/products.$slug.tsx",
-                          lineNumber: 242,
+                          lineNumber: 244,
                           columnNumber: 21
                         },
                         this
                       ),
                       /* @__PURE__ */ jsxDEV59("span", { className: "sr-only", children: t(isFavorite ? "product.removeFromFavorites" : "product.addToFavorites") }, void 0, !1, {
                         fileName: "app/routes/products.$slug.tsx",
-                        lineNumber: 246,
+                        lineNumber: 248,
                         columnNumber: 21
                       }, this)
                     ]
@@ -15646,104 +15480,104 @@ function ProductSlug() {
                   !0,
                   {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 235,
+                    lineNumber: 237,
                     columnNumber: 19
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 210,
+                lineNumber: 212,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 203,
+              lineNumber: 205,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV59("div", { className: "mt-2 flex items-center space-x-2", children: [
               /* @__PURE__ */ jsxDEV59("span", { className: "text-gray-500", children: selectedVariant?.sku }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 253,
+                lineNumber: 255,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV59(StockLevelLabel, { stockLevel: selectedVariant?.stockLevel }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 254,
+                lineNumber: 256,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 252,
+              lineNumber: 254,
               columnNumber: 15
             }, this),
             addItemToOrderError && /* @__PURE__ */ jsxDEV59("div", { className: "mt-4", children: /* @__PURE__ */ jsxDEV59(Alert, { message: addItemToOrderError }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 258,
+              lineNumber: 260,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 257,
+              lineNumber: 259,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV59("section", { className: "mt-12 pt-12 border-t text-xs", children: [
               /* @__PURE__ */ jsxDEV59("h3", { className: "text-gray-600 font-bold mb-2", children: t("product.shippingAndReturns") }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 263,
+                lineNumber: 265,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV59("div", { className: "text-gray-500 space-y-1", children: [
                 /* @__PURE__ */ jsxDEV59("p", { children: t("product.shippingInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 267,
+                  lineNumber: 269,
                   columnNumber: 19
                 }, this),
                 /* @__PURE__ */ jsxDEV59("p", { children: t("product.shippingCostsInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 268,
+                  lineNumber: 270,
                   columnNumber: 19
                 }, this),
                 /* @__PURE__ */ jsxDEV59("p", { children: t("product.returnsInfo") }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 269,
+                  lineNumber: 271,
                   columnNumber: 19
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 266,
+                lineNumber: 268,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 262,
+              lineNumber: 264,
               columnNumber: 15
             }, this),
             product.customFields && /* @__PURE__ */ jsxDEV59("section", { className: "mt-12 pt-12 border-t", children: [
               /* @__PURE__ */ jsxDEV59("h3", { className: "text-gray-600 font-bold mb-4", children: "Product Details" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 275,
+                lineNumber: 277,
                 columnNumber: 19
               }, this),
               product.customFields.weight && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
                 /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Weight" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 278,
+                  lineNumber: 280,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV59("p", { className: "text-gray-600", children: product.customFields.weight }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 279,
+                  lineNumber: 281,
                   columnNumber: 23
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 277,
+                lineNumber: 279,
                 columnNumber: 21
               }, this),
               product.customFields.specifications && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
                 /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Specifications" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 284,
+                  lineNumber: 286,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV59(
@@ -15758,20 +15592,20 @@ function ProductSlug() {
                   !1,
                   {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 285,
+                    lineNumber: 287,
                     columnNumber: 23
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 283,
+                lineNumber: 285,
                 columnNumber: 21
               }, this),
               product.customFields.usage && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
                 /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-1", children: "Usage Instructions" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 295,
+                  lineNumber: 297,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV59(
@@ -15786,26 +15620,26 @@ function ProductSlug() {
                   !1,
                   {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 296,
+                    lineNumber: 298,
                     columnNumber: 23
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 294,
+                lineNumber: 296,
                 columnNumber: 21
               }, this),
               product.customFields.detailImage && /* @__PURE__ */ jsxDEV59("div", { className: "mb-4", children: [
                 /* @__PURE__ */ jsxDEV59("h4", { className: "text-sm font-medium text-gray-900 mb-2", children: "Detail Image" }, void 0, !1, {
                   fileName: "app/routes/products.$slug.tsx",
-                  lineNumber: 306,
+                  lineNumber: 308,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ jsxDEV59(
                   "img",
                   {
-                    src: product.customFields.detailImage.preview + "?w=600",
+                    src: BACKEND_URL + product.customFields.detailImage.preview + "?w=600",
                     alt: "Product Detail",
                     className: "max-w-full rounded-lg"
                   },
@@ -15813,29 +15647,29 @@ function ProductSlug() {
                   !1,
                   {
                     fileName: "app/routes/products.$slug.tsx",
-                    lineNumber: 307,
+                    lineNumber: 309,
                     columnNumber: 23
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 305,
+                lineNumber: 307,
                 columnNumber: 21
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 274,
+              lineNumber: 276,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/products.$slug.tsx",
-            lineNumber: 164,
+            lineNumber: 166,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.$slug.tsx",
-          lineNumber: 153,
+          lineNumber: 155,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
@@ -15850,11 +15684,11 @@ function ProductSlug() {
     }, this),
     /* @__PURE__ */ jsxDEV59("div", { className: "mt-24", children: /* @__PURE__ */ jsxDEV59(TopReviews, {}, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
-      lineNumber: 321,
+      lineNumber: 323,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
-      lineNumber: 320,
+      lineNumber: 322,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -15868,84 +15702,84 @@ function CatchBoundary3() {
   return /* @__PURE__ */ jsxDEV59("div", { className: "max-w-6xl mx-auto px-4", children: [
     /* @__PURE__ */ jsxDEV59("h2", { className: "text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8", children: t("product.notFound") }, void 0, !1, {
       fileName: "app/routes/products.$slug.tsx",
-      lineNumber: 332,
+      lineNumber: 334,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV59("div", { className: "lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12", children: [
       /* @__PURE__ */ jsxDEV59("div", { className: "w-full max-w-2xl mx-auto sm:block lg:max-w-none", children: /* @__PURE__ */ jsxDEV59("span", { className: "rounded-md overflow-hidden", children: /* @__PURE__ */ jsxDEV59("div", { className: "w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center", children: /* @__PURE__ */ jsxDEV59(PhotoIcon, { className: "w-48 text-white" }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
-        lineNumber: 340,
+        lineNumber: 342,
         columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
-        lineNumber: 339,
+        lineNumber: 341,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
-        lineNumber: 338,
+        lineNumber: 340,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.$slug.tsx",
-        lineNumber: 337,
+        lineNumber: 339,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV59("div", { className: "mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0", children: [
         /* @__PURE__ */ jsxDEV59("div", { className: "", children: t("product.notFoundInfo") }, void 0, !1, {
           fileName: "app/routes/products.$slug.tsx",
-          lineNumber: 347,
+          lineNumber: 349,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ jsxDEV59("div", { className: "flex-1 space-y-3 py-1", children: [
           /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
             fileName: "app/routes/products.$slug.tsx",
-            lineNumber: 349,
+            lineNumber: 351,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV59("div", { className: "space-y-3", children: [
             /* @__PURE__ */ jsxDEV59("div", { className: "grid grid-cols-3 gap-4", children: [
               /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded col-span-2" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 352,
+                lineNumber: 354,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded col-span-1" }, void 0, !1, {
                 fileName: "app/routes/products.$slug.tsx",
-                lineNumber: 353,
+                lineNumber: 355,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 351,
+              lineNumber: 353,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV59("div", { className: "h-2 bg-slate-200 rounded" }, void 0, !1, {
               fileName: "app/routes/products.$slug.tsx",
-              lineNumber: 355,
+              lineNumber: 357,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/products.$slug.tsx",
-            lineNumber: 350,
+            lineNumber: 352,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.$slug.tsx",
-          lineNumber: 348,
+          lineNumber: 350,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.$slug.tsx",
-        lineNumber: 346,
+        lineNumber: 348,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.$slug.tsx",
-      lineNumber: 335,
+      lineNumber: 337,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/products.$slug.tsx",
-    lineNumber: 331,
+    lineNumber: 333,
     columnNumber: 5
   }, this);
 }
@@ -15964,11 +15798,11 @@ function getAddItemToOrderError(error) {
 var paypal_return_exports = {};
 __export(paypal_return_exports, {
   default: () => PayPalReturn,
-  loader: () => loader14
+  loader: () => loader16
 });
 import { redirect as redirect9 } from "@remix-run/server-runtime";
 import { jsxDEV as jsxDEV60 } from "react/jsx-dev-runtime";
-async function loader14({ request }) {
+async function loader16({ request }) {
   let orderCode = new URL(request.url).searchParams.get("orderCode");
   if (!orderCode)
     return redirect9("/");
@@ -16007,7 +15841,7 @@ __export(sign_up_index_exports, {
   default: () => SignUpPage
 });
 import { Form as Form6, Link as Link11, useActionData as useActionData6, useSearchParams as useSearchParams3 } from "@remix-run/react";
-import { json as json12, redirect as redirect10 } from "@remix-run/server-runtime";
+import { json as json14, redirect as redirect10 } from "@remix-run/server-runtime";
 import { XCircleIcon as XCircleIcon6 } from "@heroicons/react/24/solid";
 
 // app/utils/registration-helper.ts
@@ -16039,7 +15873,7 @@ async function action10({ request }) {
     let formError = {
       form: result.errorCode
     };
-    return json12(formError, { status: 401 });
+    return json14(formError, { status: 401 });
   }
 }
 function SignUpPage() {
@@ -16438,18 +16272,43 @@ function SignUpPage() {
   }, this);
 }
 
+// app/routes/api.shop-api.tsx
+var api_shop_api_exports = {};
+__export(api_shop_api_exports, {
+  action: () => action11,
+  loader: () => loader17
+});
+async function loader17() {
+  return new Response(null, { status: 404 });
+}
+async function action11({ request }) {
+  let body = await request.text(), headers = new Headers();
+  headers.set("Content-Type", "application/json");
+  let authHeader = request.headers.get("Authorization");
+  authHeader && headers.set("Authorization", authHeader);
+  let response = await fetch(API_URL, {
+    method: "POST",
+    headers,
+    body
+  }), responseBody = await response.text(), responseHeaders = new Headers(response.headers);
+  return responseHeaders.set("Access-Control-Allow-Origin", "*"), new Response(responseBody, {
+    status: response.status,
+    headers: responseHeaders
+  });
+}
+
 // app/routes/api.logout.ts
 var api_logout_exports = {};
 __export(api_logout_exports, {
-  action: () => action11,
-  loader: () => loader15
+  action: () => action12,
+  loader: () => loader18
 });
 import { redirect as redirect11 } from "@remix-run/server-runtime";
-async function action11({ request }) {
+async function action12({ request }) {
   let result = await logout({ request });
   return redirect11("/", { headers: result._headers });
 }
-async function loader15() {
+async function loader18() {
   return redirect11("/");
 }
 
@@ -17182,17 +17041,17 @@ function Checkout() {
 var products_exports = {};
 __export(products_exports, {
   default: () => ProductsPage,
-  loader: () => loader16
+  loader: () => loader19
 });
-import { json as json13 } from "@remix-run/node";
-import { useLoaderData as useLoaderData13 } from "@remix-run/react";
+import { json as json15 } from "@remix-run/node";
+import { useLoaderData as useLoaderData15 } from "@remix-run/react";
 import { jsxDEV as jsxDEV64 } from "react/jsx-dev-runtime";
-var loader16 = async ({ request }) => {
+var loader19 = async ({ request }) => {
   let collections = await getCollections(request);
-  return json13({ collections });
+  return json15({ collections });
 };
 function ProductsPage() {
-  let { collections } = useLoaderData13(), iconMap = {
+  let { collections } = useLoaderData15(), iconMap = {
     shirt: "M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z",
     sofa: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z",
     briefcase: "M6 2a2 2 0 00-2 2v16l4-4h10a2 2 0 002-2V4a2 2 0 00-2-2H6z",
@@ -17223,22 +17082,22 @@ function ProductsPage() {
       /* @__PURE__ */ jsxDEV64("div", { children: [
         /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-2", children: "4,000+ Clients Trust Us" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 68,
+          lineNumber: 69,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "Find your reliable products and save, let's factory price." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 69,
+          lineNumber: 70,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("button", { className: "mt-4 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get Started" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 70,
+          lineNumber: 71,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 67,
+        lineNumber: 68,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { className: "relative", children: [
@@ -17253,7 +17112,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 75,
+            lineNumber: 76,
             columnNumber: 15
           },
           this
@@ -17261,52 +17120,52 @@ function ProductsPage() {
         /* @__PURE__ */ jsxDEV64("div", { className: "absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-lg shadow-lg", children: [
           /* @__PURE__ */ jsxDEV64("div", { className: "text-2xl font-bold", children: "98%" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 81,
+            lineNumber: 82,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ jsxDEV64("div", { className: "text-sm", children: "Customer Satisfaction" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 82,
+            lineNumber: 83,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 80,
+          lineNumber: 81,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 74,
+        lineNumber: 75,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 65,
+      lineNumber: 66,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 64,
+      lineNumber: 65,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV64("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Product categories" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 92,
+          lineNumber: 93,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "Browse through our product categories to find items for your business." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 93,
+          lineNumber: 94,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 91,
+        lineNumber: 92,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { className: "grid grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4", children: collections && collections.length > 0 ? collections.map((category, index) => /* @__PURE__ */ jsxDEV64(
@@ -17314,26 +17173,26 @@ function ProductsPage() {
         {
           className: "flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-md transition-all duration-300 cursor-pointer",
           children: [
-            /* @__PURE__ */ jsxDEV64("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2", children: category.featuredAsset ? /* @__PURE__ */ jsxDEV64("img", { src: category.featuredAsset.preview, alt: category.name, className: "w-6 h-6 object-contain" }, void 0, !1, {
+            /* @__PURE__ */ jsxDEV64("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2", children: category.featuredAsset ? /* @__PURE__ */ jsxDEV64("img", { src: BACKEND_URL + category.featuredAsset.preview, alt: category.name, className: "w-6 h-6 object-contain" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 105,
+              lineNumber: 106,
               columnNumber: 23
             }, this) : /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: getIconForName(category.name) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 108,
+              lineNumber: 109,
               columnNumber: 25
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 107,
+              lineNumber: 108,
               columnNumber: 23
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 103,
+              lineNumber: 104,
               columnNumber: 19
             }, this),
             /* @__PURE__ */ jsxDEV64("span", { className: "text-sm text-gray-700 text-center", children: category.name }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 112,
+              lineNumber: 113,
               columnNumber: 19
             }, this)
           ]
@@ -17342,84 +17201,84 @@ function ProductsPage() {
         !0,
         {
           fileName: "app/routes/products.tsx",
-          lineNumber: 99,
+          lineNumber: 100,
           columnNumber: 17
         },
         this
       )) : /* @__PURE__ */ jsxDEV64("div", { className: "col-span-full text-center py-12", children: /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-500", children: "No categories found." }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 117,
+        lineNumber: 118,
         columnNumber: 17
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 116,
+        lineNumber: 117,
         columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { className: "mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between", children: [
         /* @__PURE__ */ jsxDEV64("div", { children: [
           /* @__PURE__ */ jsxDEV64("h3", { className: "text-lg font-semibold text-gray-900 mb-2", children: "Are you looking for more categories?" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 124,
+            lineNumber: 125,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: "If you cannot find your target product, we can also source any product for you." }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 125,
+            lineNumber: 126,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 123,
+          lineNumber: 124,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV64("button", { className: "mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Tell us more" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 127,
+          lineNumber: 128,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 122,
+        lineNumber: 123,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 90,
+      lineNumber: 91,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 89,
+      lineNumber: 90,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
       /* @__PURE__ */ jsxDEV64("div", { children: [
         /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Customized products sourcing" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 138,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
-          fileName: "app/routes/products.tsx",
           lineNumber: 139,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 142,
+          lineNumber: 140,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality." }, void 0, !1, {
+          fileName: "app/routes/products.tsx",
+          lineNumber: 143,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Get a free quote" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 145,
+          lineNumber: 146,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 137,
+        lineNumber: 138,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { className: "grid grid-cols-2 gap-4", children: [
@@ -17434,7 +17293,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 150,
+            lineNumber: 151,
             columnNumber: 15
           },
           this
@@ -17450,27 +17309,27 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 155,
+            lineNumber: 156,
             columnNumber: 15
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 149,
+        lineNumber: 150,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 136,
+      lineNumber: 137,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 135,
+      lineNumber: 136,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 134,
+      lineNumber: 135,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-12 items-center", children: [
@@ -17485,57 +17344,57 @@ function ProductsPage() {
         !1,
         {
           fileName: "app/routes/products.tsx",
-          lineNumber: 169,
+          lineNumber: 170,
           columnNumber: 15
         },
         this
       ) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 168,
+        lineNumber: 169,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { children: [
         /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "New Product Development" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 176,
+          lineNumber: 177,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-6", children: "If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production." }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 177,
+          lineNumber: 178,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV64("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Share my idea" }, void 0, !1, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 180,
+          lineNumber: 181,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 175,
+        lineNumber: 176,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 167,
+      lineNumber: 168,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 166,
+      lineNumber: 167,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 165,
+      lineNumber: 166,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV64("div", { className: "text-center mb-12", children: /* @__PURE__ */ jsxDEV64("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "We can do more than Alibaba" }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 191,
+        lineNumber: 192,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 190,
+        lineNumber: 191,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV64("div", { className: "grid md:grid-cols-2 gap-8", children: [
@@ -17543,86 +17402,86 @@ function ProductsPage() {
           /* @__PURE__ */ jsxDEV64("div", { className: "flex items-center justify-between mb-4", children: [
             /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900", children: "Why friendly to small businesses" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 197,
+              lineNumber: 198,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 199,
+              lineNumber: 200,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 198,
+              lineNumber: 199,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 196,
+            lineNumber: 197,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-4", children: "Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business." }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 202,
+            lineNumber: 203,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV64("button", { className: "text-orange-500 font-semibold hover:underline", children: "15% cheaper than Alibaba ->" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 205,
+            lineNumber: 206,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 195,
+          lineNumber: 196,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV64("div", { className: "bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500", children: [
           /* @__PURE__ */ jsxDEV64("div", { className: "flex items-center justify-between mb-4", children: [
             /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900", children: "Our 1-1 agent assists you in every aspect" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 210,
+              lineNumber: 211,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV64("svg", { className: "w-6 h-6 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV64("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 212,
+              lineNumber: 213,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/routes/products.tsx",
-              lineNumber: 211,
+              lineNumber: 212,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 209,
+            lineNumber: 210,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600 mb-4", children: "We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between." }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 215,
+            lineNumber: 216,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV64("button", { className: "text-orange-500 font-semibold hover:underline", children: "Product quality is our priority ->" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 218,
+            lineNumber: 219,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 208,
+          lineNumber: 209,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 194,
+        lineNumber: 195,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 189,
+      lineNumber: 190,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 188,
+      lineNumber: 189,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV64("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV64("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV64("div", { className: "bg-white rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8", children: [
@@ -17638,7 +17497,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 228,
+            lineNumber: 229,
             columnNumber: 15
           },
           this
@@ -17646,22 +17505,22 @@ function ProductsPage() {
         /* @__PURE__ */ jsxDEV64("div", { children: [
           /* @__PURE__ */ jsxDEV64("h3", { className: "text-xl font-bold text-gray-900 mb-2", children: "Product monthly report" }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 234,
+            lineNumber: 235,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ jsxDEV64("p", { className: "text-gray-600", children: 'We will send the hottest products from "1688.com" to your inbox for free!' }, void 0, !1, {
             fileName: "app/routes/products.tsx",
-            lineNumber: 235,
+            lineNumber: 236,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/products.tsx",
-          lineNumber: 233,
+          lineNumber: 234,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 227,
+        lineNumber: 228,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV64("form", { className: "flex flex-col sm:flex-row gap-4", children: [
@@ -17676,7 +17535,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 239,
+            lineNumber: 240,
             columnNumber: 15
           },
           this
@@ -17692,7 +17551,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 244,
+            lineNumber: 245,
             columnNumber: 15
           },
           this
@@ -17708,7 +17567,7 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 249,
+            lineNumber: 250,
             columnNumber: 15
           },
           this
@@ -17724,32 +17583,32 @@ function ProductsPage() {
           !1,
           {
             fileName: "app/routes/products.tsx",
-            lineNumber: 254,
+            lineNumber: 255,
             columnNumber: 15
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/products.tsx",
-        lineNumber: 238,
+        lineNumber: 239,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 226,
+      lineNumber: 227,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 225,
+      lineNumber: 226,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/products.tsx",
-      lineNumber: 224,
+      lineNumber: 225,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/products.tsx",
-    lineNumber: 63,
+    lineNumber: 64,
     columnNumber: 5
   }, this);
 }
@@ -17764,7 +17623,7 @@ import { useState as useState14 } from "react";
 // app/lib/graphql-client.ts
 var GraphqlClient = class {
   async request(query, variables) {
-    let result = await (await fetch(API_URL, {
+    let result = await (await fetch("/api/shop-api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -17817,7 +17676,7 @@ function ServicesPage() {
         message: ""
       });
     } catch (error) {
-      console.error("Failed to submit form:", error), alert("Failed to submit. Please try again or email us at info@Taisourcing@gmail.com");
+      console.error("Failed to submit form:", error), alert("Failed to submit. Please try again or email us at Taisourcing@gmail.com");
     } finally {
       setSubmitting(!1);
     }
@@ -17849,8 +17708,8 @@ function ServicesPage() {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV65("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV65("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-8", children: [
-      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-orange-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white", children: [
-        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-orange-600 mb-6", children: "Find New Suppliers" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-orange-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
+        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-orange-600 mb-4", children: "Find New Suppliers" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
           lineNumber: 74,
           columnNumber: 15
@@ -17860,38 +17719,22 @@ function ServicesPage() {
           lineNumber: 75,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide." }, void 0, !1, {
-          fileName: "app/routes/services.tsx",
-          lineNumber: 78,
-          columnNumber: 15
-        }, this),
         /* @__PURE__ */ jsxDEV65("p", { className: "text-orange-600 font-medium mb-6", children: [
           "Check out our ",
           /* @__PURE__ */ jsxDEV65("span", { className: "underline", children: "Pro Service Plan" }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 82,
+            lineNumber: 79,
             columnNumber: 31
           }, this),
           " for more details."
         ] }, void 0, !0, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 81,
+          lineNumber: 78,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { className: "flex flex-col gap-3", children: [
-          /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
-            fileName: "app/routes/services.tsx",
-            lineNumber: 85,
-            columnNumber: 17
-          }, this),
-          /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
-            fileName: "app/routes/services.tsx",
-            lineNumber: 88,
-            columnNumber: 17
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ jsxDEV65("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 84,
+          lineNumber: 81,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
@@ -17899,49 +17742,38 @@ function ServicesPage() {
         lineNumber: 73,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white", children: [
-        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-blue-600 mb-6", children: "Manage My Suppliers" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV65("div", { className: "border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full", children: [
+        /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-blue-600 mb-4", children: "Manage My Suppliers" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 95,
+          lineNumber: 87,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 leading-relaxed mb-6", children: "If you prefer to use your own suppliers, we can collaborate with them and manage the entire purchasing process from production to quality inspection and door-to-door logistics. Our support will significantly enhance your sourcing efficiency." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 96,
+          lineNumber: 88,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("p", { className: "text-blue-600 font-medium mb-6", children: [
           "Discover more details about our ",
           /* @__PURE__ */ jsxDEV65("span", { className: "underline", children: "Basic Service Plan" }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 100,
+            lineNumber: 92,
             columnNumber: 49
           }, this),
           "."
         ] }, void 0, !0, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 99,
+          lineNumber: 91,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV65("div", { className: "flex flex-col gap-3", children: [
-          /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
-            fileName: "app/routes/services.tsx",
-            lineNumber: 103,
-            columnNumber: 17
-          }, this),
-          /* @__PURE__ */ jsxDEV65("button", { className: "px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
-            fileName: "app/routes/services.tsx",
-            lineNumber: 106,
-            columnNumber: 17
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ jsxDEV65("button", { className: "w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "I need this plan" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 102,
+          lineNumber: 94,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/services.tsx",
-        lineNumber: 94,
+        lineNumber: 86,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
@@ -17961,61 +17793,56 @@ function ServicesPage() {
       /* @__PURE__ */ jsxDEV65("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV65("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Submit Your Sourcing Request" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 118,
+          lineNumber: 105,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-4", children: "Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 max-w-2xl mx-auto leading-relaxed", children: "Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 121,
+          lineNumber: 108,
           columnNumber: 13
         }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600 mb-4", children: "To follow up on your response, submit your inquiries using the form. If you encounter any issues with submission, you can also email us directly at info@Taisourcing@gmail.com." }, void 0, !1, {
+        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-500 mt-4 text-sm", children: "If you encounter any issues with submission, you can also email us directly at Taisourcing@gmail.com." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 124,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ jsxDEV65("p", { className: "text-gray-600", children: "To get the fastest response, submit your inquiries using the form. If you encounter any issues with submission, you can also email us directly at info@Taisourcing@gmail.com." }, void 0, !1, {
-          fileName: "app/routes/services.tsx",
-          lineNumber: 127,
+          lineNumber: 111,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV65("div", { className: "w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 130,
+          lineNumber: 114,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/services.tsx",
-        lineNumber: 117,
+        lineNumber: 104,
         columnNumber: 11
       }, this),
       submitted ? /* @__PURE__ */ jsxDEV65("div", { className: "bg-green-50 border border-green-200 rounded-xl p-8 text-center", children: [
         /* @__PURE__ */ jsxDEV65("div", { className: "w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxDEV65("svg", { className: "w-8 h-8 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV65("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 137,
+          lineNumber: 121,
           columnNumber: 19
         }, this) }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 136,
+          lineNumber: 120,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 135,
+          lineNumber: 119,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("h3", { className: "text-xl font-bold text-green-700 mb-2", children: "Thank You!" }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 140,
+          lineNumber: 124,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("p", { className: "text-green-600", children: "Your request has been submitted successfully. Our team will contact you shortly." }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 141,
+          lineNumber: 125,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/services.tsx",
-        lineNumber: 134,
+        lineNumber: 118,
         columnNumber: 13
       }, this) : /* @__PURE__ */ jsxDEV65("form", { onSubmit: handleSubmit, className: "space-y-6", children: [
         /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
@@ -18034,13 +17861,13 @@ function ServicesPage() {
             !1,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 147,
+              lineNumber: 131,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 146,
+            lineNumber: 130,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
@@ -18058,18 +17885,18 @@ function ServicesPage() {
             !1,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 158,
+              lineNumber: 142,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 157,
+            lineNumber: 141,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 145,
+          lineNumber: 129,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
@@ -18088,13 +17915,13 @@ function ServicesPage() {
             !1,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 172,
+              lineNumber: 156,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 171,
+            lineNumber: 155,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
@@ -18112,18 +17939,18 @@ function ServicesPage() {
             !1,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 183,
+              lineNumber: 167,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 182,
+            lineNumber: 166,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 170,
+          lineNumber: 154,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("div", { className: "grid md:grid-cols-2 gap-6", children: [
@@ -18138,32 +17965,32 @@ function ServicesPage() {
               children: [
                 /* @__PURE__ */ jsxDEV65("option", { value: "", children: "Select your country*" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 204,
+                  lineNumber: 188,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ jsxDEV65("option", { value: "US", children: "United States" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 205,
+                  lineNumber: 189,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ jsxDEV65("option", { value: "CN", children: "China" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 206,
+                  lineNumber: 190,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ jsxDEV65("option", { value: "DE", children: "Germany" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 207,
+                  lineNumber: 191,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ jsxDEV65("option", { value: "UK", children: "United Kingdom" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 208,
+                  lineNumber: 192,
                   columnNumber: 21
                 }, this),
                 /* @__PURE__ */ jsxDEV65("option", { value: "JP", children: "Japan" }, void 0, !1, {
                   fileName: "app/routes/services.tsx",
-                  lineNumber: 209,
+                  lineNumber: 193,
                   columnNumber: 21
                 }, this)
               ]
@@ -18172,13 +17999,13 @@ function ServicesPage() {
             !0,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 197,
+              lineNumber: 181,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 196,
+            lineNumber: 180,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
@@ -18195,18 +18022,18 @@ function ServicesPage() {
             !1,
             {
               fileName: "app/routes/services.tsx",
-              lineNumber: 213,
+              lineNumber: 197,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/services.tsx",
-            lineNumber: 212,
+            lineNumber: 196,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 195,
+          lineNumber: 179,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65("div", { children: /* @__PURE__ */ jsxDEV65(
@@ -18224,13 +18051,13 @@ function ServicesPage() {
           !1,
           {
             fileName: "app/routes/services.tsx",
-            lineNumber: 225,
+            lineNumber: 209,
             columnNumber: 17
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/services.tsx",
-          lineNumber: 224,
+          lineNumber: 208,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ jsxDEV65(
@@ -18245,23 +18072,23 @@ function ServicesPage() {
           !1,
           {
             fileName: "app/routes/services.tsx",
-            lineNumber: 236,
+            lineNumber: 220,
             columnNumber: 15
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/routes/services.tsx",
-        lineNumber: 144,
+        lineNumber: 128,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/services.tsx",
-      lineNumber: 116,
+      lineNumber: 103,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/services.tsx",
-      lineNumber: 115,
+      lineNumber: 102,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -18275,7 +18102,7 @@ function ServicesPage() {
 var account_exports = {};
 __export(account_exports, {
   default: () => AccountDashboard,
-  loader: () => loader17
+  loader: () => loader20
 });
 import {
   HashtagIcon,
@@ -18283,8 +18110,8 @@ import {
   ShoppingBagIcon as ShoppingBagIcon2,
   UserCircleIcon
 } from "@heroicons/react/24/solid";
-import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData14 } from "@remix-run/react";
-import { json as json14, redirect as redirect12 } from "@remix-run/server-runtime";
+import { Form as Form7, Outlet as Outlet4, useLoaderData as useLoaderData16 } from "@remix-run/react";
+import { json as json16, redirect as redirect12 } from "@remix-run/server-runtime";
 
 // app/components/tabs/Tab.tsx
 import { NavLink, useMatches as useMatches3, useResolvedPath } from "@remix-run/react";
@@ -18375,12 +18202,12 @@ function TabsContainer({
 // app/routes/account.tsx
 import { useTranslation as useTranslation42 } from "react-i18next";
 import { jsxDEV as jsxDEV68 } from "react/jsx-dev-runtime";
-async function loader17({ request }) {
+async function loader20({ request }) {
   let { activeCustomer } = await getActiveCustomerDetails({ request });
-  return activeCustomer ? json14({ activeCustomer }) : redirect12("/sign-in");
+  return activeCustomer ? json16({ activeCustomer }) : redirect12("/sign-in");
 }
 function AccountDashboard() {
-  let { activeCustomer } = useLoaderData14(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
+  let { activeCustomer } = useLoaderData16(), { firstName, lastName } = activeCustomer, { t } = useTranslation42(), tabs = [
     {
       Icon: UserCircleIcon,
       text: t("account.details"),
@@ -18458,20 +18285,20 @@ function AccountDashboard() {
 // app/routes/sign-in.tsx
 var sign_in_exports = {};
 __export(sign_in_exports, {
-  action: () => action12,
+  action: () => action13,
   default: () => SignInPage
 });
 import { Link as Link12, useFetcher as useFetcher3, useSearchParams as useSearchParams4 } from "@remix-run/react";
-import { json as json15, redirect as redirect13 } from "@remix-run/server-runtime";
+import { json as json17, redirect as redirect13 } from "@remix-run/server-runtime";
 import { XCircleIcon as XCircleIcon7 } from "@heroicons/react/24/solid";
 import { ArrowPathIcon as ArrowPathIcon4 } from "@heroicons/react/24/solid";
 import { useTranslation as useTranslation43 } from "react-i18next";
 import { Fragment as Fragment17, jsxDEV as jsxDEV69 } from "react/jsx-dev-runtime";
-async function action12({ params, request }) {
+async function action13({ params, request }) {
   let body = await request.formData(), email = body.get("email"), password = body.get("password");
   if (typeof email == "string" && typeof password == "string") {
     let rememberMe = !!body.get("rememberMe"), redirectTo = body.get("redirectTo") || "/account", result = await login(email, password, rememberMe, { request });
-    return result.__typename === "CurrentUser" ? redirect13(redirectTo, { headers: result._headers }) : json15(result, {
+    return result.__typename === "CurrentUser" ? redirect13(redirectTo, { headers: result._headers }) : json17(result, {
       status: 401
     });
   }
@@ -18838,9 +18665,9 @@ function SignInPage() {
 var search_exports = {};
 __export(search_exports, {
   default: () => Search,
-  loader: () => loader18
+  loader: () => loader21
 });
-import { useLoaderData as useLoaderData15, useSubmit as useSubmit6 } from "@remix-run/react";
+import { useLoaderData as useLoaderData17, useSubmit as useSubmit6 } from "@remix-run/react";
 import { useRef as useRef11, useState as useState15 } from "react";
 import { ValidatedForm as ValidatedForm6 } from "remix-validated-form";
 import { useTranslation as useTranslation44 } from "react-i18next";
@@ -18849,12 +18676,12 @@ var paginationLimitMinimumDefault3 = 25, allowedPaginationLimits3 = /* @__PURE__
   paginationLimitMinimumDefault3,
   50,
   100
-]), validator5 = withZod(paginationValidationSchema(allowedPaginationLimits3)), { filteredSearchLoader: loader18 } = filteredSearchLoaderFromPagination(
+]), validator5 = withZod(paginationValidationSchema(allowedPaginationLimits3)), { filteredSearchLoader: loader21 } = filteredSearchLoaderFromPagination(
   allowedPaginationLimits3,
   paginationLimitMinimumDefault3
 );
 function Search() {
-  let loaderData = useLoaderData15(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState15(!1);
+  let loaderData = useLoaderData17(), { result, resultWithoutFacetValueFilters, term, facetValueIds } = loaderData, [mobileFiltersOpen, setMobileFiltersOpen] = useState15(!1);
   useRef11(new FacetFilterTracker()).current.update(
     result,
     resultWithoutFacetValueFilters,
@@ -18931,17 +18758,17 @@ function Search() {
 // app/routes/verify.tsx
 var verify_exports = {};
 __export(verify_exports, {
-  action: () => action13,
+  action: () => action14,
   default: () => VerifyTokenPage,
-  loader: () => loader19
+  loader: () => loader22
 });
 import { useEffect as useEffect14, useRef as useRef12 } from "react";
-import { useLoaderData as useLoaderData16, useSearchParams as useSearchParams5 } from "@remix-run/react";
+import { useLoaderData as useLoaderData18, useSearchParams as useSearchParams5 } from "@remix-run/react";
 import { redirect as redirect14 } from "@remix-run/server-runtime";
 import { CheckCircleIcon as CheckCircleIcon6, XCircleIcon as XCircleIcon8 } from "@heroicons/react/24/outline";
 import { useTranslation as useTranslation45 } from "react-i18next";
 import { jsxDEV as jsxDEV71 } from "react/jsx-dev-runtime";
-async function loader19({
+async function loader22({
   request
 }) {
   let token = new URL(request.url).searchParams.get("token");
@@ -18953,7 +18780,7 @@ async function loader19({
   let result = await verifyCustomerAccount({ request }, token);
   return result.__typename !== "CurrentUser" ? { success: !1, error: result.message } : { success: !0, headersJson: JSON.stringify(Object.fromEntries(result._headers)) };
 }
-async function action13({ request }) {
+async function action14({ request }) {
   let body = await request.formData(), headersJson = body.get("headers"), redirectTarget = body.get("redirect");
   if (!headersJson)
     return null;
@@ -18963,7 +18790,7 @@ async function action13({ request }) {
   }), redirect14(redirectTarget, { headers });
 }
 function VerifyTokenPage() {
-  let [searchParams] = useSearchParams5(), result = useLoaderData16(), btnRef = useRef12(null), { t } = useTranslation45();
+  let [searchParams] = useSearchParams5(), result = useLoaderData18(), btnRef = useRef12(null), { t } = useTranslation45();
   return useEffect14(() => {
     if (!result.success || !btnRef.current)
       return;
@@ -19137,102 +18964,16 @@ function AboutPage() {
         lineNumber: 6,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV72("div", { className: "grid md:grid-cols-2 gap-12 items-start", children: [
-        /* @__PURE__ */ jsxDEV72("div", { className: "space-y-6", children: [
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "TaiSourcing was founded in Yiwu, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China." }, void 0, !1, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 15,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe." }, void 0, !1, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 18,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
+      /* @__PURE__ */ jsxDEV72("div", { className: "space-y-6", children: [
+        /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "TaiSourcing was founded in Yiwu, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China." }, void 0, !1, {
           fileName: "app/routes/about.tsx",
           lineNumber: 14,
-          columnNumber: 13
+          columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV72("div", { className: "relative", children: [
-          /* @__PURE__ */ jsxDEV72("div", { className: "aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg", children: [
-            /* @__PURE__ */ jsxDEV72(
-              "img",
-              {
-                src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20businessman%20giving%20presentation%20in%20office%20meeting%20room&image_size=landscape_16_9",
-                alt: "Company Video",
-                className: "w-full h-full object-cover"
-              },
-              void 0,
-              !1,
-              {
-                fileName: "app/routes/about.tsx",
-                lineNumber: 24,
-                columnNumber: 17
-              },
-              this
-            ),
-            /* @__PURE__ */ jsxDEV72("div", { className: "absolute inset-0 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV72("button", { className: "w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-8 h-8 text-orange-500 ml-1", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M8 5v14l11-7z" }, void 0, !1, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 32,
-              columnNumber: 23
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 31,
-              columnNumber: 21
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 30,
-              columnNumber: 19
-            }, this) }, void 0, !1, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 29,
-              columnNumber: 17
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 23,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV72("div", { className: "absolute bottom-4 left-4 right-4 flex items-center justify-between bg-black/70 text-white px-4 py-2 rounded-lg", children: [
-            /* @__PURE__ */ jsxDEV72("span", { children: "5:22" }, void 0, !1, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 38,
-              columnNumber: 17
-            }, this),
-            /* @__PURE__ */ jsxDEV72("div", { className: "flex items-center gap-2", children: [
-              /* @__PURE__ */ jsxDEV72("svg", { className: "w-4 h-4", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M18 6l-12 8 12 8V6zM6 6l12 8-12 8V6z" }, void 0, !1, {
-                fileName: "app/routes/about.tsx",
-                lineNumber: 41,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/about.tsx",
-                lineNumber: 40,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV72("svg", { className: "w-4 h-4", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M12 4C7.5 4 4 7.5 4 12s3.5 8 8 8 8-3.5 8-8-3.5-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm1-10h-2v6l5.2 3.2.8-1.3-4-2.4V8z" }, void 0, !1, {
-                fileName: "app/routes/about.tsx",
-                lineNumber: 44,
-                columnNumber: 21
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/about.tsx",
-                lineNumber: 43,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/routes/about.tsx",
-              lineNumber: 39,
-              columnNumber: 17
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/routes/about.tsx",
-            lineNumber: 37,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe." }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 22,
-          columnNumber: 13
+          lineNumber: 17,
+          columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
@@ -19248,303 +18989,248 @@ function AboutPage() {
       lineNumber: 4,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV72("div", { className: "bg-white rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 shadow-sm", children: [
-      /* @__PURE__ */ jsxDEV72("div", { className: "flex-shrink-0", children: /* @__PURE__ */ jsxDEV72(
-        "img",
-        {
-          src: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Company%20brochure%20booklet%20with%20orange%20design%20cover&image_size=portrait_4_3",
-          alt: "Company Brochure",
-          className: "w-32 h-40 object-cover rounded-lg shadow-md"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 57,
-          columnNumber: 15
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 56,
-        columnNumber: 13
-      }, this),
-      /* @__PURE__ */ jsxDEV72("div", { className: "flex-1 text-center md:text-left", children: [
-        /* @__PURE__ */ jsxDEV72("h3", { className: "text-xl font-bold text-gray-900 mb-4", children: "Download Our Company Brochure" }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 64,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 mb-6", children: "Get a quick overview of our sourcing services, workflow, factory resources, and real client cases\u2014all in one brochure." }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 65,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ jsxDEV72("button", { className: "px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg", children: "Download" }, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 68,
-          columnNumber: 15
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/about.tsx",
-        lineNumber: 63,
-        columnNumber: 13
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 55,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 54,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 53,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-white", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-6xl mx-auto px-6", children: [
       /* @__PURE__ */ jsxDEV72("div", { className: "text-center mb-12", children: [
         /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-4", children: "What Makes Us Unique" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 79,
+          lineNumber: 29,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "w-24 h-1 bg-orange-500 mx-auto rounded-full" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 82,
+          lineNumber: 32,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 78,
+        lineNumber: 28,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV72("div", { className: "grid md:grid-cols-3 gap-8", children: [
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Competitive Prices" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 87,
+            lineNumber: 37,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We always encourage our clients to compare our quotes with those they receive from other suppliers before selecting our service plans. Over 90% of them choose our Pro Plan because we consistently offer the most competitive prices." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 88,
+            lineNumber: 38,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 86,
+          lineNumber: 36,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Quality Assurance" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 94,
+            lineNumber: 44,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We place a strong emphasis on product quality. We conduct thorough inspections of products before we ship them out. And we are the only sourcing company that provides 1-by-1 product inspections to minimize the defect rate to 0." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 95,
+            lineNumber: 45,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 93,
+          lineNumber: 43,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "In-house Production Department" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 101,
+            lineNumber: 51,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Although we are a sourcing company, we have our own production department capable of handling tasks that many factories are unable or unwilling to do. These tasks include product repackaging, bundling, eCommerce preparation, dropshipping, and fulfillment services." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 102,
+            lineNumber: 52,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 100,
+          lineNumber: 50,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Professional Sourcing Team" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 108,
+            lineNumber: 58,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "Our company has over 100 employees, each with years of experience in China sourcing across a wide range of products. In contrast, most other sourcing agents have smaller teams of fewer than 10 people with expertise limited to specific categories." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 109,
+            lineNumber: 59,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 107,
+          lineNumber: 57,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Special Support for Growing Businesses" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 115,
+            lineNumber: 65,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "For large-scale or rapidly expanding companies, we offer a range of tailored additional services. This includes assigning a team of up to 20 people, offering credit payment options, and more." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 116,
+            lineNumber: 66,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 114,
+          lineNumber: 64,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("div", { className: "border-t-4 border-orange-500 pt-6", children: [
           /* @__PURE__ */ jsxDEV72("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Global Logistics Network" }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 122,
+            lineNumber: 72,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 leading-relaxed", children: "We have established partnerships with major logistics providers worldwide, enabling us to offer competitive shipping rates and reliable delivery to over 200 countries and regions." }, void 0, !1, {
             fileName: "app/routes/about.tsx",
-            lineNumber: 123,
+            lineNumber: 73,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 121,
+          lineNumber: 71,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 85,
+        lineNumber: 35,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 77,
+      lineNumber: 27,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 76,
+      lineNumber: 26,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
       /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-orange-500 mb-6", children: "Find Us on Social Media" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 133,
+        lineNumber: 83,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV72("p", { className: "text-gray-600 mb-8", children: "We are consistently active on social media, sharing knowledge about sourcing, international trading, e-commerce, and more." }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 136,
+        lineNumber: 86,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV72("div", { className: "flex justify-center gap-6", children: [
         /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-blue-600", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 143,
+          lineNumber: 93,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 142,
+          lineNumber: 92,
           columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 141,
+          lineNumber: 91,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-blue-400", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 148,
+          lineNumber: 98,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 147,
+          lineNumber: 97,
           columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 146,
+          lineNumber: 96,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-red-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 153,
+          lineNumber: 103,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 152,
+          lineNumber: 102,
           columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 151,
+          lineNumber: 101,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-green-500", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.322-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.269-.03-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 158,
+          lineNumber: 108,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 157,
+          lineNumber: 107,
           columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 156,
+          lineNumber: 106,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ jsxDEV72("a", { href: "#", className: "w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300", children: /* @__PURE__ */ jsxDEV72("svg", { className: "w-7 h-7 text-black", fill: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV72("path", { d: "M12 0c-6.627 0-12 5.372-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.628-5.373-12-12-12z" }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 163,
+          lineNumber: 113,
           columnNumber: 17
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 162,
+          lineNumber: 112,
           columnNumber: 15
         }, this) }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 161,
+          lineNumber: 111,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 140,
+        lineNumber: 90,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 132,
+      lineNumber: 82,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 131,
+      lineNumber: 81,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV72("section", { className: "py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500", children: /* @__PURE__ */ jsxDEV72("div", { className: "max-w-4xl mx-auto px-6 text-center", children: [
       /* @__PURE__ */ jsxDEV72("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-6", children: "Ready to Start Your Sourcing Journey?" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 172,
+        lineNumber: 122,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV72("p", { className: "text-white/90 text-lg mb-8", children: "Join thousands of businesses that trust TaiSourcing for their China sourcing needs." }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 175,
+        lineNumber: 125,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV72("button", { className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl", children: "Get Started Today" }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 178,
+        lineNumber: 128,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 171,
+      lineNumber: 121,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/about.tsx",
-      lineNumber: 170,
+      lineNumber: 120,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -19581,42 +19267,29 @@ function HeroBanner() {
         lineNumber: 15,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV73("div", { className: "flex flex-col sm:flex-row gap-4 justify-center md:justify-start", children: [
-        /* @__PURE__ */ jsxDEV73(
-          Link13,
-          {
-            to: "/services",
-            className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl",
-            children: "Get Started"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/home/HeroBanner.tsx",
-            lineNumber: 19,
-            columnNumber: 15
-          },
-          this
-        ),
-        /* @__PURE__ */ jsxDEV73(
-          Link13,
-          {
-            to: "/about",
-            className: "px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300",
-            children: "Learn More"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/home/HeroBanner.tsx",
-            lineNumber: 25,
-            columnNumber: 15
-          },
-          this
-        )
-      ] }, void 0, !0, {
+      /* @__PURE__ */ jsxDEV73("div", { className: "flex flex-col sm:flex-row gap-4 justify-center md:justify-start", children: /* @__PURE__ */ jsxDEV73(
+        Link13,
+        {
+          to: "/services",
+          className: "px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl",
+          children: "Find new suppliers"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/home/HeroBanner.tsx",
+          lineNumber: 19,
+          columnNumber: 15
+        },
+        this
+      ) }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
         lineNumber: 18,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV73("p", { className: "text-sm mt-4 text-white/70 text-center md:text-left", children: "No experience needed, our expert agents will handle it all for you." }, void 0, !1, {
+        fileName: "app/components/home/HeroBanner.tsx",
+        lineNumber: 26,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ jsxDEV73("div", { className: "flex items-center justify-center md:justify-start gap-8 mt-12", children: [
@@ -19627,21 +19300,21 @@ function HeroBanner() {
       ].map((stat) => /* @__PURE__ */ jsxDEV73("div", { className: "text-center", children: [
         /* @__PURE__ */ jsxDEV73("div", { className: "text-2xl font-bold", children: stat.number }, void 0, !1, {
           fileName: "app/components/home/HeroBanner.tsx",
-          lineNumber: 40,
+          lineNumber: 37,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ jsxDEV73("div", { className: "text-sm opacity-80", children: stat.label }, void 0, !1, {
           fileName: "app/components/home/HeroBanner.tsx",
-          lineNumber: 41,
+          lineNumber: 38,
           columnNumber: 19
         }, this)
       ] }, stat.label, !0, {
         fileName: "app/components/home/HeroBanner.tsx",
-        lineNumber: 39,
+        lineNumber: 36,
         columnNumber: 17
       }, this)) }, void 0, !1, {
         fileName: "app/components/home/HeroBanner.tsx",
-        lineNumber: 32,
+        lineNumber: 29,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
@@ -19660,13 +19333,13 @@ function HeroBanner() {
       !1,
       {
         fileName: "app/components/home/HeroBanner.tsx",
-        lineNumber: 47,
+        lineNumber: 44,
         columnNumber: 13
       },
       this
     ) }, void 0, !1, {
       fileName: "app/components/home/HeroBanner.tsx",
-      lineNumber: 46,
+      lineNumber: 43,
       columnNumber: 11
     }, this)
   ] }, void 0, !0, {
@@ -20049,41 +19722,35 @@ function TestimonialsSection() {
     /* @__PURE__ */ jsxDEV77("div", { className: "text-center mb-12", children: [
       /* @__PURE__ */ jsxDEV77("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Client Testimonials" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
-        lineNumber: 27,
+        lineNumber: 21,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600", children: "What They Say" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
-        lineNumber: 30,
+        lineNumber: 24,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-500 mt-2", children: "Real feedback from our partners" }, void 0, !1, {
         fileName: "app/components/home/TestimonialsSection.tsx",
-        lineNumber: 33,
+        lineNumber: 27,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/home/TestimonialsSection.tsx",
-      lineNumber: 26,
+      lineNumber: 20,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ jsxDEV77("div", { className: "grid md:grid-cols-3 gap-8", children: [
       {
-        name: "Zhang Ming",
-        title: "Founder",
-        company: "A Well-Known Cross-Border Brand",
+        name: "James Wilson",
         content: "We have been working together for over two years. From a small store to now with annual sales of over 10 million, we cannot do without their professional service and support. The team is very responsible and always solves problems promptly."
       },
       {
-        name: "Li Hua",
-        title: "Operations Director",
-        company: "A Home Goods Brand",
+        name: "Sarah Johnson",
         content: "Logistics efficiency has improved by 50%, and customer satisfaction has significantly increased. Their intelligent warehousing system is really powerful, saving us a lot of costs and effort."
       },
       {
-        name: "Wang Qiang",
-        title: "CEO",
-        company: "An Electronics Company",
+        name: "Michael Brown",
         content: "Payment security is guaranteed, and funds arrive quickly. Most importantly, the exchange rate is transparent with no hidden fees, making our fund management much smoother."
       }
     ].map((testimonial) => /* @__PURE__ */ jsxDEV77(
@@ -20093,59 +19760,48 @@ function TestimonialsSection() {
         children: [
           /* @__PURE__ */ jsxDEV77("div", { className: "flex items-center gap-1 mb-4", children: [...Array(5)].map((_, i) => /* @__PURE__ */ jsxDEV77("svg", { className: "w-4 h-4 text-yellow-500", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDEV77("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }, void 0, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
-            lineNumber: 47,
+            lineNumber: 41,
             columnNumber: 21
           }, this) }, i, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
-            lineNumber: 46,
+            lineNumber: 40,
             columnNumber: 19
           }, this)) }, void 0, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
-            lineNumber: 44,
+            lineNumber: 38,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV77("p", { className: "text-gray-600 mb-6", children: testimonial.content }, void 0, !1, {
             fileName: "app/components/home/TestimonialsSection.tsx",
-            lineNumber: 51,
+            lineNumber: 45,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ jsxDEV77("div", { className: "flex items-center gap-4", children: [
             /* @__PURE__ */ jsxDEV77("div", { className: "w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxDEV77("svg", { className: "w-6 h-6 text-gray-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV77("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
-              lineNumber: 55,
+              lineNumber: 49,
               columnNumber: 21
             }, this) }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
-              lineNumber: 54,
+              lineNumber: 48,
               columnNumber: 19
             }, this) }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
-              lineNumber: 53,
+              lineNumber: 47,
               columnNumber: 17
             }, this),
-            /* @__PURE__ */ jsxDEV77("div", { children: [
-              /* @__PURE__ */ jsxDEV77("div", { className: "font-semibold text-gray-900", children: testimonial.name }, void 0, !1, {
-                fileName: "app/components/home/TestimonialsSection.tsx",
-                lineNumber: 59,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ jsxDEV77("div", { className: "text-sm text-gray-500", children: [
-                testimonial.title,
-                " @ ",
-                testimonial.company
-              ] }, void 0, !0, {
-                fileName: "app/components/home/TestimonialsSection.tsx",
-                lineNumber: 60,
-                columnNumber: 19
-              }, this)
-            ] }, void 0, !0, {
+            /* @__PURE__ */ jsxDEV77("div", { children: /* @__PURE__ */ jsxDEV77("div", { className: "font-semibold text-gray-900", children: testimonial.name }, void 0, !1, {
               fileName: "app/components/home/TestimonialsSection.tsx",
-              lineNumber: 58,
+              lineNumber: 53,
+              columnNumber: 19
+            }, this) }, void 0, !1, {
+              fileName: "app/components/home/TestimonialsSection.tsx",
+              lineNumber: 52,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/home/TestimonialsSection.tsx",
-            lineNumber: 52,
+            lineNumber: 46,
             columnNumber: 15
           }, this)
         ]
@@ -20154,22 +19810,22 @@ function TestimonialsSection() {
       !0,
       {
         fileName: "app/components/home/TestimonialsSection.tsx",
-        lineNumber: 40,
+        lineNumber: 34,
         columnNumber: 13
       },
       this
     )) }, void 0, !1, {
       fileName: "app/components/home/TestimonialsSection.tsx",
-      lineNumber: 38,
+      lineNumber: 32,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/home/TestimonialsSection.tsx",
-    lineNumber: 25,
+    lineNumber: 19,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/home/TestimonialsSection.tsx",
-    lineNumber: 24,
+    lineNumber: 18,
     columnNumber: 5
   }, this);
 }
@@ -20177,89 +19833,6 @@ function TestimonialsSection() {
 // app/components/home/PartnersSection.tsx
 import { Link as Link15 } from "@remix-run/react";
 import { jsxDEV as jsxDEV78 } from "react/jsx-dev-runtime";
-function PartnersSection() {
-  return /* @__PURE__ */ jsxDEV78("section", { className: "py-16 bg-gray-50", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-6xl mx-auto px-6", children: [
-    /* @__PURE__ */ jsxDEV78("div", { className: "text-center mb-12", children: [
-      /* @__PURE__ */ jsxDEV78("h2", { className: "text-2xl md:text-3xl font-bold text-gray-900 mb-4", children: "Our Partners" }, void 0, !1, {
-        fileName: "app/components/home/PartnersSection.tsx",
-        lineNumber: 17,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV78("p", { className: "text-gray-600", children: "Trusted Partners" }, void 0, !1, {
-        fileName: "app/components/home/PartnersSection.tsx",
-        lineNumber: 20,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ jsxDEV78("p", { className: "text-gray-500 mt-2", children: "Long-term cooperative relationships with world-renowned enterprises" }, void 0, !1, {
-        fileName: "app/components/home/PartnersSection.tsx",
-        lineNumber: 23,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/components/home/PartnersSection.tsx",
-      lineNumber: 16,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ jsxDEV78("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6", children: [
-      { name: "PayPal", description: "Payment Partner" },
-      { name: "Stripe", description: "Payment Partner" },
-      { name: "UPS", description: "Logistics Partner" },
-      { name: "DHL", description: "Logistics Partner" },
-      { name: "Amazon", description: "Platform Partner" },
-      { name: "eBay", description: "Platform Partner" }
-    ].map((partner) => /* @__PURE__ */ jsxDEV78(
-      "div",
-      {
-        className: "bg-white rounded-xl p-6 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow",
-        children: [
-          /* @__PURE__ */ jsxDEV78("div", { className: "w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3", children: /* @__PURE__ */ jsxDEV78("svg", { className: "w-8 h-8 text-gray-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDEV78("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, !1, {
-            fileName: "app/components/home/PartnersSection.tsx",
-            lineNumber: 36,
-            columnNumber: 19
-          }, this) }, void 0, !1, {
-            fileName: "app/components/home/PartnersSection.tsx",
-            lineNumber: 35,
-            columnNumber: 17
-          }, this) }, void 0, !1, {
-            fileName: "app/components/home/PartnersSection.tsx",
-            lineNumber: 34,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV78("div", { className: "font-semibold text-gray-900", children: partner.name }, void 0, !1, {
-            fileName: "app/components/home/PartnersSection.tsx",
-            lineNumber: 39,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ jsxDEV78("div", { className: "text-xs text-gray-500", children: partner.description }, void 0, !1, {
-            fileName: "app/components/home/PartnersSection.tsx",
-            lineNumber: 40,
-            columnNumber: 15
-          }, this)
-        ]
-      },
-      partner.name,
-      !0,
-      {
-        fileName: "app/components/home/PartnersSection.tsx",
-        lineNumber: 30,
-        columnNumber: 13
-      },
-      this
-    )) }, void 0, !1, {
-      fileName: "app/components/home/PartnersSection.tsx",
-      lineNumber: 28,
-      columnNumber: 9
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/components/home/PartnersSection.tsx",
-    lineNumber: 15,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/components/home/PartnersSection.tsx",
-    lineNumber: 14,
-    columnNumber: 5
-  }, this);
-}
 function CtaSection() {
   return /* @__PURE__ */ jsxDEV78("section", { className: "py-12 bg-gradient-to-r from-orange-500 to-orange-600", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-6xl mx-auto px-6", children: /* @__PURE__ */ jsxDEV78("div", { className: "max-w-3xl mx-auto text-center", children: [
     /* @__PURE__ */ jsxDEV78("h2", { className: "text-2xl md:text-3xl font-bold text-white mb-4", children: "Ready to Start Your Cross-Border Journey?" }, void 0, !1, {
@@ -20354,14 +19927,9 @@ function Index() {
       lineNumber: 15,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV79(PartnersSection, {}, void 0, !1, {
-      fileName: "app/routes/index.tsx",
-      lineNumber: 16,
-      columnNumber: 7
-    }, this),
     /* @__PURE__ */ jsxDEV79(CtaSection, {}, void 0, !1, {
       fileName: "app/routes/index.tsx",
-      lineNumber: 17,
+      lineNumber: 16,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -20372,7 +19940,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-X4TMD3RL.js", imports: ["/build/_shared/chunk-OAPPX4FA.js", "/build/_shared/chunk-7LRNVKNK.js", "/build/_shared/chunk-LJTZQOEY.js", "/build/_shared/chunk-WEAPBHQG.js", "/build/_shared/chunk-BBL5WSQK.js", "/build/_shared/chunk-7PHB3BFD.js", "/build/_shared/chunk-CG66FP4Q.js", "/build/_shared/chunk-JR22VO6P.js", "/build/_shared/chunk-CJ4MY3PQ.js", "/build/_shared/chunk-PZDJHGND.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BAZVNQY6.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-CJMKKQ5K.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-XTHRZFNV.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-DXEOGISS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-MONXTIRL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-BDIC34ZN.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-VVUZUAWE.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-3LUJRYBG.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-EFN6BCS4.js", imports: ["/build/_shared/chunk-QLMKAV5A.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-VVUZUAWE.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-XVBWI4XI.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-DZBUGDXB.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-XTHRZFNV.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-PZJJPAIE.js", imports: ["/build/_shared/chunk-QLMKAV5A.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-VVUZUAWE.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-XVBWI4XI.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-DZBUGDXB.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-XTHRZFNV.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-UAMOMLHJ.js", imports: ["/build/_shared/chunk-JRK5OWZK.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-DZBUGDXB.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-GYH7EUVB.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-VVUZUAWE.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-VQJ67ND7.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-O22KF3EY.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-NFN6LTRL.js", imports: ["/build/_shared/chunk-34YREHXS.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-6CENABVJ.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-XVBWI4XI.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-XTHRZFNV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-YZB5Y3DT.js", imports: ["/build/_shared/chunk-CJMKKQ5K.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-REWUMZQE.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-XVBWI4XI.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-XTHRZFNV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-XQAX7FOO.js", imports: ["/build/_shared/chunk-K7HUWIBQ.js", "/build/_shared/chunk-R4SBTWB6.js", "/build/_shared/chunk-O6ZH7SBG.js", "/build/_shared/chunk-JRK5OWZK.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-DZBUGDXB.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-76GUDJSN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-2L3ZSRGD.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-35VRFI6G.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-NB2M74TD.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-U2O2YVNZ.js", imports: ["/build/_shared/chunk-R4SBTWB6.js", "/build/_shared/chunk-O6ZH7SBG.js", "/build/_shared/chunk-DRHEKX2C.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-DCU3PJXE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-MBGLYCVY.js", imports: ["/build/_shared/chunk-K7HUWIBQ.js", "/build/_shared/chunk-O6ZH7SBG.js", "/build/_shared/chunk-JRK5OWZK.js", "/build/_shared/chunk-DRHEKX2C.js", "/build/_shared/chunk-DZBUGDXB.js", "/build/_shared/chunk-NHO7XERB.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-6KCLGXO7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services.dropshipping": { id: "routes/services.dropshipping", parentId: "routes/services", path: "dropshipping", index: void 0, caseSensitive: void 0, module: "/build/routes/services.dropshipping-B7SZYSXL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-BXHOQMS2.js", imports: ["/build/_shared/chunk-W4JLFH3K.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-WDTGFVJG.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-PR7G623L.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.quality-control": { id: "routes/solutions.quality-control", parentId: "root", path: "solutions/quality-control", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.quality-control-VQ46L4C7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.shipping": { id: "routes/solutions.shipping", parentId: "root", path: "solutions/shipping", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.shipping-TLJTAJY4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-EY5B63EF.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-Y36O7ME4.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "1e0aedbb", hmr: { runtime: "/build/_shared\\chunk-CG66FP4Q.js", timestamp: 1783386122425 }, url: "/build/manifest-1E0AEDBB.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-RI7VYTL7.js", imports: ["/build/_shared/chunk-OAPPX4FA.js", "/build/_shared/chunk-7LRNVKNK.js", "/build/_shared/chunk-MCQ6ZGWR.js", "/build/_shared/chunk-WEAPBHQG.js", "/build/_shared/chunk-BBL5WSQK.js", "/build/_shared/chunk-7PHB3BFD.js", "/build/_shared/chunk-CG66FP4Q.js", "/build/_shared/chunk-JR22VO6P.js", "/build/_shared/chunk-CJ4MY3PQ.js", "/build/_shared/chunk-PZDJHGND.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YQGM3X33.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-TXC7NXDB.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !0 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-QCPVTLBM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account": { id: "routes/account", parentId: "root", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/account-DXQCECEI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account._index": { id: "routes/account._index", parentId: "routes/account", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/account._index-UHIUPRMM.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses": { id: "routes/account.addresses", parentId: "routes/account", path: "addresses", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses-EON7S7ES.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-QZYG7WHP.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.$addressId": { id: "routes/account.addresses.$addressId", parentId: "routes/account", path: "addresses/:addressId", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.$addressId-M2EEFBKF.js", imports: ["/build/_shared/chunk-6KORWPLL.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.addresses.new": { id: "routes/account.addresses.new", parentId: "routes/account", path: "addresses/new", index: void 0, caseSensitive: void 0, module: "/build/routes/account.addresses.new-HTFMR3UE.js", imports: ["/build/_shared/chunk-6KORWPLL.js", "/build/_shared/chunk-AJIKWCS4.js", "/build/_shared/chunk-CAHBTKZN.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-R5BHNF67.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.history": { id: "routes/account.history", parentId: "routes/account", path: "history", index: void 0, caseSensitive: void 0, module: "/build/routes/account.history-RE2XK7LT.js", imports: ["/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/account.password": { id: "routes/account.password", parentId: "routes/account", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/account.password-7CW3L53G.js", imports: ["/build/_shared/chunk-TQRNVPS4.js", "/build/_shared/chunk-R23AGIPF.js", "/build/_shared/chunk-7EU6ZQ2V.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js", "/build/_shared/chunk-2QJY4JOV.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.active-order": { id: "routes/api.active-order", parentId: "root", path: "api/active-order", index: void 0, caseSensitive: void 0, module: "/build/routes/api.active-order-VQJ67ND7.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.logout": { id: "routes/api.logout", parentId: "root", path: "api/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/api.logout-O22KF3EY.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/api.shop-api": { id: "routes/api.shop-api", parentId: "root", path: "api/shop-api", index: void 0, caseSensitive: void 0, module: "/build/routes/api.shop-api-ECYXIH6W.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout": { id: "routes/checkout", parentId: "root", path: "checkout", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout-XNVWE6TG.js", imports: ["/build/_shared/chunk-34YREHXS.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout._index": { id: "routes/checkout._index", parentId: "routes/checkout", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/checkout._index-Q5K25WUE.js", imports: ["/build/_shared/chunk-OVYZ4AGI.js", "/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-4KYYPW5T.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.confirmation.$orderCode": { id: "routes/checkout.confirmation.$orderCode", parentId: "routes/checkout", path: "confirmation/:orderCode", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.confirmation.$orderCode-5XRHSNNC.js", imports: ["/build/_shared/chunk-TXC7NXDB.js", "/build/_shared/chunk-IILBQMIO.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-L7FVEPUN.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/checkout.payment": { id: "routes/checkout.payment", parentId: "routes/checkout", path: "payment", index: void 0, caseSensitive: void 0, module: "/build/routes/checkout.payment-VE5XUPHL.js", imports: ["/build/_shared/chunk-7GVQEKB5.js", "/build/_shared/chunk-7UULP5I7.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-FX3BUYEM.js", "/build/_shared/chunk-76TTLXDT.js", "/build/_shared/chunk-X7W7OFLF.js"], hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/collections.$slug": { id: "routes/collections.$slug", parentId: "root", path: "collections/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/collections.$slug-JYDXLL72.js", imports: ["/build/_shared/chunk-H33VLQP5.js", "/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-6YLESL7E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/payment-information": { id: "routes/payment-information", parentId: "root", path: "payment-information", index: void 0, caseSensitive: void 0, module: "/build/routes/payment-information-PFKX2VAW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/paypal-return": { id: "routes/paypal-return", parentId: "root", path: "paypal-return", index: void 0, caseSensitive: void 0, module: "/build/routes/paypal-return-35VRFI6G.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products": { id: "routes/products", parentId: "root", path: "products", index: void 0, caseSensitive: void 0, module: "/build/routes/products-PWOLDICS.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/products.$slug": { id: "routes/products.$slug", parentId: "root", path: "products/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/products.$slug-HCLX4TXQ.js", imports: ["/build/_shared/chunk-5E7QH6LX.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-FN2SQOXN.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/resources": { id: "routes/resources", parentId: "root", path: "resources", index: void 0, caseSensitive: void 0, module: "/build/routes/resources-DCU3PJXE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-F54AIKLN.js", imports: ["/build/_shared/chunk-H33VLQP5.js", "/build/_shared/chunk-657UIED6.js", "/build/_shared/chunk-THWPOOAT.js", "/build/_shared/chunk-FN2SQOXN.js", "/build/_shared/chunk-ZLZRVFT4.js", "/build/_shared/chunk-UYU57R6H.js", "/build/_shared/chunk-W4JLFH3K.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services": { id: "routes/services", parentId: "root", path: "services", index: void 0, caseSensitive: void 0, module: "/build/routes/services-DHI5FWHN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/services.dropshipping": { id: "routes/services.dropshipping", parentId: "routes/services", path: "dropshipping", index: void 0, caseSensitive: void 0, module: "/build/routes/services.dropshipping-4MXF64QL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-in": { id: "routes/sign-in", parentId: "root", path: "sign-in", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in-WHID7IMQ.js", imports: ["/build/_shared/chunk-W4JLFH3K.js"], hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.index": { id: "routes/sign-up.index", parentId: "root", path: "sign-up", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.index-PNCMHWBP.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/sign-up.success": { id: "routes/sign-up.success", parentId: "root", path: "sign-up/success", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up.success-NAGZQO4M.js", imports: void 0, hasAction: !0, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.quality-control": { id: "routes/solutions.quality-control", parentId: "root", path: "solutions/quality-control", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.quality-control-QGNOAYC4.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/solutions.shipping": { id: "routes/solutions.shipping", parentId: "root", path: "solutions/shipping", index: void 0, caseSensitive: void 0, module: "/build/routes/solutions.shipping-5BZSTMYM.js", imports: ["/build/_shared/chunk-NBEH4DGX.js"], hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify": { id: "routes/verify", parentId: "root", path: "verify", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-XCOMG2T6.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/verify-email-address-change": { id: "routes/verify-email-address-change", parentId: "root", path: "verify-email-address-change", index: void 0, caseSensitive: void 0, module: "/build/routes/verify-email-address-change-XPS5YBTZ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "0614f6fa", hmr: { runtime: "/build/_shared\\chunk-CG66FP4Q.js", timestamp: 1783419427666 }, url: "/build/manifest-0614F6FA.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public\\build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -20543,6 +20111,14 @@ var mode = "development", assetsBuildDirectory = "public\\build", future = { v3_
     index: void 0,
     caseSensitive: void 0,
     module: sign_up_index_exports
+  },
+  "routes/api.shop-api": {
+    id: "routes/api.shop-api",
+    parentId: "root",
+    path: "api/shop-api",
+    index: void 0,
+    caseSensitive: void 0,
+    module: api_shop_api_exports
   },
   "routes/api.logout": {
     id: "routes/api.logout",

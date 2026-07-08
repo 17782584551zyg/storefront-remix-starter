@@ -7,6 +7,8 @@ export let API_URL =
     ? process.env.VENDURE_API_URL ?? DEMO_API_URL
     : DEMO_API_URL;
 
+export const BACKEND_URL = API_URL.replace('/shop-api', '');
+
 /**
  * This function is used when running in Cloudflare Pages in order to set the API URL
  * based on an environment variable. Env vars work differently in CF Pages and are not available

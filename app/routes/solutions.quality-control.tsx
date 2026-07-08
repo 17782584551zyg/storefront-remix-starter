@@ -1,4 +1,23 @@
+import { json, LoaderFunction } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
+import pageImages from '~/data/page-images.json';
+import { BACKEND_URL } from '~/constants';
+
+export const loader: LoaderFunction = async () => {
+  return json({ images: pageImages['quality-control'] || {} });
+};
+
 export default function QualityControlPage() {
+  const { images } = useLoaderData<{ images: Record<string, string> }>();
+  
+  const getImageUrl = (name: string) => {
+    const path = images[name];
+    if (path) {
+      return `${BACKEND_URL}${path}`;
+    }
+    return null;
+  };
+
   return (
     <div className="min-h-screen">
       <section className="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
@@ -17,7 +36,7 @@ export default function QualityControlPage() {
             </div>
             <div className="relative">
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20inspectors%20checking%20products%20in%20factory&image_size=landscape_4_3"
+                src={getImageUrl('hero-image') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20inspectors%20checking%20products%20in%20factory&image_size=landscape_4_3'}
                 alt="Quality Control"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
@@ -109,7 +128,7 @@ export default function QualityControlPage() {
             </div>
             <div className="order-1 md:order-2">
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Workers%20inspecting%20products%20in%20warehouse%20with%20checklist&image_size=landscape_4_3"
+                src={getImageUrl('general-inspection') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Workers%20inspecting%20products%20in%20warehouse%20with%20checklist&image_size=landscape_4_3'}
                 alt="General Inspection"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
@@ -119,7 +138,7 @@ export default function QualityControlPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20worker%20testing%20product%20with%20tools&image_size=landscape_4_3"
+                src={getImageUrl('full-inspection') || 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20worker%20testing%20product%20with%20tools&image_size=landscape_4_3'}
                 alt="Full Inspection"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />

@@ -10,8 +10,7 @@ export default function AboutPage() {
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
+          <div className="space-y-6">
               <p className="text-gray-600 leading-relaxed">
                 TaiSourcing was founded in Yiwu, China, in 2015 and has grown into a team of more than 200 professionals. Our sole focus is to simplify the sourcing process for businesses looking to import from China.
               </p>
@@ -19,59 +18,10 @@ export default function AboutPage() {
                 Over the years, more than 5,000 small and medium-sized businesses have trusted us for all-in-one sourcing services, from supplier sourcing to door-to-door logistics. Today, 70% of our clients are engaged in e-commerce, and 70% of the products we source are exported to North America and Europe.
               </p>
             </div>
-            <div className="relative">
-              <div className="aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20businessman%20giving%20presentation%20in%20office%20meeting%20room&image_size=landscape_16_9"
-                  alt="Company Video"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-orange-500 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between bg-black/70 text-white px-4 py-2 rounded-lg">
-                <span>5:22</span>
-                <div className="flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 6l-12 8 12 8V6zM6 6l12 8-12 8V6z" />
-                  </svg>
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 4C7.5 4 4 7.5 4 12s3.5 8 8 8 8-3.5 8-8-3.5-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm1-10h-2v6l5.2 3.2.8-1.3-4-2.4V8z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-white rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 shadow-sm">
-            <div className="flex-shrink-0">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Company%20brochure%20booklet%20with%20orange%20design%20cover&image_size=portrait_4_3"
-                alt="Company Brochure"
-                className="w-32 h-40 object-cover rounded-lg shadow-md"
-              />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Download Our Company Brochure</h3>
-              <p className="text-gray-600 mb-6">
-                Get a quick overview of our sourcing services, workflow, factory resources, and real client cases—all in one brochure.
-              </p>
-              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Download
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">

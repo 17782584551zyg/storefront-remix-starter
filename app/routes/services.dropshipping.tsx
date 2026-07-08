@@ -4,10 +4,10 @@ export default function DropshippingPage() {
       <section className="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            We Help You Ship Globally
+            We Help You Dropship Worldwide
           </h1>
-          <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Besides bulk shipping, if you place an order valued at $1000 or more under our Pro Plan or Basic Plan, we can also ship your products directly to your customers.
+          <p className="text-white/90 text-lg max-w-3xl mx-auto">
+            In addition to shipping your products in bulk, we can also deliver your products individually to your end customers if you make a single order worth $1,000 or more under our <span className="font-semibold">Pro Plan</span> or <span className="font-semibold">Basic Plan</span>.
           </p>
         </div>
       </section>
@@ -20,52 +20,32 @@ export default function DropshippingPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border border-orange-200">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Competitive Product Prices</h3>
-              <p className="text-gray-600 leading-relaxed">
-                We focus on purchasing directly from competitive factories, which is different from traditional agents who mainly collaborate with trading companies. We truly achieve the role of a typical dropshipping agent for our customers.
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl p-6 border-2 border-orange-200 hover:border-orange-400 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-orange-600 mb-3">Competitive Product Price</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We specialize in finding and sourcing directly from competitive factories, setting us apart from typical dropshipping agencies that primarily work with wholesalers and only assist clients in purchasing ready-made products.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Reduce Logistics & Fulfillment Costs</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Unlike typical dropshipping companies, we prioritize purchasing as our main profit source, while logistics serves as a supporting function. Dropshipping is just a one-stop logistics solution we provide to customers.
+            <div className="bg-white rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-blue-600 mb-3">Lower Logistics & Fulfillment Costs</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Unlike typical dropshipping companies, we prioritize sourcing as our main profit source and don't have profit expectations on logistics. Dropshipping is simply a convenient logistics solution we provide to our clients.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border border-orange-200">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">More Customization Flexibility</h3>
-              <p className="text-gray-600 leading-relaxed">
-                As a well-rounded sourcing company, we excel in customization and product development. We can help complete tasks such as packaging customization and other tasks that other dropshipping companies cannot accomplish.
+            <div className="bg-white rounded-xl p-6 border-2 border-orange-200 hover:border-orange-400 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-orange-600 mb-3">More Customization Flexibility</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                As an experienced sourcing company, we excel in customizing and manufacturing products. We can assist you in product development, packaging customization, and other tasks that other dropshipping companies may not offer.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Internal IT Solutions</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Whether you are on Shopify, eBay, or your own website, our professional IT team can seamlessly integrate your store with our system, providing comprehensive technical support.
+            <div className="bg-white rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-blue-600 mb-3">In-house IT Solutions</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Whether your store is set up on platforms like Shopify or you have a self-built system, our dedicated IT team can seamlessly integrate your store with our systems and provide comprehensive technical support.
               </p>
             </div>
           </div>
@@ -78,72 +58,76 @@ export default function DropshippingPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Complete 4 Simple Steps with TaiSourcing
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Dropship with TaiSourcing in 4 Simple Steps
             </h2>
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-16 h-0.5 bg-orange-500" />
+              <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+              <div className="w-16 h-0.5 bg-orange-500" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute top-0 left-0 w-1 h-full bg-white/20" />
-              <div className="space-y-8 pl-8">
-                <div className="flex items-start gap-6">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-orange-500 font-bold">1</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Submit your inquiry and choose a service plan.</h3>
-                    <p className="text-white/80">Tell us about your products and requirements.</p>
-                  </div>
+            <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold">1</span>
                 </div>
-
-                <div className="flex items-start gap-6">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-orange-500 font-bold">2</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">We will track production and collect products to the warehouse.</h3>
-                    <p className="text-white/80">Quality inspection and packaging.</p>
-                  </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Submit your inquiry and choose a service plan.</h3>
+                  <p className="text-gray-600 text-sm">Tell us about your products and requirements to get started.</p>
                 </div>
+              </div>
 
-                <div className="flex items-start gap-6">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-orange-500 font-bold">3</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">We integrate your store with our system and fulfill orders for your customers.</h3>
-                    <p className="text-white/80">Auto-sync orders and shipping.</p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold">2</span>
                 </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">We follow up on production and collect products to our warehouse.</h3>
+                  <p className="text-gray-600 text-sm">Quality inspection and professional packaging.</p>
+                </div>
+              </div>
 
-                <div className="flex items-start gap-6">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-orange-500 font-bold">4</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">The system automatically updates logistics tracking and order status.</h3>
-                    <p className="text-white/80">Real-time tracking for you and your customers.</p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold">3</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">We integrate your store with our system and fulfill orders for your end customers.</h3>
+                  <p className="text-gray-600 text-sm">Automated order sync and fast shipping.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold">4</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">The system automatically updates logistics tracking and order status.</h3>
+                  <p className="text-gray-600 text-sm">Real-time tracking for you and your customers.</p>
                 </div>
               </div>
             </div>
 
-            <div className="relative">
+            <div>
               <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Woman%20working%20in%20warehouse%20with%20laptop%20and%20shipping%20boxes&image_size=landscape_4_3"
-                alt="Dropshipping"
+                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Woman%20business%20owner%20working%20in%20warehouse%20with%20laptop%20and%20shipping%20boxes%20ecommerce%20fulfillment&image_size=landscape_4_3"
+                alt="Dropshipping Process"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Contact Us Now to Get Started
+            <button className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              Get in Touch to Start Today
             </button>
           </div>
         </div>

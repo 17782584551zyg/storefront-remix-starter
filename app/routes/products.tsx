@@ -1,6 +1,7 @@
 import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
+import { BACKEND_URL } from '~/constants';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const collections = await getCollections(request);
@@ -102,7 +103,7 @@ export default function ProductsPage() {
                 >
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-2">
                     {category.featuredAsset ? (
-                      <img src={category.featuredAsset.preview} alt={category.name} className="w-6 h-6 object-contain" />
+                      <img src={BACKEND_URL + category.featuredAsset.preview} alt={category.name} className="w-6 h-6 object-contain" />
                     ) : (
                       <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconForName(category.name)} />

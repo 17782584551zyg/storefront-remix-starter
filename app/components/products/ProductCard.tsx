@@ -1,6 +1,7 @@
 import { SearchQuery } from '~/generated/graphql';
 import { Link } from '@remix-run/react';
 import { Price } from './Price';
+import { BACKEND_URL } from '~/constants';
 
 export type ProductCardProps = SearchQuery['search']['items'][number];
 export function ProductCard({
@@ -15,7 +16,7 @@ export function ProductCard({
       <img
         className="rounded-xl flex-grow object-cover aspect-[7/8]"
         alt=""
-        src={productAsset?.preview + '?w=300&h=400'}
+        src={BACKEND_URL + (productAsset?.preview || '') + '?w=300&h=400'}
       />
       <div className="h-2" />
       <div className="text-sm text-gray-700">{productName}</div>

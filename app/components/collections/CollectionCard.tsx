@@ -1,5 +1,6 @@
 import { Link } from '@remix-run/react';
 import { CollectionsQuery } from '~/generated/graphql';
+import { BACKEND_URL } from '~/constants';
 
 export function CollectionCard({
   collection,
@@ -15,7 +16,7 @@ export function CollectionCard({
     >
       <span aria-hidden="true" className="">
         <div className="w-full h-full object-center object-cover">
-          <img src={collection.featuredAsset?.preview + '?w=300&h=300'} />
+          <img src={BACKEND_URL + (collection.featuredAsset?.preview || '') + '?w=300&h=300'} />
         </div>
       </span>
       <span
