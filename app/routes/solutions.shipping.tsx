@@ -12,8 +12,7 @@ export default function ShippingSolutionsPage() {
   const getImageUrl = (name: string) => {
     const path = images[name];
     if (path) {
-      const assetPath = path.startsWith('/assets/') ? path.slice(8) : path;
-      return `/api/assets/${assetPath}`;
+      return path;
     }
     return null;
   };
