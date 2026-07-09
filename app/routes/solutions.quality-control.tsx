@@ -1,5 +1,5 @@
 import { json, LoaderFunction } from '@remix-run/node';
-import { useLoaderData, useMatches } from '@remix-run/react';
+import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
 
 export const loader: LoaderFunction = async () => {
@@ -8,14 +8,11 @@ export const loader: LoaderFunction = async () => {
 
 export default function QualityControlPage() {
   const { images } = useLoaderData<{ images: Record<string, string> }>();
-  const matches = useMatches();
-  const rootData = matches.find(m => m.pathname === '/')?.data as { backendUrl: string } | undefined;
-  const backendUrl = rootData?.backendUrl || '';
   
   const getImageUrl = (name: string) => {
     const path = images[name];
-    if (path && backendUrl) {
-      return `${backendUrl}${path}`;
+    if (path) {
+      return `/api/assets${path}`;
     }
     return null;
   };
@@ -150,9 +147,9 @@ export default function QualityControlPage() {
               <p className="text-gray-600 mb-4">
                 To achieve 0% defect rate, we recommend our full inspection service to identify and remove all defective products. Our standard rate is $5 per hour. Contact our agent to discuss your needs and get a customized quote.
               </p>
-              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
+              <Link to="/services" className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

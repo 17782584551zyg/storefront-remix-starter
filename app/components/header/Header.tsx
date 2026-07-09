@@ -9,12 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { useState, useRef, useEffect } from 'react';
 
 const navItems = [
-  {
-    label: 'Our Services',
-    children: [
-      { label: 'Purchasing Service', href: '/services' },
-    ],
-  },
+  { label: 'Our Services', href: '/services' },
   {
     label: 'Solutions',
     children: [

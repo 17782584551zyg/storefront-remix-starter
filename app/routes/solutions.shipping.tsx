@@ -1,5 +1,5 @@
 import { json, LoaderFunction } from '@remix-run/node';
-import { useLoaderData, useMatches } from '@remix-run/react';
+import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
 
 export const loader: LoaderFunction = async () => {
@@ -8,14 +8,11 @@ export const loader: LoaderFunction = async () => {
 
 export default function ShippingSolutionsPage() {
   const { images } = useLoaderData<{ images: Record<string, string> }>();
-  const matches = useMatches();
-  const rootData = matches.find(m => m.pathname === '/')?.data as { backendUrl: string } | undefined;
-  const backendUrl = rootData?.backendUrl || '';
   
   const getImageUrl = (name: string) => {
     const path = images[name];
-    if (path && backendUrl) {
-      return `${backendUrl}${path}`;
+    if (path) {
+      return `/api/assets${path}`;
     }
     return null;
   };
@@ -37,9 +34,9 @@ export default function ShippingSolutionsPage() {
               <p className="text-white/90 text-lg mb-8">
                 Providing flexible shipping solutions for businesses of any size.
               </p>
-              <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Link to="/services" className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="relative">
               <img

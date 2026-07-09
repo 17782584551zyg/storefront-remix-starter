@@ -1,3 +1,5 @@
+import { Link } from '@remix-run/react';
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
@@ -125,9 +127,9 @@ export default function AboutPage() {
           <p className="text-white/90 text-lg mb-8">
             Join thousands of businesses that trust TaiSourcing for their China sourcing needs.
           </p>
-          <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <Link to="/services" className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
             Get Started Today
-          </button>
+          </Link>
         </div>
       </section>
     </div>

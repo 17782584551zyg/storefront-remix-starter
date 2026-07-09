@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 
 export function StatsSection() {
   const stats = [
-    { value: 4000, suffix: '+', label: 'Clients', description: 'Worldwide' },
+    { value: 5000, suffix: '+', label: 'Clients', description: 'Worldwide' },
     { value: 120, suffix: '+', label: 'Countries', description: 'Global Coverage' },
-    { value: 500, suffix: 'M+', label: 'Annual Revenue', description: 'Steady Growth' },
-    { value: 200, suffix: '+', label: 'Team Members', description: 'Industry Experts' },
+    { value: 10, suffix: 'M+', label: 'Annual Revenue', description: 'Steady Growth' },
+    { value: 100, suffix: '+', label: 'Team Members', description: 'Industry Experts' },
   ];
 
   const [counts, setCounts] = useState<number[]>(stats.map(() => 0));

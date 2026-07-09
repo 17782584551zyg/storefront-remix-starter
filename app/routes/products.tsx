@@ -1,5 +1,5 @@
 import { json, LoaderFunction } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
+import { useLoaderData, Link } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
 import { BACKEND_URL } from '~/constants';
 import { useState } from 'react';
@@ -124,9 +124,9 @@ export default function ProductsPage() {
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">4,000+ Clients Trust Us</h2>
               <p className="text-gray-600">Find your reliable products and save, let's factory price.</p>
-              <button className="mt-4 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
+              <Link to="/services" className="mt-4 inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="relative">
               <img
