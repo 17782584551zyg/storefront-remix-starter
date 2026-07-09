@@ -1,1 +1,0 @@
-var o="Vendure Remix Storefront",r="A headless commerce storefront starter kit built with Remix & Vendure",e="https://readonlydemo.vendure.io/shop-api",t=typeof process<"u"?process.env.VENDURE_API_URL??e:e,s=t.replace("/shop-api","");export{o as a,r as b,t as c,s as d};

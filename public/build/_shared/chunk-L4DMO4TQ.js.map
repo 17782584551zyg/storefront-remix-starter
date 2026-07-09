@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/lib/graphql-client.ts"],
-  "sourcesContent": ["// REMIX HMR BEGIN\nimport * as __hmr__ from \"remix:hmr\";\nif (import.meta) {\nimport.meta.hot = __hmr__.createHotContext(\n//@ts-expect-error\n\"app\\\\lib\\\\graphql-client.ts\"\n);\nimport.meta.hot.lastModified = \"1783417768585.7297\";\n}\n// REMIX HMR END\n\nimport { API_URL } from '~/constants';\n\nexport class GraphqlClient {\n  async request<T = any>(query: string, variables?: Record<string, any>): Promise<T> {\n    const response = await fetch('/api/shop-api', {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({\n        query,\n        variables,\n      }),\n    });\n\n    const result = await response.json();\n\n    if (result.errors) {\n      throw new Error(result.errors.map((e: any) => e.message).join('\\n'));\n    }\n\n    return result.data;\n  }\n}\n\nexport const graphqlClient = new GraphqlClient();\n\nexport { API_URL };"],
-  "mappings": ";;;;;;AACA;AACA,IAAI,aAAa;AACjB,cAAY,MAAc;AAAA;AAAA,IAE1B;AAAA,EACA;AACA,cAAY,IAAI,eAAe;AAC/B;AAKO,IAAM,gBAAN,MAAoB;AAAA,EACzB,MAAM,QAAiB,OAAe,WAA6C;AACjF,UAAM,WAAW,MAAM,MAAM,iBAAiB;AAAA,MAC5C,QAAQ;AAAA,MACR,SAAS;AAAA,QACP,gBAAgB;AAAA,MAClB;AAAA,MACA,MAAM,KAAK,UAAU;AAAA,QACnB;AAAA,QACA;AAAA,MACF,CAAC;AAAA,IACH,CAAC;AAED,UAAM,SAAS,MAAM,SAAS,KAAK;AAEnC,QAAI,OAAO,QAAQ;AACjB,YAAM,IAAI,MAAM,OAAO,OAAO,IAAI,CAAC,MAAW,EAAE,OAAO,EAAE,KAAK,IAAI,CAAC;AAAA,IACrE;AAEA,WAAO,OAAO;AAAA,EAChB;AACF;AAEO,IAAM,gBAAgB,IAAI,cAAc;",
-  "names": []
-}

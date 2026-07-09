@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/utils/validation.ts"],
-  "sourcesContent": ["// REMIX HMR BEGIN\nimport * as __hmr__ from \"remix:hmr\";\nif (import.meta) {\nimport.meta.hot = __hmr__.createHotContext(\n//@ts-expect-error\n\"app\\\\utils\\\\validation.ts\"\n);\nimport.meta.hot.lastModified = \"1782487989656.0598\";\n}\n// REMIX HMR END\n\nimport { ShippingFormData } from '~/types';\r\n\r\nexport function shippingFormDataIsValid(\r\n  data: FormData | Record<string, string>,\r\n): boolean {\r\n  const shippingFormData = (\r\n    data instanceof FormData ? Object.fromEntries<any>(data.entries()) : data\r\n  ) as ShippingFormData;\r\n  return !!(\r\n    shippingFormData.streetLine1 &&\r\n    shippingFormData.city &&\r\n    shippingFormData.countryCode &&\r\n    shippingFormData.postalCode\r\n  );\r\n}\r\n\r\nexport function replaceEmptyString(input: string | undefined | null) {\r\n  if (!input || input.trim().length == 0) {\r\n    return '-';\r\n  }\r\n  return input;\r\n}"],
-  "mappings": ";;;;;;AACA;AACA,IAAI,aAAa;AACjB,cAAY,MAAc;AAAA;AAAA,IAE1B;AAAA,EACA;AACA,cAAY,IAAI,eAAe;AAC/B;AAKO,SAAS,wBACd,MACS;AACT,QAAM,mBACJ,gBAAgB,WAAW,OAAO,YAAiB,KAAK,QAAQ,CAAC,IAAI;AAEvE,SAAO,CAAC,EACN,iBAAiB,eACjB,iBAAiB,QACjB,iBAAiB,eACjB,iBAAiB;AAErB;AAEO,SAAS,mBAAmB,OAAkC;AACnE,MAAI,CAAC,SAAS,MAAM,KAAK,EAAE,UAAU,GAAG;AACtC,WAAO;AAAA,EACT;AACA,SAAO;AACT;",
-  "names": []
-}

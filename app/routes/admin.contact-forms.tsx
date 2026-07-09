@@ -3,43 +3,62 @@ import { useLoaderData } from '@remix-run/react';
 import { BACKEND_URL } from '~/constants';
 
 export const loader: LoaderFunction = async () => {
-  const response = await fetch(`${BACKEND_URL}/admin-api`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer superadmin',
-    },
-    body: JSON.stringify({
-      query: `{
-        contactForms(take: 100, skip: 0) {
-          items {
-            id
-            firstName
-            lastName
-            email
-            phone
-            country
-            company
-            message
-            source
-            createdAt
+  try {
+    const response = await fetch(`${BACKEND_URL}/admin-api`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer superadmin',
+      },
+      body: JSON.stringify({
+        query: `{
+          contactForms(take: 100, skip: 0) {
+            items {
+              id
+              firstName
+              lastName
+              email
+              phone
+              country
+              company
+              message
+              source
+              createdAt
+            }
+            totalItems
           }
-          totalItems
-        }
-      }`,
-    }),
-  });
-  
-  const data = await response.json();
-  
-  return json({
-    contactForms: data.data?.contactForms?.items || [],
-    totalItems: data.data?.contactForms?.totalItems || 0,
-  });
+        }`,
+      }),
+    });
+    
+    const data = await response.json();
+    
+    if (data.errors) {
+      console.error('GraphQL errors:', data.errors);
+      return json({
+        contactForms: [],
+        totalItems: 0,
+        error: data.errors[0]?.message || 'Failed to fetch data',
+      });
+    }
+    
+    return json({
+      contactForms: data.data?.contactForms?.items || [],
+      totalItems: data.data?.contactForms?.totalItems || 0,
+      error: null,
+    });
+  } catch (error) {
+    console.error('Fetch error:', error);
+    return json({
+      contactForms: [],
+      totalItems: 0,
+      error: 'Failed to connect to backend',
+    });
+  }
 };
 
 export default function AdminContactForms() {
-  const { contactForms, totalItems } = useLoaderData<{ 
+  const { contactForms, totalItems, error } = useLoaderData<{ 
     contactForms: Array<{
       id: string;
       firstName: string;
@@ -53,6 +72,7 @@ export default function AdminContactForms() {
       createdAt: string;
     }>;
     totalItems: number;
+    error: string | null;
   }>();
   
   return (
@@ -63,6 +83,12 @@ export default function AdminContactForms() {
             <h1 className="text-2xl font-bold text-gray-900">Contact Form Submissions</h1>
             <span className="text-sm text-gray-500">{totalItems} records</span>
           </div>
+          
+          {error && (
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+              <p className="text-red-600">Error: {error}</p>
+            </div>
+          )}
           
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -109,7 +135,7 @@ export default function AdminContactForms() {
             </table>
           </div>
           
-          {contactForms.length === 0 && (
+          {contactForms.length === 0 && !error && (
             <div className="text-center py-12">
               <p className="text-gray-500">No submissions found.</p>
             </div>
