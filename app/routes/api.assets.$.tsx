@@ -1,4 +1,4 @@
-import { BACKEND_URL } from '~/constants';
+import { API_URL } from '~/constants';
 import { DataFunctionArgs } from '@remix-run/server-runtime';
 
 export async function loader({ request, params }: DataFunctionArgs) {
@@ -7,7 +7,8 @@ export async function loader({ request, params }: DataFunctionArgs) {
     return new Response(null, { status: 404 });
   }
 
-  const assetUrl = `${BACKEND_URL}/assets/${path}`;
+  const backendUrl = API_URL.replace('/shop-api', '');
+  const assetUrl = `${backendUrl}/assets/${path}`;
   
   const response = await fetch(assetUrl);
   
