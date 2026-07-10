@@ -1,4 +1,4 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
 
@@ -122,9 +122,7 @@ export default function ShippingSolutionsPage() {
               </div>
 
               <div className="pt-4">
-                <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                  Get a Quote
-                </button>
+                <Link to="/services" className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">Get a Quote</Link>
               </div>
             </div>
           </div>
@@ -283,11 +281,12 @@ export default function ShippingSolutionsPage() {
           <p className="text-white/90 text-lg mb-8">
             Our logistics experts will analyze your shipping needs and provide the most cost-effective solution.
           </p>
-          <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
-            Contact Our Logistics Team
-          </button>
+          <Link to="/services" className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">Contact Our Logistics Team</Link>
         </div>
       </section>
     </div>
   );
 }
+
+
+

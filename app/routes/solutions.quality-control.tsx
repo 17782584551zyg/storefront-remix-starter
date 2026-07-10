@@ -1,4 +1,4 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
 
@@ -29,9 +29,7 @@ export default function QualityControlPage() {
               <p className="text-white/90 text-lg mb-8">
                 Quality inspection is crucial. We take it very seriously to ensure your supply chain is worry-free.
               </p>
-              <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
-                Get a Quote
-              </button>
+              <Link to="/services" className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">Get a Quote</Link>
             </div>
             <div className="relative">
               <img
@@ -121,9 +119,7 @@ export default function QualityControlPage() {
               <p className="text-gray-600 mb-6">
                 If you need a customized inspection solution or a lower defect rate, contact our agent for details on any additional costs.
               </p>
-              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Contact Our Agent
-              </button>
+              <Link to="/services" className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">Contact Our Agent</Link>
             </div>
             <div className="order-1 md:order-2">
               <img
@@ -194,3 +190,6 @@ export default function QualityControlPage() {
     </div>
   );
 }
+
+
+

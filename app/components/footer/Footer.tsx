@@ -1,4 +1,4 @@
-import { RootLoaderData } from '~/root';
+﻿import { RootLoaderData } from '~/root';
 import { Link } from '@remix-run/react';
 import { useTranslation } from 'react-i18next';
 
@@ -92,11 +92,7 @@ export default function Footer({
             <p className="text-gray-500 text-sm">
               Copyright 2026 Tai Sourcing. All Rights Reserved.
             </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">Cookie Policy</a>
-            </div>
+            
           </div>
         </div>
       </div>

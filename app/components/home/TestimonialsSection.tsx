@@ -2,14 +2,17 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       name: 'James Wilson',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=James',
       content: 'We have been working together for over two years. From a small store to now with annual sales of over 10 million, we cannot do without their professional service and support. The team is very responsible and always solves problems promptly.',
     },
     {
       name: 'Sarah Johnson',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah',
       content: 'Logistics efficiency has improved by 50%, and customer satisfaction has significantly increased. Their intelligent warehousing system is really powerful, saving us a lot of costs and effort.',
     },
     {
       name: 'Michael Brown',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
       content: 'Payment security is guaranteed, and funds arrive quickly. Most importantly, the exchange rate is transparent with no hidden fees, making our fund management much smoother.',
     },
   ];
@@ -44,11 +47,11 @@ export function TestimonialsSection() {
               </div>
               <p className="text-gray-600 mb-6">{testimonial.content}</p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full object-cover bg-gray-100"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
                 </div>
