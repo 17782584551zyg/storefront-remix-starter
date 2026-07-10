@@ -155,7 +155,7 @@ export default function ProductsPage() {
               collections.map((category, index) => (
                 <Link
                   key={category.id || index}
-                  to={`/products/category/${category.slug}`}
+                  to={`/collections/${category.slug}`}
                   className="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
