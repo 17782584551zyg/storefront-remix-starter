@@ -1,4 +1,4 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
 import { BACKEND_URL } from '~/constants';
@@ -159,8 +159,8 @@ export default function ProductsPage() {
                   className="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
-                    {category.featuredAsset && category.featuredAsset.preview ? (
-                      <img src={category.featuredAsset.preview.startsWith('http') ? category.featuredAsset.preview : BACKEND_URL + category.featuredAsset.preview} alt={category.name} className="w-full h-full object-cover" />
+                    {category.featuredAsset ? (
+                      <img src={BACKEND_URL + category.featuredAsset.preview} alt={category.name} className="w-full h-full object-cover" />
                     ) : (
                       <svg className="w-12 h-12 text-gray-500 group-hover:text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconForName(category.name)} />
@@ -182,9 +182,9 @@ export default function ProductsPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Are you looking for more categories?</h3>
               <p className="text-gray-600">If you cannot find your target product, we can also source any product for you.</p>
             </div>
-            <a href="#report-form" className="mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg inline-flex">
+            <button className="mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
               Tell us more
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -279,7 +279,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section id="report-form" className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
