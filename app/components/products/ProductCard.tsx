@@ -1,7 +1,7 @@
 import { SearchQuery } from '~/generated/graphql';
 import { Link } from '@remix-run/react';
 import { Price } from './Price';
-import { BACKEND_URL } from '~/constants';
+import { getImageUrl } from '~/constants';
 
 export type ProductCardProps = SearchQuery['search']['items'][number];
 export function ProductCard({

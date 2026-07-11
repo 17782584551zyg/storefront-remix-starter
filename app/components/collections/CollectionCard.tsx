@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 import { CollectionsQuery } from '~/generated/graphql';
-import { BACKEND_URL } from '~/constants';
+import { getImageUrl } from '~/constants';
 
 export function CollectionCard({
   collection,
@@ -12,11 +12,11 @@ export function CollectionCard({
       to={'/collections/' + collection.slug}
       prefetch="intent"
       key={collection.id}
-      className="max-w-[300px] relative rounded-lg overflow-hidden hover:opacity-75 xl:w-auto"
+      className="max-w-[300px] relative rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer group xl:w-auto"
     >
       <span aria-hidden="true" className="">
         <div className="w-full h-full object-center object-cover">
-          <img src={BACKEND_URL + (collection.featuredAsset?.preview || '') + '?w=300&h=300'} />
+          <img src={getImageUrl(collection.featuredAsset?.preview, {w:300,h:300})} />
         </div>
       </span>
       <span
