@@ -1,4 +1,4 @@
-import { Link, useLocation } from '@remix-run/react';
+﻿import { Link, useLocation } from '@remix-run/react';
 import { ShoppingBagIcon, ChevronDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { SearchBar } from '~/components/header/SearchBar';
 import { useRootLoader } from '~/utils/use-root-loader';
@@ -167,7 +167,7 @@ export function Header({
               </div>
             )}
           </div>
-          {isProductPage && (
+          {false && (
             <div className="hidden md:block">
               <Link
                 to={isSignedIn ? '/account' : '/sign-in'}
@@ -180,22 +180,7 @@ export function Header({
               </Link>
             </div>
           )}
-          {isProductPage && (
-            <button
-              className="relative w-9 h-9 bg-orange-50 rounded-full text-orange-500 p-1 hover:bg-orange-100 transition-colors duration-300"
-              onClick={onCartIconClick}
-              aria-label="Open cart tray"
-            >
-              <ShoppingBagIcon />
-              {cartQuantity ? (
-                <div className="absolute rounded-full -top-2 -right-2 bg-orange-500 min-w-6 min-h-6 flex items-center justify-center text-xs text-white p-1">
-                  {cartQuantity}
-                </div>
-              ) : (
-                ''
-              )}
-            </button>
-          )}
+          
         </div>
       </div>
     </header>
