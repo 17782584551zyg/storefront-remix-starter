@@ -1,4 +1,4 @@
-import { DataFunctionArgs, json } from '@remix-run/server-runtime';
+﻿import { DataFunctionArgs, json } from '@remix-run/server-runtime';
 import { useState } from 'react';
 import { Price } from '~/components/products/Price';
 import { getProductBySlug } from '~/providers/products/products';
@@ -11,7 +11,7 @@ import {
 } from '@remix-run/react';
 import { CheckIcon, HeartIcon, PhotoIcon } from '@heroicons/react/24/solid';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
-import { APP_META_TITLE, BACKEND_URL } from '~/constants';
+import { APP_META_TITLE, getImageUrl } from '~/constants';
 import { CartLoaderData } from '~/routes/api.active-order';
 import { getSessionStorage } from '~/sessions';
 import { ErrorCode, ErrorResult } from '~/generated/graphql';
@@ -112,11 +112,7 @@ export default function ProductSlug() {
             <span className="rounded-md overflow-hidden">
               <div className="w-full h-full object-center object-cover rounded-lg">
                 <img
-                  src={
-                    BACKEND_URL +
-                    (featuredAsset?.preview || product.featuredAsset?.preview || '') +
-                    '?w=800'
-                  }
+                  src={getImageUrl(featuredAsset?.preview || product.featuredAsset?.preview, { w: 800 })}
                   alt={product.name}
                   className="w-full h-full object-center object-cover rounded-lg"
                 />
@@ -139,11 +135,7 @@ export default function ProductSlug() {
                     <img
                       draggable="false"
                       className="rounded-lg select-none h-24 w-full object-cover"
-                      src={
-                        BACKEND_URL +
-                        asset.preview +
-                        '?preset=full'
-                      }
+                      src={getImageUrl(asset.preview, { preset: 'full' })}
                     />
                   </div>
                 ))}
@@ -307,7 +299,7 @@ export default function ProductSlug() {
                     <div className="mb-4">
                       <h4 className="text-sm font-medium text-gray-900 mb-2">Detail Image</h4>
                       <img
-                        src={BACKEND_URL + product.customFields.detailImage.preview + '?w=600'}
+                        src={getImageUrl(product.customFields.detailImage.preview, { w: 600 })}
                         alt="Product Detail"
                         className="max-w-full rounded-lg"
                       />

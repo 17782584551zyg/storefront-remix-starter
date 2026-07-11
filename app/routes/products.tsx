@@ -1,7 +1,7 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
-import { BACKEND_URL } from '~/constants';
+import { getImageUrl } from '~/constants';
 import { useState } from 'react';
 import { graphqlClient } from '~/lib/graphql-client';
 
@@ -156,18 +156,20 @@ export default function ProductsPage() {
                 <Link
                   key={category.id || index}
                   to={`/collections/${category.slug}`}
-                  className="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:bg-orange-500/10 hover:shadow-lg transition-all duration-300 group"
+                  className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group transform hover:-translate-y-1"
                 >
-                  <div className="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
+                  <div className="aspect-square w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
                     {category.featuredAsset && category.featuredAsset.preview ? (
-                      <img src={category.featuredAsset.preview.startsWith('http') ? category.featuredAsset.preview : BACKEND_URL + category.featuredAsset.preview} alt={category.name} className="w-full h-full object-cover" />
+                      <img src={getImageUrl(category.featuredAsset.preview, { w: 200, h: 200 })} alt={category.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     ) : (
-                      <svg className="w-12 h-12 text-gray-500 group-hover:text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={getIconForName(category.name)} />
+                      <svg className="w-16 h-16 text-gray-300 group-hover:text-orange-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={getIconForName(category.name)} />
                       </svg>
                     )}
                   </div>
-                  <span className="text-sm font-medium text-gray-700 text-center mt-2 group-hover:text-orange-500 transition-colors">{category.name}</span>
+                  <div className="p-4 text-center">
+                    <span className="text-sm font-medium text-gray-800 group-hover:text-orange-600 transition-colors">{category.name}</span>
+                  </div>
                 </Link>
               ))
             ) : (
