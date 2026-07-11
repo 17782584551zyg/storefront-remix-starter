@@ -34,7 +34,7 @@ const { validator, filteredSearchLoader } = filteredSearchLoaderFromPagination(
   paginationLimitMinimumDefault,
 );
 
-export async function loader({ params, request, context }: DataFunctionArgs) {
+export async function loader({ params, request }: DataFunctionArgs) {
   const {
     result,
     resultWithoutFacetValueFilters,
@@ -45,7 +45,6 @@ export async function loader({ params, request, context }: DataFunctionArgs) {
   } = await filteredSearchLoader({
     params,
     request,
-    context,
   });
   const collection = (await sdk.collection({ slug: params.slug }, { request })).collection;
   if (!collection?.id || !collection?.name) {
