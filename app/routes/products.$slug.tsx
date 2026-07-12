@@ -93,6 +93,7 @@ export default function ProductSlug() {
   );
 
   const [isFavorite, setIsFavorite] = useState(false);
+  const getLocaleText = (value) => typeof value === "object" ? Object.values(value)[0] : value;
 
   return (
     <div>
@@ -193,14 +194,18 @@ export default function ProductSlug() {
           </div>
         </div>
 
-        {product.customFields?.productDetails && (
-          <div className="mt-12 pb-12">
-            <section className="bg-gray-50 rounded-xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-6">Product Details</h3>
-              <div className="text-gray-600 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: product.customFields.productDetails }} />
-            </section>
-          </div>
-        )}
+        {(() => {
+          const details = product.customFields?.productDetails;
+          const detailsHtml = typeof details === 'object' ? Object.values(details)[0] : details;
+          return detailsHtml ? (
+            <div className="mt-12 pb-12">
+              <section className="bg-gray-50 rounded-xl p-6 md:p-8">
+                <h3 className="text-xl font-bold text-gray-800 mb-6">Product Details</h3>
+                <div className="text-gray-600 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: detailsHtml }} />
+              </section>
+            </div>
+          ) : null;
+        })()}
         {product.customFields?.detailImage && (
           <div className="mt-6 pb-12">
             <section className="bg-gray-50 rounded-xl p-6 md:p-8">
