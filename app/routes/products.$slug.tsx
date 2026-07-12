@@ -193,49 +193,24 @@ export default function ProductSlug() {
           </div>
         </div>
 
-        {product.customFields && (
+        {product.customFields?.productDetails && (
           <div className="mt-12 pb-12">
             <section className="bg-gray-50 rounded-xl p-6 md:p-8">
               <h3 className="text-xl font-bold text-gray-800 mb-6">Product Details</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {Object.entries(product.customFields).map(([key, value]) => {
-                  if (key === 'detailImage') return null;
-                  const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
-                  return (
-                    <div key={key} className="bg-white rounded-lg p-4 shadow-sm">
-                      <h4 className="text-sm font-semibold text-gray-700 mb-2">{label}</h4>
-                      {typeof value === 'object' && value?.preview ? (
-                        <img
-                          src={getImageUrl(value.preview, { w: 600 })}
-                          alt={label}
-                          className="max-w-full rounded-lg"
-                        />
-                      ) : typeof value === 'string' && value.includes('<') ? (
-                        <div
-                          className="text-gray-600 text-sm prose prose-sm"
-                          dangerouslySetInnerHTML={{
-                            __html: value,
-                          }}
-                        />
-                      ) : (
-                        <p className="text-gray-600 text-sm">{value}</p>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+              <div className="text-gray-600 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: product.customFields.productDetails }} />
             </section>
-
-            {product.customFields.detailImage && (
-              <section className="mt-6 bg-gray-50 rounded-xl p-6 md:p-8">
-                <h4 className="text-lg font-semibold text-gray-800 mb-4">Detail Image</h4>
-                <img
-                  src={getImageUrl(product.customFields.detailImage.preview, { w: 800 })}
-                  alt="Product Detail"
-                  className="max-w-full rounded-lg shadow-md"
-                />
-              </section>
-            )}
+          </div>
+        )}
+        {product.customFields?.detailImage && (
+          <div className="mt-6 pb-12">
+            <section className="bg-gray-50 rounded-xl p-6 md:p-8">
+              <h4 className="text-lg font-semibold text-gray-800 mb-4">Detail Image</h4>
+              <img
+                src={getImageUrl(product.customFields.detailImage.preview, { w: 800 })}
+                alt="Product Detail"
+                className="max-w-full rounded-lg shadow-md"
+              />
+            </section>
           </div>
         )}
       </div>
