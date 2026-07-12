@@ -155,9 +155,8 @@ export default function ProductSlug() {
                 }}
               />
             </div>
-            <activeOrderFetcher.Form method="post" action="/api/active-order">
-              <input type="hidden" name="action" value="addItemToOrder" />
-              {1 < product.variants.length ? (
+            <div>
+              {1 < product.variants.length && (
                 <div className="mt-4">
                   <label
                     htmlFor="option"
@@ -169,7 +168,6 @@ export default function ProductSlug() {
                     className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
                     id="productVariant"
                     value={selectedVariantId}
-                    name="variantId"
                     onChange={(e) => {
                       setSelectedVariantId(e.target.value);
 
@@ -186,31 +184,10 @@ export default function ProductSlug() {
                     ))}
                   </select>
                 </div>
-              ) : (
-                <input
-                  type="hidden"
-                  name="variantId"
-                  value={selectedVariantId}
-                ></input>
               )}
 
               <div className="mt-10 flex flex-col sm:flex-row sm:items-center">
                 <div className="flex sm:flex-col1 align-baseline">
-                  <button
-                    type="submit"
-                    className={`max-w-xs flex-1 ${
-                      activeOrderFetcher.state !== 'idle'
-                        ? 'bg-gray-400'
-                        : 'bg-primary-600 hover:bg-primary-700'
-                    }
-                                     transition-colors border border-transparent rounded-md py-3 px-8 flex items-center
-                                      justify-center text-base font-medium text-white focus:outline-none
-                                      focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500 sm:w-full`}
-                    disabled={activeOrderFetcher.state !== 'idle'}
-                  >
-                    {t('product.addToCart')}
-                  </button>
-
                   <button
                     type="button"
                     className={`ml-4 py-3 px-3 rounded-md flex items-center justify-center transition-colors ${
@@ -232,11 +209,6 @@ export default function ProductSlug() {
                 <span className="text-gray-500">{selectedVariant?.sku}</span>
                 <StockLevelLabel stockLevel={selectedVariant?.stockLevel} />
               </div>
-              {addItemToOrderError && (
-                <div className="mt-4">
-                  <Alert message={addItemToOrderError} />
-                </div>
-              )}
 
               <section className="mt-12 pt-12 border-t text-xs">
                 <h3 className="text-gray-600 font-bold mb-2">
@@ -292,7 +264,7 @@ export default function ProductSlug() {
                   )}
                 </section>
               )}
-            </activeOrderFetcher.Form>
+            </div>
           </div>
         </div>
       </div>
