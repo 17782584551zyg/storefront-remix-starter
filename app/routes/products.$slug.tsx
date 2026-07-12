@@ -222,22 +222,22 @@ export default function ProductSlug() {
                       />
                     </div>
                   )}
-                  {product.customFields.detailImage && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-medium text-gray-900 mb-2">Detail Image</h4>
-                      <img
-                        src={getImageUrl(product.customFields.detailImage.preview, { w: 600 })}
-                        alt="Product Detail"
-                        className="max-w-full rounded-lg"
-                      />
-                    </div>
-                  )}
                 </section>
               )}
             </div>
           </div>
         </div>
       </div>
+      {product.customFields && product.customFields.detailImage && (
+        <div className="max-w-6xl mx-auto px-4 mt-12 pb-12">
+          <h4 className="text-sm font-medium text-gray-900 mb-2">Detail Image</h4>
+          <img
+            src={getImageUrl(product.customFields.detailImage.preview, { w: 600 })}
+            alt="Product Detail"
+            className="max-w-full rounded-lg"
+          />
+        </div>
+      )}
     </div>
   );
 }
