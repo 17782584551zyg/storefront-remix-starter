@@ -1,24 +1,27 @@
-import { Link } from '@remix-run/react';
+﻿import { Link } from '@remix-run/react';
+import { useTranslation } from 'react-i18next';
 
 export function ServicesSection() {
+  const { t } = useTranslation();
+  
   const services = [
     {
-      title: 'One-Stop Cross-Border E-commerce Solutions',
-      description: 'From store setup to operations and promotion, providing comprehensive cross-border e-commerce service support, allowing you to focus on your products.',
+      title: t('home.oneStopSolutions'),
+      description: t('home.oneStopSolutionsDesc'),
       features: ['Store Registration', 'Product Listing', 'Operations Optimization', 'Data Analysis'],
       image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Ecommerce%20dashboard%20with%20analytics%20charts&image_size=square',
       link: '/services',
     },
     {
-      title: 'Intelligent Warehousing & Logistics',
-      description: 'Global intelligent warehouse distribution, shipping from nearest location, reducing logistics costs, improving delivery efficiency, providing your customers with better shopping experience.',
+      title: t('home.warehousingLogistics'),
+      description: t('home.warehousingLogisticsDesc'),
       features: ['Global Warehousing', 'Intelligent Distribution', 'Fast Delivery', 'Real-time Tracking'],
       image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20logistics%20warehouse%20with%20robots&image_size=square',
       link: '/solutions/shipping',
     },
     {
-      title: 'Multi-Platform Payment Solutions',
-      description: 'Supporting PayPal, Stripe and other mainstream payment methods, multi-currency automatic conversion, fund security guaranteed, fast arrival.',
+      title: t('home.paymentSolutions'),
+      description: t('home.paymentSolutionsDesc'),
       features: ['Multi-Platform Payment', 'Multi-Currency Support', 'Security Guarantee', 'Fast Settlement'],
       image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Secure%20payment%20transaction%20interface&image_size=square',
       link: '/payment-information',
@@ -30,10 +33,10 @@ export function ServicesSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Our Services
+            {t('home.servicesTitle')}
           </h2>
           <p className="text-gray-600">
-            What We Offer
+            {t('home.servicesSubtitle')}
           </p>
           <p className="text-gray-500 mt-2">
             Full-chain cross-border e-commerce services, meeting all your needs from store opening to operations

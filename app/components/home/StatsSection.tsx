@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function StatsSection() {
+  const { t } = useTranslation();
+  
   const stats = [
-    { value: 4000, suffix: '', label: 'Clients', description: 'Worldwide' },
-    { value: 120, suffix: '+', label: 'Countries', description: 'Global Coverage' },
-    { value: 300, suffix: 'W+', label: 'Annual Revenue', description: 'USD' },
-    { value: 100, suffix: '+', label: 'Team Members', description: 'Industry Experts' },
+    { value: 4000, suffix: '', label: t('home.statsClients'), description: t('home.statsClientsDesc') },
+    { value: 120, suffix: '+', label: t('home.statsCountries'), description: t('home.statsCountriesDesc') },
+    { value: 300, suffix: 'W+', label: t('home.statsRevenue'), description: t('home.statsRevenueDesc') },
+    { value: 100, suffix: '+', label: t('home.statsTeam'), description: t('home.statsTeamDesc') },
   ];
 
   const [counts, setCounts] = useState<number[]>(stats.map(() => 0));
@@ -57,13 +60,13 @@ export function StatsSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Numbers Speak
+            {t('home.numbersSpeak')}
           </h2>
           <p className="text-white/80">
-            Our Achievements
+            {t('home.ourAchievements')}
           </p>
           <p className="text-white/60 mt-2">
-            Proving strength with data, winning trust with service
+            {t('home.dataTrust')}
           </p>
         </div>
 
