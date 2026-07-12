@@ -186,40 +186,10 @@ export default function ProductSlug() {
                 </div>
               )}
 
-              <div className="mt-10 flex flex-col sm:flex-row sm:items-center">
-                <div className="flex sm:flex-col1 align-baseline">
-                  <button
-                    type="button"
-                    className={`ml-4 py-3 px-3 rounded-md flex items-center justify-center transition-colors ${
-                      isFavorite ? 'text-red-500 hover:text-red-600' : 'text-gray-400 hover:bg-gray-100 hover:text-gray-500'
-                    }`}
-                    onClick={() => setIsFavorite(!isFavorite)}
-                  >
-                    <HeartIcon
-                      className={`h-6 w-6 flex-shrink-0 ${isFavorite ? 'fill-current' : ''}`}
-                      aria-hidden="true"
-                    />
-                    <span className="sr-only">
-                      {isFavorite ? t('product.removeFromFavorites') : t('product.addToFavorites')}
-                    </span>
-                  </button>
-                </div>
-              </div>
               <div className="mt-2 flex items-center space-x-2">
                 <span className="text-gray-500">{selectedVariant?.sku}</span>
                 <StockLevelLabel stockLevel={selectedVariant?.stockLevel} />
               </div>
-
-              <section className="mt-12 pt-12 border-t text-xs">
-                <h3 className="text-gray-600 font-bold mb-2">
-                  {t('product.shippingAndReturns')}
-                </h3>
-                <div className="text-gray-500 space-y-1">
-                  <p>{t('product.shippingInfo')}</p>
-                  <p>{t('product.shippingCostsInfo')}</p>
-                  <p>{t('product.returnsInfo')}</p>
-                </div>
-              </section>
 
               {product.customFields && (
                 <section className="mt-12 pt-12 border-t">
@@ -267,9 +237,6 @@ export default function ProductSlug() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mt-24">
-        <TopReviews></TopReviews>
       </div>
     </div>
   );
