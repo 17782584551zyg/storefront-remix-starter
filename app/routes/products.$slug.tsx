@@ -16,7 +16,7 @@ import { CartLoaderData } from '~/routes/api.active-order';
 import { getSessionStorage } from '~/sessions';
 import { ErrorCode, ErrorResult } from '~/generated/graphql';
 import Alert from '~/components/Alert';
-import { StockLevelLabel } from '~/components/products/StockLevelLabel';
+
 import TopReviews from '~/components/products/TopReviews';
 import { ScrollableContainer } from '~/components/products/ScrollableContainer';
 import { useTranslation } from 'react-i18next';
@@ -149,7 +149,7 @@ export default function ProductSlug() {
               <h3 className="sr-only">{t('product.description')}</h3>
 
               <div
-                className="text-base text-gray-700"
+                className="prose prose-lg text-gray-700 max-w-none"
                 dangerouslySetInnerHTML={{
                   __html: product.description,
                 }}
@@ -188,40 +188,37 @@ export default function ProductSlug() {
 
               <div className="mt-2 flex items-center space-x-2">
                 <span className="text-gray-500">{selectedVariant?.sku}</span>
-                <StockLevelLabel stockLevel={selectedVariant?.stockLevel} />
+                
               </div>
 
               {product.customFields && (
                 <section className="mt-12 pt-12 border-t">
                   <h3 className="text-gray-600 font-bold mb-4">Product Details</h3>
-                  {product.customFields.weight && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-medium text-gray-900 mb-1">Weight</h4>
-                      <p className="text-gray-600">{product.customFields.weight}</p>
-                    </div>
-                  )}
-                  {product.customFields.specifications && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-medium text-gray-900 mb-1">Specifications</h4>
-                      <div
-                        className="text-gray-600"
-                        dangerouslySetInnerHTML={{
-                          __html: product.customFields.specifications,
-                        }}
-                      />
-                    </div>
-                  )}
-                  {product.customFields.usage && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-medium text-gray-900 mb-1">Usage Instructions</h4>
-                      <div
-                        className="text-gray-600"
-                        dangerouslySetInnerHTML={{
-                          __html: product.customFields.usage,
-                        }}
-                      />
-                    </div>
-                  )}
+                  {Object.entries(product.customFields).map(([key, value]) => {
+                    if (key === 'detailImage') return null;
+                    const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
+                    return (
+                      <div key={key} className="mb-4">
+                        <h4 className="text-sm font-medium text-gray-900 mb-1">{label}</h4>
+                        {typeof value === 'object' && value?.preview ? (
+                          <img
+                            src={getImageUrl(value.preview, { w: 600 })}
+                            alt={label}
+                            className="max-w-full rounded-lg"
+                          />
+                        ) : typeof value === 'string' && value.includes('<') ? (
+                          <div
+                            className="text-gray-600 prose prose-sm"
+                            dangerouslySetInnerHTML={{
+                              __html: value,
+                            }}
+                          />
+                        ) : (
+                          <p className="text-gray-600">{value}</p>
+                        )}
+                      </div>
+                    );
+                  })}
                 </section>
               )}
             </div>
