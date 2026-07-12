@@ -8,25 +8,6 @@ import { classNames } from '~/utils/class-names';
 import { useTranslation } from 'react-i18next';
 import { useState, useRef, useEffect } from 'react';
 
-const navItems = [
-  { label: 'Our Services', href: '/services' },
-  {
-    label: 'Solutions',
-    children: [
-      { label: 'Shipping Solutions', href: '/solutions/shipping' },
-      { label: 'Quality Control', href: '/solutions/quality-control' },
-    ],
-  },
-  { label: 'Products', href: '/products' },
-  {
-    label: 'About',
-    children: [
-      { label: 'Payment Information', href: '/payment-information' },
-      { label: 'About Us', href: '/about' },
-    ],
-  },
-];
-
 const languages = [
   { code: 'en', label: 'English' },
   { code: 'zh', label: '中文' },
@@ -51,6 +32,27 @@ export function Header({
   const location = useLocation();
   const isProductPage = location.pathname.startsWith('/products') || location.pathname.startsWith('/collections') || location.pathname.startsWith('/product');
   const currentLocale = data.locale || 'en';
+
+  const navItems = [
+    { label: t('header.ourServices'), href: '/services', key: 'ourServices' },
+    {
+      label: t('header.solutions'),
+      key: 'solutions',
+      children: [
+        { label: t('header.shippingSolutions'), href: '/solutions/shipping', key: 'shippingSolutions' },
+        { label: t('header.qualityControl'), href: '/solutions/quality-control', key: 'qualityControl' },
+      ],
+    },
+    { label: t('header.products'), href: '/products', key: 'products' },
+    {
+      label: t('header.about'),
+      key: 'about',
+      children: [
+        { label: t('header.paymentInformation'), href: '/payment-information', key: 'paymentInformation' },
+        { label: t('header.aboutUs'), href: '/about', key: 'aboutUs' },
+      ],
+    },
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -98,25 +100,25 @@ export function Header({
         <nav className="hidden lg:flex items-center space-x-1">
           {navItems.map((item) => (
             <div
-              key={item.label}
-              ref={el => { dropdownRefs.current[item.label] = el; }}
+              key={item.key}
+              ref={el => { dropdownRefs.current[item.key] = el; }}
               className="relative"
             >
               {item.children ? (
                 <>
                   <button
                     className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 font-medium transition-colors duration-300 px-3 py-2"
-                    onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                    onMouseEnter={() => setActiveDropdown(item.label)}
+                    onClick={() => setActiveDropdown(activeDropdown === item.key ? null : item.key)}
+                    onMouseEnter={() => setActiveDropdown(item.key)}
                   >
                     <span>{item.label}</span>
                     <ChevronDownIcon className="w-4 h-4" />
                   </button>
-                  {activeDropdown === item.label && (
+                  {activeDropdown === item.key && (
                     <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-48 z-50 border border-gray-100">
                       {item.children.map((child) => (
                         <Link
-                          key={child.label}
+                          key={child.key}
                           to={child.href}
                           className="block px-6 py-2 text-gray-600 hover:bg-orange-50 hover:text-orange-500 text-sm transition-colors duration-200"
                           onClick={() => setActiveDropdown(null)}

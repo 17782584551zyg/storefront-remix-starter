@@ -1,23 +1,24 @@
-export function FeaturesSection() {
+﻿export function FeaturesSection() {
+  const { t } = useTranslation();
   const features = [
     {
       icon: 'warehouse',
-      title: 'Global Warehousing & Shipping',
+      title: t("home.globalWarehousing"),
       description: 'Warehouse network covering 120+ countries worldwide, intelligent warehouse management, fastest delivery in 3 days, enabling your products to reach global consumers quickly.',
     },
     {
       icon: 'search',
-      title: 'Professional Product Sourcing',
-      description: 'Big data analysis based product recommendations, one-on-one guidance from senior sourcing team, helping you discover hot-selling products and reduce sourcing risks.',
+      title: t("home.professionalSourcing"),
+      description: t("home.professionalSourcingDesc"),
     },
     {
       icon: 'truck',
-      title: 'Full-Chain Logistics Service',
-      description: 'From domestic pickup, international shipping to last-mile delivery, providing door-to-door one-stop logistics solutions with full tracking capability.',
+      title: t("home.fullChainLogistics"),
+      description: t("home.fullChainLogisticsDesc"),
     },
     {
       icon: 'credit-card',
-      title: 'Multi-Currency Payment Support',
+      title: t("home.multiCurrencyPayment"),
       description: 'Supporting 30+ major currencies including USD, EUR, GBP, transparent exchange rates, low fees, and guaranteed fund security.',
     },
   ];
