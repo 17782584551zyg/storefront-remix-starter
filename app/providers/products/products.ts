@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+﻿import gql from 'graphql-tag';
 import { QueryOptions, sdk } from '../../graphqlWrapper';
 import { SearchQueryVariables } from '~/generated/graphql';
 
@@ -62,15 +62,7 @@ export const detailedProductFragment = gql`
         preview
       }
     }
-    customFields {
-      weight
-      specifications
-      usage
-      detailImage {
-        id
-        preview
-      }
-    }
+    customFields
   }
 `;
 
