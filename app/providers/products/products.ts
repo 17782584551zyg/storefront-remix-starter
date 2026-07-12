@@ -63,9 +63,7 @@ export const detailedProductFragment = gql`
       }
     }
     customFields {
-      weight
-      specifications
-      usage
+      productDetails
       detailImage {
         id
         preview
