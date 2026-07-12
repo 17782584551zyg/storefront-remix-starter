@@ -1,10 +1,12 @@
-﻿export function FeaturesSection() {
+import { useTranslation } from 'react-i18next';
+
+export function FeaturesSection() {
   const { t } = useTranslation();
   const features = [
     {
       icon: 'warehouse',
       title: t("home.globalWarehousing"),
-      description: 'Warehouse network covering 120+ countries worldwide, intelligent warehouse management, fastest delivery in 3 days, enabling your products to reach global consumers quickly.',
+      description: t("home.globalWarehousingDesc"),
     },
     {
       icon: 'search',
@@ -19,7 +21,7 @@
     {
       icon: 'credit-card',
       title: t("home.multiCurrencyPayment"),
-      description: 'Supporting 30+ major currencies including USD, EUR, GBP, transparent exchange rates, low fees, and guaranteed fund security.',
+      description: t("home.multiCurrencyPaymentDesc"),
     },
   ];
 
@@ -35,13 +37,13 @@
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Core Advantages
+            {t('home.coreAdvantages')}
           </h2>
           <p className="text-gray-600">
-            Why Choose Us
+            {t('home.whyChooseUs')}
           </p>
           <p className="text-gray-500 mt-2">
-            Years of experience in cross-border e-commerce, accumulated rich industry experience and resources, committed to providing the best quality service for clients.
+            {t('home.chooseUsDescription')}
           </p>
         </div>
 
