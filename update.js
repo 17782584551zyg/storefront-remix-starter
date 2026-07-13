@@ -1,2 +1,0 @@
-﻿const fs = require('fs'); const content = fs.readFileSync('c:\\Users\\z1313\\Documents\\trae_projects\\ver\\xer\\storefront-remix-starter\\app\\components\\home\\HeroBanner.tsx', 'utf8'); const newContent = content.replace('import { useState, useEffect } from \
-react\;', 'import { useState, useEffect } from \react\;\nimport { getImageUrl } from \~/constants\;'); fs.writeFileSync('c:\\Users\\z1313\\Documents\\trae_projects\\ver\\xer\\storefront-remix-starter\\app\\components\\home\\HeroBanner.tsx', newContent, 'utf8'); console.log('Import updated')
