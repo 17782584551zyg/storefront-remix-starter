@@ -212,7 +212,7 @@ export default function ProductSlug() {
             </div>
           ) : null;
         })()}
-        {product.customFields?.detailImage?.preview && (
+        {/* {product.customFields?.detailImage?.preview && (
           <div className="mt-6 pb-12">
             <div>
               
@@ -223,7 +223,7 @@ export default function ProductSlug() {
               />
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

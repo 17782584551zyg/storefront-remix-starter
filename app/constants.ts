@@ -13,7 +13,18 @@ export function getImageUrl(preview: string | undefined, options: { w?: number; 
   if (!preview) {
     return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23f3f4f6" width="200" height="200"/%3E%3Ctext fill="%239ca3af" font-family="sans-serif" font-size="14" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3ENo image%3C/text%3E%3C/svg%3E';
   }
-  let url = preview.startsWith('http') ? preview : BACKEND_URL + preview;
+  
+  let url: string;
+  
+  if (preview.startsWith('/api/assets/')) {
+    url = preview;
+  } else if (preview.startsWith('http')) {
+    const assetPath = preview.replace(/^https?:\/\/[^\/]+\/assets\//, '/api/assets/');
+    url = assetPath;
+  } else {
+    url = BACKEND_URL + preview;
+  }
+  
   const params: string[] = [];
   if (options.w) params.push('w=' + options.w);
   if (options.h) params.push('h=' + options.h);
