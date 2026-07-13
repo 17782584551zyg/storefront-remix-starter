@@ -150,25 +150,26 @@ export default function ProductsPage() {
             <p className="text-gray-600">Browse through our product categories to find items for your business.</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {collections && collections.length > 0 ? (
               collections.map((category, index) => (
                 <Link
                   key={category.id || index}
                   to={`/collections/${category.slug}`}
-                  className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group transform hover:-translate-y-1"
+                  className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group"
                 >
-                  <div className="aspect-square w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{category.name}</h3>
+                    <p className="text-sm text-gray-500 uppercase tracking-wider">Lorem ipsum</p>
+                  </div>
+                  <div className="flex-1 w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
                     {category.featuredAsset && category.featuredAsset.preview ? (
-                      <img src={getImageUrl(category.featuredAsset.preview, { w: 200, h: 200 })} alt={category.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      <img src={getImageUrl(category.featuredAsset.preview, { w: 400, h: 400 })} alt={category.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4" />
                     ) : (
-                      <svg className="w-16 h-16 text-gray-300 group-hover:text-orange-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-24 h-24 text-gray-300 group-hover:text-orange-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={getIconForName(category.name)} />
                       </svg>
                     )}
-                  </div>
-                  <div className="p-4 text-center">
-                    <span className="text-sm font-medium text-gray-800 group-hover:text-orange-600 transition-colors">{category.name}</span>
                   </div>
                 </Link>
               ))
