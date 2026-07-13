@@ -1,12 +1,44 @@
-import { Link } from '@remix-run/react';
+﻿import { Link } from '@remix-run/react';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 export function HeroBanner() {
   const { t } = useTranslation();
+  const [currentSlide, setCurrentSlide] = useState(0);
   
+  const slides = [
+    'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20titanium%20fasteners%20manufacturer%20products%20with%20titanium%20bolts%20screws%20nuts%20on%20white%20background%20industrial%20photography&image_size=landscape_16_9',
+    'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20metal%20components%20precision%20machined%20parts%20with%20technical%20drawings%20blueprints%20engineering%20background%20professional%20photography&image_size=landscape_16_9',
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500 text-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative py-20 text-white overflow-hidden">
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={slide}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+          </div>
+        ))}
+      </div>
+      
+      <div className="relative max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold mb-6">
@@ -43,14 +75,20 @@ export function HeroBanner() {
               ))}
             </div>
           </div>
-          <div className="flex-1">
-            <img
-              src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20ecommerce%20warehouse%20with%20shipping%20boxes%20and%20technology&image_size=landscape_4_3"
-              alt="E-commerce Solutions"
-              className="w-full max-w-lg mx-auto rounded-xl shadow-2xl"
-            />
-          </div>
         </div>
+      </div>
+      
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/75'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
   );
