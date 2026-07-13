@@ -88,8 +88,15 @@ export default function ProductSlug() {
     (fv) => fv.facet.code === 'brand',
   )?.name;
 
+  const getDefaultFeaturedAsset = () => {
+    if (selectedVariant?.featuredAsset) return selectedVariant.featuredAsset;
+    if (product.featuredAsset) return product.featuredAsset;
+    if (product.assets.length > 0) return product.assets[0];
+    return null;
+  };
+
   const [featuredAsset, setFeaturedAsset] = useState(
-    selectedVariant?.featuredAsset || product.featuredAsset,
+    getDefaultFeaturedAsset(),
   );
 
   const [isFavorite, setIsFavorite] = useState(false);
@@ -108,12 +115,11 @@ export default function ProductSlug() {
           }
         ></Breadcrumbs>
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12">
-          {/* Image gallery */}
           <div className="w-full max-w-2xl mx-auto sm:block lg:max-w-none">
             <span className="rounded-md overflow-hidden">
               <div className="w-full h-full object-center object-cover rounded-lg">
                 <img
-                  src={getImageUrl(featuredAsset?.preview || product.featuredAsset?.preview, { w: 1200 })}
+                  src={getImageUrl(featuredAsset?.preview, { w: 1200 })}
                   alt={product.name}
                   className="w-full h-full object-center object-cover rounded-lg"
                 />
@@ -124,6 +130,7 @@ export default function ProductSlug() {
               <ScrollableContainer>
                 {product.assets.map((asset) => (
                   <div
+                    key={asset.id}
                     className={`basis-1/3 md:basis-1/4 flex-shrink-0 select-none touch-pan-x rounded-lg ${
                       featuredAsset?.id == asset.id
                         ? 'outline outline-2 outline-primary outline-offset-[-2px]'
@@ -144,7 +151,6 @@ export default function ProductSlug() {
             )}
           </div>
 
-          {/* Product info */}
           <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
             <div className="">
               <h3 className="sr-only">{t('product.description')}</h3>
@@ -174,7 +180,7 @@ export default function ProductSlug() {
 
                       const variant = findVariantById(e.target.value);
                       if (variant) {
-                        setFeaturedAsset(variant!.featuredAsset);
+                        setFeaturedAsset(variant!.featuredAsset || getDefaultFeaturedAsset());
                       }
                     }}
                   >
@@ -232,7 +238,6 @@ export function CatchBoundary() {
         {t('product.notFound')}
       </h2>
       <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start mt-4 md:mt-12">
-        {/* Image gallery */}
         <div className="w-full max-w-2xl mx-auto sm:block lg:max-w-none">
           <span className="rounded-md overflow-hidden">
             <div className="w-full h-96 bg-slate-200 rounded-lg flex content-center justify-center">
@@ -241,7 +246,6 @@ export function CatchBoundary() {
           </span>
         </div>
 
-        {/* Product info */}
         <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
           <div className="">{t('product.notFoundInfo')}</div>
           <div className="flex-1 space-y-3 py-1">
