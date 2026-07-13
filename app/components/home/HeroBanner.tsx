@@ -7,8 +7,8 @@ export function HeroBanner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
-    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80',
-    'https://images.unsplash.com/photo-1496902526404-0a6c5b5e9ce3?w=1920&q=80',
+    '/assets/banner/slide1.jpg',
+    '/assets/banner/slide2.jpg',
   ];
 
   useEffect(() => {
