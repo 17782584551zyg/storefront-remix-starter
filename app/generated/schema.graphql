@@ -1,4 +1,4 @@
-"""
+﻿"""
 Indicates exactly one field must be supplied and this field must not be `null`.
 """
 directive @oneOf on INPUT_OBJECT
@@ -3028,9 +3028,7 @@ type Product implements Node {
 
 type ProductCustomFields {
   detailImage: Asset
-  specifications: String
-  usage: String
-  weight: String
+  productDetails: JSON
 }
 
 input ProductFilterParameter {

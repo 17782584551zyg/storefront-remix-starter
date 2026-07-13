@@ -1,4 +1,4 @@
-import { DocumentNode } from 'graphql';
+﻿import { DocumentNode } from 'graphql';
 import gql from 'graphql-tag';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
@@ -2725,9 +2725,7 @@ export type ProductVariantListArgs = {
 export type ProductCustomFields = {
   __typename?: 'ProductCustomFields';
   detailImage?: Maybe<Asset>;
-  specifications?: Maybe<Scalars['String']>;
-  usage?: Maybe<Scalars['String']>;
-  weight?: Maybe<Scalars['String']>;
+  productDetails?: Maybe<Scalars['JSON']>;
 };
 
 export type ProductFilterParameter = {
@@ -2740,10 +2738,7 @@ export type ProductFilterParameter = {
   languageCode?: InputMaybe<StringOperators>;
   name?: InputMaybe<StringOperators>;
   slug?: InputMaybe<StringOperators>;
-  specifications?: InputMaybe<StringOperators>;
   updatedAt?: InputMaybe<DateOperators>;
-  usage?: InputMaybe<StringOperators>;
-  weight?: InputMaybe<StringOperators>;
 };
 
 export type ProductList = PaginatedList & {
@@ -3999,13 +3994,11 @@ export const DetailedProductFragmentDoc = gql`
     }
   }
   customFields {
-    weight
-    specifications
-    usage
     detailImage {
       id
       preview
     }
+    productDetails
   }
 }
     `;

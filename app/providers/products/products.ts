@@ -62,13 +62,7 @@ export const detailedProductFragment = gql`
         preview
       }
     }
-    customFields {
-      productDetails
-      detailImage {
-        id
-        preview
-      }
-    }
+    customFields
   }
 `;
 
