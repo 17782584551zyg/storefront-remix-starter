@@ -7,8 +7,8 @@ export function HeroBanner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
-    'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20titanium%20fasteners%20manufacturer%20products%20with%20titanium%20bolts%20screws%20nuts%20on%20white%20background%20industrial%20photography&image_size=landscape_16_9',
-    'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20metal%20components%20precision%20machined%20parts%20with%20technical%20drawings%20blueprints%20engineering%20background%20professional%20photography&image_size=landscape_16_9',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80',
+    'https://images.unsplash.com/photo-1496902526404-0a6c5b5e9ce3?w=1920&q=80',
   ];
 
   useEffect(() => {
