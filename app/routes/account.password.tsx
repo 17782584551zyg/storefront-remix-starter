@@ -1,7 +1,8 @@
-import { PencilIcon } from '@heroicons/react/24/outline';
+﻿import { PencilIcon } from '@heroicons/react/24/outline';
 import { useActionData, useNavigation } from '@remix-run/react';
 import { DataFunctionArgs, json } from '@remix-run/server-runtime';
-import { withZod } from '@remix-validated-form/with-zod';
+import pkg from '@remix-validated-form/with-zod';
+const { withZod } = pkg;
 import { useEffect, useRef, useState } from 'react';
 import { ValidatedForm, validationError } from 'remix-validated-form';
 import { z } from 'zod';

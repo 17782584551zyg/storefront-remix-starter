@@ -1,4 +1,5 @@
-import { withZod } from '@remix-validated-form/with-zod';
+﻿import pkg from '@remix-validated-form/with-zod';
+const { withZod } = pkg;
 import { z } from 'zod';
 import { RefObject } from 'react';
 import { ValidatedForm } from 'remix-validated-form';

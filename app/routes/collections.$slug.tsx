@@ -1,6 +1,7 @@
-import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
+﻿import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
 import { DataFunctionArgs } from '@remix-run/server-runtime';
-import { withZod } from '@remix-validated-form/with-zod';
+import pkg from '@remix-validated-form/with-zod';
+const { withZod } = pkg;
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ValidatedForm } from 'remix-validated-form';
@@ -46,7 +47,8 @@ export async function loader({ params, request }: DataFunctionArgs) {
     params,
     request,
   });
-  const collection = (await sdk.collection({ slug: params.slug }, { request })).collection;
+  const collection = (await sdk.collection({ slug: params.slug }, { request }))
+    .collection;
   if (!collection?.id || !collection?.name) {
     throw new Response('Not Found', {
       status: 404,
