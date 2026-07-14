@@ -1,4 +1,4 @@
-import { RemixI18Next } from 'remix-i18next';
+﻿import { RemixI18Next } from 'remix-i18next/build/index.js';
 
 import i18n from '~/i18n'; // your i18n configuration file
 import HttpBackend from 'i18next-http-backend';
