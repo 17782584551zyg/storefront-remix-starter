@@ -1,6 +1,6 @@
-import { sdk } from '~/lib/graphql-client';
+import { sdk, QueryOptions } from '../../graphqlWrapper';
 
-export async function getActiveChannel(request?: Request) {
-  const { activeChannel } = await sdk.activeChannel();
+export async function getActiveChannel(options?: QueryOptions) {
+  const { activeChannel } = await sdk.activeChannel({}, options);
   return activeChannel;
 }
