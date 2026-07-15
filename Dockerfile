@@ -1,13 +1,10 @@
-﻿# Build timestamp: 2026-06-28-v3
+# Build timestamp: 2026-06-28-v3
 FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 COPY package.json yarn.lock ./
 RUN yarn install
-
-COPY scripts/fix-remix-i18next.cjs ./
-RUN node fix-remix-i18next.cjs
 
 COPY . .
 RUN yarn build
@@ -19,11 +16,9 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --production
 
-COPY scripts/fix-remix-i18next.cjs ./
-RUN node fix-remix-i18next.cjs
-
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/public ./public
+COPY fix-remix-i18next.cjs ./
 
 EXPOSE 3000
 

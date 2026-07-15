@@ -1,19 +1,19 @@
-import { HeroBanner } from '~/components/home/HeroBanner';
-import { FeaturesSection } from '~/components/home/FeaturesSection';
-import { StatsSection } from '~/components/home/StatsSection';
-import { ServicesSection } from '~/components/home/ServicesSection';
-import { TestimonialsSection } from '~/components/home/TestimonialsSection';
-import { CtaSection } from '~/components/home/PartnersSection';
+﻿import { HeroBanner } from '../components/home/HeroBanner';
+import { FeaturesSection } from '../components/home/FeaturesSection';
+import { ServicesSection } from '../components/home/ServicesSection';
+import { PartnersSection } from '../components/home/PartnersSection';
+import { StatsSection } from '../components/home/StatsSection';
+import { TestimonialsSection } from '../components/home/TestimonialsSection';
 
 export default function Index() {
   return (
-    <>
+    <div>
       <HeroBanner />
       <FeaturesSection />
-      <StatsSection />
       <ServicesSection />
+      <StatsSection />
+      <PartnersSection />
       <TestimonialsSection />
-      <CtaSection />
-    </>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
-import { RemixI18Next } from 'remix-i18next';
+import { RemixI18Next } from 'remix-i18next/build';
 
-import i18n from '~/i18n'; // your i18n configuration file
+import i18n from '~/i18n';
 import HttpBackend from 'i18next-http-backend';
 import {
   IS_CF_PAGES,

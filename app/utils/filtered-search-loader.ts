@@ -36,32 +36,29 @@ export function filteredSearchLoaderFromPagination(
         ReturnType<typeof search>,
         ReturnType<typeof searchFacetValues>,
       ];
-      const searchResultPromise = search(
-        {
-          input: {
-            groupByProduct: true,
-            term,
-            facetValueFilters: [{ or: facetValueIds }],
-            collectionSlug: params.slug,
-            take: zodResult.data.limit,
-            skip: (zodResult.data.page - 1) * zodResult.data.limit,
-          },
-        },
-        { request },
-      );
+      const searchInput = {
+        groupByProduct: true,
+        term,
+        facetValueFilters: [{ or: facetValueIds }],
+        take: zodResult.data.limit,
+        skip: (zodResult.data.page - 1) * zodResult.data.limit,
+      };
+      if (params.slug) {
+        searchInput.collectionSlug = params.slug;
+      }
+
+      const searchResultPromise = search({ input: searchInput }, { request });
       if (facetValueIds.length) {
+        const facetSearchInput = {
+          groupByProduct: true,
+          term,
+        };
+        if (params.slug) {
+          facetSearchInput.collectionSlug = params.slug;
+        }
         resultPromises = [
           searchResultPromise,
-          searchFacetValues(
-            {
-              input: {
-                groupByProduct: true,
-                term,
-                collectionSlug: params.slug,
-              },
-            },
-            { request },
-          ),
+          searchFacetValues({ input: facetSearchInput }, { request }),
         ];
       } else {
         resultPromises = [searchResultPromise, searchResultPromise];

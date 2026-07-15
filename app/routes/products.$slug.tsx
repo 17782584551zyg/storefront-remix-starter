@@ -1,6 +1,7 @@
 ﻿import { DataFunctionArgs, json } from '@remix-run/server-runtime';
 import { useState } from 'react';
 import { Price } from '~/components/products/Price';
+import { ProductImageZoom } from '~/components/products/ProductImageZoom';
 import { getProductBySlug } from '~/providers/products/products';
 import {
   FetcherWithComponents,
@@ -95,12 +96,11 @@ export default function ProductSlug() {
     return null;
   };
 
-  const [featuredAsset, setFeaturedAsset] = useState(
-    getDefaultFeaturedAsset(),
-  );
+  const [featuredAsset, setFeaturedAsset] = useState(getDefaultFeaturedAsset());
 
   const [isFavorite, setIsFavorite] = useState(false);
-  const getLocaleText = (value) => typeof value === "object" ? Object.values(value)[0] : value;
+  const getLocaleText = (value) =>
+    typeof value === 'object' ? Object.values(value)[0] : value;
 
   return (
     <div>
@@ -180,7 +180,9 @@ export default function ProductSlug() {
 
                       const variant = findVariantById(e.target.value);
                       if (variant) {
-                        setFeaturedAsset(variant!.featuredAsset || getDefaultFeaturedAsset());
+                        setFeaturedAsset(
+                          variant!.featuredAsset || getDefaultFeaturedAsset(),
+                        );
                       }
                     }}
                   >
@@ -202,12 +204,20 @@ export default function ProductSlug() {
 
         {(() => {
           const details = product.customFields?.productDetails;
-          const detailsHtml = details && typeof details === "object" && !Array.isArray(details) ? Object.values(details)[0] : details;
+          const detailsHtml =
+            details && typeof details === 'object' && !Array.isArray(details)
+              ? Object.values(details)[0]
+              : details;
           return detailsHtml ? (
             <div className="mt-12 pb-12">
               <section className="bg-gray-50 rounded-xl p-6 md:p-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-6">Product Details</h3>
-                <div className="text-gray-600 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: detailsHtml }} />
+                <h3 className="text-xl font-bold text-gray-800 mb-6">
+                  Product Details
+                </h3>
+                <div
+                  className="text-gray-600 prose prose-sm max-w-none"
+                  dangerouslySetInnerHTML={{ __html: detailsHtml }}
+                />
               </section>
             </div>
           ) : null;

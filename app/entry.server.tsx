@@ -1,17 +1,16 @@
 import type { EntryContext } from '@remix-run/server-runtime';
 import { RemixServer } from '@remix-run/react';
 import isbot from 'isbot';
-
 import ReactDOM from 'react-dom/server';
-
-import { createInstance } from 'i18next';
-import { getI18NextServer, getPlatformBackend } from './i18next.server';
-import { I18nextProvider, initReactI18next } from 'react-i18next';
-import i18n from './i18n';
 import {
   IS_CF_PAGES,
   safeRequireNodeDependency,
 } from '~/utils/platform-adapter';
+import i18n from '~/i18n';
+import i18next from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import FsBackend from 'i18next-fs-backend';
+import { I18nextProvider } from 'react-i18next';
 
 const ABORT_DELAY = 5000;
 
@@ -33,7 +32,6 @@ async function handleCfRequest(
   const body = await ReactDOM.renderToReadableStream(jsx, {
     signal: request.signal,
     onError(error: unknown) {
-      // Log streaming rendering errors from inside the shell
       console.error(error);
       responseStatusCode = 500;
     },
@@ -67,7 +65,6 @@ async function handleNodeRequest(
     let { pipe, abort } = ReactDOM.renderToPipeableStream(jsx, {
       [callbackName]: async () => {
         const { PassThrough } = await safeRequireNodeDependency('node:stream');
-
         const { createReadableStreamFromReadable } =
           await safeRequireNodeDependency('@remix-run/node');
 
@@ -88,7 +85,6 @@ async function handleNodeRequest(
       },
       onError(error: unknown) {
         didError = true;
-
         console.error(error);
       },
     });
@@ -97,24 +93,34 @@ async function handleNodeRequest(
   });
 }
 
+async function createI18nInstance(locale: string) {
+  const instance = i18next.createInstance();
+
+  await instance
+    .use(initReactI18next)
+    .use(FsBackend)
+    .init({
+      ...i18n,
+      lng: locale,
+      fallbackLng: 'en',
+      interpolation: { escapeValue: false },
+      react: { useSuspense: false },
+      backend: {
+        loadPath: './public/locales/{{lng}}.json',
+      },
+    });
+
+  return instance;
+}
+
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
 ) {
-  let instance = createInstance();
-  let lng = await getI18NextServer().then((i18next) =>
-    i18next.getLocale(request),
-  );
-
-  await instance
-    .use(initReactI18next)
-    .use(await getPlatformBackend())
-    .init({
-      ...i18n,
-      lng,
-    });
+  const locale = 'zh';
+  const instance = await createI18nInstance(locale);
 
   const jsx = (
     <I18nextProvider i18n={instance}>

@@ -1,404 +1,152 @@
-﻿import { json, LoaderFunction } from '@remix-run/node';
+import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
 import { getImageUrl } from '~/constants';
-import { useState } from 'react';
-import { graphqlClient } from '~/lib/graphql-client';
+import { search } from '~/providers/products/products';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const collections = await getCollections(request);
-  return json({ collections });
+  const searchResult = await search({ input: { take: 20 } }, { request });
+  const products = searchResult.search.items;
+  return json({ collections, products });
 };
 
 export default function ProductsPage() {
-  const { collections } = useLoaderData<{ collections: Array<{ id: string; name: string; slug: string; featuredAsset?: { preview: string } }> }>();
+  const { collections, products } = useLoaderData<{
+    collections: Array<{
+      id: string;
+      name: string;
+      slug: string;
+      featuredAsset?: { preview: string };
+    }>;
+    products: Array<{
+      productId: string;
+      productName: string;
+      slug: string;
+      productAsset?: { preview: string };
+      priceWithTax?: { min?: number; max?: number; value?: number };
+    }>;
+  }>();
 
-  const [reportFormData, setReportFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    country: '',
-    company: '',
-  });
-  const [reportSubmitting, setReportSubmitting] = useState(false);
-  const [reportSubmitted, setReportSubmitted] = useState(false);
-
-  const handleReportChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setReportFormData({
-      ...reportFormData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleReportSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setReportSubmitting(true);
-    try {
-      await graphqlClient.request(`
-        mutation CreateContactForm($input: CreateContactFormInput!) {
-          createContactForm(input: $input) {
-            id
-            firstName
-            email
-            createdAt
-          }
-        }
-      `, {
-        input: {
-          ...reportFormData,
-          source: 'monthly-report',
-        },
-      });
-      setReportSubmitted(true);
-      setReportFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        country: '',
-        company: '',
-      });
-    } catch (error) {
-      console.error('Failed to submit monthly report form:', error);
-      alert('Failed to submit. Please try again or email us at info@taisourcing.asia');
-    } finally {
-      setReportSubmitting(false);
-    }
-  };
-
-  const iconMap: Record<string, string> = {
-    'shirt': 'M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 01.35-.15h6.87a.5.5 0 01.35.85l-4.86 4.86a.5.5 0 01-.85.35V3.21a.5.5 0 01.85-.35l4.86 4.86a.5.5 0 01.35.85h-6.87a.5.5 0 01-.35-.15L5.5 3.56a.5.5 0 01-.35-.85z',
-    'sofa': 'M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z',
-    'briefcase': 'M6 2a2 2 0 00-2 2v16l4-4h10a2 2 0 002-2V4a2 2 0 00-2-2H6z',
-    'sparkles': 'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z',
-    'toy': 'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z',
-    'dumbbell': 'M15 12a3 3 0 11-6 0 3 3 0 016 0z',
-    'home': 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
-    'flower': 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
-    'smartphone': 'M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z',
-    'cat': 'M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
-    'gift': 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
-    'wrench': 'M17.066 6.26a1 1 0 00-1.067.28l-2.906 3.87a2 2 0 01-1.796.73h-3.27a2 2 0 01-1.796-.73L4.067 6.54a1 1 0 00-1.067-.28 1 1 0 00-.686 1.18l1.94 8.676a2 2 0 01-.46 1.41l-1.905 1.905a1 1 0 00.28 1.414l3.873 2.905a1 1 0 001.066.28h3.27a1 1 0 001.067-.28l3.873-2.905a1 1 0 00.28-1.414l-1.905-1.905a2 2 0 01-.46-1.41l1.94-8.676a1 1 0 00-.686-1.18z',
-    'pen-tool': 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
-    'car': 'M13 10V3L4 14h7v7l9-11h-7z',
-    'heart': 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
-    'factory': 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
-    'package': 'M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z',
-    'truck': 'M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4',
-    'gem': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-    'lightbulb': 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
-    'default': 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
-  };
-
-  const getIconForName = (name: string): string => {
-    const lowerName = name.toLowerCase();
-    if (lowerName.includes('apparel') || lowerName.includes('clothing') || lowerName.includes('shirt') || lowerName.includes('dress')) return iconMap['shirt'];
-    if (lowerName.includes('furniture') || lowerName.includes('sofa') || lowerName.includes('chair')) return iconMap['sofa'];
-    if (lowerName.includes('bag') || lowerName.includes('case') || lowerName.includes('briefcase')) return iconMap['briefcase'];
-    if (lowerName.includes('beauty') || lowerName.includes('cosmetic') || lowerName.includes('makeup')) return iconMap['sparkles'];
-    if (lowerName.includes('toy') || lowerName.includes('game')) return iconMap['toy'];
-    if (lowerName.includes('sport') || lowerName.includes('fitness') || lowerName.includes('dumbbell')) return iconMap['dumbbell'];
-    if (lowerName.includes('home') || lowerName.includes('house')) return iconMap['home'];
-    if (lowerName.includes('garden') || lowerName.includes('flower') || lowerName.includes('outdoor')) return iconMap['flower'];
-    if (lowerName.includes('electronic') || lowerName.includes('phone') || lowerName.includes('smart')) return iconMap['smartphone'];
-    if (lowerName.includes('pet') || lowerName.includes('cat') || lowerName.includes('dog')) return iconMap['cat'];
-    if (lowerName.includes('gift') || lowerName.includes('natural')) return iconMap['gift'];
-    if (lowerName.includes('hardware') || lowerName.includes('tool')) return iconMap['wrench'];
-    if (lowerName.includes('office') || lowerName.includes('stationery')) return iconMap['pen-tool'];
-    if (lowerName.includes('automotive') || lowerName.includes('car') || lowerName.includes('vehicle')) return iconMap['car'];
-    if (lowerName.includes('health') || lowerName.includes('medical') || lowerName.includes('heart')) return iconMap['heart'];
-    if (lowerName.includes('industrial') || lowerName.includes('factory')) return iconMap['factory'];
-    if (lowerName.includes('packaging') || lowerName.includes('box')) return iconMap['package'];
-    if (lowerName.includes('dropship') || lowerName.includes('shipping') || lowerName.includes('truck')) return iconMap['truck'];
-    if (lowerName.includes('jewelry') || lowerName.includes('gem') || lowerName.includes('ring')) return iconMap['gem'];
-    if (lowerName.includes('lighting') || lowerName.includes('lamp') || lowerName.includes('bulb')) return iconMap['lightbulb'];
-    return iconMap['default'];
+  const getPrice = (priceWithTax) => {
+    if (!priceWithTax) return '';
+    if ('value' in priceWithTax) return priceWithTax.value;
+    if ('min' in priceWithTax) return priceWithTax.min;
+    return '';
   };
 
   return (
     <div className="min-h-screen">
-      <section className="py-16 bg-gradient-to-r from-orange-500/10 via-orange-500/5 to-amber-500/10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">4,000+ Clients Trust Us</h2>
-              <p className="text-gray-600">Find your reliable products and save, let's factory price.</p>
-              <Link to="/services" className="mt-4 inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Get Started
-              </Link>
-            </div>
-            <div className="relative">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Warehouse%20interior%20with%20shelves%20full%20of%20products%20and%20shipping%20boxes&image_size=landscape_4_3"
-                alt="Warehouse"
-                className="w-80 h-60 object-cover rounded-xl shadow-lg"
-              />
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold">98%</div>
-                <div className="text-sm">Customer Satisfaction</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Product categories</h2>
-            <p className="text-gray-600">Browse through our product categories to find items for your business.</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Product Categories
+            </h2>
+            <p className="text-gray-600">
+              Browse through our product categories.
+            </p>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {collections && collections.length > 0 ? (
-              collections.map((category, index) => (
-                <Link
-                  key={category.id || index}
-                  to={`/collections/${category.slug}`}
-                  className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group"
-                >
-                  <div className="p-6 text-center">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{category.name}</h3>
-                    <p className="text-sm text-gray-500 uppercase tracking-wider">Lorem ipsum</p>
-                  </div>
-                  <div className="flex-1 w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
-                    {category.featuredAsset && category.featuredAsset.preview ? (
-                      <img src={getImageUrl(category.featuredAsset.preview, { w: 400, h: 400 })} alt={category.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4" />
-                    ) : (
-                      <svg className="w-24 h-24 text-gray-300 group-hover:text-orange-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={getIconForName(category.name)} />
-                      </svg>
-                    )}
-                  </div>
-                </Link>
-              ))
-            ) : (
-              <div className="col-span-full text-center py-12">
-                <p className="text-gray-500">No categories found.</p>
-              </div>
-            )}
-          </div>
-
-          <div className="mt-12 bg-gray-100 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between">
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Are you looking for more categories?</h3>
-              <p className="text-gray-600">If you cannot find your target product, we can also source any product for you.</p>
-            </div>
-            <a href="#report-form" className="mt-4 md:mt-0 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg inline-flex">
-              Tell us more
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Customized products sourcing</h2>
-              <p className="text-gray-600 mb-6">
-                Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Whether you need to customize products from China or have your own design, we can help you find the best manufacturers, negotiate the best price, and ensure the quality.
-              </p>
-              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Get a free quote
-              </button>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Custom%20product%20manufacturing%20process%20with%20design%20sketches&image_size=square"
-                alt="Custom Products"
-                className="w-full aspect-square object-cover rounded-xl"
-              />
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20production%20line%20for%20custom%20products&image_size=square"
-                alt="Factory"
-                className="w-full aspect-square object-cover rounded-xl mt-8"
-              />
-            </div>
+            {collections.map((category) => (
+              <Link
+                key={category.id}
+                to={`/collections/${category.slug}`}
+                className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group"
+              >
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {category.name}
+                  </h3>
+                </div>
+                <div className="flex-1 w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                  {category.featuredAsset?.preview ? (
+                    <img
+                      src={getImageUrl(category.featuredAsset.preview, {
+                        w: 400,
+                        h: 400,
+                      })}
+                      alt={category.name}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"
+                    />
+                  ) : (
+                    <svg
+                      className="w-24 h-24 text-gray-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                      />
+                    </svg>
+                  )}
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20and%20product%20development%20process&image_size=landscape_4_3"
-                alt="Product Development"
-                className="w-full aspect-video object-cover rounded-xl shadow-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">New Product Development</h2>
-              <p className="text-gray-600 mb-6">
-                If you have a product idea but don't know how to make it real, we can help you turn your idea into reality. Our product development team will handle everything from design to production.
-              </p>
-              <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Share my idea
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">We can do more than Alibaba</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold text-gray-900">Why friendly to small businesses</h3>
-                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Whether you want to start sourcing products from China or have already been through the hurdles, we have the sourcing team to help you to lower your costs and boost your business.
-              </p>
-              <button className="text-orange-500 font-semibold hover:underline">15% cheaper than Alibaba -&gt;</button>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-8 border-t-4 border-orange-500">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold text-gray-900">Our 1-1 agent assists you in every aspect</h3>
-                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <p className="text-gray-600 mb-4">
-                We will assign a specific agent for you in the sourcing process. The agent will help you from product research, supplier verification, quality control, shipping, and everything in between.
-              </p>
-              <button className="text-orange-500 font-semibold hover:underline">Product quality is our priority -&gt;</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="report-form" className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Product Monthly Report
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Featured Products
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Subscribe to receive the hottest products from "1688.com" directly to your inbox for free!
+            <p className="text-gray-600">
+              Browse through our featured products.
             </p>
-            <p className="text-gray-500 mt-4 text-sm">
-              If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia.
-            </p>
-            <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
           </div>
-
-          {reportSubmitted ? (
-            <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-green-700 mb-2">Thank You!</h3>
-              <p className="text-green-600">Your subscription request has been submitted successfully. We will send the monthly report to your email.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleReportSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={reportFormData.firstName}
-                    onChange={handleReportChange}
-                    placeholder="First Name*"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={reportFormData.lastName}
-                    onChange={handleReportChange}
-                    placeholder="Last Name*"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    value={reportFormData.email}
-                    onChange={handleReportChange}
-                    placeholder="Email*"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={reportFormData.phone}
-                    onChange={handleReportChange}
-                    placeholder="Phone Number"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <select
-                    name="country"
-                    value={reportFormData.country}
-                    onChange={handleReportChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  >
-                    <option value="">Select your country*</option>
-                    <option value="US">United States</option>
-                    <option value="CN">China</option>
-                    <option value="DE">Germany</option>
-                    <option value="UK">United Kingdom</option>
-                    <option value="JP">Japan</option>
-                  </select>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="company"
-                    value={reportFormData.company || ''}
-                    onChange={handleReportChange}
-                    placeholder="Company Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                disabled={reportSubmitting}
-                className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {products.map((product) => (
+              <Link
+                key={product.productId}
+                to={`/products/${product.slug}`}
+                className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-xl transition-all duration-300 group"
               >
-                {reportSubmitting ? 'Submitting...' : 'Subscribe Now'}
-              </button>
-            </form>
-          )}
+                <div className="flex-1 w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                  {product.productAsset?.preview ? (
+                    <img
+                      src={getImageUrl(product.productAsset.preview, {
+                        w: 400,
+                        h: 400,
+                      })}
+                      alt={product.productName}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"
+                    />
+                  ) : (
+                    <svg
+                      className="w-24 h-24 text-gray-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                      />
+                    </svg>
+                  )}
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1 line-clamp-1">
+                    {product.productName}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    ${getPrice(product.priceWithTax)}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </div>
   );
 }
-

@@ -1,14 +1,14 @@
-﻿import { Link } from '@remix-run/react';
+import { Link } from '@remix-run/react';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 
 export function HeroBanner() {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
-    '/assets/banner/slide1.jpg',
-    '/assets/banner/slide2.jpg',
+    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
   ];
 
   useEffect(() => {
@@ -37,16 +37,14 @@ export function HeroBanner() {
           </div>
         ))}
       </div>
-      
+
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold mb-6">
               {t('home.heroTitle')}
             </h1>
-            <p className="text-lg mb-8 opacity-90">
-              {t('home.heroSubtitle')}
-            </p>
+            <p className="text-lg mb-8 opacity-90">{t('home.heroSubtitle')}</p>
             <p className="text-white/80 mb-8 max-w-xl mx-auto md:mx-0">
               {t('home.heroDescription')}
             </p>
@@ -77,14 +75,16 @@ export function HeroBanner() {
           </div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/75'
+              index === currentSlide
+                ? 'bg-white scale-125'
+                : 'bg-white/50 hover:bg-white/75'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

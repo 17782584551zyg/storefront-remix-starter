@@ -1,4 +1,4 @@
-﻿import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
+import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
 import { DataFunctionArgs } from '@remix-run/server-runtime';
 import pkg from '@remix-validated-form/with-zod';
 const { withZod } = pkg;
@@ -11,6 +11,7 @@ import { FacetFilterTracker } from '~/components/facet-filter/facet-filter-track
 import { FiltersButton } from '~/components/FiltersButton';
 import { FilterableProductGrid } from '~/components/products/FilterableProductGrid';
 import { APP_META_TITLE } from '~/constants';
+import { search } from '~/providers/products/products';
 import { filteredSearchLoaderFromPagination } from '~/utils/filtered-search-loader';
 import { sdk } from '../graphqlWrapper';
 
@@ -55,11 +56,29 @@ export async function loader({ params, request }: DataFunctionArgs) {
     });
   }
 
+  let finalResult = result;
+  let finalResultWithoutFilters = resultWithoutFacetValueFilters;
+
+  if (result.totalItems === 0) {
+    const allProducts = await search(
+      {
+        input: {
+          groupByProduct: true,
+          take: appliedPaginationLimit,
+          skip: (appliedPaginationPage - 1) * appliedPaginationLimit,
+        },
+      },
+      { request },
+    );
+    finalResult = allProducts.search;
+    finalResultWithoutFilters = allProducts.search;
+  }
+
   return {
     term,
     collection,
-    result,
-    resultWithoutFacetValueFilters,
+    result: finalResult,
+    resultWithoutFacetValueFilters: finalResultWithoutFilters,
     facetValueIds,
     appliedPaginationLimit,
     appliedPaginationPage,
