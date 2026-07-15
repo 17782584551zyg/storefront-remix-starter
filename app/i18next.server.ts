@@ -1,4 +1,4 @@
-import { RemixI18Next } from 'remix-i18next/build';
+import { RemixI18Next, RemixI18NextOption } from 'remix-i18next';
 
 import i18n from '~/i18n';
 import HttpBackend from 'i18next-http-backend';
@@ -6,7 +6,6 @@ import {
   IS_CF_PAGES,
   safeRequireNodeDependency,
 } from '~/utils/platform-adapter';
-import { RemixI18NextOption } from 'remix-i18next/build/server';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { findLanguageJSON } from '~/languages.server';
 
