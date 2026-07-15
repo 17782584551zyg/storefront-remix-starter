@@ -1,4 +1,4 @@
-﻿import { DataFunctionArgs, json } from '@remix-run/server-runtime';
+import { DataFunctionArgs, json } from '@remix-run/server-runtime';
 import { useState } from 'react';
 import { Price } from '~/components/products/Price';
 import { ProductImageZoom } from '~/components/products/ProductImageZoom';
@@ -96,9 +96,10 @@ export default function ProductSlug() {
     return null;
   };
 
-  const [featuredAsset, setFeaturedAsset] = useState(getDefaultFeaturedAsset());
+  const [featuredAsset, setFeaturedAsset] = useState<
+    (typeof product.assets)[0] | null
+  >(getDefaultFeaturedAsset());
 
-  const [isFavorite, setIsFavorite] = useState(false);
   const getLocaleText = (value) =>
     typeof value === 'object' ? Object.values(value)[0] : value;
 
@@ -119,22 +120,25 @@ export default function ProductSlug() {
             <span className="rounded-md overflow-hidden">
               <div className="w-full h-full object-center object-cover rounded-lg">
                 <img
-                  src={getImageUrl(featuredAsset?.preview, { w: 1200 })}
+                  src={getImageUrl(
+                    featuredAsset?.preview || product.assets[0]?.preview,
+                    { w: 1200 },
+                  )}
                   alt={product.name}
                   className="w-full h-full object-center object-cover rounded-lg"
                 />
               </div>
             </span>
 
-            {product.assets.length > 1 && (
+            {product.assets.length > 0 && (
               <ScrollableContainer>
                 {product.assets.map((asset) => (
-                  <div
+                  <button
                     key={asset.id}
-                    className={`basis-1/3 md:basis-1/4 flex-shrink-0 select-none touch-pan-x rounded-lg ${
-                      featuredAsset?.id == asset.id
-                        ? 'outline outline-2 outline-primary outline-offset-[-2px]'
-                        : ''
+                    className={`basis-1/3 md:basis-1/4 flex-shrink-0 select-none touch-pan-x rounded-lg p-1 ${
+                      featuredAsset?.id === asset.id
+                        ? 'outline outline-2 outline-primary outline-offset-[-2px] bg-primary/5'
+                        : 'hover:bg-gray-100'
                     }`}
                     onClick={() => {
                       setFeaturedAsset(asset);
@@ -144,8 +148,11 @@ export default function ProductSlug() {
                       draggable="false"
                       className="rounded-lg select-none h-24 w-full object-cover"
                       src={getImageUrl(asset.preview, { preset: 'full' })}
+                      alt={`${product.name} thumbnail ${
+                        product.assets.indexOf(asset) + 1
+                      }`}
                     />
-                  </div>
+                  </button>
                 ))}
               </ScrollableContainer>
             )}
