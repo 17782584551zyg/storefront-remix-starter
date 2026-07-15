@@ -106,8 +106,7 @@ export default function ProductSlug() {
     typeof value === 'object' ? Object.values(value)[0] : value;
 
   const rewriteImageUrls = (html: string): string => {
-    const backendUrl = 'https://my-vendure-backend-production.up.railway.app';
-    return html.replace(/src="\/assets\//g, `src="${backendUrl}/assets/`);
+    return html.replace(/src="\/assets\//g, 'src="/api/assets/');
   };
 
   return (

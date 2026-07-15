@@ -20,11 +20,16 @@ export function getImageUrl(
   let url: string;
 
   if (preview.startsWith('http')) {
-    url = preview;
+    const backendBase = BACKEND_URL + '/assets/';
+    if (preview.startsWith(backendBase)) {
+      url = '/api/assets/' + preview.substring(backendBase.length);
+    } else {
+      url = preview;
+    }
   } else if (preview.startsWith('/')) {
-    url = BACKEND_URL + preview;
+    url = '/api/assets' + preview;
   } else {
-    url = BACKEND_URL + '/assets/' + preview;
+    url = '/api/assets/' + preview;
   }
 
   const params: string[] = [];
