@@ -18,7 +18,6 @@ RUN yarn install --production
 
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/public ./public
-COPY fix-remix-i18next.cjs ./
 
 EXPOSE 3000
 
