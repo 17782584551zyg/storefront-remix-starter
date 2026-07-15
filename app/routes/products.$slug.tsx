@@ -226,7 +226,7 @@ export default function ProductSlug() {
                   Product Details
                 </h3>
                 <div
-                  className="text-gray-600 prose prose-sm max-w-none"
+                  className="text-gray-600 prose prose-sm max-w-none whitespace-pre-wrap"
                   dangerouslySetInnerHTML={{ __html: detailsHtml }}
                 />
               </section>
@@ -240,7 +240,31 @@ export default function ProductSlug() {
               ? JSON.parse(product.customFields)
               : product.customFields || {};
           const detailImage = customFields.detailImage;
-          if (detailImage && detailImage.preview) {
+
+          if (!detailImage) {
+            return null;
+          }
+
+          let imagePreview = null;
+          if (detailImage.preview) {
+            imagePreview = detailImage.preview;
+          } else if (typeof detailImage === 'string') {
+            const assetFromProduct = product.assets.find(
+              (a) => a.id === detailImage,
+            );
+            if (assetFromProduct) {
+              imagePreview = assetFromProduct.preview;
+            }
+          } else if (detailImage.id) {
+            const assetFromProduct = product.assets.find(
+              (a) => a.id === detailImage.id,
+            );
+            if (assetFromProduct) {
+              imagePreview = assetFromProduct.preview;
+            }
+          }
+
+          if (imagePreview) {
             return (
               <div className="mt-6 pb-12">
                 <section className="bg-gray-50 rounded-xl p-6 md:p-8">
@@ -248,7 +272,7 @@ export default function ProductSlug() {
                     Product Detail Image
                   </h3>
                   <img
-                    src={getImageUrl(detailImage.preview, { w: 1200 })}
+                    src={getImageUrl(imagePreview, { w: 1200 })}
                     alt="Product Detail"
                     className="w-full h-auto rounded-lg"
                   />
