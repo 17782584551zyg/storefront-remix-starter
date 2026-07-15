@@ -89,16 +89,18 @@ export default function ProductSlug() {
     (fv) => fv.facet.code === 'brand',
   )?.name;
 
-  const getDefaultFeaturedAsset = () => {
-    if (selectedVariant?.featuredAsset) return selectedVariant.featuredAsset;
+  const getDefaultFeaturedAsset = (variantId?: string): AssetType | null => {
+    const variant = variantId ? findVariantById(variantId) : selectedVariant;
+    if (variant?.featuredAsset) return variant.featuredAsset;
     if (product.featuredAsset) return product.featuredAsset;
     if (product.assets.length > 0) return product.assets[0];
     return null;
   };
 
-  const [featuredAsset, setFeaturedAsset] = useState<
-    (typeof product.assets)[0] | null
-  >(getDefaultFeaturedAsset());
+  type AssetType = { id: string; preview: string };
+  const [featuredAsset, setFeaturedAsset] = useState<AssetType | null>(
+    getDefaultFeaturedAsset(),
+  );
 
   const getLocaleText = (value) =>
     typeof value === 'object' ? Object.values(value)[0] : value;
@@ -121,7 +123,9 @@ export default function ProductSlug() {
               <div className="w-full h-full object-center object-cover rounded-lg">
                 <img
                   src={getImageUrl(
-                    featuredAsset?.preview || product.assets[0]?.preview,
+                    featuredAsset?.preview ??
+                      product.assets[0]?.preview ??
+                      product.featuredAsset?.preview,
                     { w: 1200 },
                   )}
                   alt={product.name}
@@ -184,13 +188,7 @@ export default function ProductSlug() {
                     value={selectedVariantId}
                     onChange={(e) => {
                       setSelectedVariantId(e.target.value);
-
-                      const variant = findVariantById(e.target.value);
-                      if (variant) {
-                        setFeaturedAsset(
-                          variant!.featuredAsset || getDefaultFeaturedAsset(),
-                        );
-                      }
+                      setFeaturedAsset(getDefaultFeaturedAsset(e.target.value));
                     }}
                   >
                     {product.variants.map((variant) => (
@@ -209,79 +207,38 @@ export default function ProductSlug() {
           </div>
         </div>
 
-        {(() => {
-          const customFields =
-            typeof product.customFields === 'string'
-              ? JSON.parse(product.customFields)
-              : product.customFields || {};
-          const details = customFields.productDetails;
-          const detailsHtml =
-            details && typeof details === 'object' && !Array.isArray(details)
-              ? Object.values(details)[0]
-              : details;
-          return detailsHtml ? (
-            <div className="mt-12 pb-12">
-              <section className="bg-gray-50 rounded-xl p-6 md:p-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-6">
-                  Product Details
-                </h3>
-                <div
-                  className="text-gray-600 prose prose-sm max-w-none whitespace-pre-wrap"
-                  dangerouslySetInnerHTML={{ __html: detailsHtml }}
-                />
-              </section>
-            </div>
-          ) : null;
-        })()}
+        {(product.customFields as any)?.productDetails && (
+          <div className="mt-12 pb-12">
+            <section className="bg-gray-50 rounded-xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-6">
+                Product Details
+              </h3>
+              <div
+                className="text-gray-600 prose prose-sm max-w-none"
+                dangerouslySetInnerHTML={{
+                  __html: (product.customFields as any).productDetails,
+                }}
+              />
+            </section>
+          </div>
+        )}
 
-        {(() => {
-          const customFields =
-            typeof product.customFields === 'string'
-              ? JSON.parse(product.customFields)
-              : product.customFields || {};
-          const detailImage = customFields.detailImage;
-
-          if (!detailImage) {
-            return null;
-          }
-
-          let imagePreview = null;
-          if (detailImage.preview) {
-            imagePreview = detailImage.preview;
-          } else if (typeof detailImage === 'string') {
-            const assetFromProduct = product.assets.find(
-              (a) => a.id === detailImage,
-            );
-            if (assetFromProduct) {
-              imagePreview = assetFromProduct.preview;
-            }
-          } else if (detailImage.id) {
-            const assetFromProduct = product.assets.find(
-              (a) => a.id === detailImage.id,
-            );
-            if (assetFromProduct) {
-              imagePreview = assetFromProduct.preview;
-            }
-          }
-
-          if (imagePreview) {
-            return (
-              <div className="mt-6 pb-12">
-                <section className="bg-gray-50 rounded-xl p-6 md:p-8">
-                  <h3 className="text-xl font-bold text-gray-800 mb-6">
-                    Product Detail Image
-                  </h3>
-                  <img
-                    src={getImageUrl(imagePreview, { w: 1200 })}
-                    alt="Product Detail"
-                    className="w-full h-auto rounded-lg"
-                  />
-                </section>
-              </div>
-            );
-          }
-          return null;
-        })()}
+        {product.customFields?.detailImage?.preview && (
+          <div className="mt-6 pb-12">
+            <section className="bg-gray-50 rounded-xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-6">
+                Product Detail Image
+              </h3>
+              <img
+                src={getImageUrl(product.customFields.detailImage.preview, {
+                  w: 1200,
+                })}
+                alt="Product Detail"
+                className="w-full h-auto rounded-lg"
+              />
+            </section>
+          </div>
+        )}
       </div>
     </div>
   );
