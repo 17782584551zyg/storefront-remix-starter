@@ -210,7 +210,11 @@ export default function ProductSlug() {
         </div>
 
         {(() => {
-          const details = product.customFields?.productDetails;
+          const customFields =
+            typeof product.customFields === 'string'
+              ? JSON.parse(product.customFields)
+              : product.customFields || {};
+          const details = customFields.productDetails;
           const detailsHtml =
             details && typeof details === 'object' && !Array.isArray(details)
               ? Object.values(details)[0]
@@ -229,18 +233,31 @@ export default function ProductSlug() {
             </div>
           ) : null;
         })()}
-        {/* {product.customFields?.detailImage?.preview && (
-          <div className="mt-6 pb-12">
-            <div>
-              
-              <img
-                src={getImageUrl(product.customFields.detailImage.preview, { w: 1200 })}
-                alt="Product Detail"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        )} */}
+
+        {(() => {
+          const customFields =
+            typeof product.customFields === 'string'
+              ? JSON.parse(product.customFields)
+              : product.customFields || {};
+          const detailImage = customFields.detailImage;
+          if (detailImage && detailImage.preview) {
+            return (
+              <div className="mt-6 pb-12">
+                <section className="bg-gray-50 rounded-xl p-6 md:p-8">
+                  <h3 className="text-xl font-bold text-gray-800 mb-6">
+                    Product Detail Image
+                  </h3>
+                  <img
+                    src={getImageUrl(detailImage.preview, { w: 1200 })}
+                    alt="Product Detail"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </section>
+              </div>
+            );
+          }
+          return null;
+        })()}
       </div>
     </div>
   );
