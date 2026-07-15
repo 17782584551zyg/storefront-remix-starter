@@ -7,6 +7,7 @@ COPY package.json yarn.lock ./
 RUN yarn install
 
 COPY . .
+ENV VENDURE_API_URL=https://my-vendure-backend-production.up.railway.app/shop-api
 RUN yarn build
 
 FROM node:20-alpine AS production
