@@ -5501,6 +5501,13 @@ export const DetailedProductFragmentDoc = gql`
         preview
       }
     }
+    customFields {
+      productDetails
+      detailImage {
+        id
+        preview
+      }
+    }
   }
 `;
 export const ListedProductFragmentDoc = gql`
