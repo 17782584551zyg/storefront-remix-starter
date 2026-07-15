@@ -225,7 +225,9 @@ export default function ProductSlug() {
                 {detailsHtml && (
                   <div
                     className="text-gray-600 prose prose-sm max-w-none mb-8"
-                    dangerouslySetInnerHTML={{ __html: rewriteImageUrls(detailsHtml) }}
+                    dangerouslySetInnerHTML={{
+                      __html: rewriteImageUrls(detailsHtml),
+                    }}
                   />
                 )}
                 {detailImages.length > 0 && (
@@ -236,6 +238,11 @@ export default function ProductSlug() {
                         src={getImageUrl(image.preview, { w: 800 })}
                         alt={`Product Detail ${index + 1}`}
                         className="w-full h-auto rounded-lg"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src =
+                            'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23f3f4f6" width="400" height="300"/%3E%3Ctext fill="%239ca3af" font-family="sans-serif" font-size="14" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EImage not available%3C/text%3E%3C/svg%3E';
+                        }}
                       />
                     ))}
                   </div>

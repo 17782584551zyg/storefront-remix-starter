@@ -1,0 +1,30 @@
+const fetch = require('node-fetch');
+
+const SHOP_API_URL = 'http://localhost:3002/shop-api';
+
+async function test() {
+  const query = `{
+    product(slug: "laptop") {
+      id
+      name
+      customFields {
+        productDetails
+        detailImage {
+          id
+          preview
+        }
+      }
+    }
+  }`;
+
+  const response = await fetch(SHOP_API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
+  });
+
+  const result = await response.json();
+  console.log(JSON.stringify(result, null, 2));
+}
+
+test().catch((e) => console.error(e));
