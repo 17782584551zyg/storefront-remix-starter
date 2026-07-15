@@ -4,6 +4,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 COPY package.json yarn.lock ./
+COPY scripts/fix-remix-i18next.cjs ./scripts/fix-remix-i18next.cjs
 RUN yarn install
 
 COPY . .
