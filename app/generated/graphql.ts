@@ -5248,7 +5248,8 @@ export type DetailedProductFragment = {
     weight?: string | null;
     specifications?: string | null;
     usage?: string | null;
-    detailImage?: { __typename?: 'Asset'; id: string; preview: string } | null;
+    productDetails?: string | null;
+    detailImage?: Array<{ __typename?: 'Asset'; id: string; preview: string }> | null;
   } | null;
 };
 
