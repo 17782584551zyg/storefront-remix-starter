@@ -105,6 +105,11 @@ export default function ProductSlug() {
   const getLocaleText = (value) =>
     typeof value === 'object' ? Object.values(value)[0] : value;
 
+  const rewriteImageUrls = (html: string): string => {
+    const backendUrl = 'https://my-vendure-backend-production.up.railway.app';
+    return html.replace(/src="\/assets\//g, `src="${backendUrl}/assets/`);
+  };
+
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4">
@@ -221,7 +226,7 @@ export default function ProductSlug() {
                 {detailsHtml && (
                   <div
                     className="text-gray-600 prose prose-sm max-w-none mb-8"
-                    dangerouslySetInnerHTML={{ __html: detailsHtml }}
+                    dangerouslySetInnerHTML={{ __html: rewriteImageUrls(detailsHtml) }}
                   />
                 )}
                 {detailImages.length > 0 && (
