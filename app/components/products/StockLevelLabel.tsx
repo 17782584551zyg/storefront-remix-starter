@@ -1,5 +1,5 @@
-export type StockLevel = 'IN_STOCK' | 'OUT_OF_STOCK' | 'LOW_STOCK';
-import { useTranslation } from 'react-i18next';
+﻿export type StockLevel = 'IN_STOCK' | 'OUT_OF_STOCK' | 'LOW_STOCK';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function StockLevelLabel({ stockLevel }: { stockLevel?: string }) {
   const { t } = useTranslation();

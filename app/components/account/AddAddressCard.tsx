@@ -1,6 +1,6 @@
-import { PlusIcon } from '@heroicons/react/24/outline';
+﻿import { PlusIcon } from '@heroicons/react/24/outline';
 import { Link } from '@remix-run/react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export default function AddAddressCard() {
   const { t } = useTranslation();

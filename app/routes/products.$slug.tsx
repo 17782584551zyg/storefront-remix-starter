@@ -20,7 +20,7 @@ import Alert from '~/components/Alert';
 
 import TopReviews from '~/components/products/TopReviews';
 import { ScrollableContainer } from '~/components/products/ScrollableContainer';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export const meta: MetaFunction = ({ data }) => {
   return [

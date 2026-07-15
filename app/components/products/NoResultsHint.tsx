@@ -1,6 +1,6 @@
-import { FacetFilterTracker } from '~/components/facet-filter/facet-filter-tracker';
+﻿import { FacetFilterTracker } from '~/components/facet-filter/facet-filter-tracker';
 import { ComponentProps } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function NoResultsHint({
   facetFilterTracker,

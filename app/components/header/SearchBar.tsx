@@ -1,5 +1,5 @@
-import { Form } from '@remix-run/react';
-import { useTranslation } from 'react-i18next';
+﻿import { Form } from '@remix-run/react';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function SearchBar() {
   const { t } = useTranslation();

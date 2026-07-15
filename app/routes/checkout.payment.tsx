@@ -1,4 +1,4 @@
-import { DataFunctionArgs, json, redirect } from '@remix-run/server-runtime';
+﻿import { DataFunctionArgs, json, redirect } from '@remix-run/server-runtime';
 import {
   addPaymentToOrder,
   createStripePaymentIntent,
@@ -16,7 +16,7 @@ import { BraintreeDropIn } from '~/components/checkout/braintree/BraintreePaymen
 import { PayPalPayments } from '~/components/checkout/PayPalPayments';
 import { getActiveOrder } from '~/providers/orders/order';
 import { getSessionStorage } from '~/sessions';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function loader({ params, request }: DataFunctionArgs) {
   const session = await getSessionStorage().then((sessionStorage) =>
@@ -96,7 +96,9 @@ export async function action({ params, request }: DataFunctionArgs) {
       );
       if (transitionResult.transitionOrderToState?.__typename !== 'Order') {
         return json({
-          error: transitionResult.transitionOrderToState?.message || 'Failed to transition order state',
+          error:
+            transitionResult.transitionOrderToState?.message ||
+            'Failed to transition order state',
         });
       }
     }
@@ -106,13 +108,16 @@ export async function action({ params, request }: DataFunctionArgs) {
       { request },
     );
     if (result.addPaymentToOrder.__typename === 'Order') {
-      const lastPayment = result.addPaymentToOrder.payments?.[result.addPaymentToOrder.payments.length - 1];
+      const lastPayment =
+        result.addPaymentToOrder.payments?.[
+          result.addPaymentToOrder.payments.length - 1
+        ];
       const approvalUrl = lastPayment?.metadata?.public?.approvalUrl;
-      
+
       if (approvalUrl) {
         return json({ approvalUrl });
       }
-      
+
       return redirect(
         `/checkout/confirmation/${result.addPaymentToOrder.code}`,
       );

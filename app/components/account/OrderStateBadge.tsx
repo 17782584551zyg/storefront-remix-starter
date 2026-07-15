@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useTranslation } from '~/hooks/useTranslation';
 
 // Copied from https://www.vendure.io/docs/typescript-api/orders/order-state/
 type OrderState =

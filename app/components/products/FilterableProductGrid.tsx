@@ -1,4 +1,4 @@
-import FacetFilterControls from '~/components/facet-filter/FacetFilterControls';
+﻿import FacetFilterControls from '~/components/facet-filter/FacetFilterControls';
 import { ProductCard } from '~/components/products/ProductCard';
 import {
   translatePaginationFrom,
@@ -9,7 +9,7 @@ import { NoResultsHint } from '~/components/products/NoResultsHint';
 import { useRef } from 'react';
 import { FacetFilterTracker } from '~/components/facet-filter/facet-filter-tracker';
 import { filteredSearchLoaderFromPagination } from '~/utils/filtered-search-loader';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function FilterableProductGrid({
   result,

@@ -1,4 +1,4 @@
-import { DataFunctionArgs } from '@remix-run/server-runtime';
+﻿import { DataFunctionArgs } from '@remix-run/server-runtime';
 import { getOrderByCode } from '~/providers/orders/order';
 import { useLoaderData } from '@remix-run/react';
 import { CartContents } from '~/components/cart/CartContents';
@@ -8,7 +8,7 @@ import { InformationCircleIcon } from '@heroicons/react/24/solid';
 import { useRevalidator } from '@remix-run/react';
 import { useEffect, useState } from 'react';
 import { OrderDetailFragment } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function loader({ params, request }: DataFunctionArgs) {
   try {

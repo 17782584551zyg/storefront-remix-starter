@@ -18,7 +18,7 @@ import {
 import { getActiveCustomerDetails } from '~/providers/customer/customer';
 import useToggleState from '~/utils/use-toggle-state';
 import { replaceEmptyString } from '~/utils/validation';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 enum FormIntent {
   UpdateEmail = 'updateEmail',

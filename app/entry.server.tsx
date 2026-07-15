@@ -6,11 +6,6 @@ import {
   IS_CF_PAGES,
   safeRequireNodeDependency,
 } from '~/utils/platform-adapter';
-import i18n from '~/i18n';
-import i18next from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import FsBackend from 'i18next-fs-backend';
-import { I18nextProvider } from 'react-i18next';
 
 const ABORT_DELAY = 5000;
 
@@ -93,40 +88,13 @@ async function handleNodeRequest(
   });
 }
 
-async function createI18nInstance(locale: string) {
-  const instance = i18next.createInstance();
-
-  await instance
-    .use(initReactI18next)
-    .use(FsBackend)
-    .init({
-      ...i18n,
-      lng: locale,
-      fallbackLng: 'en',
-      interpolation: { escapeValue: false },
-      react: { useSuspense: false },
-      backend: {
-        loadPath: './public/locales/{{lng}}.json',
-      },
-    });
-
-  return instance;
-}
-
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
 ) {
-  const locale = 'zh';
-  const instance = await createI18nInstance(locale);
-
-  const jsx = (
-    <I18nextProvider i18n={instance}>
-      <RemixServer context={remixContext} url={request.url} />
-    </I18nextProvider>
-  );
+  const jsx = <RemixServer context={remixContext} url={request.url} />;
 
   const requestHandler: PlatformRequestHandler = IS_CF_PAGES
     ? handleCfRequest

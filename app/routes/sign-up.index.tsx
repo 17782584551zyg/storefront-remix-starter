@@ -1,4 +1,4 @@
-import { Form, Link, useActionData, useSearchParams } from '@remix-run/react';
+﻿import { Form, Link, useActionData, useSearchParams } from '@remix-run/react';
 import { ActionFunctionArgs, json, redirect } from '@remix-run/server-runtime';
 import { registerCustomerAccount } from '~/providers/account/account';
 import { XCircleIcon } from '@heroicons/react/24/solid';
@@ -8,7 +8,7 @@ import {
   validateRegistrationForm,
 } from '~/utils/registration-helper';
 import { API_URL, DEMO_API_URL } from '~/constants';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 import { getFixedT } from '~/i18next.server';
 
 export async function action({ request }: ActionFunctionArgs) {

@@ -1,6 +1,6 @@
-import { HomeIcon } from '@heroicons/react/24/solid';
+﻿import { HomeIcon } from '@heroicons/react/24/solid';
 import { Link } from '@remix-run/react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function Breadcrumbs({
   items,

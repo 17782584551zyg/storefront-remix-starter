@@ -1,11 +1,11 @@
-import {
+﻿import {
   useStripe,
   useElements,
   PaymentElement,
 } from '@stripe/react-stripe-js';
 import { FormEvent } from 'react';
 import { CreditCardIcon } from '@heroicons/react/24/solid';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export const CheckoutForm = ({ orderCode }: { orderCode: string }) => {
   const stripe = useStripe();

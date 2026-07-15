@@ -1,11 +1,15 @@
 ﻿import { Link, useLocation } from '@remix-run/react';
-import { ShoppingBagIcon, ChevronDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import {
+  ShoppingBagIcon,
+  ChevronDownIcon,
+  GlobeAltIcon,
+} from '@heroicons/react/24/outline';
 import { SearchBar } from '~/components/header/SearchBar';
 import { useRootLoader } from '~/utils/use-root-loader';
 import { UserIcon } from '@heroicons/react/24/solid';
 import { useScrollingUp } from '~/utils/use-scrolling-up';
 import { classNames } from '~/utils/class-names';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 import { useState, useRef, useEffect } from 'react';
 
 const languages = [
@@ -30,7 +34,10 @@ export function Header({
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
   const location = useLocation();
-  const isProductPage = location.pathname.startsWith('/products') || location.pathname.startsWith('/collections') || location.pathname.startsWith('/product');
+  const isProductPage =
+    location.pathname.startsWith('/products') ||
+    location.pathname.startsWith('/collections') ||
+    location.pathname.startsWith('/product');
   const currentLocale = data.locale || 'en';
 
   const navItems = [
@@ -39,8 +46,16 @@ export function Header({
       label: t('header.solutions'),
       key: 'solutions',
       children: [
-        { label: t('header.shippingSolutions'), href: '/solutions/shipping', key: 'shippingSolutions' },
-        { label: t('header.qualityControl'), href: '/solutions/quality-control', key: 'qualityControl' },
+        {
+          label: t('header.shippingSolutions'),
+          href: '/solutions/shipping',
+          key: 'shippingSolutions',
+        },
+        {
+          label: t('header.qualityControl'),
+          href: '/solutions/quality-control',
+          key: 'qualityControl',
+        },
       ],
     },
     { label: t('header.products'), href: '/products', key: 'products' },
@@ -48,7 +63,11 @@ export function Header({
       label: t('header.about'),
       key: 'about',
       children: [
-        { label: t('header.paymentInformation'), href: '/payment-information', key: 'paymentInformation' },
+        {
+          label: t('header.paymentInformation'),
+          href: '/payment-information',
+          key: 'paymentInformation',
+        },
         { label: t('header.aboutUs'), href: '/about', key: 'aboutUs' },
       ],
     },
@@ -58,13 +77,13 @@ export function Header({
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
       let isInsideDropdown = false;
-      
-      Object.values(dropdownRefs.current).forEach(ref => {
+
+      Object.values(dropdownRefs.current).forEach((ref) => {
         if (ref?.contains(target)) {
           isInsideDropdown = true;
         }
       });
-      
+
       if (!isInsideDropdown) {
         setActiveDropdown(null);
         setShowLangDropdown(false);
@@ -92,23 +111,29 @@ export function Header({
           <h1 className="text-xl font-bold">
             <Link to="/" className="flex items-center">
               <span className="text-orange-500 font-bold">Tai</span>
-                  <span className="text-gray-800 font-medium">Sourcing</span>
+              <span className="text-gray-800 font-medium">Sourcing</span>
             </Link>
           </h1>
         </div>
-        
+
         <nav className="hidden lg:flex items-center space-x-1">
           {navItems.map((item) => (
             <div
               key={item.key}
-              ref={el => { dropdownRefs.current[item.key] = el; }}
+              ref={(el) => {
+                dropdownRefs.current[item.key] = el;
+              }}
               className="relative"
             >
               {item.children ? (
                 <>
                   <button
                     className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 font-medium transition-colors duration-300 px-3 py-2"
-                    onClick={() => setActiveDropdown(activeDropdown === item.key ? null : item.key)}
+                    onClick={() =>
+                      setActiveDropdown(
+                        activeDropdown === item.key ? null : item.key,
+                      )
+                    }
                     onMouseEnter={() => setActiveDropdown(item.key)}
                   >
                     <span>{item.label}</span>
@@ -140,15 +165,23 @@ export function Header({
             </div>
           ))}
         </nav>
-        
+
         <div className="flex items-center space-x-4">
-          <div className="relative" ref={el => { dropdownRefs.current['language'] = el; }}>
+          <div
+            className="relative"
+            ref={(el) => {
+              dropdownRefs.current['language'] = el;
+            }}
+          >
             <button
               className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300 px-2 py-1"
               onClick={() => setShowLangDropdown(!showLangDropdown)}
             >
               <GlobeAltIcon className="w-4 h-4" />
-              <span className="text-sm">{languages.find(l => l.code === currentLocale)?.label || 'English'}</span>
+              <span className="text-sm">
+                {languages.find((l) => l.code === currentLocale)?.label ||
+                  'English'}
+              </span>
               <ChevronDownIcon className="w-3 h-3" />
             </button>
             {showLangDropdown && (
@@ -157,8 +190,8 @@ export function Header({
                   <button
                     key={lang.code}
                     className={`block w-full text-left px-4 py-2 text-sm transition-colors duration-200 ${
-                      currentLocale === lang.code 
-                        ? 'bg-orange-50 text-orange-500' 
+                      currentLocale === lang.code
+                        ? 'bg-orange-50 text-orange-500'
                         : 'text-gray-600 hover:bg-orange-50 hover:text-orange-500'
                     }`}
                     onClick={() => changeLanguage(lang.code)}
@@ -182,7 +215,6 @@ export function Header({
               </Link>
             </div>
           )}
-          
         </div>
       </div>
     </header>

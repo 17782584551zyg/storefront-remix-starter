@@ -1,5 +1,5 @@
-import { AvailableCountriesQuery, OrderAddress } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+﻿import { AvailableCountriesQuery, OrderAddress } from '~/generated/graphql';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function AddressForm({
   address,

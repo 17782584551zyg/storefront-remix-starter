@@ -1,10 +1,10 @@
-import { ChevronRightIcon } from '@heroicons/react/24/solid';
+﻿import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { Outlet, useLocation, useOutletContext } from '@remix-run/react';
 import { CartContents } from '~/components/cart/CartContents';
 import { OutletContext } from '~/types';
 import { classNames } from '~/utils/class-names';
 import { CartTotals } from '~/components/cart/CartTotals';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 const steps = ['shipping', 'payment', 'confirmation'];
 

@@ -1,5 +1,5 @@
-import { FunnelIcon } from '@heroicons/react/24/solid';
-import { useTranslation } from 'react-i18next';
+﻿import { FunnelIcon } from '@heroicons/react/24/solid';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function FiltersButton({
   filterCount,

@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react';
+﻿import { useEffect, useRef } from 'react';
 import { useLoaderData, useSearchParams } from '@remix-run/react';
 import { ActionFunctionArgs, redirect } from '@remix-run/server-runtime';
 import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/outline';
 import { updateCustomerEmailAddress } from '~/providers/account/account';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 import { getFixedT } from '~/i18next.server';
 import { LoaderFunctionArgs } from '@remix-run/router';
 

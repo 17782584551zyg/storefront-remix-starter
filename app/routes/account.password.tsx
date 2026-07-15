@@ -16,7 +16,7 @@ import {
   isErrorResult,
   isValidationErrorResponseData,
 } from '~/utils/validation-helper';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export const validator = withZod(
   z

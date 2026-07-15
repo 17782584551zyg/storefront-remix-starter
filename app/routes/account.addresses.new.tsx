@@ -1,4 +1,4 @@
-import {
+﻿import {
   useActionData,
   useLoaderData,
   useNavigate,
@@ -17,7 +17,7 @@ import CustomerAddressForm, {
 } from '~/components/account/CustomerAddressForm';
 import { createCustomerAddress } from '~/providers/account/account';
 import { getAvailableCountries } from '~/providers/checkout/checkout';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function loader({ request, params }: DataFunctionArgs) {
   const { availableCountries } = await getAvailableCountries({ request });

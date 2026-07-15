@@ -1,7 +1,7 @@
-/* This example requires Tailwind CSS v2.0+ */
+﻿/* This example requires Tailwind CSS v2.0+ */
 import { StarIcon } from '@heroicons/react/24/solid';
 import { classNames } from '~/utils/class-names';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 interface Review {
   id: number;

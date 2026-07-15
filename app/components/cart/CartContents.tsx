@@ -1,7 +1,7 @@
-import { Form, Link } from '@remix-run/react';
+﻿import { Form, Link } from '@remix-run/react';
 import { Price } from '~/components/products/Price';
 import { ActiveOrderQuery, CurrencyCode } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 import { BACKEND_URL } from '~/constants';
 
 export function CartContents({
@@ -27,7 +27,11 @@ export function CartContents({
           <li key={line.id} className="py-6 flex">
             <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
               <img
-                src={BACKEND_URL + (line.featuredAsset?.preview || '') + '?preset=thumb'}
+                src={
+                  BACKEND_URL +
+                  (line.featuredAsset?.preview || '') +
+                  '?preset=thumb'
+                }
                 alt={line.productVariant.name}
                 className="w-full h-full object-center object-cover"
               />

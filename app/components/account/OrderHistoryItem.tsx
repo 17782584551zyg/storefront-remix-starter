@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Button } from '~/components/Button';
 import { Price } from '~/components/products/Price';
 import { ActiveCustomerOrderListQuery } from '~/generated/graphql';
@@ -6,7 +6,7 @@ import { OrderStateBadge } from '~/components/account/OrderStateBadge';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
 import { Link } from '@remix-run/react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 type OrderHistoryItemProps = {
   order?: NonNullable<

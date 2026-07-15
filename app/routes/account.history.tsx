@@ -12,7 +12,7 @@ import {
   translatePaginationTo,
   paginationValidationSchema,
 } from '~/utils/pagination';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 const paginationLimitMinimumDefault = 10;
 const allowedPaginationLimits = new Set<number>([

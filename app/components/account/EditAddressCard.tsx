@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowPathIcon,
   CreditCardIcon,
   PencilIcon,
@@ -13,7 +13,7 @@ import { Button } from '../Button';
 import { ErrorMessage } from '../ErrorMessage';
 import { HighlightedButton } from '../HighlightedButton';
 import Modal from '../modal/Modal';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 type EditAddressProps = {
   address: Address;

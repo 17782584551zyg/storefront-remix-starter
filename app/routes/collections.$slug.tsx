@@ -1,9 +1,9 @@
-import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
+﻿import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
 import { DataFunctionArgs } from '@remix-run/server-runtime';
 import pkg from '@remix-validated-form/with-zod';
 const { withZod } = pkg;
 import { useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 import { ValidatedForm } from 'remix-validated-form';
 import { Breadcrumbs } from '~/components/Breadcrumbs';
 import { CollectionCard } from '~/components/collections/CollectionCard';

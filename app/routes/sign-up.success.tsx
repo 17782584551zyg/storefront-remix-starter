@@ -1,7 +1,7 @@
-import { CheckCircleIcon } from '@heroicons/react/24/outline';
+﻿import { CheckCircleIcon } from '@heroicons/react/24/outline';
 import { Form } from '@remix-run/react';
 import { redirect } from '@remix-run/server-runtime';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function action() {
   return redirect('/');

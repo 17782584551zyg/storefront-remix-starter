@@ -6,7 +6,7 @@ import { ValidatedForm } from 'remix-validated-form';
 import { Address, AvailableCountriesQuery } from '~/generated/graphql';
 import { Input } from '~/components/Input';
 import { Select } from '~/components/Select';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export const validator = withZod(
   z.object({

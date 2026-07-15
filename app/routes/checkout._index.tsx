@@ -1,4 +1,4 @@
-import { FormEvent, useState, useRef } from 'react';
+﻿import { FormEvent, useState, useRef } from 'react';
 import { LockClosedIcon } from '@heroicons/react/24/solid';
 import {
   Form,
@@ -20,12 +20,14 @@ import { AddressForm } from '~/components/account/AddressForm';
 import { ShippingMethodSelector } from '~/components/checkout/ShippingMethodSelector';
 import { ShippingAddressSelector } from '~/components/checkout/ShippingAddressSelector';
 import { getActiveOrder } from '~/providers/orders/order';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function loader({ request }: DataFunctionArgs) {
   try {
     const sessionStorage = await getSessionStorage();
-    const session = await sessionStorage.getSession(request.headers.get('Cookie'));
+    const session = await sessionStorage.getSession(
+      request.headers.get('Cookie'),
+    );
     console.log('CHECKOUT LOADER: session retrieved');
 
     const authToken = session.get('authToken');
@@ -33,7 +35,14 @@ export async function loader({ request }: DataFunctionArgs) {
 
     const orderResult = await getActiveOrder({ request, authToken });
     const activeOrder = orderResult.activeOrder;
-    console.log('CHECKOUT LOADER: activeOrder:', activeOrder ? `code=${activeOrder.code}, active=${activeOrder.active}, lines=${activeOrder.lines?.length || 0}` : 'null');
+    console.log(
+      'CHECKOUT LOADER: activeOrder:',
+      activeOrder
+        ? `code=${activeOrder.code}, active=${activeOrder.active}, lines=${
+            activeOrder.lines?.length || 0
+          }`
+        : 'null',
+    );
 
     if (
       !session ||
@@ -44,21 +53,30 @@ export async function loader({ request }: DataFunctionArgs) {
       console.log('CHECKOUT LOADER: redirecting to /');
       return redirect('/');
     }
-    
+
     const { availableCountries } = await getAvailableCountries({ request });
-    console.log('CHECKOUT LOADER: availableCountries:', availableCountries?.length || 0);
-    
+    console.log(
+      'CHECKOUT LOADER: availableCountries:',
+      availableCountries?.length || 0,
+    );
+
     const { eligibleShippingMethods } = await getEligibleShippingMethods({
       request,
     });
-    console.log('CHECKOUT LOADER: eligibleShippingMethods:', eligibleShippingMethods?.length || 0);
-    
+    console.log(
+      'CHECKOUT LOADER: eligibleShippingMethods:',
+      eligibleShippingMethods?.length || 0,
+    );
+
     const { activeCustomer } = await getActiveCustomerAddresses({ request });
-    console.log('CHECKOUT LOADER: activeCustomer:', activeCustomer?.id ? `id=${activeCustomer.id}` : 'null');
-    
+    console.log(
+      'CHECKOUT LOADER: activeCustomer:',
+      activeCustomer?.id ? `id=${activeCustomer.id}` : 'null',
+    );
+
     const error = session.get('activeOrderError');
     console.log('CHECKOUT LOADER: returning json data');
-    
+
     return json({
       availableCountries,
       eligibleShippingMethods,
@@ -90,10 +108,13 @@ export default function CheckoutShipping() {
   const defaultFullName =
     shippingAddress?.fullName ??
     (customer ? `${customer.firstName} ${customer.lastName}` : ``);
-  
-  const hasCustomerInfo = customer?.emailAddress && customer?.firstName && customer?.lastName;
-  const hasShippingAddress = shippingAddress?.streetLine1 && shippingAddress?.postalCode;
-  const hasSelectedAddress = isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0;
+
+  const hasCustomerInfo =
+    customer?.emailAddress && customer?.firstName && customer?.lastName;
+  const hasShippingAddress =
+    shippingAddress?.streetLine1 && shippingAddress?.postalCode;
+  const hasSelectedAddress =
+    isSignedIn && addresses.length > 0 && selectedAddressIndex >= 0;
   const hasShippingMethod = activeOrder?.shippingLines?.length > 0;
 
   const canProceedToPayment =
@@ -104,13 +125,18 @@ export default function CheckoutShipping() {
 
   const submitCustomerFormData = () => {
     if (!customerFormRef.current) return;
-    
+
     const formData = new FormData(customerFormRef.current);
     const { emailAddress, firstName, lastName } = Object.fromEntries<any>(
       formData.entries(),
     );
-    
-    if (customerFormRef.current.checkValidity() && emailAddress && firstName && lastName) {
+
+    if (
+      customerFormRef.current.checkValidity() &&
+      emailAddress &&
+      firstName &&
+      lastName
+    ) {
       activeOrderFetcher.submit(formData, {
         method: 'post',
         action: '/api/active-order',
@@ -121,10 +147,13 @@ export default function CheckoutShipping() {
 
   const submitAddressFormData = () => {
     if (!addressFormRef.current) return;
-    
+
     const formData = new FormData(addressFormRef.current);
-    
-    if (addressFormRef.current.checkValidity() && shippingFormDataIsValid(formData)) {
+
+    if (
+      addressFormRef.current.checkValidity() &&
+      shippingFormDataIsValid(formData)
+    ) {
       activeOrderFetcher.submit(formData, {
         method: 'post',
         action: '/api/active-order',
@@ -145,7 +174,12 @@ export default function CheckoutShipping() {
       const emailAddress = formData.get('emailAddress');
       const firstName = formData.get('firstName');
       const lastName = formData.get('lastName');
-      if (emailAddress && firstName && lastName && customerFormRef.current.checkValidity()) {
+      if (
+        emailAddress &&
+        firstName &&
+        lastName &&
+        customerFormRef.current.checkValidity()
+      ) {
         submitCustomerFormData();
       }
     }
@@ -158,7 +192,10 @@ export default function CheckoutShipping() {
 
   const handleAddressBlur = () => {
     // Auto-submit when all required address fields are filled
-    if (addressFormRef.current && shippingFormDataIsValid(new FormData(addressFormRef.current))) {
+    if (
+      addressFormRef.current &&
+      shippingFormDataIsValid(new FormData(addressFormRef.current))
+    ) {
       submitAddressFormData();
     }
   };
@@ -197,17 +234,22 @@ export default function CheckoutShipping() {
 
   const navigateToPayment = async () => {
     if (isSubmitting || !canProceedToPayment) return;
-    
+
     setIsSubmitting(true);
-    
+
     if (!isSignedIn && customerFormChanged && customerFormRef.current) {
       await submitCustomerFormData();
     }
-    
-    if (!hasShippingAddress && !hasSelectedAddress && addressFormRef.current && addressFormChanged) {
+
+    if (
+      !hasShippingAddress &&
+      !hasSelectedAddress &&
+      addressFormRef.current &&
+      addressFormChanged
+    ) {
       await submitAddressFormData();
     }
-    
+
     setTimeout(() => {
       setIsSubmitting(false);
       navigate('./payment');
@@ -380,7 +422,9 @@ export default function CheckoutShipping() {
         )}
       >
         <LockClosedIcon className="w-5 h-5"></LockClosedIcon>
-        <span>{isSubmitting ? t('checkout.processing') : t('checkout.goToPayment')}</span>
+        <span>
+          {isSubmitting ? t('checkout.processing') : t('checkout.goToPayment')}
+        </span>
       </button>
     </div>
   );

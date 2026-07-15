@@ -1,11 +1,11 @@
-import { Link, useFetcher, useSearchParams } from '@remix-run/react';
+﻿import { Link, useFetcher, useSearchParams } from '@remix-run/react';
 import { DataFunctionArgs, json, redirect } from '@remix-run/server-runtime';
 import { login } from '~/providers/account/account';
 import { ErrorResult } from '~/generated/graphql';
 import { XCircleIcon } from '@heroicons/react/24/solid';
 import { Button } from '~/components/Button';
 import { ArrowPathIcon } from '@heroicons/react/24/solid';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function action({ params, request }: DataFunctionArgs) {
   const body = await request.formData();

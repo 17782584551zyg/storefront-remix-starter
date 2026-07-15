@@ -1,5 +1,5 @@
-import { Link } from '@remix-run/react';
-import { useTranslation } from 'react-i18next';
+﻿import { Link } from '@remix-run/react';
+import { useTranslation } from '~/hooks/useTranslation';
 import { useState, useEffect } from 'react';
 
 export function HeroBanner() {

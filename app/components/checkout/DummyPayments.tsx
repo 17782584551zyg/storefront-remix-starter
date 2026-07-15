@@ -1,7 +1,7 @@
-import { CreditCardIcon, XCircleIcon } from '@heroicons/react/24/solid';
+﻿import { CreditCardIcon, XCircleIcon } from '@heroicons/react/24/solid';
 import { Form } from '@remix-run/react';
 import { EligiblePaymentMethodsQuery } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function DummyPayments({
   paymentMethod,

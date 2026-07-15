@@ -1,4 +1,4 @@
-import {
+﻿import {
   HashtagIcon,
   MapPinIcon,
   ShoppingBagIcon,
@@ -9,7 +9,7 @@ import { DataFunctionArgs, json, redirect } from '@remix-run/server-runtime';
 import { TabProps } from '~/components/tabs/Tab';
 import { TabsContainer } from '~/components/tabs/TabsContainer';
 import { getActiveCustomerDetails } from '~/providers/customer/customer';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export async function loader({ request }: DataFunctionArgs) {
   const { activeCustomer } = await getActiveCustomerDetails({ request });

@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+﻿import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { CartContents } from './CartContents';
@@ -6,7 +6,7 @@ import { Link, useLocation } from '@remix-run/react';
 import { Price } from '~/components/products/Price';
 import { CartLoaderData } from '~/routes/api.active-order';
 import { CurrencyCode } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function CartTray({
   open,

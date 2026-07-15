@@ -1,4 +1,4 @@
-import { RadioGroup } from '@headlessui/react';
+﻿import { RadioGroup } from '@headlessui/react';
 import { classNames } from '~/utils/class-names';
 import { Price } from '~/components/products/Price';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
@@ -6,7 +6,7 @@ import {
   CurrencyCode,
   EligibleShippingMethodsQuery,
 } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function ShippingMethodSelector({
   eligibleShippingMethods,

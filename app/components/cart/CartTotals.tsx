@@ -1,6 +1,6 @@
-import { Price } from '~/components/products/Price';
+﻿import { Price } from '~/components/products/Price';
 import { OrderDetailFragment } from '~/generated/graphql';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export function CartTotals({ order }: { order?: OrderDetailFragment | null }) {
   const { t } = useTranslation();

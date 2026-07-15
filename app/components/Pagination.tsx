@@ -1,10 +1,10 @@
-import { ArrowPathIcon } from '@heroicons/react/24/solid';
+﻿import { ArrowPathIcon } from '@heroicons/react/24/solid';
 import { Select } from '~/components/Select';
 import { Button } from '~/components/Button';
 import { ComponentProps } from 'react';
 import { useNavigation } from '@remix-run/react';
 import clsx from 'clsx';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export type PaginationProps = {
   appliedPaginationLimit: number;
