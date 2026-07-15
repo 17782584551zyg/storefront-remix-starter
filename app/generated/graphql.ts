@@ -3897,6 +3897,14 @@ export type ActiveChannelQuery = {
     __typename?: 'Channel';
     id: string;
     currencyCode: CurrencyCode;
+    customFields?: {
+      __typename?: 'ChannelCustomFields';
+      bannerImages?: Array<{
+        __typename?: 'Asset';
+        id: string;
+        preview: string;
+      }> | null;
+    } | null;
   };
 };
 
@@ -5301,11 +5309,11 @@ export type ProductQuery = {
       specifications?: string | null;
       usage?: string | null;
       productDetails?: string | null;
-      detailImage?: {
+      detailImage?: Array<{
         __typename?: 'Asset';
         id: string;
         preview: string;
-      } | null;
+      }> | null;
     } | null;
   } | null;
 };
@@ -5663,6 +5671,12 @@ export const ActiveChannelDocument = gql`
     activeChannel {
       id
       currencyCode
+      customFields {
+        bannerImages {
+          id
+          preview
+        }
+      }
     }
   }
 `;

@@ -1,15 +1,24 @@
-﻿import { Link } from '@remix-run/react';
+import { Link } from '@remix-run/react';
 import { useTranslation } from '~/hooks/useTranslation';
 import { useState, useEffect } from 'react';
+import { getImageUrl } from '~/constants';
 
-export function HeroBanner() {
+type AssetType = { id: string; preview: string };
+
+interface HeroBannerProps {
+  bannerImages?: AssetType[];
+}
+
+export function HeroBanner({ bannerImages = [] }: HeroBannerProps) {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
-  ];
+  const slides = bannerImages.length > 0
+    ? bannerImages.map(img => getImageUrl(img.preview, { preset: 'full' }))
+    : [
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+      ];
 
   useEffect(() => {
     const interval = setInterval(() => {

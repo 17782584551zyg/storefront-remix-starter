@@ -210,37 +210,36 @@ export default function ProductSlug() {
         {(() => {
           const details = product.customFields?.productDetails;
           const detailsHtml = getLocaleText(details);
-          return detailsHtml ? (
+          const detailImages = product.customFields?.detailImage || [];
+          const hasContent = detailsHtml || detailImages.length > 0;
+          return hasContent ? (
             <div className="mt-12 pb-12">
               <section className="bg-gray-50 rounded-xl p-6 md:p-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-6">
                   Product Details
                 </h3>
-                <div
-                  className="text-gray-600 prose prose-sm max-w-none"
-                  dangerouslySetInnerHTML={{ __html: detailsHtml }}
-                />
+                {detailsHtml && (
+                  <div
+                    className="text-gray-600 prose prose-sm max-w-none mb-8"
+                    dangerouslySetInnerHTML={{ __html: detailsHtml }}
+                  />
+                )}
+                {detailImages.length > 0 && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {detailImages.map((image, index) => (
+                      <img
+                        key={image.id}
+                        src={getImageUrl(image.preview, { w: 800 })}
+                        alt={`Product Detail ${index + 1}`}
+                        className="w-full h-auto rounded-lg"
+                      />
+                    ))}
+                  </div>
+                )}
               </section>
             </div>
           ) : null;
         })()}
-
-        {product.customFields?.detailImage?.preview && (
-          <div className="mt-6 pb-12">
-            <section className="bg-gray-50 rounded-xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-6">
-                Product Detail Image
-              </h3>
-              <img
-                src={getImageUrl(product.customFields.detailImage.preview, {
-                  w: 1200,
-                })}
-                alt="Product Detail"
-                className="w-full h-auto rounded-lg"
-              />
-            </section>
-          </div>
-        )}
       </div>
     </div>
   );

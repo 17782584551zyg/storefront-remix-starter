@@ -15,6 +15,7 @@ import Footer from './components/footer/Footer';
 import { CartTray } from './components/cart/CartTray';
 import { useState } from 'react';
 import { useActiveOrder } from './utils/use-active-order';
+import { getActiveChannel } from './providers/channels/channels';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
@@ -25,11 +26,17 @@ const devMode =
   typeof process !== 'undefined' && process.env.NODE_ENV === 'development';
 
 export async function loader() {
+  let activeChannel;
+  try {
+    activeChannel = await getActiveChannel();
+  } catch (e) {
+    activeChannel = { id: '1', currencyCode: 'USD', customFields: { bannerImages: [] } };
+  }
   return json({
     activeCustomer: { activeCustomer: null, _headers: {} },
-    activeChannel: { id: '1', currencyCode: 'USD' },
+    activeChannel,
     collections: [],
-    locale: 'zh',
+    locale: 'en',
     backendUrl: '',
   });
 }
