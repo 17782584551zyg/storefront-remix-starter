@@ -5300,6 +5300,7 @@ export type ProductQuery = {
       weight?: string | null;
       specifications?: string | null;
       usage?: string | null;
+      productDetails?: string | null;
       detailImage?: {
         __typename?: 'Asset';
         id: string;

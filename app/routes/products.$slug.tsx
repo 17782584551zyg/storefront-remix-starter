@@ -207,7 +207,7 @@ export default function ProductSlug() {
           </div>
         </div>
 
-        {(product.customFields as any)?.productDetails && (
+        {product.customFields?.productDetails && (
           <div className="mt-12 pb-12">
             <section className="bg-gray-50 rounded-xl p-6 md:p-8">
               <h3 className="text-xl font-bold text-gray-800 mb-6">
@@ -216,7 +216,7 @@ export default function ProductSlug() {
               <div
                 className="text-gray-600 prose prose-sm max-w-none"
                 dangerouslySetInnerHTML={{
-                  __html: (product.customFields as any).productDetails,
+                  __html: product.customFields.productDetails,
                 }}
               />
             </section>
