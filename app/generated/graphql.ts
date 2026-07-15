@@ -2725,8 +2725,8 @@ export type ProductVariantListArgs = {
 
 export type ProductCustomFields = {
   __typename?: 'ProductCustomFields';
-  detailImage?: Maybe<Asset>;
-  productDetails?: Maybe<Scalars['JSON']>;
+  detailImage?: Maybe<Array<Asset>>;
+  productDetails?: Maybe<Scalars['String']>;
 };
 
 export type ProductFilterParameter = {

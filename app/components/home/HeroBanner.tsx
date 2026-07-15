@@ -7,8 +7,8 @@ export function HeroBanner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+    'https://my-vendure-backend-production.up.railway.app/assets/preview/99/1-26052g40g3l3__02__preview.png?w=1200',
+    'https://my-vendure-backend-production.up.railway.app/assets/preview/45/1-26052g40i1v0__preview.png?w=1200',
   ];
 
   useEffect(() => {
