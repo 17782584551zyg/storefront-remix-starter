@@ -131,7 +131,7 @@ export default function ProductSlug() {
                     featuredAsset?.preview ??
                       product.assets[0]?.preview ??
                       product.featuredAsset?.preview,
-                    { w: 1200, backendUrl },
+                    { w: 1200 },
                   )}
                   alt={product.name}
                   className="w-full h-full object-center object-cover rounded-lg"
@@ -158,7 +158,6 @@ export default function ProductSlug() {
                       className="rounded-lg select-none h-24 w-full object-cover"
                       src={getImageUrl(asset.preview, {
                         preset: 'full',
-                        backendUrl,
                       })}
                       alt={`${product.name} thumbnail ${
                         product.assets.indexOf(asset) + 1
@@ -239,7 +238,7 @@ export default function ProductSlug() {
                     {detailImages.map((image, index) => (
                       <img
                         key={image.id}
-                        src={getImageUrl(image.preview, { w: 800, backendUrl })}
+                        src={getImageUrl(image.preview, { w: 800 })}
                         alt={`Product Detail ${index + 1}`}
                         className="w-full h-auto rounded-lg"
                         onError={(e) => {

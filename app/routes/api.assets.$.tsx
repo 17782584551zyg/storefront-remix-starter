@@ -12,7 +12,8 @@ export async function loader({ request, params }: DataFunctionArgs) {
   }
 
   const backendUrl = API_URL.replace('/shop-api', '');
-  const assetUrl = `${backendUrl}/assets/${path}`;
+  const url = new URL(request.url);
+  const assetUrl = `${backendUrl}/assets/${path}${url.search}`;
 
   const response = await fetch(assetUrl);
 

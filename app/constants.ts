@@ -35,9 +35,9 @@ export function getImageUrl(
       url = preview;
     }
   } else if (preview.startsWith('/assets/')) {
-    url = '/api/assets' + preview.substring(7);
+    url = '/api/assets/' + preview.substring(8);
   } else if (preview.startsWith('/')) {
-    url = '/api/assets' + preview;
+    url = '/api/assets/' + preview.substring(1);
   } else {
     url = '/api/assets/' + preview;
   }

@@ -49,7 +49,6 @@ export default function ProductsPage() {
                       src={getImageUrl(category.featuredAsset.preview, {
                         w: 400,
                         h: 400,
-                        backendUrl,
                       })}
                       alt={category.name}
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"

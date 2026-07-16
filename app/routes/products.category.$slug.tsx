@@ -107,7 +107,6 @@ export default function CollectionSlug() {
               <CollectionCard
                 key={child.id}
                 collection={child}
-                backendUrl={backendUrl}
               ></CollectionCard>
             ))}
           </div>
@@ -126,7 +125,6 @@ export default function CollectionSlug() {
           mobileFiltersOpen={mobileFiltersOpen}
           setMobileFiltersOpen={setMobileFiltersOpen}
           {...loaderData}
-          backendUrl={backendUrl}
         />
       </ValidatedForm>
     </div>

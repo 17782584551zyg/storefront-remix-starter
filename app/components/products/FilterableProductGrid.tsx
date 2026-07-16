@@ -20,7 +20,6 @@ export function FilterableProductGrid({
   allowedPaginationLimits,
   mobileFiltersOpen,
   setMobileFiltersOpen,
-  backendUrl,
 }: Awaited<
   ReturnType<
     ReturnType<
@@ -31,7 +30,6 @@ export function FilterableProductGrid({
   allowedPaginationLimits: Set<number>;
   mobileFiltersOpen: boolean;
   setMobileFiltersOpen: (arg0: boolean) => void;
-  backendUrl?: string;
 }) {
   const { t } = useTranslation();
   const facetValuesTracker = useRef(new FacetFilterTracker());
@@ -52,11 +50,7 @@ export function FilterableProductGrid({
         <div className="sm:col-span-5 lg:col-span-4 space-y-8 pb-16">
           <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {result.items.map((item) => (
-              <ProductCard
-                key={item.productId}
-                {...item}
-                backendUrl={backendUrl}
-              />
+              <ProductCard key={item.productId} {...item} />
             ))}
           </div>
 
