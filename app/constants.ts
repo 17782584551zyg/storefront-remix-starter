@@ -35,9 +35,7 @@ export function getImageUrl(
   }
 
   if (!assetPath.startsWith('/assets/')) {
-    if (assetPath.startsWith('/assetspreview/')) {
-      assetPath = '/assets/preview/' + assetPath.substring(14);
-    } else if (assetPath.startsWith('/')) {
+    if (assetPath.startsWith('/')) {
       assetPath = '/assets' + assetPath;
     } else {
       assetPath = '/assets/' + assetPath;
