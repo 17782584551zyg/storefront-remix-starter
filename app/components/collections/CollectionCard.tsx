@@ -12,25 +12,24 @@ export function CollectionCard({
       to={'/collections/' + collection.slug}
       prefetch="intent"
       key={collection.id}
-      className="max-w-[300px] relative rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer group xl:w-auto"
+      className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer group"
     >
-      <span aria-hidden="true" className="">
-        <div className="w-full h-full object-center object-cover">
-          <img
-            src={getImageUrl(collection.featuredAsset?.preview, {
-              w: 300,
-              h: 300,
-            })}
-          />
-        </div>
-      </span>
-      <span
-        aria-hidden="true"
-        className="absolute w-full bottom-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
-      />
-      <span className="absolute w-full bottom-2 mt-auto text-center text-xl font-bold text-white">
-        {collection.name}
-      </span>
+      <div className="p-4 text-center">
+        <h3 className="text-lg font-bold text-gray-800 mb-1">
+          {collection.name}
+        </h3>
+        <p className="text-xs text-gray-500">LOREM IPSUMLOREM IPSUM</p>
+      </div>
+      <div className="flex-1 w-full h-auto overflow-hidden">
+        <img
+          src={getImageUrl(collection.featuredAsset?.preview, {
+            w: 400,
+            h: 300,
+          })}
+          alt={collection.name}
+          className="w-full h-full object-contain"
+        />
+      </div>
     </Link>
   );
 }

@@ -257,9 +257,9 @@ const translations = {
     globalWarehousing: 'Global Warehousing & Shipping',
     globalWarehousingDesc:
       'Warehouse network covering 120+ countries worldwide, intelligent warehouse management, fastest delivery in 3 days, enabling your products to reach global consumers quickly.',
-    professionalSourcing: 'Professional Product Sourcing',
+    professionalSourcing: 'Professional Sourcing for Baoji Titanium',
     professionalSourcingDesc:
-      'Big data analysis based product recommendations, one-on-one guidance from senior sourcing team, helping you discover hot-selling products and reduce sourcing risks.',
+      'Leveraging big data and deep industrial intelligence, our senior sourcing team offers one-on-one consultations to help you pinpoint high-demand titanium products – from raw materials to finished components. We reduce procurement risks through strict quality verification, supply chain transparency, and localized insights from Baoji’s world-class titanium cluster.',
     fullChainLogistics: 'Full-Chain Logistics Service',
     fullChainLogisticsDesc:
       'From domestic pickup, international shipping to last-mile delivery, providing door-to-door one-stop logistics solutions with full tracking capability.',
