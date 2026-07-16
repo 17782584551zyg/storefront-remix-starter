@@ -1,6 +1,6 @@
-﻿import { DataFunctionArgs } from '@remix-run/server-runtime';
+import { DataFunctionArgs } from '@remix-run/server-runtime';
 import { getOrderByCode } from '~/providers/orders/order';
-import { useLoaderData } from '@remix-run/react';
+import { useLoaderData, useOutletContext } from '@remix-run/react';
 import { CartContents } from '~/components/cart/CartContents';
 import { CartTotals } from '~/components/cart/CartTotals';
 import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/24/outline';
@@ -9,6 +9,7 @@ import { useRevalidator } from '@remix-run/react';
 import { useEffect, useState } from 'react';
 import { OrderDetailFragment } from '~/generated/graphql';
 import { useTranslation } from '~/hooks/useTranslation';
+import { BACKEND_URL } from '~/constants';
 
 export async function loader({ params, request }: DataFunctionArgs) {
   try {
@@ -16,17 +17,19 @@ export async function loader({ params, request }: DataFunctionArgs) {
     return {
       order,
       error: false,
+      backendUrl: BACKEND_URL,
     };
   } catch (ex) {
     return {
       order: null,
       error: true,
+      backendUrl: BACKEND_URL,
     };
   }
 }
 
 export default function CheckoutConfirmation() {
-  const { order, error } = useLoaderData<typeof loader>();
+  const { order, error, backendUrl } = useLoaderData<typeof loader>();
   const revalidator = useRevalidator();
   const [retries, setRetries] = useState(1);
   const { t } = useTranslation();
@@ -130,6 +133,7 @@ export default function CheckoutConfirmation() {
             orderLines={order!.lines}
             currencyCode={order!.currencyCode}
             editable={false}
+            backendUrl={backendUrl}
           />
         </div>
         <CartTotals order={order as OrderDetailFragment}></CartTotals>

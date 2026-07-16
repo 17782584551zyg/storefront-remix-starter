@@ -1,5 +1,5 @@
 import { json, LoaderFunction } from '@remix-run/node';
-import { useLoaderData, Link } from '@remix-run/react';
+import { useLoaderData, Link, useOutletContext } from '@remix-run/react';
 import { getCollections } from '~/providers/collections/collections';
 import { getImageUrl } from '~/constants';
 
@@ -17,6 +17,7 @@ export default function ProductsPage() {
       featuredAsset?: { preview: string };
     }>;
   }>();
+  const { backendUrl } = useOutletContext<{ backendUrl: string }>();
 
   return (
     <div className="min-h-screen">
@@ -48,6 +49,7 @@ export default function ProductsPage() {
                       src={getImageUrl(category.featuredAsset.preview, {
                         w: 400,
                         h: 400,
+                        backendUrl,
                       })}
                       alt={category.name}
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"

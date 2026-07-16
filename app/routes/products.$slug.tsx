@@ -58,8 +58,9 @@ export const shouldRevalidate: ShouldRevalidateFunction = () => true;
 
 export default function ProductSlug() {
   const { product, error } = useLoaderData<typeof loader>();
-  const { activeOrderFetcher } = useOutletContext<{
+  const { activeOrderFetcher, backendUrl } = useOutletContext<{
     activeOrderFetcher: FetcherWithComponents<CartLoaderData>;
+    backendUrl: string;
   }>();
   const { activeOrder } = activeOrderFetcher.data ?? {};
   const addItemToOrderError = getAddItemToOrderError(error);
@@ -130,7 +131,7 @@ export default function ProductSlug() {
                     featuredAsset?.preview ??
                       product.assets[0]?.preview ??
                       product.featuredAsset?.preview,
-                    { w: 1200 },
+                    { w: 1200, backendUrl },
                   )}
                   alt={product.name}
                   className="w-full h-full object-center object-cover rounded-lg"
@@ -155,7 +156,10 @@ export default function ProductSlug() {
                     <img
                       draggable="false"
                       className="rounded-lg select-none h-24 w-full object-cover"
-                      src={getImageUrl(asset.preview, { preset: 'full' })}
+                      src={getImageUrl(asset.preview, {
+                        preset: 'full',
+                        backendUrl,
+                      })}
                       alt={`${product.name} thumbnail ${
                         product.assets.indexOf(asset) + 1
                       }`}
@@ -235,7 +239,7 @@ export default function ProductSlug() {
                     {detailImages.map((image, index) => (
                       <img
                         key={image.id}
-                        src={getImageUrl(image.preview, { w: 800 })}
+                        src={getImageUrl(image.preview, { w: 800, backendUrl })}
                         alt={`Product Detail ${index + 1}`}
                         className="w-full h-auto rounded-lg"
                         onError={(e) => {

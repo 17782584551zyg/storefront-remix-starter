@@ -5,9 +5,15 @@ interface ProductImageZoomProps {
   featuredAsset: { preview: string } | null | undefined;
   assets: Array<{ id: string; preview: string }>;
   onAssetChange: (asset: { preview: string }) => void;
+  backendUrl?: string;
 }
 
-export function ProductImageZoom({ featuredAsset, assets, onAssetChange }: ProductImageZoomProps) {
+export function ProductImageZoom({
+  featuredAsset,
+  assets,
+  onAssetChange,
+  backendUrl,
+}: ProductImageZoomProps) {
   const [showZoom, setShowZoom] = useState(false);
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const [maskPosition, setMaskPosition] = useState({ x: 0, y: 0 });
@@ -33,7 +39,10 @@ export function ProductImageZoom({ featuredAsset, assets, onAssetChange }: Produ
     const maxY = 100 - (maskSize / rect.height) * 100;
 
     const maskX = Math.max(0, Math.min(maxX, x - (maskSize / rect.width) * 50));
-    const maskY = Math.max(0, Math.min(maxY, y - (maskSize / rect.height) * 50));
+    const maskY = Math.max(
+      0,
+      Math.min(maxY, y - (maskSize / rect.height) * 50),
+    );
 
     setZoomPosition({ x, y });
     setMaskPosition({ x: maskX, y: maskY });
@@ -50,7 +59,7 @@ export function ProductImageZoom({ featuredAsset, assets, onAssetChange }: Produ
           onMouseMove={handleMouseMove}
         >
           <img
-            src={getImageUrl(featuredAsset?.preview, { w: 1200 })}
+            src={getImageUrl(featuredAsset?.preview, { w: 1200, backendUrl })}
             alt="Product"
             className="w-full h-full object-center object-cover rounded-lg"
           />
@@ -69,7 +78,10 @@ export function ProductImageZoom({ featuredAsset, assets, onAssetChange }: Produ
               <div
                 className="absolute right-0 top-0 w-[400px] h-[400px] bg-white rounded-lg overflow-hidden shadow-lg pointer-events-none z-20"
                 style={{
-                  backgroundImage: `url(${getImageUrl(featuredAsset?.preview, { w: 1200 })})`,
+                  backgroundImage: `url(${getImageUrl(featuredAsset?.preview, {
+                    w: 1200,
+                    backendUrl,
+                  })})`,
                   backgroundSize: '200%',
                   backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`,
                 }}
@@ -93,7 +105,7 @@ export function ProductImageZoom({ featuredAsset, assets, onAssetChange }: Produ
               <img
                 draggable={false}
                 className="w-20 h-20 object-cover"
-                src={getImageUrl(asset.preview, { w: 150, h: 150 })}
+                src={getImageUrl(asset.preview, { w: 150, h: 150, backendUrl })}
                 alt="Thumbnail"
               />
             </div>

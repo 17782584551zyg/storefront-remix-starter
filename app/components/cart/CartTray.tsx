@@ -1,4 +1,4 @@
-﻿import { Fragment } from 'react';
+import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { CartContents } from './CartContents';
@@ -14,12 +14,14 @@ export function CartTray({
   activeOrder,
   adjustOrderLine,
   removeItem,
+  backendUrl,
 }: {
   open: boolean;
   onClose: (closed: boolean) => void;
   activeOrder: CartLoaderData['activeOrder'];
   adjustOrderLine?: (lineId: string, quantity: number) => void;
   removeItem?: (lineId: string) => void;
+  backendUrl?: string;
 }) {
   const currencyCode = activeOrder?.currencyCode || CurrencyCode.Usd;
   const location = useLocation();
@@ -85,6 +87,7 @@ export function CartTray({
                           editable={editable}
                           removeItem={removeItem}
                           adjustOrderLine={adjustOrderLine}
+                          backendUrl={backendUrl}
                         ></CartContents>
                       ) : (
                         <div className="flex items-center justify-center h-48 text-xl text-gray-400">

@@ -2,7 +2,7 @@ import { useFetcher } from '@remix-run/react';
 import { CartLoaderData } from '~/routes/api.active-order';
 import { useEffect } from 'react';
 
-export function useActiveOrder() {
+export function useActiveOrder(backendUrl?: string) {
   const activeOrderFetcher = useFetcher<CartLoaderData>();
   useEffect(() => {
     if (activeOrderFetcher.state === 'idle' && !activeOrderFetcher.data) {
@@ -46,5 +46,6 @@ export function useActiveOrder() {
     removeItem,
     adjustOrderLine,
     refresh,
+    backendUrl,
   };
 }

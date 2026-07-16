@@ -24,13 +24,20 @@ export const links: LinksFunction = () => [
 const devMode =
   typeof process !== 'undefined' && process.env.NODE_ENV === 'development';
 
+import { API_URL, BACKEND_URL } from './constants';
+
 export async function loader() {
   return json({
     activeCustomer: { activeCustomer: null, _headers: {} },
-    activeChannel: { id: '1', currencyCode: 'USD', customFields: { bannerImages: [] } },
+    activeChannel: {
+      id: '1',
+      currencyCode: 'USD',
+      customFields: { bannerImages: [] },
+    },
     collections: [],
     locale: 'en',
-    backendUrl: '',
+    backendUrl: BACKEND_URL,
+    apiUrl: API_URL,
   });
 }
 
@@ -39,7 +46,7 @@ export default function App() {
   const loaderData = useLoaderData();
   const { collections } = loaderData;
   const { activeOrderFetcher, activeOrder, adjustOrderLine, removeItem } =
-    useActiveOrder();
+    useActiveOrder(loaderData.backendUrl);
 
   return (
     <html lang="zh" dir="ltr" id="app">
@@ -62,6 +69,7 @@ export default function App() {
               activeOrder,
               adjustOrderLine,
               removeItem,
+              backendUrl: loaderData.backendUrl,
             }}
           />
         </main>
@@ -71,6 +79,7 @@ export default function App() {
           activeOrder={activeOrder}
           adjustOrderLine={adjustOrderLine}
           removeItem={removeItem}
+          backendUrl={loaderData.backendUrl}
         />
         <ScrollRestoration />
         <Scripts />

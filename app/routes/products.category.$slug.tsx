@@ -1,4 +1,4 @@
-﻿import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
+import { MetaFunction, useLoaderData, useSubmit } from '@remix-run/react';
 import { DataFunctionArgs } from '@remix-run/server-runtime';
 import pkg from '@remix-validated-form/with-zod';
 const { withZod } = pkg;
@@ -66,10 +66,13 @@ export async function loader({ params, request }: DataFunctionArgs) {
   };
 }
 
+import { useOutletContext } from '@remix-run/react';
+
 export default function CollectionSlug() {
   const loaderData = useLoaderData<typeof loader>();
   const { collection, result, resultWithoutFacetValueFilters, facetValueIds } =
     loaderData;
+  const { backendUrl } = useOutletContext<{ backendUrl: string }>();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const facetValuesTracker = useRef(new FacetFilterTracker());
   facetValuesTracker.current.update(
@@ -104,6 +107,7 @@ export default function CollectionSlug() {
               <CollectionCard
                 key={child.id}
                 collection={child}
+                backendUrl={backendUrl}
               ></CollectionCard>
             ))}
           </div>
@@ -122,6 +126,7 @@ export default function CollectionSlug() {
           mobileFiltersOpen={mobileFiltersOpen}
           setMobileFiltersOpen={setMobileFiltersOpen}
           {...loaderData}
+          backendUrl={backendUrl}
         />
       </ValidatedForm>
     </div>

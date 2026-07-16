@@ -1,4 +1,4 @@
-﻿import { ChevronRightIcon } from '@heroicons/react/24/solid';
+import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { Outlet, useLocation, useOutletContext } from '@remix-run/react';
 import { CartContents } from '~/components/cart/CartContents';
 import { OutletContext } from '~/types';
@@ -10,7 +10,8 @@ const steps = ['shipping', 'payment', 'confirmation'];
 
 export default function Checkout() {
   const outletContext = useOutletContext<OutletContext>();
-  const { activeOrder, adjustOrderLine, removeItem } = outletContext;
+  const { activeOrder, adjustOrderLine, removeItem, backendUrl } =
+    outletContext;
   const location = useLocation();
   const { t } = useTranslation();
 
@@ -74,6 +75,7 @@ export default function Checkout() {
                 editable={state === 'shipping'}
                 removeItem={removeItem}
                 adjustOrderLine={adjustOrderLine}
+                backendUrl={backendUrl}
               ></CartContents>
               <CartTotals order={activeOrder}></CartTotals>
             </div>

@@ -4,8 +4,10 @@ import { getImageUrl } from '~/constants';
 
 export function CollectionCard({
   collection,
+  backendUrl,
 }: {
   collection: CollectionsQuery['collections']['items'][number];
+  backendUrl?: string;
 }) {
   return (
     <Link
@@ -16,7 +18,13 @@ export function CollectionCard({
     >
       <span aria-hidden="true" className="">
         <div className="w-full h-full object-center object-cover">
-          <img src={getImageUrl(collection.featuredAsset?.preview, {w:300,h:300})} />
+          <img
+            src={getImageUrl(collection.featuredAsset?.preview, {
+              w: 300,
+              h: 300,
+              backendUrl,
+            })}
+          />
         </div>
       </span>
       <span

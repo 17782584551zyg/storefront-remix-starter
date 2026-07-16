@@ -11,16 +11,22 @@ export const BACKEND_URL = API_URL.replace('/shop-api', '');
 
 export function getImageUrl(
   preview: string | undefined,
-  options: { w?: number; h?: number; preset?: string } = {},
+  options: {
+    w?: number;
+    h?: number;
+    preset?: string;
+    backendUrl?: string;
+  } = {},
 ): string {
   if (!preview) {
     return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23f3f4f6" width="200" height="200"/%3E%3Ctext fill="%239ca3af" font-family="sans-serif" font-size="14" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3ENo image%3C/text%3E%3C/svg%3E';
   }
 
+  const backendUrl = options.backendUrl || BACKEND_URL;
   let url: string;
 
   if (preview.startsWith('http')) {
-    const backendBase = BACKEND_URL + '/assets/';
+    const backendBase = backendUrl + '/assets/';
     if (preview.startsWith(backendBase)) {
       url = '/api/assets/' + preview.substring(backendBase.length);
     } else {
