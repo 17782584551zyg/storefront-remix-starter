@@ -5,14 +5,12 @@ interface ProductImageZoomProps {
   featuredAsset: { preview: string } | null | undefined;
   assets: Array<{ id: string; preview: string }>;
   onAssetChange: (asset: { preview: string }) => void;
-  backendUrl?: string;
 }
 
 export function ProductImageZoom({
   featuredAsset,
   assets,
   onAssetChange,
-  backendUrl,
 }: ProductImageZoomProps) {
   const [showZoom, setShowZoom] = useState(false);
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
@@ -59,7 +57,7 @@ export function ProductImageZoom({
           onMouseMove={handleMouseMove}
         >
           <img
-            src={getImageUrl(featuredAsset?.preview, { w: 1200, backendUrl })}
+            src={getImageUrl(featuredAsset?.preview, { w: 1200 })}
             alt="Product"
             className="w-full h-full object-center object-cover rounded-lg"
           />
@@ -80,7 +78,6 @@ export function ProductImageZoom({
                 style={{
                   backgroundImage: `url(${getImageUrl(featuredAsset?.preview, {
                     w: 1200,
-                    backendUrl,
                   })})`,
                   backgroundSize: '200%',
                   backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`,
@@ -105,7 +102,7 @@ export function ProductImageZoom({
               <img
                 draggable={false}
                 className="w-20 h-20 object-cover"
-                src={getImageUrl(asset.preview, { w: 150, h: 150, backendUrl })}
+                src={getImageUrl(asset.preview, { w: 150, h: 150 })}
                 alt="Thumbnail"
               />
             </div>

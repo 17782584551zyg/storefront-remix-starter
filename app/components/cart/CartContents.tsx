@@ -10,14 +10,12 @@ export function CartContents({
   editable = true,
   adjustOrderLine,
   removeItem,
-  backendUrl,
 }: {
   orderLines: NonNullable<ActiveOrderQuery['activeOrder']>['lines'];
   currencyCode: CurrencyCode;
   editable: boolean;
   adjustOrderLine?: (lineId: string, quantity: number) => void;
   removeItem?: (lineId: string) => void;
-  backendUrl?: string;
 }) {
   const { t } = useTranslation();
   const isEditable = editable !== false;
@@ -31,7 +29,6 @@ export function CartContents({
               <img
                 src={getImageUrl(line.featuredAsset?.preview, {
                   preset: 'thumb',
-                  backendUrl,
                 })}
                 alt={line.productVariant.name}
                 className="w-full h-full object-center object-cover"

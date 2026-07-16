@@ -7,7 +7,11 @@ export let API_URL =
     ? process.env.VENDURE_API_URL ?? DEMO_API_URL
     : DEMO_API_URL;
 
-export const BACKEND_URL = API_URL.replace('/shop-api', '');
+export let BACKEND_URL = API_URL.replace('/shop-api', '');
+
+export function setBackendUrl(backendUrl: string) {
+  BACKEND_URL = backendUrl;
+}
 
 export function getImageUrl(
   preview: string | undefined,
@@ -15,7 +19,6 @@ export function getImageUrl(
     w?: number;
     h?: number;
     preset?: string;
-    backendUrl?: string;
   } = {},
 ): string {
   if (!preview) {

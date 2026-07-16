@@ -2,14 +2,11 @@ import { SearchQuery } from '~/generated/graphql';
 import { Link } from '@remix-run/react';
 import { getImageUrl } from '~/constants';
 
-export type ProductCardProps = SearchQuery['search']['items'][number] & {
-  backendUrl?: string;
-};
+export type ProductCardProps = SearchQuery['search']['items'][number];
 export function ProductCard({
   productAsset,
   productName,
   slug,
-  backendUrl,
 }: ProductCardProps) {
   return (
     <Link
@@ -20,7 +17,7 @@ export function ProductCard({
       <img
         className="flex-grow object-cover aspect-[7/8]"
         alt=""
-        src={getImageUrl(productAsset?.preview, { w: 300, h: 400, backendUrl })}
+        src={getImageUrl(productAsset?.preview, { w: 300, h: 400 })}
       />
       <div className="p-3">
         <div className="text-sm text-gray-700">{productName}</div>

@@ -13,7 +13,7 @@ import { json, LinksFunction } from '@remix-run/server-runtime';
 import { Header } from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { CartTray } from './components/cart/CartTray';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useActiveOrder } from './utils/use-active-order';
 
 export const links: LinksFunction = () => [
@@ -24,7 +24,7 @@ export const links: LinksFunction = () => [
 const devMode =
   typeof process !== 'undefined' && process.env.NODE_ENV === 'development';
 
-import { API_URL, BACKEND_URL } from './constants';
+import { API_URL, BACKEND_URL, setBackendUrl } from './constants';
 
 export async function loader() {
   return json({
@@ -47,6 +47,10 @@ export default function App() {
   const { collections } = loaderData;
   const { activeOrderFetcher, activeOrder, adjustOrderLine, removeItem } =
     useActiveOrder(loaderData.backendUrl);
+
+  useEffect(() => {
+    setBackendUrl(loaderData.backendUrl);
+  }, [loaderData.backendUrl]);
 
   return (
     <html lang="zh" dir="ltr" id="app">
