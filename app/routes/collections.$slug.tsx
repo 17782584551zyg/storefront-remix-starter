@@ -103,7 +103,7 @@ export default function CollectionSlug() {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-6xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4">
       <div className="flex justify-between items-center">
         <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8">
           {collection.name}
@@ -156,7 +156,7 @@ export function CatchBoundary() {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-6xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4">
       <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-gray-900 my-8">
         {t('product.collectionNotFound')}
       </h2>
