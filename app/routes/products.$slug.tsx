@@ -234,11 +234,11 @@ export default function ProductSlug() {
                   />
                 )}
                 {detailImages.length > 0 && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex flex-col gap-4">
                     {detailImages.map((image, index) => (
                       <img
                         key={image.id}
-                        src={getImageUrl(image.preview, { w: 800 })}
+                        src={getImageUrl(image.preview, { w: 1200 })}
                         alt={`Product Detail ${index + 1}`}
                         className="w-full h-auto rounded-lg"
                         onError={(e) => {
