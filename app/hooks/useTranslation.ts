@@ -242,7 +242,7 @@ const translations = {
     heroTitle: 'One-Stop Cross-Border E-commerce Solutions',
     heroSubtitle: 'We help you easily import from China',
     heroDescription:
-      'Focused on cross-border e-commerce, providing full-chain service support to help Chinese brands go global. From product sourcing, logistics to payment, one-stop solution for your import challenges.',
+      'Focused on cross-border export of Baoji titanium products, we provide full-chain service support to help Chinese titanium brands go global. From raw material sourcing, customized manufacturing, logistics to payment, we offer a one-stop solution for your import challenges – leveraging Baoji’s world-class titanium cluster to ensure quality, traceability, and cost efficiency.',
     findSuppliers: 'Find new suppliers',
     noExperience:
       'No experience needed, our expert agents will handle it all for you.',
