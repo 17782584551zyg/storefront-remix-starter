@@ -25,22 +25,24 @@ export function getImageUrl(
     return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Crect fill="%23f3f4f6" width="200" height="200"/%3E%3Ctext fill="%239ca3af" font-family="sans-serif" font-size="14" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3ENo image%3C/text%3E%3C/svg%3E';
   }
 
-  let url: string;
+  let assetPath: string;
 
   if (preview.startsWith('http')) {
-    const assetsIndex = preview.indexOf('/assets/');
-    if (assetsIndex !== -1) {
-      url = '/api/assets/' + preview.substring(assetsIndex + 8);
-    } else {
-      url = preview;
-    }
-  } else if (preview.startsWith('/assets/')) {
-    url = '/api/assets/' + preview.substring(8);
-  } else if (preview.startsWith('/')) {
-    url = '/api/assets/' + preview.substring(1);
+    const urlObj = new URL(preview);
+    assetPath = urlObj.pathname;
   } else {
-    url = '/api/assets/' + preview;
+    assetPath = preview;
   }
+
+  if (!assetPath.startsWith('/assets/')) {
+    if (assetPath.startsWith('/')) {
+      assetPath = '/assets' + assetPath;
+    } else {
+      assetPath = '/assets/' + assetPath;
+    }
+  }
+
+  let url = '/api' + assetPath;
 
   const params: string[] = [];
   if (options.w) params.push('w=' + options.w);
