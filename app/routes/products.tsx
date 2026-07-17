@@ -31,7 +31,7 @@ export default function ProductsPage() {
               Browse through our product categories.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collections.map((category) => (
               <Link
                 key={category.id}
@@ -43,7 +43,7 @@ export default function ProductsPage() {
                     {category.name}
                   </h3>
                 </div>
-                <div className="flex-1 w-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                <div className="flex-1 w-full bg-white flex items-center justify-center overflow-hidden">
                   {category.featuredAsset?.preview ? (
                     <img
                       src={getImageUrl(category.featuredAsset.preview, {
