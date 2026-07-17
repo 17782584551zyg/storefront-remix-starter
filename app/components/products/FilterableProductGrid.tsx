@@ -79,7 +79,7 @@ export function FilterableProductGrid({
       ) : (
         <NoResultsHint
           facetFilterTracker={facetValuesTracker.current}
-          className={'sm:col-span-4 sm:p-4'}
+          className={'sm:col-span-5 lg:col-span-5 sm:p-4'}
         />
       )}
     </div>
