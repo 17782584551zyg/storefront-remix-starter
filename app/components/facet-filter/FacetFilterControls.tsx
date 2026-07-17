@@ -138,7 +138,7 @@ export default function FacetFilterControls({
         </Dialog>
       </Transition.Root>
 
-      <div className="hidden lg:block">
+      {/* <div className="hidden lg:block">
         <input type="hidden" name="q" value={q} />
         {facetFilterTracker.facetsWithValues.map((facet) => (
           <Disclosure
@@ -193,7 +193,7 @@ export default function FacetFilterControls({
             )}
           </Disclosure>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
