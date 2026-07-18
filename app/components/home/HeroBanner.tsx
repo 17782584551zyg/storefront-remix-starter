@@ -7,9 +7,36 @@ export function HeroBanner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/26/1-2606020u414919__preview.png?preset=full',
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/3a/1-250h1103ft30-f__02__preview.jpg?preset=full',
-    'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/26/1-2606020u414919__preview.png?preset=full',
+      link: '/services',
+    },
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/3a/1-250h1103ft30-f__02__preview.jpg?preset=full',
+      link: '/products',
+    },
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+      link: '/services',
+    },
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/92/2024070404332240bdf__preview.webp?preset=full',
+      link: '/services',
+    },
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/41/2024051710323318796__preview.webp?preset=full',
+      link: '/services',
+    },
+    {
+      image:
+        'https://my-vendure-backend-production.up.railway.app/assets/preview/a9/2024052004422481a18__preview.webp?preset=full',
+      link: '/services',
+    },
   ];
 
   useEffect(() => {
@@ -23,19 +50,20 @@ export function HeroBanner() {
     <section className="relative py-20 text-white overflow-hidden">
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
-          <div
+          <Link
             key={index}
+            to={slide.link}
             className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <img
-              src={slide}
+              src={slide.image}
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
-          </div>
+          </Link>
         ))}
       </div>
 
