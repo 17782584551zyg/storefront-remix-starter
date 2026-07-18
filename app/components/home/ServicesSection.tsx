@@ -1,4 +1,4 @@
-﻿import { Link } from '@remix-run/react';
+import { Link } from '@remix-run/react';
 import { useTranslation } from '~/hooks/useTranslation';
 
 export function ServicesSection() {
@@ -78,7 +78,7 @@ export function ServicesSection() {
                 <p className="text-gray-600 text-sm mb-4">
                   {service.description}
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2">
                   {service.features.map((feature) => (
                     <li
                       key={feature}
@@ -99,25 +99,6 @@ export function ServicesSection() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  to={service.link}
-                  className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors"
-                >
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
               </div>
             </div>
           ))}
