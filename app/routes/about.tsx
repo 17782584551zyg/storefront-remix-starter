@@ -118,27 +118,24 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              合作厂商
+              合作厂商简介
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
 
           <div className="space-y-16">
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                公司简介
-              </h3>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                宝鸡天瑞镍钛有限公司成立于2011年，位于陕西省宝鸡市，被誉为"中国钛谷"。公司主要从事非标准型产品、钛合金材料、钛合金材料、特种产品及其他产品的生产、制造和销售。
+                厂家位于陕西省宝鸡市，被誉为"中国钛谷"。公司主要从事非标准型产品、钛合金材料、钛合金材料、特种产品及其他产品的生产、制造和销售。
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20factory%20building%20exterior%20industrial&image_size=landscape_4_3"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/d5/p2024050617501352100__preview.jpeg?preset=full"
                   alt="公司外观"
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20workshop%20interior%20with%20machinery&image_size=landscape_4_3"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/7d/p2024050617501209061__preview.jpeg?preset=full"
                   alt="生产车间"
                   className="w-full h-64 object-cover rounded-lg"
                 />
@@ -147,91 +144,71 @@ export default function AboutPage() {
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                工厂展
+                工厂展示
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                我们公司拥有现代化的生产设备，数控车床、车削、冲床及其他设备。它主要包括非金属工业和工艺，如熔铸工业、热轧和精锻。我们公司专注于钛螺丝及其他用于摩托车、自行车和汽车的mgum件的生产和研究。公司拥有完善的管理体系，致力于为国内外客户提供优质产品。
+                厂家拥有现代化的生产设备，数控车床、车削、冲床及其他设备。它主要包括非金属工业和工艺，如熔铸工业、热轧和精锻。厂家专注于钛螺丝及其他用于摩托车、自行车和汽车的mgum件的生产和研究。厂家拥有完善的管理体系，致力于为国内外客户提供优质产品。
               </p>
-              <div className="grid md:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20lathe%20machinery%20factory&image_size=landscape_4_3"
-                  alt="数控车床"
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/48/20240506180050d60b5__preview.webp?preset=full"
+                  alt="工厂展示1"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20press%20machine%20workshop&image_size=landscape_4_3"
-                  alt="冲压设备"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20factory%20production%20line&image_size=landscape_4_3"
-                  alt="生产线"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Metal%20forging%20equipment&image_size=landscape_4_3"
-                  alt="锻造设备"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Precision%20machining%20center&image_size=landscape_4_3"
-                  alt="精密加工"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20warehouse%20storage&image_size=landscape_4_3"
-                  alt="仓储设施"
-                  className="w-full h-48 object-cover rounded-lg"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/7d/p2024050617501209061__preview.jpeg?preset=full"
+                  alt="工厂展示2"
+                  className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
             </div>
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                产品
+                产品介绍
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                我们的设备已经提交了涵盖航空航天、航天、工业工程、汽车工程、电力和电气设备的申请。我们不仅生产钛合金材料，还生产钛产品、钛靶材和钛棒。我们公司还生产多种标准类型，如普通螺栓、螺母、表带和特种产品。特殊产品通常根据客户的具体要求进行定制设计。此外，我们的产品涵盖从原材料到完整产品的所有产品，使我们能够提供解决方案。
+                厂家设备已经提交了涵盖航空航天、航天、工业工程、汽车工程、电力和电气设备的申请。我们不仅生产钛合金材料，还生产钛产品、钛靶材和钛棒。厂家还生产多种标准类型，如普通螺栓、螺母、表带和特种产品。特殊产品通常根据客户的具体要求进行定制设计。此外，我们的产品涵盖从原材料到完整产品的所有产品，使我们能够提供解决方案。
               </p>
               <div className="grid md:grid-cols-4 gap-4">
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20bolts%20and%20nuts%20hardware&image_size=square"
-                  alt="钛合金螺栓"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/fc/p202405061750127139d__preview.jpeg?preset=full"
+                  alt="产品1"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20rods%20and%20bars%20metal&image_size=square"
-                  alt="钛合金棒材"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/4a/p20240506175011daf73__preview.jpeg?preset=full"
+                  alt="产品2"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20plates%20and%20sheets&image_size=square"
-                  alt="钛合金板材"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/0b/p202405061750101c8f6__preview.jpeg?preset=full"
+                  alt="产品3"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20tubes%20and%20pipes&image_size=square"
-                  alt="钛合金管材"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/12/p202405061750123da29__preview.jpeg?preset=full"
+                  alt="产品4"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20fasteners%20industrial&image_size=square"
-                  alt="钛合金紧固件"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/77/p202405061750177f0d5__preview.jpeg?preset=full"
+                  alt="产品5"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20target%20material&image_size=square"
-                  alt="钛靶材"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/ad/p202405061750180ba20__preview.jpeg?preset=full"
+                  alt="产品6"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20components%20automotive&image_size=square"
-                  alt="汽车零部件"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/af/p2024050617501172ca6__preview.jpeg?preset=full"
+                  alt="产品7"
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20medical%20implants&image_size=square"
-                  alt="医疗植入物"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/9d/p2024050617501688a07__preview.jpeg?preset=full"
+                  alt="产品8"
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </div>
@@ -281,34 +258,39 @@ export default function AboutPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-4">
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20furnace%20casting%20equipment&image_size=landscape_4_3"
-                  alt="铸造熔炉"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/df/p2024050714144245e7b__preview.webp?preset=full"
+                  alt="生产设备1"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Hydraulic%20forging%20press%20machine&image_size=landscape_4_3"
-                  alt="液压锻造机"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/b7/p2024050714144290a66__preview.webp?preset=full"
+                  alt="生产设备2"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20center%20factory&image_size=landscape_4_3"
-                  alt="CNC加工中心"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/16/p20240507141441ae061__preview.webp?preset=full"
+                  alt="生产设备3"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Laser%20cutting%20machine%20industrial&image_size=landscape_4_3"
-                  alt="激光切割机"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/4c/p20240507141441bbd19__preview.webp?preset=full"
+                  alt="生产设备4"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20testing%20laboratory%20equipment&image_size=landscape_4_3"
-                  alt="质检设备"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/ef/p20240507141442c22a4__preview.webp?preset=full"
+                  alt="生产设备5"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Surface%20treatment%20anodizing%20equipment&image_size=landscape_4_3"
-                  alt="表面处理设备"
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/ae/p202405071414434c98f__preview.webp?preset=full"
+                  alt="生产设备6"
                   className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://my-vendure-backend-production.up.railway.app/assets/preview/67/p202405071414416594f__preview.webp?preset=full"
+                  alt="生产设备7"
+                  className="w-full h-48 object-cover rounded-lg md:col-span-3"
                 />
               </div>
             </div>
