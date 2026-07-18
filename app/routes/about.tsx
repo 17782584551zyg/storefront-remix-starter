@@ -1,30 +1,26 @@
 import { Link } from '@remix-run/react';
+import { useTranslation } from '~/hooks/useTranslation';
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen">
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Your Trusted Sourcing Partner in China
+              {t('about.title')}
             </h1>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
 
           <div className="space-y-6">
             <p className="text-gray-600 leading-relaxed">
-              TaiSourcing was founded in Xi'an, China, in 2015 and has grown
-              into a team of more than 200 professionals. Our sole focus is to
-              simplify the sourcing process for businesses looking to import
-              from China.
+              {t('about.description1')}
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Over the years, more than 5,000 small and medium-sized businesses
-              have trusted us for all-in-one sourcing services, from supplier
-              sourcing to door-to-door logistics. Today, 70% of our clients are
-              engaged in e-commerce, and 70% of the products we source are
-              exported to North America and Europe.
+              {t('about.description2')}
             </p>
           </div>
         </div>
@@ -34,7 +30,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4">
-              What Makes Us Unique
+              {t('about.whatMakesUsUnique')}
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
@@ -42,72 +38,55 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Competitive Prices
+                {t('about.competitivePrices')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                We always encourage our clients to compare our quotes with those
-                they receive from other suppliers before selecting our service
-                plans. Over 90% of them choose our Pro Plan because we
-                consistently offer the most competitive prices.
+                {t('about.competitivePricesDesc')}
               </p>
             </div>
 
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Quality Assurance
+                {t('about.qualityAssurance')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                We place a strong emphasis on product quality. We conduct
-                thorough inspections of products before we ship them out. And we
-                are the only sourcing company that provides 1-by-1 product
-                inspections to minimize the defect rate to 0.
+                {t('about.qualityAssuranceDesc')}
               </p>
             </div>
 
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                In-house Production Department
+                {t('about.inhouseProduction')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Although we are a sourcing company, we have our own production
-                department capable of handling tasks that many factories are
-                unable or unwilling to do. These tasks include product
-                repackaging, bundling, eCommerce preparation, dropshipping, and
-                fulfillment services.
+                {t('about.inhouseProductionDesc')}
               </p>
             </div>
 
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Professional Sourcing Team
+                {t('about.professionalTeam')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Our company has over 100 employees, each with years of
-                experience in China sourcing across a wide range of products. In
-                contrast, most other sourcing agents have smaller teams of fewer
-                than 10 people with expertise limited to specific categories.
+                {t('about.professionalTeamDesc')}
               </p>
             </div>
 
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Special Support for Growing Businesses
+                {t('about.specialSupport')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                For large-scale or rapidly expanding companies, we offer a range
-                of tailored additional services. This includes assigning a team
-                of up to 20 people, offering credit payment options, and more.
+                {t('about.specialSupportDesc')}
               </p>
             </div>
 
             <div className="border-t-4 border-orange-500 pt-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Global Logistics Network
+                {t('about.globalLogistics')}
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                We have established partnerships with major logistics providers
-                worldwide, enabling us to offer competitive shipping rates and
-                reliable delivery to over 200 countries and regions.
+                {t('about.globalLogisticsDesc')}
               </p>
             </div>
           </div>
@@ -118,7 +97,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              合作厂商简介
+              {t('about.manufacturerTitle')}
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
@@ -126,17 +105,17 @@ export default function AboutPage() {
           <div className="space-y-16">
             <div>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                厂家位于陕西省宝鸡市，被誉为"中国钛谷"。公司主要从事非标准型产品、钛合金材料、钛合金材料、特种产品及其他产品的生产、制造和销售。
+                {t('about.manufacturerDesc')}
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/d5/p2024050617501352100__preview.jpeg?preset=full"
-                  alt="公司外观"
+                  alt={t('about.companyExterior')}
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/7d/p2024050617501209061__preview.jpeg?preset=full"
-                  alt="生产车间"
+                  alt={t('about.productionWorkshop')}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
@@ -144,20 +123,20 @@ export default function AboutPage() {
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                工厂展示
+                {t('about.factoryShowcase')}
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                厂家拥有现代化的生产设备，数控车床、车削、冲床及其他设备。它主要包括非金属工业和工艺，如熔铸工业、热轧和精锻。厂家专注于钛螺丝及其他用于摩托车、自行车和汽车的mgum件的生产和研究。厂家拥有完善的管理体系，致力于为国内外客户提供优质产品。
+                {t('about.factoryDesc')}
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/48/20240506180050d60b5__preview.webp?preset=full"
-                  alt="工厂展示1"
+                  alt={t('about.factoryImage1')}
                   className="w-full h-64 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/7d/p2024050617501209061__preview.jpeg?preset=full"
-                  alt="工厂展示2"
+                  alt={t('about.factoryImage2')}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
@@ -165,50 +144,50 @@ export default function AboutPage() {
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                产品介绍
+                {t('about.productIntroduction')}
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-                厂家设备已经提交了涵盖航空航天、航天、工业工程、汽车工程、电力和电气设备的申请。我们不仅生产钛合金材料，还生产钛产品、钛靶材和钛棒。厂家还生产多种标准类型，如普通螺栓、螺母、表带和特种产品。特殊产品通常根据客户的具体要求进行定制设计。此外，我们的产品涵盖从原材料到完整产品的所有产品，使我们能够提供解决方案。
+                {t('about.productDesc')}
               </p>
               <div className="grid md:grid-cols-4 gap-4">
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/fc/p202405061750127139d__preview.jpeg?preset=full"
-                  alt="产品1"
+                  alt={t('about.productImage1')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/4a/p20240506175011daf73__preview.jpeg?preset=full"
-                  alt="产品2"
+                  alt={t('about.productImage2')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/0b/p202405061750101c8f6__preview.jpeg?preset=full"
-                  alt="产品3"
+                  alt={t('about.productImage3')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/12/p202405061750123da29__preview.jpeg?preset=full"
-                  alt="产品4"
+                  alt={t('about.productImage4')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/77/p202405061750177f0d5__preview.jpeg?preset=full"
-                  alt="产品5"
+                  alt={t('about.productImage5')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/ad/p202405061750180ba20__preview.jpeg?preset=full"
-                  alt="产品6"
+                  alt={t('about.productImage6')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/af/p2024050617501172ca6__preview.jpeg?preset=full"
-                  alt="产品7"
+                  alt={t('about.productImage7')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/9d/p2024050617501688a07__preview.jpeg?preset=full"
-                  alt="产品8"
+                  alt={t('about.productImage8')}
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </div>
@@ -216,80 +195,92 @@ export default function AboutPage() {
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                生产设备
+                {t('about.productionEquipment')}
               </h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">铸造设备</h4>
-                  <p className="text-sm text-gray-600">熔炉、固定炉、铸造机</p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">锻造设备</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t('about.castingEquipment')}
+                  </h4>
                   <p className="text-sm text-gray-600">
-                    液压机、机械冲压机、风扇
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">热锻设备</h4>
-                  <p className="text-sm text-gray-600">
-                    加热炉、真空加热炉、锻锤
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">产品材料</h4>
-                  <p className="text-sm text-gray-600">
-                    数控车床、数控铣床、金属切割机、激光切割机
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">测试设备</h4>
-                  <p className="text-sm text-gray-600">
-                    光谱分析仪、金相显微镜、硬度测试仪、通用测试仪
+                    {t('about.castingEquipmentDesc')}
                   </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-900 mb-2">
-                    设备固定部件
+                    {t('about.forgingEquipment')}
                   </h4>
                   <p className="text-sm text-gray-600">
-                    抛光机、喷砂机、阳极氧化设备
+                    {t('about.forgingEquipmentDesc')}
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t('about.heatTreatmentEquipment')}
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    {t('about.heatTreatmentEquipmentDesc')}
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t('about.productMaterials')}
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    {t('about.productMaterialsDesc')}
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t('about.testingEquipment')}
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    {t('about.testingEquipmentDesc')}
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t('about.equipmentParts')}
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    {t('about.equipmentPartsDesc')}
                   </p>
                 </div>
               </div>
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/df/p2024050714144245e7b__preview.webp?preset=full"
-                  alt="生产设备1"
+                  alt={t('about.equipmentImage1')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/b7/p2024050714144290a66__preview.webp?preset=full"
-                  alt="生产设备2"
+                  alt={t('about.equipmentImage2')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/16/p20240507141441ae061__preview.webp?preset=full"
-                  alt="生产设备3"
+                  alt={t('about.equipmentImage3')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/4c/p20240507141441bbd19__preview.webp?preset=full"
-                  alt="生产设备4"
+                  alt={t('about.equipmentImage4')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/ef/p20240507141442c22a4__preview.webp?preset=full"
-                  alt="生产设备5"
+                  alt={t('about.equipmentImage5')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/ae/p202405071414434c98f__preview.webp?preset=full"
-                  alt="生产设备6"
+                  alt={t('about.equipmentImage6')}
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
                   src="https://my-vendure-backend-production.up.railway.app/assets/preview/67/p202405071414416594f__preview.webp?preset=full"
-                  alt="生产设备7"
+                  alt={t('about.equipmentImage7')}
                   className="w-full h-48 object-cover rounded-lg md:col-span-3"
                 />
               </div>
@@ -301,12 +292,9 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-6">
-            Find Us on Social Media
+            {t('about.socialMedia')}
           </h2>
-          <p className="text-gray-600 mb-8">
-            We are consistently active on social media, sharing knowledge about
-            sourcing, international trading, e-commerce, and more.
-          </p>
+          <p className="text-gray-600 mb-8">{t('about.socialMediaDesc')}</p>
 
           <div className="flex justify-center gap-6">
             <a
@@ -376,17 +364,16 @@ export default function AboutPage() {
       <section className="py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-            Ready to Start Your Sourcing Journey?
+            {t('about.readyToStart')}
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Join thousands of businesses that trust TaiSourcing for their China
-            sourcing needs.
+            {t('about.readyToStartDesc')}
           </p>
           <Link
             to="/services"
             className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Get Started Today
+            {t('about.getStarted')}
           </Link>
         </div>
       </section>

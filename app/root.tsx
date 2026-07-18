@@ -15,6 +15,8 @@ import Footer from './components/footer/Footer';
 import { CartTray } from './components/cart/CartTray';
 import { useState, useEffect } from 'react';
 import { useActiveOrder } from './utils/use-active-order';
+import './i18n';
+import { useTranslation } from 'react-i18next';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
@@ -47,13 +49,14 @@ export default function App() {
   const { collections } = loaderData;
   const { activeOrderFetcher, activeOrder, adjustOrderLine, removeItem } =
     useActiveOrder(loaderData.backendUrl);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     setBackendUrl(loaderData.backendUrl);
   }, [loaderData.backendUrl]);
 
   return (
-    <html lang="zh" dir="ltr" id="app">
+    <html lang={i18n.language} dir="ltr" id="app">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

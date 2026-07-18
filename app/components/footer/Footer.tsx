@@ -1,4 +1,4 @@
-﻿import { RootLoaderData } from '~/root';
+import { RootLoaderData } from '~/root';
 import { Link } from '@remix-run/react';
 import { useTranslation } from '~/hooks/useTranslation';
 
@@ -19,8 +19,7 @@ export default function Footer({
               <span className="text-gray-300 font-medium">Sourcing</span>
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Your trusted partner for importing from China. We provide one-stop
-              sourcing solutions for global businesses.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -64,7 +63,7 @@ export default function Footer({
 
           <div>
             <h3 className="text-sm font-semibold text-gray-400 uppercase mb-6">
-              MAIN MENU
+              {t('footer.mainMenu')}
             </h3>
             <ul className="space-y-3">
               <li>
@@ -72,7 +71,7 @@ export default function Footer({
                   href="/"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Home
+                  {t('footer.home')}
                 </a>
               </li>
               <li>
@@ -80,7 +79,7 @@ export default function Footer({
                   href="/products"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Products
+                  {t('footer.products')}
                 </a>
               </li>
               <li>
@@ -88,7 +87,7 @@ export default function Footer({
                   href="/about"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  About Us
+                  {t('footer.aboutUs')}
                 </a>
               </li>
               <li>
@@ -96,7 +95,7 @@ export default function Footer({
                   href="/payment-information"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Payment Information
+                  {t('footer.paymentInformation')}
                 </a>
               </li>
               <li>
@@ -104,7 +103,7 @@ export default function Footer({
                   href="#"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Shipping Information
+                  {t('footer.shippingInformation')}
                 </a>
               </li>
             </ul>
@@ -112,7 +111,7 @@ export default function Footer({
 
           <div>
             <h3 className="text-sm font-semibold text-gray-400 uppercase mb-6">
-              OUR SERVICE
+              {t('footer.ourService')}
             </h3>
             <ul className="space-y-3">
               <li>
@@ -120,7 +119,7 @@ export default function Footer({
                   href="/services"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Purchasing Service
+                  {t('footer.purchasingService')}
                 </a>
               </li>
               <li>
@@ -128,7 +127,7 @@ export default function Footer({
                   href="/solutions/shipping"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Shipping Solutions
+                  {t('footer.shippingSolutions')}
                 </a>
               </li>
               <li>
@@ -136,7 +135,7 @@ export default function Footer({
                   href="/solutions/quality-control"
                   className="text-gray-400 hover:text-orange-500 text-sm transition-colors"
                 >
-                  Quality Control
+                  {t('footer.qualityControl')}
                 </a>
               </li>
             </ul>
@@ -144,12 +143,12 @@ export default function Footer({
 
           <div>
             <h3 className="text-sm font-semibold text-gray-400 uppercase mb-6">
-              CONTACT US
+              {t('footer.contactUs')}
             </h3>
             <ul className="space-y-4">
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">
-                  Email
+                  {t('footer.email')}
                 </div>
                 <a
                   href="mailto:info@taisourcing.asia"
@@ -160,7 +159,7 @@ export default function Footer({
               </li>
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">
-                  Tel (China)
+                  {t('footer.telChina')}
                 </div>
                 <a
                   href="tel:+8617793529591"
@@ -171,7 +170,7 @@ export default function Footer({
               </li>
               <li>
                 <div className="text-gray-500 text-xs uppercase mb-1">
-                  WhatsApp
+                  {t('footer.whatsapp')}
                 </div>
                 <a
                   href="https://wa.me/8617793529591"
@@ -183,17 +182,17 @@ export default function Footer({
             </ul>
             <div className="mt-6">
               <h4 className="text-sm font-semibold text-gray-400 uppercase mb-3">
-                WORKING HOURS
+                {t('footer.workingHours')}
               </h4>
               <ul className="space-y-1">
                 <li className="text-gray-400 text-sm">
-                  Mon-Fri: 9:00 AM - 6:00 PM
+                  {t('footer.mondayToFriday')}
                 </li>
                 <li className="text-gray-400 text-sm">
-                  Sat: 9:00 AM - 4:00 PM
+                  {t('footer.saturday')}
                 </li>
                 <li className="text-gray-500 text-xs mt-1">
-                  (China Standard Time)
+                  {t('footer.chinaStandardTime')}
                 </li>
               </ul>
             </div>
@@ -202,9 +201,7 @@ export default function Footer({
 
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-500 text-sm">
-              Copyright 2026 Tai Sourcing. All Rights Reserved.
-            </p>
+            <p className="text-gray-500 text-sm">{t('footer.copyright')}</p>
           </div>
         </div>
       </div>
