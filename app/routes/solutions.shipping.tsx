@@ -1,14 +1,12 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
-import { useTranslation } from '~/hooks/useTranslation';
 
 export const loader: LoaderFunction = async () => {
   return json({ images: pageImages['shipping-solutions'] || {} });
 };
 
 export default function ShippingSolutionsPage() {
-  const { t } = useTranslation();
   const { images } = useLoaderData<{ images: Record<string, string> }>();
 
   const getImageUrl = (name: string) => {
@@ -31,16 +29,17 @@ export default function ShippingSolutionsPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                {t('shipping.fastSecureGlobalShipping')}
+                Fast & Secure Global Shipping
               </h1>
               <p className="text-white/90 text-lg mb-8">
-                {t('shipping.providingFlexibleSolutions')}
+                Providing flexible shipping solutions for businesses of any
+                size.
               </p>
               <Link
                 to="/services"
                 className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                {t('shipping.getStarted')}
+                Get Started
               </Link>
             </div>
             <div className="relative">
@@ -49,23 +48,21 @@ export default function ShippingSolutionsPage() {
                   getImageUrl('hero-image') ||
                   'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Container%20shipping%20port%20with%20cargo%20containers%20and%20trucks&image_size=landscape_4_3'
                 }
-                alt={t('shipping.globalShipping')}
+                alt="Global Shipping"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
               <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-sm text-gray-500">
-                      {t('shipping.deliveryTime')}
-                    </div>
+                    <div className="text-sm text-gray-500">Delivery Time</div>
                     <div className="text-xl font-bold text-orange-500">
-                      {t('shipping.deliveryTimeDays')}
+                      3-5 Days
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm text-green-600 font-medium">
-                      {t('shipping.onTime')}
+                      On Time
                     </span>
                   </div>
                 </div>
@@ -79,10 +76,12 @@ export default function ShippingSolutionsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              {t('shipping.internationalExpress')}
+              International Express
             </h2>
             <p className="text-gray-600">
-              {t('shipping.internationalExpressDesc')}
+              For goods under 500kg, our international express service can
+              deliver directly to your door in 3-5 days in most countries and
+              regions.
             </p>
           </div>
 
@@ -93,7 +92,7 @@ export default function ShippingSolutionsPage() {
                   getImageUrl('international-express') ||
                   'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shipping%20boxes%20with%20DHL%20UPS%20FedEx%20logistics%20company%20logos&image_size=landscape_4_3'
                 }
-                alt={t('shipping.internationalExpress')}
+                alt="International Express"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
               <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-xs font-medium">
@@ -120,10 +119,11 @@ export default function ShippingSolutionsPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {t('shipping.competitivePricing')}
+                    Competitive Pricing
                   </h3>
                   <p className="text-gray-600">
-                    {t('shipping.competitivePricingDesc')}
+                    Enjoy our discounted express rates based on shipment weight
+                    for lower shipping costs.
                   </p>
                 </div>
               </div>
@@ -146,10 +146,11 @@ export default function ShippingSolutionsPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {t('shipping.dangerousGoodsShipping')}
+                    Dangerous Goods Shipping
                   </h3>
                   <p className="text-gray-600">
-                    {t('shipping.dangerousGoodsShippingDesc')}
+                    Our network safely transports all types of goods including
+                    batteries, liquids, and powders.
                   </p>
                 </div>
               </div>
@@ -172,10 +173,12 @@ export default function ShippingSolutionsPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {t('shipping.insuranceCoverage')}
+                    Insurance Coverage
                   </h3>
                   <p className="text-gray-600">
-                    {t('shipping.insuranceCoverageDesc')}
+                    In case of damage, we work closely with carriers and
+                    suppliers to ensure compensation for shipping costs and
+                    product value.
                   </p>
                 </div>
               </div>
@@ -185,7 +188,7 @@ export default function ShippingSolutionsPage() {
                   to="/services"
                   className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
-                  {t('shipping.getAQuote')}
+                  Get a Quote
                 </Link>
               </div>
             </div>
@@ -197,10 +200,12 @@ export default function ShippingSolutionsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              {t('shipping.portToPortShipping')}
+              Port to Port Shipping
             </h2>
             <p className="text-gray-600">
-              {t('shipping.portToPortShippingDesc')}
+              If you prefer to use your own freight forwarder for local
+              logistics, we can deliver your goods to any designated sea, air,
+              or railway port.
             </p>
           </div>
 
@@ -212,7 +217,7 @@ export default function ShippingSolutionsPage() {
                     getImageUrl('sea-freight') ||
                     'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20ship%20carrying%20containers%20on%20the%20ocean&image_size=landscape_4_3'
                   }
-                  alt={t('shipping.seaFreight')}
+                  alt="Sea Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
               </div>
@@ -234,11 +239,13 @@ export default function ShippingSolutionsPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    {t('shipping.seaFreight')}
+                    Sea Freight
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  {t('shipping.seaFreightDesc')}
+                  This is the most economical shipping method. From China to
+                  destination ports, it only takes 15-40 days. We will advise
+                  your shipment to choose LCL or FCL.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
@@ -253,7 +260,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.fcl')}
+                    FCL (Full Container Load)
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -267,7 +274,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.lcl')}
+                    LCL (Less than Container Load)
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -281,7 +288,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.seaFreightDays')}
+                    15-40 days transit time
                   </li>
                 </ul>
               </div>
@@ -294,7 +301,7 @@ export default function ShippingSolutionsPage() {
                     getImageUrl('air-freight') ||
                     'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Cargo%20airplane%20loading%20containers%20at%20airport&image_size=landscape_4_3'
                   }
-                  alt={t('shipping.airFreight')}
+                  alt="Air Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
               </div>
@@ -316,11 +323,13 @@ export default function ShippingSolutionsPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    {t('shipping.airFreight')}
+                    Air Freight
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  {t('shipping.airFreightDesc')}
+                  This is the fastest shipping method. From China to destination
+                  airports, it only takes 2-5 days. For goods over 500kg, this
+                  option is more cost-effective than international express.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
@@ -335,7 +344,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.airFreightDays')}
+                    2-5 days transit time
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -349,7 +358,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.costEffectiveBulk')}
+                    Cost-effective for bulk cargo
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -363,7 +372,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.directFlights')}
+                    Direct flights available
                   </li>
                 </ul>
               </div>
@@ -376,7 +385,7 @@ export default function ShippingSolutionsPage() {
                     getImageUrl('railway-freight') ||
                     'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Railway%20freight%20train%20carrying%20containers%20through%20countryside&image_size=landscape_4_3'
                   }
-                  alt={t('shipping.railwayFreight')}
+                  alt="Railway Freight"
                   className="w-full aspect-video object-cover rounded-xl"
                 />
               </div>
@@ -398,11 +407,13 @@ export default function ShippingSolutionsPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    {t('shipping.railwayFreight')}
+                    Railway Freight
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  {t('shipping.railwayFreightDesc')}
+                  We provide China-Europe Railway Express FCL/LCL transport
+                  services. Railway freight takes half the time of sea freight
+                  and costs less than air freight.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
@@ -417,7 +428,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.chinaEuropeRailway')}
+                    China-Europe Railway Express
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -431,7 +442,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.halfSeaFreightTime')}
+                    Half the time of sea freight
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -445,7 +456,7 @@ export default function ShippingSolutionsPage() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    {t('shipping.lowerThanAirFreight')}
+                    Lower cost than air freight
                   </li>
                 </ul>
               </div>
@@ -457,16 +468,17 @@ export default function ShippingSolutionsPage() {
       <section className="py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-            {t('shipping.needCustomSolutions')}
+            Need Custom Shipping Solutions?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            {t('shipping.needCustomSolutionsDesc')}
+            Our logistics experts will analyze your shipping needs and provide
+            the most cost-effective solution.
           </p>
           <Link
             to="/services"
             className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            {t('shipping.contactLogisticsTeam')}
+            Contact Our Logistics Team
           </Link>
         </div>
       </section>

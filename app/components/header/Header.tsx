@@ -1,4 +1,4 @@
-import { Link, useLocation } from '@remix-run/react';
+﻿import { Link, useLocation } from '@remix-run/react';
 import {
   ShoppingBagIcon,
   ChevronDownIcon,
@@ -14,11 +14,9 @@ import { useState, useRef, useEffect } from 'react';
 
 const languages = [
   { code: 'en', label: 'English' },
-  { code: 'de', label: 'German' },
-  { code: 'fr', label: 'French' },
-  { code: 'es', label: 'Spanish' },
-  { code: 'it', label: 'Italian' },
-  { code: 'nl', label: 'Dutch' },
+  { code: 'zh', label: '中文' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'fr', label: 'Français' },
 ];
 
 export function Header({

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { graphqlClient } from '~/lib/graphql-client';
-import { useTranslation } from '~/hooks/useTranslation';
 
 export default function ServicesPage() {
-  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -19,8 +17,7 @@ export default function ServicesPage() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      await graphqlClient.request(
-        `
+      await graphqlClient.request(`
         mutation CreateContactForm($input: CreateContactFormInput!) {
           createContactForm(input: $input) {
             id
@@ -29,14 +26,12 @@ export default function ServicesPage() {
             createdAt
           }
         }
-      `,
-        {
-          input: {
-            ...formData,
-            source: 'services',
-          },
+      `, {
+        input: {
+          ...formData,
+          source: 'services',
         },
-      );
+      });
       setSubmitted(true);
       setFormData({
         firstName: '',
@@ -48,17 +43,13 @@ export default function ServicesPage() {
       });
     } catch (error) {
       console.error('Failed to submit form:', error);
-      alert(t('services.submitError'));
+      alert('Failed to submit. Please try again or email us at info@taisourcing.asia');
     } finally {
       setSubmitting(false);
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -70,7 +61,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {t('services.startYourProject')}
+            Start Your Project
           </h1>
           <div className="w-24 h-1 bg-white/50 mx-auto rounded-full" />
         </div>
@@ -80,32 +71,28 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border-2 border-orange-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full">
-              <h3 className="text-xl font-bold text-orange-600 mb-4">
-                {t('services.findNewSuppliers')}
-              </h3>
+              <h3 className="text-xl font-bold text-orange-600 mb-4">Find New Suppliers</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                {t('services.findNewSuppliersDesc')}
+                If you are looking for new suppliers, we can help you find the best match and offer you a competitive price along with a cost-effective manufacturing solution. Compare our offer with any of your existing suppliers to see the value we can provide.
               </p>
               <p className="text-orange-600 font-medium mb-6">
-                {t('services.proServicePlan')}
+                Check out our <span className="underline">Pro Service Plan</span> for more details.
               </p>
               <button className="w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                {t('services.needThisPlan')}
+                I need this plan
               </button>
             </div>
 
             <div className="border-2 border-blue-500 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white h-full">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
-                {t('services.manageMySuppliers')}
-              </h3>
+              <h3 className="text-xl font-bold text-blue-600 mb-4">Manage My Suppliers</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                {t('services.manageMySuppliersDesc')}
+                If you prefer to use your own suppliers, we can collaborate with them and manage the entire purchasing process from production to quality inspection and door-to-door logistics. Our support will significantly enhance your sourcing efficiency.
               </p>
               <p className="text-blue-600 font-medium mb-6">
-                {t('services.basicServicePlan')}
+                Discover more details about our <span className="underline">Basic Service Plan</span>.
               </p>
               <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                {t('services.needThisPlan')}
+                I need this plan
               </button>
             </div>
           </div>
@@ -116,13 +103,13 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('services.submitSourcingRequest')}
+              Submit Your Sourcing Request
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              {t('services.submitSourcingRequestDesc')}
+              Fill out this form with your detailed needs and our customer support team will contact you shortly. We will assign a professional agent to follow up on your project and provide personalized assistance.
             </p>
             <p className="text-gray-500 mt-4 text-sm">
-              {t('services.submitSourcingRequestEmail')}
+              If you encounter any issues with submission, you can also email us directly at info@taisourcing.asia.
             </p>
             <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full" />
           </div>
@@ -130,24 +117,12 @@ export default function ServicesPage() {
           {submitted ? (
             <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
               <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-green-700 mb-2">
-                {t('services.thankYou')}
-              </h3>
-              <p className="text-green-600">{t('services.requestSubmitted')}</p>
+              <h3 className="text-xl font-bold text-green-700 mb-2">Thank You!</h3>
+              <p className="text-green-600">Your request has been submitted successfully. Our team will contact you shortly.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -158,7 +133,7 @@ export default function ServicesPage() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder={t('services.firstName')}
+                    placeholder="First Name*"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
@@ -169,7 +144,7 @@ export default function ServicesPage() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder={t('services.lastName')}
+                    placeholder="Last Name*"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
@@ -183,7 +158,7 @@ export default function ServicesPage() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder={t('services.email')}
+                    placeholder="Email*"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
@@ -194,7 +169,7 @@ export default function ServicesPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder={t('services.phoneNumber')}
+                    placeholder="Phone Number*"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
@@ -210,12 +185,12 @@ export default function ServicesPage() {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   >
-                    <option value="">{t('services.selectCountry')}</option>
-                    <option value="US">{t('services.unitedStates')}</option>
-                    <option value="CN">{t('services.china')}</option>
-                    <option value="DE">{t('services.germany')}</option>
-                    <option value="UK">{t('services.unitedKingdom')}</option>
-                    <option value="JP">{t('services.japan')}</option>
+                    <option value="">Select your country*</option>
+                    <option value="US">United States</option>
+                    <option value="CN">China</option>
+                    <option value="DE">Germany</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="JP">Japan</option>
                   </select>
                 </div>
                 <div>
@@ -224,7 +199,7 @@ export default function ServicesPage() {
                     name="company"
                     value={formData.company || ''}
                     onChange={handleChange}
-                    placeholder={t('services.companyName')}
+                    placeholder="Company Name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
                 </div>
@@ -235,7 +210,7 @@ export default function ServicesPage() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder={t('services.describeSourcingNeeds')}
+                  placeholder="Describe your sourcing needs..."
                   rows={4}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
@@ -247,9 +222,7 @@ export default function ServicesPage() {
                 disabled={submitting}
                 className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {submitting
-                  ? t('services.submitting')
-                  : t('services.submitRequest')}
+                {submitting ? 'Submitting...' : 'Submit Request'}
               </button>
             </form>
           )}

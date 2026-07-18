@@ -1,14 +1,12 @@
-import { json, LoaderFunction } from '@remix-run/node';
+﻿import { json, LoaderFunction } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
 import pageImages from '~/data/page-images.json';
-import { useTranslation } from '~/hooks/useTranslation';
 
 export const loader: LoaderFunction = async () => {
   return json({ images: pageImages['quality-control'] || {} });
 };
 
 export default function QualityControlPage() {
-  const { t } = useTranslation();
   const { images } = useLoaderData<{ images: Record<string, string> }>();
 
   const getImageUrl = (name: string) => {
@@ -26,16 +24,17 @@ export default function QualityControlPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                {t('qualityControl.qualityControl')}
+                Quality Control
               </h1>
               <p className="text-white/90 text-lg mb-8">
-                {t('qualityControl.qualityInspectionCrucial')}
+                Quality inspection is crucial. We take it very seriously to
+                ensure your supply chain is worry-free.
               </p>
               <Link
                 to="/services"
                 className="inline-flex px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                {t('qualityControl.getAQuote')}
+                Get a Quote
               </Link>
             </div>
             <div className="relative">
@@ -44,7 +43,7 @@ export default function QualityControlPage() {
                   getImageUrl('hero-image') ||
                   'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20inspectors%20checking%20products%20in%20factory&image_size=landscape_4_3'
                 }
-                alt={t('qualityControl.qualityControl')}
+                alt="Quality Control"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
@@ -66,10 +65,10 @@ export default function QualityControlPage() {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">
-                      {t('qualityControl.inspectionMethod')}
+                      Inspection Method
                     </div>
                     <div className="font-semibold text-gray-900">
-                      {t('qualityControl.aqlStandard')}
+                      AQL 2.5 Standard
                     </div>
                   </div>
                 </div>
@@ -83,10 +82,11 @@ export default function QualityControlPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              {t('qualityControl.ourQualityGuarantee')}
+              Our Quality Guarantee
             </h2>
             <p className="text-gray-600">
-              {t('qualityControl.qualityGuaranteeDesc')}
+              When you choose our Pro Plan and use our selected suppliers, we
+              guarantee your product quality.
             </p>
           </div>
 
@@ -109,11 +109,12 @@ export default function QualityControlPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">
-                  {t('qualityControl.freeReplacement')}
+                  Free Replacement
                 </h3>
               </div>
               <p className="text-gray-600">
-                {t('qualityControl.freeReplacementDesc')}
+                If we find defective products during quality inspection at our
+                warehouse, we will help you replace them for free.
               </p>
             </div>
 
@@ -135,11 +136,13 @@ export default function QualityControlPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">
-                  {t('qualityControl.warranty')}
+                  15-Day Warranty
                 </h3>
               </div>
               <p className="text-gray-600">
-                {t('qualityControl.warrantyDesc')}
+                If you find product defects within 15 days after receiving the
+                goods and provide relevant evidence, we will arrange
+                replacements or refunds.
               </p>
             </div>
           </div>
@@ -150,7 +153,7 @@ export default function QualityControlPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              {t('qualityControl.howWeInspect')}
+              How We Inspect Your Products
             </h2>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
@@ -158,22 +161,29 @@ export default function QualityControlPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="order-2 md:order-1">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                {t('qualityControl.generalInspection')}
+                General Inspection
               </h3>
               <p className="text-gray-600 mb-4">
-                {t('qualityControl.generalInspectionDesc1')}
+                Whether you choose our Pro Plan or Basic Plan, your goods will
+                be sent to our warehouse for free comprehensive inspection. We
+                follow Level II standards, AQL 2.5 standards, just like other
+                inspection companies.
               </p>
               <p className="text-gray-600 mb-4">
-                {t('qualityControl.generalInspectionDesc2')}
+                For defective products, if you use our selected suppliers, we
+                will handle quality issues for free. If you use your own
+                suppliers, we can assist in solving the problem, but there may
+                be charges for logistics and re-inspection fees.
               </p>
               <p className="text-gray-600 mb-6">
-                {t('qualityControl.generalInspectionDesc3')}
+                If you need a customized inspection solution or a lower defect
+                rate, contact our agent for details on any additional costs.
               </p>
               <Link
                 to="/services"
                 className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                {t('qualityControl.contactOurAgent')}
+                Contact Our Agent
               </Link>
             </div>
             <div className="order-1 md:order-2">
@@ -182,7 +192,7 @@ export default function QualityControlPage() {
                   getImageUrl('general-inspection') ||
                   'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Workers%20inspecting%20products%20in%20warehouse%20with%20checklist&image_size=landscape_4_3'
                 }
-                alt={t('qualityControl.generalInspection')}
+                alt="General Inspection"
                 className="w-full aspect-video object-cover rounded-xl shadow-lg"
               />
             </div>
@@ -201,16 +211,19 @@ export default function QualityControlPage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                {t('qualityControl.fullInspection')}
+                Full Inspection
               </h3>
               <p className="text-gray-600 mb-4">
-                {t('qualityControl.fullInspectionDesc')}
+                To achieve 0% defect rate, we recommend our full inspection
+                service to identify and remove all defective products. Our
+                standard rate is $5 per hour. Contact our agent to discuss your
+                needs and get a customized quote.
               </p>
               <Link
                 to="/services"
                 className="inline-flex px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                {t('qualityControl.getStartedNow')}
+                Get Started Now
               </Link>
             </div>
           </div>
@@ -222,29 +235,21 @@ export default function QualityControlPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-500 mb-2">98%</div>
-              <div className="text-gray-600">
-                {t('qualityControl.defectDetectionRate')}
-              </div>
+              <div className="text-gray-600">Defect Detection Rate</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-500 mb-2">24h</div>
-              <div className="text-gray-600">
-                {t('qualityControl.inspectionReport')}
-              </div>
+              <div className="text-gray-600">Inspection Report</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-500 mb-2">50+</div>
-              <div className="text-gray-600">
-                {t('qualityControl.qualityInspectors')}
-              </div>
+              <div className="text-gray-600">Quality Inspectors</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-500 mb-2">
                 10K+
               </div>
-              <div className="text-gray-600">
-                {t('qualityControl.productsInspectedMonthly')}
-              </div>
+              <div className="text-gray-600">Products Inspected Monthly</div>
             </div>
           </div>
         </div>
@@ -253,13 +258,14 @@ export default function QualityControlPage() {
       <section className="py-16 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-500">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-            {t('qualityControl.needCustomSolutions')}
+            Need Custom Quality Control Solutions?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            {t('qualityControl.needCustomSolutionsDesc')}
+            Our quality control team will analyze your product requirements and
+            provide the most suitable inspection plan.
           </p>
           <button className="px-8 py-4 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 shadow-lg hover:shadow-xl">
-            {t('qualityControl.contactQcTeam')}
+            Contact Our QC Team
           </button>
         </div>
       </section>
