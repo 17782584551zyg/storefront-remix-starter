@@ -123,93 +123,193 @@ export default function AboutPage() {
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full" />
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20manufacturing%20equipment&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">钛合金加工厂</h3>
-                <p className="text-sm text-gray-500">专业生产</p>
+          <div className="space-y-16">
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                公司简介
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+                宝鸡天瑞镍钛有限公司成立于2011年，位于陕西省宝鸡市，被誉为"中国钛谷"。公司主要从事非标准型产品、钛合金材料、钛合金材料、特种产品及其他产品的生产、制造和销售。
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20factory%20building%20exterior%20industrial&image_size=landscape_4_3"
+                  alt="公司外观"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20workshop%20interior%20with%20machinery&image_size=landscape_4_3"
+                  alt="生产车间"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
               </div>
             </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20machinery%20workshop&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">精密仪器厂</h3>
-                <p className="text-sm text-gray-500">定制加工</p>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                工厂展
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+                我们公司拥有现代化的生产设备，数控车床、车削、冲床及其他设备。它主要包括非金属工业和工艺，如熔铸工业、热轧和精锻。我们公司专注于钛螺丝及其他用于摩托车、自行车和汽车的mgum件的生产和研究。公司拥有完善的管理体系，致力于为国内外客户提供优质产品。
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20lathe%20machinery%20factory&image_size=landscape_4_3"
+                  alt="数控车床"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20press%20machine%20workshop&image_size=landscape_4_3"
+                  alt="冲压设备"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20factory%20production%20line&image_size=landscape_4_3"
+                  alt="生产线"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Metal%20forging%20equipment&image_size=landscape_4_3"
+                  alt="锻造设备"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Precision%20machining%20center&image_size=landscape_4_3"
+                  alt="精密加工"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Factory%20warehouse%20storage&image_size=landscape_4_3"
+                  alt="仓储设施"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
               </div>
             </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Metal%20processing%20factory&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">金属材料厂</h3>
-                <p className="text-sm text-gray-500">原材料供应</p>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                产品
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+                我们的设备已经提交了涵盖航空航天、航天、工业工程、汽车工程、电力和电气设备的申请。我们不仅生产钛合金材料，还生产钛产品、钛靶材和钛棒。我们公司还生产多种标准类型，如普通螺栓、螺母、表带和特种产品。特殊产品通常根据客户的具体要求进行定制设计。此外，我们的产品涵盖从原材料到完整产品的所有产品，使我们能够提供解决方案。
+              </p>
+              <div className="grid md:grid-cols-4 gap-4">
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20bolts%20and%20nuts%20hardware&image_size=square"
+                  alt="钛合金螺栓"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20rods%20and%20bars%20metal&image_size=square"
+                  alt="钛合金棒材"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20plates%20and%20sheets&image_size=square"
+                  alt="钛合金板材"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20tubes%20and%20pipes&image_size=square"
+                  alt="钛合金管材"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20fasteners%20industrial&image_size=square"
+                  alt="钛合金紧固件"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20target%20material&image_size=square"
+                  alt="钛靶材"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20components%20automotive&image_size=square"
+                  alt="汽车零部件"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Titanium%20medical%20implants&image_size=square"
+                  alt="医疗植入物"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
               </div>
             </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20center&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">CNC加工厂</h3>
-                <p className="text-sm text-gray-500">精密加工</p>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                生产设备
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">铸造设备</h4>
+                  <p className="text-sm text-gray-600">熔炉、固定炉、铸造机</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">锻造设备</h4>
+                  <p className="text-sm text-gray-600">
+                    液压机、机械冲压机、风扇
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">热锻设备</h4>
+                  <p className="text-sm text-gray-600">
+                    加热炉、真空加热炉、锻锤
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">产品材料</h4>
+                  <p className="text-sm text-gray-600">
+                    数控车床、数控铣床、金属切割机、激光切割机
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">测试设备</h4>
+                  <p className="text-sm text-gray-600">
+                    光谱分析仪、金相显微镜、硬度测试仪、通用测试仪
+                  </p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    设备固定部件
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    抛光机、喷砂机、阳极氧化设备
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Packaging%20and%20warehouse&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">物流包装厂</h3>
-                <p className="text-sm text-gray-500">包装配送</p>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20control%20laboratory&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">质检中心</h3>
-                <p className="text-sm text-gray-500">质量检测</p>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Surface%20treatment%20facility&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">表面处理厂</h3>
-                <p className="text-sm text-gray-500">抛光镀膜</p>
-              </div>
-            </div>
-            <div className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-              <img
-                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Assembly%20line%20production&image_size=square"
-                alt="合作厂商"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-semibold text-gray-900">组装生产线</h3>
-                <p className="text-sm text-gray-500">成品组装</p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20furnace%20casting%20equipment&image_size=landscape_4_3"
+                  alt="铸造熔炉"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Hydraulic%20forging%20press%20machine&image_size=landscape_4_3"
+                  alt="液压锻造机"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20machining%20center%20factory&image_size=landscape_4_3"
+                  alt="CNC加工中心"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Laser%20cutting%20machine%20industrial&image_size=landscape_4_3"
+                  alt="激光切割机"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Quality%20testing%20laboratory%20equipment&image_size=landscape_4_3"
+                  alt="质检设备"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Surface%20treatment%20anodizing%20equipment&image_size=landscape_4_3"
+                  alt="表面处理设备"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>
