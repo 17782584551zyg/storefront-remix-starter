@@ -105,10 +105,9 @@ export function Header({
   };
 
   const changeLanguage = (code: string) => {
-    i18n.changeLanguage(code);
     setCookie('i18next', code, 30);
     setShowLangDropdown(false);
-    window.location.reload();
+    window.location.href = window.location.pathname;
   };
 
   return (
@@ -187,10 +186,7 @@ export function Header({
           >
             <button
               className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300 px-2 py-1"
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowLangDropdown(!showLangDropdown);
-              }}
+              onClick={() => setShowLangDropdown(!showLangDropdown)}
             >
               <GlobeAltIcon className="w-4 h-4" />
               <span className="text-sm">
@@ -209,10 +205,7 @@ export function Header({
                         ? 'bg-orange-50 text-orange-500'
                         : 'text-gray-600 hover:bg-orange-50 hover:text-orange-500'
                     }`}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      changeLanguage(lang.code);
-                    }}
+                    onClick={() => changeLanguage(lang.code)}
                   >
                     {lang.label}
                   </button>

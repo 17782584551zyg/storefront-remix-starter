@@ -8,23 +8,12 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const cookieParser = {
-  parse: (cookieHeader: string | null) => {
-    if (!cookieHeader) return null;
-    const cookies = cookieHeader.split(';').reduce((acc, cookie) => {
-      const [name, value] = cookie.trim().split('=');
-      acc[name] = value;
-      return acc;
-    }, {} as Record<string, string>);
-    return cookies['i18next'] || null;
-  },
-};
-
 export const remixI18next = new RemixI18Next({
   detection: {
     supportedLngs: i18nConfig.supportedLngs,
     fallbackLng: i18nConfig.fallbackLng,
-    cookie: cookieParser,
+    order: ['cookie', 'header'],
+    caches: ['cookie'],
   },
   i18next: {
     ...i18nConfig,
