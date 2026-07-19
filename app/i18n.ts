@@ -1,8 +1,7 @@
 export default {
-  supportedLngs: ['en', 'fr', 'de', 'zh', 'es', 'it', 'nl', 'pl', 'sv', 'da', 'no'],
+  supportedLngs: ['en', 'de', 'fr', 'es', 'it', 'nl'],
   fallbackLng: 'en',
+  defaultNS: 'common',
+  ns: ['common'],
   react: { useSuspense: false },
-  backend: {
-    loadPath: '../public/locales/{{lng}}.json',
-  },
 };

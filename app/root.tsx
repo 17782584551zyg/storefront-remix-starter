@@ -15,6 +15,7 @@ import Footer from './components/footer/Footer';
 import { CartTray } from './components/cart/CartTray';
 import { useState, useEffect } from 'react';
 import { useActiveOrder } from './utils/use-active-order';
+import { remixI18next } from './i18next.server';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
@@ -26,7 +27,9 @@ const devMode =
 
 import { API_URL, BACKEND_URL, setBackendUrl } from './constants';
 
-export async function loader() {
+export async function loader({ request }: { request: Request }) {
+  const locale = await remixI18next.getLocale(request);
+
   return json({
     activeCustomer: { activeCustomer: null, _headers: {} },
     activeChannel: {
@@ -35,7 +38,7 @@ export async function loader() {
       customFields: { bannerImages: [] },
     },
     collections: [],
-    locale: 'en',
+    locale,
     backendUrl: BACKEND_URL,
     apiUrl: API_URL,
   });
@@ -44,7 +47,7 @@ export async function loader() {
 export default function App() {
   const [open, setOpen] = useState(false);
   const loaderData = useLoaderData();
-  const { collections } = loaderData;
+  const { collections, locale } = loaderData;
   const { activeOrderFetcher, activeOrder, adjustOrderLine, removeItem } =
     useActiveOrder(loaderData.backendUrl);
 
@@ -53,7 +56,7 @@ export default function App() {
   }, [loaderData.backendUrl]);
 
   return (
-    <html lang="zh" dir="ltr" id="app">
+    <html lang={locale} dir="ltr" id="app">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

@@ -1,24 +1,26 @@
-const translations: Record<string, string> = {
-  'common.tokenError': 'Verification token was not provided!',
-  tokenError: 'Verification token was not provided!',
-  'common.unknowError': 'An unknown error occurred',
-  'address.idError': "Parameter 'id' is missing",
-  'address.deleteModal.title': 'Remove Address',
-  'address.deleteModal.confirmation': 'Do you want to remove this address?',
-  'account.signUp': 'Sign Up',
-  'account.signIn': 'Sign In',
-  'account.verifyMessage':
-    'Your account has been verified successfully. Redirecting in 5s...',
-  'account.verifyEmailMessage':
-    'Your new E-Mail address has been verified successfully. Redirecting in 5s...',
-  'vendure.registrationError':
-    'Registration cant be used with Vendure demo shop! Please connect your own instance.',
-};
+import { createInstance } from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-fs-backend';
+import { RemixI18Next } from 'remix-i18next/server';
+import i18nConfig from './i18n';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-function getTranslation(key: string): string {
-  return translations[key] || key;
-}
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export async function getFixedT(request: Request) {
-  return getTranslation;
-}
+export const remixI18next = new RemixI18Next({
+  detection: {
+    supportedLngs: i18nConfig.supportedLngs,
+    fallbackLng: i18nConfig.fallbackLng,
+  },
+  i18next: {
+    ...i18nConfig,
+    backend: {
+      loadPath: path.join(__dirname, '../public/locales/{{lng}}.json'),
+    },
+    preload: i18nConfig.supportedLngs,
+  },
+  backend: Backend,
+});
+
+export const { getFixedT } = remixI18next;

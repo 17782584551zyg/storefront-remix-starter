@@ -14,9 +14,11 @@ import { useState, useRef, useEffect } from 'react';
 
 const languages = [
   { code: 'en', label: 'English' },
-  { code: 'zh', label: '中文' },
   { code: 'de', label: 'Deutsch' },
   { code: 'fr', label: 'Français' },
+  { code: 'es', label: 'Español' },
+  { code: 'it', label: 'Italiano' },
+  { code: 'nl', label: 'Nederlands' },
 ];
 
 export function Header({
