@@ -1,4 +1,4 @@
-﻿import { Link, useLocation } from '@remix-run/react';
+import { Link, useLocation, useNavigate } from '@remix-run/react';
 import {
   ShoppingBagIcon,
   ChevronDownIcon,
@@ -36,11 +36,12 @@ export function Header({
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
   const location = useLocation();
+  const navigate = useNavigate();
   const isProductPage =
     location.pathname.startsWith('/products') ||
     location.pathname.startsWith('/collections') ||
     location.pathname.startsWith('/product');
-  const currentLocale = data.locale || 'en';
+  const currentLocale = i18n.language || data.locale || 'en';
 
   const navItems = [
     { label: t('header.ourServices'), href: '/services', key: 'ourServices' },
@@ -96,9 +97,18 @@ export function Header({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const setCookie = (name: string, value: string, days: number) => {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    const expires = `expires=${date.toUTCString()}`;
+    document.cookie = `${name}=${value};${expires};path=/`;
+  };
+
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code);
+    setCookie('i18next', code, 30);
     setShowLangDropdown(false);
+    navigate(location.pathname);
   };
 
   return (
