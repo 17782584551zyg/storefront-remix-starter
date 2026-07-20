@@ -9,37 +9,19 @@ export function HeroBanner() {
 
   const slides = [
     {
-      image: getImageUrl('/preview/2a/hero-image__preview.png', {
+      image: getImageUrl('/preview/13/2024070404332240bdf__02__preview.webp', {
         preset: 'full',
       }),
       link: '/services',
     },
     {
-      image: getImageUrl('/preview/11/air-freight__preview.png', {
+      image: getImageUrl('/preview/cf/2024051710323318796__02__preview.webp', {
         preset: 'full',
       }),
       link: '/products',
     },
     {
-      image: getImageUrl('/preview/ce/international-express__preview.png', {
-        preset: 'full',
-      }),
-      link: '/services',
-    },
-    {
-      image: getImageUrl('/preview/4b/1sea-freight__preview.png', {
-        preset: 'full',
-      }),
-      link: '/services',
-    },
-    {
-      image: getImageUrl('/preview/d3/railway-freight__preview.jpg', {
-        preset: 'full',
-      }),
-      link: '/services',
-    },
-    {
-      image: getImageUrl('/preview/56/quality-control__preview.webp', {
+      image: getImageUrl('/preview/5a/2024052004422481a18__02__preview.webp', {
         preset: 'full',
       }),
       link: '/services',
