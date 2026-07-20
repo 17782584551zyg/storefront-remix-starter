@@ -14,11 +14,6 @@ export const remixI18next = new RemixI18Next({
     fallbackLng: i18nConfig.fallbackLng,
     order: ['cookie', 'header'],
     caches: ['cookie'],
-    cookie: {
-      name: 'i18next',
-      secure: process.env.NODE_ENV === 'production',
-      path: '/',
-    },
   },
   i18next: {
     ...i18nConfig,
