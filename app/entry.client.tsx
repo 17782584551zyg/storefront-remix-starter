@@ -7,30 +7,34 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18nConfig from './i18n';
 
-i18n
-  .use(Backend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    ...i18nConfig,
-    backend: {
-      loadPath: '/locales/{{lng}}.json',
-    },
-    detection: {
-      order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
-      caches: ['cookie'],
-      cookie: {
-        name: 'i18next',
+async function initApp() {
+  await i18n
+    .use(Backend)
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      ...i18nConfig,
+      backend: {
+        loadPath: '/locales/{{lng}}.json',
       },
-    },
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+      detection: {
+        order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
+        caches: ['cookie'],
+        cookie: {
+          name: 'i18next',
+        },
+      },
+      interpolation: {
+        escapeValue: false,
+      },
+    });
 
-hydrateRoot(
-  document,
-  <StrictMode>
-    <RemixBrowser />
-  </StrictMode>,
-);
+  hydrateRoot(
+    document,
+    <StrictMode>
+      <RemixBrowser />
+    </StrictMode>,
+  );
+}
+
+initApp();

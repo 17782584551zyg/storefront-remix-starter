@@ -1,5 +1,3 @@
-import { useTranslation as useTranslationBase } from 'react-i18next';
+import { useTranslation } from 'remix-i18next/client';
 
-export function useTranslation(ns?: string | string[]) {
-  return useTranslationBase(ns);
-}
+export { useTranslation };

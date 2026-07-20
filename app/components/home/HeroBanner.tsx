@@ -9,19 +9,19 @@ export function HeroBanner() {
 
   const slides = [
     {
-      image: getImageUrl('/preview/13/2024070404332240bdf__02__preview.webp', {
+      image: getImageUrl('/preview/2a/hero-image__preview.png', {
         preset: 'full',
       }),
       link: '/services',
     },
     {
-      image: getImageUrl('/preview/cf/2024051710323318796__02__preview.webp', {
+      image: getImageUrl('/preview/11/air-freight__preview.png', {
         preset: 'full',
       }),
       link: '/products',
     },
     {
-      image: getImageUrl('/preview/5a/2024052004422481a18__02__preview.webp', {
+      image: getImageUrl('/preview/ce/international-express__preview.png', {
         preset: 'full',
       }),
       link: '/services',
