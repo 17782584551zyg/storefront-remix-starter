@@ -140,11 +140,12 @@ export function Header({
                 <>
                   <button
                     className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 font-medium transition-colors duration-300 px-3 py-2"
-                    onClick={() =>
+                    onClick={(e) => {
+                      e.stopPropagation();
                       setActiveDropdown(
                         activeDropdown === item.key ? null : item.key,
-                      )
-                    }
+                      );
+                    }}
                     onMouseEnter={() => setActiveDropdown(item.key)}
                   >
                     <span>{item.label}</span>
@@ -181,7 +182,10 @@ export function Header({
           <div className="relative">
             <button
               className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300 px-2 py-1"
-              onClick={() => setShowLangDropdown(!showLangDropdown)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowLangDropdown(!showLangDropdown);
+              }}
               ref={(el) => {
                 dropdownRefs.current['language'] = el;
               }}
