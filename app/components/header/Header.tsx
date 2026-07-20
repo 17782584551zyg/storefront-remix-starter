@@ -178,15 +178,13 @@ export function Header({
         </nav>
 
         <div className="flex items-center space-x-4">
-          <div
-            className="relative"
-            ref={(el) => {
-              dropdownRefs.current['language'] = el;
-            }}
-          >
+          <div className="relative">
             <button
               className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors duration-300 px-2 py-1"
               onClick={() => setShowLangDropdown(!showLangDropdown)}
+              ref={(el) => {
+                dropdownRefs.current['language'] = el;
+              }}
             >
               <GlobeAltIcon className="w-4 h-4" />
               <span className="text-sm">
@@ -196,7 +194,12 @@ export function Header({
               <ChevronDownIcon className="w-3 h-3" />
             </button>
             {showLangDropdown && (
-              <div className="absolute top-full right-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-40 z-50 border border-gray-100">
+              <div
+                className="absolute top-full right-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-40 z-50 border border-gray-100"
+                ref={(el) => {
+                  dropdownRefs.current['languageDropdown'] = el;
+                }}
+              >
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
