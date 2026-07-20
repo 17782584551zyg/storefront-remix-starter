@@ -19,8 +19,11 @@ i18n
       loadPath: '/locales/{{lng}}.json',
     },
     detection: {
-      order: ['path', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+      order: ['cookie', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['cookie'],
+      cookie: {
+        name: 'i18next',
+      },
     },
     interpolation: {
       escapeValue: false,
