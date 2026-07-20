@@ -1,6 +1,7 @@
 import { Link } from '@remix-run/react';
 import { useTranslation } from '~/hooks/useTranslation';
 import { useState, useEffect } from 'react';
+import { getImageUrl } from '~/constants';
 
 export function HeroBanner() {
   const { t } = useTranslation();
@@ -8,33 +9,39 @@ export function HeroBanner() {
 
   const slides = [
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/26/1-2606020u414919__preview.png?preset=full',
+      image: getImageUrl('/preview/2a/hero-image__preview.png', {
+        preset: 'full',
+      }),
       link: '/services',
     },
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/3a/1-250h1103ft30-f__02__preview.jpg?preset=full',
+      image: getImageUrl('/preview/11/air-freight__preview.png', {
+        preset: 'full',
+      }),
       link: '/products',
     },
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/c1/c7ff97c40b3cd8449d334e522b52179c__preview.jpg?preset=full',
+      image: getImageUrl('/preview/ce/international-express__preview.png', {
+        preset: 'full',
+      }),
       link: '/services',
     },
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/92/2024070404332240bdf__preview.webp?preset=full',
+      image: getImageUrl('/preview/4b/1sea-freight__preview.png', {
+        preset: 'full',
+      }),
       link: '/services',
     },
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/41/2024051710323318796__preview.webp?preset=full',
+      image: getImageUrl('/preview/d3/railway-freight__preview.jpg', {
+        preset: 'full',
+      }),
       link: '/services',
     },
     {
-      image:
-        'https://my-vendure-backend-production.up.railway.app/assets/preview/a9/2024052004422481a18__preview.webp?preset=full',
+      image: getImageUrl('/preview/56/quality-control__preview.webp', {
+        preset: 'full',
+      }),
       link: '/services',
     },
   ];
