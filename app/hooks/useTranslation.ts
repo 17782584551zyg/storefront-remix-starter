@@ -1,3 +1,3 @@
-import { useTranslation } from 'remix-i18next/client';
+import { useTranslation } from 'react-i18next';
 
 export { useTranslation };
